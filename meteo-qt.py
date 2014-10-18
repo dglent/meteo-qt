@@ -21,6 +21,8 @@ __version__ = "0.1.0"
 
 class SystemTrayIcon(QMainWindow):
 
+    tooltip_template = "{city} {country} {temperature}°, {clouds}"
+
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
         self.weatherDataDico = {}
@@ -147,22 +149,31 @@ class SystemTrayIcon(QMainWindow):
     def weatherdata(self, tree):
         if self.inerror:
             return
-        self.tempFloat = tree[1].get('value')
-        self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
-        self.meteo = tree[8].get('value')
-        self.systray.setToolTip(self.city + ' '  + self.country + ' ' +
-                                self.temp + ' ' + self.meteo)
-        self.weatherDataDico['City'] = self.city
-        self.weatherDataDico['Country'] = self.country
-        self.weatherDataDico['Temp'] = self.tempFloat + '°'
-        self.weatherDataDico['Meteo'] = self.meteo
-        self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
-        self.weatherDataDico['Wind'] = (tree[4][0].get('value'), tree[4][0].get('name'),
-                                        tree[4][1].get('value'), tree[4][1].get('code'),
-                                        tree[4][1].get('name'))
-        self.weatherDataDico['Clouds'] = tree[5].get('name')
-        self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
-        self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
+
+        # parse the values from the xml
+        weatherDataDico = self.weatherDataDico
+        weatherDataDico['City'] = self.city
+        weatherDataDico['Country'] = self.country
+        weatherDataDico['Temp'] = self.temperature = "{0:.01f}".format(float(tree[1].get('value')))
+        weatherDataDico['Clouds'] = tree[8].get('value')
+        weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
+        weatherDataDico['Clouds'] = tree[5].get('name')
+        weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
+        weatherDataDico['Wind'] = (tree[4][0].get('value'), tree[4][0].get('name'),
+                                   tree[4][1].get('value'), tree[4][1].get('code'),
+                                   tree[4][1].get('name'))
+        # Set the tooltip too!
+        self.set_tooltip()
+
+    def set_tooltip(self):
+        data = self.weatherDataDico
+        tooltip = self.tooltip_template.format(
+            city=data["City"],
+            country=data["Country"],
+            temperature=data["Temp"],
+            clouds=data["Clouds"],
+        )
+        self.systray.setToolTip(tooltip)
 
     def tray(self):
         print('Paint tray icon')
@@ -174,7 +185,7 @@ class SystemTrayIcon(QMainWindow):
         pt = QPainter(self.icon)
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
-        pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
+        pt.drawText(self.icon.rect(), Qt.AlignBottom, self.temperature)
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
 

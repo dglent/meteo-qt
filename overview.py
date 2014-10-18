@@ -24,11 +24,11 @@ class OverviewCity(QDialog):
         self.iconLabel = QLabel()
         self.iconLabel.setPixmap(icon)
         self.iconTempLayout.addWidget(self.iconLabel)
-        self.tempLabel = QLabel('<font size="5"><b>' + self.weatherdata['Temp'][:-1] +
+        self.tempLabel = QLabel('<font size="5"><b>' + self.weatherdata['Temp'] +
                                ' ' + self.unitTemp + '<\b><\font>')
         self.iconTempLayout.addWidget(self.tempLabel)
         self.overLayout.addLayout(self.iconTempLayout)
-        self.weather = QLabel('<font size="4"><b>' + self.weatherdata['Meteo'] +
+        self.weather = QLabel('<font size="4"><b>' + self.weatherdata['Clouds'] +
                              '<\b><\font>')
         self.overLayout.addWidget(self.weather)
         self.line = QLabel('<font color=grey>__________<\font>')
