@@ -58,11 +58,9 @@ class SearchCity(QDialog):
         QDialog.accept(self)
 
     def search(self):
-        try:
+        if hasattr(self, "workthread"):
             if self.workThread.isRunning():
                 return
-        except AttributeError:
-            pass
         self.lista=[]
         self.dico={}
         self.errorStatus = False
