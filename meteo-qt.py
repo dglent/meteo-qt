@@ -72,8 +72,8 @@ class SystemTrayIcon(QMainWindow):
         self.country = self.settings.value('Country') or 'GR'
         self.lang = self.settings.value('Language') or 'en'
         lang_suffix = ('&lang=' + self.lang)
-        self.unit = self.settings.value('Unit')
-        self.suffix = ('&mode=xml&units='+self.unit + lang_suffix)
+        self.unit = self.settings.value('Unit') or 'metric'
+        self.suffix = ('&mode=xml&units=' + self.unit + lang_suffix)
         self.update()
         self.timer.start(1800000)
         
