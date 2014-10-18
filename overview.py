@@ -6,6 +6,8 @@ from PyQt4.QtGui import *
 
 class OverviewCity(QDialog):
 
+    unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
+
     def __init__(self, weatherdata, icon, forecast_inerror, forecast, unit, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.forecast = forecast
@@ -64,6 +66,5 @@ class OverviewCity(QDialog):
         self.setLayout(self.totalLayout)
 
     def tempunit(self, unit):
-        unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
-        return unitsDico[unit]
+        return self.unitsDico[unit]
 
