@@ -214,21 +214,22 @@ class SystemTrayIcon(QMainWindow):
 
     def tempcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
-        self.id_2, self.city2, self.country2 = (self.settings.value('ID'),
-                                                self.settings.value('City'),
-                                                self.settings.value('Country'))
-        for e in 'id','city','country':
-            self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.citydata)
+        id_2 = self.settings.value('ID')
+        city2 = self.settings.value('City')
+        country2 = self.settings.value('Country')
+        for name in 'id','city','country':
+            self.connect(dialog, SIGNAL(name + '(PyQt_PyObject)'), self.citydata)
         if dialog.exec_():
             self.systray.setToolTip('Fetching weather data ...')
             self.refresh()
             # Restore the initial settings
-            for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
-                self.citydata(e)
+            for pair in (('ID', id_2), ('City', city2), ('Country', country2)):
+                self.citydata(pair)
 
-    def citydata(self, what):
-        self.settings.setValue(what[0], what[1])
-        print('write ', what[0], what[1])
+    def citydata(self, pair):
+        key, value = pair
+        self.settings.setValue(key, value)
+        print('write ', key, value)
 
     def about(self):
         QMessageBox.about(self, "Application for weather status information",
