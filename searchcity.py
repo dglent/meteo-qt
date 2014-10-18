@@ -6,7 +6,7 @@ import urllib.request
 from lxml import etree
 
 class SearchCity(QDialog):
-    
+
     def __init__(self, accurate_url, parent=None):
         super(SearchCity, self).__init__(parent)
         self.delay = 1000
@@ -36,14 +36,14 @@ class SearchCity(QDialog):
         self.connect(self.listWidget, SIGNAL("itemSelectionChanged()"), self.buttonCheck)
         self.connect(self.listWidget, SIGNAL("itemDoubleClicked(QListWidgetItem *)"), self.accept)
         self.status.setText('')
-        
+
     def buttonCheck(self):
         '''Enable OK button if an item is selected'''
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
         if item != None:
             self.buttonOk.setEnabled(True)
-            
+
     def accept(self):
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
@@ -56,13 +56,11 @@ class SearchCity(QDialog):
             self.emit(SIGNAL('city(PyQt_PyObject)'), ('City', city_list[1]))
             self.emit(SIGNAL('country(PyQt_PyObject)'), ('Country', city_list[2]))
         QDialog.accept(self)
-        
+
     def search(self):
-        try:
+        if hasattr(self, "workthread"):
             if self.workThread.isRunning():
                 return
-        except AttributeError:
-            pass
         self.lista=[]
         self.dico={}
         self.errorStatus = False
@@ -75,19 +73,19 @@ class SearchCity(QDialog):
         self.connect(self.workThread, SIGNAL('finished()'), self.result)
         self.connect(self.workThread, SIGNAL('error(QString)'), self.error)
         self.timer.singleShot(self.delay, self.threadstart)
-    
+
     def threadstart(self):
         self.workThread.start()
-        
+
     def addlist(self, city):
         self.lista.append(city)
-        
+
     def error(self, e):
         self.delay = 5000
         print(e)
         self.status.setText(e)
         self.errorStatus = True
-        
+
     def result(self):
         if self.errorStatus:
             return
@@ -102,8 +100,8 @@ class SearchCity(QDialog):
         elif number_cities > 1:
             cities_text = 'Found {0} cities'.format(number_cities)
         self.status.setText(cities_text)
-        
-        
+
+
 class WorkThread(QThread):
     def __init__(self, accurate_url, city, suffix):
         QThread.__init__(self)
@@ -114,7 +112,7 @@ class WorkThread(QThread):
 
     def __del__(self):
         self.wait()
- 
+
     def run(self):
         self.lista = []
         if self.city == '':
@@ -139,9 +137,9 @@ class WorkThread(QThread):
                 error = ('Data error, please try again later\nor modify the name of the city')
                 self.emit(SIGNAL('error(QString)'), error)
                 return
-            self.lista.append(id_ + ' - ' + city + ' - ' + country)        
+            self.lista.append(id_ + ' - ' + city + ' - ' + country)
         for i in self.lista:
             self.emit(SIGNAL('city(QString)'), i)
         print('City thread done')
-        return  
-        
+        return
+
