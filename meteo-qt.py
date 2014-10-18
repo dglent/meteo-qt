@@ -236,6 +236,8 @@ class SystemTrayIcon(QMainWindow):
                         <p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
                         <br/>information on the system tray.
+                        <br/>Website: <a href="https://github.com/dglent/meteo-qt">
+                        https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
                         http://openweathermap.org/</a>.
                         <p>License: GPLv3 <br/>Python {1} - Qt {2} - PyQt {3} on {4}""".format(
