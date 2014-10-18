@@ -122,7 +122,7 @@ class SystemTrayIcon(QMainWindow):
         print('error')
         what = error[error.find('@')+1:]
         if what == 'city':
-                    self.inerror = True
+            self.inerror = True
         elif what == 'forecast':
             self.forecast_inerror = True
         elif what == 'icon':
@@ -201,11 +201,13 @@ class SystemTrayIcon(QMainWindow):
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
         if dialog.exec_() == 0:
-            (city, id_, country, lang, unit) = (self.settings.value('City'),
-                                          self.settings.value('ID'),
-                                          self.settings.value('Country'),
-                                          self.settings.value('Language'),
-                                          self.settings.value('Unit'))
+            # read data
+            id_ = self.settings.value('ID')
+            city = self.settings.value('City')
+            lang = self.settings.value('Language')
+            unit = self.settings.value('Unit')
+            country = self.settings.value('Country')
+            # Only refresh if data have changed
             if (city == self.city and id_ == self.id_ and
                 country == self.country and lang == self.lang and unit == self.unit):
                 return
