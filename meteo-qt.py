@@ -16,7 +16,7 @@ import overview
 import searchcity
 
 
-__version__ = "0.1"
+__version__ = "0.1.0"
 
 
 class SystemTrayIcon(QMainWindow):
