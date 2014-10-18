@@ -5,7 +5,7 @@ from PyQt4.QtGui import *
 
 
 class OverviewCity(QDialog):
-    
+
     def __init__(self, weatherdata, icon, forecast_inerror, forecast, unit, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.forecast = forecast
@@ -23,32 +23,32 @@ class OverviewCity(QDialog):
         self.iconTempLayout = QHBoxLayout()
         self.iconLabel = QLabel()
         self.iconLabel.setPixmap(icon)
-        self.iconTempLayout.addWidget(self.iconLabel)        
-        self.tempLabel = QLabel('<font size="5"><b>' + self.weatherdata['Temp'][:-1] + 
+        self.iconTempLayout.addWidget(self.iconLabel)
+        self.tempLabel = QLabel('<font size="5"><b>' + self.weatherdata['Temp'][:-1] +
                                ' ' + self.unitTemp + '<\b><\font>')
         self.iconTempLayout.addWidget(self.tempLabel)
         self.overLayout.addLayout(self.iconTempLayout)
         self.weather = QLabel('<font size="4"><b>' + self.weatherdata['Meteo'] +
                              '<\b><\font>')
-        self.overLayout.addWidget(self.weather)        
+        self.overLayout.addWidget(self.weather)
         self.line = QLabel('<font color=grey>__________<\font>')
         self.overLayout.addWidget(self.line)
         #------Second part overview day---------
         self.overGrid = QGridLayout()
         self.windLabel = QLabel('<font size="3" color=grey><b>Wind<\font><\b>')
-        self.wind = QLabel('<font color=grey>' + self.weatherdata['Wind'][0] + 
-                          ' m/s ' + self.weatherdata['Wind'][1] + ' '+ 
+        self.wind = QLabel('<font color=grey>' + self.weatherdata['Wind'][0] +
+                          ' m/s ' + self.weatherdata['Wind'][1] + ' '+
                           self.weatherdata['Wind'][2] + '° ' +
-                          self.weatherdata['Wind'][3] + ' ' + 
+                          self.weatherdata['Wind'][3] + ' ' +
                           self.weatherdata['Wind'][4] + '<\font>')
         self.cloudsLabel = QLabel('<font size="3" color=grey><b>Cloudiness<\b><\font>')
         self.cloudsName = QLabel('<font color=grey>' + self.weatherdata['Clouds'] +
                                  '<\font>')
         self.pressureLabel = QLabel('<font size="3" color=grey><b>Pressure<\b><\font>')
-        self.pressureValue = QLabel('<font color=grey>' + self.weatherdata['Pressure'][0] + ' ' + 
+        self.pressureValue = QLabel('<font color=grey>' + self.weatherdata['Pressure'][0] + ' ' +
                                     self.weatherdata['Pressure'][1] + '<\font>')
         self.humidityLabel = QLabel('<font size="3" color=grey><b>Humidity<\b><\font>')
-        self.humidityValue = QLabel('<font color=grey>' + self.weatherdata['Humidity'][0] + ' ' + 
+        self.humidityValue = QLabel('<font color=grey>' + self.weatherdata['Humidity'][0] + ' ' +
                                     self.weatherdata['Humidity'][1] + '<\font>')
         self.overGrid.addWidget(self.windLabel, 0,0)
         self.overGrid.addWidget(self.wind, 0,1)
@@ -62,8 +62,8 @@ class OverviewCity(QDialog):
         self.totalLayout.addLayout(self.overLayout)
         self.totalLayout.addLayout(self.overGrid)
         self.setLayout(self.totalLayout)
-    
+
     def tempunit(self, unit):
         unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
         return unitsDico[unit]
-        
+
