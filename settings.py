@@ -10,7 +10,7 @@ class MeteoSettings(QDialog):
     def __init__(self, accurate_url, parent=None):
         super(MeteoSettings, self).__init__(parent)
         self.layout = QVBoxLayout()
-        self.accurate_url = accurate_url        
+        self.accurate_url = accurate_url
         self.settings = QSettings()
         self.setCity = self.settings.value('City') or '?'
         self.setLanguage = self.settings.value('Language') or 'en'
@@ -46,7 +46,7 @@ class MeteoSettings(QDialog):
         self.connect(self.unitsCombo, SIGNAL('currentIndexChanged(int)'), self.units)
         
         self.buttonLayout = QHBoxLayout()
-        self.buttonLayout.addStretch()       
+        self.buttonLayout.addStretch()
         buttonBox = QDialogButtonBox(QDialogButtonBox.Close)
         self.buttonLayout.addWidget(buttonBox)
         self.connect(buttonBox, SIGNAL("rejected()"), self.reject)
@@ -62,19 +62,19 @@ class MeteoSettings(QDialog):
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
         self.setWindowTitle('Meteo-qt Configuration')
-    
+
     def units(self):
         unit = self.unitsCombo.currentText()
         setUnit = [key for key, value in self.unitsDico.items() if value == unit]
         self.settings.setValue('Unit', setUnit[0])
         print('Write ', 'Unit', setUnit[0])
-    
+
     def language(self):
         lang = self.languageCombo.currentText()
         setlang = [key for key, value in self.language_dico.items() if value == lang]
         self.settings.setValue('Language', setlang[0])
         print('Write ', 'Language', setlang[0])
-        
+
     def searchcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
         for e in 'id','city','country':
@@ -82,9 +82,7 @@ class MeteoSettings(QDialog):
         if dialog.exec_():
             self.setCity = self.settings.value('City') or '?'
             self.cityLabel.setText(self.setCity)
-            
+
     def savesettings(self, what):
         self.settings.setValue(what[0], what[1])
         print('write ', what[0], what[1])
-        
-
