@@ -10,6 +10,7 @@ import sys
 import urllib.request
 from lxml import etree
 import platform
+import os
 import qrc_resources
 import settings
 import overview
@@ -34,11 +35,11 @@ class SystemTrayIcon(QMainWindow):
         self.timer = QTimer(self)
         QObject.connect(self.timer, SIGNAL("timeout()"), self.refresh)
         self.menu = QMenu()
-        tempCityAction = QAction('&Temporary city', self)
-        refreshAction = QAction('&Update', self)
-        settingsAction = QAction('&Settings', self)
-        aboutAction = QAction('&About', self)
-        exitAction = QAction('Exit', self)
+        tempCityAction = QAction(self.tr('&Temporary city'), self)
+        refreshAction = QAction(self.tr('&Update'), self)
+        settingsAction = QAction(self.tr('&Settings'), self)
+        aboutAction = QAction(self.tr('&About'), self)
+        exitAction = QAction(self.tr('Exit'), self)
         exitAction.setIcon(QIcon(':/exit'))
         aboutAction.setIcon(QIcon(':/info'))
         refreshAction.setIcon(QIcon(':/refresh'))
@@ -54,16 +55,16 @@ class SystemTrayIcon(QMainWindow):
         self.connect(refreshAction, SIGNAL('triggered()'), self.refresh)
         self.connect(aboutAction, SIGNAL('triggered()'), self.about)
         self.connect(tempCityAction, SIGNAL('triggered()'), self.tempcity)
-        self.systray = QSystemTrayIcon()        
+        self.systray = QSystemTrayIcon()
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
-        self.systray.setToolTip('Searching weather data...')
+        self.systray.setToolTip(self.tr('Searching weather data...'))
         self.systray.show()
         self.refresh()
-    
+
     def refresh(self):
-        self.systray.setToolTip('Fetching weather data ...')
-        self.settings = QSettings()     
+        self.systray.setToolTip(self.tr('Fetching weather data ...'))
+        self.settings = QSettings()
         self.city = self.settings.value('City') or 'Kalamata'
         self.id_ = self.settings.value('ID')
         if self.id_ == None:
@@ -76,12 +77,12 @@ class SystemTrayIcon(QMainWindow):
         self.suffix = ('&mode=xml&units=' + self.unit + lang_suffix)
         self.update()
         self.timer.start(1800000)
-        
+
     def firsttime(self):
         self.systray.showMessage('meteo-qt:\n',
-                                 'There is no any city configured\n' +
-                                 'Right click on the icon and click on Settings')
-        
+                                 self.tr('There is no any city configured\n') +
+                                 self.tr('Right click on the icon and click on Settings'))
+
     def update(self):
         print('update')
         self.wIcon = QPixmap(':/noicon')
@@ -100,10 +101,10 @@ class SystemTrayIcon(QMainWindow):
         self.connect(self.downloadThread,
                      SIGNAL('done(int)'), self.done)
         self.downloadThread.start()
-        
+
     def forecast(self, data):
         self.forecast_data = data
-    
+
     def done(self, done):
         if done == 0:
             self.inerror = False
@@ -117,7 +118,7 @@ class SystemTrayIcon(QMainWindow):
                 self.overview()
         except:
             pass
-        
+
     def error(self, error):
         print('error')
         what = error[error.find('@')+1:]
@@ -127,7 +128,7 @@ class SystemTrayIcon(QMainWindow):
             self.forecast_inerror = True
         elif what == 'icon':
             return
-        self.systray.setToolTip('meteo-qt: Cannot find data!')
+        self.systray.setToolTip(self.tr('meteo-qt: Cannot find data!'))
         if self.tentatives >= 10:
             mdialog = QMessageBox.critical(
                 self, 'meteo-qt', error, QMessageBox.Ok)
@@ -136,14 +137,14 @@ class SystemTrayIcon(QMainWindow):
         else:
             self.tentatives += 1
             self.timer.singleShot(2000, self.update)
-    
+
     def makeicon(self, data):
         image = QImage()
         image.loadFromData(data)
         self.wIcon = QPixmap(image)
         # Keep a reference of the image to update the icon in overview
         self.updateicon = self.wIcon
-     
+
     def weatherdata(self, tree):
         if self.inerror:
             return
@@ -175,7 +176,7 @@ class SystemTrayIcon(QMainWindow):
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
         pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
-        pt.end()         
+        pt.end()
         self.systray.setIcon(QIcon(self.icon))
 
     def activate(self, reason):
@@ -189,29 +190,29 @@ class SystemTrayIcon(QMainWindow):
                 self.overview()
         elif reason == 1:
             self.menu.popup(QCursor.pos())
-    
+
     def overview(self):
         if self.inerror or len(self.weatherDataDico) == 0:
             return
-        self.overviewcity = overview.OverviewCity(self.weatherDataDico, self.wIcon, 
+        self.overviewcity = overview.OverviewCity(self.weatherDataDico, self.wIcon,
                                        self.forecast_inerror, self.forecast_data,
                                     self.unit, self)
         self.overviewcity.show()
-        
+
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
         if dialog.exec_() == 0:
-            (city, id_, country, lang, unit) = (self.settings.value('City'), 
-                                          self.settings.value('ID'), 
+            (city, id_, country, lang, unit) = (self.settings.value('City'),
+                                          self.settings.value('ID'),
                                           self.settings.value('Country'),
                                           self.settings.value('Language'),
                                           self.settings.value('Unit'))
-            if (city == self.city and id_ == self.id_ and 
+            if (city == self.city and id_ == self.id_ and
                 country == self.country and lang == self.lang and unit == self.unit):
                 return
             else:
                 self.refresh()
-    
+
     def tempcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
         self.id_2, self.city2, self.country2 = (self.settings.value('ID'),
@@ -220,19 +221,19 @@ class SystemTrayIcon(QMainWindow):
         for e in 'id','city','country':
             self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.citydata)
         if dialog.exec_():
-            self.systray.setToolTip('Fetching weather data ...')
+            self.systray.setToolTip(self.tr('Fetching weather data ...'))
             self.refresh()
             # Restore the initial settings
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
-        
+
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
         print('write ', what[0], what[1])
-        
+
     def about(self):
-        QMessageBox.about(self, "Application for weather status information",
-                        """<b>meteo-qt</b> v{0}
+        QMessageBox.about(self, self.tr("Application for weather status information"),
+                        self.tr("""<b>meteo-qt</b> v{0}
                         <p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
                         <br/>information on the system tray.
@@ -240,11 +241,11 @@ class SystemTrayIcon(QMainWindow):
                         https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
                         http://openweathermap.org/</a>.
-                        <p>License: GPLv3 <br/>Python {1} - Qt {2} - PyQt {3} on {4}""".format(
+                        <p>License: GPLv3 <br/>Python {1} - Qt {2} - PyQt {3} on {4}""").format(
                         __version__, platform.python_version(),
                         QT_VERSION_STR, PYQT_VERSION_STR, platform.system()))
-                        
-                        
+
+
 class Download(QThread):
     def __init__(self, iconurl, baseurl, forecast_url, id_, suffix):
         QThread.__init__(self)
@@ -253,10 +254,10 @@ class Download(QThread):
         self.forecast_url = forecast_url
         self.id_ = id_
         self.suffix = suffix
-        
+
     def __del__(self):
         self.wait()
- 
+
     def run(self):
         done = False
         done = 0
@@ -281,13 +282,13 @@ class Download(QThread):
                 done = 1
             self.emit(SIGNAL('xmlpage(PyQt_PyObject)'), tree)
             self.emit(SIGNAL('wimage(PyQt_PyObject)'), data)
-            self.emit(SIGNAL('forecast_rawpage(PyQt_PyObject)'), treeforecast) 
+            self.emit(SIGNAL('forecast_rawpage(PyQt_PyObject)'), treeforecast)
             self.emit(SIGNAL('done(int)'), int(done))
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             error = 'Error ' + str(error.code) + ' ' + str(error.reason)
             self.emit(SIGNAL('error(QString)'), error)
         print('Download thread done')
-        
+
     def html404(self, page, what):
         try:
             dico = eval(page.decode('utf-8'))
@@ -298,10 +299,19 @@ class Download(QThread):
             return True
         except:
             return False
-        
+
 def main():
     app = QApplication(sys.argv)
     app.setQuitOnLastWindowClosed(False)
+    filePath = os.path.dirname(os.path.realpath(__file__))
+    locale = QLocale.system().name()
+    appTranslator = QTranslator()
+    appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
+    app.installTranslator(appTranslator)
+    qtTranslator = QTranslator()
+    qtTranslator.load("qt_" + locale,
+                      QLibraryInfo.location(QLibraryInfo.TranslationsPath))
+    app.installTranslator(qtTranslator)
     app.setOrganizationName('meteo-qt')
     app.setOrganizationDomain('meteo-qt')
     app.setApplicationName('meteo-qt')
