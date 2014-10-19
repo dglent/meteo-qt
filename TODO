@@ -1,5 +1,7 @@
-- Localisation support for the application
-- Localisation support for weather descriptions
+- Localisation support for the application issue#9
+- Localisation support for weather descriptions (cloudiness, wind)
 - Forecast
 - logging
-- setup file
+- setup file issue#5
+- Ask to set the city at fist run instead 'Kalamata' as a predefined issue#10
+- Add supoort for multiple locations issue#4
