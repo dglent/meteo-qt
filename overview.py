@@ -27,6 +27,7 @@ class OverviewCity(QDialog):
         self.tempLabel = QLabel('<font size="5"><b>' + self.weatherdata['Temp'][:-1] +
                                ' ' + self.unitTemp + '<\b><\font>')
         self.iconTempLayout.addWidget(self.tempLabel)
+        self.iconTempLayout.addStretch()
         self.overLayout.addLayout(self.iconTempLayout)
         self.weather = QLabel('<font size="4"><b>' + self.weatherdata['Meteo'] +
                              '<\b><\font>')
