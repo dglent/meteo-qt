@@ -5,6 +5,7 @@ from PyQt4.QtGui import *
 import datetime
 import urllib.request
 from lxml import etree
+import time
 
 
 
@@ -78,7 +79,20 @@ class OverviewCity(QDialog):
                                     self.tr('Humidity') + '<\b><\font>')
         self.humidityValue = QLabel('<font color=grey>' + self.weatherdata['Humidity'][0] + ' ' +
                                     self.weatherdata['Humidity'][1] + '<\font>')
-
+        # convert from UTC to local time
+        self.sunrise_label = QLabel('<font color=grey><b>' + self.tr('Sunrise') + '</b></font>')
+        sunrise = self.weatherdata['Sunrise'].split('T')[1].split(':')
+        rise_time = QTime(int(sunrise[0]),int(sunrise[1]),int(sunrise[2]))
+        rise_ = rise_time.addSecs(time.localtime().tm_gmtoff)
+        rise_str = rise_.toString()
+        self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
+        self.sunset_label = QLabel('<font color=grey><b>' + self.tr('Sunset') + '</b></font>')
+        sunset = self.weatherdata['Sunset'].split('T')[1].split(':')
+        set_time = QTime(int(sunset[0]),int(sunset[1]),int(sunset[2]))
+        set_ = set_time.addSecs(time.localtime().tm_gmtoff)
+        set_str = set_.toString()
+        self.sunset_value = QLabel('<font color=grey>' + set_str + '</font>')
+        #----------------------------------
         self.overGrid.addWidget(self.windLabel, 0,0)
         self.overGrid.addWidget(self.wind, 0,1)
         self.overGrid.addWidget(self.cloudsLabel, 1,0)
@@ -86,7 +100,11 @@ class OverviewCity(QDialog):
         self.overGrid.addWidget(self.pressureLabel, 2,0)
         self.overGrid.addWidget(self.pressureValue, 2,1)
         self.overGrid.addWidget(self.humidityLabel, 3,0)
-        self.overGrid.addWidget(self.humidityValue, 3,1,1,3)
+        self.overGrid.addWidget(self.humidityValue, 3,1,1,3) # keeps alignment left
+        self.overGrid.addWidget(self.sunrise_label, 4,0)
+        self.overGrid.addWidget(self.sunrise_value, 4,1)
+        self.overGrid.addWidget(self.sunset_label, 5,0)
+        self.overGrid.addWidget(self.sunset_value, 5,1)
 
         #--------------Forecast---------------------
         self.forecastDaysLayout = QHBoxLayout()
@@ -105,8 +123,6 @@ class OverviewCity(QDialog):
             self.iconfetch()
         self.setLayout(self.totalLayout)
 
-
-
     def forecastdata(self):
         for d in range(1,7):
             day = self.tree[4][d].get('day')
@@ -118,10 +134,10 @@ class OverviewCity(QDialog):
                            '')
             label.setAlignment(Qt.AlignHCenter)
             self.forecastDaysLayout.addWidget(label)
-            mlabel = QLabel('<font color=grey>'+'{0:.0f}'.format(float(self.tree[4][d][4].get('min'))) + '°<br/>' +
-                            '{0:.0f}'.format(float(self.tree[4][d][4].get('max'))) + '°'+'</font>')
+            mlabel = QLabel('<font color=grey>'+'{0:.0f}'.format(float(self.tree[4][d][4].get('min'))) +
+                            '°<br/>' + '{0:.0f}'.format(float(self.tree[4][d][4].get('max'))) + '°</font>')
             mlabel.setAlignment(Qt.AlignHCenter)
-            mlabel.setToolTip('Min Max Temperature of the day')
+            mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecastMinMAxLayout.addWidget(mlabel)
             self.icon_list.append(self.tree[4][d][0].get('var')) #icon
             self.forecast_weather_list.append(self.tree[4][d][0].get('name')) #weather
@@ -139,7 +155,6 @@ class OverviewCity(QDialog):
         iconpixmap = QPixmap(image)
         iconlabel.setPixmap(iconpixmap)
         iconlabel.setToolTip(self.forecast_weather_list.pop(0))
-
         self.forecastIconsLayout.addWidget(iconlabel)
 
     def error(self, error):

@@ -186,6 +186,8 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Clouds'] = tree[5].get('name')
         self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
+        self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
+        self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
     def tray(self):
         print('Paint tray icon')
