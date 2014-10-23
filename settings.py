@@ -23,7 +23,7 @@ class MeteoSettings(QDialog):
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
         self.languageCombo.setToolTip(self.tr('The language for the weather descriptions'))
-        self.language_dico = {'en': 'English', 'ru': 'Russian', 'it': 'Italian', 'es': 'Spanish',
+        self.language_dico = {'en': self.tr('English'), 'ru': self.tr('Russian'), 'it': self.tr('Italian'), 'es': 'Spanish',
                               'uk': 'Ukrainian', 'de': 'German', 'pt': 'Portuguese', 'ro': 'Romanian',
                               'pl': 'Polish', 'fi': 'Finnish', 'nl': 'Dutch', 'fr': 'French',
                               'bg': 'Bulgarian', 'sv': 'Swedish', 'zh_tw': 'Chinese Traditional',

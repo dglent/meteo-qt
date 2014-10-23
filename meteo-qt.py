@@ -17,7 +17,7 @@ import overview
 import searchcity
 
 
-__version__ = "0.1"
+__version__ = "0.1.0"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -30,8 +30,9 @@ class SystemTrayIcon(QMainWindow):
         self.tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
-        self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast?id='
+        self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
         self.wIconUrl = 'http://openweathermap.org/img/w/'
+        self.forecats_icon_url = self.wIconUrl
         self.timer = QTimer(self)
         QObject.connect(self.timer, SIGNAL("timeout()"), self.refresh)
         self.menu = QMenu()
@@ -63,6 +64,12 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def refresh(self):
+        if hasattr(self, 'overviewcity'):
+            # if visible, it has to ...remain visible
+            if not self.overviewcity.isVisible():
+            # kills the reference to overviewcity
+            # in order to be refreshed
+                self.overviewcity.close()
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
         self.city = self.settings.value('City') or 'Kalamata'
@@ -111,13 +118,28 @@ class SystemTrayIcon(QMainWindow):
             self.tentatives = 0
         elif done == 1:
             self.systray.setIcon(QIcon(':/noicon'))
+        if hasattr(self, 'updateicon'):
+            # Keep a reference of the image to update the icon in overview
+            self.wIcon = self.updateicon
         try:
             if self.overviewcity.isVisible():
                 self.overviewcity.hide()
-                self.wIcon = self.updateicon
-                self.overview()
+                if hasattr(self, 'forecast_data'):
+                    self.overviewcity = overview.OverviewCity(
+                        self.weatherDataDico, self.wIcon,
+                        self.forecast_inerror, self.forecast_data,
+                        self.unit, self.forecats_icon_url, self)
+                    self.overview()
+                else:
+                    return
         except:
-            pass
+            if hasattr(self, 'forecast_data'):
+                self.overviewcity = overview.OverviewCity(
+                    self.weatherDataDico, self.wIcon, self.forecast_inerror,
+                    self.forecast_data, self.unit, self.forecats_icon_url,
+                    self)
+            else:
+                return
 
     def error(self, error):
         print('error')
@@ -185,8 +207,11 @@ class SystemTrayIcon(QMainWindow):
                 if self.overviewcity.isVisible():
                     self.overviewcity.hide()
                 else:
+                    self.overviewcity.hide()
+                    self.done(0)
                     self.overview()
             except:
+                self.done(0)
                 self.overview()
         elif reason == 1:
             self.menu.popup(QCursor.pos())
@@ -194,9 +219,9 @@ class SystemTrayIcon(QMainWindow):
     def overview(self):
         if self.inerror or len(self.weatherDataDico) == 0:
             return
-        self.overviewcity = overview.OverviewCity(self.weatherDataDico, self.wIcon,
-                                       self.forecast_inerror, self.forecast_data,
-                                    self.unit, self)
+        #self.overviewcity = overview.OverviewCity(self.weatherDataDico, self.wIcon,
+                                       #self.forecast_inerror, self.forecast_data,
+                                    #self.unit, self.forecats_icon_url, self)
         self.overviewcity.show()
 
     def config(self):
@@ -263,7 +288,7 @@ class Download(QThread):
         done = 0
         try:
             req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix)
-            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix)
+            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix + '&cnt=7')
             page = req.read()
             pageforecast = reqforecast.read()
             if self.html404(page, 'city'):
