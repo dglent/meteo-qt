@@ -1,5 +1,4 @@
 - Localisation support for weather descriptions (cloudiness, wind)
-- Forecast
 - logging
 - setup file issue#5
 - Ask to set the city at fist run instead 'Kalamata' as a predefined issue#10
