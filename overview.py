@@ -123,6 +123,8 @@ class OverviewCity(QDialog):
             self.iconfetch()
         self.setLayout(self.totalLayout)
 
+
+
     def forecastdata(self):
         for d in range(1,7):
             day = self.tree[4][d].get('day')

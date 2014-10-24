@@ -83,7 +83,8 @@ class SystemTrayIcon(QMainWindow):
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit + lang_suffix)
         self.update()
-        self.timer.start(1800000)
+        self.interval = int(self.settings.value('Interval'))*60*1000
+        self.timer.start(self.interval)
 
     def firsttime(self):
         self.systray.showMessage('meteo-qt:\n',
@@ -154,7 +155,7 @@ class SystemTrayIcon(QMainWindow):
         if self.tentatives >= 10:
             mdialog = QMessageBox.critical(
                 self, 'meteo-qt', error, QMessageBox.Ok)
-            self.timer.start(1800000)
+            self.timer.start(self.interval)
             self.tentatives = 0
         else:
             self.tentatives += 1
@@ -229,13 +230,15 @@ class SystemTrayIcon(QMainWindow):
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
         if dialog.exec_() == 0:
-            (city, id_, country, lang, unit) = (self.settings.value('City'),
+            (city, id_, country, lang, unit, interval) = (self.settings.value('City'),
                                           self.settings.value('ID'),
                                           self.settings.value('Country'),
                                           self.settings.value('Language'),
-                                          self.settings.value('Unit'))
+                                          self.settings.value('Unit'),
+                                          self.settings.value('Interval'))
             if (city == self.city and id_ == self.id_ and
-                country == self.country and lang == self.lang and unit == self.unit):
+                country == self.country and lang == self.lang and
+                unit == self.unit and str(int(self.interval/1000/60)) == interval):
                 return
             else:
                 self.refresh()
