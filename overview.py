@@ -6,6 +6,7 @@ import datetime
 import urllib.request
 from lxml import etree
 import time
+import conditions
 
 
 
@@ -29,6 +30,11 @@ class OverviewCity(QDialog):
         '5': self.tr('Sat'),
         '6': self.tr('Sun')
         }
+        cond = conditions.WeatherConditions()
+        self.conditions = cond.trans
+        self.cond_locales = cond.locales
+        self.settings = QSettings()
+        self.lang = self.settings.value('Language') or 'en'
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
         self.forecast_inerror = forecast_inerror
@@ -122,6 +128,7 @@ class OverviewCity(QDialog):
             self.forecastdata()
             self.iconfetch()
         self.setLayout(self.totalLayout)
+        self.setWindowTitle(self.tr('Weather status'))
 
 
 
@@ -142,7 +149,13 @@ class OverviewCity(QDialog):
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecastMinMAxLayout.addWidget(mlabel)
             self.icon_list.append(self.tree[4][d][0].get('var')) #icon
-            self.forecast_weather_list.append(self.tree[4][d][0].get('name')) #weather
+            weather_cond = self.tree[4][d][0].get('name')
+            if self.lang in self.cond_locales:
+                try:
+                    weather_cond = self.conditions[self.tree[4][d][0].get('number')]
+                except:
+                    pass
+            self.forecast_weather_list.append(weather_cond) #weather
 
     def iconfetch(self):
         self.download_thread = IconDownload(self.icon_url, self.icon_list)

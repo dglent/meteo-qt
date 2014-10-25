@@ -24,12 +24,17 @@ class MeteoSettings(QDialog):
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
         self.languageCombo.setToolTip(self.tr('The language for the weather descriptions'))
-        self.language_dico = {'en': self.tr('English'), 'ru': self.tr('Russian'), 'it': self.tr('Italian'), 'es': 'Spanish',
-                              'uk': 'Ukrainian', 'de': 'German', 'pt': 'Portuguese', 'ro': 'Romanian',
-                              'pl': 'Polish', 'fi': 'Finnish', 'nl': 'Dutch', 'fr': 'French',
-                              'bg': 'Bulgarian', 'sv': 'Swedish', 'zh_tw': 'Chinese Traditional',
-                              'zh_cn': 'Chinese Simplified', 'tr': 'Turkish', 'hr': 'Croatian',
-                              'cd': 'Catalan'}
+        self.language_dico = {'en': self.tr('English'), 'ru': self.tr('Russian'),
+                              'it': self.tr('Italian'), 'es': self.tr('Spanish'),
+                              'uk': self.tr('Ukrainian'), 'de': self.tr('German'),
+                              'pt': self.tr('Portuguese'), 'ro': self.tr('Romanian'),
+                              'pl': self.tr('Polish'), 'fi': self.tr('Finnish'),
+                              'nl': self.tr('Dutch'), 'fr': self.tr('French'),
+                              'bg': self.tr('Bulgarian'), 'sv': self.tr('Swedish'),
+                              'zh_tw': self.tr('Chinese Traditional'),
+                              'zh_cn': self.tr('Chinese Simplified'),
+                              'tr': self.tr('Turkish'), 'hr': self.tr('Croatian'),
+                              'cd': self.tr('Catalan'), 'el': self.tr('Greek')}
         lang_list = list(c for l,c in self.language_dico.items())
         lang_list.sort()
         self.languageCombo.addItems(lang_list)

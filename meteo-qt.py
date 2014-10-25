@@ -15,6 +15,7 @@ import qrc_resources
 import settings
 import overview
 import searchcity
+import conditions
 
 
 __version__ = "0.1.0"
@@ -24,6 +25,9 @@ class SystemTrayIcon(QMainWindow):
 
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
+        cond = conditions.WeatherConditions()
+        self.conditions = cond.trans
+        self.cond_locales = cond.locales
         self.weatherDataDico = {}
         self.inerror = False
         self.forecast_inerror = False
@@ -122,6 +126,7 @@ class SystemTrayIcon(QMainWindow):
         if hasattr(self, 'updateicon'):
             # Keep a reference of the image to update the icon in overview
             self.wIcon = self.updateicon
+        # Update also the overview dialog if open
         try:
             if self.overviewcity.isVisible():
                 self.overviewcity.hide()
@@ -174,6 +179,12 @@ class SystemTrayIcon(QMainWindow):
         self.tempFloat = tree[1].get('value')
         self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
         self.meteo = tree[8].get('value')
+        meteo_condition = tree[8].get('number')
+        if self.lang in self.cond_locales:
+            try:
+                self.meteo = self.conditions[meteo_condition]
+            except:
+                pass
         self.systray.setToolTip(self.city + ' '  + self.country + ' ' +
                                 self.temp + ' ' + self.meteo)
         self.weatherDataDico['City'] = self.city
@@ -338,6 +349,9 @@ def main():
     appTranslator = QTranslator()
     appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
     app.installTranslator(appTranslator)
+    conditionsTranslator = QTranslator()
+    conditionsTranslator.load(filePath + '/translations/conditions_' + locale)
+    app.installTranslator(conditionsTranslator)
     qtTranslator = QTranslator()
     qtTranslator.load("qt_" + locale,
                       QLibraryInfo.location(QLibraryInfo.TranslationsPath))
