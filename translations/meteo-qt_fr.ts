@@ -127,6 +127,21 @@
         <source>Catalan</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="settings.py" line="20"/>
+        <source>City</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="53"/>
+        <source>Update interval</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="54"/>
+        <source>minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OverviewCity</name>

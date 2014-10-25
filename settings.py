@@ -17,7 +17,7 @@ class MeteoSettings(QDialog):
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
         self.cityLabel = QLabel(self.set_city)
-        self.cityTitle = QLabel('City :')
+        self.cityTitle = QLabel(self.tr('City'))
         self.cityButton = QPushButton()
         self.cityButton.setIcon(QIcon(':/configure'))
         self.cityButton.setToolTip(self.tr('Click to modify the city'))
@@ -50,8 +50,8 @@ class MeteoSettings(QDialog):
         self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
             self.unitsDico[self.tempUnit]))
         self.connect(self.unitsCombo, SIGNAL('currentIndexChanged(int)'), self.units)
-        self.interval_label = QLabel('Update interval')
-        self.interval_min = QLabel('minutes')
+        self.interval_label = QLabel(self.tr('Update interval'))
+        self.interval_min = QLabel(self.tr('minutes'))
         self.interval_combo = QComboBox()
         self.interval_list = ['15','30','45','60','90','120']
         self.interval_combo.addItems(self.interval_list)
