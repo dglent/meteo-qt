@@ -3,7 +3,11 @@ meteo-qt
 
 System tray application for weather status information
 
-## Screenshot
+##### Requirements
+python3-lxml  
+python3-qt4
+
+##### Screenshot
 
 <a>
   <img src="https://raw.github.com/dglent/meteo-qt/master/meteo-qt.png"/>
