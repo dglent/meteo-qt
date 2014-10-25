@@ -87,7 +87,7 @@ class SystemTrayIcon(QMainWindow):
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit + lang_suffix)
         self.update()
-        self.interval = int(self.settings.value('Interval'))*60*1000
+        self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
 
     def firsttime(self):
