@@ -5,3 +5,4 @@
 - Add supoort for multiple locations issue#4
 - consistent code style issue#6
 - Add % of cloudiness
+- Port to Qt5
