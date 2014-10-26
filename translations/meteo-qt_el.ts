@@ -294,19 +294,18 @@
     </message>
     <message>
         <location line="265" filename="meteo-qt.py"/>
-        <source>Fetching weather data ...</source>
+        <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
         <location line="94" filename="meteo-qt.py"/>
-        <source>There is no any city configured
-</source>
-        <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη</translation>
+        <source>No city has been configured yet.</source>
+        <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
         <location line="94" filename="meteo-qt.py"/>
-        <source>Right click on the icon and click on Settings</source>
-        <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις»</translation>
+        <source>Right click on the icon and click on Settings.</source>
+        <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
         <location line="159" filename="meteo-qt.py"/>

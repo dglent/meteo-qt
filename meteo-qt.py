@@ -92,8 +92,8 @@ class SystemTrayIcon(QMainWindow):
 
     def firsttime(self):
         self.systray.showMessage('meteo-qt:\n',
-                                 self.tr('There is no any city configured\n') +
-                                 self.tr('Right click on the icon and click on Settings'))
+                                 self.tr('No city has been configured yet.') + '\n' +
+                                 self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
         print('update')
@@ -262,7 +262,7 @@ class SystemTrayIcon(QMainWindow):
         for e in 'id','city','country':
             self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.citydata)
         if dialog.exec_():
-            self.systray.setToolTip(self.tr('Fetching weather data ...'))
+            self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
             # Restore the initial settings
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):

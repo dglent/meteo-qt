@@ -293,18 +293,17 @@
     </message>
     <message>
         <location filename="meteo-qt.py" line="265"/>
-        <source>Fetching weather data ...</source>
+        <source>Fetching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo-qt.py" line="94"/>
-        <source>There is no any city configured
-</source>
+        <source>No city has been configured yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo-qt.py" line="94"/>
-        <source>Right click on the icon and click on Settings</source>
+        <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
