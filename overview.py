@@ -167,6 +167,7 @@ class OverviewCity(QDialog):
         image = QImage()
         image.loadFromData(icon)
         iconlabel = QLabel()
+        iconlabel.setAlignment(Qt.AlignHCenter)
         iconpixmap = QPixmap(image)
         iconlabel.setPixmap(iconpixmap)
         iconlabel.setToolTip(self.forecast_weather_list.pop(0))
