@@ -85,7 +85,7 @@ class OverviewCity(QDialog):
                                     self.tr('Humidity') + '<\b><\font>')
         self.humidityValue = QLabel('<font color=grey>' + self.weatherdata['Humidity'][0] + ' ' +
                                     self.weatherdata['Humidity'][1] + '<\font>')
-        # convert from UTC to local time
+        # Convert sun rise/set from UTC to local time
         self.sunrise_label = QLabel('<font color=grey><b>' + self.tr('Sunrise') + '</b></font>')
         sunrise = self.weatherdata['Sunrise'].split('T')[1].split(':')
         rise_time = QTime(int(sunrise[0]),int(sunrise[1]),int(sunrise[2]))
@@ -129,8 +129,8 @@ class OverviewCity(QDialog):
             self.iconfetch()
         self.setLayout(self.totalLayout)
         self.setWindowTitle(self.tr('Weather status'))
-
-
+        self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
+                QByteArray()))
 
     def forecastdata(self):
         for d in range(1,7):
@@ -175,6 +175,8 @@ class OverviewCity(QDialog):
     def error(self, error):
         print('error in download of forecast icon:\n', error)
 
+    def closeEvent(self, event):
+        self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
 
 class IconDownload(QThread):
     def __init__(self, icon_url, icon):
