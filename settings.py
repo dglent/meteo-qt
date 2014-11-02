@@ -58,8 +58,9 @@ class MeteoSettings(QDialog):
                               'zh_tw': self.tr('Chinese Traditional'),
                               'zh_cn': self.tr('Chinese Simplified')
                                }
-        lang_list = list(c for l,c in self.language_dico.items())
-        lang_list.sort()
+        #lang_list = list(c for l,c in self.language_dico.items())
+        #lang_list.sort()
+        lang_list = sorted(self.language_dico.values())
         # English as fallback language
         if locale not in self.language_dico:
             locale = 'en'
