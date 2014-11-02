@@ -32,9 +32,7 @@ class OverviewCity(QDialog):
         }
         cond = conditions.WeatherConditions()
         self.conditions = cond.trans
-        self.cond_locales = cond.locales
         self.settings = QSettings()
-        self.lang = self.settings.value('Language') or 'en'
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
         self.forecast_inerror = forecast_inerror
@@ -75,8 +73,7 @@ class OverviewCity(QDialog):
                           self.weatherdata['Wind'][4] + '<\font>')
         self.cloudsLabel = QLabel('<font size="3" color=grey><b>' +
                                   self.tr('Cloudiness') + '<\b><\font>')
-        self.cloudsName = QLabel('<font color=grey>' + self.weatherdata['Clouds'] +
-                                 '<\font>')
+        self.cloudsName = QLabel('<font color=grey>' + self.weatherdata['Clouds'] + '<\font>')
         self.pressureLabel = QLabel('<font size="3" color=grey><b>' +
                                     self.tr('Pressure') + '<\b><\font>')
         self.pressureValue = QLabel('<font color=grey>' + self.weatherdata['Pressure'][0] + ' ' +
@@ -150,11 +147,11 @@ class OverviewCity(QDialog):
             self.forecastMinMAxLayout.addWidget(mlabel)
             self.icon_list.append(self.tree[4][d][0].get('var')) #icon
             weather_cond = self.tree[4][d][0].get('name')
-            if self.lang in self.cond_locales:
-                try:
-                    weather_cond = self.conditions[self.tree[4][d][0].get('number')]
-                except:
-                    pass
+            try:
+                weather_cond = self.conditions[self.tree[4][d][0].get('number')]
+            except:
+                print('Cannot find localisation string for :', weather_cond)
+                pass
             self.forecast_weather_list.append(weather_cond) #weather
 
     def iconfetch(self):

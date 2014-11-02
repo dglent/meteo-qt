@@ -27,7 +27,10 @@ class SystemTrayIcon(QMainWindow):
         super(SystemTrayIcon, self).__init__(parent)
         cond = conditions.WeatherConditions()
         self.conditions = cond.trans
-        self.cond_locales = cond.locales
+        self.clouds = cond.clouds
+        self.wind = cond.wind
+        self.wind_dir = cond.wind_direction
+        self.wind_codes = cond.wind_codes
         self.weatherDataDico = {}
         self.inerror = False
         self.forecast_inerror = False
@@ -38,7 +41,7 @@ class SystemTrayIcon(QMainWindow):
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         self.forecats_icon_url = self.wIconUrl
         self.timer = QTimer(self)
-        QObject.connect(self.timer, SIGNAL("timeout()"), self.refresh)
+        self.connect(self.timer, SIGNAL("timeout()"), self.refresh)
         self.menu = QMenu()
         tempCityAction = QAction(self.tr('&Temporary city'), self)
         refreshAction = QAction(self.tr('&Update'), self)
@@ -70,10 +73,13 @@ class SystemTrayIcon(QMainWindow):
     def refresh(self):
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
-            if not self.overviewcity.isVisible():
+            try:
+                if not self.overviewcity.isVisible():
             # kills the reference to overviewcity
             # in order to be refreshed
-                self.overviewcity.close()
+                    self.overviewcity.close()
+            except:
+                pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
         self.city = self.settings.value('City') or 'Kalamata'
@@ -82,10 +88,8 @@ class SystemTrayIcon(QMainWindow):
             self.timer.singleShot(10000, self.firsttime)
             self.id_ = '261604'
         self.country = self.settings.value('Country') or 'GR'
-        self.lang = self.settings.value('Language') or 'en'
-        lang_suffix = ('&lang=' + self.lang)
         self.unit = self.settings.value('Unit') or 'metric'
-        self.suffix = ('&mode=xml&units=' + self.unit + lang_suffix)
+        self.suffix = ('&mode=xml&units=' + self.unit)
         self.update()
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
@@ -180,11 +184,38 @@ class SystemTrayIcon(QMainWindow):
         self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
         self.meteo = tree[8].get('value')
         meteo_condition = tree[8].get('number')
-        if self.lang in self.cond_locales:
-            try:
-                self.meteo = self.conditions[meteo_condition]
-            except:
-                pass
+        try:
+            self.meteo = self.conditions[meteo_condition]
+        except:
+            print('Cannot find localisation string for meteo_condition:',meteo_condition)
+            pass
+        clouds = tree[5].get('name')
+        clouds_percent = tree[5].get('value') + '%'
+        try:
+            clouds = self.clouds[clouds]
+            clouds = self.conditions[clouds]
+        except:
+            print('Cannot find localisation string for clouds:', clouds)
+            pass
+        wind = tree[4][0].get('name').lower()
+        try:
+            wind = self.wind[wind]
+            wind = self.conditions[wind]
+        except:
+            print('Cannot find localisation string for wind:', wind)
+            pass
+        wind_codes = tree[4][1].get('code')
+        try:
+            wind_codes = self.wind_codes[wind_codes]
+        except:
+            print('Cannot find localisation string for wind_codes:', wind_codes)
+            pass
+        wind_dir = tree[4][1].get('name')
+        try:
+            wind_dir = self.wind_dir[tree[4][1].get('code')]
+        except:
+            print('Cannot find localisation string for wind_dir:', wind_dir)
+            pass
         self.systray.setToolTip(self.city + ' '  + self.country + ' ' +
                                 self.temp + ' ' + self.meteo)
         self.weatherDataDico['City'] = self.city
@@ -192,10 +223,10 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
         self.weatherDataDico['Meteo'] = self.meteo
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
-        self.weatherDataDico['Wind'] = (tree[4][0].get('value'), tree[4][0].get('name'),
-                                        tree[4][1].get('value'), tree[4][1].get('code'),
-                                        tree[4][1].get('name'))
-        self.weatherDataDico['Clouds'] = tree[5].get('name')
+        self.weatherDataDico['Wind'] = (tree[4][0].get('value'), wind + '<br/>',
+                                        tree[4][1].get('value'), wind_codes,
+                                        wind_dir)
+        self.weatherDataDico['Clouds'] = (clouds + '<br/>' + clouds_percent)
         self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
@@ -241,14 +272,13 @@ class SystemTrayIcon(QMainWindow):
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
         if dialog.exec_() == 0:
-            (city, id_, country, lang, unit, interval) = (self.settings.value('City'),
+            (city, id_, country, unit, interval) = (self.settings.value('City'),
                                           self.settings.value('ID'),
                                           self.settings.value('Country'),
-                                          self.settings.value('Language'),
                                           self.settings.value('Unit'),
                                           self.settings.value('Interval'))
             if (city == self.city and id_ == self.id_ and
-                country == self.country and lang == self.lang and
+                country == self.country and
                 unit == self.unit and str(int(self.interval/1000/60)) == interval):
                 return
             else:
@@ -344,8 +374,15 @@ class Download(QThread):
 def main():
     app = QApplication(sys.argv)
     app.setQuitOnLastWindowClosed(False)
+    app.setOrganizationName('meteo-qt')
+    app.setOrganizationDomain('meteo-qt')
+    app.setApplicationName('meteo-qt')
+    app.setWindowIcon(QIcon(':/logo'))
     filePath = os.path.dirname(os.path.realpath(__file__))
-    locale = QLocale.system().name()
+    settings = QSettings()
+    locale = settings.value('Language')
+    if locale == None or locale == '':
+        locale = QLocale.system().name()
     appTranslator = QTranslator()
     appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
     app.installTranslator(appTranslator)
@@ -356,10 +393,6 @@ def main():
     qtTranslator.load("qt_" + locale,
                       QLibraryInfo.location(QLibraryInfo.TranslationsPath))
     app.installTranslator(qtTranslator)
-    app.setOrganizationName('meteo-qt')
-    app.setOrganizationDomain('meteo-qt')
-    app.setApplicationName('meteo-qt')
-    app.setWindowIcon(QIcon(':/logo'))
     m = SystemTrayIcon()
     app.exec_()
 

@@ -13,7 +13,10 @@ class MeteoSettings(QDialog):
         self.accurate_url = accurate_url
         self.settings = QSettings()
         self.set_city = self.settings.value('City') or '?'
-        self.setLanguage = self.settings.value('Language') or 'en'
+        locale = QLocale.system().name().lower()
+        locale_long = ['pt_BR', 'zh_CN', 'zh_TW']
+        if locale not in locale_long:
+            locale = locale[:2]
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
         self.cityLabel = QLabel(self.set_city)
@@ -23,20 +26,44 @@ class MeteoSettings(QDialog):
         self.cityButton.setToolTip(self.tr('Click to modify the city'))
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
-        self.languageCombo.setToolTip(self.tr('The language for the weather descriptions'))
-        self.language_dico = {'en': self.tr('English'), 'ru': self.tr('Russian'),
-                              'it': self.tr('Italian'), 'es': self.tr('Spanish'),
-                              'uk': self.tr('Ukrainian'), 'de': self.tr('German'),
-                              'pt': self.tr('Portuguese'), 'ro': self.tr('Romanian'),
-                              'pl': self.tr('Polish'), 'fi': self.tr('Finnish'),
-                              'nl': self.tr('Dutch'), 'fr': self.tr('French'),
-                              'bg': self.tr('Bulgarian'), 'sv': self.tr('Swedish'),
+        self.languageCombo.setToolTip(
+            self.tr('The application has to be restared to apply the language setting'))
+        self.language_dico = {'bg': self.tr('Bulgarian'),
+                              'ca': self.tr('Catalan'),
+                              'cs': self.tr('Czech'),
+                              'da': self.tr('Danish'),
+                              'de': self.tr('German'),
+                              'el': self.tr('Greek'),
+                              'en': self.tr('English'),
+                              'es': self.tr('Spanish'),
+                              'fi': self.tr('Finnish'),
+                              'fr': self.tr('French'),
+                              'he': self.tr('Hebrew'),
+                              'hr': self.tr('Croatian'),
+                              'hu': self.tr('Hungarian'),
+                              'it': self.tr('Italian'),
+                              'ja': self.tr('Japanese'),
+                              'lt': self.tr('Lithuanian'),
+                              'nb': self.tr('Norwegian (Bokmaal)'),
+                              'nl': self.tr('Dutch'),
+                              'pl': self.tr('Polish'),
+                              'pt': self.tr('Portuguese'),
+                              'pt_BR': self.tr('Brazil Portuguese'),
+                              'ro': self.tr('Romanian'),
+                              'ru': self.tr('Russian'),
+                              'sk': self.tr('Slovak'),
+                              'sv': self.tr('Swedish'),
+                              'tr': self.tr('Turkish'),
+                              'uk': self.tr('Ukrainian'),
                               'zh_tw': self.tr('Chinese Traditional'),
-                              'zh_cn': self.tr('Chinese Simplified'),
-                              'tr': self.tr('Turkish'), 'hr': self.tr('Croatian'),
-                              'cd': self.tr('Catalan'), 'el': self.tr('Greek')}
+                              'zh_cn': self.tr('Chinese Simplified')
+                               }
         lang_list = list(c for l,c in self.language_dico.items())
         lang_list.sort()
+        # English as fallback language
+        if locale not in self.language_dico:
+            locale = 'en'
+        self.setLanguage = self.settings.value('Language') or locale
         self.languageCombo.addItems(lang_list)
         self.languageCombo.setCurrentIndex(self.languageCombo.findText
                                            (self.language_dico[self.setLanguage]))
@@ -45,7 +72,7 @@ class MeteoSettings(QDialog):
         self.unitsLabel = QLabel(self.tr('Temperature unit'))
         self.unitsCombo = QComboBox()
         self.unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
-        unitsList = list(t for l,t in self.unitsDico.items())
+        unitsList = sorted(self.unitsDico.values())
         self.unitsCombo.addItems(unitsList)
         self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
             self.unitsDico[self.tempUnit]))

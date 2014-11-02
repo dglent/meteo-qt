@@ -1,8 +1,6 @@
-- Localisation support for weather descriptions of cloudiness and wind
 - logging
 - setup file issue#5
 - Ask to set the city at fist run instead 'Kalamata' as a predefined issue#10
 - Add supoort for multiple locations issue#4
 - consistent code style issue#6
-- Add % of cloudiness
 - Port to Qt5

@@ -5,7 +5,6 @@ class WeatherConditions(QObject):
 
     def __init__(self, parent=None):
         super(WeatherConditions, self).__init__(parent)
-        self.locales = ['el']
         self.trans = {'200': self.tr('thunderstorm with light rain'),
                       '201': self.tr('thunderstorm with rain'),
                       '202': self.tr('thunderstorm with heavy rain'),
@@ -80,3 +79,59 @@ class WeatherConditions(QObject):
                       '961': self.tr('violent storm'),
                       '962': self.tr('hurricane')
                  }
+
+        self.clouds = { 'clear sky': '800',
+                      'few clouds': '801',
+                      'scattered clouds': '802',
+                      'broken clouds': '803',
+                      'overcast clouds': '804'
+                          }
+
+        self.wind = {'calm': '951',
+                     'light breeze': '952',
+                     'gentle breeze': '953',
+                     'moderate breeze': '954',
+                     'fresh breeze': '955',
+                     'strong breeze': '956',
+                     'high wind, near gale': '957',
+                     'gale': '958',
+                     'severe gale': '959',
+                     'storm': '960',
+                     'violent storm': '961',
+                     'hurricane': '962'
+                         }
+
+        self.wind_direction = {'N': self.tr('North'),
+                               'NE': self.tr('NorthEast'),
+                               'NNE': self.tr('North-northeast'),
+                               'NW': self.tr('NorthWest'),
+                               'NNW': self.tr('North-northwest'),
+                               'S': self.tr('South'),
+                               'SE': self.tr('SouthEast'),
+                               'SSE': self.tr('South-southeast'),
+                               'SW': self.tr('SouthWest'),
+                               'SSW': self.tr('South-southwest'),
+                               'E': self.tr('East'),
+                               'ESE': self.tr('East-southeast'),
+                               'ENE': self.tr('East-northeast'),
+                               'W': self.tr('West'),
+                               'WSW': self.tr('West-southwest'),
+                               'WNW': self.tr('West-northwest')
+                                   }
+        self.wind_codes = {'N': self.tr('N'),
+                           'NE': self.tr('NE'),
+                           'NNE': self.tr('NNE'),
+                           'NW': self.tr('NW'),
+                           'NNW': self.tr('NNW'),
+                           'S': self.tr('S'),
+                           'SE': self.tr('SE'),
+                           'SSE': self.tr('SSE'),
+                           'SW': self.tr('SW'),
+                           'SSW': self.tr('SSW'),
+                           'E': self.tr('E'),
+                           'ESE': self.tr('ESE'),
+                           'ENE': self.tr('ENE'),
+                           'W': self.tr('W'),
+                           'WSW': self.tr('WSW'),
+                           'WNW': self.tr('WNW')
+                                   }

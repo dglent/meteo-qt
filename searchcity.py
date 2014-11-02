@@ -29,6 +29,7 @@ class SearchCity(QDialog):
         self.buttonLayout.addWidget(self.buttonOk)
         self.buttonLayout.addWidget(self.buttonCancel)
         self.layout.addLayout(self.buttonLayout)
+        self.setMinimumWidth(int(len(self.line_search.text())*7.5))
         self.setLayout(self.layout)
         self.connect(self.line_search, SIGNAL("returnPressed()"), self.search)
         self.connect(self.buttonOk, SIGNAL("clicked()"), self.accept)
