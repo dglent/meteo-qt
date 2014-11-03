@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr_FR" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="fr_FR">
 <context>
     <name>MeteoSettings</name>
     <message>
@@ -40,7 +41,7 @@
     <message>
         <location filename="settings.py" line="29"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Les paramètres linguistiques seront pris en compte une fois l&apos;application relancée</translation>
     </message>
     <message>
         <location filename="settings.py" line="37"/>
@@ -145,47 +146,47 @@
     <message>
         <location filename="settings.py" line="33"/>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Tchèque</translation>
     </message>
     <message>
         <location filename="settings.py" line="34"/>
         <source>Danish</source>
-        <translation type="unfinished"></translation>
+        <translation>Danois</translation>
     </message>
     <message>
         <location filename="settings.py" line="41"/>
         <source>Hebrew</source>
-        <translation type="unfinished"></translation>
+        <translation>Hébreu</translation>
     </message>
     <message>
         <location filename="settings.py" line="43"/>
         <source>Hungarian</source>
-        <translation type="unfinished"></translation>
+        <translation>Hongrois</translation>
     </message>
     <message>
         <location filename="settings.py" line="45"/>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonais</translation>
     </message>
     <message>
         <location filename="settings.py" line="46"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>Lituanien</translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation type="unfinished"></translation>
+        <translation>Norvégien (Bokmål)</translation>
     </message>
     <message>
         <location filename="settings.py" line="51"/>
         <source>Brazil Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>Portugais du Brésil</translation>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
         <source>Slovak</source>
-        <translation type="unfinished"></translation>
+        <translation>Slovaque</translation>
     </message>
 </context>
 <context>
@@ -385,7 +386,7 @@
     <message>
         <location filename="meteo-qt.py" line="83"/>
         <source>Fetching weather data ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Acquisition des données météorologiques...</translation>
     </message>
 </context>
 <context>
@@ -393,222 +394,222 @@
     <message>
         <location filename="conditions.py" line="8"/>
         <source>thunderstorm with light rain</source>
-        <translation>Orage avec pluie légère</translation>
+        <translation>orage avec pluie légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="9"/>
         <source>thunderstorm with rain</source>
-        <translation>Orage avec pluie</translation>
+        <translation>orage avec pluie</translation>
     </message>
     <message>
         <location filename="conditions.py" line="10"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>Orage avec de fortes pluies</translation>
+        <translation>orage avec de fortes pluies</translation>
     </message>
     <message>
         <location filename="conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation>Orages isolés</translation>
+        <translation>orages isolés</translation>
     </message>
     <message>
         <location filename="conditions.py" line="12"/>
         <source>thunderstorm</source>
-        <translation>Orage</translation>
+        <translation>orage</translation>
     </message>
     <message>
         <location filename="conditions.py" line="13"/>
         <source>heavy thunderstorm</source>
-        <translation>Orage sévère</translation>
+        <translation>orage sévère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="14"/>
         <source>ragged thunderstorm</source>
-        <translation>Orages isolés</translation>
+        <translation>orages isolés</translation>
     </message>
     <message>
         <location filename="conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>Orage avec bruine légère</translation>
+        <translation>orage avec bruine légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="16"/>
         <source>thunderstorm with drizzle</source>
-        <translation>Orage avec bruine</translation>
+        <translation>orage avec bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="17"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation>Orage avec forte bruine</translation>
+        <translation>orage avec forte bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation>Bruine légère</translation>
+        <translation>bruine légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="19"/>
         <source>drizzle</source>
-        <translation>Bruine</translation>
+        <translation>bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="20"/>
         <source>heavy intensity drizzle</source>
-        <translation>Bruine forte</translation>
+        <translation>bruine de forte intensité</translation>
     </message>
     <message>
         <location filename="conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation>Bruine légère</translation>
+        <translation>bruine légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="22"/>
         <source>drizzle rain</source>
-        <translation>Bruine</translation>
+        <translation>bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="23"/>
         <source>heavy intensity drizzle rain</source>
-        <translation>Pluie forte</translation>
+        <translation>bruine de forte intensité</translation>
     </message>
     <message>
         <location filename="conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation>Averses</translation>
+        <translation>averses et bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>Fortes averses</translation>
+        <translation>fortes averses et bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation>Bruine</translation>
+        <translation>averses de bruine</translation>
     </message>
     <message>
         <location filename="conditions.py" line="27"/>
         <source>light rain</source>
-        <translation>Légère pluie</translation>
+        <translation>légère pluie</translation>
     </message>
     <message>
         <location filename="conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation>Pluie modérée</translation>
+        <translation>pluie modérée</translation>
     </message>
     <message>
         <location filename="conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation>Pluie forte</translation>
+        <translation>pluie forte</translation>
     </message>
     <message>
         <location filename="conditions.py" line="30"/>
         <source>very heavy rain</source>
-        <translation>Pluie très forte</translation>
+        <translation>pluie très forte</translation>
     </message>
     <message>
         <location filename="conditions.py" line="31"/>
         <source>extreme rain</source>
-        <translation>Pluie extrêmement forte</translation>
+        <translation>pluie extrêmement forte</translation>
     </message>
     <message>
         <location filename="conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation>Pluie verglaçante</translation>
+        <translation>pluie verglaçante</translation>
     </message>
     <message>
         <location filename="conditions.py" line="33"/>
         <source>light intensity shower rain</source>
-        <translation>Averses légères</translation>
+        <translation>averses légères</translation>
     </message>
     <message>
         <location filename="conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation>Averses</translation>
+        <translation>averses</translation>
     </message>
     <message>
         <location filename="conditions.py" line="35"/>
         <source>heavy intensity shower rain</source>
-        <translation>Fortes averses</translation>
+        <translation>fortes averses</translation>
     </message>
     <message>
         <location filename="conditions.py" line="36"/>
         <source>ragged shower rain</source>
-        <translation>Averses isolées</translation>
+        <translation>averses isolées</translation>
     </message>
     <message>
         <location filename="conditions.py" line="37"/>
         <source>light snow</source>
-        <translation>Faibles chutes de neige</translation>
+        <translation>faibles chutes de neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="38"/>
         <source>snow</source>
-        <translation>Neige</translation>
+        <translation>neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation>Fortes chutes de neige</translation>
+        <translation>fortes chutes de neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="40"/>
         <source>sleet</source>
-        <translation>Grésil</translation>
+        <translation>grésil</translation>
     </message>
     <message>
         <location filename="conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation>Grésil</translation>
+        <translation>averse de grésil</translation>
     </message>
     <message>
         <location filename="conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation>Neige et pluie</translation>
+        <translation>neige et pluie légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation>Neige et pluie</translation>
+        <translation>neige et pluie</translation>
     </message>
     <message>
         <location filename="conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation>Faibles averses de neige</translation>
+        <translation>faibles averses de neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation>Averses</translation>
+        <translation>averses de neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation>Fortes chutes de neige</translation>
+        <translation>fortes chutes de neige</translation>
     </message>
     <message>
         <location filename="conditions.py" line="47"/>
         <source>mist</source>
-        <translation>Brouillard</translation>
+        <translation>brouillard</translation>
     </message>
     <message>
         <location filename="conditions.py" line="48"/>
         <source>smoke</source>
-        <translation>Brume</translation>
+        <translation>brume épaisse</translation>
     </message>
     <message>
         <location filename="conditions.py" line="49"/>
         <source>haze</source>
-        <translation>Brume</translation>
+        <translation>brume</translation>
     </message>
     <message>
         <location filename="conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation>tourbillons de sable ou de poussière</translation>
     </message>
     <message>
         <location filename="conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation>brouillard</translation>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
@@ -623,207 +624,207 @@
     <message>
         <location filename="conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation>cendres volcaniques</translation>
     </message>
     <message>
         <location filename="conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation>rafales</translation>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation>tornade</translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation>ciel dégagé</translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation>Quelques nuages</translation>
+        <translation>quelques nuages</translation>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation>Nuages épars</translation>
+        <translation>nuages épars</translation>
     </message>
     <message>
         <location filename="conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation>Nuages épars</translation>
+        <translation>nuages épars</translation>
     </message>
     <message>
         <location filename="conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation>Couvert</translation>
+        <translation>couvert</translation>
     </message>
     <message>
         <location filename="conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation>tempête tropicale</translation>
     </message>
     <message>
         <location filename="conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation>ouragan</translation>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"></translation>
+        <translation>froid</translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"></translation>
+        <translation>chaud</translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"></translation>
+        <translation>venteux</translation>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
         <source>hail</source>
-        <translation type="unfinished"></translation>
+        <translation>grêle</translation>
     </message>
     <message>
         <location filename="conditions.py" line="69"/>
         <source>calm</source>
-        <translation type="unfinished"></translation>
+        <translation>calme</translation>
     </message>
     <message>
         <location filename="conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>brise légère</translation>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>petite brise</translation>
     </message>
     <message>
         <location filename="conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>brise modérée</translation>
     </message>
     <message>
         <location filename="conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>brise fraîche</translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>forte brise</translation>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>grand vent</translation>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>vent violent</translation>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation>vent très violent</translation>
     </message>
     <message>
         <location filename="conditions.py" line="78"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation>tempête</translation>
     </message>
     <message>
         <location filename="conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation>tempête violente</translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
         <source>North</source>
-        <translation type="unfinished"></translation>
+        <translation>nord</translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>NorthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>nord-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>nord-nord-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>NorthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>nord-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>nord-nord-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>South</source>
-        <translation type="unfinished"></translation>
+        <translation>sud</translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>SouthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>sud-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>sud-sud-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>SouthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>sud-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>South-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>sud-sud-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East</source>
-        <translation type="unfinished"></translation>
+        <translation>est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>est-sud-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>East-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>est-nord-est</translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West</source>
-        <translation type="unfinished"></translation>
+        <translation>ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>ouest-sud-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="119"/>
         <source>West-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>ouest-nord-ouest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
@@ -833,22 +834,22 @@
     <message>
         <location filename="conditions.py" line="122"/>
         <source>NE</source>
-        <translation type="unfinished"></translation>
+        <translation>NE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation>NNE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
         <source>NW</source>
-        <translation type="unfinished"></translation>
+        <translation>NO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="125"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation>NNO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
@@ -858,22 +859,22 @@
     <message>
         <location filename="conditions.py" line="127"/>
         <source>SE</source>
-        <translation type="unfinished"></translation>
+        <translation>SE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation>SSE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
         <source>SW</source>
-        <translation type="unfinished"></translation>
+        <translation>SO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="130"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation>SSO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
@@ -883,12 +884,12 @@
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation>ESE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation>ENE</translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>
@@ -898,12 +899,12 @@
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation>OSO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="136"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation>ONO</translation>
     </message>
 </context>
 <context>
