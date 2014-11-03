@@ -73,10 +73,11 @@ class SystemTrayIcon(QMainWindow):
     def refresh(self):
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
+            # (try reason) Prevent C++ wrapper error
             try:
                 if not self.overviewcity.isVisible():
-            # kills the reference to overviewcity
-            # in order to be refreshed
+                    # kills the reference to overviewcity
+                    # in order to be refreshed
                     self.overviewcity.close()
             except:
                 pass
@@ -264,9 +265,6 @@ class SystemTrayIcon(QMainWindow):
     def overview(self):
         if self.inerror or len(self.weatherDataDico) == 0:
             return
-        #self.overviewcity = overview.OverviewCity(self.weatherDataDico, self.wIcon,
-                                       #self.forecast_inerror, self.forecast_data,
-                                    #self.unit, self.forecats_icon_url, self)
         self.overviewcity.show()
 
     def config(self):
@@ -386,9 +384,6 @@ def main():
     appTranslator = QTranslator()
     appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
     app.installTranslator(appTranslator)
-    conditionsTranslator = QTranslator()
-    conditionsTranslator.load(filePath + '/translations/conditions_' + locale)
-    app.installTranslator(conditionsTranslator)
     qtTranslator = QTranslator()
     qtTranslator.load("qt_" + locale,
                       QLibraryInfo.location(QLibraryInfo.TranslationsPath))
