@@ -81,7 +81,7 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
             except:
                 pass
-        self.systray.setToolTip(self.tr('Fetching weather data ...'))
+        self.systray.setToolTip(self.tr('Fetching weather data...'))
         self.settings = QSettings()
         self.city = self.settings.value('City') or 'Kalamata'
         self.id_ = self.settings.value('ID')
