@@ -4,3 +4,4 @@
 - Add supoort for multiple locations issue#4
 - consistent code style issue#6
 - Port to Qt5
+- Add an autostart option #14
