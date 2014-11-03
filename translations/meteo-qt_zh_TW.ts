@@ -691,52 +691,52 @@
     <message>
         <location line="70" filename="conditions.py"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>輕微風</translation>
     </message>
     <message>
         <location line="71" filename="conditions.py"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>弱微風</translation>
     </message>
     <message>
         <location line="72" filename="conditions.py"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>中微風</translation>
     </message>
     <message>
         <location line="73" filename="conditions.py"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>涼微風</translation>
     </message>
     <message>
         <location line="74" filename="conditions.py"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>強微風</translation>
     </message>
     <message>
         <location line="75" filename="conditions.py"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>大風，接近狂風</translation>
     </message>
     <message>
         <location line="76" filename="conditions.py"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>狂風</translation>
     </message>
     <message>
         <location line="77" filename="conditions.py"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation>強狂風</translation>
     </message>
     <message>
         <location line="78" filename="conditions.py"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation>暴風</translation>
     </message>
     <message>
         <location line="79" filename="conditions.py"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation>劇烈暴風</translation>
     </message>
     <message>
         <location line="104" filename="conditions.py"/>
@@ -821,82 +821,82 @@
     <message>
         <location line="121" filename="conditions.py"/>
         <source>N</source>
-        <translation>北</translation>
+        <translation>N</translation>
     </message>
     <message>
         <location line="122" filename="conditions.py"/>
         <source>NE</source>
-        <translation>東北</translation>
+        <translation>NE</translation>
     </message>
     <message>
         <location line="123" filename="conditions.py"/>
         <source>NNE</source>
-        <translation>北北東</translation>
+        <translation>NNE</translation>
     </message>
     <message>
         <location line="124" filename="conditions.py"/>
         <source>NW</source>
-        <translation>西北</translation>
+        <translation>NW</translation>
     </message>
     <message>
         <location line="125" filename="conditions.py"/>
         <source>NNW</source>
-        <translation>北北西</translation>
+        <translation>NNW</translation>
     </message>
     <message>
         <location line="126" filename="conditions.py"/>
         <source>S</source>
-        <translation>南</translation>
+        <translation>S</translation>
     </message>
     <message>
         <location line="127" filename="conditions.py"/>
         <source>SE</source>
-        <translation>東南</translation>
+        <translation>SE</translation>
     </message>
     <message>
         <location line="128" filename="conditions.py"/>
         <source>SSE</source>
-        <translation>南南東</translation>
+        <translation>SSE</translation>
     </message>
     <message>
         <location line="129" filename="conditions.py"/>
         <source>SW</source>
-        <translation>西南</translation>
+        <translation>SW</translation>
     </message>
     <message>
         <location line="130" filename="conditions.py"/>
         <source>SSW</source>
-        <translation>南南西</translation>
+        <translation>SSW</translation>
     </message>
     <message>
         <location line="131" filename="conditions.py"/>
         <source>E</source>
-        <translation>東</translation>
+        <translation>E</translation>
     </message>
     <message>
         <location line="132" filename="conditions.py"/>
         <source>ESE</source>
-        <translation>東南東</translation>
+        <translation>ESE</translation>
     </message>
     <message>
         <location line="133" filename="conditions.py"/>
         <source>ENE</source>
-        <translation>東北東</translation>
+        <translation>ENE</translation>
     </message>
     <message>
         <location line="134" filename="conditions.py"/>
         <source>W</source>
-        <translation>西</translation>
+        <translation>W</translation>
     </message>
     <message>
         <location line="135" filename="conditions.py"/>
         <source>WSW</source>
-        <translation>西南西</translation>
+        <translation>WSW</translation>
     </message>
     <message>
         <location line="136" filename="conditions.py"/>
         <source>WNW</source>
-        <translation>西北西</translation>
+        <translation>WNW</translation>
     </message>
 </context>
 <context>
