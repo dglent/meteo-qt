@@ -40,12 +40,12 @@
     <message>
         <location filename="settings.py" line="34"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Anwendung muss neu gestartet werden um die Spracheinstellung zu übernehmen</translation>
     </message>
     <message>
         <location filename="settings.py" line="42"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>Englisch</translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
