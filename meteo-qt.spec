@@ -32,7 +32,7 @@ A Qt system tray application for the weather status
 convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/meteo-qt.png
 convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/meteo-qt.png
 
-%files -f %{name}.lang
+%files
 %doc TODO CHANGELOG README.md
 %{_datadir}/%{aname}/images/
 %{_bindir}/%{name}
@@ -41,3 +41,4 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicol
 %{python3_sitelib}/%{aname}/
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/meteo-qt.png
+%{_datadir}/meteo_qt/translations/
