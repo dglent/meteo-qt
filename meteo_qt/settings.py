@@ -2,6 +2,8 @@
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+import os
+
 try:
     import searchcity
 except:
@@ -22,7 +24,7 @@ class MeteoSettings(QDialog):
             locale = locale[:2]
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
-        self.cityLabel = QLabel(self.set_city)
+        self.city_label = QLabel(self.set_city)
         self.cityTitle = QLabel(self.tr('City'))
         self.cityButton = QPushButton()
         self.cityButton.setIcon(QIcon(':/configure'))
@@ -92,9 +94,17 @@ class MeteoSettings(QDialog):
         buttonBox = QDialogButtonBox(QDialogButtonBox.Close)
         self.buttonLayout.addWidget(buttonBox)
         self.connect(buttonBox, SIGNAL("rejected()"), self.reject)
+        # Autostart
+        self.autostart_label = QLabel(self.tr('Launch at startup'))
+        self.autostart_checkbox = QCheckBox()
+        autostart_bool = self.settings.value('Autostart') or 'False'
+        autostart_bool = eval(autostart_bool)
+        self.autostart_checkbox.setChecked(autostart_bool)
+        self.connect(self.autostart_checkbox, SIGNAL('stateChanged(int)'), self.autostart)
+        # -----
         self.panel = QGridLayout()
         self.panel.addWidget(self.cityTitle, 0,0)
-        self.panel.addWidget(self.cityLabel, 0,1)
+        self.panel.addWidget(self.city_label, 0,1)
         self.panel.addWidget(self.cityButton, 0,2)
         self.panel.addWidget(self.languageLabel, 1,0)
         self.panel.addWidget(self.languageCombo, 1,1)
@@ -103,6 +113,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.interval_label, 3,0)
         self.panel.addWidget(self.interval_combo, 3,1)
         self.panel.addWidget(self.interval_min, 3,2)
+        self.panel.addWidget(self.autostart_label, 4,0)
+        self.panel.addWidget(self.autostart_checkbox, 4,1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -131,10 +143,35 @@ class MeteoSettings(QDialog):
             self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.savesettings)
         if dialog.exec_():
             self.set_city = self.settings.value('City') or '?'
-            self.cityLabel.setText(self.set_city)
+            self.city_label.setText(self.set_city)
 
     def savesettings(self, what):
         self.settings.setValue(what[0], what[1])
         print('write ', what[0], what[1])
+
+    def autostart(self, state):
+        dir_auto = '/.config/autostart/'
+        d_file = 'meteo-qt.desktop'
+        home = os.getenv('HOME')
+        total_path = home + dir_auto + d_file
+        if state == 2:
+            desktop_file = ['[Desktop Entry]\n',
+                            'Exec=meteo-qt\n',
+                            'Name=meteo-qt\n',
+                            'Type=Application\n',
+                            'Version=1.0\n']
+            if not os.path.exists(home + dir_auto):
+                os.system('mkdir -p {}'.format(os.path.dirname(total_path)))
+            with open(total_path, 'w') as out_file:
+                out_file.writelines(desktop_file)
+            self.settings.setValue('Autostart', 'True')
+            print('Write desktop file in autostart')
+        elif state == 0:
+            if os.path.exists(total_path):
+                os.remove(total_path)
+            self.settings.setValue('Autostart', 'False')
+            print('Remove desktop file from autostart')
+        else:
+            return
 
 
