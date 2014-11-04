@@ -1,4 +1,4 @@
-SOURCES         += meteo-qt.py \
+SOURCES         += meteo_qt.py \
                    overview.py \
                    searchcity.py \
                    settings.py \

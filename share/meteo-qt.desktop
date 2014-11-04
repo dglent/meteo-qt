@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Meteo-qt
+GenericName=Weather status information
+Comment=A Qt system tray application for weather information
+Exec=meteo-qt
+Icon=meteo-qt
+Terminal=false
+StartupNotify=false
+Categories=Qt;LXQt;Network;

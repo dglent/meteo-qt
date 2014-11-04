@@ -1,12 +1,12 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file alias="configure">images/configure.png</file>   
+    <file alias="configure">images/configure.png</file>
     <file alias="refresh">images/view-refresh.png</file>
     <file alias="noicon">images/noicon.png</file>
     <file alias="exit">images/application-exit.png</file>
     <file alias="info">images/dialog-information.png</file>
     <file alias="empty">images/empty.png</file>
-    <file alias="logo">images/weather-few-clouds.png</file>
+    <file alias="logo">images/meteo-qt.png</file>
     <file alias="tempcity">images/preferences-web-browser-shortcuts.png</file>
 </qresource>
 </RCC>

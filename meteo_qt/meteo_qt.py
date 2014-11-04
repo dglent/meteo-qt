@@ -11,11 +11,18 @@ import urllib.request
 from lxml import etree
 import platform
 import os
-import qrc_resources
-import settings
-import overview
-import searchcity
-import conditions
+try:
+    import qrc_resources
+    import settings
+    import overview
+    import searchcity
+    import conditions
+except:
+    from meteo_qt import qrc_resources
+    from meteo_qt import settings
+    from meteo_qt import overview
+    from meteo_qt import searchcity
+    from meteo_qt import conditions
 
 
 __version__ = "0.1.0"
@@ -81,7 +88,7 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
             except:
                 pass
-        self.systray.setToolTip(self.tr('Fetching weather data...'))
+        self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
         self.city = self.settings.value('City') or 'Kalamata'
         self.id_ = self.settings.value('ID')
@@ -382,7 +389,10 @@ def main():
     if locale == None or locale == '':
         locale = QLocale.system().name()
     appTranslator = QTranslator()
-    appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
+    if os.path.exists(filePath + '/translations/'):
+        appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
+    else:
+        appTranslator.load("/usr/share/meteo_qt/translations/meteo-qt_" + locale)
     app.installTranslator(appTranslator)
     qtTranslator = QTranslator()
     qtTranslator.load("qt_" + locale,

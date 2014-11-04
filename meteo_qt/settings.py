@@ -2,7 +2,10 @@
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
-import searchcity
+try:
+    import searchcity
+except:
+    from meteo_qt import searchcity
 
 
 class MeteoSettings(QDialog):

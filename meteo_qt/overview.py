@@ -6,7 +6,10 @@ import datetime
 import urllib.request
 from lxml import etree
 import time
-import conditions
+try:
+    import conditions
+except:
+    from meteo_qt import conditions
 
 
 
