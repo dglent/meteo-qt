@@ -898,7 +898,7 @@
     <message>
         <location filename="conditions.py" line="134"/>
         <source>W</source>
-        <translation>W</translation>
+        <translation>Δ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="135"/>
