@@ -6,7 +6,7 @@ from distutils.command.build import build
 from distutils.core import setup
 
 class BuildQm(build):
-    os.system('pyrcc4 -py3 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
+    #os.system('pyrcc4 -py3 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
     os.system('pylupdate4 -noobsolete meteo_qt/meteo_qt.pro')
     for ts in glob.glob('meteo_qt/translations/*.ts'):
         os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2]+'qm')))

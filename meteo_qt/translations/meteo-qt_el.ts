@@ -833,7 +833,7 @@
     <message>
         <location filename="conditions.py" line="121"/>
         <source>N</source>
-        <translation>N</translation>
+        <translation>Β</translation>
     </message>
     <message>
         <location filename="conditions.py" line="122"/>
