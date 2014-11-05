@@ -190,7 +190,7 @@
     <message>
         <location filename="settings.py" line="98"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Запускати під час завантаження</translation>
     </message>
 </context>
 <context>
