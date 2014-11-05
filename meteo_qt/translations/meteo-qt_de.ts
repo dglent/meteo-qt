@@ -5,47 +5,47 @@
     <message>
         <location filename="settings.py" line="31"/>
         <source>Click to modify the city</source>
-        <translation type="unfinished"></translation>
+        <translation>Klicke um die Stadt zu ändern</translation>
     </message>
     <message>
         <location filename="settings.py" line="76"/>
         <source>Temperature unit</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatureinheit</translation>
     </message>
     <message>
         <location filename="settings.py" line="121"/>
         <source>Meteo-qt Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Meteo-qt konfiguration</translation>
     </message>
     <message>
         <location filename="settings.py" line="28"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
+        <translation>Stadt</translation>
     </message>
     <message>
         <location filename="settings.py" line="84"/>
         <source>Update interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualisierungsinvervall</translation>
     </message>
     <message>
         <location filename="settings.py" line="85"/>
         <source>minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Minuten</translation>
     </message>
     <message>
         <location filename="settings.py" line="32"/>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprache</translation>
     </message>
     <message>
         <location filename="settings.py" line="34"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Anwendung mus neu gestartet werden um die Spracheinstellung zu übernehmen</translation>
     </message>
     <message>
         <location filename="settings.py" line="42"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation><Englisch/translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
@@ -70,7 +70,7 @@
     <message>
         <location filename="settings.py" line="40"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Deutsch</translation>
     </message>
     <message>
         <location filename="settings.py" line="55"/>
@@ -198,37 +198,37 @@
     <message>
         <location filename="overview.py" line="28"/>
         <source>Mon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo</translation>
     </message>
     <message>
         <location filename="overview.py" line="29"/>
         <source>Tue</source>
-        <translation type="unfinished"></translation>
+        <translation>Di</translation>
     </message>
     <message>
         <location filename="overview.py" line="30"/>
         <source>Wed</source>
-        <translation type="unfinished"></translation>
+        <translation>Mi</translation>
     </message>
     <message>
         <location filename="overview.py" line="31"/>
         <source>Thu</source>
-        <translation type="unfinished"></translation>
+        <translation>Do</translation>
     </message>
     <message>
         <location filename="overview.py" line="32"/>
         <source>Fri</source>
-        <translation type="unfinished"></translation>
+        <translation>Fr</translation>
     </message>
     <message>
         <location filename="overview.py" line="33"/>
         <source>Sat</source>
-        <translation type="unfinished"></translation>
+        <translation>Sa</translation>
     </message>
     <message>
         <location filename="overview.py" line="34"/>
         <source>Sun</source>
-        <translation type="unfinished"></translation>
+        <translation>So</translation>
     </message>
     <message>
         <location filename="overview.py" line="131"/>
@@ -238,12 +238,12 @@
     <message>
         <location filename="overview.py" line="149"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"></translation>
+        <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
         <location filename="overview.py" line="70"/>
         <source>Wind</source>
-        <translation type="unfinished"></translation>
+        <translation>Wind</translation>
     </message>
     <message>
         <location filename="overview.py" line="77"/>
@@ -263,12 +263,12 @@
     <message>
         <location filename="overview.py" line="89"/>
         <source>Sunrise</source>
-        <translation type="unfinished"></translation>
+        <translation>Sonnenaufgang</translation>
     </message>
     <message>
         <location filename="overview.py" line="95"/>
         <source>Sunset</source>
-        <translation type="unfinished"></translation>
+        <translation>Sonnenuntergang</translation>
     </message>
 </context>
 <context>
@@ -276,27 +276,27 @@
     <message>
         <location filename="searchcity.py" line="17"/>
         <source>Type the name of the city and press Enter</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebe den Namen der Stadt ein und drücke Enter</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="26"/>
         <source>&amp;Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ok</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="28"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Abbrechen</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="73"/>
         <source>Searching...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suche...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="101"/>
         <source>No results</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Ergebnisse</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="103"/>
@@ -319,32 +319,32 @@
     <message>
         <location filename="meteo_qt.py" line="54"/>
         <source>&amp;Update</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Update</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="55"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="56"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Über</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="57"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="76"/>
         <source>Searching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suche Wetterdaten...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="300"/>
         <source>Fetching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="106"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="meteo_qt.py" line="171"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation type="unfinished"></translation>
+        <translation>Kann Daten nicht finden!</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="311"/>
@@ -377,7 +377,15 @@
                         &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         http://openweathermap.org/&lt;/a&gt;.
                         &lt;p&gt;License: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+                        &lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Eine einfache Anwendung um die Wetterstatus
+                        &lt;br/&gt;Informationen im system tray anzuzeigen.
+                        &lt;br/&gt;Webseite: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        http://openweathermap.org/&lt;/a&gt;.
+                        &lt;p&gt;Lizenz: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="91"/>
@@ -605,7 +613,7 @@
     <message>
         <location filename="conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation>Nebel</translation>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
@@ -630,12 +638,12 @@
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation>Tornado</translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation>klarer Himmel</translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
@@ -660,27 +668,27 @@
     <message>
         <location filename="conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation>tropischer Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation>hurrikan</translation>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"></translation>
+        <translation>kalt</translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"></translation>
+        <translation>heiß</translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"></translation>
+        <translation>windig</translation>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
@@ -695,7 +703,7 @@
     <message>
         <location filename="conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>leichte briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
@@ -710,12 +718,12 @@
     <message>
         <location filename="conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>frische briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>starke briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
@@ -745,82 +753,82 @@
     <message>
         <location filename="conditions.py" line="104"/>
         <source>North</source>
-        <translation type="unfinished"></translation>
+        <translation>Nord</translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>NorthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Nordost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Nord-Nordost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>NorthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Nordwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Nord-Nordwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>South</source>
-        <translation type="unfinished"></translation>
+        <translation>Süd</translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>SouthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Südost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Süd-Südost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>SouthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Südwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>South-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Süd-Südwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East</source>
-        <translation type="unfinished"></translation>
+        <translation>Ost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Osten-Südost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>East-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Osten-Nordost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West</source>
-        <translation type="unfinished"></translation>
+        <translation>West</translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>West-Südwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="119"/>
         <source>West-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>West-Nordwest</translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
@@ -835,7 +843,7 @@
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation>NNO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
@@ -845,7 +853,7 @@
     <message>
         <location filename="conditions.py" line="125"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation>NNW</translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
@@ -860,7 +868,7 @@
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation>SSO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
@@ -870,7 +878,7 @@
     <message>
         <location filename="conditions.py" line="130"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation>SSW</translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
@@ -880,12 +888,12 @@
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation>OSO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation>ONO</translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>
@@ -895,12 +903,12 @@
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation>WSW</translation>
     </message>
     <message>
         <location filename="conditions.py" line="136"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation>WNW</translation>
     </message>
 </context>
 <context>
@@ -908,19 +916,20 @@
     <message>
         <location filename="searchcity.py" line="129"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="129"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Versuche es nochmal später</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="142"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"></translation>
+        <translation>Datenfehler, bitte verusche es später
+        oder ändere den Namen der Stadt</translation>
     </message>
 </context>
 </TS>
