@@ -45,7 +45,7 @@
     <message>
         <location filename="settings.py" line="42"/>
         <source>English</source>
-        <translation><Englisch/translation>
+        <translation>Englisch</translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
