@@ -15,7 +15,7 @@
     <message>
         <location filename="settings.py" line="121"/>
         <source>Meteo-qt Configuration</source>
-        <translation>Meteo-qt konfiguration</translation>
+        <translation>Meteo-qt Konfiguration</translation>
     </message>
     <message>
         <location filename="settings.py" line="28"/>
@@ -40,7 +40,7 @@
     <message>
         <location filename="settings.py" line="34"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Diese Anwendung mus neu gestartet werden um die Spracheinstellung zu übernehmen</translation>
+        <translation>Diese Anwendung muss neu gestartet werden um die Spracheinstellung zu übernehmen</translation>
     </message>
     <message>
         <location filename="settings.py" line="42"/>
@@ -190,7 +190,7 @@
     <message>
         <location filename="settings.py" line="98"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Bei Systemstart laden</translation>
     </message>
 </context>
 <context>
@@ -354,17 +354,17 @@
     <message>
         <location filename="meteo_qt.py" line="106"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klicke rechts auf das Icon und wähle Einstellungen.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="171"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation>Kann Daten nicht finden!</translation>
+        <translation>meteo-qt: Kann Daten nicht finden!</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="311"/>
         <source>Application for weather status information</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwendung für Wetterstatus Information</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="311"/>
@@ -608,7 +608,7 @@
     <message>
         <location filename="conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation>Sand, Staubwirbel</translation>
     </message>
     <message>
         <location filename="conditions.py" line="51"/>
@@ -628,12 +628,12 @@
     <message>
         <location filename="conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation>Vulkanasche</translation>
     </message>
     <message>
         <location filename="conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation>Böe</translation>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
@@ -922,13 +922,13 @@
         <location filename="searchcity.py" line="129"/>
         <source>
 Try again later</source>
-        <translation>Versuche es nochmal später</translation>
+        <translation>Versuche es später nochmal</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="142"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Datenfehler, bitte verusche es später
+        <translation>Datenfehler, bitte versuche es später
         oder ändere den Namen der Stadt</translation>
     </message>
 </context>
