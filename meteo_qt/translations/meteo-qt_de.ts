@@ -231,12 +231,12 @@
         <translation>So</translation>
     </message>
     <message>
-        <location filename="overview.py" line="131"/>
+        <location filename="overview.py" line="135"/>
         <source>Weather status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="149"/>
+        <location filename="overview.py" line="153"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max Temparatur des Tages</translation>
     </message>
@@ -246,27 +246,27 @@
         <translation>Wind</translation>
     </message>
     <message>
-        <location filename="overview.py" line="77"/>
+        <location filename="overview.py" line="81"/>
         <source>Cloudiness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="80"/>
+        <location filename="overview.py" line="84"/>
         <source>Pressure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="84"/>
+        <location filename="overview.py" line="88"/>
         <source>Humidity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="89"/>
+        <location filename="overview.py" line="93"/>
         <source>Sunrise</source>
         <translation>Sonnenaufgang</translation>
     </message>
     <message>
-        <location filename="overview.py" line="95"/>
+        <location filename="overview.py" line="99"/>
         <source>Sunset</source>
         <translation>Sonnenuntergang</translation>
     </message>
