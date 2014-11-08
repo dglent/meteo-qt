@@ -728,12 +728,12 @@
     <message>
         <location filename="conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>starker Wind, nahe Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>stürmischer Wind</translation>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
