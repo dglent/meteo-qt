@@ -778,7 +778,7 @@
     <message>
         <location filename="conditions.py" line="109"/>
         <source>South</source>
-        <translation>Νότος</translation>
+        <translation>Νότιος</translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
