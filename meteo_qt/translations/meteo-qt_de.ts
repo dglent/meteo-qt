@@ -808,12 +808,12 @@
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-southeast</source>
-        <translation>Osten-Südost</translation>
+        <translation>Ost-Südost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>East-northeast</source>
-        <translation>Osten-Nordost</translation>
+        <translation>Ost-Nordost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
