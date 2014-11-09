@@ -233,7 +233,7 @@
     <message>
         <location filename="overview.py" line="135"/>
         <source>Weather status</source>
-        <translation type="unfinished"></translation>
+        <translation>Wetterstatus</translation>
     </message>
     <message>
         <location filename="overview.py" line="153"/>
@@ -248,17 +248,17 @@
     <message>
         <location filename="overview.py" line="81"/>
         <source>Cloudiness</source>
-        <translation type="unfinished"></translation>
+        <translation>Bewölkung</translation>
     </message>
     <message>
         <location filename="overview.py" line="84"/>
         <source>Pressure</source>
-        <translation type="unfinished"></translation>
+        <translation>Druck</translation>
     </message>
     <message>
         <location filename="overview.py" line="88"/>
         <source>Humidity</source>
-        <translation type="unfinished"></translation>
+        <translation>Feuchtigkeit</translation>
     </message>
     <message>
         <location filename="overview.py" line="93"/>
@@ -301,12 +301,12 @@
     <message>
         <location filename="searchcity.py" line="103"/>
         <source>Found {0} city</source>
-        <translation type="unfinished"></translation>
+        <translation>{0} Stadt gefunden</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="105"/>
         <source>Found {0} cities</source>
-        <translation type="unfinished"></translation>
+        <translation>{0} Städte gefunden</translation>
     </message>
 </context>
 <context>
@@ -349,7 +349,7 @@
     <message>
         <location filename="meteo_qt.py" line="106"/>
         <source>No city has been configured yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es wurde noch keine Stadt ausgewählt.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="106"/>
@@ -628,7 +628,7 @@
     <message>
         <location filename="conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation>Vulkanasche</translation>
+        <translation>vulkanasche Asche</translation>
     </message>
     <message>
         <location filename="conditions.py" line="55"/>
@@ -703,37 +703,37 @@
     <message>
         <location filename="conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation>leichte briese</translation>
+        <translation>leichte Briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>schwache Briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>mäßige Briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation>frische briese</translation>
+        <translation>frische Briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation>starke briese</translation>
+        <translation>starke Briese</translation>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>starker Wind, nähe Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
@@ -743,7 +743,7 @@
     <message>
         <location filename="conditions.py" line="78"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation>Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="79"/>
