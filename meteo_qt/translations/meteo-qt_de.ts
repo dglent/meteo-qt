@@ -385,7 +385,7 @@
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
                         &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         http://openweathermap.org/&lt;/a&gt;.
-                        &lt;p&gt;Lizenz: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
+                        &lt;p&gt;Lizenz: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="91"/>
@@ -628,7 +628,7 @@
     <message>
         <location filename="conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation>vulkanasche Asche</translation>
+        <translation>vulkanische Asche</translation>
     </message>
     <message>
         <location filename="conditions.py" line="55"/>
@@ -748,7 +748,7 @@
     <message>
         <location filename="conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation>gewaltiger Sturm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
