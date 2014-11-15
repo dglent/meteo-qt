@@ -20,6 +20,7 @@ class AboutDialog(QDialog):
         TabWidget = QTabWidget()
         TabWidget.addTab(aboutBrowser, self.tr('About'))
         TabWidget.addTab(creditsBrowser, self.tr('Contributors'))
+        aboutBrowser.moveCursor(QTextCursor.Start)
         creditsBrowser.moveCursor(QTextCursor.Start)
         imageLabel = QLabel()
         imageLabel.setPixmap(QPixmap(image))
