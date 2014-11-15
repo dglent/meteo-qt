@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 import os
 
 try:
@@ -71,8 +72,8 @@ class MeteoSettings(QDialog):
         self.languageCombo.addItems(lang_list)
         self.languageCombo.setCurrentIndex(self.languageCombo.findText
                                            (self.language_dico[self.setLanguage]))
-        self.connect(self.languageCombo, SIGNAL('currentIndexChanged(int)'), self.language)
-        self.connect(self.cityButton, SIGNAL("clicked()"), self.searchcity)
+        self.languageCombo.currentIndexChanged.connect(self.language)
+        self.cityButton.clicked.connect(self.searchcity)
         self.unitsLabel = QLabel(self.tr('Temperature unit'))
         self.unitsCombo = QComboBox()
         self.unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
@@ -80,7 +81,7 @@ class MeteoSettings(QDialog):
         self.unitsCombo.addItems(unitsList)
         self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
             self.unitsDico[self.tempUnit]))
-        self.connect(self.unitsCombo, SIGNAL('currentIndexChanged(int)'), self.units)
+        self.unitsCombo.currentIndexChanged.connect(self.units)
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
         self.interval_combo = QComboBox()
@@ -88,19 +89,19 @@ class MeteoSettings(QDialog):
         self.interval_combo.addItems(self.interval_list)
         self.interval_combo.setCurrentIndex(self.interval_combo.findText(
             self.interval_list[self.interval_list.index(self.interval_set)]))
-        self.connect(self.interval_combo, SIGNAL('currentIndexChanged(int)'), self.interval)
+        self.interval_combo.currentIndexChanged.connect(self.interval)
         self.buttonLayout = QHBoxLayout()
         self.buttonLayout.addStretch()
-        buttonBox = QDialogButtonBox(QDialogButtonBox.Close)
-        self.buttonLayout.addWidget(buttonBox)
-        self.connect(buttonBox, SIGNAL("rejected()"), self.reject)
+        self.buttonBox = QDialogButtonBox(QDialogButtonBox.Close)
+        self.buttonLayout.addWidget(self.buttonBox)
+        self.buttonBox.rejected.connect(self.reject)
         # Autostart
         self.autostart_label = QLabel(self.tr('Launch at startup'))
         self.autostart_checkbox = QCheckBox()
         autostart_bool = self.settings.value('Autostart') or 'False'
         autostart_bool = eval(autostart_bool)
         self.autostart_checkbox.setChecked(autostart_bool)
-        self.connect(self.autostart_checkbox, SIGNAL('stateChanged(int)'), self.autostart)
+        self.autostart_checkbox.stateChanged.connect(self.autostart)
         # -----
         self.panel = QGridLayout()
         self.panel.addWidget(self.cityTitle, 0,0)
@@ -139,8 +140,9 @@ class MeteoSettings(QDialog):
 
     def searchcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
-        for e in 'id','city','country':
-            self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.savesettings)
+        dialog.id_signal.connect(self.savesettings)
+        dialog.city_signal.connect(self.savesettings)
+        dialog.country_signal.connect(self.savesettings)
         if dialog.exec_():
             self.set_city = self.settings.value('City') or '?'
             self.city_label.setText(self.set_city)

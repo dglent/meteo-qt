@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 import urllib.request
 from lxml import etree
 
 class SearchCity(QDialog):
+    id_signal = pyqtSignal([tuple])
+    city_signal = pyqtSignal([tuple])
+    country_signal = pyqtSignal([tuple])
 
     def __init__(self, accurate_url, parent=None):
         super(SearchCity, self).__init__(parent)
@@ -31,11 +35,11 @@ class SearchCity(QDialog):
         self.layout.addLayout(self.buttonLayout)
         self.setMinimumWidth(int(len(self.line_search.text())*7.5))
         self.setLayout(self.layout)
-        self.connect(self.line_search, SIGNAL("returnPressed()"), self.search)
-        self.connect(self.buttonOk, SIGNAL("clicked()"), self.accept)
-        self.connect(self.buttonCancel, SIGNAL("clicked()"), self.reject)
-        self.connect(self.listWidget, SIGNAL("itemSelectionChanged()"), self.buttonCheck)
-        self.connect(self.listWidget, SIGNAL("itemDoubleClicked(QListWidgetItem *)"), self.accept)
+        self.line_search.returnPressed.connect(self.search)
+        self.buttonOk.clicked.connect(self.accept)
+        self.buttonCancel.clicked.connect(self.reject)
+        self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
+        self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
         self.status.setText('')
 
     def buttonCheck(self):
@@ -53,9 +57,12 @@ class SearchCity(QDialog):
             city_list = selected_city.split('-')
             for c in range(len(city_list)):
                 city_list[c] = city_list[c].strip()
-            self.emit(SIGNAL('id(PyQt_PyObject)'), ('ID', city_list[0]))
-            self.emit(SIGNAL('city(PyQt_PyObject)'), ('City', city_list[1]))
-            self.emit(SIGNAL('country(PyQt_PyObject)'), ('Country', city_list[2]))
+            id_ = 'ID', city_list[0]
+            city = 'City', city_list[1]
+            country = 'Country', city_list[2]
+            self.id_signal[tuple].emit(id_)
+            self.city_signal[tuple].emit(city)
+            self.country_signal[tuple].emit(country)
         QDialog.accept(self)
 
     def search(self):
@@ -72,9 +79,9 @@ class SearchCity(QDialog):
         self.city = (self.line_search.text())
         self.status.setText(self.tr('Searching...'))
         self.workThread = WorkThread(self.accurate_url, self.city, self.suffix)
-        self.connect(self.workThread, SIGNAL('city(QString)'), self.addlist)
-        self.connect(self.workThread, SIGNAL('finished()'), self.result)
-        self.connect(self.workThread, SIGNAL('error(QString)'), self.error)
+        self.workThread.city_signal['QString'].connect(self.addlist)
+        self.workThread.finished.connect(self.result)
+        self.workThread.error['QString'].connect(self.error)
         self.timer.singleShot(self.delay, self.threadstart)
 
     def threadstart(self):
@@ -106,6 +113,9 @@ class SearchCity(QDialog):
 
 
 class WorkThread(QThread):
+    error = pyqtSignal(['QString'])
+    city_signal = pyqtSignal(['QString'])
+
     def __init__(self, accurate_url, city, suffix):
         QThread.__init__(self)
         self.accurate_url = accurate_url
@@ -127,7 +137,7 @@ class WorkThread(QThread):
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             error = (self.tr('Error') + ' ' + str(error.code) + ' ' +
                      str(error.reason + self.tr('\nTry again later')))
-            self.emit(SIGNAL('error(QString)'), error)
+            self.error['QString'].emit(error)
             return
         if int(tree[1].text) == 0:
             return
@@ -139,11 +149,11 @@ class WorkThread(QThread):
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
                 error = self.tr('Data error, please try again later\nor modify the name of the city')
-                self.emit(SIGNAL('error(QString)'), error)
+                self.error['QString'].emit(error)
                 return
             self.lista.append(id_ + ' - ' + city + ' - ' + country)
         for i in self.lista:
-            self.emit(SIGNAL('city(QString)'), i)
+            self.city_signal['QString'].emit(i)
         print('City thread done')
         return
 

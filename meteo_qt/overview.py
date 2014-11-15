@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 import datetime
 import urllib.request
 from lxml import etree
@@ -163,8 +164,8 @@ class OverviewCity(QDialog):
 
     def iconfetch(self):
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
-        self.connect(self.download_thread, SIGNAL('wimage(PyQt_PyObject)'), self.iconwidget)
-        self.connect(self.download_thread, SIGNAL('error(QString)'), self.error)
+        self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
+        self.download_thread.error['QString'].connect(self.error)
         self.download_thread.start()
 
     def iconwidget(self, icon):
@@ -184,6 +185,9 @@ class OverviewCity(QDialog):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
 
 class IconDownload(QThread):
+    error = pyqtSignal(['QString'])
+    wimage = pyqtSignal(['PyQt_PyObject'])
+
     def __init__(self, icon_url, icon):
         QThread.__init__(self)
         self.icon_url = icon_url
@@ -198,12 +202,12 @@ class IconDownload(QThread):
                 url = self.icon_url + self.icon[i] + '.png'
                 data = urllib.request.urlopen(url).read()
                 if self.html404(data, 'icon'):
-                    self.emit(SIGNAL('error(QString)'), self.error)
+                    self.error['QString'].emit(self.error_message)
                     return
-                self.emit(SIGNAL('wimage(PyQt_PyObject)'), data)
+                self.wimage['PyQt_PyObject'].emit(data)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             error = 'Error ' + str(error.code) + ' ' + str(error.reason)
-            self.emit(SIGNAL('error(QString)'), error)
+            self.error['QString'].emit(error)
         print('Download forecast icons thread done')
 
     def html404(self, page, what):

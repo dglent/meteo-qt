@@ -4,8 +4,9 @@
 # Author: Dimitrios Glentadakis dglent@free.fr
 # License: GPLv3
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 import sys
 import urllib.request
 from lxml import etree
@@ -27,7 +28,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -50,28 +51,28 @@ class SystemTrayIcon(QMainWindow):
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         self.forecats_icon_url = self.wIconUrl
         self.timer = QTimer(self)
-        self.connect(self.timer, SIGNAL("timeout()"), self.refresh)
+        self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
-        tempCityAction = QAction(self.tr('&Temporary city'), self)
-        refreshAction = QAction(self.tr('&Update'), self)
-        settingsAction = QAction(self.tr('&Settings'), self)
-        aboutAction = QAction(self.tr('&About'), self)
-        exitAction = QAction(self.tr('Exit'), self)
-        exitAction.setIcon(QIcon(':/exit'))
-        aboutAction.setIcon(QIcon(':/info'))
-        refreshAction.setIcon(QIcon(':/refresh'))
-        settingsAction.setIcon(QIcon(':/configure'))
-        tempCityAction.setIcon(QIcon(':/tempcity'))
-        self.menu.addAction(settingsAction)
-        self.menu.addAction(refreshAction)
-        self.menu.addAction(tempCityAction)
-        self.menu.addAction(aboutAction)
-        self.menu.addAction(exitAction)
-        self.connect(settingsAction, SIGNAL('triggered()'), self.config)
-        self.connect(exitAction, SIGNAL('triggered()'), qApp.quit)
-        self.connect(refreshAction, SIGNAL('triggered()'), self.refresh)
-        self.connect(aboutAction, SIGNAL('triggered()'), self.about)
-        self.connect(tempCityAction, SIGNAL('triggered()'), self.tempcity)
+        self.tempCityAction = QAction(self.tr('&Temporary city'), self)
+        self.refreshAction = QAction(self.tr('&Update'), self)
+        self.settingsAction = QAction(self.tr('&Settings'), self)
+        self.aboutAction = QAction(self.tr('&About'), self)
+        self.exitAction = QAction(self.tr('Exit'), self)
+        self.exitAction.setIcon(QIcon(':/exit'))
+        self.aboutAction.setIcon(QIcon(':/info'))
+        self.refreshAction.setIcon(QIcon(':/refresh'))
+        self.settingsAction.setIcon(QIcon(':/configure'))
+        self.tempCityAction.setIcon(QIcon(':/tempcity'))
+        self.menu.addAction(self.settingsAction)
+        self.menu.addAction(self.refreshAction)
+        self.menu.addAction(self.tempCityAction)
+        self.menu.addAction(self.aboutAction)
+        self.menu.addAction(self.exitAction)
+        self.settingsAction.triggered.connect(self.config)
+        self.exitAction.triggered.connect(qApp.quit)
+        self.refreshAction.triggered.connect(self.refresh)
+        self.aboutAction.triggered.connect(self.about)
+        self.tempCityAction.triggered.connect(self.tempcity)
         self.systray = QSystemTrayIcon()
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
@@ -114,18 +115,12 @@ class SystemTrayIcon(QMainWindow):
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
             self.wIconUrl, self.baseurl, self.forecast_url, self.id_, self.suffix)
-        self.connect(self.downloadThread,
-                     SIGNAL('wimage(PyQt_PyObject)'), self.makeicon)
-        self.connect(self.downloadThread,
-                     SIGNAL('finished()'), self.tray)
-        self.connect(self.downloadThread,
-                     SIGNAL('xmlpage(PyQt_PyObject)'), self.weatherdata)
-        self.connect(self.downloadThread,
-                     SIGNAL('forecast_rawpage(PyQt_PyObject)'), self.forecast)
-        self.connect(self.downloadThread,
-                     SIGNAL('error(QString)'), self.error)
-        self.connect(self.downloadThread,
-                     SIGNAL('done(int)'), self.done)
+        self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
+        self.downloadThread.finished.connect(self.tray)
+        self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
+        self.downloadThread.forecast_rawpage.connect(self.forecast)
+        self.downloadThread.error.connect(self.error)
+        self.downloadThread.done.connect(self.done)
         self.downloadThread.start()
 
     def forecast(self, data):
@@ -296,8 +291,9 @@ class SystemTrayIcon(QMainWindow):
         self.id_2, self.city2, self.country2 = (self.settings.value('ID'),
                                                 self.settings.value('City'),
                                                 self.settings.value('Country'))
-        for e in 'id','city','country':
-            self.connect(dialog, SIGNAL(e + '(PyQt_PyObject)'), self.citydata)
+        dialog.id_signal[tuple].connect(self.citydata)
+        dialog.city_signal[tuple].connect(self.citydata)
+        dialog.country_signal[tuple].connect(self.citydata)
         if dialog.exec_():
             self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
@@ -318,20 +314,20 @@ class SystemTrayIcon(QMainWindow):
         image = ':/logo'
         text = self.tr("""<p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
-                        <br/>information on the system tray.
+                        information on the system tray.
                         <br/>Website: <a href="https://github.com/dglent/meteo-qt">
                         https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
                         http://openweathermap.org/</a>.
                         <p>To translate meteo-qt in your language or contribute to
-                        <br/>current translations, you can either do it directly in
-                        <br>github by sending a pull request, or choose the file
-                        <br/>of the language you want to translate from here:
+                        current translations, you can either do it directly in
+                        github by sending a pull request, or choose the file
+                        of the language you want to translate from here:
                         <a href="https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations">
                         https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations</a>
-                        <br/>and send me the file by email.
+                        and send me the file by email.
                         <p>If you want to repport a dysfunction or a suggestion,
-                        <br/>feel free to open an <a href="https://github.com/dglent/meteo-qt/issues">
+                        feel free to open an <a href="https://github.com/dglent/meteo-qt/issues">
                         issue</a> in github.""")
 
         contributors = self.tr("""Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
@@ -350,6 +346,12 @@ class SystemTrayIcon(QMainWindow):
 
 
 class Download(QThread):
+    wimage = pyqtSignal(['PyQt_PyObject'])
+    xmlpage = pyqtSignal(['PyQt_PyObject'])
+    forecast_rawpage= pyqtSignal(['PyQt_PyObject'])
+    error = pyqtSignal(['QString'])
+    done = pyqtSignal([int])
+
     def __init__(self, iconurl, baseurl, forecast_url, id_, suffix):
         QThread.__init__(self)
         self.wIconUrl = iconurl
@@ -370,10 +372,10 @@ class Download(QThread):
             page = req.read()
             pageforecast = reqforecast.read()
             if self.html404(page, 'city'):
-                self.emit(SIGNAL('error(QString)'), self.error)
+                self.error['QString'].emit(self.error_message)
                 return
             elif self.html404(pageforecast, 'forecast'):
-                self.emit(SIGNAL('error(QString)'), self.error)
+                self.errror['QString'].emit(self.error_message)
                 return
             tree = etree.fromstring(page)
             treeforecast = etree.fromstring(pageforecast)
@@ -381,15 +383,15 @@ class Download(QThread):
             url = self.wIconUrl + weather_icon + '.png'
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
-                self.emit(SIGNAL('error(QString)'), self.error)
+                self.error['QString'].emit(self.error_message)
                 done = 1
-            self.emit(SIGNAL('xmlpage(PyQt_PyObject)'), tree)
-            self.emit(SIGNAL('wimage(PyQt_PyObject)'), data)
-            self.emit(SIGNAL('forecast_rawpage(PyQt_PyObject)'), treeforecast)
-            self.emit(SIGNAL('done(int)'), int(done))
+            self.xmlpage['PyQt_PyObject'].emit(tree)
+            self.wimage['PyQt_PyObject'].emit(data)
+            self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
+            self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             error = 'Error ' + str(error.code) + ' ' + str(error.reason)
-            self.emit(SIGNAL('error(QString)'), error)
+            self.error['QString'].emit(error)
         print('Download thread done')
 
     def html404(self, page, what):

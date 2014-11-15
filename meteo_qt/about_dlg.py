@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
 class AboutDialog(QDialog):
     def __init__(self, title, text, image, contributors, parent=None):
@@ -34,13 +35,8 @@ class AboutDialog(QDialog):
         layout.addLayout(titleLayout)
         layout.addLayout(contentsLayout)
         layout.addLayout(buttonLayout)
-
         self.setLayout(layout)
-
         buttonBox.clicked.connect(self.accept)
-        #creditsButton.clicked.connect(self.show_credits)
-
-        self.setMinimumSize(QSize(350, 400))
-        #self.setMaximumSize(QSize(400, 440))
+        self.setMinimumSize(QSize(380, 400))
         self.setWindowTitle(self.tr('About Meteo-qt'))
 
