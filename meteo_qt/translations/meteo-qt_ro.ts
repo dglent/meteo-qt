@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="2.0">
 <context>
+    <name>AboutDialog</name>
+    <message>
+        <location filename="about_dlg.py" line="21"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="about_dlg.py" line="22"/>
+        <source>Contributors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="about_dlg.py" line="44"/>
+        <source>About Meteo-qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MeteoSettings</name>
     <message>
         <location filename="settings.py" line="28"/>
@@ -312,68 +330,70 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="53"/>
+        <location filename="meteo_qt.py" line="55"/>
         <source>&amp;Temporary city</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="54"/>
+        <location filename="meteo_qt.py" line="56"/>
         <source>&amp;Update</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="55"/>
+        <location filename="meteo_qt.py" line="57"/>
         <source>&amp;Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="56"/>
+        <location filename="meteo_qt.py" line="58"/>
         <source>&amp;About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="57"/>
+        <location filename="meteo_qt.py" line="59"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="76"/>
+        <location filename="meteo_qt.py" line="78"/>
         <source>Searching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="91"/>
+        <location filename="meteo_qt.py" line="93"/>
         <source>Fetching weather data ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="106"/>
+        <location filename="meteo_qt.py" line="108"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="106"/>
+        <location filename="meteo_qt.py" line="108"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="171"/>
+        <location filename="meteo_qt.py" line="173"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="300"/>
+        <location filename="meteo_qt.py" line="302"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="311"/>
-        <source>Application for weather status information</source>
+        <location filename="meteo_qt.py" line="313"/>
+        <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+                    &lt;br/&gt;License: GPLv3
+                    &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="311"/>
-        <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+        <location filename="meteo_qt.py" line="319"/>
+        <source>
                         &lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         &lt;br/&gt;information on the system tray.
@@ -381,7 +401,30 @@
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
                         &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         http://openweathermap.org/&lt;/a&gt;.
-                        &lt;p&gt;License: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
+                        &lt;p&gt;To translate meteo-qt in your language or contribute to
+                        &lt;br/&gt;current translations, you can either do it directly in
+                        &lt;br&gt;github by sending a pull request, or choose the file
+                        &lt;br/&gt; of your language from here:
+                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
+                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
+                        &lt;br/&gt; and send me by email.
+                        &lt;p&gt;If you want to repport a dysfunction or a suggestion,
+                        &lt;br/&gt;feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        issue&lt;/a&gt; in github.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="338"/>
+        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

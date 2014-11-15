@@ -17,12 +17,14 @@ try:
     import overview
     import searchcity
     import conditions
+    import about_dlg
 except:
     from meteo_qt import qrc_resources
     from meteo_qt import settings
     from meteo_qt import overview
     from meteo_qt import searchcity
     from meteo_qt import conditions
+    from meteo_qt import about_dlg
 
 
 __version__ = "0.1.0"
@@ -308,8 +310,13 @@ class SystemTrayIcon(QMainWindow):
         print('write ', what[0], what[1])
 
     def about(self):
-        QMessageBox.about(self, self.tr("Application for weather status information"),
-                        self.tr("""<b>meteo-qt</b> v{0}
+        title = self.tr('''<b>meteo-qt</b> v{0}
+                    <br/>License: GPLv3
+                    <br/>Python {1} - Qt {2} - PyQt {3} on {4}'''.format(
+                        __version__, platform.python_version(),
+                        QT_VERSION_STR, PYQT_VERSION_STR, platform.system()))
+        image = ':/logo'
+        text = self.tr("""
                         <p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
                         <br/>information on the system tray.
@@ -317,9 +324,30 @@ class SystemTrayIcon(QMainWindow):
                         https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
                         http://openweathermap.org/</a>.
-                        <p>License: GPLv3 <br/>Python {1} - Qt {2} - PyQt {3} on {4}""").format(
-                        __version__, platform.python_version(),
-                        QT_VERSION_STR, PYQT_VERSION_STR, platform.system()))
+                        <p>To translate meteo-qt in your language or contribute to
+                        <br/>current translations, you can either do it directly in
+                        <br>github by sending a pull request, or choose the file
+                        <br/> of your language from here:
+                        <a href="https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations">
+                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations</a>
+                        <br/> and send me by email.
+                        <p>If you want to repport a dysfunction or a suggestion,
+                        <br/>feel free to open an <a href="https://github.com/dglent/meteo-qt/issues">
+                        issue</a> in github.""")
+
+        contributors = self.tr('''Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
+            [de] German translation
+            <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
+            [el] Greek translation
+            <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
+            [fr] French translation, Project
+            <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
+            [uk] Ukranian translation
+            <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
+            [zh_TW] Chinese (Taiwan) translation''')
+
+        dialog = about_dlg.AboutDialog(title, text, image, contributors, self)
+        dialog.exec_()
 
 
 class Download(QThread):
