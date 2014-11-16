@@ -326,7 +326,7 @@ class SystemTrayIcon(QMainWindow):
                         <a href="https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations">
                         https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations</a>
                         and send me the file by email.
-                        <p>If you want to repport a dysfunction or a suggestion,
+                        <p>If you want to report a dysfunction or a suggestion,
                         feel free to open an <a href="https://github.com/dglent/meteo-qt/issues">
                         issue</a> in github.""")
 

@@ -433,7 +433,7 @@
                         &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
                         https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
                         and send me the file by email.
-                        &lt;p&gt;If you want to repport a dysfunction or a suggestion,
+                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         issue&lt;/a&gt; in github.</source>
         <translation>&lt;p&gt;Автор: Дімітріос Ґлєнтадакіс &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
