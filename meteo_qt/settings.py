@@ -161,7 +161,8 @@ class MeteoSettings(QDialog):
                             'Exec=meteo-qt\n',
                             'Name=meteo-qt\n',
                             'Type=Application\n',
-                            'Version=1.0\n']
+                            'Version=1.0\n',
+                            'X-LXQt-Need-Tray=true\n']
             if not os.path.exists(home + dir_auto):
                 os.system('mkdir -p {}'.format(os.path.dirname(total_path)))
             with open(total_path, 'w') as out_file:
