@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk_UA" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="uk_UA">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Про програму</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Учасники розробки</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Про Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -386,25 +387,35 @@
     </message>
     <message>
         <location filename="meteo_qt.py" line="333"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"></translation>
+        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Переклад німецькою
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Переклад грецькою
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Переклад французькою, проект
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Переклад українською
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Переклад китайською (традиційною)</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="309"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished">&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-                        &lt;p&gt;Умови ліцензування: GPLv3 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+                        &lt;br/&gt;Умови ліцензування: GPLv3 
+                        &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="315"/>
@@ -425,13 +436,23 @@
                         &lt;p&gt;If you want to repport a dysfunction or a suggestion,
                         feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         issue&lt;/a&gt; in github.</source>
-        <translation type="unfinished">                        &lt;p&gt;Автор: Дімітріос Ґлєнтадакіс &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+        <translation>&lt;p&gt;Автор: Дімітріос Ґлєнтадакіс &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;Проста програма для показу даних щодо погоди
                         &lt;br/&gt;у системному лотку.
                         &lt;br/&gt;Сайт: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
                         &lt;br/&gt;Джерело даних: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        http://openweathermap.org/&lt;/a&gt;.</translation>
+                        http://openweathermap.org/&lt;/a&gt;.
+                        &lt;p&gt;Перекласти meteo-qt вашою рідною мовою або
+                        доповнити наявний переклад можна або безпосередньо на
+                        github, надіславши запит щодо долучення латки (pull request), або вибравши
+                        файл перекладу на цій сторінці:
+                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
+                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
+                        Нові переклади слід надсилати авторові електронною поштою.
+                        &lt;p&gt;Якщо ви хочете повідомити про ваду у програмі або надіслати власну пропозицію щодо
+                        удосконалення, створіть &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        повідомлення про ваду&lt;/a&gt; на github.</translation>
     </message>
 </context>
 <context>
