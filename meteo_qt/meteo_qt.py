@@ -102,9 +102,9 @@ class SystemTrayIcon(QMainWindow):
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit)
         self.traycolor = self.settings.value('TrayColor') or ''
-        self.update()
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
+        self.update()
 
     def firsttime(self):
         self.systray.showMessage('meteo-qt:\n',
@@ -158,7 +158,8 @@ class SystemTrayIcon(QMainWindow):
                 return
 
     def error(self, error):
-        print('error')
+        print(self.tentatives)
+        print('Error:\n', error)
         what = error[error.find('@')+1:]
         if what == 'city':
                     self.inerror = True
@@ -171,10 +172,12 @@ class SystemTrayIcon(QMainWindow):
             mdialog = QMessageBox.critical(
                 self, 'meteo-qt', error, QMessageBox.Ok)
             self.timer.start(self.interval)
+            self.inerror = True
             self.tentatives = 0
         else:
             self.tentatives += 1
-            self.timer.singleShot(2000, self.update)
+            self.timer.singleShot(5000, self.update)
+            self.inerror = True
 
     def makeicon(self, data):
         image = QImage()
@@ -239,9 +242,9 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
     def tray(self):
-        print('Paint tray icon')
         if self.inerror:
             return
+        print('Paint tray icon')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
         self.icon = QPixmap(':/empty')
@@ -255,6 +258,8 @@ class SystemTrayIcon(QMainWindow):
 
     def activate(self, reason):
         if reason == 3:
+            if self.inerror:
+                return
             try:
                 if self.overviewcity.isVisible():
                     self.overviewcity.hide()
@@ -399,8 +404,12 @@ class Download(QThread):
             self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
             self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
-            error = 'Error ' + str(error.code) + ' ' + str(error.reason)
-            self.error['QString'].emit(error)
+            code = ''
+            if hasattr(error, 'code'):
+                code = str(error.code)
+            print(error.code, error.reason)
+            m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
+            self.error['QString'].emit(m_error)
         print('Download thread done')
 
     def html404(self, page, what):

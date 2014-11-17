@@ -94,6 +94,7 @@ class SearchCity(QDialog):
         self.delay = 5000
         print(e)
         self.status.setText(e)
+        self.adjustSize()
         self.errorStatus = True
 
     def result(self):
@@ -135,10 +136,14 @@ class WorkThread(QThread):
             page = req.read()
             tree = etree.fromstring(page)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
-            error = (self.tr('Error') + ' ' + str(error.code) + ' ' +
-                     str(error.reason + self.tr('\nTry again later')))
-            self.error['QString'].emit(error)
+            code = ''
+            if hasattr(error, 'code'):
+                code = str(error.code)
+            m_error = (self.tr('Error: ') + code + ' ' + str(error.reason) +
+                       self.tr('\nTry again later'))
+            self.error['QString'].emit(m_error)
             return
+        # No result
         if int(tree[1].text) == 0:
             return
         for i in range(int(tree[1].text)):
