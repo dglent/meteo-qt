@@ -339,7 +339,9 @@ class SystemTrayIcon(QMainWindow):
             <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
             [uk] Ukranian translation
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
-            [zh_TW] Chinese (Taiwan) translation""")
+            [zh_TW] Chinese (Taiwan) translation
+            <p>pmav99<br/>
+            Project""")
 
         dialog = about_dlg.AboutDialog(title, text, image, contributors, self)
         dialog.exec_()
