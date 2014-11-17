@@ -101,6 +101,7 @@ class SystemTrayIcon(QMainWindow):
         self.country = self.settings.value('Country') or 'GR'
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit)
+        self.traycolor = self.settings.value('TrayColor') or ''
         self.update()
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
@@ -247,6 +248,7 @@ class SystemTrayIcon(QMainWindow):
         pt = QPainter(self.icon)
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
+        pt.setPen(QColor(self.traycolor))
         pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
@@ -274,14 +276,19 @@ class SystemTrayIcon(QMainWindow):
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
         if dialog.exec_() == 0:
-            (city, id_, country, unit, interval) = (self.settings.value('City'),
+            (city, id_, country, unit, interval, traycolor) = (self.settings.value('City'),
                                           self.settings.value('ID'),
                                           self.settings.value('Country'),
                                           self.settings.value('Unit'),
-                                          self.settings.value('Interval'))
+                                          self.settings.value('Interval'),
+                                          self.settings.value('TrayColor'))
+            # Check if update is needed
+            if traycolor == None:
+                traycolor = ''
             if (city == self.city and id_ == self.id_ and
                 country == self.country and
-                unit == self.unit and str(int(self.interval/1000/60)) == interval):
+                unit == self.unit and str(int(int(self.interval)/1000/60)) == interval
+                and self.traycolor == traycolor):
                 return
             else:
                 self.refresh()

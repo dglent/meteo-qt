@@ -25,6 +25,7 @@ class MeteoSettings(QDialog):
             locale = locale[:2]
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
+        self.temp_tray_color = self.settings.value('TrayColor') or ''
         self.city_label = QLabel(self.set_city)
         self.cityTitle = QLabel(self.tr('City'))
         self.cityButton = QPushButton()
@@ -102,7 +103,15 @@ class MeteoSettings(QDialog):
         autostart_bool = eval(autostart_bool)
         self.autostart_checkbox.setChecked(autostart_bool)
         self.autostart_checkbox.stateChanged.connect(self.autostart)
-        # -----
+        # Tray temp° color
+        self.temp_colorLabel=QLabel(self.tr('Font colour of the temperature in the tray'))
+        self.temp_colorButton = QPushButton()
+        self.temp_colorButton.setStyleSheet('QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
+        self.temp_colorButton.setMaximumSize(QSize(44, 24))
+        self.temp_colorButton.clicked.connect(self.color_chooser)
+        self.temp_color_resetButton = QPushButton(self.tr('Reset to system default'))
+        self.temp_color_resetButton.clicked.connect(self.color_reset)
+        #----
         self.panel = QGridLayout()
         self.panel.addWidget(self.cityTitle, 0,0)
         self.panel.addWidget(self.city_label, 0,1)
@@ -116,6 +125,9 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.interval_min, 3,2)
         self.panel.addWidget(self.autostart_label, 4,0)
         self.panel.addWidget(self.autostart_checkbox, 4,1)
+        self.panel.addWidget(self.temp_colorLabel, 5,0)
+        self.panel.addWidget(self.temp_colorButton, 5,1)
+        self.panel.addWidget(self.temp_color_resetButton, 5,2)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -177,4 +189,16 @@ class MeteoSettings(QDialog):
         else:
             return
 
+    def color_chooser(self):
+        col = QColorDialog.getColor()
+        if col.isValid():
+            self.temp_colorButton.setStyleSheet(
+                'QWidget {{ background-color: {0} }}'.format(col.name()))
+            self.settings.setValue('TrayColor', col.name())
+            print('Write font color for temp in tray: {0}'.format(col.name()))
 
+    def color_reset(self):
+        self.temp_colorButton.setStyleSheet(
+                'QWidget { background-color:  }')
+        self.settings.setValue('TrayColor', '')
+        print('Write font color for temp in tray: None')
