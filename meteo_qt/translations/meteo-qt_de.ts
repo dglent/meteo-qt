@@ -5,17 +5,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Mitarbeiter</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Über Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -396,14 +396,25 @@
             [uk] Ukranian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] deutsche Übersetzung
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] griechische Übersetzung
+            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] französische Übersetzung, Projekt
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] ukrainische Übersetzung
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] chinesische (Taiwan) Übersetzung</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="309"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;Lizenz: GPLv3
+            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="315"/>
@@ -424,7 +435,23 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         issue&lt;/a&gt; in github.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Eine einfache Anwendung um die Wetterstatus-
+                        informationen im Systemtray anzuzeigen.
+                        &lt;br/&gt;Webseite: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        http://openweathermap.org/&lt;/a&gt;.
+                        &lt;p&gt;Um meteo-qt in ihre Sprache zu übersetzen oder an der
+                        aktuellen Übersetzung mitzuarbeiten, können sie es direkt in
+                        github tun, durch senden eines pull request, oder durch auswählen der 
+                        Sprachdatei, die sie übersetzen möchten unter folgendem Link:
+                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
+                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
+                        Sende mir anschließend die Datei via E-Mail.
+                        &lt;p&gt;Falls sie eine Fehlfunktion oder einen Vorschlag melden möchten,
+                        fühl dich frei einen &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        Antrag&lt;/a&gt; in github zu erstellen.</translation>
     </message>
 </context>
 <context>
