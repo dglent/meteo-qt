@@ -88,6 +88,7 @@ class SearchCity(QDialog):
         self.workThread.start()
 
     def addlist(self, city):
+        print('Found: ', city)
         self.lista.append(city)
 
     def error(self, e):
@@ -123,11 +124,13 @@ class WorkThread(QThread):
         # Search in any language
         self.city = repr(city.encode('utf-8')).replace("b'","").replace("\\x","%").replace("'","")
         self.suffix = suffix
+        self.tentatives = 1
 
     def __del__(self):
         self.wait()
 
     def run(self):
+        error_message = self.tr('Data error, please try again later\nor modify the name of the city')
         self.lista = []
         if self.city == '':
             return
@@ -145,18 +148,32 @@ class WorkThread(QThread):
             return
         # No result
         if int(tree[1].text) == 0:
+            print('Number of cities: 0')
             return
         for i in range(int(tree[1].text)):
             city = tree[3][i][0].get('name')
-            if city == '':
-                return
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
-                error = self.tr('Data error, please try again later\nor modify the name of the city')
-                self.error['QString'].emit(error)
+                self.error['QString'].emit(error_message)
                 return
-            self.lista.append(id_ + ' - ' + city + ' - ' + country)
+            if city == '' or country == None:
+                print('Tries: ',self.tentatives)
+                if self.tentatives == 10:
+                    self.error['QString'].emit(error_message)
+                    return
+                else:
+                    self.tentatives += 1
+                    self.run()
+                    print('Try to retreive city information...')
+            try:
+                self.lista.append(id_ + ' - ' + city + ' - ' + country)
+            except:
+                print('An error has occured:\n')
+                print('ID', id_)
+                print('City',city)
+                print('Country', country)
+                return
         for i in self.lista:
             self.city_signal['QString'].emit(i)
         print('City thread done')

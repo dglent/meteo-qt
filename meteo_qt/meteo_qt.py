@@ -414,7 +414,7 @@ class Download(QThread):
             code = ''
             if hasattr(error, 'code'):
                 code = str(error.code)
-            print(error.code, error.reason)
+            print(code, error.reason)
             m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
             self.error['QString'].emit(m_error)
         print('Download thread done')
