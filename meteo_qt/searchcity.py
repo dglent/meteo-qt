@@ -155,6 +155,7 @@ class WorkThread(QThread):
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
+                print('Error ID: ',id_)
                 self.error['QString'].emit(error_message)
                 return
             if city == '' or country == None:

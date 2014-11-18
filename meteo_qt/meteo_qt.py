@@ -81,6 +81,7 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def refresh(self):
+        self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
             # (try reason) Prevent C++ wrapper error
