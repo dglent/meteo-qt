@@ -109,7 +109,8 @@ class MeteoSettings(QDialog):
         self.temp_colorButton.setStyleSheet('QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
         self.temp_colorButton.setMaximumSize(QSize(44, 24))
         self.temp_colorButton.clicked.connect(self.color_chooser)
-        self.temp_color_resetButton = QPushButton(self.tr('Reset to system default'))
+        self.temp_color_resetButton = QPushButton(self.tr('Reset'))
+        self.temp_color_resetButton.setToolTip(self.tr('Reset font colour to system default'))
         self.temp_color_resetButton.clicked.connect(self.color_reset)
         #----
         self.panel = QGridLayout()
