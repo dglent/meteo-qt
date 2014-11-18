@@ -12,6 +12,7 @@ except:
 
 
 class MeteoSettings(QDialog):
+    applied_signal = pyqtSignal()
 
     def __init__(self, accurate_url, parent=None):
         super(MeteoSettings, self).__init__(parent)
@@ -31,6 +32,8 @@ class MeteoSettings(QDialog):
         self.cityButton = QPushButton()
         self.cityButton.setIcon(QIcon(':/configure'))
         self.cityButton.setToolTip(self.tr('Click to modify the city'))
+        self.cityButton.clicked.connect(self.searchcity)
+        # language
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
         self.languageCombo.setToolTip(
@@ -74,7 +77,8 @@ class MeteoSettings(QDialog):
         self.languageCombo.setCurrentIndex(self.languageCombo.findText
                                            (self.language_dico[self.setLanguage]))
         self.languageCombo.currentIndexChanged.connect(self.language)
-        self.cityButton.clicked.connect(self.searchcity)
+        self.lang_changed = False
+        # Unit system
         self.unitsLabel = QLabel(self.tr('Temperature unit'))
         self.unitsCombo = QComboBox()
         self.unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
@@ -83,6 +87,8 @@ class MeteoSettings(QDialog):
         self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
             self.unitsDico[self.tempUnit]))
         self.unitsCombo.currentIndexChanged.connect(self.units)
+        self.units_changed = False
+        # Interval of updates
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
         self.interval_combo = QComboBox()
@@ -91,11 +97,19 @@ class MeteoSettings(QDialog):
         self.interval_combo.setCurrentIndex(self.interval_combo.findText(
             self.interval_list[self.interval_list.index(self.interval_set)]))
         self.interval_combo.currentIndexChanged.connect(self.interval)
+        self.interval_changed = False
+        # OK Cancel Apply Buttons
         self.buttonLayout = QHBoxLayout()
         self.buttonLayout.addStretch()
-        self.buttonBox = QDialogButtonBox(QDialogButtonBox.Close)
+        self.buttonBox = QDialogButtonBox()
+        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok|QDialogButtonBox.Apply|QDialogButtonBox.Cancel)
+        self.buttonBox.setContentsMargins(0,30,0,0)
         self.buttonLayout.addWidget(self.buttonBox)
+        self.buttonBox.button(QDialogButtonBox.Apply).clicked.connect(self.apply_settings)
+        self.buttonBox.accepted.connect(self.accept)
         self.buttonBox.rejected.connect(self.reject)
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
         # Autostart
         self.autostart_label = QLabel(self.tr('Launch at startup'))
         self.autostart_checkbox = QCheckBox()
@@ -103,6 +117,7 @@ class MeteoSettings(QDialog):
         autostart_bool = eval(autostart_bool)
         self.autostart_checkbox.setChecked(autostart_bool)
         self.autostart_checkbox.stateChanged.connect(self.autostart)
+        self.autostart_changed = False
         # Tray temp° color
         self.temp_colorLabel=QLabel(self.tr('Font colour of the temperature in the tray'))
         self.temp_colorButton = QPushButton()
@@ -135,36 +150,40 @@ class MeteoSettings(QDialog):
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
     def units(self):
-        unit = self.unitsCombo.currentText()
-        setUnit = [key for key, value in self.unitsDico.items() if value == unit]
-        self.settings.setValue('Unit', setUnit[0])
-        print('Write ', 'Unit', setUnit[0])
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.units_changed = True
 
     def language(self):
-        lang = self.languageCombo.currentText()
-        setlang = [key for key, value in self.language_dico.items() if value == lang]
-        self.settings.setValue('Language', setlang[0])
-        print('Write ', 'Language', setlang[0])
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.lang_changed = True
 
     def interval(self):
-        time = self.interval_combo.currentText()
-        self.settings.setValue('Interval', time)
-        print('Write ', 'Interval', time)
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.interval_changed = True
 
     def searchcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
-        dialog.id_signal.connect(self.savesettings)
-        dialog.city_signal.connect(self.savesettings)
-        dialog.country_signal.connect(self.savesettings)
-        if dialog.exec_():
-            self.set_city = self.settings.value('City') or '?'
-            self.city_label.setText(self.set_city)
+        dialog.id_signal.connect(self.store_before_save_settings)
+        dialog.city_signal.connect(self.store_before_save_settings)
+        dialog.country_signal.connect(self.store_before_save_settings)
+        dialog.exec_()
 
-    def savesettings(self, what):
-        self.settings.setValue(what[0], what[1])
-        print('write ', what[0], what[1])
+    def store_before_save_settings(self, what):
+        if what[0] == 'ID':
+            self.id_before = what[1]
+        elif what[0] == 'City':
+            self.city_before = what[1]
+            self.city_label.setText(self.city_before)
+        elif what[0] == 'Country':
+            self.country_before = what[1]
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
     def autostart(self, state):
+        self.autostart_state = state
+        self.autostart_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def autostart_apply(self):
         dir_auto = '/.config/autostart/'
         d_file = 'meteo-qt.desktop'
         home = os.getenv('HOME')
@@ -181,12 +200,12 @@ class MeteoSettings(QDialog):
             with open(total_path, 'w') as out_file:
                 out_file.writelines(desktop_file)
             self.settings.setValue('Autostart', 'True')
-            print('Write desktop file in autostart')
+            print('Write desktop file in ~/.config/autostart')
         elif state == 0:
             if os.path.exists(total_path):
                 os.remove(total_path)
             self.settings.setValue('Autostart', 'False')
-            print('Remove desktop file from autostart')
+            print('Remove desktop file from ~/.config/autostart')
         else:
             return
 
@@ -195,11 +214,56 @@ class MeteoSettings(QDialog):
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name()))
-            self.settings.setValue('TrayColor', col.name())
-            print('Write font color for temp in tray: {0}'.format(col.name()))
+            self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+            self.color_before = col.name()
 
     def color_reset(self):
         self.temp_colorButton.setStyleSheet(
                 'QWidget { background-color:  }')
-        self.settings.setValue('TrayColor', '')
-        print('Write font color for temp in tray: None')
+        self.color_before = ''
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def apply_settings(self):
+        self.accepted()
+        self.applied_signal.emit()
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
+
+    def accepted(self):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
+        if hasattr(self, 'id_before'):
+            self.settings.setValue('ID', self.id_before)
+            print('write ', 'ID', self.id_before)
+        if hasattr(self, 'city_before'):
+            self.settings.setValue('City', self.city_before)
+            print('write ', 'City', self.city_before)
+        if hasattr(self, 'country_before'):
+            self.settings.setValue('Country', self.country_before)
+            print('write ', 'Country', self.country_before)
+        if hasattr(self, 'color_before'):
+            self.settings.setValue('TrayColor', self.color_before)
+            if self.color_before == '':
+                self.color_before = 'None'
+            print('Write font color for temp in tray: {0}'.format(self.color_before))
+        if self.autostart_changed:
+            self.autostart_apply()
+        if self.interval_changed:
+            time = self.interval_combo.currentText()
+            self.settings.setValue('Interval', time)
+            print('Write ', 'Interval', time)
+        if self.lang_changed:
+            lang = self.languageCombo.currentText()
+            setlang = [key for key, value in self.language_dico.items() if value == lang]
+            self.settings.setValue('Language', setlang[0])
+            print('Write ', 'Language', setlang[0])
+        if self.units_changed:
+            unit = self.unitsCombo.currentText()
+            setUnit = [key for key, value in self.unitsDico.items() if value == unit]
+            self.settings.setValue('Unit', setUnit[0])
+            print('Write ', 'Unit', setUnit[0])
+
+    def accept(self):
+        self.accepted()
+        QDialog.accept(self)
+
+
+

@@ -278,25 +278,32 @@ class SystemTrayIcon(QMainWindow):
             return
         self.overviewcity.show()
 
+    def config_save(self):
+        print('Config saving...')
+        city = self.settings.value('City'),
+        id_ = self.settings.value('ID')
+        country = self.settings.value('Country')
+        unit = self.settings.value('Unit')
+        interval = self.settings.value('Interval')
+        traycolor = self.settings.value('TrayColor')
+        # Check if update is needed
+        if traycolor == None:
+            traycolor = ''
+        if (city[0] == self.city and
+           id_ == self.id_ and
+           country == self.country and
+           unit == self.unit and
+           str(int(int(self.interval)/1000/60)) == interval and
+           self.traycolor == traycolor):
+            return
+        else:
+            self.refresh()
+
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self)
-        if dialog.exec_() == 0:
-            (city, id_, country, unit, interval, traycolor) = (self.settings.value('City'),
-                                          self.settings.value('ID'),
-                                          self.settings.value('Country'),
-                                          self.settings.value('Unit'),
-                                          self.settings.value('Interval'),
-                                          self.settings.value('TrayColor'))
-            # Check if update is needed
-            if traycolor == None:
-                traycolor = ''
-            if (city == self.city and id_ == self.id_ and
-                country == self.country and
-                unit == self.unit and str(int(int(self.interval)/1000/60)) == interval
-                and self.traycolor == traycolor):
-                return
-            else:
-                self.refresh()
+        dialog.applied_signal.connect(self.config_save)
+        if dialog.exec_() == 1:
+            self.config_save()
 
     def tempcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
