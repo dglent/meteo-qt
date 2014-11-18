@@ -119,7 +119,7 @@ class MeteoSettings(QDialog):
         self.autostart_checkbox.stateChanged.connect(self.autostart)
         self.autostart_changed = False
         # Tray temp° color
-        self.temp_colorLabel=QLabel(self.tr('Font colour of the temperature in the tray'))
+        self.temp_colorLabel=QLabel(self.tr('Font colour in the tray'))
         self.temp_colorButton = QPushButton()
         self.temp_colorButton.setStyleSheet('QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
         self.temp_colorButton.setMaximumSize(QSize(44, 24))
