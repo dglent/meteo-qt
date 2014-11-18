@@ -21,7 +21,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="421"/>
+        <location filename="meteo_qt.py" line="422"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -384,32 +384,32 @@
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="319"/>
+        <location filename="meteo_qt.py" line="320"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="111"/>
+        <location filename="meteo_qt.py" line="112"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="111"/>
+        <location filename="meteo_qt.py" line="112"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="171"/>
+        <location filename="meteo_qt.py" line="172"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: Αδύνατη η εύρεση δεδομένων!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="94"/>
+        <location filename="meteo_qt.py" line="95"/>
         <source>Fetching weather data ...</source>
         <translation>Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="330"/>
+        <location filename="meteo_qt.py" line="331"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -418,7 +418,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="336"/>
+        <location filename="meteo_qt.py" line="337"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -455,7 +455,7 @@
                         θέμα&lt;/a&gt; στο github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="354"/>
+        <location filename="meteo_qt.py" line="355"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -1003,7 +1003,7 @@ Try again later</source>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Σφάλμα δεδομένων, παρακαλώ προσπαθήστε ξανά αργότερα
-ή δοκιμάστε να αλλάξτε την πόλη</translation>
+ή δοκιμάστε να αλλάξετε την πόλη</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="147"/>
