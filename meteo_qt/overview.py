@@ -181,7 +181,7 @@ class OverviewCity(QDialog):
     def error(self, error):
         print('error in download of forecast icon:\n', error)
 
-    def closeEvent(self, event):
+    def moveEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
 
 class IconDownload(QThread):
