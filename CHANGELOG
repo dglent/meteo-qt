@@ -1,4 +1,4 @@
-0.3.0
+0.3.1
 Fix autostart in lxqt (whait for tray)
 Update translations for de, uk
 Improve error/invalid data handling
