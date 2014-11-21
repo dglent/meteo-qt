@@ -16,7 +16,7 @@ class SearchCity(QDialog):
         self.delay = 1000
         self.timer = QTimer()
         self.accurate_url = accurate_url
-        self.suffix = '&type=accurate&mode=xml'
+        self.suffix = '&type=like&mode=xml'
         self.layout = QVBoxLayout()
         self.line_search = QLineEdit(self.tr('Type the name of the city and press Enter'))
         self.line_search.selectAll()
