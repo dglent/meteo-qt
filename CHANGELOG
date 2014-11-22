@@ -1,3 +1,8 @@
+0.3.2
+fixes in settings and error handling
+Search city by substring in order to have more results
+Memorize the window's position
+
 0.3.1
 Fix autostart in lxqt (whait for tray)
 Update translations for de, uk
