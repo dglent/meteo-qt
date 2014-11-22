@@ -188,7 +188,7 @@ class MeteoSettings(QDialog):
         d_file = 'meteo-qt.desktop'
         home = os.getenv('HOME')
         total_path = home + dir_auto + d_file
-        if state == 2:
+        if self.autostart_state == 2:
             desktop_file = ['[Desktop Entry]\n',
                             'Exec=meteo-qt\n',
                             'Name=meteo-qt\n',
@@ -201,7 +201,7 @@ class MeteoSettings(QDialog):
                 out_file.writelines(desktop_file)
             self.settings.setValue('Autostart', 'True')
             print('Write desktop file in ~/.config/autostart')
-        elif state == 0:
+        elif self.autostart_state == 0:
             if os.path.exists(total_path):
                 os.remove(total_path)
             self.settings.setValue('Autostart', 'False')

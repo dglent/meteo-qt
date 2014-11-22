@@ -94,12 +94,14 @@ class SystemTrayIcon(QMainWindow):
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
-        self.city = self.settings.value('City') or 'Kalamata'
+        self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID')
         if self.id_ == None:
-            self.timer.singleShot(10000, self.firsttime)
-            self.id_ = '261604'
-        self.country = self.settings.value('Country') or 'GR'
+            self.timer.singleShot(5000, self.firsttime)
+            self.id_ = ''
+            self.systray.setToolTip(self.tr('No city configured'))
+            return
+        self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit)
         self.traycolor = self.settings.value('TrayColor') or ''
@@ -425,8 +427,8 @@ class Download(QThread):
             dico = eval(page.decode('utf-8'))
             code = dico['cod']
             message = dico['message']
-            self.error = code + ' ' + message + '@' + what
-            print(self.error)
+            self.error_message = code + ' ' + message + '@' + what
+            print(self.error_message)
             return True
         except:
             return False

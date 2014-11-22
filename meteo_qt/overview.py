@@ -215,7 +215,7 @@ class IconDownload(QThread):
             dico = eval(page.decode('utf-8'))
             code = dico['cod']
             message = dico['message']
-            self.error = code + ' ' + message + '@' + what
+            self.error_message = code + ' ' + message + '@' + what
             print(self.error)
             return True
         except:
