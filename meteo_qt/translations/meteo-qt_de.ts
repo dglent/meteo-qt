@@ -21,7 +21,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="422"/>
+        <location filename="meteo_qt.py" line="427"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
@@ -384,22 +384,22 @@
         <translation>Suche Wetterdaten...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="320"/>
+        <location filename="meteo_qt.py" line="325"/>
         <source>Fetching weather data...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="112"/>
+        <location filename="meteo_qt.py" line="117"/>
         <source>No city has been configured yet.</source>
         <translation>Es wurde noch keine Stadt ausgewählt.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="112"/>
+        <location filename="meteo_qt.py" line="117"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klicke rechts auf das Icon und wähle Einstellungen.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="172"/>
+        <location filename="meteo_qt.py" line="177"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: Kann Daten nicht finden!</translation>
     </message>
@@ -409,7 +409,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="331"/>
+        <location filename="meteo_qt.py" line="336"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -418,7 +418,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="337"/>
+        <location filename="meteo_qt.py" line="342"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -455,7 +455,7 @@
                         Antrag&lt;/a&gt; in github zu erstellen.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="355"/>
+        <location filename="meteo_qt.py" line="360"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -468,6 +468,11 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="104"/>
+        <source>No city configured</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
