@@ -184,6 +184,15 @@ class OverviewCity(QDialog):
     def moveEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
 
+    def resizeEvent(self, event):
+        self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
+
+    def hideEvent(self, event):
+        self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
+
+    def closeEvent(self, event):
+        self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
+
 class IconDownload(QThread):
     error = pyqtSignal(['QString'])
     wimage = pyqtSignal(['PyQt_PyObject'])
