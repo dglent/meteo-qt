@@ -966,7 +966,7 @@
     <message>
         <location filename="conditions.py" line="131"/>
         <source>E</source>
-        <translation>E</translation>
+        <translation>Α</translation>
     </message>
     <message>
         <location filename="conditions.py" line="132"/>
