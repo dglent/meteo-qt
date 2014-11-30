@@ -1,3 +1,6 @@
+0.3.4
+Fix not diplaying correctly the city name, if the name contains hyphens.
+
 0.3.3
 fixes in settings and error handling
 Search city by substring in order to have more results
