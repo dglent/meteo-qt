@@ -54,7 +54,7 @@ class SearchCity(QDialog):
         item = self.listWidget.item(row)
         if item != None:
             selected_city = item.text()
-            city_list = selected_city.split('-')
+            city_list = selected_city.split(' - ')
             for c in range(len(city_list)):
                 city_list[c] = city_list[c].strip()
             id_ = 'ID', city_list[0]
