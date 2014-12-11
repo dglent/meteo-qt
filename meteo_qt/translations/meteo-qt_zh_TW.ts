@@ -5,17 +5,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>貢獻者</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"></translation>
+        <translation>關於 Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -24,7 +24,8 @@
         <location filename="meteo_qt.py" line="427"/>
         <source>Error :
 </source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤：
+</translation>
     </message>
 </context>
 <context>
@@ -217,22 +218,22 @@
     <message>
         <location filename="settings.py" line="115"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>在開機時啟動</translation>
     </message>
     <message>
         <location filename="settings.py" line="128"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>重設</translation>
     </message>
     <message>
         <location filename="settings.py" line="129"/>
         <source>Reset font colour to system default</source>
-        <translation type="unfinished"></translation>
+        <translation>重設字型顏色為系統預設</translation>
     </message>
     <message>
         <location filename="settings.py" line="123"/>
         <source>Font colour in the tray</source>
-        <translation type="unfinished"></translation>
+        <translation>系統列字型顏色</translation>
     </message>
 </context>
 <context>
@@ -455,7 +456,7 @@
     <message>
         <location filename="meteo_qt.py" line="104"/>
         <source>No city configured</source>
-        <translation type="unfinished"></translation>
+        <translation>沒有設定城市</translation>
     </message>
 </context>
 <context>
@@ -995,7 +996,7 @@ or modify the name of the city</source>
     <message>
         <location filename="searchcity.py" line="147"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤：</translation>
     </message>
 </context>
 </TS>
