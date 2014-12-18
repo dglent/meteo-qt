@@ -516,7 +516,7 @@
     <message>
         <location filename="conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>καταιγίδα και ασθενής ψεκάδες</translation>
+        <translation>καταιγίδα και ασθενείς ψεκάδες</translation>
     </message>
     <message>
         <location filename="conditions.py" line="16"/>
@@ -531,7 +531,7 @@
     <message>
         <location filename="conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation>ασθενής έντασης ψεκάδες</translation>
+        <translation>ασθενούς έντασης ψεκάδες</translation>
     </message>
     <message>
         <location filename="conditions.py" line="19"/>
@@ -546,7 +546,7 @@
     <message>
         <location filename="conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation>ασθενής ψεκάδες βροχής</translation>
+        <translation>ασθενείς ψεκάδες βροχής</translation>
     </message>
     <message>
         <location filename="conditions.py" line="22"/>
