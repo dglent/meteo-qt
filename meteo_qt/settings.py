@@ -6,9 +6,9 @@ from PyQt5.QtWidgets import *
 import os
 
 try:
-    import searchcity
+    import citylistdlg
 except:
-    from meteo_qt import searchcity
+    from meteo_qt import citylistdlg
 
 
 class MeteoSettings(QDialog):
@@ -20,19 +20,27 @@ class MeteoSettings(QDialog):
         self.accurate_url = accurate_url
         self.settings = QSettings()
         self.set_city = self.settings.value('City') or '?'
-        locale = QLocale.system().name().lower()
+        locale = QLocale.system().name()
         locale_long = ['pt_BR', 'zh_CN', 'zh_TW']
         if locale not in locale_long:
             locale = locale[:2]
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
         self.temp_tray_color = self.settings.value('TrayColor') or ''
-        self.city_label = QLabel(self.set_city)
+        # ----- Cities comboBox--------------------------------
+        self.first = True
+        self.city_list_before = []
+        self.citylist = []
+        self.cityCombo = QComboBox()
+        if self.set_city != '?':
+            self.add_cities_incombo()
+        self.cityCombo.currentIndexChanged.connect(self.city_default)
         self.cityTitle = QLabel(self.tr('City'))
         self.cityButton = QPushButton()
         self.cityButton.setIcon(QIcon(':/configure'))
-        self.cityButton.setToolTip(self.tr('Click to modify the city'))
-        self.cityButton.clicked.connect(self.searchcity)
+        self.cityButton.setToolTip(self.tr('Click to modify the cities list'))
+        self.cityButton.clicked.connect(self.edit_cities_list)
+        #------------------------------------------------------
         # language
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
@@ -65,8 +73,8 @@ class MeteoSettings(QDialog):
                               'sv': self.tr('Swedish'),
                               'tr': self.tr('Turkish'),
                               'uk': self.tr('Ukrainian'),
-                              'zh_tw': self.tr('Chinese Traditional'),
-                              'zh_cn': self.tr('Chinese Simplified')
+                              'zh_TW': self.tr('Chinese Traditional'),
+                              'zh_CN': self.tr('Chinese Simplified')
                                }
         lang_list = sorted(self.language_dico.values())
         # English as fallback language
@@ -130,7 +138,7 @@ class MeteoSettings(QDialog):
         #----
         self.panel = QGridLayout()
         self.panel.addWidget(self.cityTitle, 0,0)
-        self.panel.addWidget(self.city_label, 0,1)
+        self.panel.addWidget(self.cityCombo, 0,1)
         self.panel.addWidget(self.cityButton, 0,2)
         self.panel.addWidget(self.languageLabel, 1,0)
         self.panel.addWidget(self.languageCombo, 1,1)
@@ -157,26 +165,42 @@ class MeteoSettings(QDialog):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.lang_changed = True
 
+    def city_default(self):
+        allitems = [self.cityCombo.itemText(i) for i in range(self.cityCombo.count())]
+        city_name = self.cityCombo.currentText()
+        citytosave = city_name.split('_')
+        if len(citytosave) < 3:
+            return
+        self.id_before = citytosave[2]
+        self.city_before = citytosave[0]
+        self.country_before = citytosave[1]
+        self.city_list_before = allitems[:]
+        self.city_list_before.pop(self.city_list_before.index(city_name))
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
     def interval(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.interval_changed = True
 
-    def searchcity(self):
-        dialog = searchcity.SearchCity(self.accurate_url, self)
-        dialog.id_signal.connect(self.store_before_save_settings)
-        dialog.city_signal.connect(self.store_before_save_settings)
-        dialog.country_signal.connect(self.store_before_save_settings)
+    def edit_cities_list(self):
+        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url, self)
+        dialog.citieslist_signal.connect(self.cities_list)
         dialog.exec_()
 
-    def store_before_save_settings(self, what):
-        if what[0] == 'ID':
-            self.id_before = what[1]
-        elif what[0] == 'City':
-            self.city_before = what[1]
-            self.city_label.setText(self.city_before)
-        elif what[0] == 'Country':
-            self.country_before = what[1]
+    def cities_list(self, cit_list):
+        if len(cit_list) == 0:
+            return
+        citytosave = cit_list[0].split('_')
+        self.id_before = citytosave[2]
+        self.city_before = citytosave[0]
+        self.country_before = citytosave[1]
+        if len(cit_list) > 1:
+            self.city_list_before = cit_list[1:]
+        else:
+            self.city_list_before = str('')
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.first = False
+        self.add_cities_incombo()
 
     def autostart(self, state):
         self.autostart_state = state
@@ -239,6 +263,8 @@ class MeteoSettings(QDialog):
         if hasattr(self, 'country_before'):
             self.settings.setValue('Country', self.country_before)
             print('write ', 'Country', self.country_before)
+        if hasattr(self, 'city_list_before'):
+            self.settings.setValue('CityList', str(self.city_list_before))
         if hasattr(self, 'color_before'):
             self.settings.setValue('TrayColor', self.color_before)
             if self.color_before == '':
@@ -265,5 +291,23 @@ class MeteoSettings(QDialog):
         self.accepted()
         QDialog.accept(self)
 
+    def add_cities_incombo(self):
+        list_cities = ''
+        self.cityCombo.clear()
+        if self.first:
+            list_cities =  self.settings.value('CityList')
+            if list_cities != None:
+                self.city_list_before = list_cities[:]
+            self.citylist = [self.set_city + '_' + self.settings.value('Country') +
+                         '_' + self.settings.value('ID')]
+        else:
+            self.citylist = [self.city_before + '_' + self.country_before +
+                             '_' + self.id_before]
+            list_cities = self.city_list_before[:]
+        if list_cities != '' and list_cities != None:
+            if type(list_cities) is str:
+                list_cities = eval(list_cities)
+            self.citylist = self.citylist + list_cities
+        self.cityCombo.addItems(self.citylist)
 
 

@@ -12,6 +12,8 @@ import urllib.request
 from lxml import etree
 import platform
 import os
+from functools import partial
+
 try:
     import qrc_resources
     import settings
@@ -32,7 +34,6 @@ __version__ = "0.3.4"
 
 
 class SystemTrayIcon(QMainWindow):
-
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
         cond = conditions.WeatherConditions()
@@ -53,6 +54,7 @@ class SystemTrayIcon(QMainWindow):
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
+        self.citiesMenu = QMenu(self.tr('Cities'))
         self.tempCityAction = QAction(self.tr('&Temporary city'), self)
         self.refreshAction = QAction(self.tr('&Update'), self)
         self.settingsAction = QAction(self.tr('&Settings'), self)
@@ -63,8 +65,10 @@ class SystemTrayIcon(QMainWindow):
         self.refreshAction.setIcon(QIcon(':/refresh'))
         self.settingsAction.setIcon(QIcon(':/configure'))
         self.tempCityAction.setIcon(QIcon(':/tempcity'))
+        self.citiesMenu.setIcon(QIcon(':/bookmarks'))
         self.menu.addAction(self.settingsAction)
         self.menu.addAction(self.refreshAction)
+        self.menu.addMenu(self.citiesMenu)
         self.menu.addAction(self.tempCityAction)
         self.menu.addAction(self.aboutAction)
         self.menu.addAction(self.exitAction)
@@ -80,6 +84,44 @@ class SystemTrayIcon(QMainWindow):
         self.systray.show()
         self.refresh()
 
+    def cities_menu(self):
+        self.citiesMenu.clear()
+        cities = self.settings.value('CityList')
+        if cities != None and cities != '' and cities != '[]':
+            if type(cities) is not list:
+                cities = eval(cities)
+            for city in cities:
+                action = QAction(city, self)
+                action.triggered.connect(partial(self.changecity, city))
+                self.citiesMenu.addAction(action)
+        else:
+            self.citiesMenu.addAction(self.tr('Empty list'))
+            return
+
+    @pyqtSlot(str)
+    def changecity(self, city):
+        cities_list = self.settings.value('CityList')
+        if cities_list == None:
+            self.citiesMenu.addAction('Empty list')
+        if type(cities_list) is not list:
+            cities_list = eval(cities_list)
+        prev_city = (self.settings.value('City') + '_' +
+                     self.settings.value('Country') + '_' +
+                     self.settings.value('ID'))
+        citytoset = ''
+        for town in cities_list:
+            if town == city:
+                ind = cities_list.index(town)
+                citytoset = cities_list.pop(ind)
+                citytosetlist = citytoset.split('_')
+                self.settings.setValue('City', citytosetlist[0])
+                self.settings.setValue('Country', citytosetlist[1])
+                self.settings.setValue('ID', citytosetlist[2])
+                cities_list.append(prev_city)
+                self.settings.setValue('CityList', cities_list)
+        self.refresh()
+
+
     def refresh(self):
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
@@ -94,10 +136,11 @@ class SystemTrayIcon(QMainWindow):
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
+        self.cities_menu()
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID')
         if self.id_ == None:
-            self.timer.singleShot(5000, self.firsttime)
+            self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
             self.systray.setToolTip(self.tr('No city configured'))
             return

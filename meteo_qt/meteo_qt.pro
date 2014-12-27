@@ -3,7 +3,8 @@ SOURCES         += meteo_qt.py \
                    searchcity.py \
                    settings.py \
                    conditions.py \
-                   about_dlg.py
+                   about_dlg.py \
+                   citylistdlg.py
 
 TRANSLATIONS    += translations/meteo-qt_bg.ts \
                    translations/meteo-qt_ca.ts \

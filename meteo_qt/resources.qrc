@@ -8,5 +8,7 @@
     <file alias="empty">images/empty.png</file>
     <file alias="logo">images/meteo-qt.png</file>
     <file alias="tempcity">images/preferences-web-browser-shortcuts.png</file>
+    <file alias="find">images/document-preview.png</file>
+    <file alias="bookmarks">images/bookmarks-organize.png</file>
 </qresource>
 </RCC>
