@@ -42,23 +42,28 @@
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
-        <source>&amp;Default city</source>
-        <translation>&amp;Εξ ορισμού πόλη</translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Sort</source>
         <translation>&amp;Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="67"/>
         <source>The city already exists in the list</source>
-        <translation type="unfinished"></translation>
+        <translation>Η πόλη υπάρχει ήδη στη λίστα</translation>
     </message>
     <message>
-        <location filename="citylistdlg.py" line="82"/>
-        <source>Cities must be more than 0</source>
-        <translation type="unfinished"></translation>
+        <location filename="citylistdlg.py" line="91"/>
+        <source>The city &quot;{0}&quot; has been removed</source>
+        <translation>Αφαιρέθηκε η πόλη «{0}» </translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="85"/>
+        <source>The cities number must be greater than zero</source>
+        <translation>Το πλήθος των πόλεων πρέπει να είναι μεγαλύτερο του μηδέν</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="31"/>
+        <source>De&amp;fault</source>
+        <translation>Ε&amp;ξ ορισμού</translation>
     </message>
 </context>
 <context>
@@ -274,8 +279,8 @@
     </message>
     <message>
         <location filename="settings.py" line="42"/>
-        <source>Click to modify the cities list</source>
-        <translation type="unfinished"></translation>
+        <source>Click to edit the cities list</source>
+        <translation>Κάντε κλικ για να επεξεργαστείτε τη λίστα των πόλεων</translation>
     </message>
 </context>
 <context>
@@ -526,7 +531,7 @@
     <message>
         <location filename="meteo_qt.py" line="98"/>
         <source>Empty list</source>
-        <translation>Άδεια λίστα</translation>
+        <translation>Κενή λίστα</translation>
     </message>
 </context>
 <context>

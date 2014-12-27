@@ -42,11 +42,6 @@
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
-        <source>&amp;Default city</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Sort</source>
         <translation type="unfinished"></translation>
     </message>
@@ -56,8 +51,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="citylistdlg.py" line="82"/>
-        <source>Cities must be more than 0</source>
+        <location filename="citylistdlg.py" line="91"/>
+        <source>The city &quot;{0}&quot; has been removed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="85"/>
+        <source>The cities number must be greater than zero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="31"/>
+        <source>De&amp;fault</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -275,7 +280,7 @@
     </message>
     <message>
         <location filename="settings.py" line="42"/>
-        <source>Click to modify the cities list</source>
+        <source>Click to edit the cities list</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
