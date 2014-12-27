@@ -32,10 +32,8 @@ class CityListDlg(QDialog):
                            (self.tr("&Remove..."), self.remove),
                            (self.tr("&Up"), self.up),
                            (self.tr("&Down"), self.down),
-                           (self.tr("&Default city"), self.default),
+                           (self.tr("De&fault"), self.default),
                            (self.tr("&Sort"), self.listWidget.sortItems)):
-            if text == "&Sort":
-                buttonLayout.addStretch()
             button = QPushButton(text)
             buttonLayout.addWidget(button)
             button.clicked.connect(slot)
@@ -44,8 +42,10 @@ class CityListDlg(QDialog):
         layoutT.addLayout(layout)
         layoutT.addWidget(self.status)
         self.setLayout(layoutT)
+        self.checklength()
 
     def add(self):
+        self.status.setText('')
         lista = []
         newitem=''
         self.citytoadd = ''
@@ -64,8 +64,10 @@ class CityListDlg(QDialog):
                 return
             else:
                 self.listWidget.addItem(newitem)
+                self.checklength()
 
     def addcity(self, what):
+        self.status.setText('')
         if what[0] == 'ID':
             self._idtoadd = what[1]
         elif what[0] == 'City':
@@ -74,17 +76,22 @@ class CityListDlg(QDialog):
             self.countrytoadd = what[1]
 
     def remove(self):
+        self.status.setText('')
         if self.listWidget.count() == 1:
-            self.status.setText(self.tr('Cities must be more than 0'))
+            self.status.setText(self.tr('The cities number must be greater than zero'))
             return
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
         if item is None:
             return
+        message = self.tr('The city "{0}" has been removed').format(
+            self.listWidget.item(row).text())
         item = self.listWidget.takeItem(row)
         del item
+        self.status.setText(message)
 
     def up(self):
+        self.status.setText('')
         row = self.listWidget.currentRow()
         if row >= 1:
             item = self.listWidget.takeItem(row)
@@ -92,6 +99,7 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentItem(item)
 
     def down(self):
+        self.status.setText('')
         row = self.listWidget.currentRow()
         if row < self.listWidget.count() - 1:
             item = self.listWidget.takeItem(row)
@@ -99,12 +107,19 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentItem(item)
 
     def default(self):
+        self.status.setText('')
         row = self.listWidget.currentRow()
         if row >= 1:
             item = self.listWidget.takeItem(row)
             self.listWidget.insertItem(0, item)
             self.listWidget.setCurrentItem(item)
 
+    def checklength(self):
+        listtosend = []
+        for row in range(self.listWidget.count()):
+            listtosend.append(self.listWidget.item(row).text())
+        maxi = len(max(listtosend, key=len))
+        self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
 
     def accept(self):
         listtosend = []

@@ -38,7 +38,7 @@ class MeteoSettings(QDialog):
         self.cityTitle = QLabel(self.tr('City'))
         self.cityButton = QPushButton()
         self.cityButton.setIcon(QIcon(':/configure'))
-        self.cityButton.setToolTip(self.tr('Click to modify the cities list'))
+        self.cityButton.setToolTip(self.tr('Click to edit the cities list'))
         self.cityButton.clicked.connect(self.edit_cities_list)
         #------------------------------------------------------
         # language
@@ -265,6 +265,7 @@ class MeteoSettings(QDialog):
             print('write ', 'Country', self.country_before)
         if hasattr(self, 'city_list_before'):
             self.settings.setValue('CityList', str(self.city_list_before))
+            print('write ', 'CityList', str(self.city_list_before))
         if hasattr(self, 'color_before'):
             self.settings.setValue('TrayColor', self.color_before)
             if self.color_before == '':
@@ -281,6 +282,7 @@ class MeteoSettings(QDialog):
             setlang = [key for key, value in self.language_dico.items() if value == lang]
             self.settings.setValue('Language', setlang[0])
             print('Write ', 'Language', setlang[0])
+
         if self.units_changed:
             unit = self.unitsCombo.currentText()
             setUnit = [key for key, value in self.unitsDico.items() if value == unit]
@@ -309,5 +311,7 @@ class MeteoSettings(QDialog):
                 list_cities = eval(list_cities)
             self.citylist = self.citylist + list_cities
         self.cityCombo.addItems(self.citylist)
+        maxi = len(max(list_cities, key=len))
+        self.cityCombo.setMinimumSize(maxi*8,23)
 
 
