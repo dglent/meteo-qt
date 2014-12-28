@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="484"/>
+        <location filename="meteo_qt.py" line="496"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -402,62 +402,62 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="58"/>
+        <location filename="meteo_qt.py" line="59"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Προσωρινή πόλη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="59"/>
+        <location filename="meteo_qt.py" line="60"/>
         <source>&amp;Update</source>
         <translation>&amp;Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="60"/>
+        <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="61"/>
+        <location filename="meteo_qt.py" line="62"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="62"/>
+        <location filename="meteo_qt.py" line="63"/>
         <source>Exit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="83"/>
+        <location filename="meteo_qt.py" line="84"/>
         <source>Searching weather data...</source>
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="382"/>
+        <location filename="meteo_qt.py" line="393"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="174"/>
+        <location filename="meteo_qt.py" line="184"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="174"/>
+        <location filename="meteo_qt.py" line="184"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="234"/>
+        <location filename="meteo_qt.py" line="244"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: Αδύνατη η εύρεση δεδομένων!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="149"/>
+        <location filename="meteo_qt.py" line="153"/>
         <source>Fetching weather data ...</source>
         <translation>Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="393"/>
+        <location filename="meteo_qt.py" line="405"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -466,7 +466,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="399"/>
+        <location filename="meteo_qt.py" line="411"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -503,7 +503,7 @@
                         θέμα&lt;/a&gt; στο github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="417"/>
+        <location filename="meteo_qt.py" line="429"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -519,14 +519,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="159"/>
+        <location filename="meteo_qt.py" line="169"/>
         <source>No city configured</source>
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="57"/>
+        <location filename="meteo_qt.py" line="58"/>
         <source>Cities</source>
         <translation>Πόλεις</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="161"/>
+        <source>Empty list</source>
+        <translation>Κενή λίστα</translation>
     </message>
 </context>
 <context>

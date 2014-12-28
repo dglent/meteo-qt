@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="484"/>
+        <location filename="meteo_qt.py" line="496"/>
         <source>Error :
 </source>
         <translation>錯誤：
@@ -403,69 +403,69 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="58"/>
+        <location filename="meteo_qt.py" line="59"/>
         <source>&amp;Temporary city</source>
         <translation>暫時的城市(&amp;T)</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="59"/>
+        <location filename="meteo_qt.py" line="60"/>
         <source>&amp;Update</source>
         <translation>更新(&amp;U)</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="60"/>
+        <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Settings</source>
         <translation>設定(&amp;S)</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="61"/>
+        <location filename="meteo_qt.py" line="62"/>
         <source>&amp;About</source>
         <translation>關於(&amp;A)</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="62"/>
+        <location filename="meteo_qt.py" line="63"/>
         <source>Exit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="83"/>
+        <location filename="meteo_qt.py" line="84"/>
         <source>Searching weather data...</source>
         <translation>搜尋天氣資料...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="149"/>
+        <location filename="meteo_qt.py" line="153"/>
         <source>Fetching weather data ...</source>
         <translation>抓取天氣資料...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="174"/>
+        <location filename="meteo_qt.py" line="184"/>
         <source>No city has been configured yet.</source>
         <translation>還沒有設定城市。</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="174"/>
+        <location filename="meteo_qt.py" line="184"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>在圖示上點右鍵再點設定。</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="234"/>
+        <location filename="meteo_qt.py" line="244"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>找不到資料!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="382"/>
+        <location filename="meteo_qt.py" line="393"/>
         <source>Fetching weather data...</source>
         <translation>抓取天氣資料...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="393"/>
+        <location filename="meteo_qt.py" line="405"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="399"/>
+        <location filename="meteo_qt.py" line="411"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -486,7 +486,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="417"/>
+        <location filename="meteo_qt.py" line="429"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -502,13 +502,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="159"/>
+        <location filename="meteo_qt.py" line="169"/>
         <source>No city configured</source>
         <translation>沒有設定城市</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="57"/>
+        <location filename="meteo_qt.py" line="58"/>
         <source>Cities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="161"/>
+        <source>Empty list</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
