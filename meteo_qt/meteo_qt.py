@@ -30,7 +30,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.4.0"
+__version__ = "0.4.1"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -96,6 +96,7 @@ class SystemTrayIcon(QMainWindow):
         current_city = (self.settings.value('City') + '_' +
                      self.settings.value('Country') + '_' +
                      self.settings.value('ID'))
+        # Prevent duplicate entries
         try:
             city_toadd = cities.pop(cities.index(current_city))
         except:
@@ -104,7 +105,10 @@ class SystemTrayIcon(QMainWindow):
             cities.insert(0, city_toadd)
         if cities != None and cities != '' and cities != '[]':
             if type(cities) is not list:
+                #FIXME sometimes the list of cities is read as a string (?)
+                # eval to a list
                 cities = eval(cities)
+            # Create the cities list menu
             for city in cities:
                 action = QAction(city, self)
                 action.triggered.connect(partial(self.changecity, city))
@@ -116,15 +120,16 @@ class SystemTrayIcon(QMainWindow):
         if cities_list == None:
             self.citiesMenu.addAction('Empty list')
         if type(cities_list) is not list:
+            #FIXME some times is read as string (?)
             cities_list = eval(cities_list)
         prev_city = (self.settings.value('City') + '_' +
                      self.settings.value('Country') + '_' +
                      self.settings.value('ID'))
         citytoset = ''
+        # Set the chosen city as the default
         for town in cities_list:
             if town == city:
                 ind = cities_list.index(town)
-                #citytoset = cities_list.pop(ind)
                 citytoset = cities_list[ind]
                 citytosetlist = citytoset.split('_')
                 self.settings.setValue('City', citytosetlist[0])
@@ -155,6 +160,7 @@ class SystemTrayIcon(QMainWindow):
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
         if self.id_ == None:
+            # Clear the menu, no cities configured
             self.citiesMenu.clear()
             self.citiesMenu.addAction(self.tr('Empty list'))
             try:
@@ -165,7 +171,7 @@ class SystemTrayIcon(QMainWindow):
             self.id_ = ''
             self.systray.setToolTip(self.tr('No city configured'))
             return
-        # A city is found, create the cities menu
+        # A city has been found, create the cities menu now
         self.cities_menu()
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
