@@ -63,7 +63,7 @@
     <message>
         <location filename="citylistdlg.py" line="85"/>
         <source>The list is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λίστα είναι κενή</translation>
     </message>
 </context>
 <context>
