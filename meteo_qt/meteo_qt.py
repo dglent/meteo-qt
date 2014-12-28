@@ -86,7 +86,18 @@ class SystemTrayIcon(QMainWindow):
 
     def cities_menu(self):
         self.citiesMenu.clear()
-        cities = self.settings.value('CityList')
+        cities = self.settings.value('CityList') or []
+        if type(cities) is str:
+            cities = eval(cities)
+        current_city = (self.settings.value('City') + '_' +
+                     self.settings.value('Country') + '_' +
+                     self.settings.value('ID'))
+        try:
+            city_toadd = cities.pop(cities.index(current_city))
+        except:
+            city_toadd = current_city
+        finally:
+            cities.insert(0, city_toadd)
         if cities != None and cities != '' and cities != '[]':
             if type(cities) is not list:
                 cities = eval(cities)
@@ -94,9 +105,6 @@ class SystemTrayIcon(QMainWindow):
                 action = QAction(city, self)
                 action.triggered.connect(partial(self.changecity, city))
                 self.citiesMenu.addAction(action)
-        else:
-            self.citiesMenu.addAction(self.tr('Empty list'))
-            return
 
     @pyqtSlot(str)
     def changecity(self, city):
@@ -112,13 +120,16 @@ class SystemTrayIcon(QMainWindow):
         for town in cities_list:
             if town == city:
                 ind = cities_list.index(town)
-                citytoset = cities_list.pop(ind)
+                #citytoset = cities_list.pop(ind)
+                citytoset = cities_list[ind]
                 citytosetlist = citytoset.split('_')
                 self.settings.setValue('City', citytosetlist[0])
                 self.settings.setValue('Country', citytosetlist[1])
                 self.settings.setValue('ID', citytosetlist[2])
-                cities_list.append(prev_city)
+                if prev_city not in cities_list:
+                    cities_list.append(prev_city)
                 self.settings.setValue('CityList', cities_list)
+                print(cities_list)
         self.refresh()
 
 
@@ -136,14 +147,16 @@ class SystemTrayIcon(QMainWindow):
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.settings = QSettings()
-        self.cities_menu()
+
         self.city = self.settings.value('City') or ''
-        self.id_ = self.settings.value('ID')
+        self.id_ = self.settings.value('ID') or None
         if self.id_ == None:
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
             self.systray.setToolTip(self.tr('No city configured'))
             return
+        # A city is found, create the cities menu
+        self.cities_menu()
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit)

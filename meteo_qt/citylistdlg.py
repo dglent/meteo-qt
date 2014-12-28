@@ -77,8 +77,8 @@ class CityListDlg(QDialog):
 
     def remove(self):
         self.status.setText('')
-        if self.listWidget.count() == 1:
-            self.status.setText(self.tr('The cities number must be greater than zero'))
+        if self.listWidget.count() == 0:
+            self.status.setText(self.tr('The list is empty'))
             return
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
@@ -118,6 +118,8 @@ class CityListDlg(QDialog):
         listtosend = []
         for row in range(self.listWidget.count()):
             listtosend.append(self.listWidget.item(row).text())
+        if len(listtosend) == 0:
+            return
         maxi = len(max(listtosend, key=len))
         self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
 

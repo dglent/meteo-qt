@@ -29,6 +29,7 @@ class MeteoSettings(QDialog):
         self.temp_tray_color = self.settings.value('TrayColor') or ''
         # ----- Cities comboBox--------------------------------
         self.first = True
+        self.clear_combo = False
         self.city_list_before = []
         self.citylist = []
         self.cityCombo = QComboBox()
@@ -188,16 +189,21 @@ class MeteoSettings(QDialog):
         dialog.exec_()
 
     def cities_list(self, cit_list):
-        if len(cit_list) == 0:
-            return
-        citytosave = cit_list[0].split('_')
-        self.id_before = citytosave[2]
-        self.city_before = citytosave[0]
-        self.country_before = citytosave[1]
-        if len(cit_list) > 1:
-            self.city_list_before = cit_list[1:]
+        if len(cit_list) > 0:
+            citytosave = cit_list[0].split('_')
+            self.id_before = citytosave[2]
+            self.city_before = citytosave[0]
+            self.country_before = citytosave[1]
+            if len(cit_list) > 1:
+                self.city_list_before = cit_list[1:]
+            else:
+                self.city_list_before = str('')
         else:
-            self.city_list_before = str('')
+            self.id_before = ''
+            self.city_before = ''
+            self.country_before = ''
+            self.city_list_before = []
+            self.clear_combo = True
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.first = False
         self.add_cities_incombo()
@@ -282,7 +288,6 @@ class MeteoSettings(QDialog):
             setlang = [key for key, value in self.language_dico.items() if value == lang]
             self.settings.setValue('Language', setlang[0])
             print('Write ', 'Language', setlang[0])
-
         if self.units_changed:
             unit = self.unitsCombo.currentText()
             setUnit = [key for key, value in self.unitsDico.items() if value == unit]
@@ -296,6 +301,8 @@ class MeteoSettings(QDialog):
     def add_cities_incombo(self):
         list_cities = ''
         self.cityCombo.clear()
+        if self.clear_combo:
+            return
         if self.first:
             list_cities =  self.settings.value('CityList')
             if list_cities != None:
@@ -310,8 +317,14 @@ class MeteoSettings(QDialog):
             if type(list_cities) is str:
                 list_cities = eval(list_cities)
             self.citylist = self.citylist + list_cities
+        duplicate = []
+        for i in self.citylist:
+            if i not in duplicate:
+                duplicate.append(i)
+        self.citylist = duplicate[:]
         self.cityCombo.addItems(self.citylist)
-        maxi = len(max(list_cities, key=len))
-        self.cityCombo.setMinimumSize(maxi*8,23)
+        if len(list_cities) > 0:
+            maxi = len(max(list_cities, key=len))
+            self.cityCombo.setMinimumSize(maxi*8,23)
 
 
