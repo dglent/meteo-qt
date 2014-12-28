@@ -37,6 +37,7 @@ class SystemTrayIcon(QMainWindow):
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
         cond = conditions.WeatherConditions()
+        self.temporary_city_status = False
         self.conditions = cond.trans
         self.clouds = cond.clouds
         self.wind = cond.wind
@@ -85,6 +86,9 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def cities_menu(self):
+        # Don't add the temporary city in the list
+        if self.temporary_city_status:
+            return
         self.citiesMenu.clear()
         cities = self.settings.value('CityList') or []
         if type(cities) is str:
@@ -151,6 +155,12 @@ class SystemTrayIcon(QMainWindow):
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
         if self.id_ == None:
+            self.citiesMenu.clear()
+            self.citiesMenu.addAction(self.tr('Empty list'))
+            try:
+                self.overviewcity.close()
+            except:
+                pass
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
             self.systray.setToolTip(self.tr('No city configured'))
@@ -317,7 +327,7 @@ class SystemTrayIcon(QMainWindow):
 
     def activate(self, reason):
         if reason == 3:
-            if self.inerror:
+            if self.inerror or self.id_ == None or self.id_ == '':
                 return
             try:
                 if self.overviewcity.isVisible():
@@ -373,11 +383,13 @@ class SystemTrayIcon(QMainWindow):
         dialog.city_signal[tuple].connect(self.citydata)
         dialog.country_signal[tuple].connect(self.citydata)
         if dialog.exec_():
+            self.temporary_city_status = True
             self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
             # Restore the initial settings
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
+            self.temporary_city_status = False
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
