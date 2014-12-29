@@ -6,9 +6,9 @@ System tray application for weather status information.
 Licensed under the GNU General Public License version 3 (GPLv3).
 
 ##### Requirements
-python3-lxml  
-python3-qt4   
-python3-sip   
+python3-lxml
+python3-qt5
+python3-sip
 python3-urllib3
 
 ##### Usage
