@@ -313,6 +313,8 @@ class MeteoSettings(QDialog):
             self.citylist = [self.city_before + '_' + self.country_before +
                              '_' + self.id_before]
             list_cities = self.city_list_before[:]
+        if list_cities == None:
+            list_cities = []
         if list_cities != '' and list_cities != None:
             if type(list_cities) is str:
                 list_cities = eval(list_cities)
