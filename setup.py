@@ -37,6 +37,7 @@ setup(
                                                   'meteo_qt/translations/meteo-qt_da.qm',
                                                   'meteo_qt/translations/meteo-qt_de.qm',
                                                   'meteo_qt/translations/meteo-qt_el.qm',
+                                                  'meteo_qt/translations/meteo-qt_es.qm',
                                                   'meteo_qt/translations/meteo-qt_fi.qm',
                                                   'meteo_qt/translations/meteo-qt_fr.qm',
                                                   'meteo_qt/translations/meteo-qt_he.qm',
