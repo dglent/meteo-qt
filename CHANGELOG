@@ -1,5 +1,8 @@
+0.4.3
+Add Spanish translation
+
 0.4.2
-Fix bug to access the settings dialog when updating from a previous version
+Fix bug to access the settings dialogue when updating from a previous version
 
 0.4.1
 Fixes in cities list handling
@@ -8,7 +11,7 @@ Fixes in cities list handling
 Add support for multiple locations
 
 0.3.4
-Fix not diplaying correctly the city name, if the name contains hyphens.
+Fix not displaying correctly the city name, if the name contains hyphens.
 
 0.3.3
 fixes in settings and error handling
@@ -16,7 +19,7 @@ Search city by substring in order to have more results
 Memorize the window's position
 
 0.3.1
-Fix autostart in lxqt (whait for tray)
+Fix autostart in lxqt (wait for tray)
 Update translations for de, uk
 Improve error/invalid data handling
 Add option to choose the font color in the tray

@@ -7,14 +7,14 @@ from distutils.core import setup
 
 class BuildQm(build):
     #os.system('pyrcc5 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
-    os.system('pylupdate5 -noobsolete meteo_qt/meteo_qt.pro')
+    os.system('pylupdate5 meteo_qt/meteo_qt.pro')
     for ts in glob.glob('meteo_qt/translations/*.ts'):
         os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2]+'qm')))
 
 
 setup(
     name='meteo_qt',
-    version='0.4.2',
+    version='0.4.3',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',

@@ -30,7 +30,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.4.2"
+__version__ = "0.4.3"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -430,6 +430,8 @@ class SystemTrayIcon(QMainWindow):
             [de] German translation
             <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
             [el] Greek translation
+            <p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/>
+            [es] Spanish translation
             <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
             [fr] French translation, Project
             <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
