@@ -79,6 +79,7 @@ class SystemTrayIcon(QMainWindow):
         self.aboutAction.triggered.connect(self.about)
         self.tempCityAction.triggered.connect(self.tempcity)
         self.systray = QSystemTrayIcon()
+        self.systray.setContextMenu(self.menu)
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Searching weather data...'))
