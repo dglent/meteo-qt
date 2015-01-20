@@ -380,6 +380,8 @@ class SystemTrayIcon(QMainWindow):
         dialog.applied_signal.connect(self.config_save)
         if dialog.exec_() == 1:
             self.config_save()
+            print('Update Cities menu...')
+            self.cities_menu()
 
     def tempcity(self):
         dialog = searchcity.SearchCity(self.accurate_url, self)
