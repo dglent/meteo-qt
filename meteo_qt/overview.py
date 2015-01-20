@@ -92,8 +92,10 @@ class OverviewCity(QDialog):
                                     self.weatherdata['Humidity'][1] + '<\font>')
         # Convert sun rise/set from UTC to local time
         self.sunrise_label = QLabel('<font color=grey><b>' + self.tr('Sunrise') + '</b></font>')
+        # Create a list ['h', 'm', 's'] and pass it to QTime
         sunrise = self.weatherdata['Sunrise'].split('T')[1].split(':')
         rise_time = QTime(int(sunrise[0]),int(sunrise[1]),int(sunrise[2]))
+        # add the diff UTC-local in seconds
         rise_ = rise_time.addSecs(time.localtime().tm_gmtoff)
         rise_str = rise_.toString()
         self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
