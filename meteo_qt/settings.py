@@ -244,8 +244,12 @@ class MeteoSettings(QDialog):
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name()))
+            # focus to next elem to show immediatley the colour in the button (in some DEs)
+            self.temp_color_resetButton.setFocus()
             self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
             self.color_before = col.name()
+        else:
+            print('Invalid color:', col)
 
     def color_reset(self):
         self.temp_colorButton.setStyleSheet(
