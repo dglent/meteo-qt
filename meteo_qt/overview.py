@@ -22,8 +22,8 @@ class OverviewCity(QDialog):
         ' ': '°K'
      }
 
-    def __init__(self, weatherdata, icon, forecast_inerror, forecast, unit,
-                 icon_url, parent=None):
+    def __init__(self, weatherdata, icon, forecast_inerror, forecast,
+                 dayforecast_inerror, dayforecast, unit, icon_url, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.days_dico = {
         '0': self.tr('Mon'),
@@ -36,18 +36,27 @@ class OverviewCity(QDialog):
         }
         cond = conditions.WeatherConditions()
         self.conditions = cond.trans
+        self.wind_direction = cond.wind_codes
+        self.wind_name_dic = cond.wind
+        self.clouds_name_dic = cond.clouds
         self.settings = QSettings()
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
+        self.tree_day = dayforecast
         self.forecast_inerror = forecast_inerror
+        self.dayforecast_inerror = dayforecast_inerror
         self.icon_url = icon_url
         self.forecast_weather_list = []
+        self.dayforecast_weather_list = []
         self.weatherdata = weatherdata
         self.icon_list = []
+        self.dayforecast_icon_list = []
         self.unit_temp = self.units_dico[unit]
         self.total_layout = QVBoxLayout()
         #----First part overview day -----
         self.over_layout = QVBoxLayout()
+        self.dayforecast_layout = QHBoxLayout()
+        self.dayforecast_temp_layout = QHBoxLayout()
         #---------------------------------
         self.city_label = QLabel('<font size="4"><b>' + self.weatherdata['City'] +
                                ',  ' + self.weatherdata['Country']+'<\b><\font>')
@@ -64,6 +73,8 @@ class OverviewCity(QDialog):
         self.weather = QLabel('<font size="4"><b>' + self.weatherdata['Meteo'] +
                              '<\b><\font>')
         self.over_layout.addWidget(self.weather)
+        self.over_layout.addLayout(self.dayforecast_layout)
+        self.over_layout.addLayout(self.dayforecast_temp_layout)
         self.line = QLabel('<font color=grey>__________<\font>')
         self.over_layout.addWidget(self.line)
         #------Second part overview day---------
@@ -71,11 +82,11 @@ class OverviewCity(QDialog):
         self.wind_label = QLabel('<font size="3" color=grey><b>' +
                                 self.tr('Wind') + '<\font><\b>')
         wind_unit = self.settings.value('Unit') or 'metric'
-        speed_unit = ' m/s '
+        self.speed_unit = ' m/s '
         if wind_unit == 'imperial':
-            speed_unit = ' mph '
+            self.speed_unit = ' mph '
         self.wind = QLabel('<font color=grey>' + self.weatherdata['Wind'][0] +
-                          speed_unit + self.weatherdata['Wind'][1] + ' '+
+                          self.speed_unit + self.weatherdata['Wind'][1] + ' '+
                           self.weatherdata['Wind'][2] + '° ' +
                           self.weatherdata['Wind'][3] + ' ' +
                           self.weatherdata['Wind'][4] + '<\font>')
@@ -90,20 +101,12 @@ class OverviewCity(QDialog):
                                     self.tr('Humidity') + '<\b><\font>')
         self.humidity_value = QLabel('<font color=grey>' + self.weatherdata['Humidity'][0] + ' ' +
                                     self.weatherdata['Humidity'][1] + '<\font>')
-        # Convert sun rise/set from UTC to local time
+
         self.sunrise_label = QLabel('<font color=grey><b>' + self.tr('Sunrise') + '</b></font>')
-        # Create a list ['h', 'm', 's'] and pass it to QTime
-        sunrise = self.weatherdata['Sunrise'].split('T')[1].split(':')
-        rise_time = QTime(int(sunrise[0]),int(sunrise[1]),int(sunrise[2]))
-        # add the diff UTC-local in seconds
-        rise_ = rise_time.addSecs(time.localtime().tm_gmtoff)
-        rise_str = rise_.toString()
-        self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
         self.sunset_label = QLabel('<font color=grey><b>' + self.tr('Sunset') + '</b></font>')
-        sunset = self.weatherdata['Sunset'].split('T')[1].split(':')
-        set_time = QTime(int(sunset[0]),int(sunset[1]),int(sunset[2]))
-        set_ = set_time.addSecs(time.localtime().tm_gmtoff)
-        set_str = set_.toString()
+        rise_str = self.utc('Sunrise', 'weatherdata')
+        set_str = self.utc('Sunset', 'weatherdata')
+        self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
         self.sunset_value = QLabel('<font color=grey>' + set_str + '</font>')
         #----------------------------------
         self.over_grid.addWidget(self.wind_label, 0,0)
@@ -118,36 +121,50 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.sunrise_value, 4,1)
         self.over_grid.addWidget(self.sunset_label, 5,0)
         self.over_grid.addWidget(self.sunset_value, 5,1)
-
         #--------------Forecast---------------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
         self.forecast_minmax_layout = QHBoxLayout()
         #--------------------------------------------
-
         self.total_layout.addLayout(self.over_layout)
         self.total_layout.addLayout(self.over_grid)
-
         self.total_layout.addLayout(self.forecast_icons_layout)
         self.total_layout.addLayout(self.forecast_days_layout)
         self.total_layout.addLayout(self.forecast_minmax_layout)
         if not forecast_inerror:
             self.forecastdata()
             self.iconfetch()
+        if not dayforecast_inerror:
+            self.dayforecastdata()
+            self.dayiconfetch()
         self.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
                 QByteArray()))
 
+    def utc(self, rise_set, what):
+        ''' Convert sun rise/set from UTC to local time
+            'rise_set' is 'Sunrise' or 'Sunset when it is for weatherdata
+            or the index of hour in day forecast when dayforecast'''
+        listtotime = ''
+        # Create a list ['h', 'm', 's'] and pass it to QTime
+        if what == 'weatherdata':
+            listtotime = self.weatherdata[rise_set].split('T')[1].split(':')
+        elif what == 'dayforecast':
+            listtotime = self.tree_day[4][rise_set].get('from').split('T')[1].split(':')
+        suntime = QTime(int(listtotime[0]),int(listtotime[1]),int(listtotime[2]))
+        # add the diff UTC-local in seconds
+        utc_time = suntime.addSecs(time.localtime().tm_gmtoff)
+        utc_time_str = utc_time.toString()
+        return utc_time_str
+
     def forecastdata(self):
         for d in range(1,7):
-            day = self.tree[4][d].get('day')
             date_list = self.tree[4][d].get('day').split('-')
             day_of_week = str(datetime.date(
                 int(date_list[0]),int(date_list[1]),
                 int(date_list[2])).weekday())
-            label = QLabel(''+ self.days_dico[day_of_week] +
-                           '')
+            label = QLabel(''+ self.days_dico[day_of_week] + '')
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel('<font color=grey>'+'{0:.0f}'.format(float(self.tree[4][d][4].get('min'))) +
@@ -179,6 +196,73 @@ class OverviewCity(QDialog):
         iconlabel.setPixmap(iconpixmap)
         iconlabel.setToolTip(self.forecast_weather_list.pop(0))
         self.forecast_icons_layout.addWidget(iconlabel)
+
+    def dayforecastdata(self):
+        for d in range(1, 7):
+            timeofday = self.utc(d, 'dayforecast')
+            weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
+            self.dayforecast_weather_list.append(weather_cond)
+            self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var')) #icon
+            daytime = QLabel('<font color=grey>' + timeofday[:-3] + '<br/>' +
+                             self.tree_day[4][d][4].get('value') + '°' + '</font>')
+            daytime.setAlignment(Qt.AlignHCenter)
+            unit = self.settings.value('Unit') or 'metric'
+            precipitation = str(self.tree_day[4][d][1].get('value'))
+            if unit == 'metric':
+                mu = 'mm'
+            elif unit == 'imperial':
+                mu = 'inch'
+                if precipitation.count('None') == 0:
+                    precipitation = str(float(precipitation) / 25.0)
+            ttip = precipitation + ' ' + mu + ' ' + str(self.tree_day[4][d][1].get('type')) + ' <br/>'
+            if ttip.count('None') >= 1:
+                ttip = ''
+            else:
+                ttip.replace('snow', self.tr('snow'))
+                ttip.replace('rain', self.tr('rain'))
+            # Winddirection/speed
+            windspeed = self.tree_day[4][d][3].get('mps')
+            ttip = ttip + (windspeed + ' ' + self.speed_unit)
+            winddircode = self.tree_day[4][d][2].get('code')
+            wind = ''
+            if winddircode != '':
+                wind = self.wind_direction[winddircode] + ' '
+            else:
+                print('Wind direction code is missing: ', winddircode)
+            wind_name = self.tree_day[4][d][3].get('name')
+            if wind_name != '':
+                wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + ' <br/>'
+                wind += wind_name_translated
+            else:
+                print('Wind name is missing: ', wind_name)
+            # Clouds
+            clouds_translated = ''
+            clouds = self.tree_day[4][d][7].get('value')
+            cloudspercent = self.tree_day[4][d][7].get('all')
+            if clouds != '':
+                clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
+            else:
+                print('Clouding name is missing: ', clouds)
+            clouds_cond = clouds_translated + ' ' + cloudspercent + '%'
+            ttip = ttip + wind + clouds_cond
+            daytime.setToolTip(ttip)
+            self.dayforecast_temp_layout.addWidget(daytime)
+
+    def dayiconfetch(self):
+        self.day_download_thread = IconDownload(self.icon_url, self.dayforecast_icon_list)
+        self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
+        self.day_download_thread.error['QString'].connect(self.error)
+        self.day_download_thread.start()
+
+    def dayiconwidget(self, icon):
+        image = QImage()
+        image.loadFromData(icon)
+        iconlabel = QLabel()
+        iconlabel.setAlignment(Qt.AlignHCenter)
+        iconpixmap = QPixmap(image)
+        iconlabel.setPixmap(iconpixmap)
+        iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
+        self.dayforecast_layout.addWidget(iconlabel)
 
     def error(self, error):
         print('error in download of forecast icon:\n', error)

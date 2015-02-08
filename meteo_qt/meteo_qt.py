@@ -46,12 +46,14 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico = {}
         self.inerror = False
         self.forecast_inerror = False
+        self.dayforecast_inerror = False
         self.tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
         self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
+        self.day_forecast_url = 'http://api.openweathermap.org/data/2.5/forecast?id='
         self.wIconUrl = 'http://openweathermap.org/img/w/'
-        self.forecats_icon_url = self.wIconUrl
+        self.forecast_icon_url = self.wIconUrl
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
@@ -190,18 +192,23 @@ class SystemTrayIcon(QMainWindow):
     def update(self):
         print('update')
         self.wIcon = QPixmap(':/noicon')
-        self.downloadThread = Download(
-            self.wIconUrl, self.baseurl, self.forecast_url, self.id_, self.suffix)
+        self.downloadThread = Download(self.wIconUrl, self.baseurl,
+                                       self.forecast_url, self.day_forecast_url,
+                                       self.id_, self.suffix)
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
         self.downloadThread.forecast_rawpage.connect(self.forecast)
+        self.downloadThread.day_forecast_rawpage.connect(self.dayforecast)
         self.downloadThread.error.connect(self.error)
         self.downloadThread.done.connect(self.done)
         self.downloadThread.start()
 
     def forecast(self, data):
         self.forecast_data = data
+
+    def dayforecast(self, data):
+        self.dayforecast_data = data
 
     def done(self, done):
         if done == 0:
@@ -220,7 +227,8 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity = overview.OverviewCity(
                         self.weatherDataDico, self.wIcon,
                         self.forecast_inerror, self.forecast_data,
-                        self.unit, self.forecats_icon_url, self)
+                        self.dayforecast_inerror, self.dayforecast_data,
+                        self.unit, self.forecast_icon_url, self)
                     self.overview()
                 else:
                     return
@@ -228,8 +236,9 @@ class SystemTrayIcon(QMainWindow):
             if hasattr(self, 'forecast_data'):
                 self.overviewcity = overview.OverviewCity(
                     self.weatherDataDico, self.wIcon, self.forecast_inerror,
-                    self.forecast_data, self.unit, self.forecats_icon_url,
-                    self)
+                    self.forecast_data, self.dayforecast_inerror,
+                    self.dayforecast_data, self.unit,
+                    self.forecast_icon_url, self)
             else:
                 return
 
@@ -238,9 +247,11 @@ class SystemTrayIcon(QMainWindow):
         print('Error:\n', error)
         what = error[error.find('@')+1:]
         if what == 'city':
-                    self.inerror = True
+            self.inerror = True
         elif what == 'forecast':
             self.forecast_inerror = True
+        elif what == 'day_forecast':
+            self.dayforecast_inerror = True
         elif what == 'icon':
             return
         self.systray.setToolTip(self.tr('meteo-qt: Cannot find data!'))
@@ -337,7 +348,7 @@ class SystemTrayIcon(QMainWindow):
             if self.inerror or self.id_ == None or self.id_ == '':
                 return
             try:
-                if self.overviewcity.isVisible():
+                if hasattr(self, 'overviewcity') and self.overviewcity.isVisible():
                     self.overviewcity.hide()
                 else:
                     self.overviewcity.hide()
@@ -452,14 +463,16 @@ class Download(QThread):
     wimage = pyqtSignal(['PyQt_PyObject'])
     xmlpage = pyqtSignal(['PyQt_PyObject'])
     forecast_rawpage= pyqtSignal(['PyQt_PyObject'])
+    day_forecast_rawpage = pyqtSignal(['PyQt_PyObject'])
     error = pyqtSignal(['QString'])
     done = pyqtSignal([int])
 
-    def __init__(self, iconurl, baseurl, forecast_url, id_, suffix):
+    def __init__(self, iconurl, baseurl, forecast_url, day_forecast_url, id_, suffix):
         QThread.__init__(self)
         self.wIconUrl = iconurl
         self.baseurl = baseurl
         self.forecast_url = forecast_url
+        self.day_forecast_url = day_forecast_url
         self.id_ = id_
         self.suffix = suffix
 
@@ -472,16 +485,21 @@ class Download(QThread):
         try:
             req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix)
             reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix + '&cnt=7')
+            reqdayforecast = urllib.request.urlopen(self.day_forecast_url + self.id_ + self.suffix)
             page = req.read()
             pageforecast = reqforecast.read()
+            pagedayforecast = reqdayforecast.read()
             if self.html404(page, 'city'):
                 self.error['QString'].emit(self.error_message)
                 return
             elif self.html404(pageforecast, 'forecast'):
                 self.errror['QString'].emit(self.error_message)
+            elif self.html404(pagedayforecast, 'day_forecast'):
+                self.errror['QString'].emit(self.error_message)
                 return
             tree = etree.fromstring(page)
             treeforecast = etree.fromstring(pageforecast)
+            treedayforecast = etree.fromstring(pagedayforecast)
             weather_icon = tree[8].get('icon')
             url = self.wIconUrl + weather_icon + '.png'
             data = urllib.request.urlopen(url).read()
@@ -491,6 +509,7 @@ class Download(QThread):
             self.xmlpage['PyQt_PyObject'].emit(tree)
             self.wimage['PyQt_PyObject'].emit(data)
             self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
+            self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             code = ''
