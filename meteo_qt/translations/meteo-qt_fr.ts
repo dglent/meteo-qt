@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="504"/>
+        <location filename="meteo_qt.py" line="526"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
@@ -321,44 +321,54 @@
         <translation>Dim</translation>
     </message>
     <message>
-        <location filename="overview.py" line="136"/>
+        <location filename="overview.py" line="140"/>
         <source>Weather status</source>
         <translation>Relevé météorologique</translation>
     </message>
     <message>
-        <location filename="overview.py" line="154"/>
+        <location filename="overview.py" line="173"/>
         <source>Min Max Temperature of the day</source>
         <translation>Températures minimales et maximales de la journée</translation>
     </message>
     <message>
-        <location filename="overview.py" line="71"/>
+        <location filename="overview.py" line="81"/>
         <source>Wind</source>
         <translation>Vent</translation>
     </message>
     <message>
-        <location filename="overview.py" line="82"/>
+        <location filename="overview.py" line="92"/>
         <source>Cloudiness</source>
         <translation>Nébulosité</translation>
     </message>
     <message>
-        <location filename="overview.py" line="85"/>
+        <location filename="overview.py" line="95"/>
         <source>Pressure</source>
         <translation>Pression</translation>
     </message>
     <message>
-        <location filename="overview.py" line="89"/>
+        <location filename="overview.py" line="99"/>
         <source>Humidity</source>
         <translation>Humidité</translation>
     </message>
     <message>
-        <location filename="overview.py" line="94"/>
+        <location filename="overview.py" line="104"/>
         <source>Sunrise</source>
         <translation>Lever du soleil</translation>
     </message>
     <message>
-        <location filename="overview.py" line="100"/>
+        <location filename="overview.py" line="105"/>
         <source>Sunset</source>
         <translation>Coucher du soleil</translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="222"/>
+        <source>snow</source>
+        <translation type="unfinished">neige</translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="223"/>
+        <source>rain</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -398,66 +408,71 @@
         <source>Found {0} cities</source>
         <translation>{0} villes trouvées</translation>
     </message>
+    <message>
+        <location filename="searchcity.py" line="49"/>
+        <source>Tip: Type the first three letters to search by substring</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="59"/>
+        <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Temporary city</source>
         <translation>Ville &amp;temporaire</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="60"/>
+        <location filename="meteo_qt.py" line="62"/>
         <source>&amp;Update</source>
         <translation>&amp;Mise à jour</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="61"/>
+        <location filename="meteo_qt.py" line="63"/>
         <source>&amp;Settings</source>
         <translation>&amp;Paramètres</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="62"/>
+        <location filename="meteo_qt.py" line="64"/>
         <source>&amp;About</source>
         <translation>&amp;À propos</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="63"/>
+        <location filename="meteo_qt.py" line="65"/>
         <source>Exit</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="84"/>
+        <location filename="meteo_qt.py" line="87"/>
         <source>Searching weather data...</source>
         <translation>Recherche des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="399"/>
+        <location filename="meteo_qt.py" line="413"/>
         <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="190"/>
+        <location filename="meteo_qt.py" line="193"/>
         <source>No city has been configured yet.</source>
         <translation>Aucune ville n&apos;a encore été configurée.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="190"/>
+        <location filename="meteo_qt.py" line="193"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="250"/>
+        <location filename="meteo_qt.py" line="262"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt : Aucune donnée n&apos;a été trouvée !</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="158"/>
+        <location filename="meteo_qt.py" line="161"/>
         <source>Fetching weather data ...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="411"/>
+        <location filename="meteo_qt.py" line="425"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -466,7 +481,7 @@
                         &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} sous {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="417"/>
+        <location filename="meteo_qt.py" line="431"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -493,22 +508,22 @@
                         http://openweathermap.org/&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="175"/>
+        <location filename="meteo_qt.py" line="178"/>
         <source>No city configured</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="58"/>
+        <location filename="meteo_qt.py" line="60"/>
         <source>Cities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="167"/>
+        <location filename="meteo_qt.py" line="170"/>
         <source>Empty list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="435"/>
+        <location filename="meteo_qt.py" line="449"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
