@@ -46,7 +46,7 @@ class SearchCity(QDialog):
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
         self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
-        self.status.setText(self.tr('Type the first 3 letters for an accurate search'))
+        self.status.setText(self.tr('Tip: Type the first three letters to search by substring'))
 
     def buttonCheck(self):
         '''Enable OK button if an item is selected'''

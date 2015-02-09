@@ -65,8 +65,9 @@ class OverviewCity(QDialog):
         self.icon_label = QLabel()
         self.icon_label.setPixmap(icon)
         self.icontemp_layout.addWidget(self.icon_label)
-        self.temp_label = QLabel('<font size="5"><b>' + '{0:.1f}'.format(float(self.weatherdata['Temp'][:-1])) +
-                               ' ' + self.unit_temp + '<\b><\font>')
+        self.temp_label = QLabel('<font size="5"><b>' +
+                                 '{0:.1f}'.format(float(self.weatherdata['Temp'][:-1])) +
+                                 ' ' + self.unit_temp + '<\b><\font>')
         self.icontemp_layout.addWidget(self.temp_label)
         self.icontemp_layout.addStretch()
         self.over_layout.addLayout(self.icontemp_layout)
@@ -75,8 +76,6 @@ class OverviewCity(QDialog):
         self.over_layout.addWidget(self.weather)
         self.over_layout.addLayout(self.dayforecast_layout)
         self.over_layout.addLayout(self.dayforecast_temp_layout)
-        self.line = QLabel('<font color=grey>__________<\font>')
-        self.over_layout.addWidget(self.line)
         #------Second part overview day---------
         self.over_grid = QGridLayout()
         self.wind_label = QLabel('<font size="3" color=grey><b>' +
@@ -167,7 +166,7 @@ class OverviewCity(QDialog):
             label = QLabel(''+ self.days_dico[day_of_week] + '')
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
-            mlabel = QLabel('<font color=grey>'+'{0:.0f}'.format(float(self.tree[4][d][4].get('min'))) +
+            mlabel = QLabel('<font color=grey>' + '{0:.0f}'.format(float(self.tree[4][d][4].get('min'))) +
                             '°<br/>' + '{0:.0f}'.format(float(self.tree[4][d][4].get('max'))) + '°</font>')
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
@@ -204,7 +203,7 @@ class OverviewCity(QDialog):
             self.dayforecast_weather_list.append(weather_cond)
             self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var')) #icon
             daytime = QLabel('<font color=grey>' + timeofday[:-3] + '<br/>' +
-                             self.tree_day[4][d][4].get('value') + '°' + '</font>')
+                             '{0:.0f}'.format(float(self.tree_day[4][d][4].get('value'))) + '°' + '</font>')
             daytime.setAlignment(Qt.AlignHCenter)
             unit = self.settings.value('Unit') or 'metric'
             precipitation = str(self.tree_day[4][d][1].get('value'))
@@ -218,8 +217,8 @@ class OverviewCity(QDialog):
             if ttip.count('None') >= 1:
                 ttip = ''
             else:
-                ttip.replace('snow', self.tr('snow'))
-                ttip.replace('rain', self.tr('rain'))
+                ttip = ttip.replace('snow', self.tr('snow'))
+                ttip = ttip.replace('rain', self.tr('rain'))
             # Winddirection/speed
             windspeed = self.tree_day[4][d][3].get('mps')
             ttip = ttip + (windspeed + ' ' + self.speed_unit)
@@ -234,6 +233,7 @@ class OverviewCity(QDialog):
                 wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + ' <br/>'
                 wind += wind_name_translated
             else:
+                wind += '<br/>'
                 print('Wind name is missing: ', wind_name)
             # Clouds
             clouds_translated = ''
