@@ -411,7 +411,7 @@
     <message>
         <location filename="searchcity.py" line="49"/>
         <source>Tip: Type the first three letters to search by substring</source>
-        <translation>Συμβουλή: Πληκτρολογήστε τα πρώτα τρία γράμματα για ασαφής αναζήτηση</translation>
+        <translation>Συμβουλή: Πληκτρολογήστε τα πρώτα τρία γράμματα για ασαφή αναζήτηση</translation>
     </message>
 </context>
 <context>
