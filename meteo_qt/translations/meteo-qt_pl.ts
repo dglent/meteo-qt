@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="pl_PL" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="pl_PL">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Współtwórcy</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"></translation>
+        <translation>O programie Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -23,47 +24,47 @@
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dodaj...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Usuń...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Do &amp;góry</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;W dół</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sortuj</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="67"/>
         <source>The city already exists in the list</source>
-        <translation type="unfinished"></translation>
+        <translation>To miasto jest już na liście</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="91"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Miasto &quot;{0}&quot; zostało usunięte</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"></translation>
+        <translation>Do&amp;myślne</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="85"/>
         <source>The list is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>LIsta jest pusta</translation>
     </message>
 </context>
 <context>
@@ -72,7 +73,8 @@
         <location filename="meteo_qt.py" line="526"/>
         <source>Error :
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd:
+</translation>
     </message>
 </context>
 <context>
@@ -260,27 +262,27 @@
     <message>
         <location filename="settings.py" line="124"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchom przy starcie</translation>
     </message>
     <message>
         <location filename="settings.py" line="137"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Resetuj</translation>
     </message>
     <message>
         <location filename="settings.py" line="138"/>
         <source>Reset font colour to system default</source>
-        <translation type="unfinished"></translation>
+        <translation>Resetuj kolor czcionki </translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
         <source>Font colour in the tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolor czcionki w zasobniku systemowym</translation>
     </message>
     <message>
         <location filename="settings.py" line="43"/>
         <source>Click to edit the cities list</source>
-        <translation type="unfinished"></translation>
+        <translation>Kliknij aby edytować listę miast</translation>
     </message>
 </context>
 <context>
@@ -363,12 +365,12 @@
     <message>
         <location filename="overview.py" line="223"/>
         <source>rain</source>
-        <translation type="unfinished"></translation>
+        <translation>deszcz</translation>
     </message>
     <message>
         <location filename="overview.py" line="222"/>
         <source>snow</source>
-        <translation type="unfinished"></translation>
+        <translation>śnieg</translation>
     </message>
 </context>
 <context>
@@ -411,7 +413,7 @@
     <message>
         <location filename="searchcity.py" line="49"/>
         <source>Tip: Type the first three letters to search by substring</source>
-        <translation type="unfinished"></translation>
+        <translation>Wpisz trzy pierwsze litery aby wyszukać</translation>
     </message>
 </context>
 <context>
@@ -459,7 +461,7 @@
     <message>
         <location filename="meteo_qt.py" line="193"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prowoklik na ikonie, następnie kliknij Ustawienia.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="262"/>
@@ -476,7 +478,9 @@
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;Licencja: GPLv3
+            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} na {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="431"/>
@@ -502,27 +506,27 @@
     <message>
         <location filename="meteo_qt.py" line="178"/>
         <source>No city configured</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie skonfigurowano żadnego miasta</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="60"/>
         <source>Cities</source>
-        <translation type="unfinished"></translation>
+        <translation>Miasta</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="170"/>
         <source>Empty list</source>
-        <translation type="unfinished"></translation>
+        <translation>Pusta lista</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="449"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
             [es] Spanish translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
@@ -1068,7 +1072,7 @@ or modify the name of the city</source>
     <message>
         <location filename="searchcity.py" line="153"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>Błąd:</translation>
     </message>
 </context>
 </TS>
