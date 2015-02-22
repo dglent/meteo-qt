@@ -448,6 +448,8 @@ class SystemTrayIcon(QMainWindow):
             [es] Spanish translation
             <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
             [fr] French translation, Project
+            <p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/>
+            [pl] Polish translation
             <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
             [uk] Ukranian translation
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
