@@ -928,7 +928,7 @@
     <message>
         <location filename="conditions.py" line="107"/>
         <source>NorthWest</source>
-        <translation>Νοτιοδυτικός</translation>
+        <translation>Βορειοδυτικός</translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
