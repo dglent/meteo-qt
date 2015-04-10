@@ -136,7 +136,15 @@ class MeteoSettings(QDialog):
         self.temp_color_resetButton = QPushButton(self.tr('Reset'))
         self.temp_color_resetButton.setToolTip(self.tr('Reset font colour to system default'))
         self.temp_color_resetButton.clicked.connect(self.color_reset)
-        #----
+        # Display notifications
+        self.notifier_label = QLabel(self.tr('Notification on weather update'))
+        self.notifier_checkbox = QCheckBox()
+        notifier_bool = self.settings.value('Notifications') or 'True'
+        notifier_bool = eval(notifier_bool)
+        self.notifier_checkbox.setChecked(notifier_bool)
+        self.notifier_checkbox.stateChanged.connect(self.notifier)
+        self.notifier_changed = False
+        #-----------------------
         self.panel = QGridLayout()
         self.panel.addWidget(self.cityTitle, 0,0)
         self.panel.addWidget(self.cityCombo, 0,1)
@@ -153,6 +161,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.temp_colorLabel, 5,0)
         self.panel.addWidget(self.temp_colorButton, 5,1)
         self.panel.addWidget(self.temp_color_resetButton, 5,2)
+        self.panel.addWidget(self.notifier_label, 6,0)
+        self.panel.addWidget(self.notifier_checkbox, 6,1) 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -257,6 +267,19 @@ class MeteoSettings(QDialog):
         self.color_before = ''
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
+    def notifier(self, state):
+        self.notifier_state = state
+        self.notifier_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def notifier_apply(self):
+        if self.notifier_state == 2:
+            self.settings.setValue('Notifications', 'True')
+            print('Write: Notifications = True')
+        elif self.notifier_state == 0:
+            self.settings.setValue('Notifications', 'False')
+            print('Write: Notifications = False')
+
     def apply_settings(self):
         self.accepted()
         self.applied_signal.emit()
@@ -297,6 +320,8 @@ class MeteoSettings(QDialog):
             setUnit = [key for key, value in self.unitsDico.items() if value == unit]
             self.settings.setValue('Unit', setUnit[0])
             print('Write ', 'Unit', setUnit[0])
+        if self.notifier_changed:
+            self.notifier_apply()
 
     def accept(self):
         self.accepted()

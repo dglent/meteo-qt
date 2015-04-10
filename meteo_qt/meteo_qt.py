@@ -87,6 +87,7 @@ class SystemTrayIcon(QMainWindow):
         self.systray.setToolTip(self.tr('Searching weather data...'))
         self.systray.show()
         self.refresh()
+        self.notification = ''
 
     def cities_menu(self):
         # Don't add the temporary city in the list
@@ -254,7 +255,9 @@ class SystemTrayIcon(QMainWindow):
             self.dayforecast_inerror = True
         elif what == 'icon':
             return
-        self.systray.setToolTip(self.tr('meteo-qt: Cannot find data!'))
+        nodata = self.tr('meteo-qt: Cannot find data!')
+        self.systray.setToolTip(nodata)
+        self.notification = nodata
         if self.tentatives >= 10:
             mdialog = QMessageBox.critical(
                 self, 'meteo-qt', error, QMessageBox.Ok)
@@ -312,8 +315,10 @@ class SystemTrayIcon(QMainWindow):
         except:
             print('Cannot find localisation string for wind_dir:', wind_dir)
             pass
-        self.systray.setToolTip(self.city + ' '  + self.country + ' ' +
-                                self.temp + ' ' + self.meteo)
+        city_weather_info = (self.city + ' '  + self.country + ' ' + self.temp +
+                             ' ' + self.meteo)
+        self.systray.setToolTip(city_weather_info)
+        self.notification = city_weather_info
         self.weatherDataDico['City'] = self.city
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
@@ -342,6 +347,13 @@ class SystemTrayIcon(QMainWindow):
         pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
+        if not self.overviewcity.isVisible():
+            notifier = self.settings.value('Notifications') or 'True'
+            notifier = eval(notifier)
+            if notifier:
+                self.systray.showMessage('meteo-qt', self.notification)
+            else:
+                return
 
     def activate(self, reason):
         if reason == 3:
