@@ -12,6 +12,7 @@ TRANSLATIONS    += translations/meteo-qt_bg.ts \
                    translations/meteo-qt_da.ts \
                    translations/meteo-qt_de.ts \
                    translations/meteo-qt_el.ts \
+                   translations/meteo-qt_en.ts \
                    translations/meteo-qt_es.ts \
                    translations/meteo-qt_fi.ts \
                    translations/meteo-qt_fr.ts \

@@ -1,0 +1,35 @@
+[main]
+host = https://www.transifex.com
+
+[meteo-qt.meteo-qt_ents]
+file_filter = meteo_qt/translations/meteo-qt_<lang>.ts
+source_file = meteo_qt/translations/meteo-qt_en.ts
+source_lang = en
+trans.bg = meteo_qt/translations/meteo-qt_bg.ts
+trans.ca = meteo_qt/translations/meteo-qt_ca.ts
+trans.cs = meteo_qt/translations/meteo-qt_cs.ts
+trans.da = meteo_qt/translations/meteo-qt_da.ts
+trans.de = meteo_qt/translations/meteo-qt_de.ts
+trans.el = meteo_qt/translations/meteo-qt_el.ts
+trans.es = meteo_qt/translations/meteo-qt_es.ts
+trans.fi = meteo_qt/translations/meteo-qt_fi.ts
+trans.fr = meteo_qt/translations/meteo-qt_fr.ts
+trans.he = meteo_qt/translations/meteo-qt_he.ts
+trans.hu = meteo_qt/translations/meteo-qt_hu.ts
+trans.it = meteo_qt/translations/meteo-qt_it.ts
+trans.ja = meteo_qt/translations/meteo-qt_ja.ts
+trans.lt = meteo_qt/translations/meteo-qt_lt.ts
+trans.nb = meteo_qt/translations/meteo-qt_nb.ts
+trans.nl = meteo_qt/translations/meteo-qt_nl.ts
+trans.pl = meteo_qt/translations/meteo-qt_pl.ts
+trans.pt = meteo_qt/translations/meteo-qt_pt.ts
+trans.pt_BR = meteo_qt/translations/meteo-qt_pt_BR.ts
+trans.ro = meteo_qt/translations/meteo-qt_ro.ts
+trans.ru = meteo_qt/translations/meteo-qt_ru.ts
+trans.sk = meteo_qt/translations/meteo-qt_sk.ts
+trans.sv = meteo_qt/translations/meteo-qt_sv.ts
+trans.uk = meteo_qt/translations/meteo-qt_uk.ts
+trans.vi = meteo_qt/translations/meteo-qt_vi.ts
+trans.zh_CN = meteo_qt/translations/meteo-qt_zh_CN.ts
+trans.zh_TW = meteo_qt/translations/meteo-qt_zh_TW.ts
+type = QT
