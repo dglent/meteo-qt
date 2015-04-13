@@ -13,6 +13,7 @@ from lxml import etree
 import platform
 import os
 from functools import partial
+import re
 
 try:
     import qrc_resources
@@ -88,6 +89,8 @@ class SystemTrayIcon(QMainWindow):
         self.systray.show()
         self.refresh()
         self.notification = ''
+        self.notification_temp = 0
+        self.notifications_id = ''
 
     def cities_menu(self):
         # Don't add the temporary city in the list
@@ -244,16 +247,20 @@ class SystemTrayIcon(QMainWindow):
                 return
 
     def error(self, error):
-        print(self.tentatives)
+        print('Tentatives: ', self.tentatives)
         print('Error:\n', error)
         what = error[error.find('@')+1:]
         if what == 'city':
             self.inerror = True
+            print('in error = True')
         elif what == 'forecast':
             self.forecast_inerror = True
+            print('forecast error = True')
         elif what == 'day_forecast':
             self.dayforecast_inerror = True
+            print('day forecast error = True')
         elif what == 'icon':
+            print('Cannot find the weather icon')
             return
         nodata = self.tr('meteo-qt: Cannot find data!')
         self.systray.setToolTip(nodata)
@@ -334,7 +341,9 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
     def tray(self):
-        if self.inerror:
+        if self.inerror or not hasattr(self, 'temp'):
+            print('In error, new try...')
+            self.update()
             return
         print('Paint tray icon')
         # Place empty.png here to initialize the icon
@@ -351,9 +360,11 @@ class SystemTrayIcon(QMainWindow):
             notifier = self.settings.value('Notifications') or 'True'
             notifier = eval(notifier)
             if notifier:
-                self.systray.showMessage('meteo-qt', self.notification)
-            else:
-                return
+                temp = int(re.search('\d+', self.temp).group())
+                if temp != self.notification_temp or self.id_ != self.notifications_id:
+                    self.notifications_id = self.id_
+                    self.notification_temp = temp
+                    self.systray.showMessage('meteo-qt', self.notification)
 
     def activate(self, reason):
         if reason == 3:
