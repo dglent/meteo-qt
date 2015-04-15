@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -23,47 +22,47 @@
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="31"/>
-        <source>&amp;Sort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="67"/>
-        <source>The city already exists in the list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="91"/>
-        <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="31"/>
+        <source>&amp;Sort</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="67"/>
+        <source>The city already exists in the list</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="citylistdlg.py" line="85"/>
         <source>The list is empty</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="91"/>
+        <source>The city &quot;{0}&quot; has been removed</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -84,6 +83,11 @@
         <translation>城市</translation>
     </message>
     <message>
+        <location filename="settings.py" line="43"/>
+        <source>Click to edit the cities list</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="settings.py" line="47"/>
         <source>Language</source>
         <translation>語言</translation>
@@ -96,72 +100,72 @@
     <message>
         <location filename="settings.py" line="51"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="52"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="53"/>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
         <source>Danish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="55"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="56"/>
         <source>Greek</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="57"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="59"/>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="60"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="61"/>
         <source>Hebrew</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="62"/>
         <source>Croatian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="63"/>
         <source>Hungarian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="64"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="65"/>
@@ -171,62 +175,62 @@
     <message>
         <location filename="settings.py" line="66"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="67"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="68"/>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="69"/>
         <source>Polish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="70"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="71"/>
         <source>Brazil Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="72"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="73"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="74"/>
         <source>Slovak</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="75"/>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="76"/>
         <source>Turkish</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="77"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="78"/>
@@ -254,14 +258,14 @@
         <translation>分</translation>
     </message>
     <message>
-        <location filename="settings.py" line="170"/>
-        <source>Meteo-qt Configuration</source>
-        <translation>Meteo-qt 設定</translation>
-    </message>
-    <message>
         <location filename="settings.py" line="124"/>
         <source>Launch at startup</source>
         <translation>在開機時啟動</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="132"/>
+        <source>Font colour in the tray</source>
+        <translation>系統列字型顏色</translation>
     </message>
     <message>
         <location filename="settings.py" line="137"/>
@@ -274,19 +278,14 @@
         <translation>重設字型顏色為系統預設</translation>
     </message>
     <message>
-        <location filename="settings.py" line="132"/>
-        <source>Font colour in the tray</source>
-        <translation>系統列字型顏色</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="43"/>
-        <source>Click to edit the cities list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="settings.py" line="141"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="settings.py" line="170"/>
+        <source>Meteo-qt Configuration</source>
+        <translation>Meteo-qt 設定</translation>
     </message>
 </context>
 <context>
@@ -369,12 +368,12 @@
     <message>
         <location filename="overview.py" line="222"/>
         <source>snow</source>
-        <translation type="unfinished">雪</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="overview.py" line="223"/>
         <source>rain</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -393,6 +392,11 @@
         <location filename="searchcity.py" line="38"/>
         <source>&amp;Cancel</source>
         <translation>取消(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="49"/>
+        <source>Tip: Type the first three letters to search by substring</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="searchcity.py" line="86"/>
@@ -414,14 +418,14 @@
         <source>Found {0} cities</source>
         <translation>找到 {0} 個城市</translation>
     </message>
-    <message>
-        <location filename="searchcity.py" line="49"/>
-        <source>Tip: Type the first three letters to search by substring</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SystemTrayIcon</name>
+    <message>
+        <location filename="meteo_qt.py" line="60"/>
+        <source>Cities</source>
+        <translation type="unfinished"/>
+    </message>
     <message>
         <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Temporary city</source>
@@ -458,6 +462,16 @@
         <translation>抓取天氣資料...</translation>
     </message>
     <message>
+        <location filename="meteo_qt.py" line="172"/>
+        <source>Empty list</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="180"/>
+        <source>No city configured</source>
+        <translation>沒有設定城市</translation>
+    </message>
+    <message>
         <location filename="meteo_qt.py" line="195"/>
         <source>No city has been configured yet.</source>
         <translation>還沒有設定城市。</translation>
@@ -482,7 +496,7 @@
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meteo_qt.py" line="444"/>
@@ -503,32 +517,17 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         issue&lt;/a&gt; in github.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="180"/>
-        <source>No city configured</source>
-        <translation>沒有設定城市</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="60"/>
-        <source>Cities</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="172"/>
-        <source>Empty list</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meteo_qt.py" line="462"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
             [es] Spanish translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -538,7 +537,7 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -781,7 +780,7 @@
     <message>
         <location filename="conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
@@ -1062,13 +1061,6 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="153"/>
-        <source>
-Try again later</source>
-        <translation>
-請稍後再試</translation>
-    </message>
-    <message>
         <location filename="searchcity.py" line="140"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
@@ -1079,6 +1071,13 @@ or modify the name of the city</source>
         <location filename="searchcity.py" line="153"/>
         <source>Error: </source>
         <translation>錯誤：</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="153"/>
+        <source>
+Try again later</source>
+        <translation>
+請稍後再試</translation>
     </message>
 </context>
 </TS>

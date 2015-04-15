@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk_UA" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -23,47 +22,47 @@
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Додати…</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви&amp;лучити…</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Вище</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="31"/>
-        <source>&amp;Sort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="67"/>
-        <source>The city already exists in the list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="91"/>
-        <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нижче</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Типовий</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="31"/>
+        <source>&amp;Sort</source>
+        <translation>&amp;Упорядкувати</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="67"/>
+        <source>The city already exists in the list</source>
+        <translation>Місто вже є у списку</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="85"/>
         <source>The list is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Список є порожнім</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="91"/>
+        <source>The city &quot;{0}&quot; has been removed</source>
+        <translation>Запис міста «{0}» вилучено</translation>
     </message>
 </context>
 <context>
@@ -72,7 +71,8 @@
         <location filename="meteo_qt.py" line="541"/>
         <source>Error :
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка:
+</translation>
     </message>
 </context>
 <context>
@@ -81,6 +81,11 @@
         <location filename="settings.py" line="40"/>
         <source>City</source>
         <translation>Місто</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="43"/>
+        <source>Click to edit the cities list</source>
+        <translation>Натисніть, щоб змінити список міст</translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
@@ -253,39 +258,34 @@
         <translation>хвилин</translation>
     </message>
     <message>
-        <location filename="settings.py" line="170"/>
-        <source>Meteo-qt Configuration</source>
-        <translation>Налаштування Meteo-qt</translation>
-    </message>
-    <message>
         <location filename="settings.py" line="124"/>
         <source>Launch at startup</source>
         <translation>Запускати під час завантаження</translation>
     </message>
     <message>
+        <location filename="settings.py" line="132"/>
+        <source>Font colour in the tray</source>
+        <translation>Колір шрифту для лотка</translation>
+    </message>
+    <message>
         <location filename="settings.py" line="137"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Скинути</translation>
     </message>
     <message>
         <location filename="settings.py" line="138"/>
         <source>Reset font colour to system default</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="132"/>
-        <source>Font colour in the tray</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="43"/>
-        <source>Click to edit the cities list</source>
-        <translation type="unfinished"></translation>
+        <translation>Скинути колір шрифту до типового системного</translation>
     </message>
     <message>
         <location filename="settings.py" line="141"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"></translation>
+        <translation>Сповіщення щодо оновлення прогнозу</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="170"/>
+        <source>Meteo-qt Configuration</source>
+        <translation>Налаштування Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -368,12 +368,12 @@
     <message>
         <location filename="overview.py" line="222"/>
         <source>snow</source>
-        <translation type="unfinished">сніг</translation>
+        <translation>сніг</translation>
     </message>
     <message>
         <location filename="overview.py" line="223"/>
         <source>rain</source>
-        <translation type="unfinished"></translation>
+        <translation>дощ</translation>
     </message>
 </context>
 <context>
@@ -392,6 +392,11 @@
         <location filename="searchcity.py" line="38"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Скасувати</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="49"/>
+        <source>Tip: Type the first three letters to search by substring</source>
+        <translation>Підказка: введіть перші три літери для пошуку за підрядком</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="86"/>
@@ -413,14 +418,14 @@
         <source>Found {0} cities</source>
         <translation>Знайдено {0} міст</translation>
     </message>
-    <message>
-        <location filename="searchcity.py" line="49"/>
-        <source>Tip: Type the first three letters to search by substring</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SystemTrayIcon</name>
+    <message>
+        <location filename="meteo_qt.py" line="60"/>
+        <source>Cities</source>
+        <translation>Міста</translation>
+    </message>
     <message>
         <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Temporary city</source>
@@ -455,6 +460,16 @@
         <location filename="meteo_qt.py" line="163"/>
         <source>Fetching weather data ...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="172"/>
+        <source>Empty list</source>
+        <translation>Порожній список</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="180"/>
+        <source>No city configured</source>
+        <translation>Міста не вказано</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="195"/>
@@ -523,29 +538,14 @@
                         повідомлення про ваду&lt;/a&gt; на github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="180"/>
-        <source>No city configured</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="60"/>
-        <source>Cities</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="172"/>
-        <source>Empty list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="meteo_qt.py" line="462"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
             [es] Spanish translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -555,7 +555,22 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation type="unfinished"></translation>
+        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] переклад німецькою
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] переклад грецькою
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] переклад іспанською
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] переклад французькою, проект
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] переклад польською
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] переклад українською
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] переклад китайською (традиційною)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            проект</translation>
     </message>
 </context>
 <context>
@@ -1079,13 +1094,6 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="153"/>
-        <source>
-Try again later</source>
-        <translation>
-Повторіть спробу пізніше</translation>
-    </message>
-    <message>
         <location filename="searchcity.py" line="140"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
@@ -1094,7 +1102,14 @@ or modify the name of the city</source>
     <message>
         <location filename="searchcity.py" line="153"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка:</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="153"/>
+        <source>
+Try again later</source>
+        <translation>
+Повторіть спробу пізніше</translation>
     </message>
 </context>
 </TS>

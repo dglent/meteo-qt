@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr_FR" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Contributeurs</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos de Météo-qt</translation>
     </message>
 </context>
 <context>
@@ -23,47 +22,47 @@
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ajouter...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Supprimer...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Haut</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="31"/>
-        <source>&amp;Sort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="67"/>
-        <source>The city already exists in the list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="91"/>
-        <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bas</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="31"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"></translation>
+        <translation>De&amp;faut</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="31"/>
+        <source>&amp;Sort</source>
+        <translation>&amp;Arranger</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="67"/>
+        <source>The city already exists in the list</source>
+        <translation>La ville existe déjà dans la liste.</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="85"/>
         <source>The list is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La liste est vide.</translation>
+    </message>
+    <message>
+        <location filename="citylistdlg.py" line="91"/>
+        <source>The city &quot;{0}&quot; has been removed</source>
+        <translation>La ville &quot;{0}&quot; a été supprimée</translation>
     </message>
 </context>
 <context>
@@ -72,35 +71,21 @@
         <location filename="meteo_qt.py" line="541"/>
         <source>Error :
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur :
+</translation>
     </message>
 </context>
 <context>
     <name>MeteoSettings</name>
-    <message>
-        <location filename="settings.py" line="92"/>
-        <source>Temperature unit</source>
-        <translation>Unité de température</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="170"/>
-        <source>Meteo-qt Configuration</source>
-        <translation>Configuration de Meteo-qt</translation>
-    </message>
     <message>
         <location filename="settings.py" line="40"/>
         <source>City</source>
         <translation>Ville</translation>
     </message>
     <message>
-        <location filename="settings.py" line="102"/>
-        <source>Update interval</source>
-        <translation>Intervalle de mise à jour</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="103"/>
-        <source>minutes</source>
-        <translation>minutes</translation>
+        <location filename="settings.py" line="43"/>
+        <source>Click to edit the cities list</source>
+        <translation>Cliquez pour modifier la liste des villes</translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
@@ -113,104 +98,14 @@
         <translation>Les paramètres linguistiques seront pris en compte une fois l&apos;application relancée</translation>
     </message>
     <message>
-        <location filename="settings.py" line="57"/>
-        <source>English</source>
-        <translation>Anglais</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="73"/>
-        <source>Russian</source>
-        <translation>Russe</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="64"/>
-        <source>Italian</source>
-        <translation>Italien</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="58"/>
-        <source>Spanish</source>
-        <translation>Espagnol</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="77"/>
-        <source>Ukrainian</source>
-        <translation>Ukrainien</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="55"/>
-        <source>German</source>
-        <translation>Allemand</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="70"/>
-        <source>Portuguese</source>
-        <translation>Portugais</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="72"/>
-        <source>Romanian</source>
-        <translation>Roumain</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="69"/>
-        <source>Polish</source>
-        <translation>Polonais</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="59"/>
-        <source>Finnish</source>
-        <translation>Finnois</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="68"/>
-        <source>Dutch</source>
-        <translation>Néerlandais</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="60"/>
-        <source>French</source>
-        <translation>Français</translation>
-    </message>
-    <message>
         <location filename="settings.py" line="51"/>
         <source>Bulgarian</source>
         <translation>Bulgare</translation>
     </message>
     <message>
-        <location filename="settings.py" line="75"/>
-        <source>Swedish</source>
-        <translation>Suédois</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="78"/>
-        <source>Chinese Traditional</source>
-        <translation>Chinois traditionnel</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="79"/>
-        <source>Chinese Simplified</source>
-        <translation>Chinois simplifié</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="76"/>
-        <source>Turkish</source>
-        <translation>Turc</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="62"/>
-        <source>Croatian</source>
-        <translation>Croate</translation>
-    </message>
-    <message>
         <location filename="settings.py" line="52"/>
         <source>Catalan</source>
         <translation>Catalan</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="56"/>
-        <source>Greek</source>
-        <translation>Grec</translation>
     </message>
     <message>
         <location filename="settings.py" line="53"/>
@@ -223,14 +118,54 @@
         <translation>Danois</translation>
     </message>
     <message>
+        <location filename="settings.py" line="55"/>
+        <source>German</source>
+        <translation>Allemand</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="56"/>
+        <source>Greek</source>
+        <translation>Grec</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="57"/>
+        <source>English</source>
+        <translation>Anglais</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="58"/>
+        <source>Spanish</source>
+        <translation>Espagnol</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="59"/>
+        <source>Finnish</source>
+        <translation>Finnois</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="60"/>
+        <source>French</source>
+        <translation>Français</translation>
+    </message>
+    <message>
         <location filename="settings.py" line="61"/>
         <source>Hebrew</source>
         <translation>Hébreu</translation>
     </message>
     <message>
+        <location filename="settings.py" line="62"/>
+        <source>Croatian</source>
+        <translation>Croate</translation>
+    </message>
+    <message>
         <location filename="settings.py" line="63"/>
         <source>Hungarian</source>
         <translation>Hongrois</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="64"/>
+        <source>Italian</source>
+        <translation>Italien</translation>
     </message>
     <message>
         <location filename="settings.py" line="65"/>
@@ -248,9 +183,34 @@
         <translation>Norvégien (Bokmål)</translation>
     </message>
     <message>
+        <location filename="settings.py" line="68"/>
+        <source>Dutch</source>
+        <translation>Néerlandais</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="69"/>
+        <source>Polish</source>
+        <translation>Polonais</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="70"/>
+        <source>Portuguese</source>
+        <translation>Portugais</translation>
+    </message>
+    <message>
         <location filename="settings.py" line="71"/>
         <source>Brazil Portuguese</source>
         <translation>Portugais du Brésil</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="72"/>
+        <source>Romanian</source>
+        <translation>Roumain</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="73"/>
+        <source>Russian</source>
+        <translation>Russe</translation>
     </message>
     <message>
         <location filename="settings.py" line="74"/>
@@ -258,34 +218,74 @@
         <translation>Slovaque</translation>
     </message>
     <message>
+        <location filename="settings.py" line="75"/>
+        <source>Swedish</source>
+        <translation>Suédois</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="76"/>
+        <source>Turkish</source>
+        <translation>Turc</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="77"/>
+        <source>Ukrainian</source>
+        <translation>Ukrainien</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="78"/>
+        <source>Chinese Traditional</source>
+        <translation>Chinois traditionnel</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="79"/>
+        <source>Chinese Simplified</source>
+        <translation>Chinois simplifié</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="92"/>
+        <source>Temperature unit</source>
+        <translation>Unité de température</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="102"/>
+        <source>Update interval</source>
+        <translation>Intervalle de mise à jour</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="103"/>
+        <source>minutes</source>
+        <translation>minutes</translation>
+    </message>
+    <message>
         <location filename="settings.py" line="124"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="137"/>
-        <source>Reset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="138"/>
-        <source>Reset font colour to system default</source>
-        <translation type="unfinished"></translation>
+        <translation>Lancer au démarrage</translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
         <source>Font colour in the tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleur de la police dans le plateau</translation>
     </message>
     <message>
-        <location filename="settings.py" line="43"/>
-        <source>Click to edit the cities list</source>
-        <translation type="unfinished"></translation>
+        <location filename="settings.py" line="137"/>
+        <source>Reset</source>
+        <translation>Réinitialiser</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="138"/>
+        <source>Reset font colour to system default</source>
+        <translation>Réinitialiser la couleur de la police à la couleur par défaut</translation>
     </message>
     <message>
         <location filename="settings.py" line="141"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"></translation>
+        <translation>Notification pour les mises à jour du temps</translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="170"/>
+        <source>Meteo-qt Configuration</source>
+        <translation>Configuration de Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -326,16 +326,6 @@
         <translation>Dim</translation>
     </message>
     <message>
-        <location filename="overview.py" line="140"/>
-        <source>Weather status</source>
-        <translation>Relevé météorologique</translation>
-    </message>
-    <message>
-        <location filename="overview.py" line="173"/>
-        <source>Min Max Temperature of the day</source>
-        <translation>Températures minimales et maximales de la journée</translation>
-    </message>
-    <message>
         <location filename="overview.py" line="81"/>
         <source>Wind</source>
         <translation>Vent</translation>
@@ -366,14 +356,24 @@
         <translation>Coucher du soleil</translation>
     </message>
     <message>
+        <location filename="overview.py" line="140"/>
+        <source>Weather status</source>
+        <translation>Relevé météorologique</translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="173"/>
+        <source>Min Max Temperature of the day</source>
+        <translation>Températures minimales et maximales de la journée</translation>
+    </message>
+    <message>
         <location filename="overview.py" line="222"/>
         <source>snow</source>
-        <translation type="unfinished">neige</translation>
+        <translation>Neige</translation>
     </message>
     <message>
         <location filename="overview.py" line="223"/>
         <source>rain</source>
-        <translation type="unfinished"></translation>
+        <translation>Pluie</translation>
     </message>
 </context>
 <context>
@@ -394,9 +394,14 @@
         <translation>&amp;Annuler</translation>
     </message>
     <message>
+        <location filename="searchcity.py" line="49"/>
+        <source>Tip: Type the first three letters to search by substring</source>
+        <translation>Conseil: tapez les trois premières lettres pour chercher par sous-chaîne</translation>
+    </message>
+    <message>
         <location filename="searchcity.py" line="86"/>
         <source>Searching...</source>
-        <translation>En cours de recherche...</translation>
+        <translation>Recherche en cours...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="116"/>
@@ -413,14 +418,14 @@
         <source>Found {0} cities</source>
         <translation>{0} villes trouvées</translation>
     </message>
-    <message>
-        <location filename="searchcity.py" line="49"/>
-        <source>Tip: Type the first three letters to search by substring</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SystemTrayIcon</name>
+    <message>
+        <location filename="meteo_qt.py" line="60"/>
+        <source>Cities</source>
+        <translation>Villes</translation>
+    </message>
     <message>
         <location filename="meteo_qt.py" line="61"/>
         <source>&amp;Temporary city</source>
@@ -452,9 +457,19 @@
         <translation>Recherche des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="426"/>
-        <source>Fetching weather data...</source>
+        <location filename="meteo_qt.py" line="163"/>
+        <source>Fetching weather data ...</source>
         <translation>Acquisition des données météorologiques...</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="172"/>
+        <source>Empty list</source>
+        <translation>Liste vide</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="180"/>
+        <source>No city configured</source>
+        <translation>Pas de ville configurée</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="195"/>
@@ -472,8 +487,8 @@
         <translation>meteo-qt : Aucune donnée n&apos;a été trouvée !</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="163"/>
-        <source>Fetching weather data ...</source>
+        <location filename="meteo_qt.py" line="426"/>
+        <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
@@ -481,9 +496,9 @@
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished">&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-                        &lt;br/&gt;Licence : GPLv3
-                        &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} sous {4}</translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;License: GPLv3
+            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="444"/>
@@ -504,38 +519,33 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         issue&lt;/a&gt; in github.</source>
-        <translation type="unfinished">                        &lt;p&gt;Auteur : Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Une application simpliste pour avoir les données du
-                        &lt;br/&gt;relevé météorologique dans la boîte à miniatures.
-                        &lt;br/&gt;Site Web : &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+        <translation>&lt;p&gt;Auteur: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Une application simple montrant la météo
+sur le plateau système.
+                        &lt;br/&gt;Site web: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Source des données : &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        http://openweathermap.org/&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="180"/>
-        <source>No city configured</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="60"/>
-        <source>Cities</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="172"/>
-        <source>Empty list</source>
-        <translation type="unfinished"></translation>
+                        &lt;br/&gt;Source des données: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        http://openweathermap.org/&lt;/a&gt;.
+                        &lt;p&gt;Pour traduire Météo-qt dans votre langue ou contribuer aux
+                        traductions actuelles, vous pouvez soit le faire directement dans
+                        github en envoyant une demande, ou choisir le fichier
+                        dans la langue que vous voulez traduire ici:
+                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
+                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
+                        et m&apos;envoyer le dossier par email.
+                        &lt;p&gt;Si vous voulez reporter une dysfonction ou faire une suggestion,
+                        n&apos;hésitez pas à ouvrir un fil &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        &lt;/a&gt; dans github.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="462"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
             [es] Spanish translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -545,7 +555,22 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation type="unfinished"></translation>
+        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Traduction allemande
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Traduction grecque
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Traduction espagnole
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Traduction française, projet
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Traduction polonaise
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Traduction ukrainienne
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Traduction chinoise (Taiwan)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</translation>
     </message>
 </context>
 <context>
@@ -568,7 +593,7 @@
     <message>
         <location filename="conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation>orages isolés</translation>
+        <translation>orages avec éclairs</translation>
     </message>
     <message>
         <location filename="conditions.py" line="12"/>
@@ -1069,13 +1094,6 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="153"/>
-        <source>
-Try again later</source>
-        <translation>
-Veuillez réessayer ultérieurement</translation>
-    </message>
-    <message>
         <location filename="searchcity.py" line="140"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
@@ -1085,7 +1103,14 @@ ou modifier le nom de la ville</translation>
     <message>
         <location filename="searchcity.py" line="153"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur:</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="153"/>
+        <source>
+Try again later</source>
+        <translation>
+Veuillez réessayer ultérieurement</translation>
     </message>
 </context>
 </TS>
