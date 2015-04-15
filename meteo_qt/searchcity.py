@@ -14,6 +14,7 @@ class SearchCity(QDialog):
     def __init__(self, accurate_url, parent=None):
         super(SearchCity, self).__init__(parent)
         self.delay = 1000
+        self.search_string = self.tr('Searching...')
         self.timer = QTimer()
         self.accurate_url = accurate_url
         self.suffix = '&type=like&mode=xml'
@@ -46,7 +47,8 @@ class SearchCity(QDialog):
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
         self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
-        self.status.setText(self.tr('Tip: Type the first three letters to search by substring'))
+        self.status.setText(self.tr('Tip: Type the first three letters to search by substring') +
+                            '\n' + self.tr('This works only with ASCII characters'))
 
     def buttonCheck(self):
         '''Enable OK button if an item is selected'''
@@ -72,33 +74,38 @@ class SearchCity(QDialog):
         QDialog.accept(self)
 
     def search(self):
-        try:
+        if hasattr(self, 'workThread'):
             if self.workThread.isRunning():
-                return
-        except AttributeError:
-            pass
+                self.workThread.terminate()
         self.lista=[]
         self.dico={}
         self.errorStatus = False
         self.buttonOk.setEnabled(False)
         self.listWidget.clear()
+        self.status.setText(self.search_string)
         self.city = (self.line_search.text())
-        self.status.setText(self.tr('Searching...'))
         self.workThread = WorkThread(self.accurate_url, self.city, self.suffix)
+        self.workThread.setTerminationEnabled(True)
         self.workThread.city_signal['QString'].connect(self.addlist)
         self.workThread.finished.connect(self.result)
         self.workThread.error['QString'].connect(self.error)
         self.timer.singleShot(self.delay, self.threadstart)
+        self.workThread.started.connect(self.thread_started)
+
+    def thread_started(self):
+        '''Force the "searching" status message'''
+        self.status.setText(self.search_string)
 
     def threadstart(self):
         self.workThread.start()
 
     def addlist(self, city):
         print('Found: ', city)
-        self.lista.append(city)
+        if city not in self.lista:
+            self.lista.append(city)
 
     def error(self, e):
-        self.delay = 5000
+        self.delay = 2000
         print(e)
         self.status.setText(e)
         self.adjustSize()
@@ -108,6 +115,8 @@ class SearchCity(QDialog):
         if self.errorStatus:
             return
         self.delay = 1000
+        # Clear the listWidget elements from an interrupted thread
+        self.listWidget.clear()
         self.listWidget.addItems(self.lista)
         number_cities = len(self.lista)
         cities_text = ''
@@ -151,30 +160,52 @@ class WorkThread(QThread):
             m_error = (self.tr('Error: ') + code + ' ' + str(error.reason) +
                        self.tr('\nTry again later'))
             self.error['QString'].emit(m_error)
-            return
+            if self.tentatives == 10:
+                return
+            else:
+                self.tentatives += 1
+                print('Tries: ',self.tentatives)
+                self.run()
         # No result
         if int(tree[1].text) == 0:
             print('Number of cities: 0')
-            return
+            if self.tentatives == 10:
+                return
+            else:
+                self.tentatives += 1
+                print('Tries: ',self.tentatives)
+                print('Try to retreive city information...')
+                self.run()
         for i in range(int(tree[1].text)):
             city = tree[3][i][0].get('name')
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
                 print('Error ID: ',id_)
-                self.error['QString'].emit(error_message)
-                return
-            if city == '' or country == None:
-                print('Tries: ',self.tentatives)
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
                     return
                 else:
                     self.tentatives += 1
-                    self.run()
+                    print('Tries: ',self.tentatives)
                     print('Try to retreive city information...')
+                    self.run()
+            if city == '' or country == None:
+                if self.tentatives == 10:
+                    self.error['QString'].emit(error_message)
+                    return
+                else:
+                    self.tentatives += 1
+                    print('Tries: ',self.tentatives)
+                    print('Try to retreive city information...')
+                    self.run()
             try:
-                self.lista.append(id_ + ' - ' + city + ' - ' + country)
+                if id_ == '0':
+                    continue
+                place = (id_ + ' - ' + city + ' - ' + country)
+                if place in self.lista:
+                    continue
+                self.lista.append(place)
             except:
                 print('An error has occured:\n')
                 print('ID', id_)

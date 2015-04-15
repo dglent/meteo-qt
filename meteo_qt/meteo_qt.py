@@ -343,8 +343,13 @@ class SystemTrayIcon(QMainWindow):
     def tray(self):
         if self.inerror or not hasattr(self, 'temp'):
             print('In error, new try...')
-            self.update()
-            return
+            if hasattr(self, 'downloadThread'):
+                if self.downloadThread.isRunning():
+                    self.downloadThread.quit()
+                self.refresh()
+                return
+            else:
+                return
         print('Paint tray icon')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
@@ -356,15 +361,16 @@ class SystemTrayIcon(QMainWindow):
         pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
-        if not self.overviewcity.isVisible():
-            notifier = self.settings.value('Notifications') or 'True'
-            notifier = eval(notifier)
-            if notifier:
-                temp = int(re.search('\d+', self.temp).group())
-                if temp != self.notification_temp or self.id_ != self.notifications_id:
-                    self.notifications_id = self.id_
-                    self.notification_temp = temp
-                    self.systray.showMessage('meteo-qt', self.notification)
+        if hasattr(self, 'overviewcity'):
+            if not self.overviewcity.isVisible():
+                notifier = self.settings.value('Notifications') or 'True'
+                notifier = eval(notifier)
+                if notifier:
+                    temp = int(re.search('\d+', self.temp).group())
+                    if temp != self.notification_temp or self.id_ != self.notifications_id:
+                        self.notifications_id = self.id_
+                        self.notification_temp = temp
+                        self.systray.showMessage('meteo-qt', self.notification)
 
     def activate(self, reason):
         if reason == 3:
@@ -448,20 +454,17 @@ class SystemTrayIcon(QMainWindow):
         text = self.tr("""<p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
                         information on the system tray.
-                        <br/>Website: <a href="https://github.com/dglent/meteo-qt">
+                        <p>Website: <a href="https://github.com/dglent/meteo-qt">
                         https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
                         http://openweathermap.org/</a>.
                         <p>To translate meteo-qt in your language or contribute to
-                        current translations, you can either do it directly in
-                        github by sending a pull request, or choose the file
-                        of the language you want to translate from here:
-                        <a href="https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations">
-                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations</a>
-                        and send me the file by email.
+                        current translations, you can use the
+                        <a href="https://www.transifex.com/projects/p/meteo-qt/">
+                        transifex</a> platform.
                         <p>If you want to report a dysfunction or a suggestion,
-                        feel free to open an <a href="https://github.com/dglent/meteo-qt/issues">
-                        issue</a> in github.""")
+                        feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
+                        github</a>.""")
 
         contributors = self.tr("""Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
             [de] German translation
