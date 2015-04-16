@@ -229,12 +229,15 @@ class OverviewCity(QDialog):
             else:
                 print('Wind direction code is missing: ', winddircode)
             wind_name = self.tree_day[4][d][3].get('name')
-            if wind_name != '':
+            try:
                 wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + ' <br/>'
                 wind += wind_name_translated
-            else:
+            except KeyError:
+                print('Cannot find wind name :', wind_name)
+                print('Set wind name to None')
+                wind = ''
+            finally:
                 wind += '<br/>'
-                print('Wind name is missing: ', wind_name)
             # Clouds
             clouds_translated = ''
             clouds = self.tree_day[4][d][7].get('value')
