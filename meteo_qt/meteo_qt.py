@@ -194,18 +194,19 @@ class SystemTrayIcon(QMainWindow):
                                  self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
-        print('update')
+        print('Update...')
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(self.wIconUrl, self.baseurl,
                                        self.forecast_url, self.day_forecast_url,
                                        self.id_, self.suffix)
+        self.downloadThread.setTerminationEnabled(True)
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
         self.downloadThread.forecast_rawpage.connect(self.forecast)
         self.downloadThread.day_forecast_rawpage.connect(self.dayforecast)
         self.downloadThread.error.connect(self.error)
-        self.downloadThread.done.connect(self.done)
+        self.downloadThread.done.connect(self.done, Qt.QueuedConnection)
         self.downloadThread.start()
 
     def forecast(self, data):
@@ -345,12 +346,12 @@ class SystemTrayIcon(QMainWindow):
             print('In error, new try...')
             if hasattr(self, 'downloadThread'):
                 if self.downloadThread.isRunning():
-                    self.downloadThread.quit()
+                    self.downloadThread.terminate()
                 self.refresh()
                 return
             else:
                 return
-        print('Paint tray icon')
+        print('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
         self.icon = QPixmap(':/empty')
@@ -362,15 +363,26 @@ class SystemTrayIcon(QMainWindow):
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
         if hasattr(self, 'overviewcity'):
-            if not self.overviewcity.isVisible():
-                notifier = self.settings.value('Notifications') or 'True'
-                notifier = eval(notifier)
-                if notifier:
-                    temp = int(re.search('\d+', self.temp).group())
-                    if temp != self.notification_temp or self.id_ != self.notifications_id:
-                        self.notifications_id = self.id_
-                        self.notification_temp = temp
-                        self.systray.showMessage('meteo-qt', self.notification)
+            try:
+                if not self.overviewcity.isVisible():
+                    notifier = self.settings.value('Notifications') or 'True'
+                    notifier = eval(notifier)
+                    if notifier:
+                        temp = int(re.search('\d+', self.temp).group())
+                        if temp != self.notification_temp or self.id_ != self.notifications_id:
+                            self.notifications_id = self.id_
+                            self.notification_temp = temp
+                            self.systray.showMessage('meteo-qt', self.notification)
+            except:
+                print('OverviewCity has been deleted',
+                      'Download weather information again...')
+                self.refresh()
+        if self.temporary_city_status:
+            print('Restore the default settings (city)',
+                  'Forget the temporary city...')
+            for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
+                self.citydata(e)
+            self.temporary_city_status = False
 
     def activate(self, reason):
         if reason == 3:
@@ -436,9 +448,9 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
             # Restore the initial settings
-            for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
-                self.citydata(e)
-            self.temporary_city_status = False
+            #for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
+                #self.citydata(e)
+            #self.temporary_city_status = False
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
@@ -457,7 +469,9 @@ class SystemTrayIcon(QMainWindow):
                         <p>Website: <a href="https://github.com/dglent/meteo-qt">
                         https://github.com/dglent/meteo-qt</a>
                         <br/>Data source: <a href="http://openweathermap.org/">
-                        http://openweathermap.org/</a>.
+                        OpenWeatherMap</a>.
+                        <br/>This software uses icons from the
+                        <a href="http://www.kde.org/">Oxygen Project</a>.
                         <p>To translate meteo-qt in your language or contribute to
                         current translations, you can use the
                         <a href="https://www.transifex.com/projects/p/meteo-qt/">
@@ -505,7 +519,7 @@ class Download(QThread):
         self.suffix = suffix
 
     def __del__(self):
-        self.wait()
+        self.wait(15000)
 
     def run(self):
         done = False
