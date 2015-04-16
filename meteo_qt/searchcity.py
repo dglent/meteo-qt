@@ -13,6 +13,7 @@ class SearchCity(QDialog):
 
     def __init__(self, accurate_url, parent=None):
         super(SearchCity, self).__init__(parent)
+        self.settings = QSettings()
         self.delay = 1000
         self.search_string = self.tr('Searching...')
         self.timer = QTimer()
@@ -49,6 +50,17 @@ class SearchCity(QDialog):
         self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
         self.status.setText(self.tr('Tip: Type the first three letters to search by substring') +
                             '\n' + self.tr('This works only with ASCII characters'))
+        self.restoreGeometry(self.settings.value("SearchCity/Geometry",
+                QByteArray()))
+
+    def closeEvent(self, event):
+        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
+
+    def moveEvent(self, event):
+        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
+
+    def resizeEvent(self, event):
+        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
 
     def buttonCheck(self):
         '''Enable OK button if an item is selected'''
