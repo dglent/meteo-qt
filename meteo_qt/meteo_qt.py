@@ -486,6 +486,8 @@ class SystemTrayIcon(QMainWindow):
             [el] Greek translation
             <p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/>
             [es] Spanish translation
+            <p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a><br/>
+            [fr] French translation
             <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
             [fr] French translation, Project
             <p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/>
