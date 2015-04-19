@@ -1,3 +1,4 @@
+*.qm
 *.pyc
 *~
 __pycache__/
