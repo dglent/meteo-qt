@@ -520,8 +520,8 @@ class Download(QThread):
         self.id_ = id_
         self.suffix = suffix
 
-    def __del__(self):
-        self.wait(15000)
+    #def __del__(self):
+        #self.wait()
 
     def run(self):
         done = False

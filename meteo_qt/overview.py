@@ -181,6 +181,7 @@ class OverviewCity(QDialog):
             self.forecast_weather_list.append(weather_cond) #weather
 
     def iconfetch(self):
+        print('Download 5 days forecast icons...')
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.error['QString'].connect(self.error)
@@ -252,6 +253,7 @@ class OverviewCity(QDialog):
             self.dayforecast_temp_layout.addWidget(daytime)
 
     def dayiconfetch(self):
+        print('Download forecast icons for the day...')
         self.day_download_thread = IconDownload(self.icon_url, self.dayforecast_icon_list)
         self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
         self.day_download_thread.error['QString'].connect(self.error)

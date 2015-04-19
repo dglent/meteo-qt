@@ -24,7 +24,7 @@ class SearchCity(QDialog):
         self.buttonSearch = QPushButton()
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
-        self.line_search = QLineEdit(self.tr('Type the name of the city and press Enter'))
+        self.line_search = QLineEdit(self.tr('Search location...'))
         self.line_search.selectAll()
         self.listWidget = QListWidget()
         self.status = QLabel()
@@ -41,15 +41,14 @@ class SearchCity(QDialog):
         self.buttonLayout.addWidget(self.buttonOk)
         self.buttonLayout.addWidget(self.buttonCancel)
         self.layout.addLayout(self.buttonLayout)
-        self.setMinimumWidth(int(len(self.line_search.text())*10))
+        self.setMinimumWidth(int(len(self.line_search.text())*20))
         self.setLayout(self.layout)
         self.line_search.returnPressed.connect(self.search)
+        self.line_search.textChanged.connect(self.search)
         self.buttonOk.clicked.connect(self.accept)
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
         self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
-        self.status.setText(self.tr('Tip: Type the first three letters to search by substring') +
-                            '\n' + self.tr('This works only with ASCII characters'))
         self.restoreGeometry(self.settings.value("SearchCity/Geometry",
                 QByteArray()))
 
@@ -85,17 +84,23 @@ class SearchCity(QDialog):
             self.country_signal[tuple].emit(country)
         QDialog.accept(self)
 
-    def search(self):
+    def thread_terminate(self):
         if hasattr(self, 'workThread'):
             if self.workThread.isRunning():
                 self.workThread.terminate()
+
+    def search(self):
+        self.city = (self.line_search.text())
+        self.thread_terminate()
+        if len(self.city) < 3:
+            self.status.setText(self.tr('Please type more than three letters'))
+            return
         self.lista=[]
         self.dico={}
         self.errorStatus = False
         self.buttonOk.setEnabled(False)
         self.listWidget.clear()
         self.status.setText(self.search_string)
-        self.city = (self.line_search.text())
         self.workThread = WorkThread(self.accurate_url, self.city, self.suffix)
         self.workThread.setTerminationEnabled(True)
         self.workThread.city_signal['QString'].connect(self.addlist)
@@ -126,6 +131,10 @@ class SearchCity(QDialog):
     def result(self):
         if self.errorStatus:
             return
+        if len(self.line_search.text()) < 3:
+            self.thread_terminate()
+            self.status.clear()
+            return
         self.delay = 1000
         # Clear the listWidget elements from an interrupted thread
         self.listWidget.clear()
@@ -153,8 +162,8 @@ class WorkThread(QThread):
         self.suffix = suffix
         self.tentatives = 1
 
-    def __del__(self):
-        self.wait()
+    #def __del__(self):
+        #self.wait()
 
     def run(self):
         error_message = self.tr('Data error, please try again later\nor modify the name of the city')
@@ -171,23 +180,26 @@ class WorkThread(QThread):
                 code = str(error.code)
             m_error = (self.tr('Error: ') + code + ' ' + str(error.reason) +
                        self.tr('\nTry again later'))
-            self.error['QString'].emit(m_error)
             if self.tentatives == 10:
+                self.error['QString'].emit(m_error)
                 return
             else:
                 self.tentatives += 1
                 print('Tries: ',self.tentatives)
                 self.run()
         # No result
-        if int(tree[1].text) == 0:
-            print('Number of cities: 0')
-            if self.tentatives == 10:
-                return
-            else:
-                self.tentatives += 1
-                print('Tries: ',self.tentatives)
-                print('Try to retreive city information...')
-                self.run()
+        try:
+            if int(tree[1].text) == 0:
+                print('Number of cities: 0')
+                if self.tentatives == 10:
+                    return
+                else:
+                    self.tentatives += 1
+                    print('Tries: ',self.tentatives)
+                    print('Try to retreive city information...')
+                    self.run()
+        except:
+            return
         for i in range(int(tree[1].text)):
             city = tree[3][i][0].get('name')
             country = tree[3][i][0][1].text
