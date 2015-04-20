@@ -492,6 +492,8 @@ class SystemTrayIcon(QMainWindow):
             [fr] French translation, Project
             <p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/>
             [pl] Polish translation
+            <p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/>
+            [ru] Russian translation
             <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
             [uk] Ukranian translation
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
