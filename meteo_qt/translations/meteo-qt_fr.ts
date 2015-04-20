@@ -584,26 +584,6 @@ sur le plateau système.
             Project</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="474"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;A simple application showing the weather status
-                        information on the system tray.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;This software uses icons from the
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;To translate meteo-qt in your language or contribute to
-                        current translations, you can use the
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        transifex&lt;/a&gt; platform.
-                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
-                        feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="meteo_qt.py" line="491"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
@@ -625,6 +605,26 @@ sur le plateau système.
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="474"/>
+        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;A simple application showing the weather status
+                        information on the system tray.
+                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;This software uses icons from the
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+                        &lt;p&gt;To translate meteo-qt in your language or contribute to
+                        current translations, you can use the
+                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+                        Transifex&lt;/a&gt; platform.
+                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
+                        feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        github&lt;/a&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

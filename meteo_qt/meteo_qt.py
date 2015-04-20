@@ -475,7 +475,7 @@ class SystemTrayIcon(QMainWindow):
                         <p>To translate meteo-qt in your language or contribute to
                         current translations, you can use the
                         <a href="https://www.transifex.com/projects/p/meteo-qt/">
-                        transifex</a> platform.
+                        Transifex</a> platform.
                         <p>If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
                         github</a>.""")

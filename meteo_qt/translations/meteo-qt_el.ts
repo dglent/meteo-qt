@@ -421,12 +421,12 @@
     <message>
         <location filename="searchcity.py" line="27"/>
         <source>Search location...</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναζήτηση τοποθεσίας...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="96"/>
         <source>Please type more than three letters</source>
-        <translation type="unfinished"></translation>
+        <translation>Παρακαλώ πληκτρολογήστε πάνω από τρία γράμματα</translation>
     </message>
 </context>
 <context>
@@ -565,7 +565,19 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">&lt;p&gt;Συγγραφέας: Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Μια απλή εφαρμογή για την εμφάνιση των πληροφοριών
+                        των καιρικών συνθηκών στο πλαίσιο συστήματος.
+                        &lt;p&gt;Ιστοσελίδα: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Πηγή δεδομένων: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;Αυτό το πρόγραμμα κάνει χρήση εικονιδίων από το &lt;a href=&quot;http://www.kde.org/&quot;&gt;έργο Oxygen&lt;/a&gt;.
+                        &lt;p&gt;Για να μεταφράσετε το meteo-qt στη γλώσσα σας ή να συνεισφέρετε σε μια
+                        υπάρχουσα μετάφραση, μπορείτε να χρησιμοποιήσετε την πλατφόρμα &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;Transifex&lt;/a&gt;.
+                        &lt;p&gt;Αν θέλετε να αναφέρετε μια δυσλειτουργία ή μια πρόταση,
+                        μη διστάσετε να ανοίξετε ένα &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        θέμα&lt;/a&gt; στο github.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="491"/>
@@ -590,6 +602,38 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="474"/>
+        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;A simple application showing the weather status
+                        information on the system tray.
+                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;This software uses icons from the
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+                        &lt;p&gt;To translate meteo-qt in your language or contribute to
+                        current translations, you can use the
+                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+                        Transifex&lt;/a&gt; platform.
+                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
+                        feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        github&lt;/a&gt;.</source>
+        <translation>&lt;p&gt;Συγγραφέας: Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Μια απλή εφαρμογή για την εμφάνιση των πληροφοριών
+                        των καιρικών συνθηκών στο πλαίσιο συστήματος.
+                        &lt;p&gt;Ιστοσελίδα: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Πηγή δεδομένων: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;Αυτό το πρόγραμμα κάνει χρήση εικονιδίων από το &lt;a href=&quot;http://www.kde.org/&quot;&gt;έργο Oxygen&lt;/a&gt;.
+                        &lt;p&gt;Για να μεταφράσετε το meteo-qt στη γλώσσα σας ή να συνεισφέρετε σε μια
+                        υπάρχουσα μετάφραση, μπορείτε να χρησιμοποιήσετε την πλατφόρμα &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;Transifex&lt;/a&gt;.
+                        &lt;p&gt;Αν θέλετε να αναφέρετε μια δυσλειτουργία ή μια πρόταση,
+                        μη διστάσετε να ανοίξετε ένα &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        θέμα&lt;/a&gt; στο github.</translation>
     </message>
 </context>
 <context>
