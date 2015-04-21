@@ -362,21 +362,20 @@ class SystemTrayIcon(QMainWindow):
         pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
         self.systray.setIcon(QIcon(self.icon))
-        if hasattr(self, 'overviewcity'):
-            try:
-                if not self.overviewcity.isVisible():
-                    notifier = self.settings.value('Notifications') or 'True'
-                    notifier = eval(notifier)
-                    if notifier:
-                        temp = int(re.search('\d+', self.temp).group())
-                        if temp != self.notification_temp or self.id_ != self.notifications_id:
-                            self.notifications_id = self.id_
-                            self.notification_temp = temp
-                            self.systray.showMessage('meteo-qt', self.notification)
-            except:
-                print('OverviewCity has been deleted',
-                      'Download weather information again...')
-                self.refresh()
+        try:
+            if not self.overviewcity.isVisible():
+                notifier = self.settings.value('Notifications') or 'True'
+                notifier = eval(notifier)
+                if notifier:
+                    temp = int(re.search('\d+', self.temp).group())
+                    if temp != self.notification_temp or self.id_ != self.notifications_id:
+                        self.notifications_id = self.id_
+                        self.notification_temp = temp
+                        self.systray.showMessage('meteo-qt', self.notification)
+        except:
+            print('OverviewCity has been deleted',
+                  'Download weather information again...')
+            self.refresh()
         if self.temporary_city_status:
             print('Restore the default settings (city)',
                   'Forget the temporary city...')
@@ -447,10 +446,6 @@ class SystemTrayIcon(QMainWindow):
             self.temporary_city_status = True
             self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
-            # Restore the initial settings
-            #for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
-                #self.citydata(e)
-            #self.temporary_city_status = False
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
