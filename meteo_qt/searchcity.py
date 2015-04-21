@@ -5,6 +5,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import urllib.request
 from lxml import etree
+from socket import timeout
 
 class SearchCity(QDialog):
     id_signal = pyqtSignal([tuple])
@@ -106,8 +107,12 @@ class SearchCity(QDialog):
         self.workThread.city_signal['QString'].connect(self.addlist)
         self.workThread.finished.connect(self.result)
         self.workThread.error['QString'].connect(self.error)
-        self.timer.singleShot(self.delay, self.threadstart)
+        self.workThread.searching['QString'].connect(self.searching)
         self.workThread.started.connect(self.thread_started)
+        self.timer.singleShot(self.delay, self.threadstart)
+
+    def searching(self, message):
+        self.status.setText(message)
 
     def thread_started(self):
         '''Force the "searching" status message'''
@@ -153,6 +158,7 @@ class SearchCity(QDialog):
 class WorkThread(QThread):
     error = pyqtSignal(['QString'])
     city_signal = pyqtSignal(['QString'])
+    searching = pyqtSignal(['QString'])
 
     def __init__(self, accurate_url, city, suffix):
         QThread.__init__(self)
@@ -171,9 +177,19 @@ class WorkThread(QThread):
         if self.city == '':
             return
         try:
-            req = urllib.request.urlopen(self.accurate_url + self.city + self.suffix)
+            req = urllib.request.urlopen(self.accurate_url + self.city + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
+        except timeout:
+            if self.tentatives == 10:
+                print(error_message)
+                return
+            else:
+                self.tentatives += 1
+                searching_message = self.tr('Please wait, searching...')
+                print(searching_message)
+                self.searching['QString'].emit(searching_message)
+                self.run()
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             code = ''
             if hasattr(error, 'code'):
