@@ -226,8 +226,9 @@ class SystemTrayIcon(QMainWindow):
             self.wIcon = self.updateicon
         # Update also the overview dialog if open
         try:
-            if self.overviewcity.isVisible():
-                self.overviewcity.hide()
+            if hasattr(self, 'overviewcity'):
+                if self.overviewcity.isVisible():
+                    self.overviewcity.hide()
                 if hasattr(self, 'forecast_data'):
                     self.overviewcity = overview.OverviewCity(
                         self.weatherDataDico, self.wIcon,
@@ -342,15 +343,8 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
     def tray(self):
-        if self.inerror or not hasattr(self, 'temp'):
-            print('In error, new try...')
-            if hasattr(self, 'downloadThread'):
-                if self.downloadThread.isRunning():
-                    self.downloadThread.terminate()
-                self.refresh()
-                return
-            else:
-                return
+        if self.inerror:
+           return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
@@ -517,8 +511,8 @@ class Download(QThread):
         self.id_ = id_
         self.suffix = suffix
 
-    #def __del__(self):
-        #self.wait()
+    def __del__(self):
+        self.wait()
 
     def run(self):
         done = False
