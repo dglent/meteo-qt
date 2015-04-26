@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="574"/>
+        <location filename="meteo_qt.py" line="569"/>
         <source>Error :
 </source>
         <translation>Ошибка :
@@ -385,12 +385,12 @@
         <translation type="obsolete">Введите имя города и нажмите Enter</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="38"/>
+        <location filename="searchcity.py" line="39"/>
         <source>&amp;Ok</source>
         <translation>&amp;ОК</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="40"/>
+        <location filename="searchcity.py" line="41"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Отмена</translation>
     </message>
@@ -400,32 +400,32 @@
         <translation type="obsolete">Совет: введите первые три буквы, чтобы искать подстрокой</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="18"/>
+        <location filename="searchcity.py" line="19"/>
         <source>Searching...</source>
         <translation>Поиск...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="146"/>
+        <location filename="searchcity.py" line="151"/>
         <source>No results</source>
         <translation>Нет результатов</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="148"/>
+        <location filename="searchcity.py" line="153"/>
         <source>Found {0} city</source>
         <translation>Найден {0} город</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="150"/>
+        <location filename="searchcity.py" line="155"/>
         <source>Found {0} cities</source>
         <translation>Найдено {0} городов</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="27"/>
+        <location filename="searchcity.py" line="28"/>
         <source>Search location...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="96"/>
+        <location filename="searchcity.py" line="97"/>
         <source>Please type more than three letters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -498,12 +498,12 @@
         <translation>meteo-qt: отсутствуют данные!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="456"/>
+        <location filename="meteo_qt.py" line="455"/>
         <source>Fetching weather data...</source>
         <translation>Загрузка данных о погоде...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="468"/>
+        <location filename="meteo_qt.py" line="463"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -541,7 +541,7 @@ http://openweathermap.org/&lt;/a&gt;.
 багтрекере&lt;/a&gt; github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="491"/>
+        <location filename="meteo_qt.py" line="486"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -565,7 +565,7 @@ http://openweathermap.org/&lt;/a&gt;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="474"/>
+        <location filename="meteo_qt.py" line="469"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1106,23 +1106,28 @@ http://openweathermap.org/&lt;/a&gt;.
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="170"/>
+        <location filename="searchcity.py" line="176"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Ошибка данных, попробуйте позже
 или измените название города</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="183"/>
+        <location filename="searchcity.py" line="199"/>
         <source>Error: </source>
         <translation>Ошибка:</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="183"/>
+        <location filename="searchcity.py" line="199"/>
         <source>
 Try again later</source>
         <translation>
 Попробуйте позже</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="190"/>
+        <source>Please wait, searching...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="574"/>
+        <location filename="meteo_qt.py" line="569"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -384,12 +384,12 @@
         <translation type="obsolete">Πληκτρολογήστε την πόλη και πατήστε ENTER</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="38"/>
+        <location filename="searchcity.py" line="39"/>
         <source>&amp;Ok</source>
         <translation>&amp;Εντάξει</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="40"/>
+        <location filename="searchcity.py" line="41"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Ακύρωση</translation>
     </message>
@@ -399,32 +399,32 @@
         <translation type="obsolete">Συμβουλή: Πληκτρολογήστε τα πρώτα τρία γράμματα για ασαφή αναζήτηση</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="18"/>
+        <location filename="searchcity.py" line="19"/>
         <source>Searching...</source>
         <translation>Αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="146"/>
+        <location filename="searchcity.py" line="151"/>
         <source>No results</source>
         <translation>Κανένα αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="148"/>
+        <location filename="searchcity.py" line="153"/>
         <source>Found {0} city</source>
         <translation>Βρέθηκε {0} πόλη</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="150"/>
+        <location filename="searchcity.py" line="155"/>
         <source>Found {0} cities</source>
         <translation>Βρέθηκαν {0} πόλεις</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="27"/>
+        <location filename="searchcity.py" line="28"/>
         <source>Search location...</source>
         <translation>Αναζήτηση τοποθεσίας...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="96"/>
+        <location filename="searchcity.py" line="97"/>
         <source>Please type more than three letters</source>
         <translation>Παρακαλώ πληκτρολογήστε πάνω από τρία γράμματα</translation>
     </message>
@@ -497,12 +497,12 @@
         <translation>meteo-qt: Αδύνατη η εύρεση δεδομένων!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="456"/>
+        <location filename="meteo_qt.py" line="455"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="468"/>
+        <location filename="meteo_qt.py" line="463"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -580,7 +580,7 @@
                         θέμα&lt;/a&gt; στο github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="491"/>
+        <location filename="meteo_qt.py" line="486"/>
         <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -604,7 +604,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="474"/>
+        <location filename="meteo_qt.py" line="469"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1157,23 +1157,28 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="170"/>
+        <location filename="searchcity.py" line="176"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Σφάλμα δεδομένων, παρακαλώ προσπαθήστε ξανά αργότερα
 ή δοκιμάστε να αλλάξετε την πόλη</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="183"/>
+        <location filename="searchcity.py" line="199"/>
         <source>Error: </source>
         <translation>Σφάλμα: </translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="183"/>
+        <location filename="searchcity.py" line="199"/>
         <source>
 Try again later</source>
         <translation>
 Προσπαθήστε ξανά αργότερα</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="190"/>
+        <source>Please wait, searching...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
