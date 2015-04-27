@@ -225,10 +225,9 @@ class SystemTrayIcon(QMainWindow):
             # Keep a reference of the image to update the icon in overview
             self.wIcon = self.updateicon
         # Update also the overview dialog if open
-        try:
-            if hasattr(self, 'overviewcity'):
-                if self.overviewcity.isVisible():
-                    self.overviewcity.hide()
+        if hasattr(self, 'overviewcity'):
+            if self.overviewcity.isVisible():
+                self.overviewcity.hide()
                 if hasattr(self, 'forecast_data'):
                     self.overviewcity = overview.OverviewCity(
                         self.weatherDataDico, self.wIcon,
@@ -237,8 +236,10 @@ class SystemTrayIcon(QMainWindow):
                         self.unit, self.forecast_icon_url, self)
                     self.overview()
                 else:
+                    if self.tentatives < 10:
+                        self.try_again()
                     return
-        except:
+        else:
             if hasattr(self, 'forecast_data'):
                 self.overviewcity = overview.OverviewCity(
                     self.weatherDataDico, self.wIcon, self.forecast_inerror,
@@ -246,7 +247,14 @@ class SystemTrayIcon(QMainWindow):
                     self.dayforecast_data, self.unit,
                     self.forecast_icon_url, self)
             else:
+                if self.tentatives < 10:
+                    self.try_again()
                 return
+
+    def try_again(self):
+        self.tentatives += 1
+        print('Tentatives: ', self.tentatives)
+        self.refresh()
 
     def error(self, error):
         print('Tentatives: ', self.tentatives)
