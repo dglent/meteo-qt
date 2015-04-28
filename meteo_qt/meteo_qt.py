@@ -150,6 +150,7 @@ class SystemTrayIcon(QMainWindow):
 
 
     def refresh(self):
+        self.dayforecast_inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
@@ -215,6 +216,13 @@ class SystemTrayIcon(QMainWindow):
     def dayforecast(self, data):
         self.dayforecast_data = data
 
+    def instance_overviewcity(self):
+        self.overviewcity = overview.OverviewCity(
+            self.weatherDataDico, self.wIcon,
+            self.forecast_inerror, self.forecast_data,
+            self.dayforecast_inerror, self.dayforecast_data,
+            self.unit, self.forecast_icon_url, self)
+
     def done(self, done):
         if done == 0:
             self.inerror = False
@@ -224,32 +232,25 @@ class SystemTrayIcon(QMainWindow):
         if hasattr(self, 'updateicon'):
             # Keep a reference of the image to update the icon in overview
             self.wIcon = self.updateicon
-        # Update also the overview dialog if open
-        if hasattr(self, 'overviewcity'):
-            if self.overviewcity.isVisible():
-                self.overviewcity.hide()
-                if hasattr(self, 'forecast_data'):
-                    self.overviewcity = overview.OverviewCity(
-                        self.weatherDataDico, self.wIcon,
-                        self.forecast_inerror, self.forecast_data,
-                        self.dayforecast_inerror, self.dayforecast_data,
-                        self.unit, self.forecast_icon_url, self)
-                    self.overview()
-                else:
-                    if self.tentatives < 10:
-                        self.try_again()
-                    return
-        else:
-            if hasattr(self, 'forecast_data'):
-                self.overviewcity = overview.OverviewCity(
-                    self.weatherDataDico, self.wIcon, self.forecast_inerror,
-                    self.forecast_data, self.dayforecast_inerror,
-                    self.dayforecast_data, self.unit,
-                    self.forecast_icon_url, self)
+        if hasattr(self, 'forecast_data'):
+            if hasattr(self, 'overviewcity'):
+                # Sometimes the overviewcity is in namespace but deleted:
+                # RuntimeError: wrapped C/C++ object of type OverviewCity has been deleted
+                try:
+                    # Update also the overview dialog if open
+                    if self.overviewcity.isVisible():
+                        self.overviewcity.hide()
+                        self.instance_overviewcity()
+                        self.overview()
+                except RuntimeError:
+                    self.instance_overviewcity()
             else:
-                if self.tentatives < 10:
-                    self.try_again()
-                return
+                self.instance_overviewcity()
+        else:
+            if self.tentatives < 10:
+                self.try_again()
+            else:
+                self.refesh()
 
     def try_again(self):
         self.tentatives += 1
