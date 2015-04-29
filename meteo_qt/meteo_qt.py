@@ -49,6 +49,7 @@ class SystemTrayIcon(QMainWindow):
         self.forecast_inerror = False
         self.dayforecast_inerror = False
         self.tentatives = 0
+        self.done_tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
         self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
@@ -174,6 +175,8 @@ class SystemTrayIcon(QMainWindow):
             try:
                 self.overviewcity.close()
             except:
+                e = sys.exc_info()[0]
+                print('Error: ', e )
                 pass
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
@@ -217,11 +220,20 @@ class SystemTrayIcon(QMainWindow):
         self.dayforecast_data = data
 
     def instance_overviewcity(self):
-        self.overviewcity = overview.OverviewCity(
-            self.weatherDataDico, self.wIcon,
-            self.forecast_inerror, self.forecast_data,
-            self.dayforecast_inerror, self.dayforecast_data,
-            self.unit, self.forecast_icon_url, self)
+        try:
+            self.overviewcity = overview.OverviewCity(
+                self.weatherDataDico, self.wIcon,
+                self.forecast_inerror, self.forecast_data,
+                self.dayforecast_inerror, self.dayforecast_data,
+                self.unit, self.forecast_icon_url, self)
+            self.done_tentatives = 0
+        except:
+            e = sys.exc_info()[0]
+            print('Error: ', e )
+            self.done_tentatives += 1
+            print('Try to create the city overview...\nTentatives: ',
+                  self.done_tentatives)
+            return 'error'
 
     def done(self, done):
         if done == 0:
@@ -242,15 +254,23 @@ class SystemTrayIcon(QMainWindow):
                         self.overviewcity.hide()
                         self.instance_overviewcity()
                         self.overview()
-                except RuntimeError:
+                except:
+                    e = sys.exc_info()[0]
+                    print('Error: ', e )
+                    print('Overview instance has been deleted, try again...')
                     self.instance_overviewcity()
             else:
-                self.instance_overviewcity()
+                instance = self.instance_overviewcity()
+                if instance == 'error':
+                    if self.done_tentatives < 10:
+                        self.try_again()
+                    else:
+                        return
         else:
             if self.tentatives < 10:
                 self.try_again()
             else:
-                self.refesh()
+                return
 
     def try_again(self):
         self.tentatives += 1
@@ -524,7 +544,6 @@ class Download(QThread):
         self.wait()
 
     def run(self):
-        done = False
         done = 0
         try:
             req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix)
