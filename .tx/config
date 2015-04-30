@@ -28,6 +28,7 @@ trans.ro = meteo_qt/translations/meteo-qt_ro.ts
 trans.ru = meteo_qt/translations/meteo-qt_ru.ts
 trans.sk = meteo_qt/translations/meteo-qt_sk.ts
 trans.sv = meteo_qt/translations/meteo-qt_sv.ts
+trans.tr = meteo_qt/translations/meteo-qt_tr.ts
 trans.uk = meteo_qt/translations/meteo-qt_uk.ts
 trans.vi = meteo_qt/translations/meteo-qt_vi.ts
 trans.zh_CN = meteo_qt/translations/meteo-qt_zh_CN.ts

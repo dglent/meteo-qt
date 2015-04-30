@@ -55,6 +55,7 @@ setup(
                                                   'meteo_qt/translations/meteo-qt_ru.qm',
                                                   'meteo_qt/translations/meteo-qt_sk.qm',
                                                   'meteo_qt/translations/meteo-qt_sv.qm',
+                                                  'meteo_qt/translations/meteo-qt_tr.qm',
                                                   'meteo_qt/translations/meteo-qt_uk.qm',
                                                   'meteo_qt/translations/meteo-qt_vi.qm',
                                                   'meteo_qt/translations/meteo-qt_zh_CN.qm',
