@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -379,11 +378,6 @@
 <context>
     <name>SearchCity</name>
     <message>
-        <location filename="searchcity.py" line="25"/>
-        <source>Type the name of the city and press Enter</source>
-        <translation type="obsolete">Πληκτρολογήστε την πόλη και πατήστε ENTER</translation>
-    </message>
-    <message>
         <location filename="searchcity.py" line="39"/>
         <source>&amp;Ok</source>
         <translation>&amp;Εντάξει</translation>
@@ -392,11 +386,6 @@
         <location filename="searchcity.py" line="41"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Ακύρωση</translation>
-    </message>
-    <message>
-        <location filename="searchcity.py" line="49"/>
-        <source>Tip: Type the first three letters to search by substring</source>
-        <translation type="obsolete">Συμβουλή: Πληκτρολογήστε τα πρώτα τρία γράμματα για ασαφή αναζήτηση</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="19"/>
@@ -511,77 +500,8 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="444"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;A simple application showing the weather status
-                        information on the system tray.
-                        &lt;br/&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        http://openweathermap.org/&lt;/a&gt;.
-                        &lt;p&gt;To translate meteo-qt in your language or contribute to
-                        current translations, you can either do it directly in
-                        github by sending a pull request, or choose the file
-                        of the language you want to translate from here:
-                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
-                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
-                        and send me the file by email.
-                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
-                        feel free to open an &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        issue&lt;/a&gt; in github.</source>
-        <translation type="obsolete">&lt;p&gt;Συγγραφέας: Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Μια απλή εφαρμογή για την εμφάνιση των πληροφοριών
-                        των καιρικών συνθηκών στο πλαίσιο συστήματος.
-                        &lt;br/&gt;Ιστοσελίδα: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Πηγή δεδομένων: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        http://openweathermap.org/&lt;/a&gt;.
-                        &lt;p&gt;Για να μεταφράσετε το meteo-qt στη γλώσσα σας ή να συνεισφέρετε σε μια
-                        υπάρχουσα μετάφραση, μπορείτε είτε να στείλετε απευθείας
-                        μια αίτηση έλξης (pull request) στο github, ή να επιλέξετε το αρχείο
-                        της γλώσσας που θέλετε να μεταφράσετε από εδώ:
-                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&quot;&gt;
-                        https://github.com/dglent/meteo-qt/tree/master/meteo_qt/translations&lt;/a&gt;
-                        και να μου το στείλετε μέσω ηλ. αλληλογραφίας.
-                        &lt;p&gt;Αν θέλετε να αναφέρετε μια δυσλειτουργία ή μια πρόταση,
-                        μη διστάσετε να ανοίξετε ένα &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        θέμα&lt;/a&gt; στο github.</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="474"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;A simple application showing the weather status
-                        information on the system tray.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;This software uses icons from the
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;To translate meteo-qt in your language or contribute to
-                        current translations, you can use the
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        transifex&lt;/a&gt; platform.
-                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
-                        feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt;.</source>
-        <translation type="obsolete">&lt;p&gt;Συγγραφέας: Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Μια απλή εφαρμογή για την εμφάνιση των πληροφοριών
-                        των καιρικών συνθηκών στο πλαίσιο συστήματος.
-                        &lt;p&gt;Ιστοσελίδα: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Πηγή δεδομένων: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;Αυτό το πρόγραμμα κάνει χρήση εικονιδίων από το &lt;a href=&quot;http://www.kde.org/&quot;&gt;έργο Oxygen&lt;/a&gt;.
-                        &lt;p&gt;Για να μεταφράσετε το meteo-qt στη γλώσσα σας ή να συνεισφέρετε σε μια
-                        υπάρχουσα μετάφραση, μπορείτε να χρησιμοποιήσετε την πλατφόρμα &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;Transifex&lt;/a&gt;.
-                        &lt;p&gt;Αν θέλετε να αναφέρετε μια δυσλειτουργία ή μια πρόταση,
-                        μη διστάσετε να ανοίξετε ένα &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        θέμα&lt;/a&gt; στο github.</translation>
-    </message>
-    <message>
         <location filename="meteo_qt.py" line="486"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -589,7 +509,7 @@
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -601,7 +521,7 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meteo_qt.py" line="469"/>
@@ -1178,7 +1098,7 @@ Try again later</source>
     <message>
         <location filename="searchcity.py" line="190"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
