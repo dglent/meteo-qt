@@ -1098,7 +1098,7 @@ Try again later</source>
     <message>
         <location filename="searchcity.py" line="190"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"/>
+        <translation>Παρακαλώ περιμένετε, γίνεται αναζήτηση...</translation>
     </message>
 </context>
 </TS>
