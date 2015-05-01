@@ -214,7 +214,7 @@ class OverviewCity(QDialog):
                 mu = 'inch'
                 if precipitation.count('None') == 0:
                     precipitation = str(float(precipitation) / 25.0)
-            ttip = precipitation + ' ' + mu + ' ' + str(self.tree_day[4][d][1].get('type')) + ' <br/>'
+            ttip = precipitation + ' ' + mu + ' ' + str(self.tree_day[4][d][1].get('type')) + '<br/>'
             if ttip.count('None') >= 1:
                 ttip = ''
             else:
@@ -231,14 +231,15 @@ class OverviewCity(QDialog):
                 print('Wind direction code is missing: ', winddircode)
             wind_name = self.tree_day[4][d][3].get('name')
             try:
-                wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + ' <br/>'
+                wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + '<br/>'
                 wind += wind_name_translated
             except KeyError:
                 print('Cannot find wind name :', wind_name)
                 print('Set wind name to None')
                 wind = ''
             finally:
-                wind += '<br/>'
+                if wind == '':
+                    wind += '<br/>'
             # Clouds
             clouds_translated = ''
             clouds = self.tree_day[4][d][7].get('value')
