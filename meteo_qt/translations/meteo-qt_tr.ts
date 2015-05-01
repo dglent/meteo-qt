@@ -817,7 +817,7 @@
     <message>
         <location filename="conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"/>
+        <translation>volkanik kül</translation>
     </message>
     <message>
         <location filename="conditions.py" line="55"/>
@@ -827,17 +827,17 @@
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"/>
+        <translation>hortum</translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"/>
+        <translation>açık hava</translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation type="unfinished"/>
+        <translation>az bulutlu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
@@ -867,17 +867,17 @@
     <message>
         <location filename="conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"/>
+        <translation>soğuk</translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"/>
+        <translation>sıcak</translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"/>
+        <translation>rüzgarlı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
@@ -887,7 +887,7 @@
     <message>
         <location filename="conditions.py" line="69"/>
         <source>calm</source>
-        <translation type="unfinished"/>
+        <translation>serin</translation>
     </message>
     <message>
         <location filename="conditions.py" line="70"/>
@@ -942,162 +942,162 @@
     <message>
         <location filename="conditions.py" line="104"/>
         <source>North</source>
-        <translation type="unfinished"/>
+        <translation>Kuzey</translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>NorthEast</source>
-        <translation type="unfinished"/>
+        <translation>KuzeyDoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>North-northeast</source>
-        <translation type="unfinished"/>
+        <translation>Kuzey-kuzeydoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>NorthWest</source>
-        <translation type="unfinished"/>
+        <translation>KuzeyBatı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>North-northwest</source>
-        <translation type="unfinished"/>
+        <translation>Kuzey-kuzeybatı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>South</source>
-        <translation type="unfinished"/>
+        <translation>Güney</translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>SouthEast</source>
-        <translation type="unfinished"/>
+        <translation>GüneyDoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>South-southeast</source>
-        <translation type="unfinished"/>
+        <translation>Güney-güneydoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>SouthWest</source>
-        <translation type="unfinished"/>
+        <translation>GüneyBatı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>South-southwest</source>
-        <translation type="unfinished"/>
+        <translation>Güney-güneydoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East</source>
-        <translation type="unfinished"/>
+        <translation>Doğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-southeast</source>
-        <translation type="unfinished"/>
+        <translation>Doğu-güneydoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>East-northeast</source>
-        <translation type="unfinished"/>
+        <translation>Doğu-kuzeydoğu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West</source>
-        <translation type="unfinished"/>
+        <translation>Batı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-southwest</source>
-        <translation type="unfinished"/>
+        <translation>Batı-güneybatı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="119"/>
         <source>West-northwest</source>
-        <translation type="unfinished"/>
+        <translation>Batı-kuzeybatı</translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
         <source>N</source>
-        <translation type="unfinished"/>
+        <translation>K</translation>
     </message>
     <message>
         <location filename="conditions.py" line="122"/>
         <source>NE</source>
-        <translation type="unfinished"/>
+        <translation>KD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NNE</source>
-        <translation type="unfinished"/>
+        <translation>KKD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
         <source>NW</source>
-        <translation type="unfinished"/>
+        <translation>KB</translation>
     </message>
     <message>
         <location filename="conditions.py" line="125"/>
         <source>NNW</source>
-        <translation type="unfinished"/>
+        <translation>KKB</translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
         <source>S</source>
-        <translation type="unfinished"/>
+        <translation>G</translation>
     </message>
     <message>
         <location filename="conditions.py" line="127"/>
         <source>SE</source>
-        <translation type="unfinished"/>
+        <translation>GD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SSE</source>
-        <translation type="unfinished"/>
+        <translation>GGD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
         <source>SW</source>
-        <translation type="unfinished"/>
+        <translation>GB</translation>
     </message>
     <message>
         <location filename="conditions.py" line="130"/>
         <source>SSW</source>
-        <translation type="unfinished"/>
+        <translation>GGB</translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
         <source>E</source>
-        <translation type="unfinished"/>
+        <translation>D</translation>
     </message>
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ESE</source>
-        <translation type="unfinished"/>
+        <translation>DGD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
         <source>ENE</source>
-        <translation type="unfinished"/>
+        <translation>DKD</translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>
         <source>W</source>
-        <translation type="unfinished"/>
+        <translation>B</translation>
     </message>
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WSW</source>
-        <translation type="unfinished"/>
+        <translation>BGB</translation>
     </message>
     <message>
         <location filename="conditions.py" line="136"/>
         <source>WNW</source>
-        <translation type="unfinished"/>
+        <translation>BKB</translation>
     </message>
 </context>
 <context>
@@ -1106,23 +1106,25 @@
         <location filename="searchcity.py" line="176"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"/>
+        <translation>Veri hatası, lütfen daha sonra yeniden deneyin
+veya şehir ismini değiştirin</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="199"/>
         <source>Error: </source>
-        <translation type="unfinished"/>
+        <translation>Hata:</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="199"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"/>
+        <translation>
+Daha sonra deneyin</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="190"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"/>
+        <translation>Lütfen bekleyin, aranıyor...</translation>
     </message>
 </context>
 </TS>
