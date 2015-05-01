@@ -14,6 +14,7 @@ import platform
 import os
 from functools import partial
 import re
+from socket import timeout
 
 try:
     import qrc_resources
@@ -373,7 +374,7 @@ class SystemTrayIcon(QMainWindow):
 
     def tray(self):
         if self.inerror:
-           return
+            return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
@@ -399,6 +400,10 @@ class SystemTrayIcon(QMainWindow):
             print('OverviewCity has been deleted',
                   'Download weather information again...')
             self.refresh()
+            return
+        self.restore_city()
+
+    def restore_city(self):
         if self.temporary_city_status:
             print('Restore the default settings (city)',
                   'Forget the temporary city...')
@@ -458,6 +463,9 @@ class SystemTrayIcon(QMainWindow):
             self.cities_menu()
 
     def tempcity(self):
+        # Prevent to register a temporary city
+        # This happen when a temporary city is still loading
+        self.restore_city()
         dialog = searchcity.SearchCity(self.accurate_url, self)
         self.id_2, self.city2, self.country2 = (self.settings.value('ID'),
                                                 self.settings.value('City'),
@@ -541,16 +549,17 @@ class Download(QThread):
         self.day_forecast_url = day_forecast_url
         self.id_ = id_
         self.suffix = suffix
+        self.tentatives = 0
 
-    def __del__(self):
-        self.wait()
+    #def __del__(self):
+        #self.wait()
 
     def run(self):
         done = 0
         try:
-            req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix)
-            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix + '&cnt=7')
-            reqdayforecast = urllib.request.urlopen(self.day_forecast_url + self.id_ + self.suffix)
+            req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix, timeout=5)
+            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix + '&cnt=7', timeout=5)
+            reqdayforecast = urllib.request.urlopen(self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
             pageforecast = reqforecast.read()
             pagedayforecast = reqdayforecast.read()
@@ -577,12 +586,31 @@ class Download(QThread):
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
-            code = ''
-            if hasattr(error, 'code'):
-                code = str(error.code)
-            print(code, error.reason)
-            m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
-            self.error['QString'].emit(m_error)
+            if self.tentatives >= 10:
+                done = 1
+                code = ''
+                if hasattr(error, 'code'):
+                    code = str(error.code)
+                    print(code, error.reason)
+                    m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
+                    self.error['QString'].emit(m_error)
+                    self.done.emit(int(done))
+                    return
+            else:
+                self.tentatives += 1
+                print('Error: ', error)
+                print('Try again...')
+                self.run()
+        except timeout:
+            if self.tentatives >= 10:
+                done = 1
+                print('Timeout error, abandon...')
+                self.done.emit(int(done))
+                return
+            else:
+                self.tentatives += 1
+                print('5 secondes timeout, new tentative: ', self.tentatives)
+                self.run()
         print('Download thread done')
 
     def html404(self, page, what):
