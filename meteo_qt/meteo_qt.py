@@ -150,7 +150,6 @@ class SystemTrayIcon(QMainWindow):
                 print(cities_list)
         self.refresh()
 
-
     def refresh(self):
         self.dayforecast_inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
@@ -242,6 +241,7 @@ class SystemTrayIcon(QMainWindow):
             self.tentatives = 0
         elif done == 1:
             self.systray.setIcon(QIcon(':/noicon'))
+            return
         if hasattr(self, 'updateicon'):
             # Keep a reference of the image to update the icon in overview
             self.wIcon = self.updateicon
@@ -279,34 +279,12 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def error(self, error):
-        print('Tentatives: ', self.tentatives)
         print('Error:\n', error)
-        what = error[error.find('@')+1:]
-        if what == 'city':
-            self.inerror = True
-            print('in error = True')
-        elif what == 'forecast':
-            self.forecast_inerror = True
-            print('forecast error = True')
-        elif what == 'day_forecast':
-            self.dayforecast_inerror = True
-            print('day forecast error = True')
-        elif what == 'icon':
-            print('Cannot find the weather icon')
-            return
         nodata = self.tr('meteo-qt: Cannot find data!')
         self.systray.setToolTip(nodata)
         self.notification = nodata
-        if self.tentatives >= 10:
-            mdialog = QMessageBox.critical(
-                self, 'meteo-qt', error, QMessageBox.Ok)
-            self.timer.start(self.interval)
-            self.inerror = True
-            self.tentatives = 0
-        else:
-            self.tentatives += 1
-            self.timer.singleShot(5000, self.update)
-            self.inerror = True
+        self.timer.start(self.interval)
+        self.inerror = True
 
     def makeicon(self, data):
         image = QImage()
@@ -373,7 +351,8 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
     def tray(self):
-        if self.inerror:
+        if self.inerror or not hasattr(self, 'temp'):
+            print('Cannot paint icon!')
             return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
@@ -564,13 +543,11 @@ class Download(QThread):
             pageforecast = reqforecast.read()
             pagedayforecast = reqdayforecast.read()
             if self.html404(page, 'city'):
-                self.error['QString'].emit(self.error_message)
-                return
+                raise urllib.error.HTTPError
             elif self.html404(pageforecast, 'forecast'):
-                self.errror['QString'].emit(self.error_message)
+                raise urllib.error.HTTPError
             elif self.html404(pagedayforecast, 'day_forecast'):
-                self.errror['QString'].emit(self.error_message)
-                return
+                raise urllib.error.HTTPError
             tree = etree.fromstring(page)
             treeforecast = etree.fromstring(pageforecast)
             treedayforecast = etree.fromstring(pagedayforecast)
@@ -578,8 +555,8 @@ class Download(QThread):
             url = self.wIconUrl + weather_icon + '.png'
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
-                self.error['QString'].emit(self.error_message)
-                done = 1
+                #self.error['QString'].emit(self.error_message)
+                raise urllib.error.HTTPError
             self.xmlpage['PyQt_PyObject'].emit(tree)
             self.wimage['PyQt_PyObject'].emit(data)
             self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
@@ -589,17 +566,18 @@ class Download(QThread):
             if self.tentatives >= 10:
                 done = 1
                 code = ''
+                m_error = 'Url Error'
                 if hasattr(error, 'code'):
                     code = str(error.code)
                     print(code, error.reason)
                     m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
-                    self.error['QString'].emit(m_error)
-                    self.done.emit(int(done))
-                    return
+                self.error['QString'].emit(m_error)
+                self.done.emit(int(done))
+                return
             else:
                 self.tentatives += 1
                 print('Error: ', error)
-                print('Try again...')
+                print('Try again...', self.tentatives)
                 self.run()
         except timeout:
             if self.tentatives >= 10:
