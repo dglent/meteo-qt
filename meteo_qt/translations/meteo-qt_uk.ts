@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -68,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="569"/>
+        <location filename="meteo_qt.py" line="587"/>
         <source>Error :
 </source>
         <translation>Помилка:
@@ -422,77 +423,77 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="61"/>
+        <location filename="meteo_qt.py" line="63"/>
         <source>Cities</source>
         <translation>Міста</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="62"/>
+        <location filename="meteo_qt.py" line="64"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Тимчасове місто</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="63"/>
+        <location filename="meteo_qt.py" line="65"/>
         <source>&amp;Update</source>
         <translation>&amp;Оновити</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="64"/>
+        <location filename="meteo_qt.py" line="66"/>
         <source>&amp;Settings</source>
         <translation>П&amp;араметри</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="65"/>
+        <location filename="meteo_qt.py" line="67"/>
         <source>&amp;About</source>
         <translation>Пр&amp;о програму</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="66"/>
+        <location filename="meteo_qt.py" line="68"/>
         <source>Exit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="88"/>
+        <location filename="meteo_qt.py" line="90"/>
         <source>Searching weather data...</source>
         <translation>Шукаємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="167"/>
+        <location filename="meteo_qt.py" line="169"/>
         <source>Fetching weather data ...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="176"/>
+        <location filename="meteo_qt.py" line="178"/>
         <source>Empty list</source>
         <translation>Порожній список</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="184"/>
+        <location filename="meteo_qt.py" line="188"/>
         <source>No city configured</source>
         <translation>Міста не вказано</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="199"/>
+        <location filename="meteo_qt.py" line="203"/>
         <source>No city has been configured yet.</source>
         <translation>Вами ще не вказано міста.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="199"/>
+        <location filename="meteo_qt.py" line="203"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Наведіть вказівник на піктограму, клацніть правою кнопкою і виберіть пункт «Параметри».</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="273"/>
+        <location filename="meteo_qt.py" line="290"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: не вдалося знайти дані!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="455"/>
+        <location filename="meteo_qt.py" line="470"/>
         <source>Fetching weather data...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="463"/>
+        <location filename="meteo_qt.py" line="478"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -502,7 +503,7 @@
     </message>
     <message>
         <location filename="meteo_qt.py" line="486"/>
-        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -510,7 +511,7 @@
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -522,7 +523,7 @@
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <translation type="obsolete">JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] переклад німецькою
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] переклад грецькою
@@ -544,7 +545,7 @@
             проект</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="469"/>
+        <location filename="meteo_qt.py" line="484"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -574,6 +575,32 @@
                         Transifex&lt;/a&gt;.
                         &lt;p&gt;Якщо ви хочете повідомити про помилку у програмі або запропонувати нову можливість, скористайтеся системою сповіщення про вади &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="501"/>
+        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanish translation
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation
+            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polish translation
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russian translation
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;Atilla &#xc3;&#x96;nta&#xc5;&#x9f; &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Turkish translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
