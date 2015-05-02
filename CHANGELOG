@@ -1,3 +1,14 @@
+0.6.0
+- Search city by typing
+- Handling timeout in weather informations download
+- Improve errors handling
+- Notification in weather update
+- Remember window position in search city dialog
+- Add support for Transifex translation platform
+- Polish translation thanks to napcok
+- Russian translation thanks to skybon
+- Turkish translation thanks to tarakbumba
+
 0.5.0
 Forecast for the next 18 hours
 Refresh cities list in submenu after a modification
