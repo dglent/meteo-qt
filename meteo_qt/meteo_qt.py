@@ -353,6 +353,11 @@ class SystemTrayIcon(QMainWindow):
     def tray(self):
         if self.inerror or not hasattr(self, 'temp'):
             print('Cannot paint icon!')
+            if hasattr(self, 'overviewcity'):
+                try:
+                    self.overviewcity.hide()
+                except:
+                    pass
             return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
