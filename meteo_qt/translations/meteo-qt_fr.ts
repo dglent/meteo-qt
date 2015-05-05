@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -412,12 +411,12 @@
     <message>
         <location filename="searchcity.py" line="28"/>
         <source>Search location...</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche du lieu...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="97"/>
         <source>Please type more than three letters</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez taper plus que trois lettres</translation>
     </message>
 </context>
 <context>
@@ -519,11 +518,26 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Auteur: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Une application simple informant du statut du temps
+sur la barre système.
+                        &lt;p&gt;Site web: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Source Data: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;Ce logiciel utilise des icones provenant de:
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+                        &lt;p&gt;Pour traduire meteo-qt dans votre langue ou contribuer aux
+                        traductions existantes, vous pouvez utiliser la plateforme
+                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+                        Transifex&lt;/a&gt;.
+                        &lt;p&gt;Si vous voulez reporter une dysfonction ou une suggestion,
+                        n&apos;hésitez pas à ouvrir un &quot;issue&quot; dans &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        github&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="501"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -531,7 +545,7 @@
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -539,13 +553,34 @@
             [ru] Russian translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
-            &lt;p&gt;Atilla &#xc3;&#x96;nta&#xc5;&#x9f; &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Atilla ÃntaÅ &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation type="unfinished"></translation>
+        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Traduction allemande
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Traduction grecque
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Traduction espagnole
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Traduction française
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Traduction française, projet
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Traduction polonaise
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Traduction russe
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Traduction ukrainienne
+            &lt;p&gt;Atilla ÃntaÅ &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Traduction turque
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Traduction chinoise (Taiwan)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Projet</translation>
     </message>
 </context>
 <context>
@@ -718,7 +753,7 @@
     <message>
         <location filename="conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation>averse de grésil</translation>
+        <translation>averses de grésil</translation>
     </message>
     <message>
         <location filename="conditions.py" line="42"/>
@@ -1090,7 +1125,7 @@ Veuillez réessayer ultérieurement</translation>
     <message>
         <location filename="searchcity.py" line="190"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation>Veuillez patienter, recherche en cours...</translation>
     </message>
 </context>
 </TS>
