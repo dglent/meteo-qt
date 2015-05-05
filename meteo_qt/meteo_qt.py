@@ -560,22 +560,23 @@ class Download(QThread):
             url = self.wIconUrl + weather_icon + '.png'
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
-                #self.error['QString'].emit(self.error_message)
                 raise urllib.error.HTTPError
             self.xmlpage['PyQt_PyObject'].emit(tree)
             self.wimage['PyQt_PyObject'].emit(data)
             self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
-        except (urllib.error.HTTPError, urllib.error.URLError) as error:
+        except (urllib.error.HTTPError, urllib.error.URLError, TypeError) as error:
             if self.tentatives >= 10:
                 done = 1
                 code = ''
-                m_error = 'Url Error'
+                m_error = error
                 if hasattr(error, 'code'):
                     code = str(error.code)
                     print(code, error.reason)
                     m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
+                else:
+                    print(m_error)
                 self.error['QString'].emit(m_error)
                 self.done.emit(int(done))
                 return
