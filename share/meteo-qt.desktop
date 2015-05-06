@@ -2,10 +2,13 @@
 Type=Application
 Name=Meteo-qt
 Name[el]=Meteo-qt
+Name[ru]=Meteo-qt
 GenericName=Weather status information
 GenericName[el]=Μετεωρολογικές πληροφορίες
+GenericName[ru]=Сведения о погоде
 Comment=A Qt system tray application for weather information
 Comment[el]=Μια Qt εφαρμογή πλαισίου συστήματος για τις καιρικές συνθήκες
+Comment[ru]=Отображает сведения о погоде в системном лотке
 Exec=meteo-qt
 Icon=meteo-qt
 Terminal=false
