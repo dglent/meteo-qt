@@ -1,8 +1,11 @@
 [Desktop Entry]
 Type=Application
 Name=Meteo-qt
+Name[el]=Meteo-qt
 GenericName=Weather status information
+GenericName[el]=Μετεωρολογικές πληροφορίες
 Comment=A Qt system tray application for weather information
+Comment[el]=Μια Qt εφαρμογή πλαισίου συστήματος για τις καιρικές συνθήκες
 Exec=meteo-qt
 Icon=meteo-qt
 Terminal=false
