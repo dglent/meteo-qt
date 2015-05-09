@@ -69,7 +69,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="587"/>
+        <location filename="meteo_qt.py" line="586"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
