@@ -38,6 +38,7 @@ __version__ = "0.6.0"
 class SystemTrayIcon(QMainWindow):
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
+        self.settings = QSettings()
         cond = conditions.WeatherConditions()
         self.temporary_city_status = False
         self.conditions = cond.trans
@@ -164,8 +165,6 @@ class SystemTrayIcon(QMainWindow):
             except:
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
-        self.settings = QSettings()
-
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
         if self.id_ == None:
