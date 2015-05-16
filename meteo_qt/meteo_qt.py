@@ -258,7 +258,8 @@ class SystemTrayIcon(QMainWindow):
                 try:
                     # Update also the overview dialog if open
                     if self.overviewcity.isVisible():
-                        self.overviewcity.hide()
+                        # delete dialog to prevent memory leak
+                        self.overviewcity.close()
                         self.instance_overviewcity()
                         self.overview()
                 except:
@@ -361,7 +362,8 @@ class SystemTrayIcon(QMainWindow):
             print('Cannot paint icon!')
             if hasattr(self, 'overviewcity'):
                 try:
-                    self.overviewcity.hide()
+                    # delete dialog to prevent memory leak
+                    self.overviewcity.close()
                 except:
                     pass
             return
