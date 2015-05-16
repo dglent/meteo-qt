@@ -1,17 +1,17 @@
-#!/usr/bin/env python3
-
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt5.QtCore import QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray
+from PyQt5.QtGui import QImage, QPixmap
+from PyQt5.QtWidgets import (
+    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
+    )
 import datetime
 import urllib.request
 from lxml import etree
 import time
+
 try:
     import conditions
 except:
     from meteo_qt import conditions
-
 
 
 class OverviewCity(QDialog):

@@ -1,6 +1,8 @@
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt5.QtCore import pyqtSignal, Qt
+from PyQt5.QtWidgets import (
+    QDialog, QListWidget, QVBoxLayout, QHBoxLayout, QDialogButtonBox,
+    QPushButton, QLabel
+    )
 
 try:
     import searchcity

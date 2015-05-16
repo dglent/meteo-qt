@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
-
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt5.QtCore import QTimer, pyqtSignal, QThread, QSettings, QByteArray
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (
+    QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QListWidget,
+    QLabel
+    )
 import urllib.request
 from lxml import etree
 from socket import timeout

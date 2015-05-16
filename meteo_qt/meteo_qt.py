@@ -4,9 +4,16 @@
 # Author: Dimitrios Glentadakis dglent@free.fr
 # License: GPLv3
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt5.QtCore import (
+    QThread, pyqtSignal, pyqtSlot, QSettings, Qt, QTranslator, QLibraryInfo,
+    QTimer, QPointF, QT_VERSION_STR, PYQT_VERSION_STR
+    )
+from PyQt5.QtGui import (
+    QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor
+    )
+from PyQt5.QtWidgets import (
+    QMainWindow, QApplication, QMenu, QAction, qApp, QSystemTrayIcon
+    )
 import sys
 import urllib.request
 from lxml import etree

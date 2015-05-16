@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
-
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PyQt5.QtCore import pyqtSignal, QSettings, QLocale, Qt, QSize
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (
+    QDialog, QVBoxLayout, QComboBox, QLabel, QPushButton, QHBoxLayout,
+    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog
+    )
 import os
 
 try:
@@ -162,7 +163,7 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.temp_colorButton, 5,1)
         self.panel.addWidget(self.temp_color_resetButton, 5,2)
         self.panel.addWidget(self.notifier_label, 6,0)
-        self.panel.addWidget(self.notifier_checkbox, 6,1) 
+        self.panel.addWidget(self.notifier_checkbox, 6,1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
