@@ -96,11 +96,11 @@ class SystemTrayIcon(QMainWindow):
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Searching weather data...'))
-        self.systray.show()
-        self.refresh()
         self.notification = ''
         self.notification_temp = 0
         self.notifications_id = ''
+        self.systray.show()
+        self.refresh()
 
     def cities_menu(self):
         # Don't add the temporary city in the list
@@ -267,12 +267,12 @@ class SystemTrayIcon(QMainWindow):
                     print('Overview instance has been deleted, try again...')
                     self.instance_overviewcity()
             else:
-                instance = self.instance_overviewcity()
-                if instance == 'error':
-                    if self.done_tentatives < 10:
+                if self.done_tentatives < 10:
+                    instance = self.instance_overviewcity()
+                    if instance == 'error':
                         self.try_again()
-                    else:
-                        return
+                else:
+                    return
         else:
             if self.tentatives < 10:
                 self.try_again()
@@ -368,14 +368,14 @@ class SystemTrayIcon(QMainWindow):
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
-        self.icon = QPixmap(':/empty')
-        pt = QPainter(self.icon)
+        icon = QPixmap(':/empty')
+        pt = QPainter(icon)
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
         pt.setPen(QColor(self.traycolor))
-        pt.drawText(self.icon.rect(), Qt.AlignBottom, str(self.temp))
+        pt.drawText(icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
-        self.systray.setIcon(QIcon(self.icon))
+        self.systray.setIcon(QIcon(icon))
         try:
             if not self.overviewcity.isVisible():
                 notifier = self.settings.value('Notifications') or 'True'

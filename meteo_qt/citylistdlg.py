@@ -17,7 +17,6 @@ class CityListDlg(QDialog):
         super(CityListDlg, self).__init__(parent)
         self.citylist = citylist
         self.accurate_url = accurate_url
-        self.settings = QSettings()
         self.listWidget = QListWidget()
         self.listWidget.addItems(self.citylist)
         buttonLayout = QVBoxLayout()
