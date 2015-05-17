@@ -6,7 +6,7 @@
 
 from PyQt5.QtCore import (
     QThread, pyqtSignal, pyqtSlot, QSettings, Qt, QTranslator, QLibraryInfo,
-    QTimer, QPointF, QT_VERSION_STR, PYQT_VERSION_STR
+    QTimer, QPointF, QLocale, QT_VERSION_STR, PYQT_VERSION_STR
     )
 from PyQt5.QtGui import (
     QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor
