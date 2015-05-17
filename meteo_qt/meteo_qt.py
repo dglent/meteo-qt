@@ -53,10 +53,7 @@ class SystemTrayIcon(QMainWindow):
         self.wind = cond.wind
         self.wind_dir = cond.wind_direction
         self.wind_codes = cond.wind_codes
-        self.weatherDataDico = {}
         self.inerror = False
-        self.forecast_inerror = False
-        self.dayforecast_inerror = False
         self.tentatives = 0
         self.done_tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
@@ -88,7 +85,7 @@ class SystemTrayIcon(QMainWindow):
         self.menu.addAction(self.exitAction)
         self.settingsAction.triggered.connect(self.config)
         self.exitAction.triggered.connect(qApp.quit)
-        self.refreshAction.triggered.connect(self.refresh)
+        self.refreshAction.triggered.connect(self.manual_refresh)
         self.aboutAction.triggered.connect(self.about)
         self.tempCityAction.triggered.connect(self.tempcity)
         self.systray = QSystemTrayIcon()
@@ -100,6 +97,11 @@ class SystemTrayIcon(QMainWindow):
         self.notification_temp = 0
         self.notifications_id = ''
         self.systray.show()
+        self.refresh()
+
+    def manual_refresh(self):
+        self.tentatives = 0
+        self.done_tentatives = 0
         self.refresh()
 
     def cities_menu(self):
@@ -159,7 +161,6 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def refresh(self):
-        self.dayforecast_inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
@@ -204,6 +205,10 @@ class SystemTrayIcon(QMainWindow):
                                  self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
+        if hasattr(self, 'downloadThread'):
+            if self.downloadThread.isRunning():
+                print('remaining thread...')
+                return
         print('Update...')
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(self.wIconUrl, self.baseurl,
@@ -227,24 +232,24 @@ class SystemTrayIcon(QMainWindow):
 
     def instance_overviewcity(self):
         try:
-            self.overviewcity = overview.OverviewCity(
-                self.weatherDataDico, self.wIcon,
-                self.forecast_inerror, self.forecast_data,
-                self.dayforecast_inerror, self.dayforecast_data,
-                self.unit, self.forecast_icon_url, self)
-            self.done_tentatives = 0
+            if hasattr(self, 'overviewcity'):
+                print('Deleting overviewcity instance...')
+                del self.overviewcity
+        self.overviewcity = overview.OverviewCity(
+                self.weatherDataDico, self.wIcon, self.forecast_data,
+                self.dayforecast_data, self.unit, self.forecast_icon_url,
+                self)
         except:
             e = sys.exc_info()[0]
             print('Error: ', e )
-            self.done_tentatives += 1
-            print('Try to create the city overview...\nTentatives: ',
+            print('Try to create the city overview...\nOverview Tentatives: ',
                   self.done_tentatives)
             return 'error'
 
     def done(self, done):
+        self.wIcon = None
         if done == 0:
             self.inerror = False
-            self.tentatives = 0
         elif done == 1:
             self.systray.setIcon(QIcon(':/noicon'))
             return
@@ -266,30 +271,51 @@ class SystemTrayIcon(QMainWindow):
                     e = sys.exc_info()[0]
                     print('Error: ', e )
                     print('Overview instance has been deleted, try again...')
-                    self.instance_overviewcity()
+                    if self.done_tentatives < 10:
+                        self.try_create_overview()
             else:
                 if self.done_tentatives < 10:
-                    instance = self.instance_overviewcity()
-                    if instance == 'error':
-                        self.try_again()
-                else:
-                    return
+                    self.try_create_overview()
         else:
-            if self.tentatives < 10:
+            print('Apo edo 0')
+            self.try_again()
+
+    def searching_message(self):
+        self.systray.setToolTip('Please wait, trying to find data...' +
+                                str(self.tentatives) + '/' + '10')
+
+    def try_create_overview(self):
+        self.searching_message()
+        self.done_tentatives += 1
+        self.inerror = True
+        print('Tries to create overview :', self.done_tentatives)
+        if self.done_tentatives < 10:
+            instance = self.instance_overviewcity()
+            if instance == 'error':
+                del instance
                 self.try_again()
             else:
-                return
+                self.done_tentatives = 0
+                self.inerror = False
 
     def try_again(self):
-        self.tentatives += 1
+        self.searching_message()
+        if self.tentatives >= 10:
+            return
         print('Tentatives: ', self.tentatives)
-        self.refresh()
+        self.tentatives += 1
+        if hasattr(self, 'overviewcity'):
+            del self.overviewcity
+        self.timer.singleShot(5000, self.refresh)
 
-    def error(self, error):
-        print('Error:\n', error)
+    def nodata_message(self):
         nodata = self.tr('meteo-qt: Cannot find data!')
         self.systray.setToolTip(nodata)
         self.notification = nodata
+
+    def error(self, error):
+        print('Error:\n', error)
+        self.nodata_message()
         self.timer.start(self.interval)
         self.inerror = True
 
@@ -301,6 +327,9 @@ class SystemTrayIcon(QMainWindow):
         self.updateicon = self.wIcon
 
     def weatherdata(self, tree):
+        self.meteo = None
+        self.tempFloat = None
+        self.weatherDataDico = {}
         if self.inerror:
             return
         self.tempFloat = tree[1].get('value')
@@ -339,10 +368,10 @@ class SystemTrayIcon(QMainWindow):
         except:
             print('Cannot find localisation string for wind_dir:', wind_dir)
             pass
-        city_weather_info = (self.city + ' '  + self.country + ' ' + self.temp +
+        self.city_weather_info = (self.city + ' '  + self.country + ' ' + self.temp +
                              ' ' + self.meteo)
-        self.systray.setToolTip(city_weather_info)
-        self.notification = city_weather_info
+        self.tooltip_ok()
+        self.notification = self.city_weather_info
         self.weatherDataDico['City'] = self.city
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
@@ -357,6 +386,9 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
+    def tooltip_ok(self):
+        self.systray.setToolTip(self.city_weather_info)
+
     def tray(self):
         if self.inerror or not hasattr(self, 'temp'):
             print('Cannot paint icon!')
@@ -366,6 +398,7 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
                 except:
                     pass
+            self.try_again()
             return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
@@ -391,9 +424,12 @@ class SystemTrayIcon(QMainWindow):
         except:
             print('OverviewCity has been deleted',
                   'Download weather information again...')
-            self.refresh()
+            self.try_again()
             return
         self.restore_city()
+        self.tentatives = 0
+        self.done_tentatives = 0
+        self.tooltip_ok()
 
     def restore_city(self):
         if self.temporary_city_status:
@@ -412,6 +448,7 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.hide()
                 else:
                     self.overviewcity.hide()
+                    # If dialog closed by the "X"
                     self.done(0)
                     self.overview()
             except:

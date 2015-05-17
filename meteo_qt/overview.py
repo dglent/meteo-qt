@@ -7,6 +7,7 @@ import datetime
 import urllib.request
 from lxml import etree
 import time
+from socket import timeout
 
 try:
     import conditions
@@ -22,8 +23,8 @@ class OverviewCity(QDialog):
         ' ': '°K'
      }
 
-    def __init__(self, weatherdata, icon, forecast_inerror, forecast,
-                 dayforecast_inerror, dayforecast, unit, icon_url, parent=None):
+    def __init__(self, weatherdata, icon, forecast, dayforecast, unit,
+                 icon_url, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.days_dico = {
         '0': self.tr('Mon'),
@@ -43,8 +44,6 @@ class OverviewCity(QDialog):
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
         self.tree_day = dayforecast
-        self.forecast_inerror = forecast_inerror
-        self.dayforecast_inerror = dayforecast_inerror
         self.icon_url = icon_url
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
@@ -130,12 +129,14 @@ class OverviewCity(QDialog):
         self.total_layout.addLayout(self.forecast_icons_layout)
         self.total_layout.addLayout(self.forecast_days_layout)
         self.total_layout.addLayout(self.forecast_minmax_layout)
-        if not forecast_inerror:
-            self.forecastdata()
-            self.iconfetch()
-        if not dayforecast_inerror:
-            self.dayforecastdata()
-            self.dayiconfetch()
+        self.forecastdata()
+        print('Fetched forecast data')
+        self.iconfetch()
+        print('Fetched 5 days forecast icons')
+        self.dayforecastdata()
+        print('Fetched day forecast data')
+        self.dayiconfetch()
+        print('Fetched day forcast icons')
         self.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
@@ -151,6 +152,7 @@ class OverviewCity(QDialog):
             listtotime = self.weatherdata[rise_set].split('T')[1].split(':')
         elif what == 'dayforecast':
             listtotime = self.tree_day[4][rise_set].get('from').split('T')[1].split(':')
+
         suntime = QTime(int(listtotime[0]),int(listtotime[1]),int(listtotime[2]))
         # add the diff UTC-local in seconds
         utc_time = suntime.addSecs(time.localtime().tm_gmtoff)
@@ -198,7 +200,12 @@ class OverviewCity(QDialog):
         self.forecast_icons_layout.addWidget(iconlabel)
 
     def dayforecastdata(self):
-        for d in range(1, 7):
+        periods = 7
+        fetched_file_periods = (len(self.tree_day.xpath('//time')))
+        if fetched_file_periods < periods:
+            periods = fetched_file_periods
+            print('Reduce forcast of the day to {0}'.format(periods-1))
+        for d in range(1, periods):
             timeofday = self.utc(d, 'dayforecast')
             weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
             self.dayforecast_weather_list.append(weather_cond)
@@ -293,15 +300,20 @@ class IconDownload(QThread):
         QThread.__init__(self)
         self.icon_url = icon_url
         self.icon = icon
+        self.tentatives = 0
+        self.periods = 6
+        periods = len(self.icon)
+        if periods < 6:
+            self.periods = periods
 
-    def __del__(self):
-        self.wait()
+    #def __del__(self):
+        #self.wait()
 
     def run(self):
         try:
-            for i in range(6):
+            for i in range(self.periods):
                 url = self.icon_url + self.icon[i] + '.png'
-                data = urllib.request.urlopen(url).read()
+                data = urllib.request.urlopen(url, timeout=5).read()
                 if self.html404(data, 'icon'):
                     self.error['QString'].emit(self.error_message)
                     return
@@ -309,6 +321,15 @@ class IconDownload(QThread):
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             error = 'Error ' + str(error.code) + ' ' + str(error.reason)
             self.error['QString'].emit(error)
+        except timeout:
+            if self.tentatives >= 10:
+                done = 1
+                print('Timeout error, abandon...')
+                return
+            else:
+                self.tentatives += 1
+                print('5 secondes timeout, new tentative: ', self.tentatives)
+                self.run()
         print('Download forecast icons thread done')
 
     def html404(self, page, what):
