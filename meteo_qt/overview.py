@@ -233,7 +233,8 @@ class OverviewCity(QDialog):
             timeofday = self.utc(d, 'dayforecast')
             weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
             self.dayforecast_weather_list.append(weather_cond)
-            self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var')) #icon
+            #icon
+            self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var'))
             daytime = QLabel(
                 '<font color=grey>' + timeofday[:-3] + '<br/>' +
                 '{0:.0f}'.format(float(self.tree_day[4][d][4].get('value'))) +
@@ -265,7 +266,9 @@ class OverviewCity(QDialog):
                 print('Wind direction code is missing: ', winddircode)
             wind_name = self.tree_day[4][d][3].get('name')
             try:
-                wind_name_translated = self.conditions[self.wind_name_dic[wind_name.lower()]] + '<br/>'
+                wind_name_translated = (
+                    self.conditions[self.wind_name_dic[wind_name.lower()]] +
+                    '<br/>')
                 wind += wind_name_translated
             except KeyError:
                 print('Cannot find wind name :', wind_name)
