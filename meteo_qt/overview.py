@@ -329,8 +329,8 @@ class IconDownload(QThread):
     error = pyqtSignal(['QString'])
     wimage = pyqtSignal(['PyQt_PyObject'])
 
-    def __init__(self, icon_url, icon):
-        QThread.__init__(self)
+    def __init__(self, icon_url, icon, parent=None):
+        QThread.__init__(self, parent)
         self.icon_url = icon_url
         self.icon = icon
         self.tentatives = 0

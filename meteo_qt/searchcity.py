@@ -162,8 +162,8 @@ class WorkThread(QThread):
     city_signal = pyqtSignal(['QString'])
     searching = pyqtSignal(['QString'])
 
-    def __init__(self, accurate_url, city, suffix):
-        QThread.__init__(self)
+    def __init__(self, accurate_url, city, suffix, parent=None):
+        QThread.__init__(self, parent)
         self.accurate_url = accurate_url
         # Search in any language
         self.city = repr(city.encode('utf-8')).replace("b'","").replace(

@@ -240,6 +240,7 @@ class SystemTrayIcon(QMainWindow):
                 self.dayforecast_data, self.unit, self.forecast_icon_url,
                 self)
         except:
+            self.inerror = True
             e = sys.exc_info()[0]
             print('Error: ', e )
             print('Try to create the city overview...\nOverview Tentatives: ',
@@ -247,7 +248,6 @@ class SystemTrayIcon(QMainWindow):
             return 'error'
 
     def done(self, done):
-        self.wIcon = None
         if done == 0:
             self.inerror = False
         elif done == 1:
@@ -275,6 +275,7 @@ class SystemTrayIcon(QMainWindow):
                         self.try_create_overview()
             else:
                 if self.done_tentatives < 10:
+                    self.inerror = True
                     self.try_create_overview()
         else:
             self.try_again()
@@ -292,7 +293,7 @@ class SystemTrayIcon(QMainWindow):
         if self.done_tentatives < 10:
             instance = self.instance_overviewcity()
             if instance == 'error':
-                del instance
+                self.inerror = True
                 self.try_again()
             else:
                 self.done_tentatives = 0
@@ -304,8 +305,6 @@ class SystemTrayIcon(QMainWindow):
             return
         print('Tentatives: ', self.tentatives)
         self.tentatives += 1
-        if hasattr(self, 'overviewcity'):
-            del self.overviewcity
         self.timer.singleShot(5000, self.refresh)
 
     def nodata_message(self):
@@ -327,8 +326,6 @@ class SystemTrayIcon(QMainWindow):
         self.updateicon = self.wIcon
 
     def weatherdata(self, tree):
-        self.meteo = None
-        self.tempFloat = None
         self.weatherDataDico = {}
         if self.inerror:
             return
@@ -339,7 +336,7 @@ class SystemTrayIcon(QMainWindow):
         try:
             self.meteo = self.conditions[meteo_condition]
         except:
-            print('Cannot find localisation string for meteo_condition:',meteo_condition)
+            print('Cannot find localisation string for meteo_condition:', meteo_condition)
             pass
         clouds = tree[5].get('name')
         clouds_percent = tree[5].get('value') + '%'
@@ -398,7 +395,6 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
                 except:
                     pass
-            self.try_again()
             return
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
@@ -570,8 +566,9 @@ class Download(QThread):
     error = pyqtSignal(['QString'])
     done = pyqtSignal([int])
 
-    def __init__(self, iconurl, baseurl, forecast_url, day_forecast_url, id_, suffix):
-        QThread.__init__(self)
+    def __init__(self, iconurl, baseurl, forecast_url, day_forecast_url, id_,
+                 suffix, parent=None):
+        QThread.__init__(self, parent)
         self.wIconUrl = iconurl
         self.baseurl = baseurl
         self.forecast_url = forecast_url
@@ -580,15 +577,15 @@ class Download(QThread):
         self.suffix = suffix
         self.tentatives = 0
 
-    #def __del__(self):
-        #self.wait()
-
     def run(self):
         done = 0
         try:
-            req = urllib.request.urlopen(self.baseurl + self.id_ + self.suffix, timeout=5)
-            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ + self.suffix + '&cnt=7', timeout=5)
-            reqdayforecast = urllib.request.urlopen(self.day_forecast_url + self.id_ + self.suffix, timeout=5)
+            req = urllib.request.urlopen(
+                self.baseurl + self.id_ + self.suffix, timeout=5)
+            reqforecast = urllib.request.urlopen(
+                self.forecast_url + self.id_ + self.suffix + '&cnt=7', timeout=5)
+            reqdayforecast = urllib.request.urlopen(
+                self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
             pageforecast = reqforecast.read()
             pagedayforecast = reqdayforecast.read()
