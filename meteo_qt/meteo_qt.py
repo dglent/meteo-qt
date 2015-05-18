@@ -200,9 +200,9 @@ class SystemTrayIcon(QMainWindow):
         self.update()
 
     def firsttime(self):
-        self.systray.showMessage('meteo-qt:\n',
-                                 self.tr('No city has been configured yet.') + '\n' +
-                                 self.tr('Right click on the icon and click on Settings.'))
+        self.systray.showMessage(
+            'meteo-qt:\n', self.tr('No city has been configured yet.') +
+            '\n' + self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
         if hasattr(self, 'downloadThread'):
@@ -211,9 +211,9 @@ class SystemTrayIcon(QMainWindow):
                 return
         print('Update...')
         self.wIcon = QPixmap(':/noicon')
-        self.downloadThread = Download(self.wIconUrl, self.baseurl,
-                                       self.forecast_url, self.day_forecast_url,
-                                       self.id_, self.suffix)
+        self.downloadThread = Download(
+            self.wIconUrl, self.baseurl, self.forecast_url,
+            self.day_forecast_url, self.id_, self.suffix)
         self.downloadThread.setTerminationEnabled(True)
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
@@ -277,12 +277,12 @@ class SystemTrayIcon(QMainWindow):
                 if self.done_tentatives < 10:
                     self.try_create_overview()
         else:
-            print('Apo edo 0')
             self.try_again()
 
     def searching_message(self):
-        self.systray.setToolTip('Please wait, trying to find data...' +
-                                str(self.tentatives) + '/' + '10')
+        self.systray.setToolTip(
+            self.tr('Please wait, trying to find data...') +
+            str(self.tentatives) + '/' + '10')
 
     def try_create_overview(self):
         self.searching_message()
