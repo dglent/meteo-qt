@@ -173,12 +173,12 @@ class OverviewCity(QDialog):
         '''Forecast for the next 6 days'''
         #Some times server sends less data
         periods = 7
-        fetched_file_periods = (len(self.tree_day.xpath('//time')))
+        fetched_file_periods = (len(self.tree.xpath('//time')))
         if fetched_file_periods < periods:
             periods = fetched_file_periods
             print('Reduce forcast for the next 6 days to {0}'.format(
                 periods-1))
-        for d in range(1,7):
+        for d in range(1, periods):
             date_list = self.tree[4][d].get('day').split('-')
             day_of_week = str(datetime.date(
                 int(date_list[0]),int(date_list[1]),
