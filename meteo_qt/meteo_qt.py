@@ -122,7 +122,9 @@ class SystemTrayIcon(QMainWindow):
             city_toadd = current_city
         finally:
             cities.insert(0, city_toadd)
-        if cities != None and cities != '' and cities != '[]':
+        # If we delete all cities it results to a '__'
+        if (cities != None and cities != '' and cities != '[]' and
+            cities != ['__']):
             if type(cities) is not list:
                 #FIXME sometimes the list of cities is read as a string (?)
                 # eval to a list
@@ -132,12 +134,15 @@ class SystemTrayIcon(QMainWindow):
                 action = QAction(city, self)
                 action.triggered.connect(partial(self.changecity, city))
                 self.citiesMenu.addAction(action)
+        else:
+            self.empty_cities_list()
 
     @pyqtSlot(str)
     def changecity(self, city):
         cities_list = self.settings.value('CityList')
+        print('Cities', cities_list)
         if cities_list == None:
-            self.citiesMenu.addAction('Empty list')
+            self.empty_cities_list()
         if type(cities_list) is not list:
             #FIXME some times is read as string (?)
             cities_list = eval(cities_list)
@@ -160,6 +165,9 @@ class SystemTrayIcon(QMainWindow):
                 print(cities_list)
         self.refresh()
 
+    def empty_cities_list(self):
+        self.citiesMenu.addAction(self.tr('Empty list'))
+
     def refresh(self):
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
@@ -178,12 +186,13 @@ class SystemTrayIcon(QMainWindow):
         if self.id_ == None:
             # Clear the menu, no cities configured
             self.citiesMenu.clear()
-            self.citiesMenu.addAction(self.tr('Empty list'))
+            self.empty_cities_list()
+            #Sometimes self.overviewcity is in namespace but deleted
             try:
                 self.overviewcity.close()
             except:
                 e = sys.exc_info()[0]
-                print('Error: ', e )
+                print('Error closing overviewcity: ', e )
                 pass
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
