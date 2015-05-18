@@ -235,7 +235,7 @@ class SystemTrayIcon(QMainWindow):
             if hasattr(self, 'overviewcity'):
                 print('Deleting overviewcity instance...')
                 del self.overviewcity
-        self.overviewcity = overview.OverviewCity(
+            self.overviewcity = overview.OverviewCity(
                 self.weatherDataDico, self.wIcon, self.forecast_data,
                 self.dayforecast_data, self.unit, self.forecast_icon_url,
                 self)
