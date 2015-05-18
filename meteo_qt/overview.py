@@ -141,7 +141,7 @@ class OverviewCity(QDialog):
         self.forecastdata()
         print('Fetched forecast data')
         self.iconfetch()
-        print('Fetched 5 days forecast icons')
+        print('Fetched 6 days forecast icons')
         self.dayforecastdata()
         print('Fetched day forecast data')
         self.dayiconfetch()
@@ -205,13 +205,14 @@ class OverviewCity(QDialog):
             self.forecast_weather_list.append(weather_cond) #weather
 
     def iconfetch(self):
-        print('Download 5 days forecast icons...')
+        print('Download 6 days forecast icons...')
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.error['QString'].connect(self.error)
         self.download_thread.start()
 
     def iconwidget(self, icon):
+        '''6 days forecast icons'''
         image = QImage()
         image.loadFromData(icon)
         iconlabel = QLabel()
@@ -291,6 +292,7 @@ class OverviewCity(QDialog):
             self.dayforecast_temp_layout.addWidget(daytime)
 
     def dayiconfetch(self):
+        '''Icons for the forecast of the day'''
         print('Download forecast icons for the day...')
         self.day_download_thread = IconDownload(self.icon_url, self.dayforecast_icon_list)
         self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
@@ -298,6 +300,7 @@ class OverviewCity(QDialog):
         self.day_download_thread.start()
 
     def dayiconwidget(self, icon):
+        '''Forecast icons of the day'''
         image = QImage()
         image.loadFromData(icon)
         iconlabel = QLabel()
@@ -336,9 +339,6 @@ class IconDownload(QThread):
         periods = len(self.icon)
         if periods < 6:
             self.periods = periods
-
-    #def __del__(self):
-        #self.wait()
 
     def run(self):
         try:

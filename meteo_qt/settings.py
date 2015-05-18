@@ -28,7 +28,7 @@ class MeteoSettings(QDialog):
         self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
         self.temp_tray_color = self.settings.value('TrayColor') or ''
-        # ----- Cities comboBox--------------------------------
+        # -----Cities comboBox--------------------------------
         self.first = True
         self.clear_combo = False
         self.city_list_before = []
@@ -42,8 +42,7 @@ class MeteoSettings(QDialog):
         self.cityButton.setIcon(QIcon(':/configure'))
         self.cityButton.setToolTip(self.tr('Click to edit the cities list'))
         self.cityButton.clicked.connect(self.edit_cities_list)
-        #------------------------------------------------------
-        # language
+        #------Language-----------------------------------------
         self.languageLabel = QLabel(self.tr('Language'))
         self.languageCombo = QComboBox()
         self.languageCombo.setToolTip(
@@ -113,7 +112,8 @@ class MeteoSettings(QDialog):
         self.buttonLayout.addStretch()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok|QDialogButtonBox.Apply|QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(
+            QDialogButtonBox.Ok|QDialogButtonBox.Apply|QDialogButtonBox.Cancel)
         self.buttonBox.setContentsMargins(0,30,0,0)
         self.buttonLayout.addWidget(self.buttonBox)
         self.buttonBox.button(QDialogButtonBox.Apply).clicked.connect(self.apply_settings)
@@ -131,11 +131,13 @@ class MeteoSettings(QDialog):
         # Tray temp° color
         self.temp_colorLabel=QLabel(self.tr('Font colour in the tray'))
         self.temp_colorButton = QPushButton()
-        self.temp_colorButton.setStyleSheet('QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
+        self.temp_colorButton.setStyleSheet(
+            'QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
         self.temp_colorButton.setMaximumSize(QSize(44, 24))
         self.temp_colorButton.clicked.connect(self.color_chooser)
         self.temp_color_resetButton = QPushButton(self.tr('Reset'))
-        self.temp_color_resetButton.setToolTip(self.tr('Reset font colour to system default'))
+        self.temp_color_resetButton.setToolTip(
+            self.tr('Reset font colour to system default'))
         self.temp_color_resetButton.clicked.connect(self.color_reset)
         # Display notifications
         self.notifier_label = QLabel(self.tr('Notification on weather update'))
@@ -358,5 +360,3 @@ class MeteoSettings(QDialog):
         if len(list_cities) > 0:
             maxi = len(max(list_cities, key=len))
             self.cityCombo.setMinimumSize(maxi*8,23)
-
-

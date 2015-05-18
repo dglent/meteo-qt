@@ -50,7 +50,8 @@ class SearchCity(QDialog):
         self.buttonOk.clicked.connect(self.accept)
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
-        self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
+        self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(
+            self.accept)
         self.restoreGeometry(self.settings.value("SearchCity/Geometry",
                 QByteArray()))
 
@@ -98,7 +99,6 @@ class SearchCity(QDialog):
             self.status.setText(self.tr('Please type more than three letters'))
             return
         self.lista=[]
-        self.dico={}
         self.errorStatus = False
         self.buttonOk.setEnabled(False)
         self.listWidget.clear()
@@ -113,6 +113,7 @@ class SearchCity(QDialog):
         self.timer.singleShot(self.delay, self.threadstart)
 
     def searching(self, message):
+        '''Display a status message when searching takes a while'''
         self.status.setText(message)
 
     def thread_started(self):
@@ -165,20 +166,20 @@ class WorkThread(QThread):
         QThread.__init__(self)
         self.accurate_url = accurate_url
         # Search in any language
-        self.city = repr(city.encode('utf-8')).replace("b'","").replace("\\x","%").replace("'","")
+        self.city = repr(city.encode('utf-8')).replace("b'","").replace(
+            "\\x","%").replace("'","")
         self.suffix = suffix
         self.tentatives = 1
 
-    #def __del__(self):
-        #self.wait()
-
     def run(self):
-        error_message = self.tr('Data error, please try again later\nor modify the name of the city')
+        error_message = self.tr(
+                'Data error, please try again later\nor modify the name of the city')
         self.lista = []
         if self.city == '':
             return
         try:
-            req = urllib.request.urlopen(self.accurate_url + self.city + self.suffix, timeout=5)
+            req = urllib.request.urlopen(
+                self.accurate_url + self.city + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
