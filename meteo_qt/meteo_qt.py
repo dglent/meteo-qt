@@ -9,7 +9,7 @@ from PyQt5.QtCore import (
     QTimer, QPointF, QLocale, QT_VERSION_STR, PYQT_VERSION_STR
     )
 from PyQt5.QtGui import (
-    QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor
+    QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor, QMovie
     )
 from PyQt5.QtWidgets import (
     QMainWindow, QApplication, QMenu, QAction, qApp, QSystemTrayIcon
@@ -99,6 +99,15 @@ class SystemTrayIcon(QMainWindow):
         self.systray.show()
         self.refresh()
 
+    def icon_loading(self):
+        self.gif_loading = QMovie(":/loading")
+        self.gif_loading.frameChanged.connect(self.update_gif)
+        self.gif_loading.start()
+
+    def update_gif(self):
+        gif_frame = self.gif_loading.currentPixmap()
+        self.systray.setIcon(QIcon(gif_frame))
+
     def manual_refresh(self):
         self.tentatives = 0
         self.done_tentatives = 0
@@ -180,6 +189,7 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
             except:
                 pass
+        self.icon_loading()
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
@@ -405,6 +415,7 @@ class SystemTrayIcon(QMainWindow):
                 except:
                     pass
             return
+        self.gif_loading.stop()
         print('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value

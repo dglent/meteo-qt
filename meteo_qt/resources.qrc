@@ -10,5 +10,6 @@
     <file alias="tempcity">images/preferences-web-browser-shortcuts.png</file>
     <file alias="find">images/document-preview.png</file>
     <file alias="bookmarks">images/bookmarks-organize.png</file>
+    <file alias="loading">images/loading.gif</file>
 </qresource>
 </RCC>
