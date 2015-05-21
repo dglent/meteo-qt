@@ -189,7 +189,6 @@ class SystemTrayIcon(QMainWindow):
                     self.overviewcity.close()
             except:
                 pass
-        self.icon_loading()
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
@@ -213,7 +212,6 @@ class SystemTrayIcon(QMainWindow):
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
         self.suffix = ('&mode=xml&units=' + self.unit)
-        self.traycolor = self.settings.value('TrayColor') or ''
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
         self.update()
@@ -229,6 +227,7 @@ class SystemTrayIcon(QMainWindow):
                 print('remaining thread...')
                 return
         print('Update...')
+        self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
             self.wIconUrl, self.baseurl, self.forecast_url,
@@ -317,6 +316,7 @@ class SystemTrayIcon(QMainWindow):
             else:
                 self.done_tentatives = 0
                 self.inerror = False
+                self.tooltip_weather()
 
     def try_again(self):
         self.searching_message()
@@ -384,25 +384,25 @@ class SystemTrayIcon(QMainWindow):
         except:
             print('Cannot find localisation string for wind_dir:', wind_dir)
             pass
-        self.city_weather_info = (self.city + ' '  + self.country + ' ' + self.temp +
-                             ' ' + self.meteo)
-        self.tooltip_ok()
+        self.city_weather_info = (self.city + ' '  + self.country + ' ' +
+                                  self.temp + ' ' + self.meteo)
+        self.tooltip_weather()
         self.notification = self.city_weather_info
         self.weatherDataDico['City'] = self.city
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
         self.weatherDataDico['Meteo'] = self.meteo
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
-        self.weatherDataDico['Wind'] = (tree[4][0].get('value'), wind + '<br/>',
-                                        tree[4][1].get('value'), wind_codes,
-                                        wind_dir)
+        self.weatherDataDico['Wind'] = (
+            tree[4][0].get('value'), wind + '<br/>', tree[4][1].get('value'),
+            wind_codes, wind_dir)
         self.weatherDataDico['Clouds'] = (clouds + '<br/>' + clouds_percent)
         self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
-    def tooltip_ok(self):
+    def tooltip_weather(self):
         self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):
@@ -420,6 +420,7 @@ class SystemTrayIcon(QMainWindow):
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
         icon = QPixmap(':/empty')
+        self.traycolor = self.settings.value('TrayColor') or ''
         pt = QPainter(icon)
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
@@ -445,7 +446,7 @@ class SystemTrayIcon(QMainWindow):
         self.restore_city()
         self.tentatives = 0
         self.done_tentatives = 0
-        self.tooltip_ok()
+        self.tooltip_weather()
 
     def restore_city(self):
         if self.temporary_city_status:
@@ -489,12 +490,13 @@ class SystemTrayIcon(QMainWindow):
         # Check if update is needed
         if traycolor == None:
             traycolor = ''
+        if self.traycolor != traycolor:
+            self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and
            country == self.country and
            unit == self.unit and
-           str(int(int(self.interval)/1000/60)) == interval and
-           self.traycolor == traycolor):
+           str(int(int(self.interval)/1000/60)) == interval):
             return
         else:
             self.refresh()
