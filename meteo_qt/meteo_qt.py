@@ -55,7 +55,6 @@ class SystemTrayIcon(QMainWindow):
         self.wind_codes = cond.wind_codes
         self.inerror = False
         self.tentatives = 0
-        self.done_tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
         self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
@@ -111,7 +110,6 @@ class SystemTrayIcon(QMainWindow):
 
     def manual_refresh(self):
         self.tentatives = 0
-        self.done_tentatives = 0
         self.refresh()
 
     def cities_menu(self):
@@ -261,8 +259,8 @@ class SystemTrayIcon(QMainWindow):
             self.inerror = True
             e = sys.exc_info()[0]
             print('Error: ', e )
-            print('Try to create the city overview...\nOverview Tentatives: ',
-                  self.done_tentatives)
+            print('Try to create the city overview...\nTentatives: ',
+                  self.tentatives)
             return 'error'
 
     def done(self, done):
@@ -289,10 +287,10 @@ class SystemTrayIcon(QMainWindow):
                     e = sys.exc_info()[0]
                     print('Error: ', e )
                     print('Overview instance has been deleted, try again...')
-                    if self.done_tentatives < 10:
+                    if self.tentatives < 10:
                         self.try_create_overview()
             else:
-                if self.done_tentatives < 10:
+                if self.tentatives < 10:
                     self.inerror = True
                     self.try_create_overview()
         else:
@@ -305,22 +303,23 @@ class SystemTrayIcon(QMainWindow):
 
     def try_create_overview(self):
         self.searching_message()
-        self.done_tentatives += 1
         self.inerror = True
-        print('Tries to create overview :', self.done_tentatives)
-        if self.done_tentatives < 10:
+        print('Tries to create overview :', self.tentatives)
+        if self.tentatives < 10:
             instance = self.instance_overviewcity()
             if instance == 'error':
                 self.inerror = True
                 self.try_again()
             else:
-                self.done_tentatives = 0
+                self.tentatives = 0
                 self.inerror = False
                 self.tooltip_weather()
 
     def try_again(self):
         self.searching_message()
         if self.tentatives >= 10:
+            self.systray.setIcon(QIcon(':/noicon'))
+            self.nodata_message()
             return
         print('Tentatives: ', self.tentatives)
         self.tentatives += 1
@@ -345,7 +344,6 @@ class SystemTrayIcon(QMainWindow):
         self.updateicon = self.wIcon
 
     def weatherdata(self, tree):
-        self.weatherDataDico = {}
         if self.inerror:
             return
         self.tempFloat = tree[1].get('value')
@@ -445,7 +443,6 @@ class SystemTrayIcon(QMainWindow):
             return
         self.restore_city()
         self.tentatives = 0
-        self.done_tentatives = 0
         self.tooltip_weather()
 
     def restore_city(self):
