@@ -97,6 +97,7 @@ class SystemTrayIcon(QMainWindow):
         self.notification_temp = 0
         self.notifications_id = ''
         self.systray.show()
+        self.weatherDataDico = {}
         self.refresh()
 
     def icon_loading(self):
@@ -232,7 +233,6 @@ class SystemTrayIcon(QMainWindow):
         self.downloadThread = Download(
             self.wIconUrl, self.baseurl, self.forecast_url,
             self.day_forecast_url, self.id_, self.suffix)
-        self.downloadThread.setTerminationEnabled(True)
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
@@ -499,6 +499,7 @@ class SystemTrayIcon(QMainWindow):
            str(int(int(self.interval)/1000/60)) == interval):
             return
         else:
+            print('Apply changes from settings...')
             self.refresh()
 
     def config(self):
