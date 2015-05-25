@@ -565,10 +565,10 @@ class SystemTrayIcon(QMainWindow):
             [pl] Polish translation
             <p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/>
             [ru] Russian translation
-            <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
-            [uk] Ukranian translation
             <p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a><br/>
             [tr] Turkish translation
+            <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
+            [uk] Ukranian translation
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
             [zh_TW] Chinese (Taiwan) translation
             <p>pmav99<br/>
