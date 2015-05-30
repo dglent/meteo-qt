@@ -557,7 +557,7 @@ class SystemTrayIcon(QMainWindow):
                         feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
                         github</a>.""")
 
-        contributors = self.tr("""Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
+        contributors = self.trUtf8("""Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
             [de] German translation
             <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
             [el] Greek translation
