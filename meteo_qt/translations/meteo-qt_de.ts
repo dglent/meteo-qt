@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -251,7 +250,7 @@
     <message>
         <location filename="settings.py" line="102"/>
         <source>Update interval</source>
-        <translation>Aktualisierungsinvervall</translation>
+        <translation>Aktualisierungsintervall</translation>
     </message>
     <message>
         <location filename="settings.py" line="103"/>
@@ -538,7 +537,7 @@ github&lt;/a&gt; erstellen.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="562"/>
-        <source>J&#xc3;&#xbc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -546,7 +545,7 @@ github&lt;/a&gt; erstellen.</translation>
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;R&#xc3;&#xa9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -554,13 +553,13 @@ github&lt;/a&gt; erstellen.</translation>
             [ru] Russian translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
-            &lt;p&gt;Atilla &#xc3;&#x96;nta&#xc5;&#x9f; &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Atilla ÃntaÅ &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
 [de] Deutsche Übersetzung
 &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
 [el] Griechische Übersetzung
@@ -568,7 +567,7 @@ github&lt;/a&gt; erstellen.</translation>
 [es] Spanische Übersetzung
 &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
 [fr] Französische Übersetzung
-&lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
 [fr] Französische Übersetzung, Projekt
 &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
 [pl] Polnische Übersetzung
@@ -576,7 +575,7 @@ github&lt;/a&gt; erstellen.</translation>
 [ru] Russische Übersetzung
 &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
 [uk] Ukrainische Übersetzung
-&lt;p&gt;Atilla ÃntaÅ &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+&lt;p&gt;Atilla Öntaş&lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
 [tr] Türkische Übersetzung
 &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
 [zh_TW] Chinesische (Taiwan) Übersetzung
@@ -586,7 +585,7 @@ Projekt</translation>
     <message>
         <location filename="meteo_qt.py" line="310"/>
         <source>Please wait, trying to find data...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
