@@ -1,4 +1,8 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<context encoding="UTF-8">
+    <name></name>
+</context>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -68,7 +72,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="648"/>
+        <location filename="meteo_qt.py" line="655"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -421,77 +425,77 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="68"/>
+        <location filename="meteo_qt.py" line="67"/>
         <source>Cities</source>
         <translation>Πόλεις</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="69"/>
+        <location filename="meteo_qt.py" line="68"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Προσωρινή πόλη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="70"/>
+        <location filename="meteo_qt.py" line="69"/>
         <source>&amp;Update</source>
         <translation>&amp;Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="71"/>
+        <location filename="meteo_qt.py" line="70"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="72"/>
+        <location filename="meteo_qt.py" line="71"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="73"/>
+        <location filename="meteo_qt.py" line="72"/>
         <source>Exit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="95"/>
+        <location filename="meteo_qt.py" line="94"/>
         <source>Searching weather data...</source>
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="196"/>
+        <location filename="meteo_qt.py" line="201"/>
         <source>Fetching weather data ...</source>
         <translation>Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="181"/>
+        <location filename="meteo_qt.py" line="187"/>
         <source>Empty list</source>
         <translation>Κενή λίστα</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="214"/>
+        <location filename="meteo_qt.py" line="219"/>
         <source>No city configured</source>
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="229"/>
+        <location filename="meteo_qt.py" line="232"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="229"/>
+        <location filename="meteo_qt.py" line="232"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="337"/>
+        <location filename="meteo_qt.py" line="342"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: Αδύνατη η εύρεση δεδομένων!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="531"/>
+        <location filename="meteo_qt.py" line="538"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="539"/>
+        <location filename="meteo_qt.py" line="546"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -500,7 +504,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="545"/>
+        <location filename="meteo_qt.py" line="552"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -533,7 +537,7 @@
     </message>
     <message>
         <location filename="meteo_qt.py" line="562"/>
-        <source>JÃ¼rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>J&#xfc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -541,7 +545,7 @@
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;RÃ©mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;R&#xe9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
@@ -549,13 +553,13 @@
             [ru] Russian translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
-            &lt;p&gt;Atilla ÃntaÅ &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Atilla &#xc3;&#x96;nta&#xc5;&#x9f; &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
-        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] Γερμανική μετάφραση
             &lt;p&gt;Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Ελληνική μετάφραση
@@ -572,16 +576,89 @@
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ουκρανική μετάφραση
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Τουρική μετάφραση
+            [tr] Τουρκή μετάφραση
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
             &lt;p&gt;pmav99&lt;br/&gt;
             Έργο</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="310"/>
+        <location filename="meteo_qt.py" line="313"/>
         <source>Please wait, trying to find data...</source>
         <translation>Παρακαλώ περιμένετε, γίνεται προσπάθεια των εύρεσης δεδομένων...</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="569"/>
+        <source>J&#xfc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanish translation
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation
+            &lt;p&gt;R&#xe9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polish translation
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russian translation
+            &lt;p&gt;Atilla &#xd6;nta? &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Turkish translation
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</source>
+        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση
+            &lt;p&gt;Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Ελληνική μετάφραση
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Ισπανική μετάφραση
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση, Έργο
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Πολωνέζικη μετάφραση
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Ρώσικη μετάφραση
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Τουρκική μετάφραση
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ουκρανική μετάφραση
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Έργο</translation>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="meteo_qt.py" line="569"/>
+        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanish translation
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polish translation
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russian translation
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Turkish translation
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
