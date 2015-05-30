@@ -96,7 +96,13 @@ class SystemTrayIcon(QMainWindow):
         self.notification_temp = 0
         self.notifications_id = ''
         self.systray.show()
+        # The dictionnary has to be intialized here. If there is an error
+        # the program couldn't become functionnal if the dictionnary is
+        # reinitialized in the weatherdata method
         self.weatherDataDico = {}
+        # The traycolor has to be initialized here for the case when we cannot
+        # reach the tray method (case: set the color at first time usage)
+        self.traycolor = ''
         self.refresh()
 
     def icon_loading(self):
