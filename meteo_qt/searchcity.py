@@ -166,10 +166,17 @@ class WorkThread(QThread):
         QThread.__init__(self, parent)
         self.accurate_url = accurate_url
         # Search in any language
-        self.city = repr(city.encode('utf-8')).replace("b'","").replace(
-            "\\x","%").replace("'","")
+        self.city = self.encode_utf8(city)
         self.suffix = suffix
         self.tentatives = 1
+
+    def encode_utf8(self, city):
+        try:
+            city_utf8 = repr(city.encode('utf-8')).replace("b'","").replace(
+            "\\x","%").replace("'","")
+        except:
+            city_utf8 = city
+        return city_utf8
 
     def run(self):
         error_message = self.tr(
@@ -231,6 +238,10 @@ class WorkThread(QThread):
                     self.tentatives += 1
                     print('Tries: ',self.tentatives)
                     print('Try to retreive city information...')
+                    # Try with a fuzzy city name
+                    if city != '':
+                        print('Change search to:', city)
+                        self.city = self.encode_utf8(city)
                     self.run()
             if city == '' or country == None:
                 if self.tentatives == 10:
@@ -251,7 +262,7 @@ class WorkThread(QThread):
             except:
                 print('An error has occured:\n')
                 print('ID', id_)
-                print('City',city)
+                print('City', city)
                 print('Country', country)
                 return
         for i in self.lista:
