@@ -46,7 +46,7 @@ class SearchCity(QDialog):
         self.setMinimumWidth(int(len(self.line_search.text())*20))
         self.setLayout(self.layout)
         self.line_search.returnPressed.connect(self.search)
-        self.line_search.textChanged.connect(self.search)
+        self.line_search.textChanged.connect(self.timer_run)
         self.buttonOk.clicked.connect(self.accept)
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
@@ -54,6 +54,11 @@ class SearchCity(QDialog):
             self.accept)
         self.restoreGeometry(self.settings.value("SearchCity/Geometry",
                 QByteArray()))
+        self.timer_search = QTimer(self)
+        self.timer_search.timeout.connect(self.search)
+
+    def timer_run(self):
+        self.timer_search.start(1000)
 
     def closeEvent(self, event):
         self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
@@ -93,6 +98,7 @@ class SearchCity(QDialog):
                 self.workThread.terminate()
 
     def search(self):
+        self.timer_search.stop()
         self.city = (self.line_search.text())
         self.thread_terminate()
         if len(self.city) < 3:
