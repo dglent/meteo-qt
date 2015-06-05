@@ -8,6 +8,7 @@ import urllib.request
 from lxml import etree
 import time
 from socket import timeout
+import logging
 
 try:
     import conditions
@@ -139,13 +140,13 @@ class OverviewCity(QDialog):
         self.total_layout.addLayout(self.forecast_days_layout)
         self.total_layout.addLayout(self.forecast_minmax_layout)
         self.forecastdata()
-        print('Fetched forecast data')
+        logging.debug('Fetched forecast data')
         self.iconfetch()
-        print('Fetched 6 days forecast icons')
+        logging.debug('Fetched 6 days forecast icons')
         self.dayforecastdata()
-        print('Fetched day forecast data')
+        logging.debug('Fetched day forecast data')
         self.dayiconfetch()
-        print('Fetched day forcast icons')
+        logging.debug('Fetched day forcast icons')
         self.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
@@ -176,7 +177,7 @@ class OverviewCity(QDialog):
         fetched_file_periods = (len(self.tree.xpath('//time')))
         if fetched_file_periods < periods:
             periods = fetched_file_periods
-            print('Reduce forcast for the next 6 days to {0}'.format(
+            logging.warn('Reduce forcast for the next 6 days to {0}'.format(
                 periods-1))
         for d in range(1, periods):
             date_list = self.tree[4][d].get('day').split('-')
@@ -200,12 +201,12 @@ class OverviewCity(QDialog):
                 weather_cond = self.conditions[self.tree[4][d][0].get(
                     'number')]
             except:
-                print('Cannot find localisation string for :', weather_cond)
+                logging.warn('Cannot find localisation string for :' + weather_cond)
                 pass
             self.forecast_weather_list.append(weather_cond) #weather
 
     def iconfetch(self):
-        print('Download 6 days forecast icons...')
+        logging.debug('Download 6 days forecast icons...')
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.error['QString'].connect(self.error)
@@ -229,7 +230,7 @@ class OverviewCity(QDialog):
         fetched_file_periods = (len(self.tree_day.xpath('//time')))
         if fetched_file_periods < periods:
             periods = fetched_file_periods
-            print('Reduce forcast of the day to {0}'.format(periods-1))
+            logging.warn('Reduce forcast of the day to {0}'.format(periods-1))
         for d in range(1, periods):
             timeofday = self.utc(d, 'dayforecast')
             weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
@@ -264,7 +265,7 @@ class OverviewCity(QDialog):
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
-                print('Wind direction code is missing: ', winddircode)
+                logging.warn('Wind direction code is missing: ', winddircode)
             wind_name = self.tree_day[4][d][3].get('name')
             try:
                 wind_name_translated = (
@@ -272,8 +273,8 @@ class OverviewCity(QDialog):
                     '<br/>')
                 wind += wind_name_translated
             except KeyError:
-                print('Cannot find wind name :', wind_name)
-                print('Set wind name to None')
+                logging.warn('Cannot find wind name :', wind_name)
+                logging.info('Set wind name to None')
                 wind = ''
             finally:
                 if wind == '':
@@ -285,7 +286,7 @@ class OverviewCity(QDialog):
             if clouds != '':
                 clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
             else:
-                print('Clouding name is missing: ', clouds)
+                logging.warn('Clouding name is missing: ', clouds)
             clouds_cond = clouds_translated + ' ' + cloudspercent + '%'
             ttip = ttip + wind + clouds_cond
             daytime.setToolTip(ttip)
@@ -293,7 +294,7 @@ class OverviewCity(QDialog):
 
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
-        print('Download forecast icons for the day...')
+        logging.debug('Download forecast icons for the day...')
         self.day_download_thread = IconDownload(self.icon_url, self.dayforecast_icon_list)
         self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
         self.day_download_thread.error['QString'].connect(self.error)
@@ -311,7 +312,7 @@ class OverviewCity(QDialog):
         self.dayforecast_layout.addWidget(iconlabel)
 
     def error(self, error):
-        print('error in download of forecast icon:\n', error)
+        logging.error('error in download of forecast icon:\n', error)
 
     def moveEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
@@ -355,13 +356,13 @@ class IconDownload(QThread):
         except timeout:
             if self.tentatives >= 10:
                 done = 1
-                print('Timeout error, abandon...')
+                logging.error('Timeout error, abandon...')
                 return
             else:
                 self.tentatives += 1
-                print('5 secondes timeout, new tentative: ', self.tentatives)
+                logging.info('5 secondes timeout, new tentative: ', self.tentatives)
                 self.run()
-        print('Download forecast icons thread done')
+        logging.debug('Download forecast icons thread done')
 
     def html404(self, page, what):
         try:
@@ -369,7 +370,7 @@ class IconDownload(QThread):
             code = dico['cod']
             message = dico['message']
             self.error_message = code + ' ' + message + '@' + what
-            print(self.error)
+            logging.error(self.error)
             return True
         except:
             return False

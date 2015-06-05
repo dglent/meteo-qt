@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import (
     QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog
     )
 import os
+import logging
 
 try:
     import citylistdlg
@@ -243,12 +244,12 @@ class MeteoSettings(QDialog):
             with open(total_path, 'w') as out_file:
                 out_file.writelines(desktop_file)
             self.settings.setValue('Autostart', 'True')
-            print('Write desktop file in ~/.config/autostart')
+            logging.debug('Write desktop file in ~/.config/autostart')
         elif self.autostart_state == 0:
             if os.path.exists(total_path):
                 os.remove(total_path)
             self.settings.setValue('Autostart', 'False')
-            print('Remove desktop file from ~/.config/autostart')
+            logging.debug('Remove desktop file from ~/.config/autostart')
         else:
             return
 
@@ -262,7 +263,7 @@ class MeteoSettings(QDialog):
             self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
             self.color_before = col.name()
         else:
-            print('Invalid color:', col)
+            logging.warn('Invalid color:', col)
 
     def color_reset(self):
         self.temp_colorButton.setStyleSheet(
@@ -278,10 +279,10 @@ class MeteoSettings(QDialog):
     def notifier_apply(self):
         if self.notifier_state == 2:
             self.settings.setValue('Notifications', 'True')
-            print('Write: Notifications = True')
+            logging.debug('Write: Notifications = True')
         elif self.notifier_state == 0:
             self.settings.setValue('Notifications', 'False')
-            print('Write: Notifications = False')
+            logging.debug('Write: Notifications = False')
 
     def apply_settings(self):
         self.accepted()
@@ -292,37 +293,37 @@ class MeteoSettings(QDialog):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
         if hasattr(self, 'id_before'):
             self.settings.setValue('ID', self.id_before)
-            print('write ', 'ID', self.id_before)
+            logging.debug('write ' + 'ID' + str(self.id_before))
         if hasattr(self, 'city_before'):
             self.settings.setValue('City', self.city_before)
-            print('write ', 'City', self.city_before)
+            logging.debug('write ' + 'City' + str(self.city_before))
         if hasattr(self, 'country_before'):
             self.settings.setValue('Country', self.country_before)
-            print('write ', 'Country', self.country_before)
+            logging.debug('write ' + 'Country' + str(self.country_before))
         if hasattr(self, 'city_list_before'):
             self.settings.setValue('CityList', str(self.city_list_before))
-            print('write ', 'CityList', str(self.city_list_before))
+            logging.debug('write ' + 'CityList' + str(self.city_list_before))
         if hasattr(self, 'color_before'):
             self.settings.setValue('TrayColor', self.color_before)
             if self.color_before == '':
                 self.color_before = 'None'
-            print('Write font color for temp in tray: {0}'.format(self.color_before))
+            logging.debug('Write font color for temp in tray: {0}'.format(self.color_before))
         if self.autostart_changed:
             self.autostart_apply()
         if self.interval_changed:
             time = self.interval_combo.currentText()
             self.settings.setValue('Interval', time)
-            print('Write ', 'Interval', time)
+            logging.debug('Write ' + 'Interval' + str(time))
         if self.lang_changed:
             lang = self.languageCombo.currentText()
             setlang = [key for key, value in self.language_dico.items() if value == lang]
             self.settings.setValue('Language', setlang[0])
-            print('Write ', 'Language', setlang[0])
+            logging.debug('Write ' + 'Language' + str(setlang[0]))
         if self.units_changed:
             unit = self.unitsCombo.currentText()
             setUnit = [key for key, value in self.unitsDico.items() if value == unit]
             self.settings.setValue('Unit', setUnit[0])
-            print('Write ', 'Unit', setUnit[0])
+            logging.debug('Write ' + 'Unit' + str(setUnit[0]))
         if self.notifier_changed:
             self.notifier_apply()
 

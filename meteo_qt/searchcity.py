@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import (
 import urllib.request
 from lxml import etree
 from socket import timeout
+import logging
 
 class SearchCity(QDialog):
     id_signal = pyqtSignal([tuple])
@@ -130,13 +131,13 @@ class SearchCity(QDialog):
         self.workThread.start()
 
     def addlist(self, city):
-        print('Found: ', city)
+        logging.debug('Found: ', city)
         if city not in self.lista:
             self.lista.append(city)
 
     def error(self, e):
         self.delay = 2000
-        print(e)
+        logging.error(e)
         self.status.setText(e)
         self.adjustSize()
         self.errorStatus = True
@@ -180,6 +181,7 @@ class WorkThread(QThread):
         try:
             city_utf8 = repr(city.encode('utf-8')).replace("b'","").replace(
             "\\x","%").replace("'","")
+            loging.debug('UTF-8 name :' + city_utf8)
         except:
             city_utf8 = city
         return city_utf8
@@ -197,12 +199,12 @@ class WorkThread(QThread):
             tree = etree.fromstring(page)
         except timeout:
             if self.tentatives == 10:
-                print(error_message)
+                logging.error(error_message)
                 return
             else:
                 self.tentatives += 1
                 searching_message = self.tr('Please wait, searching...')
-                print(searching_message)
+                logging.debug(searching_message)
                 self.searching['QString'].emit(searching_message)
                 self.run()
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
@@ -216,18 +218,18 @@ class WorkThread(QThread):
                 return
             else:
                 self.tentatives += 1
-                print('Tries: ',self.tentatives)
+                logging.debug('Tries: ' + self.tentatives)
                 self.run()
         # No result
         try:
             if int(tree[1].text) == 0:
-                print('Number of cities: 0')
+                logging.debug('Number of cities: 0')
                 if self.tentatives == 10:
                     return
                 else:
                     self.tentatives += 1
-                    print('Tries: ',self.tentatives)
-                    print('Try to retreive city information...')
+                    logging.debug('Tries: '  + self.tentatives)
+                    logging.debug('Try to retreive city information...')
                     self.run()
         except:
             return
@@ -236,17 +238,17 @@ class WorkThread(QThread):
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
-                print('Error ID: ',id_)
+                logging.error('Error ID: ',id_)
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
                     return
                 else:
                     self.tentatives += 1
-                    print('Tries: ',self.tentatives)
-                    print('Try to retreive city information...')
+                    logging.debug('Tries: ',self.tentatives)
+                    logging.debug('Try to retreive city information...')
                     # Try with a fuzzy city name
                     if city != '':
-                        print('Change search to:', city)
+                        loging.info('Change search to:' + city)
                         self.city = self.encode_utf8(city)
                     self.run()
             if city == '' or country == None:
@@ -255,8 +257,8 @@ class WorkThread(QThread):
                     return
                 else:
                     self.tentatives += 1
-                    print('Tries: ',self.tentatives)
-                    print('Try to retreive city information...')
+                    logging.debug('Tries: ' + self.tentatives)
+                    logging.debug('Try to retreive city information...')
                     self.run()
             try:
                 if id_ == '0':
@@ -266,13 +268,13 @@ class WorkThread(QThread):
                     continue
                 self.lista.append(place)
             except:
-                print('An error has occured:\n')
-                print('ID', id_)
-                print('City', city)
-                print('Country', country)
+                logging.critical('An error has occured:\n')
+                logging.info('ID', id_)
+                logging.info('City', city)
+                logging.info('Country', country)
                 return
         for i in self.lista:
             self.city_signal['QString'].emit(i)
-        print('City thread done')
+        logging.debug('City thread done')
         return
 

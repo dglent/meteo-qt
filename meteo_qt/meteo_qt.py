@@ -22,6 +22,8 @@ import os
 from functools import partial
 import re
 from socket import timeout
+import logging
+import logging.handlers
 
 try:
     import qrc_resources
@@ -154,7 +156,7 @@ class SystemTrayIcon(QMainWindow):
     @pyqtSlot(str)
     def changecity(self, city):
         cities_list = self.settings.value('CityList')
-        print('Cities', cities_list)
+        logging.debug('Cities', cities_list)
         if cities_list == None:
             self.empty_cities_list()
         if type(cities_list) is not list:
@@ -176,7 +178,7 @@ class SystemTrayIcon(QMainWindow):
                 if prev_city not in cities_list:
                     cities_list.append(prev_city)
                 self.settings.setValue('CityList', cities_list)
-                print(cities_list)
+                logging.debug(cities_list)
         self.refresh()
 
     def empty_cities_list(self):
@@ -206,7 +208,7 @@ class SystemTrayIcon(QMainWindow):
                 self.overviewcity.close()
             except:
                 e = sys.exc_info()[0]
-                print('Error closing overviewcity: ', e )
+                logging.error('Error closing overviewcity: ', e )
                 pass
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
@@ -229,9 +231,9 @@ class SystemTrayIcon(QMainWindow):
     def update(self):
         if hasattr(self, 'downloadThread'):
             if self.downloadThread.isRunning():
-                print('remaining thread...')
+                logging.debug('remaining thread...')
                 return
-        print('Update...')
+        logging.debug('Update...')
         self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
@@ -255,7 +257,7 @@ class SystemTrayIcon(QMainWindow):
     def instance_overviewcity(self):
         try:
             if hasattr(self, 'overviewcity'):
-                print('Deleting overviewcity instance...')
+                logging.debug('Deleting overviewcity instance...')
                 del self.overviewcity
             self.overviewcity = overview.OverviewCity(
                 self.weatherDataDico, self.wIcon, self.forecast_data,
@@ -264,8 +266,8 @@ class SystemTrayIcon(QMainWindow):
         except:
             self.inerror = True
             e = sys.exc_info()[0]
-            print('Error: ', e )
-            print('Try to create the city overview...\nTentatives: ',
+            logging.errror('Error: ', e )
+            logging.debug('Try to create the city overview...\nTentatives: ',
                   self.tentatives)
             return 'error'
 
@@ -291,8 +293,8 @@ class SystemTrayIcon(QMainWindow):
                         self.overview()
                 except:
                     e = sys.exc_info()[0]
-                    print('Error: ', e )
-                    print('Overview instance has been deleted, try again...')
+                    logging.error('Error: ', e )
+                    logging.debug('Overview instance has been deleted, try again...')
                     if self.tentatives < 10:
                         self.try_create_overview()
             else:
@@ -310,7 +312,7 @@ class SystemTrayIcon(QMainWindow):
     def try_create_overview(self):
         self.searching_message()
         self.inerror = True
-        print('Tries to create overview :', self.tentatives)
+        logging.debug('Tries to create overview :' + str(self.tentatives))
         if self.tentatives < 10:
             instance = self.instance_overviewcity()
             if instance == 'error':
@@ -327,7 +329,7 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setIcon(QIcon(':/noicon'))
             self.nodata_message()
             return
-        print('Tentatives: ', self.tentatives)
+        logging.debug('Tentatives: ', self.tentatives)
         self.tentatives += 1
         self.timer.singleShot(5000, self.refresh)
 
@@ -337,7 +339,7 @@ class SystemTrayIcon(QMainWindow):
         self.notification = nodata
 
     def error(self, error):
-        print('Error:\n', error)
+        logging.error('Error:\n', error)
         self.nodata_message()
         self.timer.start(self.interval)
         self.inerror = True
@@ -359,7 +361,7 @@ class SystemTrayIcon(QMainWindow):
         try:
             self.meteo = self.conditions[meteo_condition]
         except:
-            print('Cannot find localisation string for meteo_condition:', meteo_condition)
+            logging.debug('Cannot find localisation string for meteo_condition:', meteo_condition)
             pass
         clouds = tree[5].get('name')
         clouds_percent = tree[5].get('value') + '%'
@@ -367,26 +369,26 @@ class SystemTrayIcon(QMainWindow):
             clouds = self.clouds[clouds]
             clouds = self.conditions[clouds]
         except:
-            print('Cannot find localisation string for clouds:', clouds)
+            logging.debug('Cannot find localisation string for clouds:', clouds)
             pass
         wind = tree[4][0].get('name').lower()
         try:
             wind = self.wind[wind]
             wind = self.conditions[wind]
         except:
-            print('Cannot find localisation string for wind:', wind)
+            logging.debug('Cannot find localisation string for wind:', wind)
             pass
         wind_codes = tree[4][1].get('code')
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
-            print('Cannot find localisation string for wind_codes:', wind_codes)
+            logging.debug('Cannot find localisation string for wind_codes:', wind_codes)
             pass
         wind_dir = tree[4][1].get('name')
         try:
             wind_dir = self.wind_dir[tree[4][1].get('code')]
         except:
-            print('Cannot find localisation string for wind_dir:', wind_dir)
+            logging.debug('Cannot find localisation string for wind_dir:', wind_dir)
             pass
         self.city_weather_info = (self.city + ' '  + self.country + ' ' +
                                   self.temp + ' ' + self.meteo)
@@ -411,7 +413,7 @@ class SystemTrayIcon(QMainWindow):
 
     def tray(self):
         if self.inerror or not hasattr(self, 'temp'):
-            print('Cannot paint icon!')
+            logging.critical('Cannot paint icon!')
             if hasattr(self, 'overviewcity'):
                 try:
                     # delete dialog to prevent memory leak
@@ -420,7 +422,7 @@ class SystemTrayIcon(QMainWindow):
                     pass
             return
         self.gif_loading.stop()
-        print('Paint tray icon...')
+        logging.debug('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
         icon = QPixmap(':/empty')
@@ -443,17 +445,18 @@ class SystemTrayIcon(QMainWindow):
                         self.notification_temp = temp
                         self.systray.showMessage('meteo-qt', self.notification)
         except:
-            print('OverviewCity has been deleted',
+            logging.debug('OverviewCity has been deleted',
                   'Download weather information again...')
             self.try_again()
             return
         self.restore_city()
         self.tentatives = 0
         self.tooltip_weather()
+        logging.info('Actual weather status for: ' + self.notification)
 
     def restore_city(self):
         if self.temporary_city_status:
-            print('Restore the default settings (city)',
+            logging.debug('Restore the default settings (city)',
                   'Forget the temporary city...')
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
@@ -483,7 +486,7 @@ class SystemTrayIcon(QMainWindow):
         self.overviewcity.show()
 
     def config_save(self):
-        print('Config saving...')
+        logging.debug('Config saving...')
         city = self.settings.value('City'),
         id_ = self.settings.value('ID')
         country = self.settings.value('Country')
@@ -502,7 +505,7 @@ class SystemTrayIcon(QMainWindow):
            str(int(int(self.interval)/1000/60)) == interval):
             return
         else:
-            print('Apply changes from settings...')
+            logging.debug('Apply changes from settings...')
             self.refresh()
 
     def config(self):
@@ -510,7 +513,7 @@ class SystemTrayIcon(QMainWindow):
         dialog.applied_signal.connect(self.config_save)
         if dialog.exec_() == 1:
             self.config_save()
-            print('Update Cities menu...')
+            logging.debug('Update Cities menu...')
             self.cities_menu()
 
     def tempcity(self):
@@ -531,7 +534,7 @@ class SystemTrayIcon(QMainWindow):
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
-        print('write ', what[0], what[1])
+        logging.debug('write ', what[0], what[1])
 
     def about(self):
         title = self.tr("""<b>meteo-qt</b> v{0}
@@ -606,10 +609,16 @@ class Download(QThread):
     def run(self):
         done = 0
         try:
+            logging.debug('Fetching url for actual weather: ' + self.baseurl +
+                          self.id_ + self.suffix)
             req = urllib.request.urlopen(
                 self.baseurl + self.id_ + self.suffix, timeout=5)
+            logging.debug('Fetching url for 6 days :' + self.forecast_url +
+                          self.id_ + self.suffix + '&cnt=7')
             reqforecast = urllib.request.urlopen(
                 self.forecast_url + self.id_ + self.suffix + '&cnt=7', timeout=5)
+            logging.debug('Fetching url for forecast of the day :' +
+                          self.day_forecast_url + self.id_ + self.suffix)
             reqdayforecast = urllib.request.urlopen(
                 self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
@@ -626,6 +635,7 @@ class Download(QThread):
             treedayforecast = etree.fromstring(pagedayforecast)
             weather_icon = tree[8].get('icon')
             url = self.wIconUrl + weather_icon + '.png'
+            logging.debug('Icon url: ' + url)
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
                 raise urllib.error.HTTPError
@@ -641,29 +651,29 @@ class Download(QThread):
                 m_error = error
                 if hasattr(error, 'code'):
                     code = str(error.code)
-                    print(code, error.reason)
+                    logging.error(code, error.reason)
                     m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
                 else:
-                    print(m_error)
+                    logging.error(m_error)
                 self.error['QString'].emit(m_error)
                 self.done.emit(int(done))
                 return
             else:
                 self.tentatives += 1
-                print('Error: ', error)
-                print('Try again...', self.tentatives)
+                logging.warn('Error: ', error)
+                logging.info('Try again...', self.tentatives)
                 self.run()
         except timeout:
             if self.tentatives >= 10:
                 done = 1
-                print('Timeout error, abandon...')
+                logging.error('Timeout error, abandon...')
                 self.done.emit(int(done))
                 return
             else:
                 self.tentatives += 1
-                print('5 secondes timeout, new tentative: ', self.tentatives)
+                logging.warn('5 secondes timeout, new tentative: ', self.tentatives)
                 self.run()
-        print('Download thread done')
+        logging.debug('Download thread done')
 
     def html404(self, page, what):
         try:
@@ -671,7 +681,7 @@ class Download(QThread):
             code = dico['cod']
             message = dico['message']
             self.error_message = code + ' ' + message + '@' + what
-            print(self.error_message)
+            logging.debug(self.error_message)
             return True
         except:
             return False
@@ -698,6 +708,19 @@ def main():
     qtTranslator.load("qt_" + locale,
                       QLibraryInfo.location(QLibraryInfo.TranslationsPath))
     app.installTranslator(qtTranslator)
+
+    log_filename = os.path.dirname(settings.fileName())
+    log_filename = log_filename + '/meteo-qt.log'
+    logging.basicConfig(format='%(asctime)s %(message)s - %(name)s - %(levelname)s',
+                        datefmt='%m/%d/%Y %I:%M:%S',
+                        filename=log_filename, level=logging.DEBUG
+                        )
+    logger = logging.getLogger('MyLogger')
+    logger.setLevel(logging.DEBUG)
+    handler = logging.handlers.RotatingFileHandler(log_filename, maxBytes=20,
+                                                   backupCount=5)
+    logger.addHandler(handler)
+
     m = SystemTrayIcon()
     app.exec_()
 
