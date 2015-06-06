@@ -10,6 +10,7 @@ Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python-qt5-devel
 BuildRequires:  python3
+BuildRequires:  qttools5
 BuildRequires:  imagemagick
 Requires:       python3-qt5
 Requires:       python3-sip
