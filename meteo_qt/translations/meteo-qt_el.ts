@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
 <context encoding="UTF-8">
-    <name></name>
+    <name>About dialog</name>
+    <message encoding="UTF-8">
+        <location filename="meteo_qt.py" line="573"/>
+        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanish translation
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polish translation
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russian translation
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Turkish translation
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</source>
+        <comment>List of contributors</comment>
+        <translation type="unfinished">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση
+            &lt;p&gt;Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Ελληνική μετάφραση
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Ισπανική μετάφραση
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση, Έργο
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Πολωνέζικη μετάφραση
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Ρώσικη μετάφραση
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Τουρκική μετάφραση
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ουκρανική μετάφραση
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Έργο</translation>
+    </message>
 </context>
 <context>
     <name>AboutDialog</name>
@@ -72,7 +120,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="655"/>
+        <location filename="meteo_qt.py" line="666"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -81,212 +129,212 @@
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="settings.py" line="41"/>
+        <location filename="settings.py" line="42"/>
         <source>City</source>
         <translation>Πόλη</translation>
     </message>
     <message>
-        <location filename="settings.py" line="44"/>
+        <location filename="settings.py" line="45"/>
         <source>Click to edit the cities list</source>
         <translation>Κάντε κλικ για να επεξεργαστείτε τη λίστα των πόλεων</translation>
     </message>
     <message>
-        <location filename="settings.py" line="47"/>
+        <location filename="settings.py" line="48"/>
         <source>Language</source>
         <translation>Γλώσσα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="49"/>
+        <location filename="settings.py" line="50"/>
         <source>The application has to be restared to apply the language setting</source>
         <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψη η ρύθμιση της γλώσσας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="51"/>
+        <location filename="settings.py" line="52"/>
         <source>Bulgarian</source>
         <translation>Βουλγαρικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="52"/>
+        <location filename="settings.py" line="53"/>
         <source>Catalan</source>
         <translation>Καταλανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="53"/>
+        <location filename="settings.py" line="54"/>
         <source>Czech</source>
         <translation>Τσέχικα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="54"/>
+        <location filename="settings.py" line="55"/>
         <source>Danish</source>
         <translation>Δανέζικα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="55"/>
+        <location filename="settings.py" line="56"/>
         <source>German</source>
         <translation>Γερμανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="56"/>
+        <location filename="settings.py" line="57"/>
         <source>Greek</source>
         <translation>Ελληνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="57"/>
+        <location filename="settings.py" line="58"/>
         <source>English</source>
         <translation>Αγγλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="58"/>
+        <location filename="settings.py" line="59"/>
         <source>Spanish</source>
         <translation>Ισπανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="59"/>
+        <location filename="settings.py" line="60"/>
         <source>Finnish</source>
         <translation>Φιλανδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="60"/>
+        <location filename="settings.py" line="61"/>
         <source>French</source>
         <translation>Γαλλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="61"/>
+        <location filename="settings.py" line="62"/>
         <source>Hebrew</source>
         <translation>Εβραϊκά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="62"/>
+        <location filename="settings.py" line="63"/>
         <source>Croatian</source>
         <translation>Κροατικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="63"/>
+        <location filename="settings.py" line="64"/>
         <source>Hungarian</source>
         <translation>Ουγγρικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="64"/>
+        <location filename="settings.py" line="65"/>
         <source>Italian</source>
         <translation>Ιταλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="65"/>
+        <location filename="settings.py" line="66"/>
         <source>Japanese</source>
         <translation>Ιαπωνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="66"/>
+        <location filename="settings.py" line="67"/>
         <source>Lithuanian</source>
         <translation>Λιθουανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="67"/>
+        <location filename="settings.py" line="68"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Νορβηγικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="68"/>
+        <location filename="settings.py" line="69"/>
         <source>Dutch</source>
         <translation>Ολλανδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="69"/>
+        <location filename="settings.py" line="70"/>
         <source>Polish</source>
         <translation>Πολωνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="70"/>
+        <location filename="settings.py" line="71"/>
         <source>Portuguese</source>
         <translation>Πορτογαλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="71"/>
+        <location filename="settings.py" line="72"/>
         <source>Brazil Portuguese</source>
         <translation>Πορτογαλικά της Βραζιλίας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="72"/>
+        <location filename="settings.py" line="73"/>
         <source>Romanian</source>
         <translation>Ρουμανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="73"/>
+        <location filename="settings.py" line="74"/>
         <source>Russian</source>
         <translation>Ρωσικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="74"/>
+        <location filename="settings.py" line="75"/>
         <source>Slovak</source>
         <translation>Σλοβακικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="75"/>
+        <location filename="settings.py" line="76"/>
         <source>Swedish</source>
         <translation>Σουηδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="76"/>
+        <location filename="settings.py" line="77"/>
         <source>Turkish</source>
         <translation>Τουρκικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="77"/>
+        <location filename="settings.py" line="78"/>
         <source>Ukrainian</source>
         <translation>Ουκρανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="78"/>
+        <location filename="settings.py" line="79"/>
         <source>Chinese Traditional</source>
         <translation>Κινέζικα παραδοσιακά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="79"/>
+        <location filename="settings.py" line="80"/>
         <source>Chinese Simplified</source>
         <translation>Κινέζικα απλά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="92"/>
+        <location filename="settings.py" line="93"/>
         <source>Temperature unit</source>
         <translation>Μονάδα θερμοκρασίας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="102"/>
+        <location filename="settings.py" line="103"/>
         <source>Update interval</source>
         <translation>Χρονικό διάστημα ενημέρωσης</translation>
     </message>
     <message>
-        <location filename="settings.py" line="103"/>
+        <location filename="settings.py" line="104"/>
         <source>minutes</source>
         <translation>λεπτά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="125"/>
+        <location filename="settings.py" line="126"/>
         <source>Launch at startup</source>
         <translation>Εκτέλεση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="settings.py" line="133"/>
+        <location filename="settings.py" line="134"/>
         <source>Font colour in the tray</source>
         <translation>Χρώμα γραμματοσειράς στο πλαίσιο συστήματος</translation>
     </message>
     <message>
-        <location filename="settings.py" line="139"/>
+        <location filename="settings.py" line="140"/>
         <source>Reset</source>
         <translation>Επαναφορά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="140"/>
+        <location filename="settings.py" line="141"/>
         <source>Reset font colour to system default</source>
         <translation>Επαναφορά του χρώματος της γραμματοσειράς στην εξ ορισμού του συστήματος</translation>
     </message>
     <message>
-        <location filename="settings.py" line="144"/>
+        <location filename="settings.py" line="145"/>
         <source>Notification on weather update</source>
         <translation>Ειδοποίηση κατά την ενημέρωση των καιρικών συνθηκών</translation>
     </message>
     <message>
-        <location filename="settings.py" line="173"/>
+        <location filename="settings.py" line="174"/>
         <source>Meteo-qt Configuration</source>
         <translation>Διαμόρφωση meteo-qt</translation>
     </message>
@@ -294,130 +342,138 @@
 <context>
     <name>OverviewCity</name>
     <message>
-        <location filename="overview.py" line="30"/>
+        <location filename="overview.py" line="31"/>
         <source>Mon</source>
         <translation>Δευ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="31"/>
+        <location filename="overview.py" line="32"/>
         <source>Tue</source>
         <translation>Τρί</translation>
     </message>
     <message>
-        <location filename="overview.py" line="32"/>
+        <location filename="overview.py" line="33"/>
         <source>Wed</source>
         <translation>Τετ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="33"/>
+        <location filename="overview.py" line="34"/>
         <source>Thu</source>
         <translation>Πεμ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="34"/>
+        <location filename="overview.py" line="35"/>
         <source>Fri</source>
         <translation>Παρ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="35"/>
+        <location filename="overview.py" line="36"/>
         <source>Sat</source>
         <translation>Σαβ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="36"/>
+        <location filename="overview.py" line="37"/>
         <source>Sun</source>
         <translation>Κυρ</translation>
     </message>
     <message>
-        <location filename="overview.py" line="82"/>
+        <location filename="overview.py" line="83"/>
         <source>Wind</source>
         <translation>Άνεμος</translation>
     </message>
     <message>
-        <location filename="overview.py" line="93"/>
+        <location filename="overview.py" line="94"/>
         <source>Cloudiness</source>
         <translation>Νέφωση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="97"/>
+        <location filename="overview.py" line="98"/>
         <source>Pressure</source>
         <translation>Πίεση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="103"/>
+        <location filename="overview.py" line="104"/>
         <source>Humidity</source>
         <translation>Υγρασία</translation>
     </message>
     <message>
-        <location filename="overview.py" line="109"/>
+        <location filename="overview.py" line="110"/>
         <source>Sunrise</source>
         <translation>Ανατολή</translation>
     </message>
     <message>
-        <location filename="overview.py" line="111"/>
+        <location filename="overview.py" line="112"/>
         <source>Sunset</source>
         <translation>Δύση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="150"/>
+        <location filename="overview.py" line="151"/>
         <source>Weather status</source>
         <translation>Πληροφορίες καιρού</translation>
     </message>
     <message>
-        <location filename="overview.py" line="196"/>
+        <location filename="overview.py" line="197"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="overview.py" line="259"/>
+        <location filename="overview.py" line="260"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="overview.py" line="260"/>
+        <location filename="overview.py" line="261"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
 </context>
 <context>
+    <name>Search city dialog</name>
+    <message>
+        <location filename="searchcity.py" line="32"/>
+        <source>Start typing the city...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SearchCity</name>
     <message>
-        <location filename="searchcity.py" line="40"/>
+        <location filename="searchcity.py" line="44"/>
         <source>&amp;Ok</source>
         <translation>&amp;Εντάξει</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="42"/>
+        <location filename="searchcity.py" line="46"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Ακύρωση</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="20"/>
+        <location filename="searchcity.py" line="23"/>
         <source>Searching...</source>
         <translation>Αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="153"/>
+        <location filename="searchcity.py" line="163"/>
         <source>No results</source>
         <translation>Κανένα αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="155"/>
+        <location filename="searchcity.py" line="165"/>
         <source>Found {0} city</source>
         <translation>Βρέθηκε {0} πόλη</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="157"/>
+        <location filename="searchcity.py" line="167"/>
         <source>Found {0} cities</source>
         <translation>Βρέθηκαν {0} πόλεις</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="29"/>
         <source>Search location...</source>
-        <translation>Αναζήτηση τοποθεσίας...</translation>
+        <translation type="obsolete">Αναζήτηση τοποθεσίας...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="99"/>
+        <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
         <translation>Παρακαλώ πληκτρολογήστε πάνω από τρία γράμματα</translation>
     </message>
@@ -425,77 +481,77 @@
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="meteo_qt.py" line="67"/>
+        <location filename="meteo_qt.py" line="70"/>
         <source>Cities</source>
         <translation>Πόλεις</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="68"/>
+        <location filename="meteo_qt.py" line="71"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Προσωρινή πόλη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="69"/>
+        <location filename="meteo_qt.py" line="72"/>
         <source>&amp;Update</source>
         <translation>&amp;Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="70"/>
+        <location filename="meteo_qt.py" line="73"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="71"/>
+        <location filename="meteo_qt.py" line="74"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="72"/>
+        <location filename="meteo_qt.py" line="75"/>
         <source>Exit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="94"/>
+        <location filename="meteo_qt.py" line="97"/>
         <source>Searching weather data...</source>
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="201"/>
+        <location filename="meteo_qt.py" line="204"/>
         <source>Fetching weather data ...</source>
         <translation>Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="187"/>
+        <location filename="meteo_qt.py" line="190"/>
         <source>Empty list</source>
         <translation>Κενή λίστα</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="219"/>
+        <location filename="meteo_qt.py" line="222"/>
         <source>No city configured</source>
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="232"/>
+        <location filename="meteo_qt.py" line="235"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="232"/>
+        <location filename="meteo_qt.py" line="235"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="342"/>
+        <location filename="meteo_qt.py" line="345"/>
         <source>meteo-qt: Cannot find data!</source>
         <translation>meteo-qt: Αδύνατη η εύρεση δεδομένων!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="538"/>
+        <location filename="meteo_qt.py" line="542"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="546"/>
+        <location filename="meteo_qt.py" line="550"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -504,7 +560,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="552"/>
+        <location filename="meteo_qt.py" line="556"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -536,60 +592,13 @@
                         θέμα&lt;/a&gt; στο github.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="562"/>
-        <source>J&#xfc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;R&#xe9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;Atilla &#xc3;&#x96;nta&#xc5;&#x9f; &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] Γερμανική μετάφραση
-            &lt;p&gt;Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Ελληνική μετάφραση
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Ισπανική μετάφραση
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] Γαλλική μετάφραση
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] Γαλλική μετάφραση, Έργο
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Πολωνέζικη μετάφραση
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Ρώσικη μετάφραση
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ουκρανική μετάφραση
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Τουρκή μετάφραση
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Έργο</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="313"/>
+        <location filename="meteo_qt.py" line="316"/>
         <source>Please wait, trying to find data...</source>
         <translation>Παρακαλώ περιμένετε, γίνεται προσπάθεια των εύρεσης δεδομένων...</translation>
     </message>
-    <message>
+    <message encoding="UTF-8">
         <location filename="meteo_qt.py" line="569"/>
-        <source>J&#xfc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
@@ -597,13 +606,13 @@
             [es] Spanish translation
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
             [fr] French translation
-            &lt;p&gt;R&#xe9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] French translation, Project
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] Polish translation
             &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
             [ru] Russian translation
-            &lt;p&gt;Atilla &#xd6;nta? &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] Ukranian translation
@@ -633,32 +642,6 @@
             [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
             &lt;p&gt;pmav99&lt;br/&gt;
             Έργο</translation>
-    </message>
-    <message encoding="UTF-8">
-        <location filename="meteo_qt.py" line="569"/>
-        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1182,26 +1165,26 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="176"/>
+        <location filename="searchcity.py" line="194"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Σφάλμα δεδομένων, παρακαλώ προσπαθήστε ξανά αργότερα
 ή δοκιμάστε να αλλάξετε την πόλη</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="201"/>
+        <location filename="searchcity.py" line="219"/>
         <source>Error: </source>
         <translation>Σφάλμα: </translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="201"/>
+        <location filename="searchcity.py" line="219"/>
         <source>
 Try again later</source>
         <translation>
 Προσπαθήστε ξανά αργότερα</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="192"/>
+        <location filename="searchcity.py" line="210"/>
         <source>Please wait, searching...</source>
         <translation>Παρακαλώ περιμένετε, γίνεται αναζήτηση...</translation>
     </message>
