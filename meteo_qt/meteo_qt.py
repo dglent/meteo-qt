@@ -6,7 +6,8 @@
 
 from PyQt5.QtCore import (
     QThread, pyqtSignal, pyqtSlot, QSettings, Qt, QTranslator, QLibraryInfo,
-    QTimer, QPointF, QLocale, QT_VERSION_STR, PYQT_VERSION_STR
+    QTimer, QPointF, QLocale, QCoreApplication, QT_VERSION_STR,
+    PYQT_VERSION_STR
     )
 from PyQt5.QtGui import (
     QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor, QMovie
@@ -560,7 +561,7 @@ class SystemTrayIcon(QMainWindow):
                         feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
                         github</a>.""")
 
-        contributors = self.trUtf8("""Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
+        contributors = QCoreApplication.translate("About dialog", """Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
             [de] German translation
             <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
             [el] Greek translation
@@ -581,7 +582,7 @@ class SystemTrayIcon(QMainWindow):
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
             [zh_TW] Chinese (Taiwan) translation
             <p>pmav99<br/>
-            Project""")
+            Project""", "List of contributors")
 
         dialog = about_dlg.AboutDialog(title, text, image, contributors, self)
         dialog.exec_()
