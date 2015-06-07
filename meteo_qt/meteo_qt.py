@@ -709,17 +709,30 @@ def main():
                       QLibraryInfo.location(QLibraryInfo.TranslationsPath))
     app.installTranslator(qtTranslator)
 
+    log_level = settings.value('Logging_Level')
+    if log_level == '' or log_level == None:
+        log_level = 'INFO'
+        settings.setValue('Logging_Level', 'INFO')
+    if log_level == 'INFO':
+        log_level = 20
+    elif log_level == 'DEBUG':
+        log_level = 10
+
     log_filename = os.path.dirname(settings.fileName())
     log_filename = log_filename + '/meteo-qt.log'
+
     logging.basicConfig(format='%(asctime)s %(message)s - %(name)s - %(levelname)s',
                         datefmt='%m/%d/%Y %I:%M:%S',
-                        filename=log_filename, level=logging.DEBUG
-                        )
+                        filename=log_filename, level=log_level)
     logger = logging.getLogger('MyLogger')
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(log_level)
     handler = logging.handlers.RotatingFileHandler(log_filename, maxBytes=20,
                                                    backupCount=5)
+
+    logger1 = logging.getLogger()
+    handler1 = logging.StreamHandler()
     logger.addHandler(handler)
+    logger1.addHandler(handler1)
 
     m = SystemTrayIcon()
     app.exec_()
