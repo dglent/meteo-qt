@@ -134,7 +134,7 @@ class SearchCity(QDialog):
         self.workThread.start()
 
     def addlist(self, city):
-        logging.debug('Found: ', city)
+        logging.debug('Found: ' + str(city))
         if city not in self.lista:
             self.lista.append(city)
 
@@ -221,7 +221,7 @@ class WorkThread(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.debug('Tries: ' + self.tentatives)
+                logging.debug('Tries: ' + str(self.tentatives))
                 self.run()
         # No result
         try:
@@ -231,7 +231,7 @@ class WorkThread(QThread):
                     return
                 else:
                     self.tentatives += 1
-                    logging.debug('Tries: '  + self.tentatives)
+                    logging.debug('Tries: '  + str(self.tentatives))
                     logging.debug('Try to retreive city information...')
                     self.run()
         except:
@@ -241,13 +241,13 @@ class WorkThread(QThread):
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
             if int(id_) == 0:
-                logging.error('Error ID: ',id_)
+                logging.error('Error ID: ' + str(id_))
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
                     return
                 else:
                     self.tentatives += 1
-                    logging.debug('Tries: ',self.tentatives)
+                    logging.debug('Tries: ' + str(self.tentatives))
                     logging.debug('Try to retreive city information...')
                     # Try with a fuzzy city name
                     if city != '':
@@ -260,7 +260,7 @@ class WorkThread(QThread):
                     return
                 else:
                     self.tentatives += 1
-                    logging.debug('Tries: ' + self.tentatives)
+                    logging.debug('Tries: ' + str(self.tentatives))
                     logging.debug('Try to retreive city information...')
                     self.run()
             try:
@@ -271,10 +271,10 @@ class WorkThread(QThread):
                     continue
                 self.lista.append(place)
             except:
-                logging.critical('An error has occured:\n')
-                logging.info('ID', id_)
-                logging.info('City', city)
-                logging.info('Country', country)
+                logging.critical('An error has occured:')
+                logging.critical('ID' + str(id_))
+                logging.critical('City' + str(city))
+                logging.critical('Country' + str(country))
                 return
         for i in self.lista:
             self.city_signal['QString'].emit(i)
