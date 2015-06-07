@@ -1,4 +1,6 @@
-from PyQt5.QtCore import QTimer, pyqtSignal, QThread, QSettings, QByteArray
+from PyQt5.QtCore import (
+    QTimer, pyqtSignal, QThread, QSettings, QByteArray, QCoreApplication
+    )
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QListWidget,
@@ -27,7 +29,8 @@ class SearchCity(QDialog):
         self.buttonSearch = QPushButton()
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
-        self.line_search = QLineEdit(self.tr('Search location...'))
+        self.line_search = QLineEdit(QCoreApplication.translate(
+            'Search city dialog','Start typing the city...',''))
         self.line_search.selectAll()
         self.listWidget = QListWidget()
         self.status = QLabel()
