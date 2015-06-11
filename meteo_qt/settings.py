@@ -26,7 +26,6 @@ class MeteoSettings(QDialog):
         locale_long = ['pt_BR', 'zh_CN', 'zh_TW']
         if locale not in locale_long:
             locale = locale[:2]
-        self.tempUnit = self.settings.value('Unit') or 'metric'
         self.interval_set = self.settings.value('Interval') or '30'
         self.temp_tray_color = self.settings.value('TrayColor') or ''
         # -----Cities comboBox--------------------------------
@@ -89,6 +88,11 @@ class MeteoSettings(QDialog):
         self.languageCombo.currentIndexChanged.connect(self.language)
         self.lang_changed = False
         # Unit system
+        self.units_changed = False
+        self.tempUnit = self.settings.value('Unit')
+        if self.tempUnit == None or self.tempUnit == '':
+            self.tempUnit = 'metric'
+            self.units_changed = True
         self.unitsLabel = QLabel(self.tr('Temperature unit'))
         self.unitsCombo = QComboBox()
         self.unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
@@ -97,7 +101,7 @@ class MeteoSettings(QDialog):
         self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
             self.unitsDico[self.tempUnit]))
         self.unitsCombo.currentIndexChanged.connect(self.units)
-        self.units_changed = False
+
         # Interval of updates
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
@@ -323,7 +327,7 @@ class MeteoSettings(QDialog):
             unit = self.unitsCombo.currentText()
             setUnit = [key for key, value in self.unitsDico.items() if value == unit]
             self.settings.setValue('Unit', setUnit[0])
-            logging.debug('Write ' + 'Unit' + str(setUnit[0]))
+            logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.notifier_changed:
             self.notifier_apply()
 
