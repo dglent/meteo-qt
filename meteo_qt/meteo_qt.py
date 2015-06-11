@@ -294,7 +294,7 @@ class SystemTrayIcon(QMainWindow):
                         self.overview()
                 except:
                     e = sys.exc_info()[0]
-                    logging.error('Error: ', e )
+                    logging.error('Error: ' + str(e))
                     logging.debug('Overview instance has been deleted, try again...')
                     if self.tentatives < 10:
                         self.try_create_overview()
@@ -330,7 +330,7 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setIcon(QIcon(':/noicon'))
             self.nodata_message()
             return
-        logging.debug('Tentatives: ', self.tentatives)
+        logging.debug('Tentatives: ' + str(self.tentatives))
         self.tentatives += 1
         self.timer.singleShot(5000, self.refresh)
 
