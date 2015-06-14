@@ -265,7 +265,7 @@ class OverviewCity(QDialog):
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
-                logging.warn('Wind direction code is missing: ', winddircode)
+                logging.warn('Wind direction code is missing: ' + str(winddircode))
             wind_name = self.tree_day[4][d][3].get('name')
             try:
                 wind_name_translated = (
@@ -273,7 +273,7 @@ class OverviewCity(QDialog):
                     '<br/>')
                 wind += wind_name_translated
             except KeyError:
-                logging.warn('Cannot find wind name :', wind_name)
+                logging.warn('Cannot find wind name :' + str(wind_name))
                 logging.info('Set wind name to None')
                 wind = ''
             finally:
@@ -286,7 +286,7 @@ class OverviewCity(QDialog):
             if clouds != '':
                 clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
             else:
-                logging.warn('Clouding name is missing: ', clouds)
+                logging.warn('Clouding name is missing: ' + str(clouds))
             clouds_cond = clouds_translated + ' ' + cloudspercent + '%'
             ttip = ttip + wind + clouds_cond
             daytime.setToolTip(ttip)
