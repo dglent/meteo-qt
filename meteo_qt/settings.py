@@ -33,19 +33,19 @@ class MeteoSettings(QDialog):
         self.clear_combo = False
         self.city_list_before = []
         self.citylist = []
-        self.cityCombo = QComboBox()
+        self.city_combo = QComboBox()
         if self.set_city != '?':
             self.add_cities_incombo()
-        self.cityCombo.currentIndexChanged.connect(self.city_default)
-        self.cityTitle = QLabel(self.tr('City'))
-        self.cityButton = QPushButton()
-        self.cityButton.setIcon(QIcon(':/configure'))
-        self.cityButton.setToolTip(self.tr('Click to edit the cities list'))
-        self.cityButton.clicked.connect(self.edit_cities_list)
+        self.city_combo.currentIndexChanged.connect(self.city_default)
+        self.city_title = QLabel(self.tr('City'))
+        self.city_button = QPushButton()
+        self.city_button.setIcon(QIcon(':/configure'))
+        self.city_button.setToolTip(self.tr('Click to edit the cities list'))
+        self.city_button.clicked.connect(self.edit_cities_list)
         #------Language-----------------------------------------
-        self.languageLabel = QLabel(self.tr('Language'))
-        self.languageCombo = QComboBox()
-        self.languageCombo.setToolTip(
+        self.language_label = QLabel(self.tr('Language'))
+        self.language_combo = QComboBox()
+        self.language_combo.setToolTip(
             self.tr('The application has to be restared to apply the language setting'))
         self.language_dico = {'bg': self.tr('Bulgarian'),
                               'ca': self.tr('Catalan'),
@@ -82,25 +82,25 @@ class MeteoSettings(QDialog):
         if locale not in self.language_dico:
             locale = 'en'
         self.setLanguage = self.settings.value('Language') or locale
-        self.languageCombo.addItems(lang_list)
-        self.languageCombo.setCurrentIndex(self.languageCombo.findText
+        self.language_combo.addItems(lang_list)
+        self.language_combo.setCurrentIndex(self.language_combo.findText
                                            (self.language_dico[self.setLanguage]))
-        self.languageCombo.currentIndexChanged.connect(self.language)
+        self.language_combo.currentIndexChanged.connect(self.language)
         self.lang_changed = False
         # Unit system
         self.units_changed = False
-        self.tempUnit = self.settings.value('Unit')
-        if self.tempUnit == None or self.tempUnit == '':
-            self.tempUnit = 'metric'
+        self.temp_unit = self.settings.value('Unit')
+        if self.temp_unit == None or self.temp_unit == '':
+            self.temp_unit = 'metric'
             self.units_changed = True
-        self.unitsLabel = QLabel(self.tr('Temperature unit'))
-        self.unitsCombo = QComboBox()
-        self.unitsDico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
-        unitsList = sorted(self.unitsDico.values())
-        self.unitsCombo.addItems(unitsList)
-        self.unitsCombo.setCurrentIndex(self.unitsCombo.findText(
-            self.unitsDico[self.tempUnit]))
-        self.unitsCombo.currentIndexChanged.connect(self.units)
+        self.units_label = QLabel(self.tr('Temperature unit'))
+        self.units_combo = QComboBox()
+        self.units_dico = {'metric': '°C', 'imperial': '°F', ' ': '°K'}
+        units_list = sorted(self.units_dico.values())
+        self.units_combo.addItems(units_list)
+        self.units_combo.setCurrentIndex(self.units_combo.findText(
+            self.units_dico[self.temp_unit]))
+        self.units_combo.currentIndexChanged.connect(self.units)
 
         # Interval of updates
         self.interval_label = QLabel(self.tr('Update interval'))
@@ -154,13 +154,13 @@ class MeteoSettings(QDialog):
         self.notifier_changed = False
         #-----------------------
         self.panel = QGridLayout()
-        self.panel.addWidget(self.cityTitle, 0,0)
-        self.panel.addWidget(self.cityCombo, 0,1)
-        self.panel.addWidget(self.cityButton, 0,2)
-        self.panel.addWidget(self.languageLabel, 1,0)
-        self.panel.addWidget(self.languageCombo, 1,1)
-        self.panel.addWidget(self.unitsLabel, 2,0)
-        self.panel.addWidget(self.unitsCombo, 2,1)
+        self.panel.addWidget(self.city_title, 0,0)
+        self.panel.addWidget(self.city_combo, 0,1)
+        self.panel.addWidget(self.city_button, 0,2)
+        self.panel.addWidget(self.language_label, 1,0)
+        self.panel.addWidget(self.language_combo, 1,1)
+        self.panel.addWidget(self.units_label, 2,0)
+        self.panel.addWidget(self.units_combo, 2,1)
         self.panel.addWidget(self.interval_label, 3,0)
         self.panel.addWidget(self.interval_combo, 3,1)
         self.panel.addWidget(self.interval_min, 3,2)
@@ -185,8 +185,8 @@ class MeteoSettings(QDialog):
         self.lang_changed = True
 
     def city_default(self):
-        allitems = [self.cityCombo.itemText(i) for i in range(self.cityCombo.count())]
-        city_name = self.cityCombo.currentText()
+        allitems = [self.city_combo.itemText(i) for i in range(self.city_combo.count())]
+        city_name = self.city_combo.currentText()
         citytosave = city_name.split('_')
         if len(citytosave) < 3:
             return
@@ -319,13 +319,13 @@ class MeteoSettings(QDialog):
             self.settings.setValue('Interval', time)
             logging.debug('Write ' + 'Interval' + str(time))
         if self.lang_changed:
-            lang = self.languageCombo.currentText()
+            lang = self.language_combo.currentText()
             setlang = [key for key, value in self.language_dico.items() if value == lang]
             self.settings.setValue('Language', setlang[0])
             logging.debug('Write ' + 'Language' + str(setlang[0]))
         if self.units_changed:
-            unit = self.unitsCombo.currentText()
-            setUnit = [key for key, value in self.unitsDico.items() if value == unit]
+            unit = self.units_combo.currentText()
+            setUnit = [key for key, value in self.units_dico.items() if value == unit]
             self.settings.setValue('Unit', setUnit[0])
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.notifier_changed:
@@ -337,7 +337,7 @@ class MeteoSettings(QDialog):
 
     def add_cities_incombo(self):
         list_cities = ''
-        self.cityCombo.clear()
+        self.city_combo.clear()
         if self.clear_combo:
             return
         if self.first:
@@ -361,7 +361,7 @@ class MeteoSettings(QDialog):
             if i not in duplicate:
                 duplicate.append(i)
         self.citylist = duplicate[:]
-        self.cityCombo.addItems(self.citylist)
+        self.city_combo.addItems(self.citylist)
         if len(list_cities) > 0:
             maxi = len(max(list_cities, key=len))
-            self.cityCombo.setMinimumSize(maxi*8,23)
+            self.city_combo.setMinimumSize(maxi*8,23)
