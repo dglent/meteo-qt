@@ -185,6 +185,7 @@ class OverviewCity(QDialog):
                 int(date_list[0]),int(date_list[1]),
                 int(date_list[2])).weekday())
             label = QLabel(''+ self.days_dico[day_of_week] + '')
+            label.setToolTip(self.tree[4][d].get('day'))
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel(
