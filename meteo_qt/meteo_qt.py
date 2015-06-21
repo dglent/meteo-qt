@@ -157,7 +157,7 @@ class SystemTrayIcon(QMainWindow):
     @pyqtSlot(str)
     def changecity(self, city):
         cities_list = self.settings.value('CityList')
-        logging.debug('Cities', cities_list)
+        logging.debug('Cities' + str(cities_list))
         if cities_list == None:
             self.empty_cities_list()
         if type(cities_list) is not list:
@@ -377,7 +377,7 @@ class SystemTrayIcon(QMainWindow):
             wind = self.wind[wind]
             wind = self.conditions[wind]
         except:
-            logging.debug('Cannot find localisation string for wind:', wind)
+            logging.debug('Cannot find localisation string for wind:' + str(wind))
             pass
         wind_codes = tree[4][1].get('code')
         try:
@@ -535,7 +535,7 @@ class SystemTrayIcon(QMainWindow):
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
-        logging.debug('write ', what[0], what[1])
+        logging.debug('write ' + str(what[0]) + str(what[1]))
 
     def about(self):
         title = self.tr("""<b>meteo-qt</b> v{0}
