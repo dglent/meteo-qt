@@ -86,11 +86,15 @@ class OverviewCity(QDialog):
         self.speed_unit = ' m/s '
         if wind_unit == 'imperial':
             self.speed_unit = ' mph '
-        self.wind = QLabel('<font color=grey>' + self.weatherdata['Wind'][0] +
-                          self.speed_unit + self.weatherdata['Wind'][1] + ' '+
-                          self.weatherdata['Wind'][2] + '° ' +
-                          self.weatherdata['Wind'][3] + ' ' +
-                          self.weatherdata['Wind'][4] + '<\font>')
+        self.wind = QLabel('None')
+        try:
+            self.wind = QLabel('<font color=grey>' + self.weatherdata['Wind'][0] +
+                               self.speed_unit + self.weatherdata['Wind'][1] + ' '+
+                               self.weatherdata['Wind'][2] + '° ' +
+                               self.weatherdata['Wind'][3] + ' ' +
+                               self.weatherdata['Wind'][4] + '<\font>')
+        except:
+            logging.error('Cannot find weather informations!')
         self.clouds_label = QLabel('<font size="3" color=grey><b>' +
                                   self.tr('Cloudiness') + '<\b><\font>')
         self.clouds_name = QLabel('<font color=grey>' +

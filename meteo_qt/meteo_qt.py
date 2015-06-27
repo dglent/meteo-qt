@@ -267,7 +267,7 @@ class SystemTrayIcon(QMainWindow):
         except:
             self.inerror = True
             e = sys.exc_info()[0]
-            logging.errror('Error: ', e )
+            logging.error('Error: ' + str(e ))
             logging.debug('Try to create the city overview...\nTentatives: ',
                   self.tentatives)
             return 'error'
@@ -383,13 +383,13 @@ class SystemTrayIcon(QMainWindow):
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
-            logging.debug('Cannot find localisation string for wind_codes:', wind_codes)
+            logging.debug('Cannot find localisation string for wind_codes:' +  str(wind_codes))
             pass
         wind_dir = tree[4][1].get('name')
         try:
             wind_dir = self.wind_dir[tree[4][1].get('code')]
         except:
-            logging.debug('Cannot find localisation string for wind_dir:', wind_dir)
+            logging.debug('Cannot find localisation string for wind_dir:' + str(wind_dir))
             pass
         self.city_weather_info = (self.city + ' '  + self.country + ' ' +
                                   self.temp + ' ' + self.meteo)
