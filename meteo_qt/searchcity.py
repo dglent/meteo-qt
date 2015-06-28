@@ -176,18 +176,9 @@ class WorkThread(QThread):
         QThread.__init__(self, parent)
         self.accurate_url = accurate_url
         # Search in any language
-        self.city = self.encode_utf8(city)
+        self.city = city#self.encode_utf8(city)
         self.suffix = suffix
         self.tentatives = 1
-
-    def encode_utf8(self, city):
-        try:
-            city_utf8 = repr(city.encode('utf-8')).replace("b'","").replace(
-            "\\x","%").replace("'","")
-            loging.debug('UTF-8 name :' + city_utf8)
-        except:
-            city_utf8 = city
-        return city_utf8
 
     def run(self):
         error_message = self.tr(
@@ -196,8 +187,12 @@ class WorkThread(QThread):
         if self.city == '':
             return
         try:
+            logging.info(self.accurate_url + repr(self.city.encode('utf-8')).replace(
+                    "b'","").replace("\\x","%").replace("'","") + self.suffix)
+            logging.debug('City before utf8 encode :' + self.accurate_url + self.city + self.suffix)
             req = urllib.request.urlopen(
-                self.accurate_url + self.city + self.suffix, timeout=5)
+                self.accurate_url + repr(self.city.encode('utf-8')).replace(
+                    "b'","").replace("\\x","%").replace("'","") + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
@@ -251,8 +246,9 @@ class WorkThread(QThread):
                     logging.debug('Try to retreive city information...')
                     # Try with a fuzzy city name
                     if city != '':
-                        loging.info('Change search to:' + city)
-                        self.city = self.encode_utf8(city)
+                        logging.info('Change search to:' + city)
+                        self.city = repr(city.encode('utf-8')).replace(
+                    "b'","").replace("\\x","%").replace("'","")
                     self.run()
             if city == '' or country == None:
                 if self.tentatives == 10:

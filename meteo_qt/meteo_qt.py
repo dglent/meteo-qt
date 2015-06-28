@@ -457,7 +457,7 @@ class SystemTrayIcon(QMainWindow):
 
     def restore_city(self):
         if self.temporary_city_status:
-            logging.debug('Restore the default settings (city)',
+            logging.debug('Restore the default settings (city)' +
                   'Forget the temporary city...')
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
