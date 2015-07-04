@@ -27,26 +27,26 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+        <translation>Юрґен &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] переклад німецькою
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            &lt;p&gt;Дімітріос Ґлентадакіс &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] переклад грецькою
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
             [es] переклад іспанською
             &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-[fr] Переклад французькою
+            [fr] переклад французькою
             &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
             [fr] переклад французькою, проект
             &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
             [pl] переклад польською
-            &lt;p&gt;Артем Воротніков &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-[ru] переклад російською
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] переклад російською
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-[tr] переклад турецькою
-&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [tr] переклад турецькою
+            &lt;p&gt;Юрій Чорноіван &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
             [uk] переклад українською
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] переклад китайською (традиційною)
+            [zh_TW] переклад китайською традиційною
             &lt;p&gt;pmav99&lt;br/&gt;
             проект</translation>
     </message>
@@ -130,212 +130,212 @@
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="settings.py" line="42"/>
+        <location filename="settings.py" line="41"/>
         <source>City</source>
         <translation>Місто</translation>
     </message>
     <message>
-        <location filename="settings.py" line="45"/>
+        <location filename="settings.py" line="44"/>
         <source>Click to edit the cities list</source>
         <translation>Натисніть, щоб змінити список міст</translation>
     </message>
     <message>
-        <location filename="settings.py" line="48"/>
+        <location filename="settings.py" line="47"/>
         <source>Language</source>
         <translation>Мова</translation>
     </message>
     <message>
-        <location filename="settings.py" line="50"/>
+        <location filename="settings.py" line="49"/>
         <source>The application has to be restared to apply the language setting</source>
         <translation>Для застосування перекладу програму слід перезапустити</translation>
     </message>
     <message>
-        <location filename="settings.py" line="52"/>
+        <location filename="settings.py" line="51"/>
         <source>Bulgarian</source>
         <translation>болгарська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="53"/>
+        <location filename="settings.py" line="52"/>
         <source>Catalan</source>
         <translation>каталонська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="54"/>
+        <location filename="settings.py" line="53"/>
         <source>Czech</source>
         <translation>чеська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="55"/>
+        <location filename="settings.py" line="54"/>
         <source>Danish</source>
         <translation>данська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="56"/>
+        <location filename="settings.py" line="55"/>
         <source>German</source>
         <translation>німецька</translation>
     </message>
     <message>
-        <location filename="settings.py" line="57"/>
+        <location filename="settings.py" line="56"/>
         <source>Greek</source>
         <translation>грецька</translation>
     </message>
     <message>
-        <location filename="settings.py" line="58"/>
+        <location filename="settings.py" line="57"/>
         <source>English</source>
         <translation>англійська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="59"/>
+        <location filename="settings.py" line="58"/>
         <source>Spanish</source>
         <translation>іспанська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="60"/>
+        <location filename="settings.py" line="59"/>
         <source>Finnish</source>
         <translation>фінська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="61"/>
+        <location filename="settings.py" line="60"/>
         <source>French</source>
         <translation>французька</translation>
     </message>
     <message>
-        <location filename="settings.py" line="62"/>
+        <location filename="settings.py" line="61"/>
         <source>Hebrew</source>
         <translation>іврит</translation>
     </message>
     <message>
-        <location filename="settings.py" line="63"/>
+        <location filename="settings.py" line="62"/>
         <source>Croatian</source>
         <translation>хорватська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="64"/>
+        <location filename="settings.py" line="63"/>
         <source>Hungarian</source>
         <translation>угорська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="65"/>
+        <location filename="settings.py" line="64"/>
         <source>Italian</source>
         <translation>італійська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="66"/>
+        <location filename="settings.py" line="65"/>
         <source>Japanese</source>
         <translation>японська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="67"/>
+        <location filename="settings.py" line="66"/>
         <source>Lithuanian</source>
         <translation>литовська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="68"/>
+        <location filename="settings.py" line="67"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>норвезька (букмол)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="69"/>
+        <location filename="settings.py" line="68"/>
         <source>Dutch</source>
         <translation>голландська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="70"/>
+        <location filename="settings.py" line="69"/>
         <source>Polish</source>
         <translation>польська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="71"/>
+        <location filename="settings.py" line="70"/>
         <source>Portuguese</source>
         <translation>португальська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="72"/>
+        <location filename="settings.py" line="71"/>
         <source>Brazil Portuguese</source>
         <translation>бразильська португальська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="73"/>
+        <location filename="settings.py" line="72"/>
         <source>Romanian</source>
         <translation>румунська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="74"/>
+        <location filename="settings.py" line="73"/>
         <source>Russian</source>
         <translation>російська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="75"/>
+        <location filename="settings.py" line="74"/>
         <source>Slovak</source>
         <translation>словацька</translation>
     </message>
     <message>
-        <location filename="settings.py" line="76"/>
+        <location filename="settings.py" line="75"/>
         <source>Swedish</source>
         <translation>шведська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="77"/>
+        <location filename="settings.py" line="76"/>
         <source>Turkish</source>
         <translation>турецька</translation>
     </message>
     <message>
-        <location filename="settings.py" line="78"/>
+        <location filename="settings.py" line="77"/>
         <source>Ukrainian</source>
         <translation>українська</translation>
     </message>
     <message>
-        <location filename="settings.py" line="79"/>
+        <location filename="settings.py" line="78"/>
         <source>Chinese Traditional</source>
         <translation>китайська (традиційна)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="80"/>
+        <location filename="settings.py" line="79"/>
         <source>Chinese Simplified</source>
         <translation>китайська (спрощена)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="93"/>
+        <location filename="settings.py" line="97"/>
         <source>Temperature unit</source>
         <translation>Одиниця виміру температури</translation>
     </message>
     <message>
-        <location filename="settings.py" line="103"/>
+        <location filename="settings.py" line="107"/>
         <source>Update interval</source>
         <translation>Інтервал оновлення</translation>
     </message>
     <message>
-        <location filename="settings.py" line="104"/>
+        <location filename="settings.py" line="108"/>
         <source>minutes</source>
         <translation>хвилин</translation>
     </message>
     <message>
-        <location filename="settings.py" line="126"/>
+        <location filename="settings.py" line="130"/>
         <source>Launch at startup</source>
         <translation>Запускати під час завантаження</translation>
     </message>
     <message>
-        <location filename="settings.py" line="134"/>
+        <location filename="settings.py" line="138"/>
         <source>Font colour in the tray</source>
         <translation>Колір шрифту для лотка</translation>
     </message>
     <message>
-        <location filename="settings.py" line="140"/>
+        <location filename="settings.py" line="144"/>
         <source>Reset</source>
         <translation>Скинути</translation>
     </message>
     <message>
-        <location filename="settings.py" line="141"/>
+        <location filename="settings.py" line="145"/>
         <source>Reset font colour to system default</source>
         <translation>Скинути колір шрифту до типового системного</translation>
     </message>
     <message>
-        <location filename="settings.py" line="145"/>
+        <location filename="settings.py" line="149"/>
         <source>Notification on weather update</source>
         <translation>Сповіщення щодо оновлення прогнозу</translation>
     </message>
     <message>
-        <location filename="settings.py" line="174"/>
+        <location filename="settings.py" line="178"/>
         <source>Meteo-qt Configuration</source>
         <translation>Налаштування Meteo-qt</translation>
     </message>
@@ -383,47 +383,47 @@
         <translation>Вітер</translation>
     </message>
     <message>
-        <location filename="overview.py" line="94"/>
+        <location filename="overview.py" line="98"/>
         <source>Cloudiness</source>
         <translation>Хмарність</translation>
     </message>
     <message>
-        <location filename="overview.py" line="98"/>
+        <location filename="overview.py" line="102"/>
         <source>Pressure</source>
         <translation>Тиск</translation>
     </message>
     <message>
-        <location filename="overview.py" line="104"/>
+        <location filename="overview.py" line="108"/>
         <source>Humidity</source>
         <translation>Вологість</translation>
     </message>
     <message>
-        <location filename="overview.py" line="110"/>
+        <location filename="overview.py" line="114"/>
         <source>Sunrise</source>
         <translation>Схід сонця</translation>
     </message>
     <message>
-        <location filename="overview.py" line="112"/>
+        <location filename="overview.py" line="116"/>
         <source>Sunset</source>
         <translation>Захід сонця</translation>
     </message>
     <message>
-        <location filename="overview.py" line="151"/>
+        <location filename="overview.py" line="155"/>
         <source>Weather status</source>
         <translation>Погода</translation>
     </message>
     <message>
-        <location filename="overview.py" line="197"/>
+        <location filename="overview.py" line="202"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мін. та макс. температура цього дня</translation>
     </message>
     <message>
-        <location filename="overview.py" line="260"/>
+        <location filename="overview.py" line="265"/>
         <source>snow</source>
         <translation>сніг</translation>
     </message>
     <message>
-        <location filename="overview.py" line="261"/>
+        <location filename="overview.py" line="266"/>
         <source>rain</source>
         <translation>дощ</translation>
     </message>
@@ -433,11 +433,16 @@
     <message>
         <location filename="searchcity.py" line="32"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"></translation>
+        <translation>Почніть вводити назву міста…</translation>
     </message>
 </context>
 <context>
     <name>SearchCity</name>
+    <message>
+        <location filename="searchcity.py" line="23"/>
+        <source>Searching...</source>
+        <translation>Шукаємо…</translation>
+    </message>
     <message>
         <location filename="searchcity.py" line="44"/>
         <source>&amp;Ok</source>
@@ -449,9 +454,9 @@
         <translation>&amp;Скасувати</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="23"/>
-        <source>Searching...</source>
-        <translation>Шукаємо…</translation>
+        <location filename="searchcity.py" line="109"/>
+        <source>Please type more than three letters</source>
+        <translation>Будь ласка, вкажіть хоча б три літери</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="163"/>
@@ -467,16 +472,6 @@
         <location filename="searchcity.py" line="167"/>
         <source>Found {0} cities</source>
         <translation>Знайдено {0} міст</translation>
-    </message>
-    <message>
-        <location filename="searchcity.py" line="29"/>
-        <source>Search location...</source>
-        <translation type="obsolete">Шукати місце…</translation>
-    </message>
-    <message>
-        <location filename="searchcity.py" line="109"/>
-        <source>Please type more than three letters</source>
-        <translation>Будь ласка, вкажіть хоча б три літери</translation>
     </message>
 </context>
 <context>
@@ -517,14 +512,14 @@
         <translation>Шукаємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="204"/>
-        <source>Fetching weather data ...</source>
-        <translation>Отримуємо дані щодо погоди…</translation>
-    </message>
-    <message>
         <location filename="meteo_qt.py" line="190"/>
         <source>Empty list</source>
         <translation>Порожній список</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="204"/>
+        <source>Fetching weather data ...</source>
+        <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="222"/>
@@ -540,6 +535,11 @@
         <location filename="meteo_qt.py" line="235"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Наведіть вказівник на піктограму, клацніть правою кнопкою і виберіть пункт «Параметри».</translation>
+    </message>
+    <message>
+        <location filename="meteo_qt.py" line="316"/>
+        <source>Please wait, trying to find data...</source>
+        <translation>Будь ласка, зачекайте, намагаємося знайти дані…</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="345"/>
@@ -591,58 +591,6 @@
                         Transifex&lt;/a&gt;.
                         &lt;p&gt;Якщо ви хочете повідомити про помилку у програмі або запропонувати нову можливість, скористайтеся системою сповіщення про вади &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="316"/>
-        <source>Please wait, trying to find data...</source>
-        <translation>Будь ласка, зачекайте, намагаємося знайти дані…</translation>
-    </message>
-    <message encoding="UTF-8">
-        <location filename="meteo_qt.py" line="569"/>
-        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] переклад німецькою
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] переклад грецькою
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] переклад іспанською
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-[fr] Переклад французькою
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] переклад французькою, проект
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] переклад польською
-            &lt;p&gt;Артем Воротніков &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-[ru] переклад російською
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-[tr] переклад турецькою
-&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] переклад українською
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] переклад китайською (традиційною)
-            &lt;p&gt;pmav99&lt;br/&gt;
-            проект</translation>
     </message>
 </context>
 <context>
@@ -1166,27 +1114,27 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="194"/>
+        <location filename="searchcity.py" line="185"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Помилка у даних. Будь ласка, повторіть спробу пізніше або змініть назву міста</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="219"/>
+        <location filename="searchcity.py" line="205"/>
+        <source>Please wait, searching...</source>
+        <translation>Будь ласка, зачекайте, шукаємо…</translation>
+    </message>
+    <message>
+        <location filename="searchcity.py" line="214"/>
         <source>Error: </source>
         <translation>Помилка:</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="219"/>
+        <location filename="searchcity.py" line="214"/>
         <source>
 Try again later</source>
         <translation>
 Повторіть спробу пізніше</translation>
-    </message>
-    <message>
-        <location filename="searchcity.py" line="210"/>
-        <source>Please wait, searching...</source>
-        <translation>Будь ласка, зачекайте, шукаємо…</translation>
     </message>
 </context>
 </TS>

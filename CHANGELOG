@@ -1,3 +1,11 @@
+0.7.0
+fix crash due invalid wind data
+logging
+tooltip with the date in days forecast
+Improve fuzzy search in utf-8
+Fix memory leak after multiple opens of the dialogue
+loading tray animated icon
+
 0.6.0
 - Search city by typing
 - Handling timeout in weather informations download
