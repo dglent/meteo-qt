@@ -94,7 +94,7 @@ class OverviewCity(QDialog):
                                self.weatherdata['Wind'][3] + ' ' +
                                self.weatherdata['Wind'][4] + '<\font>')
         except:
-            logging.error('Cannot find wind informations!')
+            logging.error('Cannot find wind informations:\n'+ str(self.weatherdata['Wind']))
         self.clouds_label = QLabel('<font size="3" color=grey><b>' +
                                   self.tr('Cloudiness') + '<\b><\font>')
         self.clouds_name = QLabel('<font color=grey>' +

@@ -379,15 +379,15 @@ class SystemTrayIcon(QMainWindow):
         except:
             logging.debug('Cannot find localisation string for wind:' + str(wind))
             pass
-        wind_codes = tree[4][1].get('code')
+        wind_codes = tree[4][2].get('code')
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
             logging.debug('Cannot find localisation string for wind_codes:' +  str(wind_codes))
             pass
-        wind_dir = tree[4][1].get('name')
+        wind_dir = tree[4][2].get('name')
         try:
-            wind_dir = self.wind_dir[tree[4][1].get('code')]
+            wind_dir = self.wind_dir[tree[4][2].get('code')]
         except:
             logging.debug('Cannot find localisation string for wind_dir:' + str(wind_dir))
             pass
@@ -401,7 +401,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Meteo'] = self.meteo
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
         self.weatherDataDico['Wind'] = (
-            tree[4][0].get('value'), wind + '<br/>', tree[4][1].get('value'),
+            tree[4][0].get('value'), wind + '<br/>', tree[4][2].get('value'),
             wind_codes, wind_dir)
         self.weatherDataDico['Clouds'] = (clouds + '<br/>' + clouds_percent)
         self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
