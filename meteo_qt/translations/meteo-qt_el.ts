@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -27,7 +26,28 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Ελληνική μετάφραση
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Ισπανική μετάφραση
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση, έργο
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Πολωνική μετάφραση
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Ρωσική μετάφραση
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Τουρκική μετάφραση
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ουκρανική μετάφραση
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Έργο</translation>
     </message>
 </context>
 <context>
@@ -108,212 +128,212 @@
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="settings.py" line="41"/>
+        <location filename="settings.py" line="42"/>
         <source>City</source>
         <translation>Πόλη</translation>
     </message>
     <message>
-        <location filename="settings.py" line="44"/>
+        <location filename="settings.py" line="45"/>
         <source>Click to edit the cities list</source>
         <translation>Κάντε κλικ για να επεξεργαστείτε τη λίστα των πόλεων</translation>
     </message>
     <message>
-        <location filename="settings.py" line="47"/>
+        <location filename="settings.py" line="48"/>
         <source>Language</source>
         <translation>Γλώσσα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="49"/>
+        <location filename="settings.py" line="50"/>
         <source>The application has to be restared to apply the language setting</source>
         <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψη η ρύθμιση της γλώσσας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="51"/>
+        <location filename="settings.py" line="52"/>
         <source>Bulgarian</source>
         <translation>Βουλγαρικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="52"/>
+        <location filename="settings.py" line="53"/>
         <source>Catalan</source>
         <translation>Καταλανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="53"/>
+        <location filename="settings.py" line="54"/>
         <source>Czech</source>
         <translation>Τσέχικα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="54"/>
+        <location filename="settings.py" line="55"/>
         <source>Danish</source>
         <translation>Δανέζικα</translation>
     </message>
     <message>
-        <location filename="settings.py" line="55"/>
+        <location filename="settings.py" line="56"/>
         <source>German</source>
         <translation>Γερμανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="56"/>
+        <location filename="settings.py" line="57"/>
         <source>Greek</source>
         <translation>Ελληνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="57"/>
+        <location filename="settings.py" line="58"/>
         <source>English</source>
         <translation>Αγγλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="58"/>
+        <location filename="settings.py" line="59"/>
         <source>Spanish</source>
         <translation>Ισπανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="59"/>
+        <location filename="settings.py" line="60"/>
         <source>Finnish</source>
         <translation>Φιλανδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="60"/>
+        <location filename="settings.py" line="61"/>
         <source>French</source>
         <translation>Γαλλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="61"/>
+        <location filename="settings.py" line="62"/>
         <source>Hebrew</source>
         <translation>Εβραϊκά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="62"/>
+        <location filename="settings.py" line="63"/>
         <source>Croatian</source>
         <translation>Κροατικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="63"/>
+        <location filename="settings.py" line="64"/>
         <source>Hungarian</source>
         <translation>Ουγγρικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="64"/>
+        <location filename="settings.py" line="65"/>
         <source>Italian</source>
         <translation>Ιταλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="65"/>
+        <location filename="settings.py" line="66"/>
         <source>Japanese</source>
         <translation>Ιαπωνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="66"/>
+        <location filename="settings.py" line="67"/>
         <source>Lithuanian</source>
         <translation>Λιθουανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="67"/>
+        <location filename="settings.py" line="68"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Νορβηγικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="68"/>
+        <location filename="settings.py" line="69"/>
         <source>Dutch</source>
         <translation>Ολλανδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="69"/>
+        <location filename="settings.py" line="70"/>
         <source>Polish</source>
         <translation>Πολωνικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="70"/>
+        <location filename="settings.py" line="71"/>
         <source>Portuguese</source>
         <translation>Πορτογαλικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="71"/>
+        <location filename="settings.py" line="72"/>
         <source>Brazil Portuguese</source>
         <translation>Πορτογαλικά της Βραζιλίας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="72"/>
+        <location filename="settings.py" line="73"/>
         <source>Romanian</source>
         <translation>Ρουμανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="73"/>
+        <location filename="settings.py" line="74"/>
         <source>Russian</source>
         <translation>Ρωσικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="74"/>
+        <location filename="settings.py" line="75"/>
         <source>Slovak</source>
         <translation>Σλοβακικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="75"/>
+        <location filename="settings.py" line="76"/>
         <source>Swedish</source>
         <translation>Σουηδικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="76"/>
+        <location filename="settings.py" line="77"/>
         <source>Turkish</source>
         <translation>Τουρκικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="77"/>
+        <location filename="settings.py" line="78"/>
         <source>Ukrainian</source>
         <translation>Ουκρανικά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="78"/>
+        <location filename="settings.py" line="79"/>
         <source>Chinese Traditional</source>
         <translation>Κινέζικα παραδοσιακά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="79"/>
+        <location filename="settings.py" line="80"/>
         <source>Chinese Simplified</source>
         <translation>Κινέζικα απλά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="97"/>
+        <location filename="settings.py" line="93"/>
         <source>Temperature unit</source>
         <translation>Μονάδα θερμοκρασίας</translation>
     </message>
     <message>
-        <location filename="settings.py" line="107"/>
+        <location filename="settings.py" line="103"/>
         <source>Update interval</source>
         <translation>Χρονικό διάστημα ενημέρωσης</translation>
     </message>
     <message>
-        <location filename="settings.py" line="108"/>
+        <location filename="settings.py" line="104"/>
         <source>minutes</source>
         <translation>λεπτά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="130"/>
+        <location filename="settings.py" line="126"/>
         <source>Launch at startup</source>
         <translation>Εκτέλεση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="settings.py" line="138"/>
+        <location filename="settings.py" line="134"/>
         <source>Font colour in the tray</source>
         <translation>Χρώμα γραμματοσειράς στο πλαίσιο συστήματος</translation>
     </message>
     <message>
-        <location filename="settings.py" line="144"/>
+        <location filename="settings.py" line="140"/>
         <source>Reset</source>
         <translation>Επαναφορά</translation>
     </message>
     <message>
-        <location filename="settings.py" line="145"/>
+        <location filename="settings.py" line="141"/>
         <source>Reset font colour to system default</source>
         <translation>Επαναφορά του χρώματος της γραμματοσειράς στην εξ ορισμού του συστήματος</translation>
     </message>
     <message>
-        <location filename="settings.py" line="149"/>
+        <location filename="settings.py" line="145"/>
         <source>Notification on weather update</source>
         <translation>Ειδοποίηση κατά την ενημέρωση των καιρικών συνθηκών</translation>
     </message>
     <message>
-        <location filename="settings.py" line="178"/>
+        <location filename="settings.py" line="174"/>
         <source>Meteo-qt Configuration</source>
         <translation>Διαμόρφωση meteo-qt</translation>
     </message>
@@ -361,47 +381,47 @@
         <translation>Άνεμος</translation>
     </message>
     <message>
-        <location filename="overview.py" line="98"/>
+        <location filename="overview.py" line="94"/>
         <source>Cloudiness</source>
         <translation>Νέφωση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="102"/>
+        <location filename="overview.py" line="98"/>
         <source>Pressure</source>
         <translation>Πίεση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="108"/>
+        <location filename="overview.py" line="104"/>
         <source>Humidity</source>
         <translation>Υγρασία</translation>
     </message>
     <message>
-        <location filename="overview.py" line="114"/>
+        <location filename="overview.py" line="110"/>
         <source>Sunrise</source>
         <translation>Ανατολή</translation>
     </message>
     <message>
-        <location filename="overview.py" line="116"/>
+        <location filename="overview.py" line="112"/>
         <source>Sunset</source>
         <translation>Δύση</translation>
     </message>
     <message>
-        <location filename="overview.py" line="155"/>
+        <location filename="overview.py" line="151"/>
         <source>Weather status</source>
         <translation>Πληροφορίες καιρού</translation>
     </message>
     <message>
-        <location filename="overview.py" line="202"/>
+        <location filename="overview.py" line="197"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="overview.py" line="265"/>
+        <location filename="overview.py" line="260"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="overview.py" line="266"/>
+        <location filename="overview.py" line="261"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
@@ -411,7 +431,7 @@
     <message>
         <location filename="searchcity.py" line="32"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ξεκινήστε να πληκτρολογείτε την πόλη...</translation>
     </message>
 </context>
 <context>
@@ -1092,24 +1112,24 @@
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="searchcity.py" line="185"/>
+        <location filename="searchcity.py" line="194"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Σφάλμα δεδομένων, παρακαλώ προσπαθήστε ξανά αργότερα
 ή δοκιμάστε να αλλάξετε την πόλη</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="205"/>
+        <location filename="searchcity.py" line="210"/>
         <source>Please wait, searching...</source>
         <translation>Παρακαλώ περιμένετε, γίνεται αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="214"/>
+        <location filename="searchcity.py" line="219"/>
         <source>Error: </source>
         <translation>Σφάλμα: </translation>
     </message>
     <message>
-        <location filename="searchcity.py" line="214"/>
+        <location filename="searchcity.py" line="219"/>
         <source>
 Try again later</source>
         <translation>
