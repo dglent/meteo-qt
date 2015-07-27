@@ -209,7 +209,7 @@ class SystemTrayIcon(QMainWindow):
                 self.overviewcity.close()
             except:
                 e = sys.exc_info()[0]
-                logging.error('Error closing overviewcity: ', e )
+                logging.error('Error closing overviewcity: ' + str(e))
                 pass
             self.timer.singleShot(2000, self.firsttime)
             self.id_ = ''
@@ -362,7 +362,7 @@ class SystemTrayIcon(QMainWindow):
         try:
             self.meteo = self.conditions[meteo_condition]
         except:
-            logging.debug('Cannot find localisation string for meteo_condition:', meteo_condition)
+            logging.debug('Cannot find localisation string for meteo_condition:' + str(meteo_condition))
             pass
         clouds = tree[5].get('name')
         clouds_percent = tree[5].get('value') + '%'
@@ -370,7 +370,7 @@ class SystemTrayIcon(QMainWindow):
             clouds = self.clouds[clouds]
             clouds = self.conditions[clouds]
         except:
-            logging.debug('Cannot find localisation string for clouds:', clouds)
+            logging.debug('Cannot find localisation string for clouds:' + str(clouds))
             pass
         wind = tree[4][0].get('name').lower()
         try:
@@ -716,6 +716,8 @@ def main():
         settings.setValue('Logging/Level', 'INFO')
 
     log_filename = os.path.dirname(settings.fileName())
+    if not os.path.exists(log_filename):
+        os.makedirs(log_filename)
     log_filename = log_filename + '/meteo-qt.log'
 
     logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s - %(module)s - %(name)s',
