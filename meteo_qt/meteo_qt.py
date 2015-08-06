@@ -430,7 +430,8 @@ class SystemTrayIcon(QMainWindow):
         self.traycolor = self.settings.value('TrayColor') or ''
         pt = QPainter(icon)
         pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
-        pt.setFont(QFont('sans-sertif', self.wIcon.width()*0.36,52))
+        self.fontsize = self.settings.value('FontSize') or '18'
+        pt.setFont(QFont('sans-sertif', int(self.fontsize)))
         pt.setPen(QColor(self.traycolor))
         pt.drawText(icon.rect(), Qt.AlignBottom, str(self.temp))
         pt.end()
@@ -494,10 +495,13 @@ class SystemTrayIcon(QMainWindow):
         unit = self.settings.value('Unit')
         interval = self.settings.value('Interval')
         traycolor = self.settings.value('TrayColor')
+        fontsize = self.settings.value('FontSize')
         # Check if update is needed
         if traycolor == None:
             traycolor = ''
         if self.traycolor != traycolor:
+            self.tray()
+        if self.fontsize != fontsize:
             self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and

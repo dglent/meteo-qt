@@ -1,8 +1,10 @@
-from PyQt5.QtCore import pyqtSignal, QSettings, QLocale, Qt, QSize
+from PyQt5.QtCore import (
+    pyqtSignal, QSettings, QLocale, Qt, QSize, QCoreApplication
+    )
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QComboBox, QLabel, QPushButton, QHBoxLayout,
-    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog
+    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog, QSpinBox
     )
 import os
 import logging
@@ -152,7 +154,19 @@ class MeteoSettings(QDialog):
         self.notifier_checkbox.setChecked(notifier_bool)
         self.notifier_checkbox.stateChanged.connect(self.notifier)
         self.notifier_changed = False
-        #-----------------------
+        # Font size
+        fontsize = self.settings.value('FontSize') or '18'
+        self.fontsize_label = QLabel(QCoreApplication.translate(
+            "Settings dialog","Font size in tray",
+            "Setting for the font size of the temperature in the tray icon"))
+        self.fontsize_spinbox = QSpinBox()
+        self.fontsize_spinbox.setRange(12, 25)
+        self.fontsize_spinbox.setValue(int(fontsize))
+        if fontsize == None or fontsize == '':
+            self.settings.setValue('FontSize', '18')
+        self.fontsize_changed = False
+        self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
+        #----------------------------------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0,0)
         self.panel.addWidget(self.city_combo, 0,1)
@@ -171,6 +185,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.temp_color_resetButton, 5,2)
         self.panel.addWidget(self.notifier_label, 6,0)
         self.panel.addWidget(self.notifier_checkbox, 6,1)
+        self.panel.addWidget(self.fontsize_label, 7,0)
+        self.panel.addWidget(self.fontsize_spinbox, 7,1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -288,6 +304,15 @@ class MeteoSettings(QDialog):
             self.settings.setValue('Notifications', 'False')
             logging.debug('Write: Notifications = False')
 
+    def fontsize_change(self, size):
+        self.fontsize_changed = True
+        self.fontsize_value = size
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def fontsize_apply(self):
+        logging.debug('Apply fontsize: ' + str(self.fontsize_value))
+        self.settings.setValue('FontSize', str(self.fontsize_value))
+
     def apply_settings(self):
         self.accepted()
         self.applied_signal.emit()
@@ -330,6 +355,8 @@ class MeteoSettings(QDialog):
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.notifier_changed:
             self.notifier_apply()
+        if self.fontsize_changed:
+            self.fontsize_apply()
 
     def accept(self):
         self.accepted()
