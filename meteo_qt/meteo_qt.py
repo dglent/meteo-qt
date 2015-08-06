@@ -672,7 +672,7 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn('5 secondes timeout, new tentative: ', self.tentatives)
+                logging.warn('5 secondes timeout, new tentative: ' + str(self.tentatives))
                 self.run()
         logging.debug('Download thread done')
 
