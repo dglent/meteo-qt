@@ -1,8 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="meteo_qt.py" line="573"/>
+        <location filename="meteo_qt.py" line="585"/>
         <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -119,7 +120,7 @@ Projekt</translation>
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="666"/>
+        <location filename="meteo_qt.py" line="678"/>
         <source>Error :
 </source>
         <translation>Fehler :
@@ -129,212 +130,212 @@ Projekt</translation>
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="settings.py" line="41"/>
+        <location filename="settings.py" line="43"/>
         <source>City</source>
         <translation>Stadt</translation>
     </message>
     <message>
-        <location filename="settings.py" line="44"/>
+        <location filename="settings.py" line="46"/>
         <source>Click to edit the cities list</source>
         <translation>Klicke um die Städteliste zu bearbeiten</translation>
     </message>
     <message>
-        <location filename="settings.py" line="47"/>
+        <location filename="settings.py" line="49"/>
         <source>Language</source>
         <translation>Sprache</translation>
     </message>
     <message>
-        <location filename="settings.py" line="49"/>
+        <location filename="settings.py" line="51"/>
         <source>The application has to be restared to apply the language setting</source>
         <translation>Diese Anwendung muss neu gestartet werden um die Spracheinstellung zu übernehmen</translation>
     </message>
     <message>
-        <location filename="settings.py" line="51"/>
+        <location filename="settings.py" line="53"/>
         <source>Bulgarian</source>
         <translation>Bulgarisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="52"/>
+        <location filename="settings.py" line="54"/>
         <source>Catalan</source>
         <translation>Katalanisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="53"/>
+        <location filename="settings.py" line="55"/>
         <source>Czech</source>
         <translation>Tschechisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="54"/>
+        <location filename="settings.py" line="56"/>
         <source>Danish</source>
         <translation>Dänisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="55"/>
+        <location filename="settings.py" line="57"/>
         <source>German</source>
         <translation>Deutsch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="56"/>
+        <location filename="settings.py" line="58"/>
         <source>Greek</source>
         <translation>Griechisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="57"/>
+        <location filename="settings.py" line="59"/>
         <source>English</source>
         <translation>Englisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="58"/>
+        <location filename="settings.py" line="60"/>
         <source>Spanish</source>
         <translation>Spanisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="59"/>
+        <location filename="settings.py" line="61"/>
         <source>Finnish</source>
         <translation>Finnisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="60"/>
+        <location filename="settings.py" line="62"/>
         <source>French</source>
         <translation>Französisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="61"/>
+        <location filename="settings.py" line="63"/>
         <source>Hebrew</source>
         <translation>Hebräisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="62"/>
+        <location filename="settings.py" line="64"/>
         <source>Croatian</source>
         <translation>Kroatisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="63"/>
+        <location filename="settings.py" line="65"/>
         <source>Hungarian</source>
         <translation>Ungarisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="64"/>
+        <location filename="settings.py" line="66"/>
         <source>Italian</source>
         <translation>Italienisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="65"/>
+        <location filename="settings.py" line="67"/>
         <source>Japanese</source>
         <translation>Japanisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="66"/>
+        <location filename="settings.py" line="68"/>
         <source>Lithuanian</source>
         <translation>Litauisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="67"/>
+        <location filename="settings.py" line="69"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Norwegisch (Bokmaal)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="68"/>
+        <location filename="settings.py" line="70"/>
         <source>Dutch</source>
         <translation>Niederländisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="69"/>
+        <location filename="settings.py" line="71"/>
         <source>Polish</source>
         <translation>Polnisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="70"/>
+        <location filename="settings.py" line="72"/>
         <source>Portuguese</source>
         <translation>Portugiesisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="71"/>
+        <location filename="settings.py" line="73"/>
         <source>Brazil Portuguese</source>
         <translation>Brasilianisches Portugiesisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="72"/>
+        <location filename="settings.py" line="74"/>
         <source>Romanian</source>
         <translation>Rumänisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="73"/>
+        <location filename="settings.py" line="75"/>
         <source>Russian</source>
         <translation>Russisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="74"/>
+        <location filename="settings.py" line="76"/>
         <source>Slovak</source>
         <translation>Slowakisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="75"/>
+        <location filename="settings.py" line="77"/>
         <source>Swedish</source>
         <translation>Schwedisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="76"/>
+        <location filename="settings.py" line="78"/>
         <source>Turkish</source>
         <translation>Türkisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="77"/>
+        <location filename="settings.py" line="79"/>
         <source>Ukrainian</source>
         <translation>Ukrainisch</translation>
     </message>
     <message>
-        <location filename="settings.py" line="78"/>
+        <location filename="settings.py" line="80"/>
         <source>Chinese Traditional</source>
         <translation>Chinesisch (traditionell)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="79"/>
+        <location filename="settings.py" line="81"/>
         <source>Chinese Simplified</source>
         <translation>Chinesisch (vereinfacht)</translation>
     </message>
     <message>
-        <location filename="settings.py" line="97"/>
+        <location filename="settings.py" line="99"/>
         <source>Temperature unit</source>
         <translation>Temperatureinheit</translation>
     </message>
     <message>
-        <location filename="settings.py" line="107"/>
+        <location filename="settings.py" line="108"/>
         <source>Update interval</source>
         <translation>Aktualisierungsintervall</translation>
     </message>
     <message>
-        <location filename="settings.py" line="108"/>
+        <location filename="settings.py" line="109"/>
         <source>minutes</source>
         <translation>Minuten</translation>
     </message>
     <message>
-        <location filename="settings.py" line="130"/>
+        <location filename="settings.py" line="131"/>
         <source>Launch at startup</source>
         <translation>Bei Systemstart laden</translation>
     </message>
     <message>
-        <location filename="settings.py" line="138"/>
+        <location filename="settings.py" line="139"/>
         <source>Font colour in the tray</source>
         <translation>Schriftfarbe in der Seitenleiste</translation>
     </message>
     <message>
-        <location filename="settings.py" line="144"/>
+        <location filename="settings.py" line="145"/>
         <source>Reset</source>
         <translation>Zurücksetzen</translation>
     </message>
     <message>
-        <location filename="settings.py" line="145"/>
+        <location filename="settings.py" line="146"/>
         <source>Reset font colour to system default</source>
         <translation>Schriftfarbe in der Seitenleiste zurücksetzen</translation>
     </message>
     <message>
-        <location filename="settings.py" line="149"/>
+        <location filename="settings.py" line="150"/>
         <source>Notification on weather update</source>
         <translation>Benachrichtigen bei Wetteraktualiserungen</translation>
     </message>
     <message>
-        <location filename="settings.py" line="178"/>
+        <location filename="settings.py" line="219"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Konfiguration</translation>
     </message>
@@ -474,6 +475,40 @@ Projekt</translation>
     </message>
 </context>
 <context>
+    <name>Settings dialog</name>
+    <message>
+        <location filename="settings.py" line="158"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&amp;text</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="163"/>
+        <source>Icon &amp; temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="166"/>
+        <source>Icon</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="169"/>
+        <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="settings.py" line="183"/>
+        <source>Font size in tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SystemTrayIcon</name>
     <message>
         <location filename="meteo_qt.py" line="70"/>
@@ -546,12 +581,12 @@ Projekt</translation>
         <translation>meteo-qt: Kann Daten nicht finden!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="542"/>
+        <location filename="meteo_qt.py" line="554"/>
         <source>Fetching weather data...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="550"/>
+        <location filename="meteo_qt.py" line="562"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -560,7 +595,7 @@ Projekt</translation>
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="556"/>
+        <location filename="meteo_qt.py" line="568"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
