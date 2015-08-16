@@ -103,7 +103,6 @@ class MeteoSettings(QDialog):
         self.units_combo.setCurrentIndex(self.units_combo.findText(
             self.units_dico[self.temp_unit]))
         self.units_combo.currentIndexChanged.connect(self.units)
-
         # Interval of updates
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
@@ -154,13 +153,37 @@ class MeteoSettings(QDialog):
         self.notifier_checkbox.setChecked(notifier_bool)
         self.notifier_checkbox.stateChanged.connect(self.notifier)
         self.notifier_changed = False
+        # Icon & Temp
+        self.tray_icon_temp_label = QLabel(QCoreApplication.translate(
+            "Settings dialog","System tray icon",
+            '''Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&text'''))
+        self.tray_icon_combo = QComboBox()
+        tray_icon_temp = QCoreApplication.translate(
+            "Settings dialog","Icon & temperature",
+            'Setting to choose the type of the icon on the tray')
+        tray_icon = QCoreApplication.translate(
+            "Settings dialog","Icon",
+            'Setting to choose the type of the icon on the tray')
+        tray_temp = QCoreApplication.translate(
+            "Settings dialog","Temperature",
+            'Setting to choose the type of the icon on the tray')
+        self.tray_dico = {'icon&temp': tray_icon_temp, 'icon': tray_icon,
+                          'temp': tray_temp}
+        set_tray_icon = self.settings.value('TrayType') or 'icon&temp'
+        tray_icon_list = sorted(self.tray_dico.values())
+        self.tray_icon_combo.addItems(tray_icon_list)
+        self.tray_icon_combo.setCurrentIndex(self.tray_icon_combo.findText
+                                             (self.tray_dico[set_tray_icon]))
+        self.tray_icon_combo.currentIndexChanged.connect(self.tray)
+        self.tray_changed = False
         # Font size
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(QCoreApplication.translate(
             "Settings dialog","Font size in tray",
             "Setting for the font size of the temperature in the tray icon"))
         self.fontsize_spinbox = QSpinBox()
-        self.fontsize_spinbox.setRange(12, 25)
+        self.fontsize_spinbox.setRange(12, 32)
         self.fontsize_spinbox.setValue(int(fontsize))
         if fontsize == None or fontsize == '':
             self.settings.setValue('FontSize', '18')
@@ -185,8 +208,10 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.temp_color_resetButton, 5,2)
         self.panel.addWidget(self.notifier_label, 6,0)
         self.panel.addWidget(self.notifier_checkbox, 6,1)
-        self.panel.addWidget(self.fontsize_label, 7,0)
-        self.panel.addWidget(self.fontsize_spinbox, 7,1)
+        self.panel.addWidget(self.tray_icon_temp_label, 7,0)
+        self.panel.addWidget(self.tray_icon_combo, 7,1)
+        self.panel.addWidget(self.fontsize_label, 8,0)
+        self.panel.addWidget(self.fontsize_spinbox, 8,1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -304,6 +329,17 @@ class MeteoSettings(QDialog):
             self.settings.setValue('Notifications', 'False')
             logging.debug('Write: Notifications = False')
 
+    def tray(self):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.tray_changed = True
+
+    def tray_apply(self):
+        tray = self.tray_icon_combo.currentText()
+        self.settings.setValue('Tray', tray)
+        logging.debug('Write >' + 'Tray >' + str(tray))
+        settray = [key for key, value in self.tray_dico.items() if value == tray]
+        self.settings.setValue('TrayType', settray[0])
+
     def fontsize_change(self, size):
         self.fontsize_changed = True
         self.fontsize_value = size
@@ -342,12 +378,12 @@ class MeteoSettings(QDialog):
         if self.interval_changed:
             time = self.interval_combo.currentText()
             self.settings.setValue('Interval', time)
-            logging.debug('Write ' + 'Interval' + str(time))
+            logging.debug('Write ' + 'Interval ' + str(time))
         if self.lang_changed:
             lang = self.language_combo.currentText()
             setlang = [key for key, value in self.language_dico.items() if value == lang]
             self.settings.setValue('Language', setlang[0])
-            logging.debug('Write ' + 'Language' + str(setlang[0]))
+            logging.debug('Write ' + 'Language ' + str(setlang[0]))
         if self.units_changed:
             unit = self.units_combo.currentText()
             setUnit = [key for key, value in self.units_dico.items() if value == unit]
@@ -355,6 +391,8 @@ class MeteoSettings(QDialog):
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.notifier_changed:
             self.notifier_apply()
+        if self.tray_changed:
+            self.tray_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
 

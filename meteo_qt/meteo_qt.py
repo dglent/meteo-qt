@@ -428,14 +428,22 @@ class SystemTrayIcon(QMainWindow):
         # don't paint the T° over the old value
         icon = QPixmap(':/empty')
         self.traycolor = self.settings.value('TrayColor') or ''
-        pt = QPainter(icon)
-        pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         self.fontsize = self.settings.value('FontSize') or '18'
+        self.tray_type = self.settings.value('TrayType') or 'icon&temp'
+        pt = QPainter(icon)
+        if self.tray_type != 'temp':
+            pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', int(self.fontsize)))
         pt.setPen(QColor(self.traycolor))
-        pt.drawText(icon.rect(), Qt.AlignBottom, str(self.temp))
+        if self.tray_type == 'icon&temp':
+            pt.drawText(icon.rect(), Qt.AlignBottom, str(self.temp))
+        if self.tray_type == 'temp':
+            pt.drawText(icon.rect(), Qt.AlignCenter, str(self.temp))
         pt.end()
-        self.systray.setIcon(QIcon(icon))
+        if self.tray_type == 'icon':
+            self.systray.setIcon(QIcon(self.wIcon))
+        else:
+            self.systray.setIcon(QIcon(icon))
         try:
             if not self.overviewcity.isVisible():
                 notifier = self.settings.value('Notifications') or 'True'
@@ -495,13 +503,13 @@ class SystemTrayIcon(QMainWindow):
         unit = self.settings.value('Unit')
         interval = self.settings.value('Interval')
         traycolor = self.settings.value('TrayColor')
+        tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
         # Check if update is needed
         if traycolor == None:
             traycolor = ''
-        if self.traycolor != traycolor:
-            self.tray()
-        if self.fontsize != fontsize:
+        if (self.traycolor != traycolor or self.tray_type != tray_type or
+            self.fontsize != fontsize):
             self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and
