@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -27,7 +26,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -412,7 +411,7 @@
     <message>
         <location filename="searchcity.py" line="32"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -435,7 +434,7 @@
     <message>
         <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="searchcity.py" line="163"/>
@@ -460,31 +459,31 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="163"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="166"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="169"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="settings.py" line="183"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -552,7 +551,7 @@
     <message>
         <location filename="meteo_qt.py" line="316"/>
         <source>Please wait, trying to find data...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="meteo_qt.py" line="345"/>
@@ -591,7 +590,7 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -764,192 +763,192 @@
     <message>
         <location filename="conditions.py" line="40"/>
         <source>shower sleet</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="41"/>
         <source>light rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="42"/>
         <source>rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="43"/>
         <source>light shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="44"/>
         <source>shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="45"/>
         <source>heavy shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="46"/>
         <source>mist</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="47"/>
         <source>smoke</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="48"/>
         <source>haze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="49"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="50"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="51"/>
         <source>sand</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
         <source>dust</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="53"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="54"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="61"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="56"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>few clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>scattered clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
         <source>broken clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="60"/>
         <source>overcast clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="79"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="64"/>
         <source>cold</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>hot</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>windy</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>hail</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
         <source>calm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="69"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="70"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="72"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="73"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="78"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="conditions.py" line="103"/>
@@ -1124,7 +1123,7 @@ or modify the name of the city</source>
     <message>
         <location filename="searchcity.py" line="205"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>

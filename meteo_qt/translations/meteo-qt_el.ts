@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -480,31 +479,31 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εικονίδιο του πλαισίου συστήματος</translation>
     </message>
     <message>
         <location filename="settings.py" line="163"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εικονίδιο &amp; θερμοκρασία</translation>
     </message>
     <message>
         <location filename="settings.py" line="166"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εικονίδιο</translation>
     </message>
     <message>
         <location filename="settings.py" line="169"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Θερμοκρασία</translation>
     </message>
     <message>
         <location filename="settings.py" line="183"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Μέγεθος γραμματοσειράς στο πλαίσιο συστήματος</translation>
     </message>
 </context>
 <context>
