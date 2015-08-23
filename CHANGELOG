@@ -1,3 +1,6 @@
+0.8.0
+Add option to choose the tray icon type as icon, icon & temperature or only temperature
+
 0.7.1
 fix crash when logging folder is missing (at first time)
 
