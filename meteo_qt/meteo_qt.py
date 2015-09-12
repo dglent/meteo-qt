@@ -673,8 +673,8 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn('Error: ', error)
-                logging.info('Try again...', self.tentatives)
+                logging.warn('Error: ' + str(error))
+                logging.info('Try again...' + str(self.tentatives))
                 self.run()
         except timeout:
             if self.tentatives >= 10:
