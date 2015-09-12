@@ -501,7 +501,6 @@ class SystemTrayIcon(QMainWindow):
         id_ = self.settings.value('ID')
         country = self.settings.value('Country')
         unit = self.settings.value('Unit')
-        interval = self.settings.value('Interval')
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
@@ -514,9 +513,8 @@ class SystemTrayIcon(QMainWindow):
         if (city[0] == self.city and
            id_ == self.id_ and
            country == self.country and
-           unit == self.unit and
-           str(int(int(self.interval)/1000/60)) == interval):
-            return
+           unit == self.unit):
+               return
         else:
             logging.debug('Apply changes from settings...')
             self.refresh()
