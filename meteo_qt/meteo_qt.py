@@ -340,7 +340,7 @@ class SystemTrayIcon(QMainWindow):
         self.notification = nodata
 
     def error(self, error):
-        logging.error('Error:\n', error)
+        logging.error('Error:\n' + str(error))
         self.nodata_message()
         self.timer.start(self.interval)
         self.inerror = True
@@ -668,6 +668,7 @@ class Download(QThread):
                     m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
                 else:
                     logging.error(m_error)
+                    m_error = str(m_error)
                 self.error['QString'].emit(m_error)
                 self.done.emit(int(done))
                 return
