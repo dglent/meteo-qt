@@ -268,8 +268,8 @@ class SystemTrayIcon(QMainWindow):
             self.inerror = True
             e = sys.exc_info()[0]
             logging.error('Error: ' + str(e ))
-            logging.debug('Try to create the city overview...\nTentatives: ',
-                  self.tentatives)
+            logging.debug('Try to create the city overview...\nTentatives: ' +
+                          str(self.tentatives))
             return 'error'
 
     def done(self, done):
@@ -664,10 +664,10 @@ class Download(QThread):
                 m_error = error
                 if hasattr(error, 'code'):
                     code = str(error.code)
-                    logging.error(code, error.reason)
-                    m_error = self.tr('Error :\n') + code + ' ' + str(error.reason)
+                    logging.error(str(code) + str(error.reason))
+                    m_error = self.tr('Error :\n') + str(code) + ' ' + str(error.reason)
                 else:
-                    logging.error(m_error)
+                    logging.error(str(m_error))
                     m_error = str(m_error)
                 self.error['QString'].emit(m_error)
                 self.done.emit(int(done))
@@ -695,7 +695,7 @@ class Download(QThread):
             code = dico['cod']
             message = dico['message']
             self.error_message = code + ' ' + message + '@' + what
-            logging.debug(self.error_message)
+            logging.debug(str(self.error_message))
             return True
         except:
             return False
