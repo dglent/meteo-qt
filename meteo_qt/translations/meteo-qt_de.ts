@@ -316,7 +316,7 @@ Projekt</translation>
     <message>
         <location filename="settings.py" line="139"/>
         <source>Font colour in the tray</source>
-        <translation>Schriftfarbe in der Seitenleiste</translation>
+        <translation>Schriftfarbe in der Systemleiste</translation>
     </message>
     <message>
         <location filename="settings.py" line="145"/>
@@ -480,31 +480,31 @@ Projekt</translation>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Systemleisten-Symbol</translation>
     </message>
     <message>
         <location filename="settings.py" line="163"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Symbol &amp; Temparatur</translation>
     </message>
     <message>
         <location filename="settings.py" line="166"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Symbol</translation>
     </message>
     <message>
         <location filename="settings.py" line="169"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Temperatur</translation>
     </message>
     <message>
         <location filename="settings.py" line="183"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Schriftgröße in der Systemleiste</translation>
     </message>
 </context>
 <context>
