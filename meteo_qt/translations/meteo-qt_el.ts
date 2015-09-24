@@ -571,7 +571,7 @@
     <message>
         <location filename="meteo_qt.py" line="316"/>
         <source>Please wait, trying to find data...</source>
-        <translation>Παρακαλώ περιμένετε, γίνεται προσπάθεια των εύρεσης δεδομένων...</translation>
+        <translation>Παρακαλώ περιμένετε, γίνεται προσπάθεια εύρεσης των δεδομένων...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="345"/>
