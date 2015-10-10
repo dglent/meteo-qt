@@ -63,6 +63,7 @@ class SystemTrayIcon(QMainWindow):
         self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
         self.day_forecast_url = 'http://api.openweathermap.org/data/2.5/forecast?id='
         self.wIconUrl = 'http://openweathermap.org/img/w/'
+        self.appid = '&APPID=18dc60bd132b7fb4534911d2aa67f0e7'
         self.forecast_icon_url = self.wIconUrl
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
@@ -219,7 +220,7 @@ class SystemTrayIcon(QMainWindow):
         self.cities_menu()
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
-        self.suffix = ('&mode=xml&units=' + self.unit)
+        self.suffix = ('&mode=xml&units=' + self.unit + self.appid)
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
         self.update()
