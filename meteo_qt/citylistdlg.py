@@ -13,10 +13,11 @@ except:
 class CityListDlg(QDialog):
     citieslist_signal = pyqtSignal([list])
 
-    def __init__(self, citylist, accurate_url, parent=None):
+    def __init__(self, citylist, accurate_url, appid, parent=None):
         super(CityListDlg, self).__init__(parent)
         self.citylist = citylist
         self.accurate_url = accurate_url
+        self.appid = appid
         self.listWidget = QListWidget()
         self.listWidget.addItems(self.citylist)
         buttonLayout = QVBoxLayout()
@@ -52,7 +53,7 @@ class CityListDlg(QDialog):
         self.citytoadd = ''
         self.countrytoadd = ''
         self._idtoadd = ''
-        dialog = searchcity.SearchCity(self.accurate_url, self)
+        dialog = searchcity.SearchCity(self.accurate_url, self.appid, self)
         dialog.id_signal.connect(self.addcity)
         dialog.city_signal.connect(self.addcity)
         dialog.country_signal.connect(self.addcity)

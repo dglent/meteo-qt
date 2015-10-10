@@ -18,10 +18,11 @@ except:
 class MeteoSettings(QDialog):
     applied_signal = pyqtSignal()
 
-    def __init__(self, accurate_url, parent=None):
+    def __init__(self, accurate_url, appid, parent=None):
         super(MeteoSettings, self).__init__(parent)
         self.layout = QVBoxLayout()
         self.accurate_url = accurate_url
+        self.appid = appid
         self.settings = QSettings()
         self.set_city = self.settings.value('City') or '?'
         locale = QLocale.system().name()
@@ -243,7 +244,7 @@ class MeteoSettings(QDialog):
         self.interval_changed = True
 
     def edit_cities_list(self):
-        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url, self)
+        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url, self.appid, self)
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.exec_()
 

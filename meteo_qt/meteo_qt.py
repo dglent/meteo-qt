@@ -42,7 +42,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.8.1"
+__version__ = "0.8.2"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -521,7 +521,7 @@ class SystemTrayIcon(QMainWindow):
             self.refresh()
 
     def config(self):
-        dialog = settings.MeteoSettings(self.accurate_url, self)
+        dialog = settings.MeteoSettings(self.accurate_url, self.appid, self)
         dialog.applied_signal.connect(self.config_save)
         if dialog.exec_() == 1:
             self.config_save()
@@ -532,7 +532,7 @@ class SystemTrayIcon(QMainWindow):
         # Prevent to register a temporary city
         # This happen when a temporary city is still loading
         self.restore_city()
-        dialog = searchcity.SearchCity(self.accurate_url, self)
+        dialog = searchcity.SearchCity(self.accurate_url, self.appid, self)
         self.id_2, self.city2, self.country2 = (self.settings.value('ID'),
                                                 self.settings.value('City'),
                                                 self.settings.value('Country'))
@@ -546,7 +546,7 @@ class SystemTrayIcon(QMainWindow):
 
     def citydata(self, what):
         self.settings.setValue(what[0], what[1])
-        logging.debug('write ' + str(what[0]) + str(what[1]))
+        logging.debug('write ' + str(what[0]) + ' ' + str(what[1]))
 
     def about(self):
         title = self.tr("""<b>meteo-qt</b> v{0}

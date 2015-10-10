@@ -16,14 +16,14 @@ class SearchCity(QDialog):
     city_signal = pyqtSignal([tuple])
     country_signal = pyqtSignal([tuple])
 
-    def __init__(self, accurate_url, parent=None):
+    def __init__(self, accurate_url, appid, parent=None):
         super(SearchCity, self).__init__(parent)
         self.settings = QSettings()
         self.delay = 1000
         self.search_string = self.tr('Searching...')
         self.timer = QTimer()
         self.accurate_url = accurate_url
-        self.suffix = '&type=like&mode=xml'
+        self.suffix = '&type=like&mode=xml' + appid
         self.layout = QVBoxLayout()
         self.lineLayout = QHBoxLayout()
         self.buttonSearch = QPushButton()
@@ -137,6 +137,7 @@ class SearchCity(QDialog):
         logging.debug('Found: ' + str(city))
         if city not in self.lista:
             self.lista.append(city)
+            self.errorStatus = False
 
     def error(self, e):
         self.delay = 2000
@@ -166,7 +167,6 @@ class SearchCity(QDialog):
             cities_text = self.tr('Found {0} cities').format(number_cities)
         self.status.setText(cities_text)
 
-
 class WorkThread(QThread):
     error = pyqtSignal(['QString'])
     city_signal = pyqtSignal(['QString'])
@@ -188,11 +188,11 @@ class WorkThread(QThread):
             return
         try:
             logging.info(self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","") + self.suffix)
+                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix)
             logging.debug('City before utf8 encode :' + self.accurate_url + self.city + self.suffix)
             req = urllib.request.urlopen(
                 self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","") + self.suffix, timeout=5)
+                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
@@ -248,7 +248,7 @@ class WorkThread(QThread):
                     if city != '':
                         logging.info('Change search to:' + city)
                         self.city = repr(city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","")
+                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20')
                     self.run()
             if city == '' or country == None:
                 if self.tentatives == 10:
