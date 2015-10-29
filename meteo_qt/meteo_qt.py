@@ -404,7 +404,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Wind'] = (
             tree[4][0].get('value'), wind + '<br/>', tree[4][2].get('value'),
             wind_codes, wind_dir)
-        self.weatherDataDico['Clouds'] = (clouds + '<br/>' + clouds_percent)
+        self.weatherDataDico['Clouds'] = (clouds_percent + ' ' + clouds)
         self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
         self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
