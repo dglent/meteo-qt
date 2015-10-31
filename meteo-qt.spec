@@ -1,6 +1,6 @@
 %define aname meteo_qt
 Name:           meteo-qt
-Version:        0.8.2
+Version:        0.8.3
 Release:        %mkrel 1
 Group:          Graphical desktop/Other
 Summary:        Weather status system tray application
@@ -20,25 +20,27 @@ Recommends:     qttranslations5
 
 %description
 A Qt system tray application for the weather status
+Weather data from: http://openweathermap.org/
 
 %prep
 %setup -q
 
 %build
-%__python3 setup.py build
+%py3_build
 
 %install
-%__python3 ./setup.py install --skip-build --root=%{buildroot}
+%py3_install
 %__mkdir -p %{buildroot}%{_iconsdir}/hicolor/{16x16,32x32}/apps
 convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/meteo-qt.png
 convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/meteo-qt.png
 
 %files
 %doc TODO CHANGELOG README.md
+%exclude %_defaultdocdir/%{name}/LICENSE
 %{_datadir}/%{aname}/images/
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
-%{python3_sitelib}/%{aname}-%{version}-py%py3ver.egg-info
+%{python3_sitelib}/%{aname}-%{version}-py%python3_version.egg-info
 %{python3_sitelib}/%{aname}/
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/meteo-qt.png
