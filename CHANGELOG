@@ -1,3 +1,8 @@
+0.8.3
+Update French translation
+Update Polish translation
+Cloudiness description in one line
+
 0.8.2
 Fix error message: <401 Unauthorized> blocking the city search
 Fix not finding city names with blank space
