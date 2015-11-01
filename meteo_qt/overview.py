@@ -94,7 +94,7 @@ class OverviewCity(QDialog):
                                self.weatherdata['Wind'][3] + ' ' +
                                self.weatherdata['Wind'][4] + '<\font>')
         except:
-            logging.error('Cannot find wind informations:\n'+ str(self.weatherdata['Wind']))
+            logging.error('Cannot find wind informations:\n' + str(self.weatherdata['Wind']))
         self.clouds_label = QLabel('<font size="3" color=grey><b>' +
                                   self.tr('Cloudiness') + '<\b><\font>')
         self.clouds_name = QLabel('<font color=grey>' +
@@ -317,7 +317,7 @@ class OverviewCity(QDialog):
         self.dayforecast_layout.addWidget(iconlabel)
 
     def error(self, error):
-        logging.error('error in download of forecast icon:\n', error)
+        logging.error('error in download of forecast icon:\n' + error)
 
     def moveEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
@@ -365,7 +365,7 @@ class IconDownload(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.info('5 secondes timeout, new tentative: ', self.tentatives)
+                logging.info('5 secondes timeout, new tentative: ' + self.tentatives)
                 self.run()
         logging.debug('Download forecast icons thread done')
 
