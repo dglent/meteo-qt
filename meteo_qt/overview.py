@@ -365,7 +365,7 @@ class IconDownload(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.info('5 secondes timeout, new tentative: ' + self.tentatives)
+                logging.info('5 secondes timeout, new tentative: ' + str(self.tentatives))
                 self.run()
         logging.debug('Download forecast icons thread done')
 
