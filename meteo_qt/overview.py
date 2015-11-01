@@ -350,6 +350,7 @@ class IconDownload(QThread):
         try:
             for i in range(self.periods):
                 url = self.icon_url + self.icon[i] + '.png'
+                logging.debug('Icon downloading: ' + url)
                 data = urllib.request.urlopen(url, timeout=5).read()
                 if self.html404(data, 'icon'):
                     self.error['QString'].emit(self.error_message)
