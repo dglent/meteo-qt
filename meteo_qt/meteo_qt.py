@@ -49,6 +49,8 @@ class SystemTrayIcon(QMainWindow):
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
         self.settings = QSettings()
+        # initialize the tray icon type in case of first run: issue#42
+        self.tray_type = self.settings.value('TrayType') or 'icon&temp'
         cond = conditions.WeatherConditions()
         self.temporary_city_status = False
         self.conditions = cond.trans
