@@ -128,6 +128,39 @@
     </message>
 </context>
 <context>
+    <name>Extreme UV recommended protection</name>
+    <message>
+        <location filename="conditions.py" line="161"/>
+        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
+                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
+                                    </source>
+        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>High UV recommended protection</name>
+    <message>
+        <location filename="conditions.py" line="154"/>
+        <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
+                                    wear a hat, reduce time in the sun within three hours of solar noon,
+                                    and wear sunglasses.</source>
+        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Low UV recommended protection</name>
+    <message>
+        <location filename="conditions.py" line="146"/>
+        <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
+                                    the ground, which reflects UV radiation, or if you have particularly
+                                    fair skin.</source>
+        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MeteoSettings</name>
     <message>
         <location filename="settings.py" line="44"/>
@@ -338,6 +371,16 @@
         <location filename="settings.py" line="220"/>
         <source>Meteo-qt Configuration</source>
         <translation>Налаштування Meteo-qt</translation>
+    </message>
+</context>
+<context>
+    <name>Moderate UV recommended protection</name>
+    <message>
+        <location filename="conditions.py" line="150"/>
+        <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
+                                    Stay in shade near midday when the sun is strongest.</source>
+        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -628,47 +671,6 @@
     </message>
 </context>
 <context>
-    <name>UV recommended protection</name>
-    <message>
-        <location filename="conditions.py" line="146"/>
-        <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
-                                    the ground, which reflects UV radiation, or if you have particularly
-                                    fair skin.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="conditions.py" line="150"/>
-        <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
-                                    Stay in shade near midday when the sun is strongest.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="conditions.py" line="154"/>
-        <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
-                                    wear a hat, reduce time in the sun within three hours of solar noon,
-                                    and wear sunglasses.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="conditions.py" line="158"/>
-        <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
-                                    Do not stay in the sun for too long.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="conditions.py" line="161"/>
-        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
-                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
-                                    </source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>UV risk</name>
     <message>
         <location filename="conditions.py" line="138"/>
@@ -702,6 +704,16 @@
         <location filename="overview.py" line="130"/>
         <source>UV</source>
         <comment>Weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Very high UV recommended protection</name>
+    <message>
+        <location filename="conditions.py" line="158"/>
+        <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
+                                    Do not stay in the sun for too long.</source>
+        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
