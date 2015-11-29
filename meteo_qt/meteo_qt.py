@@ -42,7 +42,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.8.4"
+__version__ = "0.8.5"
 
 
 class SystemTrayIcon(QMainWindow):
