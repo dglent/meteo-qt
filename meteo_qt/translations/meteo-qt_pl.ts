@@ -134,7 +134,7 @@
         <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -145,7 +145,7 @@
         <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -156,7 +156,7 @@
         <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -379,7 +379,7 @@
         <location filename="conditions.py" line="150"/>
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -713,7 +713,7 @@
         <location filename="conditions.py" line="158"/>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>

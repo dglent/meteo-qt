@@ -2,6 +2,54 @@
 <!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
+    <message>
+        <location filename="meteo_qt.py" line="590"/>
+        <source>J&#xfc;rgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Greek translation
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanish translation
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation
+            &lt;p&gt;R&#xe9;mi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] French translation, Project
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polish translation
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russian translation
+            &lt;p&gt;Atilla &#xd6;nta? &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Turkish translation
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukranian translation
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinese (Taiwan) translation
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</source>
+        <comment>List of contributors</comment>
+        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Ελληνική μετάφραση
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Ισπανική μετάφραση
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση, έργο
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Πολωνική μετάφραση
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Ρωσική μετάφραση
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Τουρκική μετάφραση
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ουκρανική μετάφραση
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Έργο</translation>
+    </message>
     <message encoding="UTF-8">
         <location filename="meteo_qt.py" line="590"/>
         <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
@@ -27,28 +75,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] Γερμανική μετάφραση
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Ελληνική μετάφραση
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Ισπανική μετάφραση
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] Γαλλική μετάφραση
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] Γαλλική μετάφραση, έργο
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Πολωνική μετάφραση
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Ρωσική μετάφραση
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Τουρκική μετάφραση
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ουκρανική μετάφραση
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Έργο</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -134,7 +161,19 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
+                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
+                                    </translation>
+    </message>
+    <message>
+        <location filename="conditions.py" line="161"/>
+        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
+                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
+                                    </source>
+        <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished">Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
+                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
+                                    </translation>
     </message>
 </context>
 <context>
@@ -144,7 +183,7 @@
         <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -155,7 +194,7 @@
         <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -378,7 +417,7 @@
         <location filename="conditions.py" line="150"/>
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -674,27 +713,27 @@
     <message>
         <location filename="conditions.py" line="138"/>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Χαμηλό</translation>
     </message>
     <message>
         <location filename="conditions.py" line="139"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέτριο</translation>
     </message>
     <message>
         <location filename="conditions.py" line="140"/>
         <source>High</source>
-        <translation type="unfinished"></translation>
+        <translation>Υψηλό</translation>
     </message>
     <message>
         <location filename="conditions.py" line="141"/>
         <source>Very high</source>
-        <translation type="unfinished"></translation>
+        <translation>Πολύ ηψηλό</translation>
     </message>
     <message>
         <location filename="conditions.py" line="142"/>
         <source>Extreme</source>
-        <translation type="unfinished"></translation>
+        <translation>Έσχατο</translation>
     </message>
 </context>
 <context>
@@ -712,7 +751,7 @@
         <location filename="conditions.py" line="158"/>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
-        <comment>https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
