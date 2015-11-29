@@ -1,4 +1,7 @@
-from PyQt5.QtCore import QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray
+from PyQt5.QtCore import (
+    QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray,
+    QCoreApplication
+    )
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
@@ -25,7 +28,7 @@ class OverviewCity(QDialog):
      }
 
     def __init__(self, weatherdata, icon, forecast, dayforecast, unit,
-                 icon_url, parent=None):
+                 icon_url, uv, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.days_dico = {
         '0': self.tr('Mon'),
@@ -41,11 +44,14 @@ class OverviewCity(QDialog):
         self.wind_direction = cond.wind_codes
         self.wind_name_dic = cond.wind
         self.clouds_name_dic = cond.clouds
+        self.uv_risk = cond.uv_risk
+        self.uv_recommend = cond.uv_recommend
         self.settings = QSettings()
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
         self.tree_day = dayforecast
         self.icon_url = icon_url
+        self.uv = str(uv)
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
         self.weatherdata = weatherdata
@@ -119,7 +125,20 @@ class OverviewCity(QDialog):
         set_str = self.utc('Sunset', 'weatherdata')
         self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
         self.sunset_value = QLabel('<font color=grey>' + set_str + '</font>')
-        #----------------------------------
+        #--------UV--------------------------
+        uv_gauge = '-'
+        self.uv_label = QLabel(
+            '<font size="3" color=grey><b>' + QCoreApplication.translate(
+                'Ultraviolet index','UV', 'Weather info dialogue' + '<\b><\font>'))
+        uv_color = self.uv_color(self.uv)
+        if uv_color[1] != '-':
+            uv_gauge = '◼' * int(round(float(self.uv)))
+            if uv_gauge == '':
+                uv_gauge = '◼'
+        self.uv_value = QLabel('<font color=grey>' + self.uv + '  ' +self.uv_risk[uv_color[1]] + '</font>' +
+                               ' < font color=' + uv_color[0] + '><b>' + uv_gauge +'</b></font>')
+        self.uv_value.setToolTip(self.uv_recommend[uv_color[1]])
+        #------------------------------------
         self.over_grid.addWidget(self.wind_label, 0,0)
         self.over_grid.addWidget(self.wind, 0,1)
         self.over_grid.addWidget(self.clouds_label, 1,0)
@@ -127,12 +146,13 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.pressure_label, 2,0)
         self.over_grid.addWidget(self.pressure_value, 2,1)
         self.over_grid.addWidget(self.humidity_label, 3,0)
-        # keeps alignment left
-        self.over_grid.addWidget(self.humidity_value, 3,1,1,3)
+        self.over_grid.addWidget(self.humidity_value, 3,1,1,3) # keeps alignment left
         self.over_grid.addWidget(self.sunrise_label, 4,0)
         self.over_grid.addWidget(self.sunrise_value, 4,1)
         self.over_grid.addWidget(self.sunset_label, 5,0)
         self.over_grid.addWidget(self.sunset_value, 5,1)
+        self.over_grid.addWidget(self.uv_label, 6,0)
+        self.over_grid.addWidget(self.uv_value, 6,1)
         #--------------Forecast---------------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -155,6 +175,22 @@ class OverviewCity(QDialog):
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
                 QByteArray()))
+
+    def uv_color(self, uv):
+        try:
+            uv = float(uv)
+        except:
+            return ('grey', 'None')
+        if uv <= 2.9:
+            return ('green', 'Low')
+        if uv <= 5.9:
+            return ('yellow', 'Moderate')
+        if uv <= 7.9:
+            return ('orange', 'High')
+        if uv <= 10.9:
+            return ('red', 'Very high')
+        if uv >= 11:
+            return ('purple', 'Extreme')
 
     def utc(self, rise_set, what):
         ''' Convert sun rise/set from UTC to local time

@@ -1,4 +1,4 @@
-from PyQt5.QtCore import QObject
+from PyQt5.QtCore import QObject, QCoreApplication
 
 class WeatherConditions(QObject):
 
@@ -134,3 +134,33 @@ class WeatherConditions(QObject):
                            'WSW': self.tr('WSW'),
                            'WNW': self.tr('WNW')
                                    }
+
+        self.uv_risk = {'Low': QCoreApplication.translate('UV risk', 'Low', ''),
+                        'Moderate': QCoreApplication.translate('UV risk', 'Moderate', ''),
+                        'High': QCoreApplication.translate('UV risk', 'High', ''),
+                        'Very high': QCoreApplication.translate('UV risk', 'Very high', ''),
+                        'Extreme': QCoreApplication.translate('UV risk', 'Extreme', ''),
+                        'None': '-'
+                        }
+
+        self.uv_recommend = {'Low': QCoreApplication.translate('UV recommended protection',
+                                    '''Wear sunglasses on bright days; use sunscreen if there is snow on<br/>
+                                    the ground, which reflects UV radiation, or if you have particularly
+                                    fair skin.''', 'https://en.wikipedia.org/wiki/Ultraviolet_index'),
+                             'Moderate': QCoreApplication.translate('UV recommended protection',
+                                    '''Take precautions, such as covering up, if you will be outside.<br/>
+                                    Stay in shade near midday when the sun is strongest.''',
+                                    'https://en.wikipedia.org/wiki/Ultraviolet_index'),
+                             'High': QCoreApplication.translate('UV recommended protection',
+                                    '''Cover the body with sun protective clothing, use SPF 30+ sunscreen,<br/>
+                                    wear a hat, reduce time in the sun within three hours of solar noon,
+                                    and wear sunglasses.''', 'https://en.wikipedia.org/wiki/Ultraviolet_index'),
+                             'Very high': QCoreApplication.translate('UV recommended protection',
+                                    '''Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.<br/>
+                                    Do not stay in the sun for too long.''', 'https://en.wikipedia.org/wiki/Ultraviolet_index'),
+                             'Extreme': QCoreApplication.translate('UV recommended protection',
+                                    '''Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,<br/>
+                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
+                                    ''', 'https://en.wikipedia.org/wiki/Ultraviolet_index'),
+                             'None': '-'
+                             }
