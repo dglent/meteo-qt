@@ -686,7 +686,7 @@
     <message>
         <location filename="overview.py" line="130"/>
         <source>UV</source>
-        <comment>Weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
+        <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
