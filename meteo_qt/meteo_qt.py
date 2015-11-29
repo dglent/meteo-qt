@@ -462,7 +462,7 @@ class SystemTrayIcon(QMainWindow):
                         self.notification_temp = temp
                         self.systray.showMessage('meteo-qt', self.notification)
         except:
-            logging.debug('OverviewCity has been deleted',
+            logging.debug('OverviewCity has been deleted' +
                   'Download weather information again...')
             self.try_again()
             return

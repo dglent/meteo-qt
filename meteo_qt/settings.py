@@ -309,7 +309,7 @@ class MeteoSettings(QDialog):
             self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
             self.color_before = col.name()
         else:
-            logging.warn('Invalid color:', col)
+            logging.debug('Invalid color:' + str(col))
 
     def color_reset(self):
         self.temp_colorButton.setStyleSheet(
