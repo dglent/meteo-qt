@@ -1,3 +1,6 @@
+0.8.6
+Fix not display data when missing UV info
+
 0.8.5
 Add UV informations
 
