@@ -131,7 +131,7 @@ class OverviewCity(QDialog):
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
                 'Ultraviolet index','UV', 'Label in weather info dialogue' + '<\b><\font>'))
         uv_color = self.uv_color(self.uv)
-        if uv_color[1] != '-':
+        if uv_color[1] != 'None':
             uv_gauge = '◼' * int(round(float(self.uv)))
             if uv_gauge == '':
                 uv_gauge = '◼'
