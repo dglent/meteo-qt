@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="zh_TW" sourcelanguage="">
+<!DOCTYPE TS><TS version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -35,17 +35,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation>關於</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation>貢獻者</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation>關於 Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -53,47 +53,47 @@
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Add...</source>
-        <translation>新增(&amp;A)...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Remove...</source>
-        <translation>移除(&amp;R)...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Up</source>
-        <translation>上移(&amp;U)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Down</source>
-        <translation>下移(&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>De&amp;fault</source>
-        <translation>預設(&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
-        <translation>排序(&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="69"/>
         <source>The city already exists in the list</source>
-        <translation>這個城市已經在清單中了</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="87"/>
         <source>The list is empty</source>
-        <translation>清單是空的</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="93"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>城市 &quot;{0}&quot; 已經被移除了</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -102,8 +102,7 @@
         <location filename="meteo_qt.py" line="686"/>
         <source>Error :
 </source>
-        <translation>錯誤：
-</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -144,22 +143,22 @@
     <message>
         <location filename="settings.py" line="44"/>
         <source>City</source>
-        <translation>城市</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
         <source>Click to edit the cities list</source>
-        <translation>點擊以編輯城市清單</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="50"/>
         <source>Language</source>
-        <translation>語言</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>程式必須重新啟動來套用語言設定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
@@ -234,7 +233,7 @@
     <message>
         <location filename="settings.py" line="68"/>
         <source>Japanese</source>
-        <translation>日本語</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="69"/>
@@ -299,57 +298,57 @@
     <message>
         <location filename="settings.py" line="81"/>
         <source>Chinese Traditional</source>
-        <translation>正體中文</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="82"/>
         <source>Chinese Simplified</source>
-        <translation>簡體中文</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="100"/>
         <source>Temperature unit</source>
-        <translation>溫度單位</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="109"/>
         <source>Update interval</source>
-        <translation>更新間隔</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="110"/>
         <source>minutes</source>
-        <translation>分</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
         <source>Launch at startup</source>
-        <translation>在開機時啟動</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="140"/>
         <source>Font colour in the tray</source>
-        <translation>系統列字型顏色</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="146"/>
         <source>Reset</source>
-        <translation>重設</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="147"/>
         <source>Reset font colour to system default</source>
-        <translation>重設字型顏色為系統預設</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="151"/>
         <source>Notification on weather update</source>
-        <translation>天氣更新通知</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="220"/>
         <source>Meteo-qt Configuration</source>
-        <translation>Meteo-qt 設定</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -367,87 +366,87 @@
     <message>
         <location filename="overview.py" line="34"/>
         <source>Mon</source>
-        <translation>週一</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="35"/>
         <source>Tue</source>
-        <translation>週二</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="36"/>
         <source>Wed</source>
-        <translation>週三</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="37"/>
         <source>Thu</source>
-        <translation>週四</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="38"/>
         <source>Fri</source>
-        <translation>週五</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="39"/>
         <source>Sat</source>
-        <translation>週六</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="40"/>
         <source>Sun</source>
-        <translation>週日</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="89"/>
         <source>Wind</source>
-        <translation>風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="104"/>
         <source>Cloudiness</source>
-        <translation>雲</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="108"/>
         <source>Pressure</source>
-        <translation>壓力</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="114"/>
         <source>Humidity</source>
-        <translation>濕度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="120"/>
         <source>Sunrise</source>
-        <translation>日出</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="122"/>
         <source>Sunset</source>
-        <translation>日落</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="175"/>
         <source>Weather status</source>
-        <translation>目前天氣</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="238"/>
         <source>Min Max Temperature of the day</source>
-        <translation>當日最高低溫度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="301"/>
         <source>snow</source>
-        <translation>降雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="302"/>
         <source>rain</source>
-        <translation>下雨</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -463,37 +462,37 @@
     <message>
         <location filename="searchcity.py" line="23"/>
         <source>Searching...</source>
-        <translation>搜尋中...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="44"/>
         <source>&amp;Ok</source>
-        <translation>確定(&amp;O)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="46"/>
         <source>&amp;Cancel</source>
-        <translation>取消(&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
-        <translation>請至少輸入三個字母</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="164"/>
         <source>No results</source>
-        <translation>沒有結果</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="166"/>
         <source>Found {0} city</source>
-        <translation>找到 {0} 個城市</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="168"/>
         <source>Found {0} cities</source>
-        <translation>找到 {0} 個城市</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -535,62 +534,62 @@
     <message>
         <location filename="meteo_qt.py" line="73"/>
         <source>Cities</source>
-        <translation>城市</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="74"/>
         <source>&amp;Temporary city</source>
-        <translation>暫時的城市(&amp;T)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="75"/>
         <source>&amp;Update</source>
-        <translation>更新(&amp;U)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="76"/>
         <source>&amp;Settings</source>
-        <translation>設定(&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="77"/>
         <source>&amp;About</source>
-        <translation>關於(&amp;A)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="78"/>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="100"/>
         <source>Searching weather data...</source>
-        <translation>搜尋天氣資料...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="193"/>
         <source>Empty list</source>
-        <translation>空白清單</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="207"/>
         <source>Fetching weather data ...</source>
-        <translation>抓取天氣資料...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="225"/>
         <source>No city configured</source>
-        <translation>沒有設定城市</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>No city has been configured yet.</source>
-        <translation>還沒有設定城市。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>在圖示上點右鍵再點設定。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="323"/>
@@ -600,12 +599,12 @@
     <message>
         <location filename="meteo_qt.py" line="352"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation>找不到資料!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="559"/>
         <source>Fetching weather data...</source>
-        <translation>抓取天氣資料...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="567"/>
@@ -687,517 +686,517 @@
     <message>
         <location filename="conditions.py" line="7"/>
         <source>thunderstorm with light rain</source>
-        <translation>雷暴伴有小雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="8"/>
         <source>thunderstorm with rain</source>
-        <translation>雷暴伴有雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="9"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>雷暴伴有大雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="10"/>
         <source>light thunderstorm</source>
-        <translation>小雷暴</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="11"/>
         <source>thunderstorm</source>
-        <translation>雷暴</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="12"/>
         <source>heavy thunderstorm</source>
-        <translation>強雷暴</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="13"/>
         <source>ragged thunderstorm</source>
-        <translation>局部性雷暴</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="14"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>雷暴伴有小毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="15"/>
         <source>thunderstorm with drizzle</source>
-        <translation>雷暴伴有毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="16"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation>雷暴伴有強毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="17"/>
         <source>light intensity drizzle</source>
-        <translation>小毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="18"/>
         <source>drizzle</source>
-        <translation>毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="19"/>
         <source>heavy intensity drizzle</source>
-        <translation>強毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="20"/>
         <source>light intensity drizzle rain</source>
-        <translation>小毛雨至雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="21"/>
         <source>drizzle rain</source>
-        <translation>毛雨至雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="22"/>
         <source>heavy intensity drizzle rain</source>
-        <translation>强毛雨至雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="23"/>
         <source>shower rain and drizzle</source>
-        <translation>陣雨及毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="24"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>強陣雨及毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="25"/>
         <source>shower drizzle</source>
-        <translation>陣毛雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="26"/>
         <source>light rain</source>
-        <translation>小雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="27"/>
         <source>moderate rain</source>
-        <translation>中雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="28"/>
         <source>heavy intensity rain</source>
-        <translation>大雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="29"/>
         <source>very heavy rain</source>
-        <translation>豪雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="30"/>
         <source>extreme rain</source>
-        <translation>大豪雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="31"/>
         <source>freezing rain</source>
-        <translation>凍雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="32"/>
         <source>light intensity shower rain</source>
-        <translation>小陣雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="33"/>
         <source>shower rain</source>
-        <translation>陣雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="34"/>
         <source>heavy intensity shower rain</source>
-        <translation>強陣雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="35"/>
         <source>ragged shower rain</source>
-        <translation>局部性陣雨</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="36"/>
         <source>light snow</source>
-        <translation>小雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="37"/>
         <source>snow</source>
-        <translation>雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="38"/>
         <source>heavy snow</source>
-        <translation>大雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="39"/>
         <source>sleet</source>
-        <translation>冰雹</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="40"/>
         <source>shower sleet</source>
-        <translation>陣雹</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="41"/>
         <source>light rain and snow</source>
-        <translation>小雨夾雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="42"/>
         <source>rain and snow</source>
-        <translation>雨夾雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="43"/>
         <source>light shower snow</source>
-        <translation>小陣雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="44"/>
         <source>shower snow</source>
-        <translation>陣雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="45"/>
         <source>heavy shower snow</source>
-        <translation>強陣雪</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="46"/>
         <source>mist</source>
-        <translation>薄霧</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="47"/>
         <source>smoke</source>
-        <translation>煙</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="48"/>
         <source>haze</source>
-        <translation>霾</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="49"/>
         <source>sand, dust whirls</source>
-        <translation>沙塵旋</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="50"/>
         <source>fog</source>
-        <translation>霧</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="51"/>
         <source>sand</source>
-        <translation>沙</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
         <source>dust</source>
-        <translation>塵</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="53"/>
         <source>volcanic ash</source>
-        <translation>火山灰</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="54"/>
         <source>squalls</source>
-        <translation>急瞬風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="61"/>
         <source>tornado</source>
-        <translation>龍捲風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="56"/>
         <source>clear sky</source>
-        <translation>晴朗</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>few clouds</source>
-        <translation>少雲</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>scattered clouds</source>
-        <translation>疏雲</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
         <source>broken clouds</source>
-        <translation>碎雲</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="60"/>
         <source>overcast clouds</source>
-        <translation>陰天</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tropical storm</source>
-        <translation>熱帶風暴</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="79"/>
         <source>hurricane</source>
-        <translation>颶風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="64"/>
         <source>cold</source>
-        <translation>冷</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>hot</source>
-        <translation>熱</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>windy</source>
-        <translation>有風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>hail</source>
-        <translation>雹</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
         <source>calm</source>
-        <translation>無風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="69"/>
         <source>light breeze</source>
-        <translation>輕微風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="70"/>
         <source>gentle breeze</source>
-        <translation>弱微風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
         <source>moderate breeze</source>
-        <translation>中微風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="72"/>
         <source>fresh breeze</source>
-        <translation>涼微風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="73"/>
         <source>strong breeze</source>
-        <translation>強微風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>high wind, near gale</source>
-        <translation>大風，接近狂風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
         <source>gale</source>
-        <translation>狂風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>severe gale</source>
-        <translation>強狂風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
         <source>storm</source>
-        <translation>暴風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="78"/>
         <source>violent storm</source>
-        <translation>劇烈暴風</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="103"/>
         <source>North</source>
-        <translation>北</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
         <source>NorthEast</source>
-        <translation>東北</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>North-northeast</source>
-        <translation>北北東</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>NorthWest</source>
-        <translation>西北</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>North-northwest</source>
-        <translation>北北西</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>South</source>
-        <translation>南</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>SouthEast</source>
-        <translation>東南</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>South-southeast</source>
-        <translation>南南東</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>SouthWest</source>
-        <translation>西南</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>South-southwest</source>
-        <translation>南南西</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>East</source>
-        <translation>東</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East-southeast</source>
-        <translation>東南東</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-northeast</source>
-        <translation>東北東</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>West</source>
-        <translation>西</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West-southwest</source>
-        <translation>西南西</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-northwest</source>
-        <translation>西北西</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="120"/>
         <source>N</source>
-        <translation>N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
         <source>NE</source>
-        <translation>NE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="122"/>
         <source>NNE</source>
-        <translation>NNE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NW</source>
-        <translation>NW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
         <source>NNW</source>
-        <translation>NNW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="125"/>
         <source>S</source>
-        <translation>S</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
         <source>SE</source>
-        <translation>SE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="127"/>
         <source>SSE</source>
-        <translation>SSE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SW</source>
-        <translation>SW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
         <source>SSW</source>
-        <translation>SSW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="130"/>
         <source>E</source>
-        <translation>E</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
         <source>ESE</source>
-        <translation>ESE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ENE</source>
-        <translation>ENE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
         <source>W</source>
-        <translation>W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>
         <source>WSW</source>
-        <translation>WSW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WNW</source>
-        <translation>WNW</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1206,25 +1205,23 @@
         <location filename="searchcity.py" line="185"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>資料錯誤，請稍後再試
-或修改城市名稱</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="205"/>
         <source>Please wait, searching...</source>
-        <translation>請稍候，搜尋中...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>Error: </source>
-        <translation>錯誤：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>
 Try again later</source>
-        <translation>
-請稍後再試</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

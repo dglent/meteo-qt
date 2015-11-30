@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ca" sourcelanguage="">
+<!DOCTYPE TS><TS version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -35,17 +35,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation>Quant a</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation>Contribuïdors</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation>Quant al Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -53,42 +53,42 @@
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Add...</source>
-        <translation>&amp;Afegeix…</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Remove...</source>
-        <translation>&amp;Treu…</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Up</source>
-        <translation>A&amp;munt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Down</source>
-        <translation>A&amp;vall</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>De&amp;fault</source>
-        <translation>Per de&amp;fecte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Ordena</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="69"/>
         <source>The city already exists in the list</source>
-        <translation>La ciutat ja existeix a la llista</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="87"/>
         <source>The list is empty</source>
-        <translation>La llista és buida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="93"/>
@@ -143,102 +143,102 @@
     <message>
         <location filename="settings.py" line="44"/>
         <source>City</source>
-        <translation>Cuitat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
         <source>Click to edit the cities list</source>
-        <translation>Feu clic per editar la llista de ciutats</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="50"/>
         <source>Language</source>
-        <translation>Idioma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Reinicieu l’aplicació per aplicar la configuració d’idioma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
         <source>Bulgarian</source>
-        <translation>búlgar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="55"/>
         <source>Catalan</source>
-        <translation>català</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="56"/>
         <source>Czech</source>
-        <translation>txec</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="57"/>
         <source>Danish</source>
-        <translation>danès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
         <source>German</source>
-        <translation>alemany</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="59"/>
         <source>Greek</source>
-        <translation>grec</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="60"/>
         <source>English</source>
-        <translation>anglès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="61"/>
         <source>Spanish</source>
-        <translation>castellà</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="62"/>
         <source>Finnish</source>
-        <translation>finès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="63"/>
         <source>French</source>
-        <translation>francès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="64"/>
         <source>Hebrew</source>
-        <translation>hebreu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="65"/>
         <source>Croatian</source>
-        <translation>croat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="66"/>
         <source>Hungarian</source>
-        <translation>hongarès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="67"/>
         <source>Italian</source>
-        <translation>italià</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="68"/>
         <source>Japanese</source>
-        <translation>japonès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="69"/>
         <source>Lithuanian</source>
-        <translation>lituà</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="70"/>
@@ -268,7 +268,7 @@
     <message>
         <location filename="settings.py" line="75"/>
         <source>Romanian</source>
-        <translation>romanès</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="76"/>
@@ -293,32 +293,32 @@
     <message>
         <location filename="settings.py" line="80"/>
         <source>Ukrainian</source>
-        <translation>ucraïnià</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="81"/>
         <source>Chinese Traditional</source>
-        <translation>xinès tradicional</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="82"/>
         <source>Chinese Simplified</source>
-        <translation>xinès simplificat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="100"/>
         <source>Temperature unit</source>
-        <translation>Unitat de temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="109"/>
         <source>Update interval</source>
-        <translation>Interval d’actualització</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="110"/>
         <source>minutes</source>
-        <translation>minuts</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
@@ -366,42 +366,42 @@
     <message>
         <location filename="overview.py" line="34"/>
         <source>Mon</source>
-        <translation>dl.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="35"/>
         <source>Tue</source>
-        <translation>dt.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="36"/>
         <source>Wed</source>
-        <translation>dc.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="37"/>
         <source>Thu</source>
-        <translation>dj.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="38"/>
         <source>Fri</source>
-        <translation>dv.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="39"/>
         <source>Sat</source>
-        <translation>ds.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="40"/>
         <source>Sun</source>
-        <translation>dg.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="89"/>
         <source>Wind</source>
-        <translation>Vent</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="104"/>

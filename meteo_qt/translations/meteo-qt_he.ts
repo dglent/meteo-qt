@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="he" sourcelanguage="">
+<!DOCTYPE TS><TS version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -441,7 +441,7 @@
     <message>
         <location filename="overview.py" line="301"/>
         <source>snow</source>
-        <translation type="unfinished">שלג</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="302"/>
@@ -686,47 +686,47 @@
     <message>
         <location filename="conditions.py" line="7"/>
         <source>thunderstorm with light rain</source>
-        <translation>סופות רעמים וגשם קל</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="8"/>
         <source>thunderstorm with rain</source>
-        <translation>סופות רעמים וגשם</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="9"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>סופות רעמים וגשם כבד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="10"/>
         <source>light thunderstorm</source>
-        <translation>סופות רעמים קלות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="11"/>
         <source>thunderstorm</source>
-        <translation>סופות רעמים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="12"/>
         <source>heavy thunderstorm</source>
-        <translation>סופות רעמים כבדות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="13"/>
         <source>ragged thunderstorm</source>
-        <translation>סופות רעמים יחידות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="14"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>סופות רעמים וטפטוף קל</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="15"/>
         <source>thunderstorm with drizzle</source>
-        <translation>סופות רעמים וטפטוף</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="16"/>
@@ -781,7 +781,7 @@
     <message>
         <location filename="conditions.py" line="26"/>
         <source>light rain</source>
-        <translation>גשם קל</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="27"/>
@@ -796,7 +796,7 @@
     <message>
         <location filename="conditions.py" line="29"/>
         <source>very heavy rain</source>
-        <translation>גשם כבד מאוד</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="30"/>
@@ -831,12 +831,12 @@
     <message>
         <location filename="conditions.py" line="36"/>
         <source>light snow</source>
-        <translation>שלג קל</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="37"/>
         <source>snow</source>
-        <translation>שלג</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="38"/>
@@ -856,7 +856,7 @@
     <message>
         <location filename="conditions.py" line="41"/>
         <source>light rain and snow</source>
-        <translation>גשם קל מעורב בשלג</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="42"/>
@@ -881,17 +881,17 @@
     <message>
         <location filename="conditions.py" line="46"/>
         <source>mist</source>
-        <translation>לחות</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="47"/>
         <source>smoke</source>
-        <translation>עשן</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="48"/>
         <source>haze</source>
-        <translation>אובך</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="49"/>
@@ -906,12 +906,12 @@
     <message>
         <location filename="conditions.py" line="51"/>
         <source>sand</source>
-        <translation>חול</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
         <source>dust</source>
-        <translation>אבק</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="53"/>
@@ -936,22 +936,22 @@
     <message>
         <location filename="conditions.py" line="57"/>
         <source>few clouds</source>
-        <translation>עננים בודדים</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>scattered clouds</source>
-        <translation>מעונן חלקית</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
         <source>broken clouds</source>
-        <translation>מעונן</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="60"/>
         <source>overcast clouds</source>
-        <translation>עננות כבדה</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="62"/>
@@ -1121,12 +1121,12 @@
     <message>
         <location filename="conditions.py" line="120"/>
         <source>N</source>
-        <translation>צפון</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
         <source>NE</source>
-        <translation>צפון מזרח</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="122"/>
@@ -1136,7 +1136,7 @@
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NW</source>
-        <translation>צפון מערב</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
@@ -1146,12 +1146,12 @@
     <message>
         <location filename="conditions.py" line="125"/>
         <source>S</source>
-        <translation>דרום</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
         <source>SE</source>
-        <translation>דרום מזרח</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="127"/>
@@ -1161,7 +1161,7 @@
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SW</source>
-        <translation>דרום מערב</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
@@ -1171,7 +1171,7 @@
     <message>
         <location filename="conditions.py" line="130"/>
         <source>E</source>
-        <translation>מזרח</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
@@ -1186,7 +1186,7 @@
     <message>
         <location filename="conditions.py" line="133"/>
         <source>W</source>
-        <translation>מערב</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>

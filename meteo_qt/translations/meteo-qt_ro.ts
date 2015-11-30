@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ro" sourcelanguage="">
+<!DOCTYPE TS><TS version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -45,7 +45,7 @@
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation>Despre Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="tr" sourcelanguage="">
+<!DOCTYPE TS><TS version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -35,17 +35,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation>Hakkında</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation>Katkıda Bulunanlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation>Meteo-qt Hakkında</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -53,47 +53,47 @@
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Add...</source>
-        <translation>&amp;Ekle...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Remove...</source>
-        <translation>&amp;Kaldır...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Up</source>
-        <translation>&amp;Yukarı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Down</source>
-        <translation>&amp;Aşağı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>De&amp;fault</source>
-        <translation>Ön&amp;tanımlı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Sırala</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="69"/>
         <source>The city already exists in the list</source>
-        <translation>Şehir zaten listede mevcut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="87"/>
         <source>The list is empty</source>
-        <translation>Liste boş</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="93"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>&quot;{0}&quot; şehri kaldırıldı</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -102,8 +102,7 @@
         <location filename="meteo_qt.py" line="686"/>
         <source>Error :
 </source>
-        <translation>Hate:
-</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -144,212 +143,212 @@
     <message>
         <location filename="settings.py" line="44"/>
         <source>City</source>
-        <translation>Şehir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
         <source>Click to edit the cities list</source>
-        <translation>Şehir listesini düzenlemek için tıklayın</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="50"/>
         <source>Language</source>
-        <translation>Dil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Dil ayarlarının uygulanması için uygulamanın yeniden başlatılması gerekli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
         <source>Bulgarian</source>
-        <translation>Bulgarca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="55"/>
         <source>Catalan</source>
-        <translation>Katalanca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="56"/>
         <source>Czech</source>
-        <translation>Çekçe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="57"/>
         <source>Danish</source>
-        <translation>Danca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
         <source>German</source>
-        <translation>Almanca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="59"/>
         <source>Greek</source>
-        <translation>Yunanca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="60"/>
         <source>English</source>
-        <translation>İngilizce</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="61"/>
         <source>Spanish</source>
-        <translation>İspanyolca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="62"/>
         <source>Finnish</source>
-        <translation>Fince</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="63"/>
         <source>French</source>
-        <translation>Fransızca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="64"/>
         <source>Hebrew</source>
-        <translation>İbranice</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="65"/>
         <source>Croatian</source>
-        <translation>Hırvatça</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="66"/>
         <source>Hungarian</source>
-        <translation>Macarca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="67"/>
         <source>Italian</source>
-        <translation>İtalyanca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="68"/>
         <source>Japanese</source>
-        <translation>Japonca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="69"/>
         <source>Lithuanian</source>
-        <translation>Litvanca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="70"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation>Norveççe (Bokmaal)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="71"/>
         <source>Dutch</source>
-        <translation>Felemenkçe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="72"/>
         <source>Polish</source>
-        <translation>Lehçe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="73"/>
         <source>Portuguese</source>
-        <translation>Portekizce</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="74"/>
         <source>Brazil Portuguese</source>
-        <translation>Brezilya Portekizcesi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="75"/>
         <source>Romanian</source>
-        <translation>Rumence</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="76"/>
         <source>Russian</source>
-        <translation>Rusça</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="77"/>
         <source>Slovak</source>
-        <translation>Slovakça</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="78"/>
         <source>Swedish</source>
-        <translation>İsveççe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="79"/>
         <source>Turkish</source>
-        <translation>Türkçe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="80"/>
         <source>Ukrainian</source>
-        <translation>Ukraynaca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="81"/>
         <source>Chinese Traditional</source>
-        <translation>Geleneksel Çince</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="82"/>
         <source>Chinese Simplified</source>
-        <translation>Basitleştirilmiş Çince</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="100"/>
         <source>Temperature unit</source>
-        <translation>Sıcaklık birimi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="109"/>
         <source>Update interval</source>
-        <translation>Güncelleme sıklığı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="110"/>
         <source>minutes</source>
-        <translation>dakika</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
         <source>Launch at startup</source>
-        <translation>Açılışta çalıştır</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="140"/>
         <source>Font colour in the tray</source>
-        <translation>Sistem tablasındaki yazıtipi rengi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="146"/>
         <source>Reset</source>
-        <translation>Sıfırla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="147"/>
         <source>Reset font colour to system default</source>
-        <translation>Yazıtipi rengini sistem öntanımlısına sıfırla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="151"/>
         <source>Notification on weather update</source>
-        <translation>Hava durumu güncellemesinde uyarı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="settings.py" line="220"/>
         <source>Meteo-qt Configuration</source>
-        <translation>Meteo-qt Yapılandırması</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -367,87 +366,87 @@
     <message>
         <location filename="overview.py" line="34"/>
         <source>Mon</source>
-        <translation>Pzt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="35"/>
         <source>Tue</source>
-        <translation>Sal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="36"/>
         <source>Wed</source>
-        <translation>Çar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="37"/>
         <source>Thu</source>
-        <translation>Per</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="38"/>
         <source>Fri</source>
-        <translation>Cum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="39"/>
         <source>Sat</source>
-        <translation>Cts</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="40"/>
         <source>Sun</source>
-        <translation>Paz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="89"/>
         <source>Wind</source>
-        <translation>Rüzgar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="104"/>
         <source>Cloudiness</source>
-        <translation>Bulutluluk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="108"/>
         <source>Pressure</source>
-        <translation>Basınç</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="114"/>
         <source>Humidity</source>
-        <translation>Nem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="120"/>
         <source>Sunrise</source>
-        <translation>Gün Doğumu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="122"/>
         <source>Sunset</source>
-        <translation>Gün Batımı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="175"/>
         <source>Weather status</source>
-        <translation>Hava durumu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="238"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Günün en az ve en fazla sıcaklığı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="301"/>
         <source>snow</source>
-        <translation>kar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="overview.py" line="302"/>
         <source>rain</source>
-        <translation>yağmur</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -463,37 +462,37 @@
     <message>
         <location filename="searchcity.py" line="23"/>
         <source>Searching...</source>
-        <translation>Arıyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="44"/>
         <source>&amp;Ok</source>
-        <translation>&amp;Tamam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="46"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;İptal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
-        <translation>Lütfen üç harften fazlasını yazın</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="164"/>
         <source>No results</source>
-        <translation>Sonuç yok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="166"/>
         <source>Found {0} city</source>
-        <translation>{0} şehir bulundu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="168"/>
         <source>Found {0} cities</source>
-        <translation>{0}  şehir bulundu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -535,62 +534,62 @@
     <message>
         <location filename="meteo_qt.py" line="73"/>
         <source>Cities</source>
-        <translation>Şehirler</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="74"/>
         <source>&amp;Temporary city</source>
-        <translation>&amp;Geçici şehir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="75"/>
         <source>&amp;Update</source>
-        <translation>&amp;Güncelle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="76"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Ayarlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="77"/>
         <source>&amp;About</source>
-        <translation>&amp;Hakkında</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="78"/>
         <source>Exit</source>
-        <translation>Çıkış</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="100"/>
         <source>Searching weather data...</source>
-        <translation>Hava durumu verisi aranıyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="193"/>
         <source>Empty list</source>
-        <translation>Listeyi boşalt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="207"/>
         <source>Fetching weather data ...</source>
-        <translation>Hava durumu verisi getiriliyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="225"/>
         <source>No city configured</source>
-        <translation>Herhangi bir şehir yapılandırılmamış</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>No city has been configured yet.</source>
-        <translation>Henüz herhangi bir şehir yapılandırılmamış</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Simge üzerinde sağ tıklayın ve ayarlara tıklayın.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="323"/>
@@ -600,21 +599,19 @@
     <message>
         <location filename="meteo_qt.py" line="352"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation>meteo-qt: Veri bulunamıyor!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="559"/>
         <source>Fetching weather data...</source>
-        <translation>Hava durumu verisi getiriliyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="567"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-            &lt;br/&gt;License: GPLv3
-            &lt;br/&gt;{4} üzerinde Python {1} - Qt {2} - PyQt {3}</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="573"/>
@@ -634,23 +631,7 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Yazar: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Sistem tablasında hava durumunu gösteren
-                        basit bir uygulama.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Veri kaynağı: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;Bu yazılım şu adresteki simgeleri kullanmaktadır:
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;Meteo-qt&apos; yi dilinize çevirmek veya mevcut çevirilere
-                        katkıda bulunmak için
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        Transifex&lt;/a&gt; platformunu kullanabilirsiniz.
-                        &lt;p&gt;Bir sorun bildirmek veya öneride bulunmak istiyorsanız
-                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt; üzerinde bir hata kaydı
-                        açabilirsiniz.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -705,32 +686,32 @@
     <message>
         <location filename="conditions.py" line="7"/>
         <source>thunderstorm with light rain</source>
-        <translation>hafif yağmurlu yıldırımlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="8"/>
         <source>thunderstorm with rain</source>
-        <translation>yağmurlu yıldırımlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="9"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>sağanak yağmurlu yıldırımlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="10"/>
         <source>light thunderstorm</source>
-        <translation>hafif yıldırımlar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="11"/>
         <source>thunderstorm</source>
-        <translation>yıldırım</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="12"/>
         <source>heavy thunderstorm</source>
-        <translation>ağır yıldırım</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="13"/>
@@ -855,7 +836,7 @@
     <message>
         <location filename="conditions.py" line="37"/>
         <source>snow</source>
-        <translation type="unfinished">kar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="38"/>
@@ -935,7 +916,7 @@
     <message>
         <location filename="conditions.py" line="53"/>
         <source>volcanic ash</source>
-        <translation>volkanik kül</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="54"/>
@@ -945,17 +926,17 @@
     <message>
         <location filename="conditions.py" line="61"/>
         <source>tornado</source>
-        <translation>hortum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="56"/>
         <source>clear sky</source>
-        <translation>açık hava</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>few clouds</source>
-        <translation>az bulutlu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
@@ -985,17 +966,17 @@
     <message>
         <location filename="conditions.py" line="64"/>
         <source>cold</source>
-        <translation>soğuk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>hot</source>
-        <translation>sıcak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>windy</source>
-        <translation>rüzgarlı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
@@ -1005,7 +986,7 @@
     <message>
         <location filename="conditions.py" line="68"/>
         <source>calm</source>
-        <translation>serin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="69"/>
@@ -1060,162 +1041,162 @@
     <message>
         <location filename="conditions.py" line="103"/>
         <source>North</source>
-        <translation>Kuzey</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
         <source>NorthEast</source>
-        <translation>KuzeyDoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>North-northeast</source>
-        <translation>Kuzey-kuzeydoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>NorthWest</source>
-        <translation>KuzeyBatı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>North-northwest</source>
-        <translation>Kuzey-kuzeybatı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>South</source>
-        <translation>Güney</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>SouthEast</source>
-        <translation>GüneyDoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>South-southeast</source>
-        <translation>Güney-güneydoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>SouthWest</source>
-        <translation>GüneyBatı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>South-southwest</source>
-        <translation>Güney-güneydoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>East</source>
-        <translation>Doğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East-southeast</source>
-        <translation>Doğu-güneydoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-northeast</source>
-        <translation>Doğu-kuzeydoğu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>West</source>
-        <translation>Batı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West-southwest</source>
-        <translation>Batı-güneybatı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-northwest</source>
-        <translation>Batı-kuzeybatı</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="120"/>
         <source>N</source>
-        <translation>K</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="121"/>
         <source>NE</source>
-        <translation>KD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="122"/>
         <source>NNE</source>
-        <translation>KKD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="123"/>
         <source>NW</source>
-        <translation>KB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="124"/>
         <source>NNW</source>
-        <translation>KKB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="125"/>
         <source>S</source>
-        <translation>G</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="126"/>
         <source>SE</source>
-        <translation>GD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="127"/>
         <source>SSE</source>
-        <translation>GGD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="128"/>
         <source>SW</source>
-        <translation>GB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="129"/>
         <source>SSW</source>
-        <translation>GGB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="130"/>
         <source>E</source>
-        <translation>D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="131"/>
         <source>ESE</source>
-        <translation>DGD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ENE</source>
-        <translation>DKD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
         <source>W</source>
-        <translation>B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="134"/>
         <source>WSW</source>
-        <translation>BGB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WNW</source>
-        <translation>BKB</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1224,25 +1205,23 @@
         <location filename="searchcity.py" line="185"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Veri hatası, lütfen daha sonra yeniden deneyin
-veya şehir ismini değiştirin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="205"/>
         <source>Please wait, searching...</source>
-        <translation>Lütfen bekleyin, aranıyor...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>Error: </source>
-        <translation>Hata:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>
 Try again later</source>
-        <translation>
-Daha sonra deneyin</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
