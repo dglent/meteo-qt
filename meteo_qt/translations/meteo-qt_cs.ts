@@ -26,7 +26,30 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] překlad do němčiny
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] překlad do řečtiny
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] překlad do španělštiny
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] překlad do francouzštiny
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] překlad do francouzštiny, projekt
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] překlad do polštiny
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] překlad do ruštiny
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] překlad do turečtiny
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] překlad do ukrajinštiny
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] překlad do čínštiny (Tchajwan)
+            &lt;p&gt;Pavel Frich &lt;a href=&quot;mailto:pavelfric@yahoo.com&quot;&gt;pavelfric@yahoo.com&lt;/a&gt;&lt;br/&gt;
+            [cs] překlad do češtiny (Tchajwan
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Projekt</translation>
     </message>
 </context>
 <context>
@@ -34,17 +57,17 @@
     <message>
         <location filename="about_dlg.py" line="22"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="23"/>
         <source>Contributors</source>
-        <translation type="unfinished"/>
+        <translation>Přispěvatelé</translation>
     </message>
     <message>
         <location filename="about_dlg.py" line="41"/>
         <source>About Meteo-qt</source>
-        <translation type="unfinished"/>
+        <translation>O programu Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -52,47 +75,47 @@
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Přidat...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Odstranit...</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nahoru</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Dolů</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Výchozí</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Seřadit</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="69"/>
         <source>The city already exists in the list</source>
-        <translation type="unfinished"/>
+        <translation>Město již v seznamu je</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="87"/>
         <source>The list is empty</source>
-        <translation type="unfinished"/>
+        <translation>Seznam je prázdný</translation>
     </message>
     <message>
         <location filename="citylistdlg.py" line="93"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"/>
+        <translation>Město &quot;{0}&quot; bylo odstraněno</translation>
     </message>
 </context>
 <context>
@@ -101,7 +124,7 @@
         <location filename="meteo_qt.py" line="686"/>
         <source>Error :
 </source>
-        <translation type="unfinished"/>
+        <translation>Chyba:</translation>
     </message>
 </context>
 <context>
@@ -142,212 +165,212 @@
     <message>
         <location filename="settings.py" line="44"/>
         <source>City</source>
-        <translation type="unfinished"/>
+        <translation>Město</translation>
     </message>
     <message>
         <location filename="settings.py" line="47"/>
         <source>Click to edit the cities list</source>
-        <translation type="unfinished"/>
+        <translation>Klepněte pro upravení seznamu měst</translation>
     </message>
     <message>
         <location filename="settings.py" line="50"/>
         <source>Language</source>
-        <translation type="unfinished"/>
+        <translation>Jazyk</translation>
     </message>
     <message>
         <location filename="settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
     <message>
         <location filename="settings.py" line="54"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"/>
+        <translation>Bulharský</translation>
     </message>
     <message>
         <location filename="settings.py" line="55"/>
         <source>Catalan</source>
-        <translation type="unfinished"/>
+        <translation>Katalánský</translation>
     </message>
     <message>
         <location filename="settings.py" line="56"/>
         <source>Czech</source>
-        <translation type="unfinished"/>
+        <translation>Český</translation>
     </message>
     <message>
         <location filename="settings.py" line="57"/>
         <source>Danish</source>
-        <translation type="unfinished"/>
+        <translation>Dánský</translation>
     </message>
     <message>
         <location filename="settings.py" line="58"/>
         <source>German</source>
-        <translation type="unfinished"/>
+        <translation>Německý</translation>
     </message>
     <message>
         <location filename="settings.py" line="59"/>
         <source>Greek</source>
-        <translation type="unfinished"/>
+        <translation>Řecký</translation>
     </message>
     <message>
         <location filename="settings.py" line="60"/>
         <source>English</source>
-        <translation type="unfinished"/>
+        <translation>Anglický</translation>
     </message>
     <message>
         <location filename="settings.py" line="61"/>
         <source>Spanish</source>
-        <translation type="unfinished"/>
+        <translation>Španělský</translation>
     </message>
     <message>
         <location filename="settings.py" line="62"/>
         <source>Finnish</source>
-        <translation type="unfinished"/>
+        <translation>Finský</translation>
     </message>
     <message>
         <location filename="settings.py" line="63"/>
         <source>French</source>
-        <translation type="unfinished"/>
+        <translation>Francouzský</translation>
     </message>
     <message>
         <location filename="settings.py" line="64"/>
         <source>Hebrew</source>
-        <translation type="unfinished"/>
+        <translation>Hebrejský</translation>
     </message>
     <message>
         <location filename="settings.py" line="65"/>
         <source>Croatian</source>
-        <translation type="unfinished"/>
+        <translation>Chorvatský</translation>
     </message>
     <message>
         <location filename="settings.py" line="66"/>
         <source>Hungarian</source>
-        <translation type="unfinished"/>
+        <translation>Maďarský</translation>
     </message>
     <message>
         <location filename="settings.py" line="67"/>
         <source>Italian</source>
-        <translation type="unfinished"/>
+        <translation>Italský</translation>
     </message>
     <message>
         <location filename="settings.py" line="68"/>
         <source>Japanese</source>
-        <translation type="unfinished"/>
+        <translation>Japonský</translation>
     </message>
     <message>
         <location filename="settings.py" line="69"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"/>
+        <translation>Litevský</translation>
     </message>
     <message>
         <location filename="settings.py" line="70"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation type="unfinished"/>
+        <translation>Norský (Bokmaal)</translation>
     </message>
     <message>
         <location filename="settings.py" line="71"/>
         <source>Dutch</source>
-        <translation type="unfinished"/>
+        <translation>Holandský</translation>
     </message>
     <message>
         <location filename="settings.py" line="72"/>
         <source>Polish</source>
-        <translation type="unfinished"/>
+        <translation>Polský</translation>
     </message>
     <message>
         <location filename="settings.py" line="73"/>
         <source>Portuguese</source>
-        <translation type="unfinished"/>
+        <translation>Portugalský</translation>
     </message>
     <message>
         <location filename="settings.py" line="74"/>
         <source>Brazil Portuguese</source>
-        <translation type="unfinished"/>
+        <translation>Portugalský (Brazílie)</translation>
     </message>
     <message>
         <location filename="settings.py" line="75"/>
         <source>Romanian</source>
-        <translation type="unfinished"/>
+        <translation>Rumunský</translation>
     </message>
     <message>
         <location filename="settings.py" line="76"/>
         <source>Russian</source>
-        <translation type="unfinished"/>
+        <translation>Ruský</translation>
     </message>
     <message>
         <location filename="settings.py" line="77"/>
         <source>Slovak</source>
-        <translation type="unfinished"/>
+        <translation>Slovenský</translation>
     </message>
     <message>
         <location filename="settings.py" line="78"/>
         <source>Swedish</source>
-        <translation type="unfinished"/>
+        <translation>Švédský</translation>
     </message>
     <message>
         <location filename="settings.py" line="79"/>
         <source>Turkish</source>
-        <translation type="unfinished"/>
+        <translation>Turecký</translation>
     </message>
     <message>
         <location filename="settings.py" line="80"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"/>
+        <translation>Ukrajinský</translation>
     </message>
     <message>
         <location filename="settings.py" line="81"/>
         <source>Chinese Traditional</source>
-        <translation type="unfinished"/>
+        <translation>Čínský (tradiční)</translation>
     </message>
     <message>
         <location filename="settings.py" line="82"/>
         <source>Chinese Simplified</source>
-        <translation type="unfinished"/>
+        <translation>Čínský (zjednodušený)</translation>
     </message>
     <message>
         <location filename="settings.py" line="100"/>
         <source>Temperature unit</source>
-        <translation type="unfinished"/>
+        <translation>Jednotka teploty</translation>
     </message>
     <message>
         <location filename="settings.py" line="109"/>
         <source>Update interval</source>
-        <translation type="unfinished"/>
+        <translation>Obnovovací interval</translation>
     </message>
     <message>
         <location filename="settings.py" line="110"/>
         <source>minutes</source>
-        <translation type="unfinished"/>
+        <translation>minut</translation>
     </message>
     <message>
         <location filename="settings.py" line="132"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"/>
+        <translation>Spustit při spuštění</translation>
     </message>
     <message>
         <location filename="settings.py" line="140"/>
         <source>Font colour in the tray</source>
-        <translation type="unfinished"/>
+        <translation>Barva písma v oznamovací oblasti panelu</translation>
     </message>
     <message>
         <location filename="settings.py" line="146"/>
         <source>Reset</source>
-        <translation type="unfinished"/>
+        <translation>Nastavit znovu</translation>
     </message>
     <message>
         <location filename="settings.py" line="147"/>
         <source>Reset font colour to system default</source>
-        <translation type="unfinished"/>
+        <translation>Nastavit barvu písma znovu na výchozí systému</translation>
     </message>
     <message>
         <location filename="settings.py" line="151"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"/>
+        <translation>Upozornění na změnu počasi</translation>
     </message>
     <message>
         <location filename="settings.py" line="220"/>
         <source>Meteo-qt Configuration</source>
-        <translation type="unfinished"/>
+        <translation>Nastavení Meteo-qt</translation>
     </message>
 </context>
 <context>
@@ -365,87 +388,87 @@
     <message>
         <location filename="overview.py" line="34"/>
         <source>Mon</source>
-        <translation type="unfinished"/>
+        <translation>Po</translation>
     </message>
     <message>
         <location filename="overview.py" line="35"/>
         <source>Tue</source>
-        <translation type="unfinished"/>
+        <translation>Út</translation>
     </message>
     <message>
         <location filename="overview.py" line="36"/>
         <source>Wed</source>
-        <translation type="unfinished"/>
+        <translation>St</translation>
     </message>
     <message>
         <location filename="overview.py" line="37"/>
         <source>Thu</source>
-        <translation type="unfinished"/>
+        <translation>Čt</translation>
     </message>
     <message>
         <location filename="overview.py" line="38"/>
         <source>Fri</source>
-        <translation type="unfinished"/>
+        <translation>Pá</translation>
     </message>
     <message>
         <location filename="overview.py" line="39"/>
         <source>Sat</source>
-        <translation type="unfinished"/>
+        <translation>So</translation>
     </message>
     <message>
         <location filename="overview.py" line="40"/>
         <source>Sun</source>
-        <translation type="unfinished"/>
+        <translation>Ne</translation>
     </message>
     <message>
         <location filename="overview.py" line="89"/>
         <source>Wind</source>
-        <translation type="unfinished"/>
+        <translation>Vítr</translation>
     </message>
     <message>
         <location filename="overview.py" line="104"/>
         <source>Cloudiness</source>
-        <translation type="unfinished"/>
+        <translation>Oblačnost</translation>
     </message>
     <message>
         <location filename="overview.py" line="108"/>
         <source>Pressure</source>
-        <translation type="unfinished"/>
+        <translation>Tlak</translation>
     </message>
     <message>
         <location filename="overview.py" line="114"/>
         <source>Humidity</source>
-        <translation type="unfinished"/>
+        <translation>Vlhkost vzduchu</translation>
     </message>
     <message>
         <location filename="overview.py" line="120"/>
         <source>Sunrise</source>
-        <translation type="unfinished"/>
+        <translation>Východ slunce</translation>
     </message>
     <message>
         <location filename="overview.py" line="122"/>
         <source>Sunset</source>
-        <translation type="unfinished"/>
+        <translation>Západ slunce</translation>
     </message>
     <message>
         <location filename="overview.py" line="175"/>
         <source>Weather status</source>
-        <translation type="unfinished"/>
+        <translation>Stav počasí</translation>
     </message>
     <message>
         <location filename="overview.py" line="238"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"/>
+        <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
         <location filename="overview.py" line="301"/>
         <source>snow</source>
-        <translation type="unfinished"/>
+        <translation>Sněžení</translation>
     </message>
     <message>
         <location filename="overview.py" line="302"/>
         <source>rain</source>
-        <translation type="unfinished"/>
+        <translation>Déšť</translation>
     </message>
 </context>
 <context>
@@ -453,7 +476,7 @@
     <message>
         <location filename="searchcity.py" line="32"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"/>
+        <translation>Začněte psát město...</translation>
     </message>
 </context>
 <context>
@@ -461,37 +484,37 @@
     <message>
         <location filename="searchcity.py" line="23"/>
         <source>Searching...</source>
-        <translation type="unfinished"/>
+        <translation>Hledá se...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="44"/>
         <source>&amp;Ok</source>
-        <translation type="unfinished"/>
+        <translation>&amp;OK</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="46"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Z&amp;rušit</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
-        <translation type="unfinished"/>
+        <translation>Napište, prosím, více než tři písmena</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="164"/>
         <source>No results</source>
-        <translation type="unfinished"/>
+        <translation>Žádné výsledky</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="166"/>
         <source>Found {0} city</source>
-        <translation type="unfinished"/>
+        <translation>Nalezeno {0} město</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="168"/>
         <source>Found {0} cities</source>
-        <translation type="unfinished"/>
+        <translation>Nalezeno {0} města</translation>
     </message>
 </context>
 <context>
@@ -501,31 +524,31 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona v oznamovací oblasti</translation>
     </message>
     <message>
         <location filename="settings.py" line="164"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona a teplota</translation>
     </message>
     <message>
         <location filename="settings.py" line="167"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona</translation>
     </message>
     <message>
         <location filename="settings.py" line="170"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Teplota</translation>
     </message>
     <message>
         <location filename="settings.py" line="184"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Velikost písma v oznamovací oblasti</translation>
     </message>
 </context>
 <context>
@@ -533,84 +556,86 @@
     <message>
         <location filename="meteo_qt.py" line="73"/>
         <source>Cities</source>
-        <translation type="unfinished"/>
+        <translation>Města</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="74"/>
         <source>&amp;Temporary city</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Dočasné město</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="75"/>
         <source>&amp;Update</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Aktualizace</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="76"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nastavení</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="77"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;O programu</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="78"/>
         <source>Exit</source>
-        <translation type="unfinished"/>
+        <translation>Ukončit</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="100"/>
         <source>Searching weather data...</source>
-        <translation type="unfinished"/>
+        <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="193"/>
         <source>Empty list</source>
-        <translation type="unfinished"/>
+        <translation>Prázdný seznam</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="207"/>
         <source>Fetching weather data ...</source>
-        <translation type="unfinished"/>
+        <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="225"/>
         <source>No city configured</source>
-        <translation type="unfinished"/>
+        <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>No city has been configured yet.</source>
-        <translation type="unfinished"/>
+        <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="238"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation type="unfinished"/>
+        <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="323"/>
         <source>Please wait, trying to find data...</source>
-        <translation type="unfinished"/>
+        <translation>Počkejte, prosím. Zkouší se najít data...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="352"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation type="unfinished"/>
+        <translation>meteo-qt: Nelze najít data!</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="559"/>
         <source>Fetching weather data...</source>
-        <translation type="unfinished"/>
+        <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="567"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;Povolení: GPLv3
+            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="573"/>
@@ -638,27 +663,27 @@
     <message>
         <location filename="conditions.py" line="138"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Nízké</translation>
     </message>
     <message>
         <location filename="conditions.py" line="139"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation>Mírné</translation>
     </message>
     <message>
         <location filename="conditions.py" line="140"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Vysoké</translation>
     </message>
     <message>
         <location filename="conditions.py" line="141"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation>Velmi vysoké</translation>
     </message>
     <message>
         <location filename="conditions.py" line="142"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation>Mimořádné</translation>
     </message>
 </context>
 <context>
@@ -667,7 +692,7 @@
         <location filename="overview.py" line="130"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Ultrafialové záření</translation>
     </message>
 </context>
 <context>
@@ -685,22 +710,22 @@
     <message>
         <location filename="conditions.py" line="7"/>
         <source>thunderstorm with light rain</source>
-        <translation>bouřky a mírný déšť</translation>
+        <translation>Bouřky a mírný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="8"/>
         <source>thunderstorm with rain</source>
-        <translation>bouřky</translation>
+        <translation>Bouřky s deštěm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="9"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>bouřky a intenzivní déšť</translation>
+        <translation>Bouřky a silný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="10"/>
         <source>light thunderstorm</source>
-        <translation>ojedinělé bouřky</translation>
+        <translation>Ojedinělé bouřky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="11"/>
@@ -710,147 +735,147 @@
     <message>
         <location filename="conditions.py" line="12"/>
         <source>heavy thunderstorm</source>
-        <translation>četné bouřky</translation>
+        <translation>Četné bouřky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="13"/>
         <source>ragged thunderstorm</source>
-        <translation>ojedinělé bouřky</translation>
+        <translation>Nepravidelné bouřky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="14"/>
         <source>thunderstorm with light drizzle</source>
-        <translation type="unfinished"/>
+        <translation>Bouřky a mírné mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="15"/>
         <source>thunderstorm with drizzle</source>
-        <translation type="unfinished"/>
+        <translation>Bouřky a mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="16"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation type="unfinished"/>
+        <translation>Bouřky a silné mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="17"/>
         <source>light intensity drizzle</source>
-        <translation type="unfinished"/>
+        <translation>Slabé mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="18"/>
         <source>drizzle</source>
-        <translation>mrholení</translation>
+        <translation>Mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="19"/>
         <source>heavy intensity drizzle</source>
-        <translation>silné mrholení</translation>
+        <translation>Silné mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="20"/>
         <source>light intensity drizzle rain</source>
-        <translation>slabé mrholení</translation>
+        <translation>Slabé mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="21"/>
         <source>drizzle rain</source>
-        <translation>mrholení</translation>
+        <translation>Mrholení s deštěm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="22"/>
         <source>heavy intensity drizzle rain</source>
-        <translation>silné mrholení</translation>
+        <translation>Silné mrholení s deštěm</translation>
     </message>
     <message>
         <location filename="conditions.py" line="23"/>
         <source>shower rain and drizzle</source>
-        <translation>mrholení</translation>
+        <translation>Dešťové přeháňky a mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="24"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>silné mrholení</translation>
+        <translation>Silné dešťové přeháňky a mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="25"/>
         <source>shower drizzle</source>
-        <translation>mrholení</translation>
+        <translation>Přeháňky a mrholení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="26"/>
         <source>light rain</source>
-        <translation>mírný déšť</translation>
+        <translation>Mírný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="27"/>
         <source>moderate rain</source>
-        <translation>střední déšť</translation>
+        <translation>Střední déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="28"/>
         <source>heavy intensity rain</source>
-        <translation>silný déšť</translation>
+        <translation>Silný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="29"/>
         <source>very heavy rain</source>
-        <translation>velmi silný déšť</translation>
+        <translation>Velmi silný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="30"/>
         <source>extreme rain</source>
-        <translation>intenzivní déšť</translation>
+        <translation>Neobyčejně silný déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="31"/>
         <source>freezing rain</source>
-        <translation>namrzající déšť</translation>
+        <translation>Namrzající déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="32"/>
         <source>light intensity shower rain</source>
-        <translation>mírný déšť</translation>
+        <translation>Mírný přeháňkový déšť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="33"/>
         <source>shower rain</source>
-        <translation>déšť</translation>
+        <translation>Dešťové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="34"/>
         <source>heavy intensity shower rain</source>
-        <translation>silný déšť</translation>
+        <translation>Silné dešťové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="35"/>
         <source>ragged shower rain</source>
-        <translation>velmi silný déšť</translation>
+        <translation>Nepravidelné dešťové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="36"/>
         <source>light snow</source>
-        <translation>mírné sněžení</translation>
+        <translation>Mírné sněžení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="37"/>
         <source>snow</source>
-        <translation>sníh</translation>
+        <translation>Sníh</translation>
     </message>
     <message>
         <location filename="conditions.py" line="38"/>
         <source>heavy snow</source>
-        <translation>husté sněžení</translation>
+        <translation>Husté sněžení</translation>
     </message>
     <message>
         <location filename="conditions.py" line="39"/>
         <source>sleet</source>
-        <translation>plískanice</translation>
+        <translation>Plískanice</translation>
     </message>
     <message>
         <location filename="conditions.py" line="40"/>
         <source>shower sleet</source>
-        <translation>plískanice</translation>
+        <translation>Dešťové plískanice</translation>
     </message>
     <message>
         <location filename="conditions.py" line="41"/>
@@ -860,92 +885,92 @@
     <message>
         <location filename="conditions.py" line="42"/>
         <source>rain and snow</source>
-        <translation>déšť se sněhem</translation>
+        <translation>Déšť se sněhem</translation>
     </message>
     <message>
         <location filename="conditions.py" line="43"/>
         <source>light shower snow</source>
-        <translation>Mírné sněžení</translation>
+        <translation>Mírné sněhové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="44"/>
         <source>shower snow</source>
-        <translation>sněhové přeháňky</translation>
+        <translation>Sněhové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="45"/>
         <source>heavy shower snow</source>
-        <translation>husté sněžení</translation>
+        <translation>Husté sněhové přeháňky</translation>
     </message>
     <message>
         <location filename="conditions.py" line="46"/>
         <source>mist</source>
-        <translation>mlha</translation>
+        <translation>Kouřmo</translation>
     </message>
     <message>
         <location filename="conditions.py" line="47"/>
         <source>smoke</source>
-        <translation>smog</translation>
+        <translation>Kouř</translation>
     </message>
     <message>
         <location filename="conditions.py" line="48"/>
         <source>haze</source>
-        <translation>opar</translation>
+        <translation>Opar</translation>
     </message>
     <message>
         <location filename="conditions.py" line="49"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"/>
+        <translation>Písek, víření oblaku prachu</translation>
     </message>
     <message>
         <location filename="conditions.py" line="50"/>
         <source>fog</source>
-        <translation type="unfinished"/>
+        <translation>Mlha</translation>
     </message>
     <message>
         <location filename="conditions.py" line="51"/>
         <source>sand</source>
-        <translation>písek</translation>
+        <translation>Písek</translation>
     </message>
     <message>
         <location filename="conditions.py" line="52"/>
         <source>dust</source>
-        <translation>prach</translation>
+        <translation>Prach</translation>
     </message>
     <message>
         <location filename="conditions.py" line="53"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"/>
+        <translation>Sopečný popel</translation>
     </message>
     <message>
         <location filename="conditions.py" line="54"/>
         <source>squalls</source>
-        <translation type="unfinished"/>
+        <translation>Náhlý vichr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="61"/>
         <source>tornado</source>
-        <translation type="unfinished"/>
+        <translation>Smršť</translation>
     </message>
     <message>
         <location filename="conditions.py" line="56"/>
         <source>clear sky</source>
-        <translation type="unfinished"/>
+        <translation>Jasné nebe</translation>
     </message>
     <message>
         <location filename="conditions.py" line="57"/>
         <source>few clouds</source>
-        <translation>polojasno</translation>
+        <translation>Polojasno</translation>
     </message>
     <message>
         <location filename="conditions.py" line="58"/>
         <source>scattered clouds</source>
-        <translation>Občasné přeháňky</translation>
+        <translation>Roztroušená oblačnost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="59"/>
         <source>broken clouds</source>
-        <translation>Polojasno</translation>
+        <translation>Protrhaná oblačnost</translation>
     </message>
     <message>
         <location filename="conditions.py" line="60"/>
@@ -955,167 +980,167 @@
     <message>
         <location filename="conditions.py" line="62"/>
         <source>tropical storm</source>
-        <translation type="unfinished"/>
+        <translation>Tropická bouře</translation>
     </message>
     <message>
         <location filename="conditions.py" line="79"/>
         <source>hurricane</source>
-        <translation type="unfinished"/>
+        <translation>Vichřice</translation>
     </message>
     <message>
         <location filename="conditions.py" line="64"/>
         <source>cold</source>
-        <translation type="unfinished"/>
+        <translation>Chladno</translation>
     </message>
     <message>
         <location filename="conditions.py" line="65"/>
         <source>hot</source>
-        <translation type="unfinished"/>
+        <translation>Horko</translation>
     </message>
     <message>
         <location filename="conditions.py" line="66"/>
         <source>windy</source>
-        <translation type="unfinished"/>
+        <translation>Větrno</translation>
     </message>
     <message>
         <location filename="conditions.py" line="67"/>
         <source>hail</source>
-        <translation type="unfinished"/>
+        <translation>Kroupy</translation>
     </message>
     <message>
         <location filename="conditions.py" line="68"/>
         <source>calm</source>
-        <translation type="unfinished"/>
+        <translation>Bezvětří</translation>
     </message>
     <message>
         <location filename="conditions.py" line="69"/>
         <source>light breeze</source>
-        <translation type="unfinished"/>
+        <translation>Slabý vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="70"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"/>
+        <translation>Mírný vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="71"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"/>
+        <translation>Dosti čerstvý vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="72"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"/>
+        <translation>Čerstvý/ostrý vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="73"/>
         <source>strong breeze</source>
-        <translation type="unfinished"/>
+        <translation>Silný vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"/>
+        <translation>Velmi silný vítr, prudký vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="75"/>
         <source>gale</source>
-        <translation type="unfinished"/>
+        <translation>Bouřlivý vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="76"/>
         <source>severe gale</source>
-        <translation type="unfinished"/>
+        <translation>Krutý bouřlivý vítr</translation>
     </message>
     <message>
         <location filename="conditions.py" line="77"/>
         <source>storm</source>
-        <translation type="unfinished"/>
+        <translation>Silná vichřice</translation>
     </message>
     <message>
         <location filename="conditions.py" line="78"/>
         <source>violent storm</source>
-        <translation type="unfinished"/>
+        <translation>Mohutná vichřice</translation>
     </message>
     <message>
         <location filename="conditions.py" line="103"/>
         <source>North</source>
-        <translation type="unfinished"/>
+        <translation>Sever</translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
         <source>NorthEast</source>
-        <translation type="unfinished"/>
+        <translation>Severovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="105"/>
         <source>North-northeast</source>
-        <translation type="unfinished"/>
+        <translation>Severoseverovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="106"/>
         <source>NorthWest</source>
-        <translation type="unfinished"/>
+        <translation>Severozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="107"/>
         <source>North-northwest</source>
-        <translation type="unfinished"/>
+        <translation>Severoseverozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="108"/>
         <source>South</source>
-        <translation type="unfinished"/>
+        <translation>Jih</translation>
     </message>
     <message>
         <location filename="conditions.py" line="109"/>
         <source>SouthEast</source>
-        <translation type="unfinished"/>
+        <translation>Jihovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="110"/>
         <source>South-southeast</source>
-        <translation type="unfinished"/>
+        <translation>Jihojihovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="111"/>
         <source>SouthWest</source>
-        <translation type="unfinished"/>
+        <translation>Jihozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="112"/>
         <source>South-southwest</source>
-        <translation type="unfinished"/>
+        <translation>Jihojihozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="113"/>
         <source>East</source>
-        <translation type="unfinished"/>
+        <translation>Východ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="114"/>
         <source>East-southeast</source>
-        <translation type="unfinished"/>
+        <translation>Východojihovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="115"/>
         <source>East-northeast</source>
-        <translation type="unfinished"/>
+        <translation>Východoseverovýchod</translation>
     </message>
     <message>
         <location filename="conditions.py" line="116"/>
         <source>West</source>
-        <translation type="unfinished"/>
+        <translation>Západ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="117"/>
         <source>West-southwest</source>
-        <translation type="unfinished"/>
+        <translation>Západojihozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="118"/>
         <source>West-northwest</source>
-        <translation type="unfinished"/>
+        <translation>Západoseverozápad</translation>
     </message>
     <message>
         <location filename="conditions.py" line="120"/>
@@ -1130,7 +1155,7 @@
     <message>
         <location filename="conditions.py" line="122"/>
         <source>NNE</source>
-        <translation type="unfinished"/>
+        <translation>SSV</translation>
     </message>
     <message>
         <location filename="conditions.py" line="123"/>
@@ -1140,7 +1165,7 @@
     <message>
         <location filename="conditions.py" line="124"/>
         <source>NNW</source>
-        <translation type="unfinished"/>
+        <translation>SSZ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="125"/>
@@ -1155,7 +1180,7 @@
     <message>
         <location filename="conditions.py" line="127"/>
         <source>SSE</source>
-        <translation type="unfinished"/>
+        <translation>JJV</translation>
     </message>
     <message>
         <location filename="conditions.py" line="128"/>
@@ -1165,7 +1190,7 @@
     <message>
         <location filename="conditions.py" line="129"/>
         <source>SSW</source>
-        <translation type="unfinished"/>
+        <translation>JJZ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="130"/>
@@ -1175,12 +1200,12 @@
     <message>
         <location filename="conditions.py" line="131"/>
         <source>ESE</source>
-        <translation type="unfinished"/>
+        <translation>VJV</translation>
     </message>
     <message>
         <location filename="conditions.py" line="132"/>
         <source>ENE</source>
-        <translation type="unfinished"/>
+        <translation>VSV</translation>
     </message>
     <message>
         <location filename="conditions.py" line="133"/>
@@ -1190,12 +1215,12 @@
     <message>
         <location filename="conditions.py" line="134"/>
         <source>WSW</source>
-        <translation type="unfinished"/>
+        <translation>ZJZ</translation>
     </message>
     <message>
         <location filename="conditions.py" line="135"/>
         <source>WNW</source>
-        <translation type="unfinished"/>
+        <translation>ZSZ</translation>
     </message>
 </context>
 <context>
@@ -1204,23 +1229,24 @@
         <location filename="searchcity.py" line="185"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"/>
+        <translation>Chyba dat. Zkuste to, prosím, později znovu
+nebo změňte název města</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="205"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"/>
+        <translation>Počkejte, prosím, hledá se...</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>Error: </source>
-        <translation type="unfinished"/>
+        <translation>Chyba: </translation>
     </message>
     <message>
         <location filename="searchcity.py" line="214"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"/>
+        <translation>Zkuste to později znovu</translation>
     </message>
 </context>
 </TS>
