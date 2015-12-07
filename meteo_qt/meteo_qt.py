@@ -439,11 +439,11 @@ class SystemTrayIcon(QMainWindow):
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
         pt = QPainter(icon)
         if self.tray_type != 'temp':
-            pt.drawPixmap(QPointF(1.0,0.0), self.wIcon)
+            pt.drawPixmap(QPointF(6.0,0.0), self.wIcon)
         pt.setFont(QFont('sans-sertif', int(self.fontsize)))
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp':
-            pt.drawText(icon.rect(), Qt.AlignBottom, str(self.temp))
+            pt.drawText(icon.rect(), Qt.AlignBottom|Qt.AlignCenter, str(self.temp))
         if self.tray_type == 'temp':
             pt.drawText(icon.rect(), Qt.AlignCenter, str(self.temp))
         pt.end()
