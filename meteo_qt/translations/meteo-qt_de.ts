@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -119,7 +120,7 @@ Projekt</translation>
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="686"/>
+        <location filename="meteo_qt.py" line="688"/>
         <source>Error :
 </source>
         <translation>Fehler :
@@ -456,22 +457,22 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <translation>Sonnenuntergang</translation>
     </message>
     <message>
-        <location filename="overview.py" line="175"/>
+        <location filename="overview.py" line="170"/>
         <source>Weather status</source>
         <translation>Wetterstatus</translation>
     </message>
     <message>
-        <location filename="overview.py" line="238"/>
+        <location filename="overview.py" line="233"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
-        <location filename="overview.py" line="301"/>
+        <location filename="overview.py" line="296"/>
         <source>snow</source>
         <translation>Schnee</translation>
     </message>
     <message>
-        <location filename="overview.py" line="302"/>
+        <location filename="overview.py" line="297"/>
         <source>rain</source>
         <translation>Regen</translation>
     </message>
@@ -709,10 +710,16 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="overview.py" line="130"/>
+        <location filename="overview.py" line="129"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>UV</translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="132"/>
+        <source>Fetching...</source>
+        <comment>&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

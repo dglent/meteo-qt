@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="fr" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -119,7 +120,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="686"/>
+        <location filename="meteo_qt.py" line="688"/>
         <source>Error :
 </source>
         <translation>Erreur :
@@ -134,7 +135,7 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -145,7 +146,7 @@
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -156,7 +157,7 @@
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -379,7 +380,7 @@
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -450,22 +451,22 @@
         <translation>Coucher du soleil</translation>
     </message>
     <message>
-        <location filename="overview.py" line="175"/>
+        <location filename="overview.py" line="170"/>
         <source>Weather status</source>
         <translation>Relevé météorologique</translation>
     </message>
     <message>
-        <location filename="overview.py" line="238"/>
+        <location filename="overview.py" line="233"/>
         <source>Min Max Temperature of the day</source>
         <translation>Températures minimales et maximales de la journée</translation>
     </message>
     <message>
-        <location filename="overview.py" line="301"/>
+        <location filename="overview.py" line="296"/>
         <source>snow</source>
         <translation>Neige</translation>
     </message>
     <message>
-        <location filename="overview.py" line="302"/>
+        <location filename="overview.py" line="297"/>
         <source>rain</source>
         <translation>Pluie</translation>
     </message>
@@ -677,36 +678,42 @@ sur la barre système.
     <message>
         <location filename="conditions.py" line="138"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="139"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="140"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="141"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="conditions.py" line="142"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="overview.py" line="130"/>
+        <location filename="overview.py" line="129"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="132"/>
+        <source>Fetching...</source>
+        <comment>&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -716,7 +723,7 @@ sur la barre système.
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

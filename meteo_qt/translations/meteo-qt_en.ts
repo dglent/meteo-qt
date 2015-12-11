@@ -99,7 +99,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="686"/>
+        <location filename="meteo_qt.py" line="688"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
@@ -429,22 +429,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="175"/>
+        <location filename="overview.py" line="170"/>
         <source>Weather status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="238"/>
+        <location filename="overview.py" line="233"/>
         <source>Min Max Temperature of the day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="301"/>
+        <location filename="overview.py" line="296"/>
         <source>snow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="overview.py" line="302"/>
+        <location filename="overview.py" line="297"/>
         <source>rain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -665,9 +665,15 @@
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="overview.py" line="130"/>
+        <location filename="overview.py" line="129"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="overview.py" line="132"/>
+        <source>Fetching...</source>
+        <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
