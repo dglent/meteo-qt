@@ -254,7 +254,7 @@ class SystemTrayIcon(QMainWindow):
         self.downloadThread.start()
 
     def uv(self, value):
-        self.uv_ind = value
+        self.uv_coord = value
 
     def forecast(self, data):
         self.forecast_data = data
@@ -270,7 +270,7 @@ class SystemTrayIcon(QMainWindow):
             self.overviewcity = overview.OverviewCity(
                 self.weatherDataDico, self.wIcon, self.forecast_data,
                 self.dayforecast_data, self.unit, self.forecast_icon_url,
-                self.uv_ind, self)
+                self.uv_coord, self)
         except:
             self.inerror = True
             e = sys.exc_info()[0]
@@ -650,7 +650,9 @@ class Download(QThread):
             elif self.html404(pagedayforecast, 'day_forecast'):
                 raise urllib.error.HTTPError
             tree = etree.fromstring(page)
-            uv_ind = self.uv(tree)
+            lat = tree[0][0].get('lat')
+            lon = tree[0][0].get('lon')
+            uv_ind = (lat, lon)
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
             treeforecast = etree.fromstring(pageforecast)
             treedayforecast = etree.fromstring(pagedayforecast)
@@ -707,23 +709,6 @@ class Download(QThread):
             return True
         except:
             return False
-
-    def uv(self, tree):
-        try:
-            lon = tree[0][0].get('lon')
-            lat = tree[0][0].get('lat')
-            url = ('http://api.owm.io/air/1.0/uvi/current?lat=' + lat + '&lon=' +
-                lon + '&appid=18dc60bd132b7fb4534911d2aa67f0e7')
-            logging.debug('Fetching url for uv index: ' + str(url))
-            req = urllib.request.urlopen(url, timeout=5)
-            page = req.read()
-            dico_value = eval(page)
-            uv_ind = dico_value['value']
-            logging.debug('UV index: ' + str(uv_ind))
-        except:
-            uv_ind = '-'
-            logging.error('Cannot find UV index')
-        return uv_ind
 
 
 def main():

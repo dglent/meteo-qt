@@ -28,7 +28,7 @@ class OverviewCity(QDialog):
      }
 
     def __init__(self, weatherdata, icon, forecast, dayforecast, unit,
-                 icon_url, uv, parent=None):
+                 icon_url, uv_coord, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.days_dico = {
         '0': self.tr('Mon'),
@@ -51,7 +51,7 @@ class OverviewCity(QDialog):
         self.tree = forecast
         self.tree_day = dayforecast
         self.icon_url = icon_url
-        self.uv = str(uv)
+        self.uv_coord = uv_coord
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
         self.weatherdata = weatherdata
@@ -126,18 +126,11 @@ class OverviewCity(QDialog):
         self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
         self.sunset_value = QLabel('<font color=grey>' + set_str + '</font>')
         #--------UV--------------------------
-        uv_gauge = '-'
         self.uv_label = QLabel(
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
                 'Ultraviolet index','UV', 'Label in weather info dialogue' + '<\b><\font>'))
-        uv_color = self.uv_color(self.uv)
-        if uv_color[1] != 'None':
-            uv_gauge = '◼' * int(round(float(self.uv)))
-            if uv_gauge == '':
-                uv_gauge = '◼'
-        self.uv_value = QLabel('<font color=grey>' + self.uv + '  ' +self.uv_risk[uv_color[1]] + '</font>' +
-                               ' < font color=' + uv_color[0] + '><b>' + uv_gauge +'</b></font>')
-        self.uv_value.setToolTip(self.uv_recommend[uv_color[1]])
+        self.uv_value_label = QLabel('<font color=grey>' + QCoreApplication.translate(
+                'Ultraviolet index','Fetching...', '' + '<\font>'))
         #------------------------------------
         self.over_grid.addWidget(self.wind_label, 0,0)
         self.over_grid.addWidget(self.wind, 0,1)
@@ -152,7 +145,7 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.sunset_label, 5,0)
         self.over_grid.addWidget(self.sunset_value, 5,1)
         self.over_grid.addWidget(self.uv_label, 6,0)
-        self.over_grid.addWidget(self.uv_value, 6,1)
+        self.over_grid.addWidget(self.uv_value_label, 6,1)
         #--------------Forecast---------------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -171,6 +164,8 @@ class OverviewCity(QDialog):
         logging.debug('Fetched day forecast data')
         self.dayiconfetch()
         logging.debug('Fetched day forcast icons')
+        self.uv_fetch()
+        logging.debug('Fetched uv index')
         self.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
@@ -333,6 +328,23 @@ class OverviewCity(QDialog):
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
 
+    def uv_fetch(self):
+        logging.debug('Download uv info...')
+        self.uv_thread = Uv(self.uv_coord)
+        self.uv_thread.uv_signal['PyQt_PyObject'].connect(self.uv_index)
+        self.uv_thread.start()
+
+    def uv_index(self, index):
+        uv_gauge = '-'
+        uv_color = self.uv_color(index)
+        if uv_color[1] != 'None':
+            uv_gauge = '◼' * int(round(float(index)))
+            if uv_gauge == '':
+                uv_gauge = '◼'
+        self.uv_value_label.setText('<font color=grey>' + str(index) + '  ' + self.uv_risk[uv_color[1]] + '</font>' +
+                               ' < font color=' + uv_color[0] + '><b>' + uv_gauge +'</b></font>')
+        self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
+
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
         logging.debug('Download forecast icons for the day...')
@@ -366,6 +378,31 @@ class OverviewCity(QDialog):
 
     def closeEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
+
+class Uv(QThread):
+    uv_signal = pyqtSignal(['PyQt_PyObject'])
+
+    def __init__(self, uv_coord, parent=None):
+        QThread.__init__(self, parent)
+        self.uv_coord = uv_coord
+
+    def run(self):
+        try:
+            lat = self.uv_coord[0]
+            lon = self.uv_coord[1]
+            url = ('http://api.owm.io/air/1.0/uvi/current?lat=' + lat + '&lon=' +
+                lon + '&appid=18dc60bd132b7fb4534911d2aa67f0e7')
+            logging.debug('Fetching url for uv index: ' + str(url))
+            req = urllib.request.urlopen(url, timeout=5)
+            page = req.read()
+            dico_value = eval(page)
+            uv_ind = dico_value['value']
+            logging.debug('UV index: ' + str(uv_ind))
+        except:
+            uv_ind = '-'
+            logging.error('Cannot find UV index')
+        self.uv_signal['PyQt_PyObject'].emit(uv_ind)
+
 
 class IconDownload(QThread):
     error = pyqtSignal(['QString'])
