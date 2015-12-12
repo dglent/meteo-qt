@@ -3,7 +3,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="meteo_qt.py" line="590"/>
+        <location filename="meteo_qt.py" line="591"/>
         <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
@@ -122,7 +122,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="meteo_qt.py" line="688"/>
+        <location filename="meteo_qt.py" line="689"/>
         <source>Error :
 </source>
         <translation>Chyba:</translation>
@@ -625,12 +625,12 @@
         <translation>meteo-qt: Nelze najít data!</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="559"/>
+        <location filename="meteo_qt.py" line="560"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="567"/>
+        <location filename="meteo_qt.py" line="568"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -639,7 +639,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="573"/>
+        <location filename="meteo_qt.py" line="574"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
