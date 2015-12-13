@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -1056,7 +1055,7 @@
     <message>
         <location filename="conditions.py" line="73"/>
         <source>strong breeze</source>
-        <translation>ισχυρή άνεμος</translation>
+        <translation>ισχυρός άνεμος</translation>
     </message>
     <message>
         <location filename="conditions.py" line="74"/>
