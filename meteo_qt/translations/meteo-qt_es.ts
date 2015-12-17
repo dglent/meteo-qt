@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="es" sourcelanguage="">
-<context encoding="UTF-8">
+<!DOCTYPE TS>
+<TS version="2.1" language="es">
+<context>
     <name>About dialog</name>
-    <message encoding="UTF-8">
+    <message>
         <location filename="meteo_qt.py" line="591"/>
         <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
@@ -27,7 +28,28 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Traducción al alemán
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Traducción al griego
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Traducción al español
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Traducción al francés
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Traducción al francés, Proyecto
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Traducción al polaco
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Traducción al ruso
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Traducción al turco
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Traducción al ucraniano
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Traducción al chino(Taiwán)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Proyecto</translation>
     </message>
 </context>
 <context>
@@ -113,7 +135,9 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tome todas las precauciones: Use protector solar SPF 30+, pantalones y camisa de mangas largas,&lt;br/&gt;
+                                    gafas de sol, y un sombrero de alas anchas. Evite la exposición al sol dentro de las 3 horas del mediodía.
+                                    </translation>
     </message>
 </context>
 <context>
@@ -124,7 +148,9 @@
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cubrir el cuerpo con ropa protectora del sol, use protector solar SPF 30+,&lt;br/&gt;
+                                    use un sombrero, reduzca el tiempo de exposición al sol en las 3 horas del mediodía,
+                                    y use gafas de sol.</translation>
     </message>
 </context>
 <context>
@@ -135,7 +161,9 @@
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Use gafas de sol en días brillantes;usar protector solar si hay nieve&lt;br/&gt;
+                                    en el suelo, la que refleja la radiación UV, o si tiene una piel
+                                    muy blanca.</translation>
     </message>
 </context>
 <context>
@@ -358,7 +386,8 @@
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tome precauciones, tales como cubrirse, si va a estar fuera.&lt;br/&gt;
+                                    Permanecer en la sombra cerca del mediodía cuando el sol es más fuerte.</translation>
     </message>
 </context>
 <context>
@@ -366,37 +395,37 @@
     <message>
         <location filename="overview.py" line="34"/>
         <source>Mon</source>
-        <translation>lun.</translation>
+        <translation>lun</translation>
     </message>
     <message>
         <location filename="overview.py" line="35"/>
         <source>Tue</source>
-        <translation>mar.</translation>
+        <translation>mar</translation>
     </message>
     <message>
         <location filename="overview.py" line="36"/>
         <source>Wed</source>
-        <translation>mié.</translation>
+        <translation>miér</translation>
     </message>
     <message>
         <location filename="overview.py" line="37"/>
         <source>Thu</source>
-        <translation>jue.</translation>
+        <translation>jue</translation>
     </message>
     <message>
         <location filename="overview.py" line="38"/>
         <source>Fri</source>
-        <translation>vie.</translation>
+        <translation>vie</translation>
     </message>
     <message>
         <location filename="overview.py" line="39"/>
         <source>Sat</source>
-        <translation>sáb.</translation>
+        <translation>sáb</translation>
     </message>
     <message>
         <location filename="overview.py" line="40"/>
         <source>Sun</source>
-        <translation>dom.</translation>
+        <translation>dom</translation>
     </message>
     <message>
         <location filename="overview.py" line="89"/>
@@ -477,7 +506,7 @@
     <message>
         <location filename="searchcity.py" line="109"/>
         <source>Please type more than three letters</source>
-        <translation>Escriba más de tres letras</translation>
+        <translation>Por favor, escriba más de tres letras</translation>
     </message>
     <message>
         <location filename="searchcity.py" line="164"/>
@@ -502,31 +531,31 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation>Icono de la bandeja del sistema</translation>
     </message>
     <message>
         <location filename="settings.py" line="164"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Icono y temperatura</translation>
     </message>
     <message>
         <location filename="settings.py" line="167"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Icono</translation>
     </message>
     <message>
         <location filename="settings.py" line="170"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura</translation>
     </message>
     <message>
         <location filename="settings.py" line="184"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tamaño de fuente en la bandeja del sistema</translation>
     </message>
 </context>
 <context>
@@ -599,7 +628,7 @@
     <message>
         <location filename="meteo_qt.py" line="352"/>
         <source>meteo-qt: Cannot find data!</source>
-        <translation>meteo-qt: No se pudo encontrar ningún dato.</translation>
+        <translation>meteo-qt: No se pudo encontrar ningún dato!</translation>
     </message>
     <message>
         <location filename="meteo_qt.py" line="560"/>
@@ -633,7 +662,22 @@
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Una aplicación sencilla que muestra información sobre el estado del tiempo
+                         en la bandeja del sistema.
+                        &lt;p&gt;Sitio Web: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Orígenes de datos: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;Este software usa íconos del
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+                        &lt;p&gt;Para traducir meteo-qt en su idioma o contribuir a
+                         traducciones actuales, puede utilizar la plataforma
+                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+                        Transifex&lt;/a&gt;.
+                        &lt;p&gt;Si usted desea reportar un mal funcionamiento o una sugerencia,
+                         no dude en abrir un issue en&lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -641,27 +685,27 @@
     <message>
         <location filename="conditions.py" line="138"/>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Bajo</translation>
     </message>
     <message>
         <location filename="conditions.py" line="139"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Moderado</translation>
     </message>
     <message>
         <location filename="conditions.py" line="140"/>
         <source>High</source>
-        <translation type="unfinished"></translation>
+        <translation>Alto</translation>
     </message>
     <message>
         <location filename="conditions.py" line="141"/>
         <source>Very high</source>
-        <translation type="unfinished"></translation>
+        <translation>Muy alto</translation>
     </message>
     <message>
         <location filename="conditions.py" line="142"/>
         <source>Extreme</source>
-        <translation type="unfinished"></translation>
+        <translation>Extremo</translation>
     </message>
 </context>
 <context>
@@ -670,13 +714,13 @@
         <location filename="overview.py" line="129"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation>UV</translation>
     </message>
     <message>
         <location filename="overview.py" line="132"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Descargando...</translation>
     </message>
 </context>
 <context>
@@ -686,7 +730,8 @@
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Use protector solar SPF 30+, una camisa, gafas de sol y un sombrero de ala ancha. &lt;br/&gt;
+                                     No no permanezca al sol por mucho tiempo.</translation>
     </message>
 </context>
 <context>
@@ -1213,7 +1258,7 @@
         <location filename="searchcity.py" line="185"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Error en los datos. Inténtelo de nuevo
+        <translation>Error en los datos. Inténte de nuevo
 más tarde o modifique el nombre de la ciudad</translation>
     </message>
     <message>
