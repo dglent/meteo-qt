@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es">
-<context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.0">
+<context encoding="UTF-8">
     <name>About dialog</name>
-    <message>
+    <message encoding="UTF-8">
         <location filename="meteo_qt.py" line="591"/>
         <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
