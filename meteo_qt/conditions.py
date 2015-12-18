@@ -1,5 +1,6 @@
 from PyQt5.QtCore import QObject, QCoreApplication
 
+
 class WeatherConditions(QObject):
 
     def __init__(self, parent=None):
@@ -76,15 +77,13 @@ class WeatherConditions(QObject):
                       '959': self.tr('severe gale'),
                       '960': self.tr('storm'),
                       '961': self.tr('violent storm'),
-                      '962': self.tr('hurricane')
-                 }
+                      '962': self.tr('hurricane')}
 
-        self.clouds = { 'clear sky': '800',
-                      'few clouds': '801',
-                      'scattered clouds': '802',
-                      'broken clouds': '803',
-                      'overcast clouds': '804'
-                          }
+        self.clouds = {'clear sky': '800',
+                       'few clouds': '801',
+                       'scattered clouds': '802',
+                       'broken clouds': '803',
+                       'overcast clouds': '804'}
 
         self.wind = {'calm': '951',
                      'light breeze': '952',
@@ -97,8 +96,7 @@ class WeatherConditions(QObject):
                      'severe gale': '959',
                      'storm': '960',
                      'violent storm': '961',
-                     'hurricane': '962'
-                         }
+                     'hurricane': '962'}
 
         self.wind_direction = {'N': self.tr('North'),
                                'NE': self.tr('NorthEast'),
@@ -115,8 +113,8 @@ class WeatherConditions(QObject):
                                'ENE': self.tr('East-northeast'),
                                'W': self.tr('West'),
                                'WSW': self.tr('West-southwest'),
-                               'WNW': self.tr('West-northwest')
-                                   }
+                               'WNW': self.tr('West-northwest')}
+
         self.wind_codes = {'N': self.tr('N'),
                            'NE': self.tr('NE'),
                            'NNE': self.tr('NNE'),
@@ -132,16 +130,19 @@ class WeatherConditions(QObject):
                            'ENE': self.tr('ENE'),
                            'W': self.tr('W'),
                            'WSW': self.tr('WSW'),
-                           'WNW': self.tr('WNW')
-                                   }
+                           'WNW': self.tr('WNW')}
 
-        self.uv_risk = {'Low': QCoreApplication.translate('UV risk', 'Low', ''),
-                        'Moderate': QCoreApplication.translate('UV risk', 'Moderate', ''),
-                        'High': QCoreApplication.translate('UV risk', 'High', ''),
-                        'Very high': QCoreApplication.translate('UV risk', 'Very high', ''),
-                        'Extreme': QCoreApplication.translate('UV risk', 'Extreme', ''),
-                        'None': '-'
-                        }
+        self.uv_risk = {'Low': QCoreApplication.translate('UV risk', 'Low',
+                                                          ''),
+                        'Moderate': QCoreApplication.translate('UV risk', 'Moderate',
+                                                               ''),
+                        'High': QCoreApplication.translate('UV risk', 'High',
+                                                           ''),
+                        'Very high': QCoreApplication.translate('UV risk', 'Very high',
+                                                                ''),
+                        'Extreme': QCoreApplication.translate('UV risk', 'Extreme',
+                                                              ''),
+                        'None': '-'}
 
         self.uv_recommend = {'Low': QCoreApplication.translate('Low UV recommended protection',
                                     '''Wear sunglasses on bright days; use sunscreen if there is snow on<br/>
@@ -162,5 +163,4 @@ class WeatherConditions(QObject):
                                     '''Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,<br/>
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     ''', 'Extreme https://en.wikipedia.org/wiki/Ultraviolet_index'),
-                             'None': '-'
-                             }
+                             'None': '-'}

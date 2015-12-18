@@ -6,7 +6,7 @@
 
 from PyQt5.QtCore import (
     QThread, pyqtSignal, pyqtSlot, QSettings, Qt, QTranslator, QLibraryInfo,
-    QTimer, QPointF, QLocale, QCoreApplication, QT_VERSION_STR,
+    QTimer, QLocale, QCoreApplication, QT_VERSION_STR,
     PYQT_VERSION_STR
     )
 from PyQt5.QtGui import (
@@ -62,8 +62,10 @@ class SystemTrayIcon(QMainWindow):
         self.tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
-        self.forecast_url = 'http://api.openweathermap.org/data/2.5/forecast/daily?id='
-        self.day_forecast_url = 'http://api.openweathermap.org/data/2.5/forecast?id='
+        self.forecast_url = ('http://api.openweathermap.org/data/2.5/forecast/'
+                             'daily?id=')
+        self.day_forecast_url = ('http://api.openweathermap.org/data/2.5/'
+                                 'forecast?id=')
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         self.appid = '&APPID=18dc60bd132b7fb4534911d2aa67f0e7'
         self.forecast_icon_url = self.wIconUrl
@@ -133,8 +135,8 @@ class SystemTrayIcon(QMainWindow):
         if type(cities) is str:
             cities = eval(cities)
         current_city = (self.settings.value('City') + '_' +
-                     self.settings.value('Country') + '_' +
-                     self.settings.value('ID'))
+                        self.settings.value('Country') + '_' +
+                        self.settings.value('ID'))
         # Prevent duplicate entries
         try:
             city_toadd = cities.pop(cities.index(current_city))
@@ -143,10 +145,10 @@ class SystemTrayIcon(QMainWindow):
         finally:
             cities.insert(0, city_toadd)
         # If we delete all cities it results to a '__'
-        if (cities != None and cities != '' and cities != '[]' and
-            cities != ['__']):
+        if (cities is not None and cities != '' and cities != '[]' and
+                cities != ['__']):
             if type(cities) is not list:
-                #FIXME sometimes the list of cities is read as a string (?)
+                # FIXME sometimes the list of cities is read as a string (?)
                 # eval to a list
                 cities = eval(cities)
             # Create the cities list menu
@@ -161,10 +163,10 @@ class SystemTrayIcon(QMainWindow):
     def changecity(self, city):
         cities_list = self.settings.value('CityList')
         logging.debug('Cities' + str(cities_list))
-        if cities_list == None:
+        if cities_list is None:
             self.empty_cities_list()
         if type(cities_list) is not list:
-            #FIXME some times is read as string (?)
+            # FIXME some times is read as string (?)
             cities_list = eval(cities_list)
         prev_city = (self.settings.value('City') + '_' +
                      self.settings.value('Country') + '_' +
@@ -203,11 +205,11 @@ class SystemTrayIcon(QMainWindow):
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
-        if self.id_ == None:
+        if self.id_ is None:
             # Clear the menu, no cities configured
             self.citiesMenu.clear()
             self.empty_cities_list()
-            #Sometimes self.overviewcity is in namespace but deleted
+            # Sometimes self.overviewcity is in namespace but deleted
             try:
                 self.overviewcity.close()
             except:
@@ -274,7 +276,7 @@ class SystemTrayIcon(QMainWindow):
         except:
             self.inerror = True
             e = sys.exc_info()[0]
-            logging.error('Error: ' + str(e ))
+            logging.error('Error: ' + str(e))
             logging.debug('Try to create the city overview...\nTentatives: ' +
                           str(self.tentatives))
             return 'error'
@@ -291,7 +293,8 @@ class SystemTrayIcon(QMainWindow):
         if hasattr(self, 'forecast_data'):
             if hasattr(self, 'overviewcity'):
                 # Sometimes the overviewcity is in namespace but deleted:
-                # RuntimeError: wrapped C/C++ object of type OverviewCity has been deleted
+                # RuntimeError: wrapped C/C++ object of type OverviewCity
+                # has been deleted
                 try:
                     # Update also the overview dialog if open
                     if self.overviewcity.isVisible():
@@ -302,7 +305,8 @@ class SystemTrayIcon(QMainWindow):
                 except:
                     e = sys.exc_info()[0]
                     logging.error('Error: ' + str(e))
-                    logging.debug('Overview instance has been deleted, try again...')
+                    logging.debug('Overview instance has been deleted,'
+                                  'try again...')
                     if self.tentatives < 10:
                         self.try_create_overview()
             else:
@@ -369,7 +373,8 @@ class SystemTrayIcon(QMainWindow):
         try:
             self.meteo = self.conditions[meteo_condition]
         except:
-            logging.debug('Cannot find localisation string for meteo_condition:' + str(meteo_condition))
+            logging.debug('Cannot find localisation string for'
+                          'meteo_condition:' + str(meteo_condition))
             pass
         clouds = tree[5].get('name')
         clouds_percent = tree[5].get('value') + '%'
@@ -377,28 +382,32 @@ class SystemTrayIcon(QMainWindow):
             clouds = self.clouds[clouds]
             clouds = self.conditions[clouds]
         except:
-            logging.debug('Cannot find localisation string for clouds:' + str(clouds))
+            logging.debug('Cannot find localisation string for clouds:' +
+                          str(clouds))
             pass
         wind = tree[4][0].get('name').lower()
         try:
             wind = self.wind[wind]
             wind = self.conditions[wind]
         except:
-            logging.debug('Cannot find localisation string for wind:' + str(wind))
+            logging.debug('Cannot find localisation string for wind:' +
+                          str(wind))
             pass
         wind_codes = tree[4][2].get('code')
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
-            logging.debug('Cannot find localisation string for wind_codes:' +  str(wind_codes))
+            logging.debug('Cannot find localisation string for wind_codes:' +
+                          str(wind_codes))
             pass
         wind_dir = tree[4][2].get('name')
         try:
             wind_dir = self.wind_dir[tree[4][2].get('code')]
         except:
-            logging.debug('Cannot find localisation string for wind_dir:' + str(wind_dir))
+            logging.debug('Cannot find localisation string for wind_dir:' +
+                          str(wind_dir))
             pass
-        self.city_weather_info = (self.city + ' '  + self.country + ' ' +
+        self.city_weather_info = (self.city + ' ' + self.country + ' ' +
                                   self.temp + ' ' + self.meteo)
         self.tooltip_weather()
         self.notification = self.city_weather_info
@@ -406,13 +415,16 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
         self.weatherDataDico['Meteo'] = self.meteo
-        self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
+        self.weatherDataDico['Humidity'] = (tree[2].get('value'),
+                                            tree[2].get('unit'))
         self.weatherDataDico['Wind'] = (
             tree[4][0].get('value'), wind + '<br/>', tree[4][2].get('value'),
             wind_codes, wind_dir)
         self.weatherDataDico['Clouds'] = (clouds_percent + ' ' + clouds)
-        self.weatherDataDico['Pressure'] = tree[3].get('value'), tree[3].get('unit')
-        self.weatherDataDico['Humidity'] = tree[2].get('value'), tree[2].get('unit')
+        self.weatherDataDico['Pressure'] = (tree[3].get('value'),
+                                            tree[3].get('unit'))
+        self.weatherDataDico['Humidity'] = (tree[2].get('value'),
+                                            tree[2].get('unit'))
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
 
@@ -609,7 +621,7 @@ class SystemTrayIcon(QMainWindow):
 class Download(QThread):
     wimage = pyqtSignal(['PyQt_PyObject'])
     xmlpage = pyqtSignal(['PyQt_PyObject'])
-    forecast_rawpage= pyqtSignal(['PyQt_PyObject'])
+    forecast_rawpage = pyqtSignal(['PyQt_PyObject'])
     day_forecast_rawpage = pyqtSignal(['PyQt_PyObject'])
     uv_signal = pyqtSignal(['PyQt_PyObject'])
     error = pyqtSignal(['QString'])
@@ -764,4 +776,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

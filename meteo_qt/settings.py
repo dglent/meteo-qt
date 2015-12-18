@@ -31,7 +31,7 @@ class MeteoSettings(QDialog):
             locale = locale[:2]
         self.interval_set = self.settings.value('Interval') or '30'
         self.temp_tray_color = self.settings.value('TrayColor') or ''
-        # -----Cities comboBox--------------------------------
+        # -----Cities comboBox------------------------
         self.first = True
         self.clear_combo = False
         self.city_list_before = []
@@ -45,11 +45,12 @@ class MeteoSettings(QDialog):
         self.city_button.setIcon(QIcon(':/configure'))
         self.city_button.setToolTip(self.tr('Click to edit the cities list'))
         self.city_button.clicked.connect(self.edit_cities_list)
-        #------Language-----------------------------------------
+        # ------Language------------------------------
         self.language_label = QLabel(self.tr('Language'))
         self.language_combo = QComboBox()
         self.language_combo.setToolTip(
-            self.tr('The application has to be restared to apply the language setting'))
+            self.tr('The application has to be restared to apply the'
+                    'language setting'))
         self.language_dico = {'bg': self.tr('Bulgarian'),
                               'ca': self.tr('Catalan'),
                               'cs': self.tr('Czech'),
@@ -78,8 +79,7 @@ class MeteoSettings(QDialog):
                               'tr': self.tr('Turkish'),
                               'uk': self.tr('Ukrainian'),
                               'zh_TW': self.tr('Chinese Traditional'),
-                              'zh_CN': self.tr('Chinese Simplified')
-                               }
+                              'zh_CN': self.tr('Chinese Simplified')}
         lang_list = sorted(self.language_dico.values())
         # English as fallback language
         if locale not in self.language_dico:
@@ -87,13 +87,13 @@ class MeteoSettings(QDialog):
         self.setLanguage = self.settings.value('Language') or locale
         self.language_combo.addItems(lang_list)
         self.language_combo.setCurrentIndex(self.language_combo.findText
-                                           (self.language_dico[self.setLanguage]))
+                                            (self.language_dico[self.setLanguage]))
         self.language_combo.currentIndexChanged.connect(self.language)
         self.lang_changed = False
         # Unit system
         self.units_changed = False
         self.temp_unit = self.settings.value('Unit')
-        if self.temp_unit == None or self.temp_unit == '':
+        if self.temp_unit is None or self.temp_unit == '':
             self.temp_unit = 'metric'
             self.units_changed = True
         self.units_label = QLabel(self.tr('Temperature unit'))
@@ -108,7 +108,7 @@ class MeteoSettings(QDialog):
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
         self.interval_combo = QComboBox()
-        self.interval_list = ['15','30','45','60','90','120']
+        self.interval_list = ['15', '30', '45', '60', '90', '120']
         self.interval_combo.addItems(self.interval_list)
         self.interval_combo.setCurrentIndex(self.interval_combo.findText(
             self.interval_list[self.interval_list.index(self.interval_set)]))
@@ -120,8 +120,8 @@ class MeteoSettings(QDialog):
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok|QDialogButtonBox.Apply|QDialogButtonBox.Cancel)
-        self.buttonBox.setContentsMargins(0,30,0,0)
+            QDialogButtonBox.Ok | QDialogButtonBox.Apply | QDialogButtonBox.Cancel)
+        self.buttonBox.setContentsMargins(0, 30, 0, 0)
         self.buttonLayout.addWidget(self.buttonBox)
         self.buttonBox.button(QDialogButtonBox.Apply).clicked.connect(self.apply_settings)
         self.buttonBox.accepted.connect(self.accept)
@@ -136,7 +136,7 @@ class MeteoSettings(QDialog):
         self.autostart_checkbox.stateChanged.connect(self.autostart)
         self.autostart_changed = False
         # Tray temp° color
-        self.temp_colorLabel=QLabel(self.tr('Font colour in the tray'))
+        self.temp_colorLabel = QLabel(self.tr('Font colour in the tray'))
         self.temp_colorButton = QPushButton()
         self.temp_colorButton.setStyleSheet(
             'QWidget {{ background-color: {0} }}'.format(self.temp_tray_color))
@@ -156,18 +156,18 @@ class MeteoSettings(QDialog):
         self.notifier_changed = False
         # Icon & Temp
         self.tray_icon_temp_label = QLabel(QCoreApplication.translate(
-            "Settings dialog","System tray icon",
+            "Settings dialog", "System tray icon",
             '''Setting to choose the type of the icon on the tray (only icon,
             only text, icon&text'''))
         self.tray_icon_combo = QComboBox()
         tray_icon_temp = QCoreApplication.translate(
-            "Settings dialog","Icon & temperature",
+            "Settings dialog", "Icon & temperature",
             'Setting to choose the type of the icon on the tray')
         tray_icon = QCoreApplication.translate(
-            "Settings dialog","Icon",
+            "Settings dialog", "Icon",
             'Setting to choose the type of the icon on the tray')
         tray_temp = QCoreApplication.translate(
-            "Settings dialog","Temperature",
+            "Settings dialog", "Temperature",
             'Setting to choose the type of the icon on the tray')
         self.tray_dico = {'icon&temp': tray_icon_temp, 'icon': tray_icon,
                           'temp': tray_temp}
@@ -181,38 +181,38 @@ class MeteoSettings(QDialog):
         # Font size
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(QCoreApplication.translate(
-            "Settings dialog","Font size in tray",
+            "Settings dialog", "Font size in tray",
             "Setting for the font size of the temperature in the tray icon"))
         self.fontsize_spinbox = QSpinBox()
         self.fontsize_spinbox.setRange(12, 32)
         self.fontsize_spinbox.setValue(int(fontsize))
-        if fontsize == None or fontsize == '':
+        if fontsize is None or fontsize == '':
             self.settings.setValue('FontSize', '18')
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
-        #----------------------------------
+        # -------------------------------
         self.panel = QGridLayout()
-        self.panel.addWidget(self.city_title, 0,0)
-        self.panel.addWidget(self.city_combo, 0,1)
-        self.panel.addWidget(self.city_button, 0,2)
-        self.panel.addWidget(self.language_label, 1,0)
-        self.panel.addWidget(self.language_combo, 1,1)
-        self.panel.addWidget(self.units_label, 2,0)
-        self.panel.addWidget(self.units_combo, 2,1)
-        self.panel.addWidget(self.interval_label, 3,0)
-        self.panel.addWidget(self.interval_combo, 3,1)
-        self.panel.addWidget(self.interval_min, 3,2)
-        self.panel.addWidget(self.autostart_label, 4,0)
-        self.panel.addWidget(self.autostart_checkbox, 4,1)
-        self.panel.addWidget(self.temp_colorLabel, 5,0)
-        self.panel.addWidget(self.temp_colorButton, 5,1)
-        self.panel.addWidget(self.temp_color_resetButton, 5,2)
-        self.panel.addWidget(self.notifier_label, 6,0)
-        self.panel.addWidget(self.notifier_checkbox, 6,1)
-        self.panel.addWidget(self.tray_icon_temp_label, 7,0)
-        self.panel.addWidget(self.tray_icon_combo, 7,1)
-        self.panel.addWidget(self.fontsize_label, 8,0)
-        self.panel.addWidget(self.fontsize_spinbox, 8,1)
+        self.panel.addWidget(self.city_title, 0, 0)
+        self.panel.addWidget(self.city_combo, 0, 1)
+        self.panel.addWidget(self.city_button, 0, 2)
+        self.panel.addWidget(self.language_label, 1, 0)
+        self.panel.addWidget(self.language_combo, 1, 1)
+        self.panel.addWidget(self.units_label, 2, 0)
+        self.panel.addWidget(self.units_combo, 2, 1)
+        self.panel.addWidget(self.interval_label, 3, 0)
+        self.panel.addWidget(self.interval_combo, 3, 1)
+        self.panel.addWidget(self.interval_min, 3, 2)
+        self.panel.addWidget(self.autostart_label, 4, 0)
+        self.panel.addWidget(self.autostart_checkbox, 4, 1)
+        self.panel.addWidget(self.temp_colorLabel, 5, 0)
+        self.panel.addWidget(self.temp_colorButton, 5, 1)
+        self.panel.addWidget(self.temp_color_resetButton, 5, 2)
+        self.panel.addWidget(self.notifier_label, 6, 0)
+        self.panel.addWidget(self.notifier_checkbox, 6, 1)
+        self.panel.addWidget(self.tray_icon_temp_label, 7, 0)
+        self.panel.addWidget(self.tray_icon_combo, 7, 1)
+        self.panel.addWidget(self.fontsize_label, 8, 0)
+        self.panel.addWidget(self.fontsize_spinbox, 8, 1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -244,7 +244,8 @@ class MeteoSettings(QDialog):
         self.interval_changed = True
 
     def edit_cities_list(self):
-        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url, self.appid, self)
+        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url,
+                                         self.appid, self)
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.exec_()
 
@@ -304,7 +305,8 @@ class MeteoSettings(QDialog):
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name()))
-            # focus to next elem to show immediatley the colour in the button (in some DEs)
+            # focus to next elem to show immediatley the colour
+            # in the button (in some DEs)
             self.temp_color_resetButton.setFocus()
             self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
             self.color_before = col.name()
@@ -312,8 +314,7 @@ class MeteoSettings(QDialog):
             logging.debug('Invalid color:' + str(col))
 
     def color_reset(self):
-        self.temp_colorButton.setStyleSheet(
-                'QWidget { background-color:  }')
+        self.temp_colorButton.setStyleSheet('QWidget { background-color:  }')
         self.color_before = ''
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
@@ -407,18 +408,19 @@ class MeteoSettings(QDialog):
         if self.clear_combo:
             return
         if self.first:
-            list_cities =  self.settings.value('CityList')
-            if list_cities != None:
+            list_cities = self.settings.value('CityList')
+            if list_cities is not None:
                 self.city_list_before = list_cities[:]
-            self.citylist = [self.set_city + '_' + self.settings.value('Country') +
-                         '_' + self.settings.value('ID')]
+            self.citylist = [self.set_city + '_' +
+                             self.settings.value('Country') + '_' +
+                             self.settings.value('ID')]
         else:
             self.citylist = [self.city_before + '_' + self.country_before +
                              '_' + self.id_before]
             list_cities = self.city_list_before[:]
-        if list_cities == None:
+        if list_cities is None:
             list_cities = []
-        if list_cities != '' and list_cities != None:
+        if list_cities != '' and list_cities is not None:
             if type(list_cities) is str:
                 list_cities = eval(list_cities)
             self.citylist = self.citylist + list_cities
@@ -430,4 +432,4 @@ class MeteoSettings(QDialog):
         self.city_combo.addItems(self.citylist)
         if len(list_cities) > 0:
             maxi = len(max(list_cities, key=len))
-            self.city_combo.setMinimumSize(maxi*8,23)
+            self.city_combo.setMinimumSize(maxi*8, 23)

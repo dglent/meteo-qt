@@ -11,6 +11,7 @@ from lxml import etree
 from socket import timeout
 import logging
 
+
 class SearchCity(QDialog):
     id_signal = pyqtSignal([tuple])
     city_signal = pyqtSignal([tuple])
@@ -30,7 +31,7 @@ class SearchCity(QDialog):
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
         self.line_search = QLineEdit(QCoreApplication.translate(
-            'Search city dialog','Start typing the city...',''))
+            'Search city dialog', 'Start typing the city...', ''))
         self.line_search.selectAll()
         self.listWidget = QListWidget()
         self.status = QLabel()
@@ -57,7 +58,7 @@ class SearchCity(QDialog):
         self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(
             self.accept)
         self.restoreGeometry(self.settings.value("SearchCity/Geometry",
-                QByteArray()))
+                                                 QByteArray()))
         self.timer_search = QTimer(self)
         self.timer_search.timeout.connect(self.search)
 
@@ -77,13 +78,13 @@ class SearchCity(QDialog):
         '''Enable OK button if an item is selected'''
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
-        if item != None:
+        if item is not None:
             self.buttonOk.setEnabled(True)
 
     def accept(self):
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
-        if item != None:
+        if item is not None:
             selected_city = item.text()
             city_list = selected_city.split(' - ')
             for c in range(len(city_list)):
@@ -108,7 +109,7 @@ class SearchCity(QDialog):
         if len(self.city) < 3:
             self.status.setText(self.tr('Please type more than three letters'))
             return
-        self.lista=[]
+        self.lista = []
         self.errorStatus = False
         self.buttonOk.setEnabled(False)
         self.listWidget.clear()
@@ -167,6 +168,7 @@ class SearchCity(QDialog):
             cities_text = self.tr('Found {0} cities').format(number_cities)
         self.status.setText(cities_text)
 
+
 class WorkThread(QThread):
     error = pyqtSignal(['QString'])
     city_signal = pyqtSignal(['QString'])
@@ -176,23 +178,24 @@ class WorkThread(QThread):
         QThread.__init__(self, parent)
         self.accurate_url = accurate_url
         # Search in any language
-        self.city = city#self.encode_utf8(city)
+        self.city = city  # self.encode_utf8(city)
         self.suffix = suffix
         self.tentatives = 1
 
     def run(self):
-        error_message = self.tr(
-                'Data error, please try again later\nor modify the name of the city')
+        error_message = self.tr('Data error, please try again later\n'
+                                'or modify the name of the city')
         self.lista = []
         if self.city == '':
             return
         try:
             logging.info(self.accurate_url + repr(self.city.encode('utf-8')).replace(
                     "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix)
-            logging.debug('City before utf8 encode :' + self.accurate_url + self.city + self.suffix)
+            logging.debug('City before utf8 encode :' + self.accurate_url +
+                          self.city + self.suffix)
             req = urllib.request.urlopen(
                 self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix, timeout=5)
+                    "b'", "").replace("\\x", "%").replace("'", "").replace(' ', '%20') + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
@@ -226,7 +229,7 @@ class WorkThread(QThread):
                     return
                 else:
                     self.tentatives += 1
-                    logging.debug('Tries: '  + str(self.tentatives))
+                    logging.debug('Tries: ' + str(self.tentatives))
                     logging.debug('Try to retreive city information...')
                     self.run()
         except:
@@ -250,7 +253,7 @@ class WorkThread(QThread):
                         self.city = repr(city.encode('utf-8')).replace(
                     "b'","").replace("\\x","%").replace("'","").replace(' ', '%20')
                     self.run()
-            if city == '' or country == None:
+            if city == '' or country is None:
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
                     return
@@ -276,4 +279,3 @@ class WorkThread(QThread):
             self.city_signal['QString'].emit(i)
         logging.debug('City thread done')
         return
-
