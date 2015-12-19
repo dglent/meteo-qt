@@ -23,7 +23,7 @@ class CityListDlg(QDialog):
         buttonLayout = QVBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok|QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
         layoutT = QVBoxLayout()
@@ -49,7 +49,7 @@ class CityListDlg(QDialog):
     def add(self):
         self.status.setText('')
         lista = []
-        newitem=''
+        newitem = ''
         self.citytoadd = ''
         self.countrytoadd = ''
         self._idtoadd = ''
@@ -58,11 +58,13 @@ class CityListDlg(QDialog):
         dialog.city_signal.connect(self.addcity)
         dialog.country_signal.connect(self.addcity)
         if dialog.exec_() == 1:
-            newitem = self.citytoadd + '_' + self.countrytoadd + '_' + self._idtoadd
+            newitem = (self.citytoadd + '_' + self.countrytoadd + '_' +
+                       self._idtoadd)
             for row in range(self.listWidget.count()):
                 lista.append(self.listWidget.item(row).text())
             if newitem in lista:
-                self.status.setText(self.tr('The city already exists in the list'))
+                self.status.setText(self.tr('The city already'
+                                            'exists in the list'))
                 return
             else:
                 self.listWidget.addItem(newitem)
@@ -122,7 +124,6 @@ class CityListDlg(QDialog):
             listtosend.append(self.listWidget.item(row).text())
         if len(listtosend) == 0:
             return
-        maxi = len(max(listtosend, key=len))
         self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
 
     def accept(self):

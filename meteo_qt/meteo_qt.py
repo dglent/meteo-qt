@@ -42,7 +42,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.8.7"
+__version__ = "0.8.8"
 
 
 class SystemTrayIcon(QMainWindow):
@@ -452,11 +452,12 @@ class SystemTrayIcon(QMainWindow):
         pt = QPainter()
         pt.begin(icon)
         if self.tray_type != 'temp':
-            pt.drawPixmap(0,-12,64,64, self.wIcon)
+            pt.drawPixmap(0, -12, 64, 64, self.wIcon)
         pt.setFont(QFont('sans-sertif', int(self.fontsize)))
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp':
-            pt.drawText(icon.rect(), Qt.AlignBottom|Qt.AlignCenter, str(self.temp))
+            pt.drawText(icon.rect(), Qt.AlignBottom | Qt.AlignCenter,
+                        str(self.temp))
         if self.tray_type == 'temp':
             pt.drawText(icon.rect(), Qt.AlignCenter, str(self.temp))
         pt.end()
@@ -476,7 +477,7 @@ class SystemTrayIcon(QMainWindow):
                         self.systray.showMessage('meteo-qt', self.notification)
         except:
             logging.debug('OverviewCity has been deleted' +
-                  'Download weather information again...')
+                          'Download weather information again...')
             self.try_again()
             return
         self.restore_city()
@@ -487,14 +488,14 @@ class SystemTrayIcon(QMainWindow):
     def restore_city(self):
         if self.temporary_city_status:
             logging.debug('Restore the default settings (city)' +
-                  'Forget the temporary city...')
+                          'Forget the temporary city...')
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
             self.temporary_city_status = False
 
     def activate(self, reason):
         if reason == 3:
-            if self.inerror or self.id_ == None or self.id_ == '':
+            if self.inerror or self.id_ is None or self.id_ == '':
                 return
             try:
                 if hasattr(self, 'overviewcity') and self.overviewcity.isVisible():
@@ -525,16 +526,16 @@ class SystemTrayIcon(QMainWindow):
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
         # Check if update is needed
-        if traycolor == None:
+        if traycolor is None:
             traycolor = ''
         if (self.traycolor != traycolor or self.tray_type != tray_type or
-            self.fontsize != fontsize):
+                self.fontsize != fontsize):
             self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and
            country == self.country and
            unit == self.unit):
-               return
+            return
         else:
             logging.debug('Apply changes from settings...')
             self.refresh()
@@ -647,8 +648,9 @@ class Download(QThread):
                 self.baseurl + self.id_ + self.suffix, timeout=5)
             logging.debug('Fetching url for 6 days :' + self.forecast_url +
                           self.id_ + self.suffix + '&cnt=7')
-            reqforecast = urllib.request.urlopen(
-                self.forecast_url + self.id_ + self.suffix + '&cnt=7', timeout=5)
+            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ +
+                                                 self.suffix + '&cnt=7',
+                                                 timeout=5)
             logging.debug('Fetching url for forecast of the day :' +
                           self.day_forecast_url + self.id_ + self.suffix)
             reqdayforecast = urllib.request.urlopen(
@@ -708,7 +710,8 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn('5 secondes timeout, new tentative: ' + str(self.tentatives))
+                logging.warn('5 secondes timeout, new tentative: ' +
+                             str(self.tentatives))
                 self.run()
         logging.debug('Download thread done')
 
@@ -734,13 +737,14 @@ def main():
     filePath = os.path.dirname(os.path.realpath(__file__))
     settings = QSettings()
     locale = settings.value('Language')
-    if locale == None or locale == '':
+    if locale is None or locale == '':
         locale = QLocale.system().name()
     appTranslator = QTranslator()
     if os.path.exists(filePath + '/translations/'):
         appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
     else:
-        appTranslator.load("/usr/share/meteo_qt/translations/meteo-qt_" + locale)
+        appTranslator.load("/usr/share/meteo_qt/translations/meteo-qt_" +
+                           locale)
     app.installTranslator(appTranslator)
     qtTranslator = QTranslator()
     qtTranslator.load("qt_" + locale,
@@ -748,7 +752,7 @@ def main():
     app.installTranslator(qtTranslator)
 
     log_level = settings.value('Logging/Level')
-    if log_level == '' or log_level == None:
+    if log_level == '' or log_level is None:
         log_level = 'INFO'
         settings.setValue('Logging/Level', 'INFO')
 

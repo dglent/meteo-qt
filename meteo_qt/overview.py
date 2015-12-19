@@ -8,7 +8,6 @@ from PyQt5.QtWidgets import (
     )
 import datetime
 import urllib.request
-from lxml import etree
 import time
 from socket import timeout
 import logging

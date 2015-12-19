@@ -132,16 +132,17 @@ class WeatherConditions(QObject):
                            'WSW': self.tr('WSW'),
                            'WNW': self.tr('WNW')}
 
-        self.uv_risk = {'Low': QCoreApplication.translate('UV risk', 'Low',
-                                                          ''),
-                        'Moderate': QCoreApplication.translate('UV risk', 'Moderate',
-                                                               ''),
-                        'High': QCoreApplication.translate('UV risk', 'High',
-                                                           ''),
-                        'Very high': QCoreApplication.translate('UV risk', 'Very high',
-                                                                ''),
-                        'Extreme': QCoreApplication.translate('UV risk', 'Extreme',
-                                                              ''),
+        self.uv_risk = {'Low':
+                        QCoreApplication.translate('UV risk', 'Low', ''),
+                        'Moderate':
+                        QCoreApplication.translate('UV risk',
+                                                   'Moderate', ''),
+                        'High':
+                        QCoreApplication.translate('UV risk', 'High', ''),
+                        'Very high':
+                        QCoreApplication.translate('UV risk', 'Very high', ''),
+                        'Extreme':
+                        QCoreApplication.translate('UV risk', 'Extreme', ''),
                         'None': '-'}
 
         self.uv_recommend = {'Low': QCoreApplication.translate('Low UV recommended protection',

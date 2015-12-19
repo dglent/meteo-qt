@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import (
     QDialogButtonBox
     )
 
+
 class AboutDialog(QDialog):
     def __init__(self, title, text, image, contributors, parent=None):
         super(AboutDialog, self).__init__(parent)
