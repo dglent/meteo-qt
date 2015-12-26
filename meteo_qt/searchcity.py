@@ -189,7 +189,7 @@ class WorkThread(QThread):
         if self.city == '':
             return
         try:
-            logging.info(self.accurate_url + repr(self.city.encode('utf-8')).replace(
+            logging.debug(self.accurate_url + repr(self.city.encode('utf-8')).replace(
                     "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix)
             logging.debug('City before utf8 encode :' + self.accurate_url +
                           self.city + self.suffix)
