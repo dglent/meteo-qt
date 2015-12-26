@@ -27,6 +27,7 @@ class OverviewCity(QDialog):
     def __init__(self, weatherdata, icon, forecast, dayforecast, unit,
                  icon_url, uv_coord, parent=None):
         super(OverviewCity, self).__init__(parent)
+        self.setAttribute(Qt.WA_DeleteOnClose)
         self.days_dico = {'0': self.tr('Mon'),
                           '1': self.tr('Tue'),
                           '2': self.tr('Wed'),
@@ -42,7 +43,6 @@ class OverviewCity(QDialog):
         self.uv_risk = cond.uv_risk
         self.uv_recommend = cond.uv_recommend
         self.settings = QSettings()
-        self.setAttribute(Qt.WA_DeleteOnClose)
         self.tree = forecast
         self.tree_day = dayforecast
         self.icon_url = icon_url

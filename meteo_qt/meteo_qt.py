@@ -48,6 +48,7 @@ __version__ = "0.8.8"
 class SystemTrayIcon(QMainWindow):
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
+        self.setAttribute(Qt.WA_DeleteOnClose)
         self.settings = QSettings()
         # initialize the tray icon type in case of first run: issue#42
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
@@ -200,6 +201,7 @@ class SystemTrayIcon(QMainWindow):
                     # kills the reference to overviewcity
                     # in order to be refreshed
                     self.overviewcity.close()
+                    del self.overviewcity
             except:
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
@@ -292,23 +294,13 @@ class SystemTrayIcon(QMainWindow):
             self.wIcon = self.updateicon
         if hasattr(self, 'forecast_data'):
             if hasattr(self, 'overviewcity'):
-                # Sometimes the overviewcity is in namespace but deleted:
-                # RuntimeError: wrapped C/C++ object of type OverviewCity
-                # has been deleted
-                try:
-                    # Update also the overview dialog if open
-                    if self.overviewcity.isVisible():
-                        # delete dialog to prevent memory leak
-                        self.overviewcity.close()
-                        self.instance_overviewcity()
-                        self.overview()
-                except:
-                    e = sys.exc_info()[0]
-                    logging.error('Error: ' + str(e))
-                    logging.debug('Overview instance has been deleted,'
-                                  'try again...')
-                    if self.tentatives < 10:
-                        self.try_create_overview()
+                # Update also the overview dialog if open
+                if self.overviewcity.isVisible():
+                    # delete dialog to prevent memory leak
+                    self.overviewcity.close()
+                    del self.overviewcity
+                    self.instance_overviewcity()
+                    self.overview()
             else:
                 if self.tentatives < 10:
                     self.inerror = True
