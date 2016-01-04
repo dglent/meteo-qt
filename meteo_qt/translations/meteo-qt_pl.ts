@@ -134,7 +134,9 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Zalecenia: Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Unikaj słońca co najmniej trzy godziny po południu.</translation>
     </message>
 </context>
 <context>
@@ -145,7 +147,9 @@
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw słoneczne.</translation>
     </message>
 </context>
 <context>
@@ -156,7 +160,8 @@
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Noś okulary przeciw słoneczne w intensywnie słoneczne dni. &lt;br/&gt;
+Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</translation>
     </message>
 </context>
 <context>
@@ -379,7 +384,8 @@
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Zalecenia: chroń się przed słońcem pod cieniem budynków/drzew będąc na zewnątrz. &lt;br/&gt;
+</translation>
     </message>
 </context>
 <context>
@@ -674,27 +680,27 @@
     <message>
         <location filename="conditions.py" line="138"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Niski</translation>
     </message>
     <message>
         <location filename="conditions.py" line="139"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation>Umiarkowany</translation>
     </message>
     <message>
         <location filename="conditions.py" line="140"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Wysoki</translation>
     </message>
     <message>
         <location filename="conditions.py" line="141"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation>Bardzo wysoki</translation>
     </message>
     <message>
         <location filename="conditions.py" line="142"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation>Intensywny</translation>
     </message>
 </context>
 <context>
@@ -703,7 +709,7 @@
         <location filename="overview.py" line="129"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>UV</translation>
     </message>
     <message>
         <location filename="overview.py" line="132"/>
@@ -719,7 +725,9 @@
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Nie przebywaj zbyt długo na słońcu.</translation>
     </message>
 </context>
 <context>

@@ -47,7 +47,7 @@
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] překlad do čínštiny (Tchajwan)
             &lt;p&gt;Pavel Frich &lt;a href=&quot;mailto:pavelfric@yahoo.com&quot;&gt;pavelfric@yahoo.com&lt;/a&gt;&lt;br/&gt;
-            [cs] překlad do češtiny (Tchajwan
+            [cs] překlad do češtiny
             &lt;p&gt;pmav99&lt;br/&gt;
             Projekt</translation>
     </message>
@@ -135,7 +135,11 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Učiňte veškerá bezpečnostní opatření: Noste krém na opalování SPF 30+,
+tričko s dlouhým rukávem a kalhoty,&lt;br/&gt;
+sluneční brýle a klobouk s velice širokou střechou.&lt;br/&gt;
+Vyhněte se pobytu na slunci v době slunečního poledne,
+kdy je slunce po tři hodiny na nejvyšší úrovni.</translation>
     </message>
 </context>
 <context>
@@ -146,7 +150,9 @@
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Zakryjte tělo oblečením chránícím proti slunci, použijte krém na opalování SPF 30+&lt;br/&gt;
+noste klobouk, omezte čas strávený na slunci v době slunečního poledne,
+kdy je slunce po tři hodiny na nejvyšší úrovni., a noste sluneční brýle.</translation>
     </message>
 </context>
 <context>
@@ -157,7 +163,9 @@
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Noste sluneční brýle při jasných dnech; používejte krém na opalování,
+&lt;br/&gt;jestliže na zemi leží sníh, jenž odráží ultrafialové záření, nebo když
+máte obzvláště světlou pokožku.</translation>
     </message>
 </context>
 <context>
@@ -656,7 +664,22 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+&lt;p&gt;Jednoduchý program ukazující údaje o stavu počasí
+v oznamovací oblasti panelu.
+&lt;p&gt;Stránky: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+https://github.com/dglent/meteo-qt&lt;/a&gt;
+&lt;br/&gt;Zdroj dat: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+OpenWeatherMap&lt;/a&gt;.
+&lt;br/&gt;Tento program používá ikony z
+&lt;a href=&quot;http://www.kde.org/&quot;&gt;projektu Oxygen&lt;/a&gt;.
+&lt;p&gt;K překladu meteo-qt do vašeho jazyka nebo pro
+přispění do nynějších překladů můžete použít službu
+&lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+Transifex&lt;/a&gt;.
+&lt;p&gt;Pokud chcete nahlásit špatné fungování nebo něco navrhnout,
+klidně tuto otázku otevřete na &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -709,7 +732,8 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Noste krém na opalování LSF 30+, košili, sluneční brýle a klobouk se širokou střechou.&lt;br/&gt;
+Nezůstávejte na slunci příliš dlouho.</translation>
     </message>
 </context>
 <context>
