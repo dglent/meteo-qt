@@ -454,7 +454,7 @@
     <message>
         <location filename="overview.py" line="170"/>
         <source>Weather status</source>
-        <translation>Πληροφορίες καιρού</translation>
+        <translation>Μετεωρολογικό δελτίο</translation>
     </message>
     <message>
         <location filename="overview.py" line="233"/>
