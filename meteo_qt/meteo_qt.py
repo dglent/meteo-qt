@@ -192,6 +192,7 @@ class SystemTrayIcon(QMainWindow):
         self.citiesMenu.addAction(self.tr('Empty list'))
 
     def refresh(self):
+        self.window_visible = False
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
             # if visible, it has to ...remain visible
@@ -202,6 +203,9 @@ class SystemTrayIcon(QMainWindow):
                     # in order to be refreshed
                     self.overviewcity.close()
                     del self.overviewcity
+                else:
+                    self.overviewcity.close()
+                    self.window_visible = True
             except:
                 pass
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
@@ -275,6 +279,7 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico, self.wIcon, self.forecast_data,
                 self.dayforecast_data, self.unit, self.forecast_icon_url,
                 self.uv_coord, self)
+            self.overviewcity.closed_status_dialogue.connect(self.remove_object)
         except:
             self.inerror = True
             e = sys.exc_info()[0]
@@ -282,6 +287,9 @@ class SystemTrayIcon(QMainWindow):
             logging.debug('Try to create the city overview...\nTentatives: ' +
                           str(self.tentatives))
             return 'error'
+
+    def remove_object(self):
+        del self.overviewcity
 
     def done(self, done):
         if done == 0:
@@ -298,9 +306,11 @@ class SystemTrayIcon(QMainWindow):
                 if self.overviewcity.isVisible():
                     # delete dialog to prevent memory leak
                     self.overviewcity.close()
-                    del self.overviewcity
                     self.instance_overviewcity()
                     self.overview()
+            elif self.window_visible is True:
+                self.instance_overviewcity()
+                self.overview()
             else:
                 if self.tentatives < 10:
                     self.inerror = True

@@ -19,7 +19,7 @@ except:
 
 
 class OverviewCity(QDialog):
-
+    closed_status_dialogue = pyqtSignal([bool])
     units_dico = {'metric': '°C',
                   'imperial': '°F',
                   ' ': '°K'}
@@ -386,6 +386,8 @@ class OverviewCity(QDialog):
 
     def closeEvent(self, event):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
+        exit = True
+        self.closed_status_dialogue.emit(exit)
 
 
 class Uv(QThread):
