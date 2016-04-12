@@ -442,7 +442,15 @@ class IconDownload(QThread):
                     return
                 self.wimage['PyQt_PyObject'].emit(data)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
-            error = 'Error ' + str(error.code) + ' ' + str(error.reason)
+            try:
+                error_code = error.code
+            except:
+                error_code = 'None'
+            try:
+                error_reason = error.reason
+            except:
+                error_reason = 'None'
+            error = 'Error :' + str(error_code) + ': ' + str(error.reason)
             self.error['QString'].emit(error)
         except timeout:
             if self.tentatives >= 10:
