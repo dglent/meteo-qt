@@ -192,6 +192,7 @@ class SystemTrayIcon(QMainWindow):
         self.citiesMenu.addAction(self.tr('Empty list'))
 
     def refresh(self):
+        self.inerror = False
         self.window_visible = False
         self.systray.setIcon(QIcon(':/noicon'))
         if hasattr(self, 'overviewcity'):
@@ -272,6 +273,7 @@ class SystemTrayIcon(QMainWindow):
 
     def instance_overviewcity(self):
         try:
+            self.inerror = False
             if hasattr(self, 'overviewcity'):
                 logging.debug('Deleting overviewcity instance...')
                 del self.overviewcity
@@ -295,7 +297,9 @@ class SystemTrayIcon(QMainWindow):
         if done == 0:
             self.inerror = False
         elif done == 1:
-            self.systray.setIcon(QIcon(':/noicon'))
+            self.inerror = True
+            logging.debug('Trying to retreive data ...')
+            self.timer.singleShot(10000, self.try_again)
             return
         if hasattr(self, 'updateicon'):
             # Keep a reference of the image to update the icon in overview
@@ -312,37 +316,24 @@ class SystemTrayIcon(QMainWindow):
                 self.instance_overviewcity()
                 self.overview()
             else:
-                if self.tentatives < 10:
-                    self.inerror = True
-                    self.try_create_overview()
+                self.inerror = True
+                self.try_create_overview()
         else:
             self.try_again()
 
-    def searching_message(self):
-        self.systray.setToolTip(
-            self.tr('Please wait, trying to find data...') +
-            str(self.tentatives) + '/' + '10')
-
     def try_create_overview(self):
-        self.searching_message()
-        self.inerror = True
         logging.debug('Tries to create overview :' + str(self.tentatives))
-        if self.tentatives < 10:
-            instance = self.instance_overviewcity()
-            if instance == 'error':
-                self.inerror = True
-                self.try_again()
-            else:
-                self.tentatives = 0
-                self.inerror = False
-                self.tooltip_weather()
+        instance = self.instance_overviewcity()
+        if instance == 'error':
+            self.inerror = True
+            self.refresh()
+        else:
+            self.tentatives = 0
+            self.inerror = False
+            self.tooltip_weather()
 
     def try_again(self):
-        self.searching_message()
-        if self.tentatives >= 10:
-            self.systray.setIcon(QIcon(':/noicon'))
-            self.nodata_message()
-            return
+        self.nodata_message()
         logging.debug('Tentatives: ' + str(self.tentatives))
         self.tentatives += 1
         self.timer.singleShot(5000, self.refresh)
@@ -715,6 +706,11 @@ class Download(QThread):
                 logging.warn('5 secondes timeout, new tentative: ' +
                              str(self.tentatives))
                 self.run()
+        except (etree.XMLSyntaxError) as error:
+            logging.critical('Error: ' + str(error))
+            done = 1
+            self.done.emit(int(done))
+
         logging.debug('Download thread done')
 
     def html404(self, page, what):
