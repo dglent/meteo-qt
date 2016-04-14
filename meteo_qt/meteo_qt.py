@@ -339,7 +339,7 @@ class SystemTrayIcon(QMainWindow):
         self.timer.singleShot(5000, self.refresh)
 
     def nodata_message(self):
-        nodata = self.tr('meteo-qt: Cannot find data!')
+        nodata = self.tr('meteo-qt: Searching for weather data...')
         self.systray.setToolTip(nodata)
         self.notification = nodata
 
