@@ -450,7 +450,7 @@ class IconDownload(QThread):
                 error_reason = error.reason
             except:
                 error_reason = 'None'
-            error = 'Error :' + str(error_code) + ': ' + str(error.reason)
+            error = 'Error :' + str(error_code) + ': ' + str(error_reason)
             self.error['QString'].emit(error)
         except timeout:
             if self.tentatives >= 10:
