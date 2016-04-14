@@ -3,6 +3,7 @@ meteo-qt
 
 System tray application for weather status information.
 
+Source data: <a href="http://openweathermap.org/">OpenWeatherMap</a><br>
 Licensed under the GNU General Public License version 3 (GPLv3).
 
 ##### Requirements
