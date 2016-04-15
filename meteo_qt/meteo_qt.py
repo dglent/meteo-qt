@@ -340,7 +340,9 @@ class SystemTrayIcon(QMainWindow):
         self.timer.singleShot(5000, self.refresh)
 
     def nodata_message(self):
-        nodata = self.tr('meteo-qt: Searching for weather data...')
+        nodata = QCoreApplication.translate(
+            "Tray icon", "Searching for weather data...",
+            "Tooltip (when mouse over the icon")
         self.systray.setToolTip(nodata)
         self.notification = nodata
 
@@ -522,7 +524,7 @@ class SystemTrayIcon(QMainWindow):
         language = self.settings.value('Language')
         if language != self.language:
             self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
-                    "Tray notification",
+                    "System tray notification",
                     "The application has to be restared to apply the language setting", ''))
             self.language = language
         # Check if update is needed
