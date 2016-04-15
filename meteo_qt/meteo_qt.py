@@ -50,6 +50,7 @@ class SystemTrayIcon(QMainWindow):
         super(SystemTrayIcon, self).__init__(parent)
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.settings = QSettings()
+        self.language = self.settings.value('Language') or ''
         # initialize the tray icon type in case of first run: issue#42
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
         cond = conditions.WeatherConditions()
@@ -518,6 +519,12 @@ class SystemTrayIcon(QMainWindow):
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
+        language = self.settings.value('Language')
+        if language != self.language:
+            self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
+                    "Tray notification",
+                    "The application has to be restared to apply the language setting", ''))
+            self.language = language
         # Check if update is needed
         if traycolor is None:
             traycolor = ''
