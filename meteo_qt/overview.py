@@ -358,7 +358,7 @@ class OverviewCity(QDialog):
         self.day_download_thread = IconDownload(self.icon_url,
                                                 self.dayforecast_icon_list)
         self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
-        self.day_download_thread.error['QString'].connect(self.error)
+        self.day_download_thread.url_error_signal['QString'].connect(self.error)
         self.day_download_thread.start()
 
     def dayiconwidget(self, icon):
@@ -417,7 +417,7 @@ class Uv(QThread):
 
 
 class IconDownload(QThread):
-    error = pyqtSignal(['QString'])
+    url_error_signal = pyqtSignal(['QString'])
     wimage = pyqtSignal(['PyQt_PyObject'])
 
     def __init__(self, icon_url, icon, parent=None):
@@ -443,15 +443,11 @@ class IconDownload(QThread):
                 self.wimage['PyQt_PyObject'].emit(data)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             try:
-                error_code = error.code
+                url_error = 'Error: ' + str(error.code) + ': ' + str(error.reason)
             except:
-                error_code = 'None'
-            try:
-                error_reason = error.reason
-            except:
-                error_reason = 'None'
-            error = 'Error :' + str(error_code) + ': ' + str(error_reason)
-            self.error['QString'].emit(error)
+                url_error = error
+            logging.error(str(url_error))
+            self.url_error_signal['QString'].emit(url_error)
         except timeout:
             if self.tentatives >= 10:
                 logging.error('Timeout error, abandon...')

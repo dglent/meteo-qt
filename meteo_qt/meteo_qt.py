@@ -678,15 +678,11 @@ class Download(QThread):
         except (urllib.error.HTTPError, urllib.error.URLError, TypeError) as error:
             if self.tentatives >= 10:
                 done = 1
-                code = ''
-                m_error = error
-                if hasattr(error, 'code'):
-                    code = str(error.code)
-                    logging.error(str(code) + str(error.reason))
-                    m_error = self.tr('Error :\n') + str(code) + ' ' + str(error.reason)
-                else:
-                    logging.error(str(m_error))
-                    m_error = str(m_error)
+                try:
+                    m_error = self.tr('Error :\n') + str(error.code) + ' ' + str(error.reason)
+                except:
+                    m_error = str(error)
+                logging.error(m_error)
                 self.error['QString'].emit(m_error)
                 self.done.emit(int(done))
                 return
