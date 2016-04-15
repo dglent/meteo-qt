@@ -248,7 +248,7 @@ class OverviewCity(QDialog):
         logging.debug('Download 6 days forecast icons...')
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
-        self.download_thread.error['QString'].connect(self.error)
+        self.download_thread.url_error_signal['QString'].connect(self.error)
         self.download_thread.start()
 
     def iconwidget(self, icon):
@@ -438,7 +438,7 @@ class IconDownload(QThread):
                 logging.debug('Icon downloading: ' + url)
                 data = urllib.request.urlopen(url, timeout=5).read()
                 if self.html404(data, 'icon'):
-                    self.error['QString'].emit(self.error_message)
+                    self.url_error_signal['QString'].emit(self.error_message)
                     return
                 self.wimage['PyQt_PyObject'].emit(data)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
