@@ -185,7 +185,7 @@ class OverviewCity(QDialog):
         transf = QTransform()
         angle = self.weatherdata['Wind'][2]
         logging.debug('Wind degrees direction: ' + angle)
-        transf.rotate(int(float(angle)-10))
+        transf.rotate(int(float(angle)))
         rotated = self.wind_icon.transformed(transf, mode=Qt.SmoothTransformation)
         self.wind_icon_label.setPixmap(rotated)
 
