@@ -2,7 +2,7 @@ from PyQt5.QtCore import (
     QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray,
     QCoreApplication
     )
-from PyQt5.QtGui import QImage, QPixmap
+from PyQt5.QtGui import QImage, QPixmap, QTransform
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
     )
@@ -14,8 +14,10 @@ import logging
 
 try:
     import conditions
+    import qrc_resources
 except:
     from meteo_qt import conditions
+    from meteo_qt import qrc_resources
 
 
 class OverviewCity(QDialog):
@@ -81,6 +83,7 @@ class OverviewCity(QDialog):
         self.over_layout.addLayout(self.dayforecast_temp_layout)
         # ------Second part overview day---------
         self.over_grid = QGridLayout()
+        # Wind
         self.wind_label = QLabel('<font size="3" color=grey><b>' +
                                  self.tr('Wind') + '<\font><\b>')
         wind_unit = self.settings.value('Unit') or 'metric'
@@ -93,11 +96,15 @@ class OverviewCity(QDialog):
                                self.weatherdata['Wind'][0] +
                                self.speed_unit + self.weatherdata['Wind'][1] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
-                               self.weatherdata['Wind'][3] + ' ' +
+                               # self.weatherdata['Wind'][3] + ' ' +
                                self.weatherdata['Wind'][4] + '<\font>')
         except:
             logging.error('Cannot find wind informations:\n' +
                           str(self.weatherdata['Wind']))
+        self.wind_icon_label = QLabel()
+        self.wind_icon = QPixmap(':/arrow')
+        self.wind_icon_direction()
+        # ----------------
         self.clouds_label = QLabel('<font size="3" color=grey><b>' +
                                    self.tr('Cloudiness') + '<\b><\font>')
         self.clouds_name = QLabel('<font color=grey>' +
@@ -136,6 +143,7 @@ class OverviewCity(QDialog):
         # -------------------------
         self.over_grid.addWidget(self.wind_label, 0, 0)
         self.over_grid.addWidget(self.wind, 0, 1)
+        self.over_grid.addWidget(self.wind_icon_label, 0, 2)
         self.over_grid.addWidget(self.clouds_label, 1, 0)
         self.over_grid.addWidget(self.clouds_name, 1, 1)
         self.over_grid.addWidget(self.pressure_label, 2, 0)
@@ -172,6 +180,14 @@ class OverviewCity(QDialog):
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
                                                  QByteArray()))
+
+    def wind_icon_direction(self):
+        transf = QTransform()
+        angle = self.weatherdata['Wind'][2]
+        logging.debug('Wind degrees direction: ' + angle)
+        transf.rotate(int(float(angle)-10))
+        rotated = self.wind_icon.transformed(transf, mode=Qt.SmoothTransformation)
+        self.wind_icon_label.setPixmap(rotated)
 
     def uv_color(self, uv):
         try:
