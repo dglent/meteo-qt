@@ -1085,7 +1085,7 @@
     <message>
         <location filename="conditions.py" line="103"/>
         <source>North</source>
-        <translation>Βορράς</translation>
+        <translation>Βόρειος</translation>
     </message>
     <message>
         <location filename="conditions.py" line="104"/>
