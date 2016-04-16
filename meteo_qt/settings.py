@@ -190,7 +190,15 @@ class MeteoSettings(QDialog):
             self.settings.setValue('FontSize', '18')
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
-        # -------------------------------
+        # Decimal in trayicon
+        self.temp_decimal_label = QLabel('Temperature with decimal in tray icon')
+        self.temp_decimal_checkbox = QCheckBox()
+        temp_decimal_bool = self.settings.value('Decimal') or 'False'
+        temp_decimal_bool = eval(temp_decimal_bool)
+        self.temp_decimal_checkbox.setChecked(temp_decimal_bool)
+        self.temp_decimal_checkbox.stateChanged.connect(self.temp_decimal)
+        self.temp_decimal_changed = False
+        # ------------------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
         self.panel.addWidget(self.city_combo, 0, 1)
@@ -213,6 +221,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.tray_icon_combo, 7, 1)
         self.panel.addWidget(self.fontsize_label, 8, 0)
         self.panel.addWidget(self.fontsize_spinbox, 8, 1)
+        self.panel.addWidget(self.temp_decimal_label, 9, 0)
+        self.panel.addWidget(self.temp_decimal_checkbox, 9, 1)
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -331,6 +341,19 @@ class MeteoSettings(QDialog):
             self.settings.setValue('Notifications', 'False')
             logging.debug('Write: Notifications = False')
 
+    def temp_decimal(self, state):
+        self.temp_decimal_state = state
+        self.temp_decimal_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def temp_decimal_apply(self):
+        if self.temp_decimal_state == 2:
+            self.settings.setValue('Decimal', 'True')
+            logging.debug('Write: Decimal in tray icon = True')
+        elif self.temp_decimal_state == 0:
+            self.settings.setValue('Decimal', 'False')
+            logging.debug('Write: Decimal in tray icon = False')
+
     def tray(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.tray_changed = True
@@ -397,6 +420,8 @@ class MeteoSettings(QDialog):
             self.tray_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
+        if self.temp_decimal_changed:
+            self.temp_decimal_apply()
 
     def accept(self):
         self.accepted()

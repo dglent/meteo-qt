@@ -51,6 +51,7 @@ class SystemTrayIcon(QMainWindow):
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.settings = QSettings()
         self.language = self.settings.value('Language') or ''
+        self.temp_decimal_bool = self.settings.value('Decimal') or False
         # initialize the tray icon type in case of first run: issue#42
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
         cond = conditions.WeatherConditions()
@@ -364,6 +365,7 @@ class SystemTrayIcon(QMainWindow):
             return
         self.tempFloat = tree[1].get('value')
         self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
+        self.temp_decimal = '{0:.1f}'.format(float(self.tempFloat)) + '°'
         self.meteo = tree[8].get('value')
         meteo_condition = tree[8].get('number')
         try:
@@ -404,7 +406,7 @@ class SystemTrayIcon(QMainWindow):
                           str(wind_dir))
             pass
         self.city_weather_info = (self.city + ' ' + self.country + ' ' +
-                                  self.temp + ' ' + self.meteo)
+                                  self.temp_decimal + ' ' + self.meteo)
         self.tooltip_weather()
         self.notification = self.city_weather_info
         self.weatherDataDico['City'] = self.city
@@ -428,6 +430,11 @@ class SystemTrayIcon(QMainWindow):
         self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):
+        temp_decimal = eval(self.settings.value('Decimal'))
+        if temp_decimal and self.temp_decimal[self.temp_decimal.find('.') + 1] != '0':
+            temp_tray = self.temp_decimal
+        else:
+            temp_tray = self.temp
         if self.inerror or not hasattr(self, 'temp'):
             logging.critical('Cannot paint icon!')
             if hasattr(self, 'overviewcity'):
@@ -453,9 +460,9 @@ class SystemTrayIcon(QMainWindow):
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp':
             pt.drawText(icon.rect(), Qt.AlignBottom | Qt.AlignCenter,
-                        str(self.temp))
+                        str(temp_tray))
         if self.tray_type == 'temp':
-            pt.drawText(icon.rect(), Qt.AlignCenter, str(self.temp))
+            pt.drawText(icon.rect(), Qt.AlignCenter, str(temp_tray))
         pt.end()
         if self.tray_type == 'icon':
             self.systray.setIcon(QIcon(self.wIcon))
@@ -466,7 +473,7 @@ class SystemTrayIcon(QMainWindow):
                 notifier = self.settings.value('Notifications') or 'True'
                 notifier = eval(notifier)
                 if notifier:
-                    temp = int(re.search('\d+', self.temp).group())
+                    temp = int(re.search('\d+', self.temp_decimal).group())
                     if temp != self.notification_temp or self.id_ != self.notifications_id:
                         self.notifications_id = self.id_
                         self.notification_temp = temp
@@ -522,6 +529,7 @@ class SystemTrayIcon(QMainWindow):
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
         language = self.settings.value('Language')
+        decimal = self.settings.value('Decimal')
         if language != self.language:
             self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
                     "System tray notification",
@@ -531,7 +539,7 @@ class SystemTrayIcon(QMainWindow):
         if traycolor is None:
             traycolor = ''
         if (self.traycolor != traycolor or self.tray_type != tray_type or
-                self.fontsize != fontsize):
+                self.fontsize != fontsize or decimal != self.temp_decimal):
             self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and
