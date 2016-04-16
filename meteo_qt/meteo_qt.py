@@ -430,7 +430,7 @@ class SystemTrayIcon(QMainWindow):
         self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):
-        temp_decimal = eval(self.settings.value('Decimal'))
+        temp_decimal = eval(self.settings.value('Decimal') or 'False')
         if temp_decimal and self.temp_decimal[self.temp_decimal.find('.') + 1] != '0':
             temp_tray = self.temp_decimal
         else:
