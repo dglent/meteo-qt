@@ -1,3 +1,12 @@
+0.8.9
+Fix crash when dialogue is closed by its button
+Search continuously for a connexion or data if a problem has occurred
+Add wind direction icon
+Add option to display the temperature with decimal in tray icon
+Add Precipitation value
+Update Czech translation by fri
+Update Polish translation by FadeMind
+
 0.8.8
 Improve the tray icon (bigger weather icon, temperature alignment)
 Don't wait the UV information to display the weather informations dialogue
