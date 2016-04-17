@@ -617,6 +617,7 @@ class SystemTrayIcon(QMainWindow):
             <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
             [fr] French translation, Project
             <p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/>
+            Tomasz Przybył <a href="mailto:fademind@gmail.com">fademind@gmail.com</a><br/>
             [pl] Polish translation
             <p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/>
             [ru] Russian translation
