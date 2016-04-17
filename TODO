@@ -2,5 +2,6 @@
 - proxy authentication issue #46
 - Think for the log file issue #49 (maybe systemd journal is better solution ?)
 - Wind unit (choose between more units as Nœuds Beaufort m/s km/h mi/h ...)
-- Rounded wind direction degrees
-- Add option for decimal in temperature in tray icon
+- Wind direction degrees with range
+http://climate.umn.edu/snow_fence/Components/winddirectionanddegreeswithouttable3.htm
+
