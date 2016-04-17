@@ -98,6 +98,13 @@ class WeatherConditions(QObject):
                      'violent storm': '961',
                      'hurricane': '962'}
 
+        self.rain = {'no': QCoreApplication.translate('Precipitation type',
+                            'no', 'Weather overview dialogue'),
+                     'rain': QCoreApplication.translate('Precipitation type',
+                             'rain', 'Weather overview dialogue'),
+                     'snow': QCoreApplication.translate('Precipitation type',
+                            'snow', 'Weather overview dialogue')}
+
         self.wind_direction = {'N': self.tr('North'),
                                'NE': self.tr('NorthEast'),
                                'NNE': self.tr('North-northeast'),

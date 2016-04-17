@@ -425,13 +425,17 @@ class SystemTrayIcon(QMainWindow):
                                             tree[2].get('unit'))
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
+        rain_value = tree[7].get('value')
+        if rain_value == None:
+            rain_value = ''
+        self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
 
     def tooltip_weather(self):
         self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):
         temp_decimal = eval(self.settings.value('Decimal') or 'False')
-        if temp_decimal and self.temp_decimal[self.temp_decimal.find('.') + 1] != '0':
+        if temp_decimal:
             temp_tray = self.temp_decimal
         else:
             temp_tray = self.temp

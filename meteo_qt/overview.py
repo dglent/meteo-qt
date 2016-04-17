@@ -39,6 +39,7 @@ class OverviewCity(QDialog):
                           '6': self.tr('Sun')}
         cond = conditions.WeatherConditions()
         self.conditions = cond.trans
+        self.precipitation = cond.rain
         self.wind_direction = cond.wind_codes
         self.wind_name_dic = cond.wind
         self.clouds_name_dic = cond.clouds
@@ -121,6 +122,25 @@ class OverviewCity(QDialog):
                                      self.weatherdata['Humidity'][0] + ' ' +
                                      self.weatherdata['Humidity'][1] +
                                      '<\font>')
+        self.precipitation_label = QLabel('<font size="3" color=grey><b>' +
+                                          QCoreApplication.translate('Precipitation type (no/rain/snow)',
+                                            'Precipitation', 'Weather overview dioalogue') +
+                                          '<\b><\font>')
+        rain_mode = self.precipitation[self.weatherdata['Precipitation'][0]]
+        rain_value = self.weatherdata['Precipitation'][1]
+        rain_unit = ' mm '
+        if rain_value == '':
+            rain_unit = ''
+        else:
+            if wind_unit == 'imperial':
+                rain_unit = 'inch'
+                rain_value = str(float(rain_value) / 25.4)
+                rain_value = "{0:.4f}".format(float(rain_value))
+            else:
+                rain_value = "{0:.2f}".format(float(rain_value))
+        self.precipitation_value = QLabel('<font color=grey>' +
+                                          rain_mode + ' ' + rain_value + ' ' + rain_unit +
+                                          '</font>')
         self.sunrise_label = QLabel('<font color=grey><b>' +
                                     self.tr('Sunrise') + '</b></font>')
         self.sunset_label = QLabel('<font color=grey><b>' +
@@ -150,12 +170,14 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.pressure_value, 2, 1)
         self.over_grid.addWidget(self.humidity_label, 3, 0)
         self.over_grid.addWidget(self.humidity_value, 3, 1, 1, 3)  # align left
-        self.over_grid.addWidget(self.sunrise_label, 4, 0)
-        self.over_grid.addWidget(self.sunrise_value, 4, 1)
-        self.over_grid.addWidget(self.sunset_label, 5, 0)
-        self.over_grid.addWidget(self.sunset_value, 5, 1)
-        self.over_grid.addWidget(self.uv_label, 6, 0)
-        self.over_grid.addWidget(self.uv_value_label, 6, 1)
+        self.over_grid.addWidget(self.precipitation_label, 4, 0)
+        self.over_grid.addWidget(self.precipitation_value, 4, 1)
+        self.over_grid.addWidget(self.sunrise_label, 5, 0)
+        self.over_grid.addWidget(self.sunrise_value, 5, 1)
+        self.over_grid.addWidget(self.sunset_label, 6, 0)
+        self.over_grid.addWidget(self.sunset_value, 6, 1)
+        self.over_grid.addWidget(self.uv_label, 7, 0)
+        self.over_grid.addWidget(self.uv_value_label, 7, 1)
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
