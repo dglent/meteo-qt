@@ -137,9 +137,13 @@ class SystemTrayIcon(QMainWindow):
         cities = self.settings.value('CityList') or []
         if type(cities) is str:
             cities = eval(cities)
-        current_city = (self.settings.value('City') + '_' +
+        try:
+            current_city = (self.settings.value('City') + '_' +
                         self.settings.value('Country') + '_' +
                         self.settings.value('ID'))
+        except:
+            # firsttime run,if clic cancel in setings without any city configured
+            pass
         # Prevent duplicate entries
         try:
             city_toadd = cities.pop(cities.index(current_city))
@@ -239,6 +243,8 @@ class SystemTrayIcon(QMainWindow):
         self.update()
 
     def firsttime(self):
+        self.temp = ''
+        self.wIcon = QPixmap(':/noicon')
         self.systray.showMessage(
             'meteo-qt:\n', self.tr('No city has been configured yet.') +
             '\n' + self.tr('Right click on the icon and click on Settings.'))
@@ -448,7 +454,11 @@ class SystemTrayIcon(QMainWindow):
                 except:
                     pass
             return
-        self.gif_loading.stop()
+        try:
+            self.gif_loading.stop()
+        except:
+            # In first time run the gif is not animated
+            pass
         logging.debug('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
@@ -534,7 +544,7 @@ class SystemTrayIcon(QMainWindow):
         fontsize = self.settings.value('FontSize')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
-        if language != self.language:
+        if language != self.language and language is not None:
             self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
                     "System tray notification",
                     "The application has to be restared to apply the language setting", ''))
