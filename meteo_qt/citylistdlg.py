@@ -1,4 +1,4 @@
-from PyQt5.QtCore import pyqtSignal, Qt
+from PyQt5.QtCore import pyqtSignal, Qt, QCoreApplication
 from PyQt5.QtWidgets import (
     QDialog, QListWidget, QVBoxLayout, QHBoxLayout, QDialogButtonBox,
     QPushButton, QLabel
@@ -63,8 +63,8 @@ class CityListDlg(QDialog):
             for row in range(self.listWidget.count()):
                 lista.append(self.listWidget.item(row).text())
             if newitem in lista:
-                self.status.setText(self.tr('The city already'
-                                            'exists in the list'))
+                self.status.setText(QCoreApplication.translate('Status bar message',
+                                    'The city already exists in the list', 'Cities list dialogue'))
                 return
             else:
                 self.listWidget.addItem(newitem)
