@@ -49,8 +49,9 @@ class MeteoSettings(QDialog):
         self.language_label = QLabel(self.tr('Language'))
         self.language_combo = QComboBox()
         self.language_combo.setToolTip(
-            self.tr('The application has to be restared to apply the'
-                    'language setting'))
+            QCoreApplication.translate('Tooltip',
+                'The application has to be restared to apply the language setting',
+                'Settings dialogue'))
         self.language_dico = {'bg': self.tr('Bulgarian'),
                               'ca': self.tr('Catalan'),
                               'cs': self.tr('Czech'),
