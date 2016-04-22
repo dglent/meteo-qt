@@ -1,55 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="620"/>
-        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] Traduction allemande
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Traduction grecque
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Traduction espagnole
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] Traduction française
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] Traduction française, projet
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Traduction polonaise
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Traduction russe
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Traduction turque
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Traduction ukrainienne
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Traduction chinoise (Taiwan)
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Projet</translation>
-    </message>
     <message encoding="UTF-8">
         <location filename="../meteo_qt.py" line="631"/>
         <source>
@@ -79,7 +30,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -133,11 +84,6 @@
         <translation>&amp;Arranger</translation>
     </message>
     <message>
-        <location filename="citylistdlg.py" line="69"/>
-        <source>The city already exists in the list</source>
-        <translation type="obsolete">La ville existe déjà dans la liste.</translation>
-    </message>
-    <message>
         <location filename="../citylistdlg.py" line="89"/>
         <source>The list is empty</source>
         <translation>La liste est vide.</translation>
@@ -166,7 +112,7 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -177,7 +123,7 @@
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -188,7 +134,7 @@
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -207,11 +153,6 @@
         <location filename="../settings.py" line="50"/>
         <source>Language</source>
         <translation>Langue</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="52"/>
-        <source>The application has to be restared to apply the language setting</source>
-        <translation type="obsolete">Les paramètres linguistiques seront pris en compte une fois l&apos;application relancée</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
@@ -411,7 +352,7 @@
         <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
                                     Stay in shade near midday when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -508,19 +449,19 @@
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Pluie</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -529,7 +470,7 @@
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -618,7 +559,7 @@
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished">La ville existe déjà dans la liste.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -626,7 +567,7 @@
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished">Les paramètres linguistiques seront pris en compte une fois l&apos;application relancée</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -692,16 +633,6 @@
         <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="323"/>
-        <source>Please wait, trying to find data...</source>
-        <translation type="obsolete">Veuillez patienter, en train d&apos;essayer de trouver le data...</translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="352"/>
-        <source>meteo-qt: Cannot find data!</source>
-        <translation type="obsolete">meteo-qt : Aucune donnée n&apos;a été trouvée !</translation>
-    </message>
-    <message>
         <location filename="../meteo_qt.py" line="600"/>
         <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
@@ -757,7 +688,7 @@ sur la barre système.
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished">Les paramètres linguistiques seront pris en compte une fois l&apos;application relancée</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -766,7 +697,7 @@ sur la barre système.
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -774,27 +705,27 @@ sur la barre système.
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>High</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="150"/>
         <source>Very high</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="152"/>
         <source>Extreme</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -803,13 +734,13 @@ sur la barre système.
         <location filename="../overview.py" line="154"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../overview.py" line="158"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -819,7 +750,7 @@ sur la barre système.
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

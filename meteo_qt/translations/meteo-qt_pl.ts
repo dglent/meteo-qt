@@ -1,55 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="pl" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="620"/>
-        <source>Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation type="obsolete">Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</translation>
-    </message>
     <message encoding="UTF-8">
         <location filename="../meteo_qt.py" line="631"/>
         <source>
@@ -79,7 +30,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -131,11 +82,6 @@
         <location filename="../citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
         <translation>&amp;Sortuj</translation>
-    </message>
-    <message>
-        <location filename="citylistdlg.py" line="69"/>
-        <source>The city already exists in the list</source>
-        <translation type="obsolete">To miasto jest już na liście</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="89"/>
@@ -212,11 +158,6 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="50"/>
         <source>Language</source>
         <translation>Język</translation>
-    </message>
-    <message>
-        <location filename="settings.py" line="52"/>
-        <source>The application has to be restared to apply the language setting</source>
-        <translation type="obsolete">Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
@@ -514,19 +455,19 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">deszcz</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">śnieg</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -535,7 +476,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -624,7 +565,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished">To miasto jest już na liście</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -632,7 +573,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished">Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -698,16 +639,6 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <translation>Prowoklik na ikonie, następnie kliknij Ustawienia.</translation>
     </message>
     <message>
-        <location filename="meteo_qt.py" line="323"/>
-        <source>Please wait, trying to find data...</source>
-        <translation type="obsolete">Proszę czekać, pobieram dane... </translation>
-    </message>
-    <message>
-        <location filename="meteo_qt.py" line="352"/>
-        <source>meteo-qt: Cannot find data!</source>
-        <translation type="obsolete">meteo-qt: Nie odnaleziono danych!</translation>
-    </message>
-    <message>
         <location filename="../meteo_qt.py" line="600"/>
         <source>Fetching weather data...</source>
         <translation>Pobieranie informacji o pogodzie ...</translation>
@@ -760,7 +691,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished">Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -769,7 +700,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
