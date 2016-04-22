@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -31,7 +30,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -136,7 +135,7 @@ und trage eine Sonnenbrille.</translation>
         <location filename="../settings.py" line="110"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -465,19 +464,19 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Regen</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Schnee</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -486,7 +485,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -575,7 +574,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -583,7 +582,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -704,7 +703,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -713,7 +712,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

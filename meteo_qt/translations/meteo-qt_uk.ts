@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -162,7 +161,7 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../settings.py" line="110"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Точність показу температури у системному лотку</translation>
     </message>
 </context>
 <context>

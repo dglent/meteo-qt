@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -31,7 +30,32 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>
+            Pavel Fric&lt;br/&gt;
+            [cs] překlad do češtiny
+            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] překlad do němčiny
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] překlad do řečtiny
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] překlad do španělštiny
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] překlad do francouzštiny
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] překlad do francouzštiny, projekt
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] překlad do polštiny
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] překlad do ruštiny
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] překlad do turečtiny
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] překlad do ukrajinštiny
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] překlad do čínštiny
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Project</translation>
     </message>
 </context>
 <context>
@@ -138,7 +162,7 @@ kdy je slunce po tři hodiny na nejvyšší úrovni., a noste sluneční brýle.
         <location filename="../settings.py" line="110"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Přesnost teploty v oznamovací oblasti panelu</translation>
     </message>
 </context>
 <context>
@@ -577,7 +601,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Město již v seznamu je</translation>
     </message>
 </context>
 <context>
@@ -706,7 +730,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished">Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
+        <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
 </context>
 <context>
