@@ -422,7 +422,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Humidity'] = (tree[2].get('value'),
                                             tree[2].get('unit'))
         self.weatherDataDico['Wind'] = (
-            tree[4][0].get('value'), wind + '<br/>', str(int(float(tree[4][2].get('value')))),
+            tree[4][0].get('value'), wind, str(int(float(tree[4][2].get('value')))),
             wind_codes, wind_dir)
         self.weatherDataDico['Clouds'] = (clouds_percent + ' ' + clouds)
         self.weatherDataDico['Pressure'] = (tree[3].get('value'),

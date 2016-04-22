@@ -105,6 +105,19 @@ class MeteoSettings(QDialog):
         self.units_combo.setCurrentIndex(self.units_combo.findText(
             self.units_dico[self.temp_unit]))
         self.units_combo.currentIndexChanged.connect(self.units)
+        # Decimal in trayicon
+        self.temp_decimal_label = QLabel(QCoreApplication.translate(
+                    'If the temperature will be shown with a decimal or rounded in tray icon',
+                    'Temperature accuracy in system tray', 'Settings dialogue'))
+        self.temp_decimal_combo = QComboBox()
+        temp_decimal_combo_dico = {'False': '0°', 'True': '0.1°'}
+        temp_decimal_combo_list = [temp_decimal_combo_dico['False'], temp_decimal_combo_dico['True']]
+        self.temp_decimal_combo.addItems(temp_decimal_combo_list)
+        temp_decimal_bool_str = self.settings.value('Decimal') or 'False'
+        self.temp_decimal_combo.setCurrentIndex(self.temp_decimal_combo.findText(
+                                temp_decimal_combo_dico[temp_decimal_bool_str]))
+        self.temp_decimal_combo.currentIndexChanged.connect(self.temp_decimal)
+        self.temp_decimal_changed = False
         # Interval of updates
         self.interval_label = QLabel(self.tr('Update interval'))
         self.interval_min = QLabel(self.tr('minutes'))
@@ -191,14 +204,6 @@ class MeteoSettings(QDialog):
             self.settings.setValue('FontSize', '18')
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
-        # Decimal in trayicon
-        self.temp_decimal_label = QLabel('Temperature with decimal in tray icon')
-        self.temp_decimal_checkbox = QCheckBox()
-        temp_decimal_bool = self.settings.value('Decimal') or 'False'
-        temp_decimal_bool = eval(temp_decimal_bool)
-        self.temp_decimal_checkbox.setChecked(temp_decimal_bool)
-        self.temp_decimal_checkbox.stateChanged.connect(self.temp_decimal)
-        self.temp_decimal_changed = False
         # ------------------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
@@ -208,22 +213,23 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.language_combo, 1, 1)
         self.panel.addWidget(self.units_label, 2, 0)
         self.panel.addWidget(self.units_combo, 2, 1)
-        self.panel.addWidget(self.interval_label, 3, 0)
-        self.panel.addWidget(self.interval_combo, 3, 1)
-        self.panel.addWidget(self.interval_min, 3, 2)
-        self.panel.addWidget(self.autostart_label, 4, 0)
-        self.panel.addWidget(self.autostart_checkbox, 4, 1)
-        self.panel.addWidget(self.temp_colorLabel, 5, 0)
-        self.panel.addWidget(self.temp_colorButton, 5, 1)
-        self.panel.addWidget(self.temp_color_resetButton, 5, 2)
-        self.panel.addWidget(self.notifier_label, 6, 0)
-        self.panel.addWidget(self.notifier_checkbox, 6, 1)
-        self.panel.addWidget(self.tray_icon_temp_label, 7, 0)
-        self.panel.addWidget(self.tray_icon_combo, 7, 1)
-        self.panel.addWidget(self.fontsize_label, 8, 0)
-        self.panel.addWidget(self.fontsize_spinbox, 8, 1)
-        self.panel.addWidget(self.temp_decimal_label, 9, 0)
-        self.panel.addWidget(self.temp_decimal_checkbox, 9, 1)
+        self.panel.addWidget(self.temp_decimal_label, 3, 0)
+        self.panel.addWidget(self.temp_decimal_combo, 3, 1)
+        self.panel.addWidget(self.interval_label, 4, 0)
+        self.panel.addWidget(self.interval_combo, 4, 1)
+        self.panel.addWidget(self.interval_min, 4, 2)
+        self.panel.addWidget(self.autostart_label, 5, 0)
+        self.panel.addWidget(self.autostart_checkbox, 5, 1)
+        self.panel.addWidget(self.temp_colorLabel, 6, 0)
+        self.panel.addWidget(self.temp_colorButton, 6, 1)
+        self.panel.addWidget(self.temp_color_resetButton, 6, 2)
+        self.panel.addWidget(self.notifier_label, 7, 0)
+        self.panel.addWidget(self.notifier_checkbox, 7, 1)
+        self.panel.addWidget(self.tray_icon_temp_label, 8, 0)
+        self.panel.addWidget(self.tray_icon_combo, 8, 1)
+        self.panel.addWidget(self.fontsize_label, 9, 0)
+        self.panel.addWidget(self.fontsize_spinbox, 9, 1)
+
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
@@ -347,13 +353,13 @@ class MeteoSettings(QDialog):
         self.temp_decimal_changed = True
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
-    def temp_decimal_apply(self):
-        if self.temp_decimal_state == 2:
-            self.settings.setValue('Decimal', 'True')
-            logging.debug('Write: Decimal in tray icon = True')
-        elif self.temp_decimal_state == 0:
-            self.settings.setValue('Decimal', 'False')
-            logging.debug('Write: Decimal in tray icon = False')
+    # def temp_decimal_apply(self):
+    #     if self.temp_decimal_state == 2:
+    #         self.settings.setValue('Decimal', 'True')
+    #         logging.debug('Write: Decimal in tray icon = True')
+    #     elif self.temp_decimal_state == 0:
+    #         self.settings.setValue('Decimal', 'False')
+    #         logging.debug('Write: Decimal in tray icon = False')
 
     def tray(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
@@ -415,14 +421,23 @@ class MeteoSettings(QDialog):
             setUnit = [key for key, value in self.units_dico.items() if value == unit]
             self.settings.setValue('Unit', setUnit[0])
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
+        if self.temp_decimal_changed:
+            decimal = self.temp_decimal_combo.currentText()
+            print(decimal)
+            decimal_bool_str = 'False'
+            if decimal == '0.1°':
+                decimal_bool_str = 'True'
+            self.settings.setValue('Decimal', decimal_bool_str)
+            logging.debug('Write: Decimal in tray icon = ' + decimal_bool_str)
+
         if self.notifier_changed:
             self.notifier_apply()
         if self.tray_changed:
             self.tray_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
-        if self.temp_decimal_changed:
-            self.temp_decimal_apply()
+        # if self.temp_decimal_changed:
+        #     self.temp_decimal_apply()
 
     def accept(self):
         self.accepted()

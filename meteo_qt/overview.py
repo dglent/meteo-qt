@@ -75,11 +75,11 @@ class OverviewCity(QDialog):
                 float(self.weatherdata['Temp'][:-1])) + ' ' + self.unit_temp +
             '<\b><\font>')
         self.icontemp_layout.addWidget(self.temp_label)
-        self.icontemp_layout.addStretch()
         self.over_layout.addLayout(self.icontemp_layout)
         self.weather = QLabel('<font size="4"><b>' +
                               self.weatherdata['Meteo'] + '<\b><\font>')
-        self.over_layout.addWidget(self.weather)
+        self.icontemp_layout.addWidget(self.weather)
+        self.icontemp_layout.addStretch()
         self.over_layout.addLayout(self.dayforecast_layout)
         self.over_layout.addLayout(self.dayforecast_temp_layout)
         # ------Second part overview day---------
@@ -94,11 +94,11 @@ class OverviewCity(QDialog):
         self.wind = QLabel('None')
         try:
             self.wind = QLabel('<font color=grey>' +
-                               self.weatherdata['Wind'][0] +
-                               self.speed_unit + self.weatherdata['Wind'][1] +
+                               self.weatherdata['Wind'][4] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
-                               # self.weatherdata['Wind'][3] + ' ' +
-                               self.weatherdata['Wind'][4] + '<\font>')
+                               '<br/>' + self.weatherdata['Wind'][0] +
+                               self.speed_unit + self.weatherdata['Wind'][1] +
+                               '<\font>')
         except:
             logging.error('Cannot find wind informations:\n' +
                           str(self.weatherdata['Wind']))
@@ -155,10 +155,9 @@ class OverviewCity(QDialog):
                 'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
                 '<\b><\font>'))
         self.uv_value_label = QLabel('<font color=grey>' +
-                                     QCoreApplication.translate('Ultraviolet '
-                                                                'index',
-                                                                'Fetching...',
-                                                                '' + '<\font>')
+                                     QCoreApplication.translate(
+                                        'Ultraviolet index',
+                                        'Fetching...', '' + '<\font>')
                                      )
         # -------------------------
         self.over_grid.addWidget(self.wind_label, 0, 0)
@@ -383,11 +382,13 @@ class OverviewCity(QDialog):
             uv_gauge = '◼' * int(round(float(index)))
             if uv_gauge == '':
                 uv_gauge = '◼'
-        self.uv_value_label.setText('<font color=grey>' + str(index) +
-                                    '  ' + self.uv_risk[uv_color[1]] +
-                                    '</font>' + ' < font color=' +
-                                    uv_color[0] + '><b>' +
-                                    uv_gauge + '</b></font>')
+            self.uv_value_label.setText('<font color=grey>' + str(index) +
+                    '  ' + self.uv_risk[uv_color[1]] + '</font>' +
+                    '<br/>' + '< font color=' + uv_color[0] + '><b>' +
+                    uv_gauge + '</b></font>')
+        else:
+            self.uv_value_label.setText(uv_gauge)
+        logging.debug('UV gauge ◼: ' + uv_gauge)
         self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
 
     def dayiconfetch(self):
