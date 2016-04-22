@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -30,7 +31,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -125,6 +126,15 @@
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Φοράμε γυαλιά ηλίου και αντηλιακό (με δείκτη &gt;15), ρούχα, καπέλο&lt;br/&gt;
 και αποφεύγουμε τον ήλιο μετά τις 10 το πρωί μέχρι τις 4 το απόγευμα.</translation>
+    </message>
+</context>
+<context>
+    <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
+    <message>
+        <location filename="../settings.py" line="110"/>
+        <source>Temperature accuracy in system tray</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -306,42 +316,42 @@
         <translation>Μονάδα θερμοκρασίας</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="110"/>
+        <location filename="../settings.py" line="123"/>
         <source>Update interval</source>
         <translation>Χρονικό διάστημα ενημέρωσης</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="111"/>
+        <location filename="../settings.py" line="124"/>
         <source>minutes</source>
         <translation>λεπτά</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="133"/>
+        <location filename="../settings.py" line="146"/>
         <source>Launch at startup</source>
         <translation>Εκτέλεση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="141"/>
+        <location filename="../settings.py" line="154"/>
         <source>Font colour in the tray</source>
         <translation>Χρώμα γραμματοσειράς στο πλαίσιο συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="147"/>
+        <location filename="../settings.py" line="160"/>
         <source>Reset</source>
         <translation>Επαναφορά</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="148"/>
+        <location filename="../settings.py" line="161"/>
         <source>Reset font colour to system default</source>
         <translation>Επαναφορά του χρώματος της γραμματοσειράς στην εξ ορισμού του συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="152"/>
+        <location filename="../settings.py" line="165"/>
         <source>Notification on weather update</source>
         <translation>Ειδοποίηση κατά την ενημέρωση των καιρικών συνθηκών</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="231"/>
+        <location filename="../settings.py" line="237"/>
         <source>Meteo-qt Configuration</source>
         <translation>Διαμόρφωση meteo-qt</translation>
     </message>
@@ -425,22 +435,22 @@
         <translation>Δύση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="203"/>
+        <location filename="../overview.py" line="202"/>
         <source>Weather status</source>
         <translation>Μετεωρολογικό δελτίο</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="274"/>
+        <location filename="../overview.py" line="273"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="337"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="339"/>
+        <location filename="../overview.py" line="338"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
@@ -451,19 +461,19 @@
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">βροχή</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -472,7 +482,7 @@
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -524,32 +534,32 @@
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="160"/>
+        <location filename="../settings.py" line="173"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Εικονίδιο του πλαισίου συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="178"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Εικονίδιο &amp; θερμοκρασία</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="168"/>
+        <location filename="../settings.py" line="181"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Εικονίδιο</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="171"/>
+        <location filename="../settings.py" line="184"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Θερμοκρασία</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="198"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Μέγεθος γραμματοσειράς στο πλαίσιο συστήματος</translation>
@@ -561,7 +571,7 @@
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -569,7 +579,7 @@
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -687,7 +697,7 @@
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -696,7 +706,7 @@
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

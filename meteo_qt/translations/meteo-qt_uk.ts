@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -153,6 +154,15 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <translation>Вдягніть сонцезахисний одяг, скористайтеся сонцезахисним кремом SPF 30+,&lt;br/&gt;
                                     вдягніть капелюха, зменшіть час перебування на сонці протягом трьох полуденних годин і
                                     вдягніть сонцезахисні окуляри.</translation>
+    </message>
+</context>
+<context>
+    <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
+    <message>
+        <location filename="../settings.py" line="110"/>
+        <source>Temperature accuracy in system tray</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -336,42 +346,42 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <translation>Одиниця виміру температури</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="110"/>
+        <location filename="../settings.py" line="123"/>
         <source>Update interval</source>
         <translation>Інтервал оновлення</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="111"/>
+        <location filename="../settings.py" line="124"/>
         <source>minutes</source>
         <translation>хвилин</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="133"/>
+        <location filename="../settings.py" line="146"/>
         <source>Launch at startup</source>
         <translation>Запускати під час завантаження</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="141"/>
+        <location filename="../settings.py" line="154"/>
         <source>Font colour in the tray</source>
         <translation>Колір шрифту для лотка</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="147"/>
+        <location filename="../settings.py" line="160"/>
         <source>Reset</source>
         <translation>Скинути</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="148"/>
+        <location filename="../settings.py" line="161"/>
         <source>Reset font colour to system default</source>
         <translation>Скинути колір шрифту до типового системного</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="152"/>
+        <location filename="../settings.py" line="165"/>
         <source>Notification on weather update</source>
         <translation>Сповіщення щодо оновлення прогнозу</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="231"/>
+        <location filename="../settings.py" line="237"/>
         <source>Meteo-qt Configuration</source>
         <translation>Налаштування Meteo-qt</translation>
     </message>
@@ -455,22 +465,22 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <translation>Захід сонця</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="203"/>
+        <location filename="../overview.py" line="202"/>
         <source>Weather status</source>
         <translation>Погода</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="274"/>
+        <location filename="../overview.py" line="273"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мін. та макс. температура цього дня</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="337"/>
         <source>snow</source>
         <translation>сніг</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="339"/>
+        <location filename="../overview.py" line="338"/>
         <source>rain</source>
         <translation>дощ</translation>
     </message>
@@ -554,32 +564,32 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="160"/>
+        <location filename="../settings.py" line="173"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Піктограма системного лотка</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="178"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Піктограма і температура</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="168"/>
+        <location filename="../settings.py" line="181"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Піктограма</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="171"/>
+        <location filename="../settings.py" line="184"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Температура</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="198"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Розмір шрифту у лотку</translation>

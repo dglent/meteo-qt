@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -30,7 +31,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -129,6 +130,15 @@ kdy je slunce po tři hodiny na nejvyšší úrovni.</translation>
         <translation>Zakryjte tělo oblečením chránícím proti slunci, použijte krém na opalování SPF 30+&lt;br/&gt;
 noste klobouk, omezte čas strávený na slunci v době slunečního poledne,
 kdy je slunce po tři hodiny na nejvyšší úrovni., a noste sluneční brýle.</translation>
+    </message>
+</context>
+<context>
+    <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
+    <message>
+        <location filename="../settings.py" line="110"/>
+        <source>Temperature accuracy in system tray</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -312,42 +322,42 @@ máte obzvláště světlou pokožku.</translation>
         <translation>Jednotka teploty</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="110"/>
+        <location filename="../settings.py" line="123"/>
         <source>Update interval</source>
         <translation>Obnovovací interval</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="111"/>
+        <location filename="../settings.py" line="124"/>
         <source>minutes</source>
         <translation>minut</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="133"/>
+        <location filename="../settings.py" line="146"/>
         <source>Launch at startup</source>
         <translation>Spustit při spuštění</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="141"/>
+        <location filename="../settings.py" line="154"/>
         <source>Font colour in the tray</source>
         <translation>Barva písma v oznamovací oblasti panelu</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="147"/>
+        <location filename="../settings.py" line="160"/>
         <source>Reset</source>
         <translation>Nastavit znovu</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="148"/>
+        <location filename="../settings.py" line="161"/>
         <source>Reset font colour to system default</source>
         <translation>Nastavit barvu písma znovu na výchozí systému</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="152"/>
+        <location filename="../settings.py" line="165"/>
         <source>Notification on weather update</source>
         <translation>Upozornění na změnu počasi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="231"/>
+        <location filename="../settings.py" line="237"/>
         <source>Meteo-qt Configuration</source>
         <translation>Nastavení Meteo-qt</translation>
     </message>
@@ -431,22 +441,22 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <translation>Západ slunce</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="203"/>
+        <location filename="../overview.py" line="202"/>
         <source>Weather status</source>
         <translation>Stav počasí</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="274"/>
+        <location filename="../overview.py" line="273"/>
         <source>Min Max Temperature of the day</source>
         <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="337"/>
         <source>snow</source>
         <translation>Sněžení</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="339"/>
+        <location filename="../overview.py" line="338"/>
         <source>rain</source>
         <translation>Déšť</translation>
     </message>
@@ -530,32 +540,32 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="160"/>
+        <location filename="../settings.py" line="173"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Ikona v oznamovací oblasti</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="178"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikona a teplota</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="168"/>
+        <location filename="../settings.py" line="181"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikona</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="171"/>
+        <location filename="../settings.py" line="184"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Teplota</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="198"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Velikost písma v oznamovací oblasti</translation>
@@ -567,7 +577,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -696,7 +706,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
 </context>
 <context>

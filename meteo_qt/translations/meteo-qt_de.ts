@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -30,7 +31,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -127,6 +128,15 @@ Sonnenbrille, und einen sehr breiten Hut. Vermeide die Sonne innerhalb dem dreis
         <translation>Bedecke den Körper mit sonnenschützender Kleidung, nutze LSF 30+ Sonnencreme,&lt;br/&gt;
 trage einen Hut, reduziere die Zeit in der Sonne während dem dreistündigen Höchststand der Sonne, 
 und trage eine Sonnenbrille.</translation>
+    </message>
+</context>
+<context>
+    <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
+    <message>
+        <location filename="../settings.py" line="110"/>
+        <source>Temperature accuracy in system tray</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -310,42 +320,42 @@ helle Haut haben.</translation>
         <translation>Temperatureinheit</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="110"/>
+        <location filename="../settings.py" line="123"/>
         <source>Update interval</source>
         <translation>Aktualisierungsintervall</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="111"/>
+        <location filename="../settings.py" line="124"/>
         <source>minutes</source>
         <translation>Minuten</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="133"/>
+        <location filename="../settings.py" line="146"/>
         <source>Launch at startup</source>
         <translation>Bei Systemstart laden</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="141"/>
+        <location filename="../settings.py" line="154"/>
         <source>Font colour in the tray</source>
         <translation>Schriftfarbe in der Systemleiste</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="147"/>
+        <location filename="../settings.py" line="160"/>
         <source>Reset</source>
         <translation>Zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="148"/>
+        <location filename="../settings.py" line="161"/>
         <source>Reset font colour to system default</source>
         <translation>Schriftfarbe in der Seitenleiste zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="152"/>
+        <location filename="../settings.py" line="165"/>
         <source>Notification on weather update</source>
         <translation>Benachrichtigen bei Wetteraktualiserungen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="231"/>
+        <location filename="../settings.py" line="237"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Konfiguration</translation>
     </message>
@@ -429,22 +439,22 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <translation>Sonnenuntergang</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="203"/>
+        <location filename="../overview.py" line="202"/>
         <source>Weather status</source>
         <translation>Wetterstatus</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="274"/>
+        <location filename="../overview.py" line="273"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="337"/>
         <source>snow</source>
         <translation>Schnee</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="339"/>
+        <location filename="../overview.py" line="338"/>
         <source>rain</source>
         <translation>Regen</translation>
     </message>
@@ -455,19 +465,19 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Regen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Schnee</translation>
     </message>
 </context>
 <context>
@@ -476,7 +486,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -528,32 +538,32 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="160"/>
+        <location filename="../settings.py" line="173"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Systemleisten-Symbol</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="178"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Symbol &amp; Temparatur</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="168"/>
+        <location filename="../settings.py" line="181"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Symbol</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="171"/>
+        <location filename="../settings.py" line="184"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Temperatur</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="198"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Schriftgröße in der Systemleiste</translation>
@@ -565,7 +575,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -573,7 +583,7 @@ Bleibe in schattige Bereiche am Mittag, wenn die Sonne am stärksten ist.</trans
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -694,7 +704,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../settings.py" line="52"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -703,7 +713,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
