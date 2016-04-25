@@ -36,7 +36,7 @@ setup(
                      'meteo_qt/images/meteo-qt.png',
                      'meteo_qt/images/noicon.png',
                      'meteo_qt/images/preferences-web-browser-shortcuts.png',
-                     'meteo_qt/images/view-refresh.png'])
+                     'meteo_qt/images/view-refresh.png']),
                 ('/usr/share/meteo_qt/translations',
                     ['meteo_qt/translations/meteo-qt_bg.qm',
                      'meteo_qt/translations/meteo-qt_ca.qm',
