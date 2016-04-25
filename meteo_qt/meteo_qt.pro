@@ -1,10 +1,11 @@
-SOURCES         += meteo_qt.py \
-                   overview.py \
-                   searchcity.py \
-                   settings.py \
+SOURCES         += about_dlg.py \
+                   citylistdlg.py \
                    conditions.py \
-                   about_dlg.py \
-                   citylistdlg.py
+                   meteo_qt.py \
+                   overview.py \
+                   proxydlg.py \
+                   searchcity.py \
+                   settings.py
 
 TRANSLATIONS    += translations/meteo-qt_bg.ts \
                    translations/meteo-qt_ca.ts \

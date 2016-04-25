@@ -11,8 +11,10 @@ import logging
 
 try:
     import citylistdlg
+    import proxydlg
 except:
     from meteo_qt import citylistdlg
+    from meteo_qt import proxydlg
 
 
 class MeteoSettings(QDialog):
@@ -204,7 +206,20 @@ class MeteoSettings(QDialog):
             self.settings.setValue('FontSize', '18')
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
-        # ------------------
+        # Proxy
+        self.proxy_label = QLabel(QCoreApplication.translate(
+                            '', 'Connexion by proxy', 'Settings dialogue'))
+        self.proxy_chbox = QCheckBox()
+        proxy_bool = self.settings.value('Proxy') or 'False'
+        self.proxy_bool = eval(proxy_bool)
+        self.proxy_chbox.setChecked(self.proxy_bool)
+        self.proxy_chbox.stateChanged.connect(self.proxy)
+        self.proxy_changed = False
+        self.proxy_button = QPushButton(QCoreApplication.translate(
+            'Label of button to open the proxy dialogue','Settings','Settings dialogue'))
+        self.proxy_button.clicked.connect(self.proxy_settings)
+        self.proxy_button.setEnabled(self.proxy_bool)
+        # -------------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
         self.panel.addWidget(self.city_combo, 0, 1)
@@ -229,6 +244,9 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.tray_icon_combo, 8, 1)
         self.panel.addWidget(self.fontsize_label, 9, 0)
         self.panel.addWidget(self.fontsize_spinbox, 9, 1)
+        self.panel.addWidget(self.proxy_label, 10, 0)
+        self.panel.addWidget(self.proxy_chbox, 10, 1)
+        self.panel.addWidget(self.proxy_button, 10, 2)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -353,14 +371,6 @@ class MeteoSettings(QDialog):
         self.temp_decimal_changed = True
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
-    # def temp_decimal_apply(self):
-    #     if self.temp_decimal_state == 2:
-    #         self.settings.setValue('Decimal', 'True')
-    #         logging.debug('Write: Decimal in tray icon = True')
-    #     elif self.temp_decimal_state == 0:
-    #         self.settings.setValue('Decimal', 'False')
-    #         logging.debug('Write: Decimal in tray icon = False')
-
     def tray(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.tray_changed = True
@@ -380,6 +390,19 @@ class MeteoSettings(QDialog):
     def fontsize_apply(self):
         logging.debug('Apply fontsize: ' + str(self.fontsize_value))
         self.settings.setValue('FontSize', str(self.fontsize_value))
+
+    def proxy(self, state):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        if state == 2:
+            self.proxy_bool = True
+            self.proxy_button.setEnabled(True)
+        else:
+            self.proxy_bool = False
+            self.proxy_button.setEnabled(False)
+
+    def proxy_settings(self):
+        dialog = proxydlg.Proxy(self)
+        dialog.exec_()
 
     def apply_settings(self):
         self.accepted()
@@ -423,21 +446,21 @@ class MeteoSettings(QDialog):
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.temp_decimal_changed:
             decimal = self.temp_decimal_combo.currentText()
-            print(decimal)
             decimal_bool_str = 'False'
             if decimal == '0.1°':
                 decimal_bool_str = 'True'
             self.settings.setValue('Decimal', decimal_bool_str)
             logging.debug('Write: Decimal in tray icon = ' + decimal_bool_str)
-
         if self.notifier_changed:
             self.notifier_apply()
         if self.tray_changed:
             self.tray_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
-        # if self.temp_decimal_changed:
-        #     self.temp_decimal_apply()
+        proxy_url = self.settings.value('Proxy_url') or ''
+        if proxy_url == '':
+            self.proxy_bool = False
+        self.settings.setValue('Proxy', str(self.proxy_bool))
 
     def accept(self):
         self.accepted()

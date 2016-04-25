@@ -666,8 +666,29 @@ class Download(QThread):
         self.id_ = id_
         self.suffix = suffix
         self.tentatives = 0
+        self.settings = QSettings()
 
     def run(self):
+        use_proxy = self.settings.value('Proxy') or 'False'
+        use_proxy = eval(use_proxy)
+        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = eval(proxy_auth)
+        if use_proxy:
+            proxy_url = self.settings.value('Proxy_url')
+            proxy_port = self.settings.value('Proxy_port')
+            proxy_tot = 'http://' + ':' + proxy_port
+            if proxy_auth:
+                proxy_user = self.settings.value('Proxy_user')
+                proxy_password = self.settings.value('Proxy_pass')
+                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
+            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+            auth = urllib.request.HTTPBasicAuthHandler()
+            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            urllib.request.install_opener(opener)
+        else:
+            proxy_handler = urllib.request.ProxyHandler({})
+            opener = urllib.request.build_opener(proxy_handler)
+            urllib.request.install_opener(opener)
         done = 0
         try:
             logging.debug('Fetching url for actual weather: ' + self.baseurl +

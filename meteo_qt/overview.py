@@ -435,8 +435,29 @@ class Uv(QThread):
     def __init__(self, uv_coord, parent=None):
         QThread.__init__(self, parent)
         self.uv_coord = uv_coord
+        self.settings = QSettings()
 
     def run(self):
+        use_proxy = self.settings.value('Proxy') or 'False'
+        use_proxy = eval(use_proxy)
+        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = eval(proxy_auth)
+        if use_proxy:
+            proxy_url = self.settings.value('Proxy_url')
+            proxy_port = self.settings.value('Proxy_port')
+            proxy_tot = 'http://' + ':' + proxy_port
+            if proxy_auth:
+                proxy_user = self.settings.value('Proxy_user')
+                proxy_password = self.settings.value('Proxy_pass')
+                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
+            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+            auth = urllib.request.HTTPBasicAuthHandler()
+            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            urllib.request.install_opener(opener)
+        else:
+            proxy_handler = urllib.request.ProxyHandler({})
+            opener = urllib.request.build_opener(proxy_handler)
+            urllib.request.install_opener(opener)
         try:
             lat = self.uv_coord[0]
             lon = self.uv_coord[1]
@@ -469,8 +490,29 @@ class IconDownload(QThread):
         periods = len(self.icon)
         if periods < 6:
             self.periods = periods
+        self.settings = QSettings()
 
     def run(self):
+        use_proxy = self.settings.value('Proxy') or 'False'
+        use_proxy = eval(use_proxy)
+        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = eval(proxy_auth)
+        if use_proxy:
+            proxy_url = self.settings.value('Proxy_url')
+            proxy_port = self.settings.value('Proxy_port')
+            proxy_tot = 'http://' + ':' + proxy_port
+            if proxy_auth:
+                proxy_user = self.settings.value('Proxy_user')
+                proxy_password = self.settings.value('Proxy_pass')
+                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
+            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+            auth = urllib.request.HTTPBasicAuthHandler()
+            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            urllib.request.install_opener(opener)
+        else:
+            proxy_handler = urllib.request.ProxyHandler({})
+            opener = urllib.request.build_opener(proxy_handler)
+            urllib.request.install_opener(opener)
         try:
             for i in range(self.periods):
                 url = self.icon_url + self.icon[i] + '.png'
