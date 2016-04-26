@@ -208,7 +208,7 @@ class MeteoSettings(QDialog):
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
         # Proxy
         self.proxy_label = QLabel(QCoreApplication.translate(
-                            '', 'Connexion by proxy', 'Settings dialogue'))
+                            'Checkbox', 'Connection by proxy', 'Settings dialogue'))
         self.proxy_chbox = QCheckBox()
         proxy_bool = self.settings.value('Proxy') or 'False'
         self.proxy_bool = eval(proxy_bool)
