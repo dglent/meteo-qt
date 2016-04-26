@@ -2,12 +2,6 @@
 <!DOCTYPE TS><TS version="2.0" language="zh_CN" sourcelanguage="">
 <context>
     <name></name>
-    <message>
-        <location filename="../settings.py" line="211"/>
-        <source>Connexion by proxy</source>
-        <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context encoding="UTF-8">
     <name>About dialog</name>
@@ -67,6 +61,12 @@
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="211"/>
+        <source>Connection by proxy</source>
+        <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>

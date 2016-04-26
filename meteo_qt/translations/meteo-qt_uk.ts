@@ -6,7 +6,7 @@
         <location filename="../settings.py" line="211"/>
         <source>Connexion by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">З’єднання за допомогою проксі</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -92,6 +92,12 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
+        <translation>Використовувати розпізнавання на проксі</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="211"/>
+        <source>Connection by proxy</source>
+        <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -189,7 +195,7 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../settings.py" line="219"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Параметри</translation>
     </message>
 </context>
 <context>
@@ -548,7 +554,7 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Пароль:</translation>
     </message>
 </context>
 <context>
@@ -557,7 +563,7 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Користувач:</translation>
     </message>
 </context>
 <context>
