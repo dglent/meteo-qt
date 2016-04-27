@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
 <context>
-    <name></name>
+    <name/>
+    <message>
+        <location filename="../settings.py" line="211"/>
+        <source>Connexion by proxy</source>
+        <comment>Settings dialogue</comment>
+        <translation>Připojení pomocí proxy</translation>
+    </message>
 </context>
 <context encoding="UTF-8">
     <name>About dialog</name>
@@ -86,13 +91,7 @@
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="211"/>
-        <source>Connection by proxy</source>
-        <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Použít autentizaci proxy</translation>
     </message>
 </context>
 <context>
@@ -190,7 +189,7 @@ kdy je slunce po tři hodiny na nejvyšší úrovni., a noste sluneční brýle.
         <location filename="../settings.py" line="219"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení</translation>
     </message>
 </context>
 <context>
@@ -549,7 +548,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Heslo:</translation>
     </message>
 </context>
 <context>
@@ -558,7 +557,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>ID uživatele:</translation>
     </message>
 </context>
 <context>
