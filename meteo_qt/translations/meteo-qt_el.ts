@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
-    <name></name>
+    <name/>
+    <message>
+        <location filename="../settings.py" line="211"/>
+        <source>Connexion by proxy</source>
+        <comment>Settings dialogue</comment>
+        <translation>Σύνδεση μέσω διαμεσολαβητή</translation>
+    </message>
 </context>
 <context encoding="UTF-8">
     <name>About dialog</name>
@@ -34,7 +39,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -61,13 +66,7 @@
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="211"/>
-        <source>Connection by proxy</source>
-        <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Χρήση πιστοποίησης διαμεσολαβητή</translation>
     </message>
 </context>
 <context>
@@ -161,7 +160,7 @@
         <location filename="../settings.py" line="219"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
 </context>
 <context>
@@ -518,7 +517,7 @@
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Κωδικός πρόσβασης:</translation>
     </message>
 </context>
 <context>
@@ -527,7 +526,7 @@
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αναγνωριστικό χρήστη:</translation>
     </message>
 </context>
 <context>
