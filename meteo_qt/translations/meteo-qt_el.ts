@@ -1,11 +1,12 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
 <context>
-    <name/>
+    <name></name>
     <message>
         <location filename="../settings.py" line="211"/>
         <source>Connexion by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation>Σύνδεση μέσω διαμεσολαβητή</translation>
+        <translation type="obsolete">Σύνδεση μέσω διαμεσολαβητή</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -17,6 +18,8 @@
             [cs] Czech translation
             &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] German translation
+            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
+            [de] German translation, Project
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] Greek translation
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
@@ -39,7 +42,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -67,6 +70,12 @@
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
         <translation>Χρήση πιστοποίησης διαμεσολαβητή</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="211"/>
+        <source>Connection by proxy</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -115,7 +124,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="750"/>
+        <location filename="../meteo_qt.py" line="752"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
