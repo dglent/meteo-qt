@@ -621,6 +621,8 @@ class SystemTrayIcon(QMainWindow):
             [cs] Czech translation
             <p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
             [de] German translation
+            <p>Peter Mattern <a href="mailto:pmattern@arcor.de">pmattern@arcor.de</a><br/>
+            [de] German translation, Project
             <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
             [el] Greek translation
             <p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/>
