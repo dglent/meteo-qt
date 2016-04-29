@@ -92,7 +92,7 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
@@ -578,7 +578,13 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation>Опади</translation>
+        <translation type="obsolete">Опади</translation>
+    </message>
+    <message>
+        <location filename="../overview.py" line="125"/>
+        <source>Precipitation</source>
+        <comment>Weather overview dialogue</comment>
+        <translation type="unfinished">Опади</translation>
     </message>
 </context>
 <context>
@@ -604,7 +610,15 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation>Почніть вводити назву міста…</translation>
+        <translation type="obsolete">Почніть вводити назву міста…</translation>
+    </message>
+</context>
+<context>
+    <name>Search city dialogue</name>
+    <message>
+        <location filename="../searchcity.py" line="33"/>
+        <source>Start typing the city...</source>
+        <translation type="unfinished">Почніть вводити назву міста…</translation>
     </message>
 </context>
 <context>
@@ -652,31 +666,59 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation>Піктограма системного лотка</translation>
+        <translation type="obsolete">Піктограма системного лотка</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Піктограма і температура</translation>
+        <translation type="obsolete">Піктограма і температура</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Піктограма</translation>
+        <translation type="obsolete">Піктограма</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Температура</translation>
+        <translation type="obsolete">Температура</translation>
     </message>
     <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Розмір шрифту у лотку</translation>
+    </message>
+</context>
+<context>
+    <name>Settings dialogue</name>
+    <message>
+        <location filename="../settings.py" line="175"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&amp;text</comment>
+        <translation type="unfinished">Піктограма системного лотка</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="180"/>
+        <source>Icon &amp; temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Піктограма і температура</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="183"/>
+        <source>Icon</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Піктограма</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="186"/>
+        <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Температура</translation>
     </message>
 </context>
 <context>
@@ -693,7 +735,12 @@ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gma
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Для застосування перекладу програму слід перезапустити</translation>
+        <translation type="obsolete">Для застосування перекладу програму слід перезапустити</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="559"/>
+        <source>The application has to be restarted to apply the language setting</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

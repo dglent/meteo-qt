@@ -92,7 +92,7 @@
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
@@ -577,7 +577,13 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation>Niederschlag</translation>
+        <translation type="obsolete">Niederschlag</translation>
+    </message>
+    <message>
+        <location filename="../overview.py" line="125"/>
+        <source>Precipitation</source>
+        <comment>Weather overview dialogue</comment>
+        <translation type="unfinished">Niederschlag</translation>
     </message>
 </context>
 <context>
@@ -603,7 +609,15 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation>Beginnen Sie mit der Eingabe der Stadt...</translation>
+        <translation type="obsolete">Beginnen Sie mit der Eingabe der Stadt...</translation>
+    </message>
+</context>
+<context>
+    <name>Search city dialogue</name>
+    <message>
+        <location filename="../searchcity.py" line="33"/>
+        <source>Start typing the city...</source>
+        <translation type="unfinished">Beginnen Sie mit der Eingabe der Stadt...</translation>
     </message>
 </context>
 <context>
@@ -651,31 +665,59 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation>Systemleisten-Symbol</translation>
+        <translation type="obsolete">Systemleisten-Symbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Symbol &amp; Temperatur</translation>
+        <translation type="obsolete">Symbol &amp; Temperatur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Symbol</translation>
+        <translation type="obsolete">Symbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Temperatur</translation>
+        <translation type="obsolete">Temperatur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Schriftgröße in der Systemleiste</translation>
+    </message>
+</context>
+<context>
+    <name>Settings dialogue</name>
+    <message>
+        <location filename="../settings.py" line="175"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&amp;text</comment>
+        <translation type="unfinished">Systemleisten-Symbol</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="180"/>
+        <source>Icon &amp; temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Symbol &amp; Temperatur</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="183"/>
+        <source>Icon</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Symbol</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="186"/>
+        <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Temperatur</translation>
     </message>
 </context>
 <context>
@@ -692,7 +734,12 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Zum Wechseln der Sprache muss die Anwendung neu gestartet werden.</translation>
+        <translation type="obsolete">Zum Wechseln der Sprache muss die Anwendung neu gestartet werden.</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="559"/>
+        <source>The application has to be restarted to apply the language setting</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

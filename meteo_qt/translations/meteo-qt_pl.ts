@@ -27,7 +27,7 @@
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
@@ -511,7 +511,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
-        <comment>Weather overview dioalogue</comment>
+        <comment>Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -538,7 +538,15 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation>Zacznij wpisywać nazwę miasta...</translation>
+        <translation type="obsolete">Zacznij wpisywać nazwę miasta...</translation>
+    </message>
+</context>
+<context>
+    <name>Search city dialogue</name>
+    <message>
+        <location filename="../searchcity.py" line="33"/>
+        <source>Start typing the city...</source>
+        <translation type="unfinished">Zacznij wpisywać nazwę miasta...</translation>
     </message>
 </context>
 <context>
@@ -586,31 +594,59 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation>Ikona zasobnika systemowego</translation>
+        <translation type="obsolete">Ikona zasobnika systemowego</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona i temperatura</translation>
+        <translation type="obsolete">Ikona i temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona</translation>
+        <translation type="obsolete">Ikona</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Temperatura</translation>
+        <translation type="obsolete">Temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Rozmiar czcionki w zasobniku</translation>
+    </message>
+</context>
+<context>
+    <name>Settings dialogue</name>
+    <message>
+        <location filename="../settings.py" line="175"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&amp;text</comment>
+        <translation type="unfinished">Ikona zasobnika systemowego</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="180"/>
+        <source>Icon &amp; temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Ikona i temperatura</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="183"/>
+        <source>Icon</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Ikona</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="186"/>
+        <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Temperatura</translation>
     </message>
 </context>
 <context>
@@ -626,7 +662,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <name>System tray notification</name>
     <message>
         <location filename="../meteo_qt.py" line="559"/>
-        <source>The application has to be restared to apply the language setting</source>
+        <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

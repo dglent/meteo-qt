@@ -27,7 +27,7 @@
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
@@ -504,7 +504,7 @@
     <message>
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
-        <comment>Weather overview dioalogue</comment>
+        <comment>Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -528,6 +528,9 @@
 </context>
 <context>
     <name>Search city dialog</name>
+</context>
+<context>
+    <name>Search city dialogue</name>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
@@ -575,6 +578,15 @@
 <context>
     <name>Settings dialog</name>
     <message>
+        <location filename="../settings.py" line="200"/>
+        <source>Font size in tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Settings dialogue</name>
+    <message>
         <location filename="../settings.py" line="175"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
@@ -599,12 +611,6 @@
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../settings.py" line="200"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>Status bar message</name>
@@ -619,7 +625,7 @@
     <name>System tray notification</name>
     <message>
         <location filename="../meteo_qt.py" line="559"/>
-        <source>The application has to be restared to apply the language setting</source>
+        <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

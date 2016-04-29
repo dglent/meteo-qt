@@ -92,7 +92,7 @@
             &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
             [tr] Turkish translation
             &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
             [zh_TW] Chinese (Taiwan) translation
             &lt;p&gt;pmav99&lt;br/&gt;
@@ -579,7 +579,13 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dioalogue</comment>
-        <translation>Přeháňka</translation>
+        <translation type="obsolete">Přeháňka</translation>
+    </message>
+    <message>
+        <location filename="../overview.py" line="125"/>
+        <source>Precipitation</source>
+        <comment>Weather overview dialogue</comment>
+        <translation type="unfinished">Přeháňka</translation>
     </message>
 </context>
 <context>
@@ -605,7 +611,15 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation>Začněte psát město...</translation>
+        <translation type="obsolete">Začněte psát město...</translation>
+    </message>
+</context>
+<context>
+    <name>Search city dialogue</name>
+    <message>
+        <location filename="../searchcity.py" line="33"/>
+        <source>Start typing the city...</source>
+        <translation type="unfinished">Začněte psát město...</translation>
     </message>
 </context>
 <context>
@@ -653,31 +667,59 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation>Ikona v oznamovací oblasti</translation>
+        <translation type="obsolete">Ikona v oznamovací oblasti</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona a teplota</translation>
+        <translation type="obsolete">Ikona a teplota</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona</translation>
+        <translation type="obsolete">Ikona</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Teplota</translation>
+        <translation type="obsolete">Teplota</translation>
     </message>
     <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Velikost písma v oznamovací oblasti</translation>
+    </message>
+</context>
+<context>
+    <name>Settings dialogue</name>
+    <message>
+        <location filename="../settings.py" line="175"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray (only icon,
+            only text, icon&amp;text</comment>
+        <translation type="unfinished">Ikona v oznamovací oblasti</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="180"/>
+        <source>Icon &amp; temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Ikona a teplota</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="183"/>
+        <source>Icon</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Ikona</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="186"/>
+        <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished">Teplota</translation>
     </message>
 </context>
 <context>
@@ -694,7 +736,12 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restared to apply the language setting</source>
-        <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
+        <translation type="obsolete">Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="559"/>
+        <source>The application has to be restarted to apply the language setting</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
