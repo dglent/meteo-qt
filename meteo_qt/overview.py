@@ -124,7 +124,7 @@ class OverviewCity(QDialog):
                                      '<\font>')
         self.precipitation_label = QLabel('<font size="3" color=grey><b>' +
                                           QCoreApplication.translate('Precipitation type (no/rain/snow)',
-                                            'Precipitation', 'Weather overview dioalogue') +
+                                            'Precipitation', 'Weather overview dialogue') +
                                           '<\b><\font>')
         rain_mode = self.precipitation[self.weatherdata['Precipitation'][0]]
         rain_value = self.weatherdata['Precipitation'][1]
@@ -251,7 +251,7 @@ class OverviewCity(QDialog):
         fetched_file_periods = (len(self.tree.xpath('//time')))
         if fetched_file_periods < periods:
             periods = fetched_file_periods
-            logging.warn('Reduce forcast for the next 6 days to {0}'.format(
+            logging.warn('Reduce forecast for the next 6 days to {0}'.format(
                 periods-1))
         for d in range(1, periods):
             date_list = self.tree[4][d].get('day').split('-')
@@ -306,7 +306,7 @@ class OverviewCity(QDialog):
         fetched_file_periods = (len(self.tree_day.xpath('//time')))
         if fetched_file_periods < periods:
             periods = fetched_file_periods
-            logging.warn('Reduce forcast of the day to {0}'.format(periods-1))
+            logging.warn('Reduce forecast of the day to {0}'.format(periods-1))
         for d in range(1, periods):
             timeofday = self.utc(d, 'dayforecast')
             weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]

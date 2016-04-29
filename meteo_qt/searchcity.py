@@ -31,7 +31,7 @@ class SearchCity(QDialog):
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
         self.line_search = QLineEdit(QCoreApplication.translate(
-            'Search city dialog', 'Start typing the city...', ''))
+            'Search city dialogue', 'Start typing the city...', ''))
         self.line_search.selectAll()
         self.listWidget = QListWidget()
         self.status = QLabel()
@@ -267,7 +267,7 @@ class WorkThread(QThread):
                 else:
                     self.tentatives += 1
                     logging.debug('Tries: ' + str(self.tentatives))
-                    logging.debug('Try to retreive city information...')
+                    logging.debug('Try to retrieve city information...')
                     # Try with a fuzzy city name
                     if city != '':
                         logging.info('Change search to:' + city)
@@ -281,7 +281,7 @@ class WorkThread(QThread):
                 else:
                     self.tentatives += 1
                     logging.debug('Tries: ' + str(self.tentatives))
-                    logging.debug('Try to retreive city information...')
+                    logging.debug('Try to retrieve city information...')
                     self.run()
             try:
                 if id_ == '0':

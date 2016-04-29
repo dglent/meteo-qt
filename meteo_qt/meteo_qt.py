@@ -294,7 +294,7 @@ class SystemTrayIcon(QMainWindow):
             self.inerror = True
             e = sys.exc_info()[0]
             logging.error('Error: ' + str(e))
-            logging.debug('Try to create the city overview...\nTentatives: ' +
+            logging.debug('Try to create the city overview...\nAttempts: ' +
                           str(self.tentatives))
             return 'error'
 
@@ -306,7 +306,7 @@ class SystemTrayIcon(QMainWindow):
             self.inerror = False
         elif done == 1:
             self.inerror = True
-            logging.debug('Trying to retreive data ...')
+            logging.debug('Trying to retrieve data ...')
             self.timer.singleShot(10000, self.try_again)
             return
         if hasattr(self, 'updateicon'):
@@ -342,7 +342,7 @@ class SystemTrayIcon(QMainWindow):
 
     def try_again(self):
         self.nodata_message()
-        logging.debug('Tentatives: ' + str(self.tentatives))
+        logging.debug('Attempts: ' + str(self.tentatives))
         self.tentatives += 1
         self.timer.singleShot(5000, self.refresh)
 
@@ -547,7 +547,7 @@ class SystemTrayIcon(QMainWindow):
         if language != self.language and language is not None:
             self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
                     "System tray notification",
-                    "The application has to be restared to apply the language setting", ''))
+                    "The application has to be restarted to apply the language setting", ''))
             self.language = language
         # Check if update is needed
         if traycolor is None:
@@ -639,7 +639,7 @@ class SystemTrayIcon(QMainWindow):
             <p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a><br/>
             [tr] Turkish translation
             <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
-            [uk] Ukranian translation
+            [uk] Ukrainian translation
             <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
             [zh_TW] Chinese (Taiwan) translation
             <p>pmav99<br/>
