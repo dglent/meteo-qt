@@ -1,72 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
-<context>
-    <name></name>
-    <message>
-        <location filename="../settings.py" line="211"/>
-        <source>Connexion by proxy</source>
-        <comment>Settings dialogue</comment>
-        <translation type="obsolete">Über Proxy verbinden</translation>
-    </message>
-</context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="631"/>
-        <source>
-            Pavel Fric&lt;br/&gt;
-            [cs] Czech translation
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukranian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation type="obsolete">
-            Pavel Fric&lt;br/&gt;
-            [cs] Tschechische Übersetzung
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] Deutsche Übersetzung
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Griechische Übersetzung
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanische Übersetzung
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] Französische Übersetzung
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] Französische Übersetzung, Projekt
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polnische Übersetzung
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russische Übersetzung
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Türkische Übersetzung
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukrainische Übersetzung
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinesische (Taiwan) Übersetzung
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Projekt</translation>
-    </message>
     <message encoding="UTF-8">
         <location filename="../meteo_qt.py" line="631"/>
         <source>
@@ -98,7 +32,35 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>
+            Pavel Fric&lt;br/&gt;
+            [cs] Tschechische Übersetzung
+            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Deutsche Übersetzung
+            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
+            [de] Deutsche Übersetzung, Projekt
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Griechische Übersetzung
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Spanische Übersetzung
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Französische Übersetzung
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Französische Übersetzung, Projekt
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Polnische Übersetzung
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Russische Übersetzung
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Türkische Übersetzung
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ukrainische Übersetzung
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Chinesische Übersetzung (Taiwan)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Projekt
+        </translation>
     </message>
 </context>
 <context>
@@ -131,7 +93,7 @@
         <location filename="../settings.py" line="211"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Über Proxy verbinden</translation>
     </message>
 </context>
 <context>
@@ -164,7 +126,7 @@
     <message>
         <location filename="../citylistdlg.py" line="33"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Sortieren</translation>
+        <translation>alphabetisch &amp;Sortieren</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="89"/>
@@ -195,8 +157,7 @@
                                     sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
                                     </source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Treffe alle Vorsichtsmaßnahmen: Trage LSF 30+ Sonnencreme, ein langärmliges Hemd und Hosen,&lt;br/&gt;
-Sonnenbrille, und einen sehr breiten Hut. Vermeide die Sonne während dem dreistündigen Höchststand der Sonne.</translation>
+        <translation>Treffe alle Vorsichtsmaßnahmen: Verwende Sonnencreme mit LSF ≥ 30. Trage ein langärmliges Hemd und Hosen, eine Sonnenbrille und einen Hut mit möglichst breiter Krempe. Vermeide die Sonne während ihrem dreistündigen Höchststand.</translation>
     </message>
 </context>
 <context>
@@ -207,9 +168,7 @@ Sonnenbrille, und einen sehr breiten Hut. Vermeide die Sonne während dem dreist
                                     wear a hat, reduce time in the sun within three hours of solar noon,
                                     and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Bedecke den Körper mit sonnenschützender Kleidung, nutze LSF 30+ Sonnencreme,&lt;br/&gt;
-trage einen Hut, reduziere die Zeit in der Sonne während dem dreistündigen Höchststand der Sonne, 
-und trage eine Sonnenbrille.</translation>
+        <translation>Bedecke den Körper mit Kleidung, die vor Sonne schützt. Verwende Sonnencreme mit LSF 30. Trage einen Hut und eine Sonnenbrille. Reduziere die Zeit in der Sonne während ihrem dreistündigen Höchststand.</translation>
     </message>
 </context>
 <context>
@@ -238,8 +197,7 @@ und trage eine Sonnenbrille.</translation>
                                     the ground, which reflects UV radiation, or if you have particularly
                                     fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Trage eine Sonnenbrille an hellen Tagen; nutze Sonnencreme wenn, Schnee&lt;br/&gt;
-auf dem Boden liegt, der die UV Strahlung reflektiert, oder wenn Du
+        <translation>Trage eine Sonnenbrille an hellen Tagen. Nutze Sonnencreme, wenn Schnee auf dem Boden liegt, der die UV Strahlung reflektiert oder wenn Du
 helle Haut hast.</translation>
     </message>
 </context>
@@ -512,12 +470,12 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../overview.py" line="113"/>
         <source>Pressure</source>
-        <translation>Druck</translation>
+        <translation>Luftdruck</translation>
     </message>
     <message>
         <location filename="../overview.py" line="119"/>
         <source>Humidity</source>
-        <translation>Feuchtigkeit</translation>
+        <translation>Luftfeuchtigkeit</translation>
     </message>
     <message>
         <location filename="../overview.py" line="145"/>
@@ -576,14 +534,8 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
-        <comment>Weather overview dioalogue</comment>
-        <translation type="obsolete">Niederschlag</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="125"/>
-        <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Niederschlag</translation>
+        <translation>Niederschlag</translation>
     </message>
 </context>
 <context>
@@ -606,18 +558,13 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
 </context>
 <context>
     <name>Search city dialog</name>
-    <message>
-        <location filename="../searchcity.py" line="33"/>
-        <source>Start typing the city...</source>
-        <translation type="obsolete">Beginnen Sie mit der Eingabe der Stadt...</translation>
-    </message>
 </context>
 <context>
     <name>Search city dialogue</name>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished">Beginnen Sie mit der Eingabe der Stadt...</translation>
+        <translation>Beginnen Sie mit der Eingabe eines Ortes...</translation>
     </message>
 </context>
 <context>
@@ -661,35 +608,10 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="175"/>
-        <source>System tray icon</source>
-        <comment>Setting to choose the type of the icon on the tray (only icon,
-            only text, icon&amp;text</comment>
-        <translation type="obsolete">Systemleisten-Symbol</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="180"/>
-        <source>Icon &amp; temperature</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Symbol &amp; Temperatur</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="183"/>
-        <source>Icon</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Symbol</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="186"/>
-        <source>Temperature</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Temperatur</translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Schriftgröße in der Systemleiste</translation>
+        <translation>Schriftgröße in der Leiste</translation>
     </message>
 </context>
 <context>
@@ -699,25 +621,25 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished">Systemleisten-Symbol</translation>
+        <translation>Darstellung in der Leiste</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Symbol &amp; Temperatur</translation>
+        <translation>Symbol und Temperatur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Symbol</translation>
+        <translation>Symbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Temperatur</translation>
+        <translation>Temperatur</translation>
     </message>
 </context>
 <context>
@@ -726,20 +648,15 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>Die Stadt ist bereits in der Liste enthalten.</translation>
+        <translation>Die Stadt ist bereits in der Liste enthalten</translation>
     </message>
 </context>
 <context>
     <name>System tray notification</name>
     <message>
         <location filename="../meteo_qt.py" line="559"/>
-        <source>The application has to be restared to apply the language setting</source>
-        <translation type="obsolete">Zum Wechseln der Sprache muss die Anwendung neu gestartet werden.</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
     </message>
 </context>
 <context>
@@ -747,7 +664,7 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../meteo_qt.py" line="79"/>
         <source>Cities</source>
-        <translation>Städte</translation>
+        <translation>&amp;Städte</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="80"/>
@@ -757,22 +674,22 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../meteo_qt.py" line="81"/>
         <source>&amp;Update</source>
-        <translation>Akt&amp;ualisieren</translation>
+        <translation>&amp;Aktualisieren</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="82"/>
         <source>&amp;Settings</source>
-        <translation>Ein&amp;stellungen</translation>
+        <translation>&amp;Einstellungen</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="83"/>
         <source>&amp;About</source>
-        <translation>Über</translation>
+        <translation>&amp;Über</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="84"/>
         <source>Exit</source>
-        <translation>Beenden</translation>
+        <translation>&amp;Beenden</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="106"/>
@@ -792,7 +709,7 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../meteo_qt.py" line="241"/>
         <source>No city configured</source>
-        <translation>Keine Stadt eingestellt</translation>
+        <translation>Keine Stadt ausgewählt</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="257"/>
@@ -802,7 +719,7 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
     <message>
         <location filename="../meteo_qt.py" line="257"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klicke rechts auf das Icon und wähle Einstellungen.</translation>
+        <translation>Mit der rechten Maustaste auf das Symbol klicken und Einstellungen wählen.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="600"/>
@@ -860,7 +777,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../settings.py" line="54"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Zum Wechseln der Sprache muss die Anwendung neu gestartet werden.</translation>
+        <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
     </message>
 </context>
 <context>
@@ -887,12 +804,12 @@ github&lt;/a&gt; erstellen.</translation>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>High</source>
-        <translation>Stark</translation>
+        <translation>Hoch</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="150"/>
         <source>Very high</source>
-        <translation>Sehr stark</translation>
+        <translation>Sehr hoch</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="152"/>
@@ -1450,8 +1367,7 @@ Bleibe nicht zu lange in der Sonne.</translation>
         <location filename="../searchcity.py" line="208"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Datenfehler, bitte versuche es später
-oder ändere den Namen der Stadt</translation>
+        <translation>Datenfehler, bitte später noch einmal versuchen oder den Namen der Stadt ändern</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="229"/>
@@ -1467,8 +1383,7 @@ oder ändere den Namen der Stadt</translation>
         <location filename="../searchcity.py" line="238"/>
         <source>
 Try again later</source>
-        <translation>
-Versuche es später nochmal</translation>
+        <translation>Bitte später noch einmal probieren</translation>
     </message>
 </context>
 </TS>

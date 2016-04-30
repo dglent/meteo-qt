@@ -1,14 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
-<context>
-    <name></name>
-    <message>
-        <location filename="../settings.py" line="211"/>
-        <source>Connexion by proxy</source>
-        <comment>Settings dialogue</comment>
-        <translation type="obsolete">Σύνδεση μέσω διαμεσολαβητή</translation>
-    </message>
-</context>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -42,7 +32,34 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>
+            Pavel Fric&lt;br/&gt;
+            [cs] Τσέχικη μετάφραση
+            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση
+            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
+            [de] Γερμανική μετάφραση, Έργο
+            &lt;p&gt;Δημήτριος Γλενταδάκης &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] Ελληνική μετάφραση
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] Ισπανική μετάφραση
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] Γαλλική μετάφραση, Έργο
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] Πολωνική μετάφραση
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] Ρωσική μετάφραση
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] Τουρκική μετάφραση
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] Ουκρανική μετάφραση
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] Κινέζικη (Ταϊβάν) μετάφραση
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Έργο</translation>
     </message>
 </context>
 <context>
@@ -75,7 +92,7 @@
         <location filename="../settings.py" line="211"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Σύνδεση μέσω διαμεσολαβητή</translation>
     </message>
 </context>
 <context>
@@ -516,14 +533,8 @@
     <message>
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
-        <comment>Weather overview dioalogue</comment>
-        <translation type="obsolete">Υετός</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="125"/>
-        <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Υετός</translation>
+        <translation>Υετός</translation>
     </message>
 </context>
 <context>
@@ -546,18 +557,13 @@
 </context>
 <context>
     <name>Search city dialog</name>
-    <message>
-        <location filename="../searchcity.py" line="33"/>
-        <source>Start typing the city...</source>
-        <translation type="obsolete">Ξεκινήστε να πληκτρολογείτε την πόλη...</translation>
-    </message>
 </context>
 <context>
     <name>Search city dialogue</name>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished">Ξεκινήστε να πληκτρολογείτε την πόλη...</translation>
+        <translation>Ξεκινήστε να πληκτρολογείτε την πόλη...</translation>
     </message>
 </context>
 <context>
@@ -601,31 +607,6 @@
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="175"/>
-        <source>System tray icon</source>
-        <comment>Setting to choose the type of the icon on the tray (only icon,
-            only text, icon&amp;text</comment>
-        <translation type="obsolete">Εικονίδιο του πλαισίου συστήματος</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="180"/>
-        <source>Icon &amp; temperature</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Εικονίδιο &amp; θερμοκρασία</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="183"/>
-        <source>Icon</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Εικονίδιο</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="186"/>
-        <source>Temperature</source>
-        <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="obsolete">Θερμοκρασία</translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="200"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
@@ -639,25 +620,25 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished">Εικονίδιο του πλαισίου συστήματος</translation>
+        <translation>Εικονίδιο του πλαισίου συστήματος</translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Εικονίδιο &amp; θερμοκρασία</translation>
+        <translation>Εικονίδιο &amp; θερμοκρασία</translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Εικονίδιο</translation>
+        <translation>Εικονίδιο</translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished">Θερμοκρασία</translation>
+        <translation>Θερμοκρασία</translation>
     </message>
 </context>
 <context>
@@ -673,13 +654,8 @@
     <name>System tray notification</name>
     <message>
         <location filename="../meteo_qt.py" line="559"/>
-        <source>The application has to be restared to apply the language setting</source>
-        <translation type="obsolete">Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψιν η γλώσσα</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψιν η γλώσσα</translation>
     </message>
 </context>
 <context>
