@@ -154,12 +154,18 @@ class OverviewCity(QDialog):
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
                 'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
                 '<\b><\font>'))
-        self.uv_value_label = QLabel('<font color=grey>' +
-                                     QCoreApplication.translate(
-                                        'Ultraviolet index',
-                                        'Fetching...', '' + '<\font>')
-                                     )
-        # -------------------------
+        fetching_text = ('<font color=grey>' + QCoreApplication.translate(
+                            'Ultraviolet index', 'Fetching...', '' + '<\font>'))
+        self.uv_value_label = QLabel()
+        self.uv_value_label.setText(fetching_text)
+        # Ozone
+        self.ozone_label = QLabel(
+            '<font size="3" color=grey><b>' + QCoreApplication.translate(
+                'Ozone data title', 'Ozone', 'Label in weather info dialogue' +
+                '<\b><\font>'))
+        self.ozone_value_label = QLabel()
+        self.ozone_value_label.setText(fetching_text)
+
         self.over_grid.addWidget(self.wind_label, 0, 0)
         self.over_grid.addWidget(self.wind, 0, 1)
         self.over_grid.addWidget(self.wind_icon_label, 0, 2)
@@ -177,6 +183,9 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.sunset_value, 6, 1)
         self.over_grid.addWidget(self.uv_label, 7, 0)
         self.over_grid.addWidget(self.uv_value_label, 7, 1)
+        self.over_grid.addWidget(self.ozone_label, 8, 0)
+        self.over_grid.addWidget(self.ozone_value_label, 8, 1)
+
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -197,6 +206,8 @@ class OverviewCity(QDialog):
         logging.debug('Fetched day forcast icons')
         self.uv_fetch()
         logging.debug('Fetched uv index')
+        self.ozone_fetch()
+        logging.debug('Fetched ozone data')
         self.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
@@ -209,6 +220,40 @@ class OverviewCity(QDialog):
         transf.rotate(int(float(angle)))
         rotated = self.wind_icon.transformed(transf, mode=Qt.SmoothTransformation)
         self.wind_icon_label.setPixmap(rotated)
+
+    def ozone_du(self, du):
+        if du <= 125:
+            return '#060106' # black
+        if du <= 150:
+            return '#340634' # magenta
+        if du <= 175:
+            return '#590b59' # fuccia
+        if du <= 200:
+            return '#421e85' # violet
+        if du <= 225:
+            return '#121e99' # blue
+        if du <= 250:
+            return '#125696' # blue sea
+        if du <= 275:
+            return '#198586' # raf
+        if du <= 300:
+            return '#21b1b1' # cyan
+        if du <= 325:
+            return '#64b341' # light green
+        if du <= 350:
+            return '#1cac1c' # green
+        if du <= 375:
+            return '#93a92c' # green oil
+        if du <= 400:
+            return '#baba2b' # yellow
+        if du <= 425:
+            return '#af771f' # orange
+        if du <= 450:
+            return '#842910' # brown
+        if du <= 475:
+            return '#501516' # brown dark
+        if du > 475:
+            return '#210909' # darker brown
 
     def uv_color(self, uv):
         try:
@@ -369,6 +414,36 @@ class OverviewCity(QDialog):
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
 
+    def ozone_fetch(self):
+        logging.debug('Download ozone info...')
+        self.ozone_thread = Ozone(self.uv_coord)
+        self.ozone_thread.o3_signal['PyQt_PyObject'].connect(self.ozone_index)
+        self.ozone_thread.start()
+
+    def ozone_index(self, index):
+        try:
+            du = int(index)
+            o3_color = self.ozone_du(du)
+            factor = str(du)[:1] + '.' + str(du)[1:2]
+            gauge = '◼' * round(float(factor))
+            logging.debug('Ozone gauge: ' + gauge)
+
+        except:
+            du = '-'
+            o3_color = None
+        du_unit = QCoreApplication.translate('Dobson Units', 'DU', 'Ozone value label')
+        if o3_color is not None:
+            self.ozone_value_label.setText('<font color=grey>' + str(du) + ' ' + du_unit +
+                    '</font>' + '<font color=' + o3_color + '> ' + gauge + '</font>')
+            self.ozone_value_label.setToolTip(QCoreApplication.translate(
+                'Ozone value tooltip', '''The average amount of ozone in the <br/> atmosphere is
+                roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
+                is an area where the ozone concentration drops to an average of about
+                100 Dobson Units.''', 'http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html'))
+        else:
+            self.ozone_value_label.setText('<font color=grey>' + str(du) + '</font>')
+
+
     def uv_fetch(self):
         logging.debug('Download uv info...')
         self.uv_thread = Uv(self.uv_coord)
@@ -427,6 +502,52 @@ class OverviewCity(QDialog):
         self.settings.setValue("OverviewCity/Geometry", self.saveGeometry())
         exit = True
         self.closed_status_dialogue.emit(exit)
+
+class Ozone(QThread):
+    o3_signal = pyqtSignal(['PyQt_PyObject'])
+
+    def __init__(self, coord, parent=None):
+        QThread.__init__(self, parent)
+        self.coord = coord
+        self.settings = QSettings()
+
+    def run(self):
+        use_proxy = self.settings.value('Proxy') or 'False'
+        use_proxy = eval(use_proxy)
+        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = eval(proxy_auth)
+        if use_proxy:
+            proxy_url = self.settings.value('Proxy_url')
+            proxy_port = self.settings.value('Proxy_port')
+            proxy_tot = 'http://' + ':' + proxy_port
+            if proxy_auth:
+                proxy_user = self.settings.value('Proxy_user')
+                proxy_password = self.settings.value('Proxy_pass')
+                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
+            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+            auth = urllib.request.HTTPBasicAuthHandler()
+            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            urllib.request.install_opener(opener)
+        else:
+            proxy_handler = urllib.request.ProxyHandler({})
+            opener = urllib.request.build_opener(proxy_handler)
+            urllib.request.install_opener(opener)
+        try:
+            lat = self.coord[0]
+            lon = self.coord[1]
+            url = ('http://api.openweathermap.org/pollution/v1/o3/' +
+                   lat + ',' + lon +
+                   '/current.json?appid=18dc60bd132b7fb4534911d2aa67f0e7')
+            logging.debug('Fetching url for ozone index: ' + str(url))
+            req = urllib.request.urlopen(url, timeout=5)
+            page = req.read()
+            dico_value = eval(page)
+            o3_ind = dico_value['data']
+            logging.debug('Ozone index: ' + str(o3_ind))
+        except:
+            o3_ind = '-'
+            logging.error('Cannot find UV index')
+        self.o3_signal['PyQt_PyObject'].emit(o3_ind)
 
 
 class Uv(QThread):
