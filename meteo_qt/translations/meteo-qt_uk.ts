@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -137,6 +138,15 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>Запис міста «{0}» вилучено</translation>
+    </message>
+</context>
+<context>
+    <name>Dobson Units</name>
+    <message>
+        <location filename="../overview.py" line="440"/>
+        <source>DU</source>
+        <comment>Ozone value label</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -493,24 +503,45 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <translation>Захід сонця</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="202"/>
+        <location filename="../overview.py" line="213"/>
         <source>Weather status</source>
         <translation>Погода</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="273"/>
+        <location filename="../overview.py" line="318"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мін. та макс. температура цього дня</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="337"/>
+        <location filename="../overview.py" line="382"/>
         <source>snow</source>
         <translation>сніг</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="383"/>
         <source>rain</source>
         <translation>дощ</translation>
+    </message>
+</context>
+<context>
+    <name>Ozone data title</name>
+    <message>
+        <location filename="../overview.py" line="163"/>
+        <source>Ozone</source>
+        <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context encoding="UTF-8">
+    <name>Ozone value tooltip</name>
+    <message encoding="UTF-8">
+        <location filename="../overview.py" line="444"/>
+        <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
+                roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
+                is an area where the ozone concentration drops to an average of about
+                100 Dobson Units.</source>
+        <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -560,9 +591,6 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <comment>Proxy configuration dialogue</comment>
         <translation>Користувач:</translation>
     </message>
-</context>
-<context>
-    <name>Search city dialog</name>
 </context>
 <context>
     <name>Search city dialogue</name>

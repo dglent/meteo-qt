@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="es" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -32,7 +33,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -59,13 +60,13 @@
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="211"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -112,6 +113,15 @@
     </message>
 </context>
 <context>
+    <name>Dobson Units</name>
+    <message>
+        <location filename="../overview.py" line="440"/>
+        <source>DU</source>
+        <comment>Ozone value label</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Download</name>
     <message>
         <location filename="../meteo_qt.py" line="752"/>
@@ -152,7 +162,7 @@
         <location filename="../settings.py" line="112"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -161,7 +171,7 @@
         <location filename="../settings.py" line="219"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -464,24 +474,45 @@
         <translation>Ocaso</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="202"/>
+        <location filename="../overview.py" line="213"/>
         <source>Weather status</source>
         <translation>Estado meteorológico</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="273"/>
+        <location filename="../overview.py" line="318"/>
         <source>Min Max Temperature of the day</source>
         <translation>Temperaturas mínima y máxima del día</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="337"/>
+        <location filename="../overview.py" line="382"/>
         <source>snow</source>
         <translation>nevada</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="338"/>
+        <location filename="../overview.py" line="383"/>
         <source>rain</source>
         <translation>lluvia</translation>
+    </message>
+</context>
+<context>
+    <name>Ozone data title</name>
+    <message>
+        <location filename="../overview.py" line="163"/>
+        <source>Ozone</source>
+        <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context encoding="UTF-8">
+    <name>Ozone value tooltip</name>
+    <message encoding="UTF-8">
+        <location filename="../overview.py" line="444"/>
+        <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
+                roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
+                is an area where the ozone concentration drops to an average of about
+                100 Dobson Units.</source>
+        <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -490,19 +521,19 @@
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">lluvia</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">nevada</translation>
     </message>
 </context>
 <context>
@@ -511,7 +542,7 @@
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -520,7 +551,7 @@
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -529,18 +560,15 @@
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>Search city dialog</name>
 </context>
 <context>
     <name>Search city dialogue</name>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -597,25 +625,25 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -624,7 +652,7 @@
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -632,7 +660,7 @@
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -753,7 +781,7 @@
         <location filename="../settings.py" line="54"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -762,7 +790,7 @@
         <location filename="../meteo_qt.py" line="359"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
