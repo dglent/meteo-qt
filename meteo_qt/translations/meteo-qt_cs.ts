@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -144,7 +143,7 @@
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -528,7 +527,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -540,7 +539,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

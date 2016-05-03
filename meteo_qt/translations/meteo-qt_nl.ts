@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="nl" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -33,7 +32,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -118,7 +117,7 @@
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -496,7 +495,7 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -508,7 +507,7 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -538,7 +537,7 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
         <location filename="../overview.py" line="125"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -564,7 +563,7 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -621,25 +620,25 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="180"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="183"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="186"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -656,7 +655,7 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
     <message>
         <location filename="../meteo_qt.py" line="559"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1052,312 +1051,312 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="108"/>
         <source>North</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="109"/>
         <source>NorthEast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="110"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
         <source>NorthWest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="112"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>South</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
         <source>SouthEast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
         <source>SouthWest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="117"/>
         <source>South-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>East</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
         <source>East-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>East-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
         <source>West</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>West-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>West-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>N</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>NE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="127"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>NW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>S</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>SE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
         <source>SW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>E</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>W</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1366,23 +1365,23 @@ Blijf in de schaduw wanneer, &apos;s middags, de zon op zijn felst is.</translat
         <location filename="../searchcity.py" line="208"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../searchcity.py" line="229"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../searchcity.py" line="238"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../searchcity.py" line="238"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

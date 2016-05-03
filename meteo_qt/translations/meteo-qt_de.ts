@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -146,7 +145,7 @@
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"></translation>
+        <translation>DU</translation>
     </message>
 </context>
 <context>
@@ -524,7 +523,7 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ozon</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -536,7 +535,8 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"></translation>
+        <translation>Die durchschnittliche Stärke der Ozonschicht in der Atmosphäre liegt bei ca. 300 Dobson-Einheiten (DU für engl. Dobson unit).&lt;br/&gt;
+Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis versteht man eine Ausdünnung dieser Schicht auf Werte um 100DU.</translation>
     </message>
 </context>
 <context>
@@ -782,8 +782,7 @@ Bleibe am Mittag, wenn die Sonne am stärksten ist, in schattigen Bereichen.</tr
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
         <translation>&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-&lt;p&gt;Eine einfache Anwendung um die Wetterstatusinformationen
-in der Taskleiste anzuzeigen.
+&lt;p&gt;Eine einfache Anwendung, um Informationen zum Wetterstatus in der Leiste, mittels Benachrichtigungen auf der Arbeitsfläche oder in einem eigenen Fenster anzuzeigen.
 &lt;p&gt;Webseite: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
 https://github.com/dglent/meteo-qt&lt;/a&gt;
 &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;

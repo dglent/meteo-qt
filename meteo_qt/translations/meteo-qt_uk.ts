@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -146,7 +145,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"></translation>
+        <translation>ОД</translation>
     </message>
 </context>
 <context>
@@ -529,7 +528,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Озон</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -541,7 +540,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"></translation>
+        <translation>Середній рівень вмісту озону в атмосфері &lt;br/&gt; дорівнює приблизно 300 одиницям Добсона. У області, яку науковці називають «Антарктичною озоновою діркою», концентрація озону падає до середнього значення у 100 одиниць Добсона.</translation>
     </message>
 </context>
 <context>
