@@ -144,7 +144,7 @@
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"/>
+        <translation>DU</translation>
     </message>
 </context>
 <context>
@@ -522,7 +522,7 @@
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Όζον</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -534,7 +534,10 @@
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Η μέση ποσότητα της στρώσης του όζοντος στην &lt;br/&gt; ατμόσφαιρα είναι
+                χοντρικά 300 μονάδες Dobson. Αυτό που οι επιστήμονες αποκαλούν «Τρύπα» του Όζοντος
+                είναι μια περιοχή όπου η συγκέντρωση του όζοντος πέφτει σε ένα μέσο όρο των
+                100 μονάδων Dobson.</translation>
     </message>
 </context>
 <context>

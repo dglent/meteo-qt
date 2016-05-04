@@ -37,7 +37,6 @@
             [cs] překlad do češtiny
             &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
             [de] překlad do němčiny
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de]  překlad do němčiny, projekt
             &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
             [el] překlad do řečtiny
             &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
@@ -143,7 +142,7 @@
         <location filename="../overview.py" line="440"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"/>
+        <translation>DJ</translation>
     </message>
 </context>
 <context>
@@ -527,7 +526,7 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
         <location filename="../overview.py" line="163"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Ozón</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -539,7 +538,10 @@ Okolo poledne, když je slunce nejsilnější, zůstaňte ve stínu.</translatio
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Průměrné množství ozónu v &lt;br/&gt; atmosféře je
+                zhruba 300 Dobsonových jednotek. To co vědci nazývají ozónová díra nad Antarktidou,
+                je oblast, v níž soustředění ozónu klesá na průměrných asi
+                100 Dobsonových jednotek.</translation>
     </message>
 </context>
 <context>
