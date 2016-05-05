@@ -549,7 +549,7 @@ class Ozone(QThread):
             logging.debug('Ozone index: ' + str(o3_ind))
         except:
             o3_ind = '-'
-            logging.error('Cannot find UV index')
+            logging.error('Cannot find Ozone index')
         self.o3_signal['PyQt_PyObject'].emit(o3_ind)
 
 
