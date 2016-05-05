@@ -87,6 +87,7 @@ class OverviewCity(QDialog):
         # Wind
         self.wind_label = QLabel('<font size="3" color=grey><b>' +
                                  self.tr('Wind') + '<\font><\b>')
+        self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
         self.speed_unit = ' m/s '
         if wind_unit == 'imperial':
@@ -103,6 +104,7 @@ class OverviewCity(QDialog):
             logging.error('Cannot find wind informations:\n' +
                           str(self.weatherdata['Wind']))
         self.wind_icon_label = QLabel()
+        self.wind_icon_label.setAlignment(Qt.AlignLeft)
         self.wind_icon = QPixmap(':/arrow')
         self.wind_icon_direction()
         # ----------------
@@ -154,6 +156,7 @@ class OverviewCity(QDialog):
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
                 'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
                 '<\b><\font>'))
+        self.uv_label.setAlignment(Qt.AlignTop)
         fetching_text = ('<font color=grey>' + QCoreApplication.translate(
                             'Ultraviolet index', 'Fetching...', '' + '<\font>'))
         self.uv_value_label = QLabel()
