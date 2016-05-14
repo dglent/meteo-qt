@@ -954,7 +954,7 @@
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation>όμβρος και ψεκάδες</translation>
+        <translation>σποραδικοί όμβροι και ψεκάδες</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
@@ -1004,7 +1004,7 @@
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation>όμβρος με βροχή</translation>
+        <translation>σποραδικοί όμβροι</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
