@@ -97,7 +97,7 @@ class OverviewCity(QDialog):
             self.wind = QLabel('<font color=grey>' +
                                self.weatherdata['Wind'][4] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
-                               '<br/>' + str(round(float(self.weatherdata['Wind'][0]))) +
+                               '<br/>' + '{0:.1f}'.format(float(self.weatherdata['Wind'][0])) +
                                self.speed_unit + self.weatherdata['Wind'][1] +
                                '<\font>')
         except:
