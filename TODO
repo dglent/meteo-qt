@@ -1,5 +1,4 @@
 - consistent code style issue #6
-- proxy authentication issue #46
 - Think for the log file issue #49 (maybe systemd journal is better solution ?)
 - Wind unit (choose between more units as Nœuds Beaufort m/s km/h mi/h ...)
 - Selection of info to show in the noitification tooltip
