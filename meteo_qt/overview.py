@@ -130,18 +130,18 @@ class OverviewCity(QDialog):
                                           '<\b><\font>')
         rain_mode = self.precipitation[self.weatherdata['Precipitation'][0]]
         rain_value = self.weatherdata['Precipitation'][1]
-        self.rain_unit = ' mm '
+        rain_unit = ' mm '
         if rain_value == '':
-            self.rain_unit = ''
+            rain_unit = ''
         else:
             if wind_unit == 'imperial':
-                self.rain_unit = 'inch'
+                rain_unit = 'inch'
                 rain_value = str(float(rain_value) / 25.4)
                 rain_value = "{0:.4f}".format(float(rain_value))
             else:
                 rain_value = "{0:.2f}".format(float(rain_value))
         self.precipitation_value = QLabel('<font color=grey>' +
-                                          rain_mode + ' ' + rain_value + ' ' + self.rain_unit +
+                                          rain_mode + ' ' + rain_value + ' ' + rain_unit +
                                           '</font>')
         self.sunrise_label = QLabel('<font color=grey><b>' +
                                     self.tr('Sunrise') + '</b></font>')
@@ -339,6 +339,8 @@ class OverviewCity(QDialog):
                     rain_unit = ' inch'
                     precipitation_value = str(float(precipitation_value) / 25.4) + ' '
                     precipitation_value = "{0:.2f}".format(float(precipitation_value))
+                else:
+                    precipitation_value = str(round(float(precipitation_value)))
                 weather_cond += ('\n' + precipitation_label + precipitation_type +
                                  precipitation_value + rain_unit)
             except:
