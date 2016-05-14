@@ -2,7 +2,7 @@ from PyQt5.QtCore import (
     QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray,
     QCoreApplication
     )
-from PyQt5.QtGui import QImage, QPixmap, QTransform
+from PyQt5.QtGui import QImage, QPixmap, QTransform, QTextDocument
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
     )
@@ -97,7 +97,7 @@ class OverviewCity(QDialog):
             self.wind = QLabel('<font color=grey>' +
                                self.weatherdata['Wind'][4] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
-                               '<br/>' + self.weatherdata['Wind'][0] +
+                               '<br/>' + str(round(float(self.weatherdata['Wind'][0]))) +
                                self.speed_unit + self.weatherdata['Wind'][1] +
                                '<\font>')
         except:
@@ -115,7 +115,7 @@ class OverviewCity(QDialog):
         self.pressure_label = QLabel('<font size="3" color=grey><b>' +
                                      self.tr('Pressure') + '<\b><\font>')
         self.pressure_value = QLabel('<font color=grey>' +
-                                     self.weatherdata['Pressure'][0] + ' ' +
+                                     str(round(float(self.weatherdata['Pressure'][0]))) + ' ' +
                                      self.weatherdata['Pressure'][1] +
                                      '<\font>')
         self.humidity_label = QLabel('<font size="3" color=grey><b>' +
@@ -130,18 +130,18 @@ class OverviewCity(QDialog):
                                           '<\b><\font>')
         rain_mode = self.precipitation[self.weatherdata['Precipitation'][0]]
         rain_value = self.weatherdata['Precipitation'][1]
-        rain_unit = ' mm '
+        self.rain_unit = ' mm '
         if rain_value == '':
-            rain_unit = ''
+            self.rain_unit = ''
         else:
             if wind_unit == 'imperial':
-                rain_unit = 'inch'
+                self.rain_unit = 'inch'
                 rain_value = str(float(rain_value) / 25.4)
                 rain_value = "{0:.4f}".format(float(rain_value))
             else:
                 rain_value = "{0:.2f}".format(float(rain_value))
         self.precipitation_value = QLabel('<font color=grey>' +
-                                          rain_mode + ' ' + rain_value + ' ' + rain_unit +
+                                          rain_mode + ' ' + rain_value + ' ' + self.rain_unit +
                                           '</font>')
         self.sunrise_label = QLabel('<font color=grey><b>' +
                                     self.tr('Sunrise') + '</b></font>')
@@ -149,8 +149,8 @@ class OverviewCity(QDialog):
                                    self.tr('Sunset') + '</b></font>')
         rise_str = self.utc('Sunrise', 'weatherdata')
         set_str = self.utc('Sunset', 'weatherdata')
-        self.sunrise_value = QLabel('<font color=grey>' + rise_str + '</font>')
-        self.sunset_value = QLabel('<font color=grey>' + set_str + '</font>')
+        self.sunrise_value = QLabel('<font color=grey>' + rise_str[:-3] + '</font>')
+        self.sunset_value = QLabel('<font color=grey>' + set_str[:-3] + '</font>')
         # --UV---
         self.uv_label = QLabel(
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
@@ -295,6 +295,7 @@ class OverviewCity(QDialog):
     def forecastdata(self):
         '''Forecast for the next 6 days'''
         # Some times server sends less data
+        doc = QTextDocument()
         periods = 7
         fetched_file_periods = (len(self.tree.xpath('//time')))
         if fetched_file_periods < periods:
@@ -327,7 +328,43 @@ class OverviewCity(QDialog):
                 logging.warn('Cannot find localisation string for :' +
                              weather_cond)
                 pass
-            self.forecast_weather_list.append(weather_cond)  # weather
+            try:
+                doc.setHtml(self.precipitation_label.text())
+                precipitation_label = doc.toPlainText() + ': '
+                precipitation_type = self.tree[4][d][1].get('type')
+                precipitation_type = self.precipitation[precipitation_type] + ' '
+                precipitation_value = self.tree[4][d][1].get('value')
+                rain_unit = ' mm'
+                if self.speed_unit == ' mph ':
+                    rain_unit = ' inch'
+                    precipitation_value = str(float(precipitation_value) / 25.4) + ' '
+                    precipitation_value = "{0:.2f}".format(float(precipitation_value))
+                weather_cond += ('\n' + precipitation_label + precipitation_type +
+                                 precipitation_value + rain_unit)
+            except:
+                pass
+            doc.setHtml(self.wind_label.text())
+            wind = doc.toPlainText() + ': '
+            try:
+                wind_direction = self.wind_direction[self.tree[4][d][2].get('code')]
+            except:
+                wind_direction = ''
+            wind_speed = str(round(float(self.tree[4][d][3].get('mps'))))
+            weather_cond += '\n' + wind + wind_speed + self.speed_unit + wind_direction
+            doc.setHtml(self.pressure_label.text())
+            pressure_label = doc.toPlainText() + ': '
+            pressure = str(round(float(self.tree[4][d][5].get('value'))))
+            weather_cond += '\n' + pressure_label + pressure + ' hPa'
+            humidity = self.tree[4][d][6].get('value')
+            doc.setHtml(self.humidity_label.text())
+            humidity_label = doc.toPlainText() + ': '
+            weather_cond += '\n' + humidity_label + humidity + ' %'
+            clouds = self.tree[4][d][7].get('all')
+            doc.setHtml(self.clouds_label.text())
+            clouds_label = doc.toPlainText() + ': '
+            weather_cond += '\n' + clouds_label + clouds + ' %'
+
+            self.forecast_weather_list.append(weather_cond)
 
     def iconfetch(self):
         logging.debug('Download 6 days forecast icons...')
@@ -460,7 +497,7 @@ class OverviewCity(QDialog):
             uv_gauge = '◼' * int(round(float(index)))
             if uv_gauge == '':
                 uv_gauge = '◼'
-            self.uv_value_label.setText('<font color=grey>' + str(index) +
+            self.uv_value_label.setText('<font color=grey>' + '{0:.1f}'.format(float(index)) +
                     '  ' + self.uv_risk[uv_color[1]] + '</font>' +
                     '<br/>' + '< font color=' + uv_color[0] + '><b>' +
                     uv_gauge + '</b></font>')
