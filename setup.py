@@ -15,7 +15,7 @@ class BuildQm(build):
 
 setup(
     name='meteo_qt',
-    version='0.9.1',
+    version='0.9.2',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',
