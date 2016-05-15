@@ -340,7 +340,7 @@ class OverviewCity(QDialog):
                     precipitation_value = str(float(precipitation_value) / 25.4) + ' '
                     precipitation_value = "{0:.2f}".format(float(precipitation_value))
                 else:
-                    precipitation_value = str(round(float(precipitation_value)))
+                    precipitation_value = "{0:.1f}".format(float(precipitation_value))
                 weather_cond += ('\n' + precipitation_label + precipitation_type +
                                  precipitation_value + rain_unit)
             except:
@@ -351,11 +351,11 @@ class OverviewCity(QDialog):
                 wind_direction = self.wind_direction[self.tree[4][d][2].get('code')]
             except:
                 wind_direction = ''
-            wind_speed = str(round(float(self.tree[4][d][3].get('mps'))))
+            wind_speed = '{0:.1f}'.format(float(self.tree[4][d][3].get('mps')))
             weather_cond += '\n' + wind + wind_speed + self.speed_unit + wind_direction
             doc.setHtml(self.pressure_label.text())
             pressure_label = doc.toPlainText() + ': '
-            pressure = str(round(float(self.tree[4][d][5].get('value'))))
+            pressure = '{0:.1f}'.format(float(self.tree[4][d][5].get('value')))
             weather_cond += '\n' + pressure_label + pressure + ' hPa'
             humidity = self.tree[4][d][6].get('value')
             doc.setHtml(self.humidity_label.text())
