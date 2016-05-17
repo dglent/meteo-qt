@@ -441,10 +441,14 @@ class SystemTrayIcon(QMainWindow):
 
     def tray(self):
         temp_decimal = eval(self.settings.value('Decimal') or 'False')
-        if temp_decimal:
-            temp_tray = self.temp_decimal
-        else:
-            temp_tray = self.temp
+        try:
+            if temp_decimal:
+                temp_tray = self.temp_decimal
+            else:
+                temp_tray = self.temp
+        except:
+            # First time launch
+            return
         if self.inerror or not hasattr(self, 'temp'):
             logging.critical('Cannot paint icon!')
             if hasattr(self, 'overviewcity'):
