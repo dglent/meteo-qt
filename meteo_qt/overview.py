@@ -552,6 +552,7 @@ class Ozone(QThread):
         QThread.__init__(self, parent)
         self.coord = coord
         self.settings = QSettings()
+        self.appid = self.settings.value('APPID') or ''
 
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
@@ -579,7 +580,7 @@ class Ozone(QThread):
             lon = self.coord[1]
             url = ('http://api.openweathermap.org/pollution/v1/o3/' +
                    lat + ',' + lon +
-                   '/current.json?appid=18dc60bd132b7fb4534911d2aa67f0e7')
+                   '/current.json?appid=' + self.appid)
             logging.debug('Fetching url for ozone index: ' + str(url))
             req = urllib.request.urlopen(url, timeout=5)
             page = req.read()
@@ -599,6 +600,7 @@ class Uv(QThread):
         QThread.__init__(self, parent)
         self.uv_coord = uv_coord
         self.settings = QSettings()
+        self.appid = self.settings.value('APPID') or ''
 
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
@@ -626,7 +628,7 @@ class Uv(QThread):
             lon = self.uv_coord[1]
             url = ('http://api.owm.io/air/1.0/uvi/current?lat=' +
                    lat + '&lon=' + lon +
-                   '&appid=18dc60bd132b7fb4534911d2aa67f0e7')
+                   '&appid=' + self.appid)
             logging.debug('Fetching url for uv index: ' + str(url))
             req = urllib.request.urlopen(url, timeout=5)
             page = req.read()

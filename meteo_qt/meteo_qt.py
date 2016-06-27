@@ -70,7 +70,8 @@ class SystemTrayIcon(QMainWindow):
         self.day_forecast_url = ('http://api.openweathermap.org/data/2.5/'
                                  'forecast?id=')
         self.wIconUrl = 'http://openweathermap.org/img/w/'
-        self.appid = '&APPID=18dc60bd132b7fb4534911d2aa67f0e7'
+        apikey = self.settings.value('APPID') or ''
+        self.appid = '&APPID=' + apikey
         self.forecast_icon_url = self.wIconUrl
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
@@ -548,6 +549,7 @@ class SystemTrayIcon(QMainWindow):
         fontsize = self.settings.value('FontSize')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
+        self.appid = '&APPID=' + self.settings.value('APPID') or ''
         if language != self.language and language is not None:
             self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
                     "System tray notification",

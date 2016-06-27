@@ -4,7 +4,8 @@ from PyQt5.QtCore import (
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import (
     QDialog, QVBoxLayout, QComboBox, QLabel, QPushButton, QHBoxLayout,
-    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog, QSpinBox
+    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog, QSpinBox,
+    QLineEdit
     )
 import os
 import logging
@@ -219,7 +220,20 @@ class MeteoSettings(QDialog):
             'Label of button to open the proxy dialogue','Settings','Settings dialogue'))
         self.proxy_button.clicked.connect(self.proxy_settings)
         self.proxy_button.setEnabled(self.proxy_bool)
-        # -------------
+        # Openweathermap key
+        self.owmkey_label = QLabel(QCoreApplication.translate(
+            'The key that user can generate in his OpenWeatherMap profile',
+            'OpenWeatherMap key', 'Settings dialogue'))
+        self.owmkey_create = QLabel(QCoreApplication.translate(
+            'Link to create a profile in OpenWeatherMap',
+            "<a href=\"http://home.openweathermap.org/users/sign_up\">Create key</a>",
+            'Settings dialogue'))
+        self.owmkey_create.setOpenExternalLinks(True)
+        apikey = self.settings.value('APPID') or ''
+        self.owmkey_text = QLineEdit()
+        self.owmkey_text.setText(apikey)
+        self.owmkey_text.textChanged.connect(self.apikey_changed)
+        # ----------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
         self.panel.addWidget(self.city_combo, 0, 1)
@@ -247,6 +261,9 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.proxy_label, 10, 0)
         self.panel.addWidget(self.proxy_chbox, 10, 1)
         self.panel.addWidget(self.proxy_button, 10, 2)
+        self.panel.addWidget(self.owmkey_label, 11, 0)
+        self.panel.addWidget(self.owmkey_text, 11, 1)
+        self.panel.addWidget(self.owmkey_create, 11, 2)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -404,6 +421,9 @@ class MeteoSettings(QDialog):
         dialog = proxydlg.Proxy(self)
         dialog.exec_()
 
+    def apikey_changed(self):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
     def apply_settings(self):
         self.accepted()
         self.applied_signal.emit()
@@ -461,6 +481,7 @@ class MeteoSettings(QDialog):
         if proxy_url == '':
             self.proxy_bool = False
         self.settings.setValue('Proxy', str(self.proxy_bool))
+        self.settings.setValue('APPID', str(self.owmkey_text.text()))
 
     def accept(self):
         self.accepted()
