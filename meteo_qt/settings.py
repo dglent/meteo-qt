@@ -267,6 +267,11 @@ class MeteoSettings(QDialog):
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
+        self.statusbar = QLabel()
+        self.layout.addWidget(self.statusbar)
+        self.nokey_message = QCoreApplication.translate(
+                'Warning message after pressing Ok', 'Please enter your OpenWeatherMap key',
+                'Settings dialogue')
         self.setLayout(self.layout)
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
@@ -427,9 +432,15 @@ class MeteoSettings(QDialog):
     def apply_settings(self):
         self.accepted()
         self.applied_signal.emit()
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
 
     def accepted(self):
+        apikey = self.owmkey_text.text()
+        if apikey == '':
+            self.statusbar.setText(self.nokey_message)
+            return
+        else:
+            self.statusbar.setText('')
+        self.settings.setValue('APPID', str(self.owmkey_text.text()))
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
         if hasattr(self, 'id_before'):
             self.settings.setValue('ID', self.id_before)
@@ -481,10 +492,13 @@ class MeteoSettings(QDialog):
         if proxy_url == '':
             self.proxy_bool = False
         self.settings.setValue('Proxy', str(self.proxy_bool))
-        self.settings.setValue('APPID', str(self.owmkey_text.text()))
 
     def accept(self):
         self.accepted()
+        apikey = self.owmkey_text.text()
+        if apikey == '':
+            self.statusbar.setText(self.nokey_message)
+            return
         QDialog.accept(self)
 
     def add_cities_incombo(self):
