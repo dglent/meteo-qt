@@ -393,7 +393,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="278"/>
+        <location filename="../settings.py" line="281"/>
         <source>Meteo-qt Configuration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -837,6 +837,15 @@
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
                                     Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Warning message after pressing OK</name>
+    <message>
+        <location filename="../settings.py" line="277"/>
+        <source>Please add a city</source>
+        <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
