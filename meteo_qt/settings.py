@@ -272,6 +272,9 @@ class MeteoSettings(QDialog):
         self.nokey_message = QCoreApplication.translate(
                 'Warning message after pressing Ok', 'Please enter your OpenWeatherMap key',
                 'Settings dialogue')
+        self.nocity_message = QCoreApplication.translate(
+                'Warning message after pressing OK', 'Please add a city',
+                'Settings dialogue')
         self.setLayout(self.layout)
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
@@ -301,8 +304,13 @@ class MeteoSettings(QDialog):
         self.interval_changed = True
 
     def edit_cities_list(self):
+        apikey = self.owmkey_text.text()
+        apiid = '&APPID=' + apikey
+        if apikey == '':
+            self.statusbar.setText(self.nokey_message)
+            return
         dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url,
-                                         self.appid, self)
+                                         apiid, self)
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.exec_()
 
@@ -431,16 +439,21 @@ class MeteoSettings(QDialog):
 
     def apply_settings(self):
         self.accepted()
-        self.applied_signal.emit()
 
     def accepted(self):
         apikey = self.owmkey_text.text()
+        city_name = self.city_combo.currentText()
         if apikey == '':
             self.statusbar.setText(self.nokey_message)
             return
         else:
             self.statusbar.setText('')
-        self.settings.setValue('APPID', str(self.owmkey_text.text()))
+            self.settings.setValue('APPID', str(self.owmkey_text.text()))
+        if city_name == '':
+            self.statusbar.setText(self.nocity_message)
+            return
+        else:
+            self.statusbar.setText('')
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
         if hasattr(self, 'id_before'):
             self.settings.setValue('ID', self.id_before)
@@ -492,12 +505,17 @@ class MeteoSettings(QDialog):
         if proxy_url == '':
             self.proxy_bool = False
         self.settings.setValue('Proxy', str(self.proxy_bool))
+        self.applied_signal.emit()
 
     def accept(self):
         self.accepted()
         apikey = self.owmkey_text.text()
+        city_name = self.city_combo.currentText()
         if apikey == '':
             self.statusbar.setText(self.nokey_message)
+            return
+        if city_name == '':
+            self.statusbar.setText(self.nocity_message)
             return
         QDialog.accept(self)
 
