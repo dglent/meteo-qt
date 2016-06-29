@@ -129,11 +129,24 @@ in `$XDG_DATA_DIRS/applications` making the application available in the usual p
 
 ### Binary packages
 
-As of 2016-04 binary packages are available in the [Arch Linux User Repository
-(AUR)](https://aur.archlinux.org) of [Arch Linux](https://archlinux.org), namely packages
-[meteo-qt](https://aur.archlinux.org/packages/meteo-qt/) and
-[meteo-qt-git](https://aur.archlinux.org/packages/meteo-qt-git/) providing current release and latest
-VCS checkouts respectively.
+#### Arch Linux
+
+[AUR](https://aur.archlinux.org) package [meteo-qt](https://aur.archlinux.org/packages/meteo-qt/) is providing the
+latest stable release, package [meteo-qt-git](https://aur.archlinux.org/packages/meteo-qt-git/) the latest checkout
+of branch `master`.
+
+#### Mageia
+
+Package [meteo-qt](http://madb.mageia.org/package/show/name/meteo-qt/) is providing stable releases.
+
+## Configuration
+
+As of June 2016 users need to use a personal key to access OpenWeatherMap data. OpenWeatherMap is restricting access
+to the data by keys in order to avoid abuse, unfortunately the single key that was issued for meteo-qt as a whole
+had to be revoked as it was apparently hijacked.
+
+To register a personal key visit [openweathermap.org](https://openweathermap.org), once acquired the key has to be
+filed in the settings of meteo-qt.
 
 ## Usage
 
