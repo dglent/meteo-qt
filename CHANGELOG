@@ -1,3 +1,7 @@
+0.9.4
+Use a personal key to access the openweathemap api
+Each user has to create his own key
+
 0.9.3
 Fix crash with new profile - issue #54
 
