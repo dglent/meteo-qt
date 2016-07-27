@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 
-import os
 import glob
+import os
 from distutils.command.build import build
 from distutils.core import setup
 
