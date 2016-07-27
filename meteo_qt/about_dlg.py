@@ -1,9 +1,7 @@
 from PyQt5.QtCore import QSize
-from PyQt5.QtGui import QTextCursor, QPixmap
-from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QTextBrowser, QTabWidget,
-    QDialogButtonBox
-    )
+from PyQt5.QtGui import QPixmap, QTextCursor
+from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
+                             QTabWidget, QTextBrowser, QVBoxLayout)
 
 
 class AboutDialog(QDialog):

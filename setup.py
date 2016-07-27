@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-import os
+
 import glob
+import os
 from distutils.command.build import build
 from distutils.core import setup
 
@@ -15,13 +16,14 @@ class BuildQm(build):
 
 setup(
     name='meteo_qt',
-    version='0.9.4',
+    version='0.9.5',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',
     url='https://github.com/dglent/meteo-qt',
     license='GPLv3',
     packages=['meteo_qt'],
+    keywords=['weather', 'qt', 'trayicon', 'openweathermap', 'forecast'],
     data_files=[('/usr/share/applications', ['share/meteo-qt.desktop']),
                 ('/usr/share/icons', ['meteo_qt/images/meteo-qt.png']),
                 ('/usr/share/meteo_qt/images',
@@ -70,4 +72,19 @@ setup(
                 ('/usr/share/doc/meteo-qt',
                     ['README.md', 'LICENSE', 'CHANGELOG', 'TODO'])],
         scripts=["bin/meteo-qt"],
-        cmdclass={'build_qm': BuildQm})
+        cmdclass={'build_qm': BuildQm},
+        include_package_data=True,
+        zip_safe=True,
+        classifiers=[
+            'Development Status :: 5 - Production/Stable',
+            'Intended Audience :: Other Audience',
+            'Natural Language :: English',
+            'License :: OSI Approved :: GNU General Public License (GPL)',
+            'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+            'Operating System :: POSIX :: Linux',
+            'Programming Language :: Python',
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: Implementation :: CPython',
+        ],
+)
