@@ -1,15 +1,13 @@
-from PyQt5.QtCore import (
-    QTimer, pyqtSignal, QThread, QSettings, QByteArray, QCoreApplication
-    )
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QListWidget,
-    QLabel
-    )
-import urllib.request
-from lxml import etree
-from socket import timeout
 import logging
+import urllib.request
+from socket import timeout
+
+from lxml import etree
+from PyQt5.QtCore import (QByteArray, QCoreApplication, QSettings, QThread,
+                          QTimer, pyqtSignal)
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QLabel, QLineEdit,
+                             QListWidget, QPushButton, QVBoxLayout)
 
 
 class SearchCity(QDialog):
@@ -75,7 +73,7 @@ class SearchCity(QDialog):
         self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
 
     def buttonCheck(self):
-        '''Enable OK button if an item is selected'''
+        '''Enable OK button if an item is selected.'''
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
         if item is not None:
@@ -186,7 +184,8 @@ class WorkThread(QThread):
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
-        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = self.settings.value(
+            'Use_proxy_authentification') or 'False'
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -195,10 +194,12 @@ class WorkThread(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
-            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+                proxy_tot = ('http://' + proxy_user + ':' + proxy_password +
+                             '@' + proxy_url + ':' + proxy_port)
+            proxy = urllib.request.ProxyHandler({"http": proxy_tot})
             auth = urllib.request.HTTPBasicAuthHandler()
-            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            opener = urllib.request.build_opener(
+                proxy, auth, urllib.request.HTTPHandler)
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
@@ -210,13 +211,16 @@ class WorkThread(QThread):
         if self.city == '':
             return
         try:
-            logging.debug(self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20') + self.suffix)
+            logging.debug(
+                self.accurate_url + repr(self.city.encode('utf-8')).replace(
+                    "b'", "").replace("\\x", "%").replace(
+                    "'", "").replace(' ', '%20') + self.suffix)
             logging.debug('City before utf8 encode :' + self.accurate_url +
                           self.city + self.suffix)
             req = urllib.request.urlopen(
                 self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'", "").replace("\\x", "%").replace("'", "").replace(' ', '%20') + self.suffix, timeout=5)
+                    "b'", "").replace("\\x", "%").replace(
+                    "'", "").replace(' ', '%20') + self.suffix, timeout=5)
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
@@ -272,7 +276,8 @@ class WorkThread(QThread):
                     if city != '':
                         logging.info('Change search to:' + city)
                         self.city = repr(city.encode('utf-8')).replace(
-                    "b'","").replace("\\x","%").replace("'","").replace(' ', '%20')
+                            "b'", "").replace("\\x", "%").replace(
+                            "'", "").replace(' ', '%20')
                     self.run()
             if city == '' or country is None:
                 if self.tentatives == 10:

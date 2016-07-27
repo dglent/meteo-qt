@@ -1,9 +1,6 @@
-from PyQt5.QtCore import (
-    Qt, QTimer, pyqtSignal, QThread, QSettings, QCoreApplication)
-
-from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLineEdit, QCheckBox,
-    QLabel, QGridLayout, QDialogButtonBox)
+from PyQt5.QtCore import QCoreApplication, QSettings, Qt, pyqtSignal
+from PyQt5.QtWidgets import (QCheckBox, QDialog, QDialogButtonBox, QGridLayout,
+                             QHBoxLayout, QLabel, QLineEdit, QVBoxLayout)
 
 
 class Proxy(QDialog):
@@ -37,7 +34,7 @@ class Proxy(QDialog):
         self.proxy_port_line = QLineEdit(port)
 
         self.proxy_auth_label = QLabel(QCoreApplication.translate(
-                                    'Checkbox','Use proxy authentification',
+                                    'Checkbox', 'Use proxy authentification',
                                     'Proxy settings dialogue'))
         self.proxy_auth_checkbox = QCheckBox()
         self.proxy_auth_bool = eval(self.settings.value(
@@ -46,10 +43,12 @@ class Proxy(QDialog):
         self.proxy_auth_checkbox.stateChanged.connect(self.proxy_auth)
 
         self.proxy_user_label = QLabel(QCoreApplication.translate(
-            'Proxy username authentification', 'User ID:', 'Proxy configuration dialogue'))
+            'Proxy username authentification',
+            'User ID:', 'Proxy configuration dialogue'))
         self.proxy_user_label.setEnabled(self.proxy_auth_bool)
         self.proxy_pass_label = QLabel(QCoreApplication.translate(
-            'Proxy password authentification','Password:','Proxy configuration dialogue'))
+            'Proxy password authentification',
+            'Password:', 'Proxy configuration dialogue'))
         self.proxy_pass_label.setEnabled(self.proxy_auth_bool)
 
         user = self.settings.value('Proxy_user') or ''

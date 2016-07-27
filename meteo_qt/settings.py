@@ -1,14 +1,13 @@
-from PyQt5.QtCore import (
-    pyqtSignal, QSettings, QLocale, Qt, QSize, QCoreApplication
-    )
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QComboBox, QLabel, QPushButton, QHBoxLayout,
-    QDialogButtonBox, QCheckBox, QGridLayout, QColorDialog, QSpinBox,
-    QLineEdit
-    )
-import os
 import logging
+import os
+
+from PyQt5.QtCore import (QCoreApplication, QLocale, QSettings, QSize, Qt,
+                          pyqtSignal)
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (QCheckBox, QColorDialog, QComboBox, QDialog,
+                             QDialogButtonBox, QGridLayout, QHBoxLayout,
+                             QLabel, QLineEdit, QPushButton, QSpinBox,
+                             QVBoxLayout)
 
 try:
     import citylistdlg

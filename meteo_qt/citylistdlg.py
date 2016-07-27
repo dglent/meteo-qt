@@ -1,8 +1,6 @@
-from PyQt5.QtCore import pyqtSignal, Qt, QCoreApplication
-from PyQt5.QtWidgets import (
-    QDialog, QListWidget, QVBoxLayout, QHBoxLayout, QDialogButtonBox,
-    QPushButton, QLabel
-    )
+from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal
+from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
+                             QListWidget, QPushButton, QVBoxLayout)
 
 try:
     import searchcity
@@ -23,7 +21,8 @@ class CityListDlg(QDialog):
         buttonLayout = QVBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok |
+                                          QDialogButtonBox.Cancel)
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
         layoutT = QVBoxLayout()
@@ -63,8 +62,10 @@ class CityListDlg(QDialog):
             for row in range(self.listWidget.count()):
                 lista.append(self.listWidget.item(row).text())
             if newitem in lista:
-                self.status.setText(QCoreApplication.translate('Status bar message',
-                                    'The city already exists in the list', 'Cities list dialogue'))
+                self.status.setText(QCoreApplication.translate(
+                    'Status bar message',
+                    'The city already exists in the list',
+                    'Cities list dialogue'))
                 return
             else:
                 self.listWidget.addItem(newitem)

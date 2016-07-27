@@ -4,27 +4,25 @@
 # Author: Dimitrios Glentadakis dglent@free.fr
 # License: GPLv3
 
-from PyQt5.QtCore import (
-    QThread, pyqtSignal, pyqtSlot, QSettings, Qt, QTranslator, QLibraryInfo,
-    QTimer, QLocale, QCoreApplication, QT_VERSION_STR,
-    PYQT_VERSION_STR
-    )
-from PyQt5.QtGui import (
-    QPainter, QIcon, QPixmap, QImage, QFont, QCursor, QColor, QMovie
-    )
-from PyQt5.QtWidgets import (
-    QMainWindow, QApplication, QMenu, QAction, qApp, QSystemTrayIcon
-    )
-import sys
-import urllib.request
-from lxml import etree
-import platform
-import os
-from functools import partial
-import re
-from socket import timeout
+
 import logging
 import logging.handlers
+import os
+import platform
+import re
+import sys
+import urllib.request
+from functools import partial
+from socket import timeout
+
+from lxml import etree
+from PyQt5.QtCore import (PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication,
+                          QLibraryInfo, QLocale, QSettings, Qt, QThread,
+                          QTimer, QTranslator, pyqtSignal, pyqtSlot)
+from PyQt5.QtGui import (QColor, QCursor, QFont, QIcon, QImage, QMovie,
+                         QPainter, QPixmap)
+from PyQt5.QtWidgets import (QAction, QApplication, QMainWindow, QMenu,
+                             QSystemTrayIcon, qApp)
 
 try:
     import qrc_resources
@@ -42,7 +40,7 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.9.4"
+__version__ = "0.9.5"
 
 
 class SystemTrayIcon(QMainWindow):

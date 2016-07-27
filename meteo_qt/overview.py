@@ -1,16 +1,14 @@
-from PyQt5.QtCore import (
-    QThread, pyqtSignal, QSettings, Qt, QTime, QByteArray,
-    QCoreApplication
-    )
-from PyQt5.QtGui import QImage, QPixmap, QTransform, QTextDocument
-from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
-    )
 import datetime
-import urllib.request
-import time
-from socket import timeout
 import logging
+import time
+import urllib.request
+from socket import timeout
+
+from PyQt5.QtCore import (QByteArray, QCoreApplication, QSettings, Qt, QThread,
+                          QTime, pyqtSignal)
+from PyQt5.QtGui import QImage, QPixmap, QTextDocument, QTransform
+from PyQt5.QtWidgets import (QDialog, QGridLayout, QHBoxLayout, QLabel,
+                             QVBoxLayout)
 
 try:
     import conditions
