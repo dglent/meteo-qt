@@ -24,10 +24,11 @@ class OverviewCity(QDialog):
                   'imperial': '°F',
                   ' ': '°K'}
 
-    def __init__(self, weatherdata, icon, forecast, dayforecast, unit,
-                 icon_url, uv_coord, parent=None):
+    def __init__(self, weatherdata, icon, forecast, dayforecast,
+                 json_data_bool, unit, icon_url, uv_coord, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.setAttribute(Qt.WA_DeleteOnClose)
+        self.json_data_bool = json_data_bool
         self.days_dico = {'0': self.tr('Mon'),
                           '1': self.tr('Tue'),
                           '2': self.tr('Wed'),
@@ -263,14 +264,47 @@ class OverviewCity(QDialog):
             return ('grey', 'None')
         if uv <= 2.9:
             return ('green', 'Low')
-        if uv <= 5.9:
+        elif uv <= 5.9:
             return ('yellow', 'Moderate')
-        if uv <= 7.9:
+        elif uv <= 7.9:
             return ('orange', 'High')
-        if uv <= 10.9:
+        elif uv <= 10.9:
             return ('red', 'Very high')
-        if uv >= 11:
+        elif uv >= 11:
             return ('purple', 'Extreme')
+
+    def winddir_json_code(self, deg):
+        deg = float(deg)
+        if deg < 22.5 or deg > 337.5:
+            return 'N'
+        elif deg < 45:
+            return 'NNE'
+        elif deg < 67.5:
+            return 'NE'
+        elif deg < 90:
+            return 'ENE'
+        elif deg < 112.5:
+            return 'E'
+        elif deg < 135:
+            return 'ESE'
+        elif deg < 157.5:
+            return 'SE'
+        elif deg < 180:
+            return 'SSE'
+        elif deg < 202.5:
+            return 'S'
+        elif deg < 225:
+            return 'SSW'
+        elif deg < 247.5:
+            return 'SW'
+        elif deg < 270:
+            return 'WSW'
+        elif deg < 292.5:
+            return 'W'
+        elif deg < 315:
+            return 'WNW'
+        elif deg <= 337.5:
+            return 'NNW'
 
     def utc(self, rise_set, what):
         ''' Convert sun rise/set from UTC to local time
@@ -281,8 +315,10 @@ class OverviewCity(QDialog):
         if what == 'weatherdata':
             listtotime = self.weatherdata[rise_set].split('T')[1].split(':')
         elif what == 'dayforecast':
-            listtotime = self.tree_day[4][rise_set].get('from').split(
-                'T')[1].split(':')
+            if not self.json_data_bool:
+                listtotime = self.tree_day[4][rise_set].get('from').split('T')[1].split(':')
+            else:
+                listtotime = self.tree_day['list'][rise_set]['dt_txt'][10:].split(':')
         suntime = QTime(int(listtotime[0]), int(listtotime[1]), int(
             listtotime[2]))
         # add the diff UTC-local in seconds
@@ -386,70 +422,97 @@ class OverviewCity(QDialog):
 
     def dayforecastdata(self):
         '''Fetch forecast for the day'''
-        # Some times server sends less data
-        periods = 7
-        fetched_file_periods = (len(self.tree_day.xpath('//time')))
-        if fetched_file_periods < periods:
-            periods = fetched_file_periods
-            logging.warn('Reduce forecast of the day to {0}'.format(periods-1))
-        for d in range(1, periods):
+        periods = 6
+        start = 0
+        if not self.json_data_bool:
+            start = 1
+            periods = 7
+            fetched_file_periods = (len(self.tree_day.xpath('//time')))
+            if fetched_file_periods < periods:
+                # Some times server sends less data
+                periods = fetched_file_periods
+                logging.warn('Reduce forecast of the day to {0}'.format(periods-1))
+        for d in range(start, periods):
+            clouds_translated = ''
+            wind = ''
             timeofday = self.utc(d, 'dayforecast')
-            weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
+            if not self.json_data_bool:
+                weather_cond = self.conditions[self.tree_day[4][d][0].get('number')]
+                self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var'))
+                temperature_at_hour = float(self.tree_day[4][d][4].get('value'))
+                precipitation = str(self.tree_day[4][d][1].get('value'))
+                precipitation_type = str(self.tree_day[4][d][1].get('type'))
+                windspeed = self.tree_day[4][d][3].get('mps')
+                winddircode = self.tree_day[4][d][2].get('code')
+                wind_name = self.tree_day[4][d][3].get('name')
+                try:
+                    wind_name_translated = (self.conditions[self.wind_name_dic[wind_name.lower()]] +
+                                            '<br/>')
+                    wind += wind_name_translated
+                except KeyError:
+                    logging.warn('Cannot find wind name :' + str(wind_name))
+                    logging.info('Set wind name to None')
+                    wind = ''
+                finally:
+                    if wind == '':
+                        wind += '<br/>'
+                clouds = self.tree_day[4][d][7].get('value')
+                cloudspercent = self.tree_day[4][d][7].get('all')
+            else:
+                weather_cond = self.conditions[str(self.tree_day['list'][d]['weather'][0]['id'])]
+                self.dayforecast_icon_list.append(self.tree_day['list'][d]['weather'][0]['icon'])
+                temperature_at_hour = float(self.tree_day['list'][d]['main']['temp'])
+                precipitation_orig = self.tree_day['list'][d]
+                precipitation_rain = precipitation_orig.get('rain')
+                precipitation_snow = precipitation_orig.get('snow')
+                if precipitation_rain != None and len(precipitation_rain) > 0:
+                    precipitation_type = 'rain'
+                    precipitation = precipitation_rain['3h']
+                elif precipitation_snow != None and len(precipitation_snow) > 0:
+                    precipitation_type = 'snow'
+                    precipitation_snow['3h']
+                else:
+                    precipitation = 'None'
+                windspeed = self.tree_day['list'][d]['wind']['speed']
+                winddircode = self.winddir_json_code(self.tree_day['list'][d]['wind'].get('deg'))
+                clouds = self.tree_day['list'][d]['weather'][0]['description']
+                cloudspercent = self.tree_day['list'][0]['clouds']['all']
+
             self.dayforecast_weather_list.append(weather_cond)
-            # icon
-            self.dayforecast_icon_list.append(self.tree_day[4][d][0].get('var'))
             daytime = QLabel(
                 '<font color=grey>' + timeofday[:-3] + '<br/>' +
-                '{0:.0f}'.format(float(self.tree_day[4][d][4].get('value'))) +
+                '{0:.0f}'.format(temperature_at_hour) +
                 '°' + '</font>')
             daytime.setAlignment(Qt.AlignHCenter)
             unit = self.settings.value('Unit') or 'metric'
-            precipitation = str(self.tree_day[4][d][1].get('value'))
             if unit == 'metric':
                 mu = 'mm'
             elif unit == 'imperial':
                 mu = 'inch'
                 if precipitation.count('None') == 0:
                     precipitation = str(float(precipitation) / 25.0)
-            ttip = (precipitation + ' ' + mu + ' ' +
-                    str(self.tree_day[4][d][1].get('type')) + '<br/>')
+            ttip = str(precipitation) + ' ' + mu + ' ' + precipitation_type + '<br/>'
             if ttip.count('None') >= 1:
                 ttip = ''
             else:
                 ttip = ttip.replace('snow', self.tr('snow'))
                 ttip = ttip.replace('rain', self.tr('rain'))
-            # Winddirection/speed
-            windspeed = self.tree_day[4][d][3].get('mps')
-            ttip = ttip + (windspeed + ' ' + self.speed_unit)
-            winddircode = self.tree_day[4][d][2].get('code')
-            wind = ''
+            ttip = ttip + (str(windspeed) + ' ' + self.speed_unit)
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
                 logging.warn('Wind direction code is missing: ' +
                              str(winddircode))
-            wind_name = self.tree_day[4][d][3].get('name')
-            try:
-                wind_name_translated = (
-                    self.conditions[self.wind_name_dic[wind_name.lower()]] +
-                    '<br/>')
-                wind += wind_name_translated
-            except KeyError:
-                logging.warn('Cannot find wind name :' + str(wind_name))
-                logging.info('Set wind name to None')
-                wind = ''
-            finally:
-                if wind == '':
-                    wind += '<br/>'
-            # Clouds
-            clouds_translated = ''
-            clouds = self.tree_day[4][d][7].get('value')
-            cloudspercent = self.tree_day[4][d][7].get('all')
             if clouds != '':
-                clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
+                try:
+                    # In JSON there is no clouds description
+                    clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
+                except KeyError:
+                    logging.warn('The clouding description in json is not relevant')
+                    clouds_translated = ''
             else:
                 logging.warn('Clouding name is missing: ' + str(clouds))
-            clouds_cond = clouds_translated + ' ' + cloudspercent + '%'
+            clouds_cond = clouds_translated + ' ' + str(cloudspercent) + '%'
             ttip = ttip + wind + clouds_cond
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
@@ -483,7 +546,6 @@ class OverviewCity(QDialog):
         else:
             self.ozone_value_label.setText('<font color=grey>' + str(du) + '</font>')
 
-
     def uv_fetch(self):
         logging.debug('Download uv info...')
         self.uv_thread = Uv(self.uv_coord)
@@ -499,10 +561,10 @@ class OverviewCity(QDialog):
                 uv_gauge = '◼'
             self.uv_value_label.setText('<font color=grey>' + '{0:.1f}'.format(float(index)) +
                     '  ' + self.uv_risk[uv_color[1]] + '</font>' +
-                    '<br/>' + '< font color=' + uv_color[0] + '><b>' +
+                    '<br/>' + '<font color=' + uv_color[0] + '><b>' +
                     uv_gauge + '</b></font>')
         else:
-            self.uv_value_label.setText(uv_gauge)
+            self.uv_value_label.setText('<font color=grey>' + uv_gauge + '</font>')
         logging.debug('UV gauge ◼: ' + uv_gauge)
         self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
 

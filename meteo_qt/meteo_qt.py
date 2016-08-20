@@ -14,8 +14,9 @@ import sys
 import urllib.request
 from functools import partial
 from socket import timeout
-
 from lxml import etree
+import json
+
 from PyQt5.QtCore import (PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication,
                           QLibraryInfo, QLocale, QSettings, Qt, QThread,
                           QTimer, QTranslator, pyqtSignal, pyqtSlot)
@@ -276,6 +277,10 @@ class SystemTrayIcon(QMainWindow):
         self.forecast_data = data
 
     def dayforecast(self, data):
+        if type(data) == dict:
+            self.json_data_bool = True
+        else:
+            self.json_data_bool = False
         self.dayforecast_data = data
 
     def instance_overviewcity(self):
@@ -286,7 +291,7 @@ class SystemTrayIcon(QMainWindow):
                 del self.overviewcity
             self.overviewcity = overview.OverviewCity(
                 self.weatherDataDico, self.wIcon, self.forecast_data,
-                self.dayforecast_data, self.unit, self.forecast_icon_url,
+                self.dayforecast_data, self.json_data_bool, self.unit, self.forecast_icon_url,
                 self.uv_coord, self)
             self.overviewcity.closed_status_dialogue.connect(self.remove_object)
         except:
@@ -675,6 +680,7 @@ class Download(QThread):
         self.settings = QSettings()
 
     def run(self):
+        use_json_day_forecast = False
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
         proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
@@ -718,14 +724,27 @@ class Download(QThread):
             elif self.html404(pageforecast, 'forecast'):
                 raise urllib.error.HTTPError
             elif self.html404(pagedayforecast, 'day_forecast'):
-                raise urllib.error.HTTPError
+                # Try with json
+                logging.debug('Fetching url for forecast of the day :' +
+                          self.day_forecast_url + self.id_ + self.suffix.replace('xml', 'json'))
+                reqdayforecast = urllib.request.urlopen(
+                        self.day_forecast_url + self.id_ +
+                        self.suffix.replace('xml', 'json'), timeout=5)
+                pagedayforecast = reqdayforecast.read().decode('utf-8')
+                if self.html404(pagedayforecast, 'day_forecast'):
+                    raise urllib.error.HTTPError
+                else:
+                    treedayforecast = json.loads(pagedayforecast)
+                    use_json_day_forecast = True
+                    logging.debug('Found json page for the forecast of the day')
             tree = etree.fromstring(page)
             lat = tree[0][0].get('lat')
             lon = tree[0][0].get('lon')
             uv_ind = (lat, lon)
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
             treeforecast = etree.fromstring(pageforecast)
-            treedayforecast = etree.fromstring(pagedayforecast)
+            if not use_json_day_forecast:
+                treedayforecast = etree.fromstring(pagedayforecast)
             weather_icon = tree[8].get('icon')
             url = self.wIconUrl + weather_icon + '.png'
             logging.debug('Icon url: ' + url)
