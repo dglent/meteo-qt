@@ -318,12 +318,19 @@ class SystemTrayIcon(QMainWindow):
             self.wIcon = self.updateicon
         if hasattr(self, 'forecast_data'):
             if hasattr(self, 'overviewcity'):
-                # Update also the overview dialog if open
-                if self.overviewcity.isVisible():
-                    # delete dialog to prevent memory leak
-                    self.overviewcity.close()
+                try:
+                    # Update also the overview dialog if open
+                    if self.overviewcity.isVisible():
+                        # delete dialog to prevent memory leak
+                        self.overviewcity.close()
+                        self.instance_overviewcity()
+                        self.overview()
+                except:
+                    # if the dialogue has been closed by the 'X' button
+                    # remove the delelted window object from memory
+                    # RuntimeError: wrapped C/C++ object of type OverviewCity has been deleted
+                    self.remove_object()
                     self.instance_overviewcity()
-                    self.overview()
             elif self.window_visible is True:
                 self.instance_overviewcity()
                 self.overview()
@@ -725,7 +732,7 @@ class Download(QThread):
                 raise urllib.error.HTTPError
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
-                logging.debug('Fetching url for forecast of the day :' +
+                logging.debug('Fetching json url for forecast of the day :' +
                           self.day_forecast_url + self.id_ + self.suffix.replace('xml', 'json'))
                 reqdayforecast = urllib.request.urlopen(
                         self.day_forecast_url + self.id_ +
