@@ -73,7 +73,7 @@
     <message>
         <location filename="../about_dlg.py" line="24"/>
         <source>Contributors</source>
-        <translation>Mitarbeiter</translation>
+        <translation>Mitwirkende</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="42"/>
