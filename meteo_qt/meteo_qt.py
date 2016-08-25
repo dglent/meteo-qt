@@ -411,19 +411,17 @@ class SystemTrayIcon(QMainWindow):
         try:
             wind_codes = tree[4][2].get('code')
             wind_dir_value = tree[4][2].get('value')
+            wind_dir = tree[4][2].get('name')
         except:
             wind_codes = tree[4][1].get('code')
             wind_dir_value = tree[4][1].get('value')
+            wind_dir = tree[4][1].get('name')
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
             logging.debug('Cannot find localisation string for wind_codes:' +
                           str(wind_codes))
             pass
-        try:
-            wind_dir = tree[4][2].get('name')
-        except:
-            wind_dir = tree[4][1].get('name')
         try:
             wind_dir = self.wind_dir[tree[4][2].get('code')]
         except:
