@@ -647,6 +647,8 @@ class SystemTrayIcon(QMainWindow):
             [de] German translation, Project
             <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
             [el] Greek translation
+            <p> juancarlospaco <a href="mailto:JuanCarlosPaco@gmail.com">JuanCarlosPaco@gmail.com</a><br/>
+            [es] Spanish translation, Project
             <p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/>
             [es] Spanish translation
             <p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a><br/>
