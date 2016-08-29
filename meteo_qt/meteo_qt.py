@@ -10,6 +10,7 @@ import logging.handlers
 import os
 import platform
 import re
+import signal
 import sys
 import urllib.request
 from functools import partial
@@ -41,7 +42,11 @@ except:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.9.5"
+__version__ = "0.9.6"
+
+
+signal.signal(signal.SIGINT, signal.SIG_DFL)  # Makes CTRL+C work again on PyQt
+os.nice(19)  # Smooth CPU priority, just like Linux "nice" command.
 
 
 class SystemTrayIcon(QMainWindow):

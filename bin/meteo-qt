@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
 if __name__ == '__main__':
+    import sys
+    import signal
+    sys.dont_write_bytecode = True
+    signal.signal(signal.SIGINT, signal.SIG_DFL)  # Makes CTRL+C work.
     from meteo_qt import meteo_qt
     meteo_qt.main()
