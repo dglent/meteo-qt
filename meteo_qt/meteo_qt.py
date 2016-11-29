@@ -76,23 +76,29 @@ class SystemTrayIcon(QMainWindow):
         self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
         self.citiesMenu = QMenu(self.tr('Cities'))
+        self.panelAction = QAction(QCoreApplication.translate(
+                                "Tray context menu", "Toggle Panel",
+                                "Menu entry"), self)
         self.tempCityAction = QAction(self.tr('&Temporary city'), self)
         self.refreshAction = QAction(self.tr('&Update'), self)
         self.settingsAction = QAction(self.tr('&Settings'), self)
         self.aboutAction = QAction(self.tr('&About'), self)
         self.exitAction = QAction(self.tr('Exit'), self)
+        self.panelAction.setIcon(QIcon(':/panel'))
         self.exitAction.setIcon(QIcon(':/exit'))
         self.aboutAction.setIcon(QIcon(':/info'))
         self.refreshAction.setIcon(QIcon(':/refresh'))
         self.settingsAction.setIcon(QIcon(':/configure'))
         self.tempCityAction.setIcon(QIcon(':/tempcity'))
         self.citiesMenu.setIcon(QIcon(':/bookmarks'))
+        self.menu.addAction(self.panelAction)
         self.menu.addAction(self.settingsAction)
         self.menu.addAction(self.refreshAction)
         self.menu.addMenu(self.citiesMenu)
         self.menu.addAction(self.tempCityAction)
         self.menu.addAction(self.aboutAction)
         self.menu.addAction(self.exitAction)
+        self.panelAction.triggered.connect(self.showpanel)
         self.settingsAction.triggered.connect(self.config)
         self.exitAction.triggered.connect(qApp.quit)
         self.refreshAction.triggered.connect(self.manual_refresh)
@@ -530,6 +536,9 @@ class SystemTrayIcon(QMainWindow):
             for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
                 self.citydata(e)
             self.temporary_city_status = False
+
+    def showpanel(self):
+        self.activate(3)
 
     def activate(self, reason):
         if reason == 3:
