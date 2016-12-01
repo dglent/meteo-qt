@@ -139,6 +139,11 @@ of branch `master`.
 
 Package [meteo-qt](http://madb.mageia.org/package/show/name/meteo-qt/) is providing stable releases.
 
+
+#### Ubuntu
+
+GetDeb is providing a package [meteo-qt](http://www.getdeb.net/app/meteo-qt) for stable releases.
+
 ## Configuration
 
 As of June 2016 users need to use a personal key to access OpenWeatherMap data. OpenWeatherMap is restricting access
