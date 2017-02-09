@@ -65,7 +65,7 @@
         <location filename="../settings.py" line="212"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Connexion par proxy</translation>
     </message>
 </context>
 <context>
@@ -117,7 +117,7 @@
         <location filename="../overview.py" line="483"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"/>
+        <translation>DU</translation>
     </message>
 </context>
 <context>
@@ -167,7 +167,7 @@
         <location filename="../settings.py" line="220"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Configuration</translation>
     </message>
 </context>
 <context>
@@ -502,7 +502,7 @@
         <location filename="../overview.py" line="166"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Ozone</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -523,19 +523,19 @@
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>non</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>pluie</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>neige</translation>
     </message>
 </context>
 <context>
@@ -544,7 +544,7 @@
         <location filename="../overview.py" line="127"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Precipitation</translation>
     </message>
 </context>
 <context>
@@ -553,7 +553,7 @@
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Mot de passe:</translation>
     </message>
 </context>
 <context>
@@ -562,7 +562,7 @@
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>ID Utilisateur :</translation>
     </message>
 </context>
 <context>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"/>
+        <translation>Commencez a entrer la ville...</translation>
     </message>
 </context>
 <context>
@@ -633,19 +633,19 @@
         <location filename="../settings.py" line="181"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Icon &amp; Temperature</translation>
     </message>
     <message>
         <location filename="../settings.py" line="184"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Icon</translation>
     </message>
     <message>
         <location filename="../settings.py" line="187"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Temperature</translation>
     </message>
 </context>
 <context>
@@ -654,7 +654,7 @@
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>La ville existe déjà dans la liste</translation>
     </message>
 </context>
 <context>
@@ -662,7 +662,7 @@
     <message>
         <location filename="../meteo_qt.py" line="567"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;application doit être relancée pour appliquer les modifications</translation>
     </message>
 </context>
 <context>
@@ -783,7 +783,7 @@ sur la barre système.
         <location filename="../settings.py" line="225"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Clef OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -792,7 +792,7 @@ sur la barre système.
         <location filename="../settings.py" line="55"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>L&apos;application doit être redémarrée pour que les changements soient effectifs</translation>
     </message>
 </context>
 <context>
@@ -801,7 +801,7 @@ sur la barre système.
         <location filename="../meteo_qt.py" line="361"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation>Cherche les données climatiques...</translation>
     </message>
 </context>
 <context>
@@ -809,27 +809,27 @@ sur la barre système.
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Bas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="145"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation>Modéré</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Haut</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="150"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation>Très haut</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="152"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation>Extreme</translation>
     </message>
 </context>
 <context>
@@ -838,7 +838,7 @@ sur la barre système.
         <location filename="../overview.py" line="156"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>UV</translation>
     </message>
     <message>
         <location filename="../overview.py" line="161"/>
@@ -863,7 +863,7 @@ sur la barre système.
         <location filename="../settings.py" line="277"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>S.V.P ajoutez une ville</translation>
     </message>
 </context>
 <context>
@@ -872,7 +872,7 @@ sur la barre système.
         <location filename="../settings.py" line="274"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>S.V.P entrez votre clef OpenWeatherMap</translation>
     </message>
 </context>
 <context>

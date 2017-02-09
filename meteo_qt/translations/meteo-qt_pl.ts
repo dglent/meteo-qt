@@ -59,13 +59,13 @@
         <location filename="../proxydlg.py" line="41"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Używaj uwierzytelniania proxy</translation>
     </message>
     <message>
         <location filename="../settings.py" line="212"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Połączenie poprzez proxy</translation>
     </message>
 </context>
 <context>
@@ -117,7 +117,7 @@
         <location filename="../overview.py" line="483"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"/>
+        <translation>DU</translation>
     </message>
 </context>
 <context>
@@ -162,7 +162,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
         <location filename="../settings.py" line="113"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Dokładność temperatury w zasobniku systemowym</translation>
     </message>
 </context>
 <context>
@@ -171,7 +171,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
         <location filename="../settings.py" line="220"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Ustawienia</translation>
     </message>
 </context>
 <context>
@@ -180,7 +180,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
         <location filename="../settings.py" line="228"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Utwórz klucz&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -205,7 +205,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="50"/>
         <source>Click to edit the cities list</source>
-        <translation>Kliknij aby edytować listę miast</translation>
+        <translation>Kliknij, aby edytować listę miast</translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
@@ -315,7 +315,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="79"/>
         <source>Brazil Portuguese</source>
-        <translation>Brazylijski Portugalski</translation>
+        <translation>Portugalski brazylijski</translation>
     </message>
     <message>
         <location filename="../settings.py" line="80"/>
@@ -335,7 +335,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Swedish</source>
-        <translation>Szwecki</translation>
+        <translation>Szwedzki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
@@ -350,12 +350,12 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="86"/>
         <source>Chinese Traditional</source>
-        <translation>Chiński Tradycyjny</translation>
+        <translation>Chiński tradycyjny</translation>
     </message>
     <message>
         <location filename="../settings.py" line="87"/>
         <source>Chinese Simplified</source>
-        <translation>Chiński Uproszczony</translation>
+        <translation>Chiński uproszczony</translation>
     </message>
     <message>
         <location filename="../settings.py" line="104"/>
@@ -395,7 +395,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="168"/>
         <source>Notification on weather update</source>
-        <translation>Powiadomienia aktualizacji pogody</translation>
+        <translation>Powiadomienia o aktualizacji pogody</translation>
     </message>
     <message>
         <location filename="../settings.py" line="281"/>
@@ -489,7 +489,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../overview.py" line="322"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Minimalna/Maksymalna temperatura dnia</translation>
+        <translation>Minimalna/maksymalna temperatura dnia</translation>
     </message>
     <message>
         <location filename="../overview.py" line="425"/>
@@ -508,7 +508,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../overview.py" line="166"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Ozon</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -520,7 +520,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Średnia ilość ozonu w &lt;br/&gt; atmosferze wynosi mniej więcej 300 jednostek Dobsona. Co naukowcy nazywają antarktyczną dziurą ozonową jest obszarem, gdzie koncentracja ozonu spada do średniej wynoszącej około 100 jednostek Dobsona.</translation>
     </message>
 </context>
 <context>
@@ -529,19 +529,19 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>brak</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>deszcz</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="105"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>śnieg</translation>
     </message>
 </context>
 <context>
@@ -550,7 +550,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../overview.py" line="127"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Opady</translation>
     </message>
 </context>
 <context>
@@ -559,7 +559,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../proxydlg.py" line="53"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Hasło:</translation>
     </message>
 </context>
 <context>
@@ -568,7 +568,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../proxydlg.py" line="50"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>ID użytkownika:</translation>
     </message>
 </context>
 <context>
@@ -576,7 +576,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"/>
+        <translation>Zacznij wpisywać nazwę miasta...</translation>
     </message>
 </context>
 <context>
@@ -633,25 +633,25 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona w zasobniku systemowym</translation>
     </message>
     <message>
         <location filename="../settings.py" line="181"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona i temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="184"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona</translation>
     </message>
     <message>
         <location filename="../settings.py" line="187"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Temperatura</translation>
     </message>
 </context>
 <context>
@@ -660,7 +660,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../citylistdlg.py" line="70"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>To miasto jest już na liście</translation>
     </message>
 </context>
 <context>
@@ -668,7 +668,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../meteo_qt.py" line="567"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation>Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
     </message>
 </context>
 <context>
@@ -766,12 +766,12 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
         <translation>&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Prosta aplikacja pokazująca informacje pogodowe w trayu systemowym.
+                        &lt;p&gt;Prosta aplikacja pokazująca informacje pogodowe w zasobniku systemowym.
                         &lt;p&gt;Strona www: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
                         &lt;br/&gt;Źródło danych: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;TProgram używa ikon z 
+                        &lt;br/&gt;Ten program używa ikon z 
                         &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
                         &lt;p&gt;Aby przetłumaczyć meteo-qt na swój język lub poprawić tłumaczenie skorzystaj z 
                         &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
@@ -786,7 +786,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="225"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Klucz OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -795,7 +795,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="55"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
     </message>
 </context>
 <context>
@@ -804,7 +804,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="361"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation>Wyszukiwanie informacji o pogodzie...</translation>
     </message>
 </context>
 <context>
@@ -868,7 +868,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../settings.py" line="277"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Proszę dodać miasto</translation>
     </message>
 </context>
 <context>
@@ -877,7 +877,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../settings.py" line="274"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Proszę wprowadzić swój klucz OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -965,17 +965,17 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation>Marznąca mżawka</translation>
+        <translation>marznąca mżawka</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>Marznąca mżawka</translation>
+        <translation>marznąca mżawka</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation>Marznąca mżawka</translation>
+        <translation>marznąca mżawka</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="27"/>
@@ -1005,7 +1005,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation>Marznący deszcz</translation>
+        <translation>marznący deszcz</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="33"/>
@@ -1105,7 +1105,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation>pasiek</translation>
+        <translation>piasek</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
@@ -1404,7 +1404,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../searchcity.py" line="208"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Błąd danych, spróbuj ponownie poźniej lub zmień nazwę miasta</translation>
+        <translation>Błąd danych, spróbuj ponownie później lub zmień nazwę miasta</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="229"/>
@@ -1420,7 +1420,7 @@ or modify the name of the city</source>
         <location filename="../searchcity.py" line="238"/>
         <source>
 Try again later</source>
-        <translation>Spróbuj ponownie poźniej</translation>
+        <translation>Spróbuj ponownie później</translation>
     </message>
 </context>
 </TS>
