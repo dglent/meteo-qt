@@ -60,10 +60,19 @@ class OverviewCity(QDialog):
         self.over_layout = QVBoxLayout()
         self.dayforecast_layout = QHBoxLayout()
         self.dayforecast_temp_layout = QHBoxLayout()
-        # ---------------------------------
-        self.city_label = QLabel(
-            '<font size="4"><b>' + self.weatherdata['City'] + ',  ' +
-            self.weatherdata['Country']+'<\b><\font>')
+        # Check for city translation
+        cities_trans = self.settings.value('CitiesTranslation') or '{}'
+        cities_trans_dict = eval(cities_trans)
+        city_notrans = (self.weatherdata['City'] + '_' +
+                        self.weatherdata['Country'] + '_' +
+                        self.weatherdata['Id'])
+        if city_notrans in cities_trans_dict:
+            city_label = cities_trans_dict[city_notrans]
+        else:
+            city_label = (self.weatherdata['City'] + ',  ' +
+                          self.weatherdata['Country'])
+        self.city_label = QLabel('<font size="4"><b>' +
+                                 city_label + '<\b><\font>')
         self.over_layout.addWidget(self.city_label)
         self.icontemp_layout = QHBoxLayout()
         self.icon_label = QLabel()

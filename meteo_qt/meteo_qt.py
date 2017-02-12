@@ -141,6 +141,8 @@ class SystemTrayIcon(QMainWindow):
             return
         self.citiesMenu.clear()
         cities = self.settings.value('CityList') or []
+        cities_trans = self.settings.value('CitiesTranslation') or '{}'
+        cities_trans_dict = eval(cities_trans)
         if type(cities) is str:
             cities = eval(cities)
         try:
@@ -148,7 +150,7 @@ class SystemTrayIcon(QMainWindow):
                         self.settings.value('Country') + '_' +
                         self.settings.value('ID'))
         except:
-            # firsttime run,if clic cancel in setings without any city configured
+            # firsttime run,if clic cancel in settings without any city configured
             pass
         # Prevent duplicate entries
         try:
@@ -166,6 +168,8 @@ class SystemTrayIcon(QMainWindow):
                 cities = eval(cities)
             # Create the cities list menu
             for city in cities:
+                if city in cities_trans_dict:
+                    city = cities_trans_dict[city]
                 action = QAction(city, self)
                 action.triggered.connect(partial(self.changecity, city))
                 self.citiesMenu.addAction(action)
@@ -175,6 +179,8 @@ class SystemTrayIcon(QMainWindow):
     @pyqtSlot(str)
     def changecity(self, city):
         cities_list = self.settings.value('CityList')
+        cities_trans = self.settings.value('CitiesTranslation') or '{}'
+        self.cities_trans_dict = eval(cities_trans)
         logging.debug('Cities' + str(cities_list))
         if cities_list is None:
             self.empty_cities_list()
@@ -187,7 +193,7 @@ class SystemTrayIcon(QMainWindow):
         citytoset = ''
         # Set the chosen city as the default
         for town in cities_list:
-            if town == city:
+            if town == self.find_city_key(city):
                 ind = cities_list.index(town)
                 citytoset = cities_list[ind]
                 citytosetlist = citytoset.split('_')
@@ -199,6 +205,12 @@ class SystemTrayIcon(QMainWindow):
                 self.settings.setValue('CityList', cities_list)
                 logging.debug(cities_list)
         self.refresh()
+
+    def find_city_key(self, city):
+        for key,value in self.cities_trans_dict.items():
+            if value == city:
+                return key
+        return city
 
     def empty_cities_list(self):
         self.citiesMenu.addAction(self.tr('Empty list'))
@@ -438,6 +450,7 @@ class SystemTrayIcon(QMainWindow):
                                   self.temp_decimal + ' ' + self.meteo)
         self.tooltip_weather()
         self.notification = self.city_weather_info
+        self.weatherDataDico['Id'] = self.id_
         self.weatherDataDico['City'] = self.city
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
@@ -460,6 +473,16 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
 
     def tooltip_weather(self):
+        trans_cities = self.settings.value('CitiesTranslation') or '{}'
+        trans_cities_dict = eval(trans_cities)
+        city = self.city + '_' + self.country + '_' + self.id_
+        if city in trans_cities_dict:
+            self.city_weather_info = (trans_cities_dict[city] +
+                                      ' ' + self.temp_decimal +
+                                      ' ' + self.meteo)
+        else:
+            self.city_weather_info = (self.city + ' ' + self.country + ' ' +
+                                  self.temp_decimal + ' ' + self.meteo)
         self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):

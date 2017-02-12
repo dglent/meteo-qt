@@ -22,10 +22,12 @@ class MeteoSettings(QDialog):
 
     def __init__(self, accurate_url, appid, parent=None):
         super(MeteoSettings, self).__init__(parent)
+        self.settings = QSettings()
+        trans_cities_dict = self.settings.value('CitiesTranslation') or '{}'
+        self.trans_cities_dict = eval(trans_cities_dict)
         self.layout = QVBoxLayout()
         self.accurate_url = accurate_url
         self.appid = appid
-        self.settings = QSettings()
         self.set_city = self.settings.value('City') or '?'
         locale = QLocale.system().name()
         locale_long = ['pt_BR', 'zh_CN', 'zh_TW']
@@ -216,7 +218,7 @@ class MeteoSettings(QDialog):
         self.proxy_chbox.stateChanged.connect(self.proxy)
         self.proxy_changed = False
         self.proxy_button = QPushButton(QCoreApplication.translate(
-            'Label of button to open the proxy dialogue','Settings','Settings dialogue'))
+            'Label of button to open the proxy dialogue', 'Settings', 'Settings dialogue'))
         self.proxy_button.clicked.connect(self.proxy_settings)
         self.proxy_button.setEnabled(self.proxy_bool)
         # Openweathermap key
@@ -287,14 +289,21 @@ class MeteoSettings(QDialog):
 
     def city_default(self):
         allitems = [self.city_combo.itemText(i) for i in range(self.city_combo.count())]
+        allitems_not_translated = []
+        for i in allitems:
+            allitems_not_translated.append(self.find_city_key(i))
         city_name = self.city_combo.currentText()
+        city_name = self.find_city_key(city_name)
         citytosave = city_name.split('_')
+        # This self variable will serve to check if a translation
+        # exist for the current city when quitting
+        self.citytosave = '_'.join(citytosave)
         if len(citytosave) < 3:
             return
         self.id_before = citytosave[2]
         self.city_before = citytosave[0]
         self.country_before = citytosave[1]
-        self.city_list_before = allitems[:]
+        self.city_list_before = allitems_not_translated[:]
         self.city_list_before.pop(self.city_list_before.index(city_name))
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
@@ -309,9 +318,13 @@ class MeteoSettings(QDialog):
             self.statusbar.setText(self.nokey_message)
             return
         dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url,
-                                         apiid, self)
+                                         apiid, self.trans_cities_dict, self)
         dialog.citieslist_signal.connect(self.cities_list)
+        dialog.citiesdict_signal.connect(self.cities_dict)
         dialog.exec_()
+
+    def cities_dict(self, cit_dict):
+        self.trans_cities_dict = cit_dict
 
     def cities_list(self, cit_list):
         if len(cit_list) > 0:
@@ -439,7 +452,26 @@ class MeteoSettings(QDialog):
     def apply_settings(self):
         self.accepted()
 
+    def clear_translations(self):
+        ''' Save the list of the current cities list
+            and remove the odd or blank translations'''
+        cities = self.citylist
+        if hasattr(self, 'city_list_before'):
+            self.settings.setValue('CityList', str(self.city_list_before))
+            logging.debug('write ' + 'CityList ' + str(self.city_list_before))
+            cities = self.city_list_before
+            cities.append(self.citytosave)
+        translations_to_delete = []
+        for key, value in self.trans_cities_dict.items():
+            if key == value or value == '' or key not in cities:
+                translations_to_delete.append(key)
+        for i in translations_to_delete:
+            del self.trans_cities_dict[i]
+        self.settings.setValue('CitiesTranslation', str(self.trans_cities_dict))
+        logging.debug('write ' + 'CitiesTranslation ' + str(self.trans_cities_dict))
+
     def accepted(self):
+        self.clear_translations()
         apikey = self.owmkey_text.text()
         city_name = self.city_combo.currentText()
         if apikey == '':
@@ -463,9 +495,6 @@ class MeteoSettings(QDialog):
         if hasattr(self, 'country_before'):
             self.settings.setValue('Country', self.country_before)
             logging.debug('write ' + 'Country' + str(self.country_before))
-        if hasattr(self, 'city_list_before'):
-            self.settings.setValue('CityList', str(self.city_list_before))
-            logging.debug('write ' + 'CityList' + str(self.city_list_before))
         if hasattr(self, 'color_before'):
             self.settings.setValue('TrayColor', self.color_before)
             if self.color_before == '':
@@ -545,7 +574,16 @@ class MeteoSettings(QDialog):
             if i not in duplicate:
                 duplicate.append(i)
         self.citylist = duplicate[:]
-        self.city_combo.addItems(self.citylist)
+        self.translated = []
+        for city in self.citylist:
+            self.translated.append(self.trans_cities_dict.get(city, city))
+        self.city_combo.addItems(self.translated)
         if len(list_cities) > 0:
             maxi = len(max(list_cities, key=len))
             self.city_combo.setMinimumSize(maxi*8, 23)
+
+    def find_city_key(self, city):
+        for key, value in self.trans_cities_dict.items():
+            if value == city:
+                return key
+        return city

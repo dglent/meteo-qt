@@ -1,23 +1,32 @@
-from PyQt5.QtCore import QCoreApplication, Qt, pyqtSignal
+from PyQt5.QtCore import QCoreApplication, Qt, QSettings, pyqtSignal
 from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
                              QListWidget, QPushButton, QVBoxLayout)
 
 try:
     import searchcity
+    import citytranslate
 except:
     from meteo_qt import searchcity
+    from meteo_qt import citytranslate
 
 
 class CityListDlg(QDialog):
     citieslist_signal = pyqtSignal([list])
+    citiesdict_signal = pyqtSignal([dict])
 
-    def __init__(self, citylist, accurate_url, appid, parent=None):
+    def __init__(self, citylist, accurate_url, appid, trans_cities_dict, parent=None):
         super(CityListDlg, self).__init__(parent)
+        self.settings = QSettings()
         self.citylist = citylist
+        self.trans_cities_dict = trans_cities_dict
         self.accurate_url = accurate_url
         self.appid = appid
         self.listWidget = QListWidget()
-        self.listWidget.addItems(self.citylist)
+        self.listWidget.itemDoubleClicked.connect(self.translate)
+        cities_list = []
+        for i in self.citylist:
+            cities_list.append(self.trans_cities_dict.get(i, i))
+        self.listWidget.addItems(cities_list)
         buttonLayout = QVBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
@@ -38,6 +47,10 @@ class CityListDlg(QDialog):
             button = QPushButton(text)
             buttonLayout.addWidget(button)
             button.clicked.connect(slot)
+        self.translate_button = QPushButton(QCoreApplication.translate('Button',
+                                    '&Translate', 'Edit cities dialogue'))
+        buttonLayout.addWidget(self.translate_button)
+        self.translate_button.clicked.connect(self.translate)
         buttonLayout.addWidget(self.buttonBox)
         self.status = QLabel()
         layoutT.addLayout(layout)
@@ -127,9 +140,35 @@ class CityListDlg(QDialog):
             return
         self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
 
+    def translate(self):
+        city = self.listWidget.currentItem().text()
+        dialog = citytranslate.CityTranslate(city, self.trans_cities_dict, self)
+        dialog.city_signal.connect(self.current_translation)
+        if dialog.exec_() == 1:
+            row = self.listWidget.currentRow()
+            item = self.listWidget.takeItem(row)
+            del item
+            self.listWidget.insertItem(row, self.current_translated_city)
+            self.listWidget.setCurrentRow(row)
+
+    def current_translation(self, translated_city):
+        for city,translated in translated_city.items():
+            if translated == '':
+                translated = city
+            self.trans_cities_dict[city] = translated
+            self.current_translated_city = translated
+
     def accept(self):
         listtosend = []
         for row in range(self.listWidget.count()):
-            listtosend.append(self.listWidget.item(row).text())
+            city = self.find_city_key(self.listWidget.item(row).text())
+            listtosend.append(city)
         self.citieslist_signal[list].emit(listtosend)
+        self.citiesdict_signal[dict].emit(self.trans_cities_dict)
         QDialog.accept(self)
+
+    def find_city_key(self, city):
+        for key,value in self.trans_cities_dict.items():
+            if value == city:
+                return key
+        return city
