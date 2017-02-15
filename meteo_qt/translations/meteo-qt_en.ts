@@ -794,8 +794,8 @@
     <name>Tray context menu</name>
     <message>
         <location filename="../meteo_qt.py" line="81"/>
-        <source>Toggle Panel</source>
-        <comment>Menu entry</comment>
+        <source>Toggle Window</source>
+        <comment>Open/closes the application window</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
