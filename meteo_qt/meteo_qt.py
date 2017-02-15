@@ -77,8 +77,8 @@ class SystemTrayIcon(QMainWindow):
         self.menu = QMenu()
         self.citiesMenu = QMenu(self.tr('Cities'))
         self.panelAction = QAction(QCoreApplication.translate(
-                                "Tray context menu", "Toggle Panel",
-                                "Menu entry"), self)
+                                "Tray context menu", "Toggle Window",
+                                "Open/closes the application window"), self)
         self.tempCityAction = QAction(self.tr('&Temporary city'), self)
         self.refreshAction = QAction(self.tr('&Update'), self)
         self.settingsAction = QAction(self.tr('&Settings'), self)
