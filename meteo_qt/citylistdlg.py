@@ -95,8 +95,11 @@ class CityListDlg(QDialog):
 
     def remove(self):
         self.status.setText('')
-        if self.listWidget.count() == 0:
-            self.status.setText(self.tr('The list is empty'))
+        if self.listWidget.count() == 1:
+            self.status.setText(QCoreApplication.translate(
+                    'Message when trying to remove the last and unique city in the list',
+                    'This is the default city !',
+                    'Cities list dialogue'))
             return
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)
@@ -163,6 +166,8 @@ class CityListDlg(QDialog):
         for row in range(self.listWidget.count()):
             city = self.find_city_key(self.listWidget.item(row).text())
             listtosend.append(city)
+        if self.listWidget.count() == 0:
+            return
         self.citieslist_signal[list].emit(listtosend)
         self.citiesdict_signal[dict].emit(self.trans_cities_dict)
         QDialog.accept(self)

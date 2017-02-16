@@ -459,8 +459,12 @@ class MeteoSettings(QDialog):
         if hasattr(self, 'city_list_before'):
             self.settings.setValue('CityList', str(self.city_list_before))
             logging.debug('write ' + 'CityList ' + str(self.city_list_before))
-            cities = self.city_list_before
-            cities.append(self.citytosave)
+            try:
+                cities = eval(self.city_list_before)
+                cities.append(self.citytosave)
+            except:
+                logging.debug('Empty cities list, default city: ' + str(cities))
+                pass
         translations_to_delete = []
         for key, value in self.trans_cities_dict.items():
             if key == value or value == '' or key not in cities:
