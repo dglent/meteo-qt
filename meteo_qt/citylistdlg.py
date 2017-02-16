@@ -136,12 +136,8 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentItem(item)
 
     def checklength(self):
-        listtosend = []
-        for row in range(self.listWidget.count()):
-            listtosend.append(self.listWidget.item(row).text())
-        if len(listtosend) == 0:
-            return
-        self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
+        if self.listWidget.count() == 0:
+            self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
 
     def translate(self):
         city = self.listWidget.currentItem().text()
