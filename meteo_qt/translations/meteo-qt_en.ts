@@ -113,12 +113,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
-        <source>The list is empty</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../citylistdlg.py" line="109"/>
+        <location filename="../citylistdlg.py" line="112"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -198,6 +193,15 @@
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Message when trying to remove the last and unique city in the list</name>
+    <message>
+        <location filename="../citylistdlg.py" line="103"/>
+        <source>This is the default city !</source>
+        <comment>Cities list dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
