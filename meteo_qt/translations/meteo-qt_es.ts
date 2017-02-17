@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="es" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -35,7 +34,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -62,7 +61,7 @@
         <location filename="../citylistdlg.py" line="50"/>
         <source>&amp;Translate</source>
         <comment>Edit cities dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -71,13 +70,13 @@
         <location filename="../proxydlg.py" line="38"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="213"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -113,12 +112,7 @@
         <translation>&amp;Organizar</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
-        <source>The list is empty</source>
-        <translation>La lista está vacía</translation>
-    </message>
-    <message>
-        <location filename="../citylistdlg.py" line="109"/>
+        <location filename="../citylistdlg.py" line="112"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>La ciudad &quot;{0}&quot; ha sido eliminada</translation>
     </message>
@@ -129,7 +123,7 @@
         <location filename="../overview.py" line="554"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -144,43 +138,23 @@
 <context>
     <name>Extreme UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="170"/>
-        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
-                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
-                                    </source>
-        <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Tome todas las precauciones: Use protector solar SPF 30+, pantalones y camisa de mangas largas,&lt;br/&gt;
-                                    gafas de sol, y un sombrero de alas anchas. Evite la exposición al sol dentro de las 3 horas del mediodía.
-                                    </translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="182"/>
         <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>High UV recommended protection</name>
-    <message>
-        <location filename="../conditions.py" line="163"/>
-        <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
-                                    wear a hat, reduce time in the sun within three hours of solar noon,
-                                    and wear sunglasses.</source>
-        <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Cubrir el cuerpo con ropa protectora del sol, use protector solar SPF 30+,&lt;br/&gt;
-                                    use un sombrero, reduzca el tiempo de exposición al sol en las 3 horas del mediodía,
-                                    y use gafas de sol.</translation>
-    </message>
     <message>
         <location filename="../conditions.py" line="171"/>
         <source>Cover the body with sun protective clothing, use SPF 30+
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -189,7 +163,7 @@
         <location filename="../settings.py" line="114"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -198,7 +172,7 @@
         <location filename="../settings.py" line="221"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -207,28 +181,27 @@
         <location filename="../settings.py" line="229"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Low UV recommended protection</name>
-    <message>
-        <location filename="../conditions.py" line="155"/>
-        <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
-                                    the ground, which reflects UV radiation, or if you have particularly
-                                    fair skin.</source>
-        <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Use gafas de sol en días brillantes;usar protector solar si hay nieve&lt;br/&gt;
-                                    en el suelo, la que refleja la radiación UV, o si tiene una piel
-                                    muy blanca.</translation>
-    </message>
     <message>
         <location filename="../conditions.py" line="159"/>
         <source>Wear sunglasses on bright days; use sunscreen if there is
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Message when trying to remove the last and unique city in the list</name>
+    <message>
+        <location filename="../citylistdlg.py" line="103"/>
+        <source>This is the default city !</source>
+        <comment>Cities list dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -442,20 +415,12 @@
 <context>
     <name>Moderate UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="159"/>
-        <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
-                                    Stay in shade near midday when the sun is strongest.</source>
-        <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Tome precauciones, tales como cubrirse, si va a estar fuera.&lt;br/&gt;
-                                    Permanecer en la sombra cerca del mediodía cuando el sol es más fuerte.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="165"/>
         <source>Take precautions, such as covering up, if you will be
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -552,7 +517,7 @@
         <location filename="../overview.py" line="174"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -564,7 +529,7 @@
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -573,19 +538,19 @@
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">lluvia</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">nevada</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -594,7 +559,7 @@
         <location filename="../overview.py" line="135"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -603,7 +568,7 @@
         <location filename="../proxydlg.py" line="51"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -612,7 +577,7 @@
         <location filename="../proxydlg.py" line="47"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -620,7 +585,7 @@
     <message>
         <location filename="../searchcity.py" line="31"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -677,25 +642,25 @@
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="182"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="185"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../settings.py" line="188"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -704,7 +669,7 @@
         <location filename="../citylistdlg.py" line="82"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -712,7 +677,7 @@
     <message>
         <location filename="../meteo_qt.py" line="615"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -833,7 +798,7 @@
         <location filename="../settings.py" line="226"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -842,16 +807,16 @@
         <location filename="../settings.py" line="56"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Tray context menu</name>
     <message>
         <location filename="../meteo_qt.py" line="81"/>
-        <source>Toggle Panel</source>
-        <comment>Menu entry</comment>
-        <translation type="unfinished"></translation>
+        <source>Toggle Window</source>
+        <comment>Open/closes the application window</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -860,7 +825,7 @@
         <location filename="../meteo_qt.py" line="389"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -909,19 +874,11 @@
 <context>
     <name>Very high UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="167"/>
-        <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
-                                    Do not stay in the sun for too long.</source>
-        <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Use protector solar SPF 30+, una camisa, gafas de sol y un sombrero de ala ancha. &lt;br/&gt;
-                                     No no permanezca al sol por mucho tiempo.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="177"/>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -930,7 +887,7 @@
         <location filename="../settings.py" line="278"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -939,7 +896,7 @@
         <location filename="../settings.py" line="275"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

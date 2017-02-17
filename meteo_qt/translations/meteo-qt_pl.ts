@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="pl" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -35,7 +34,7 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -62,7 +61,7 @@
         <location filename="../citylistdlg.py" line="50"/>
         <source>&amp;Translate</source>
         <comment>Edit cities dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -113,12 +112,7 @@
         <translation>&amp;Sortuj</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
-        <source>The list is empty</source>
-        <translation>Lista jest pusta</translation>
-    </message>
-    <message>
-        <location filename="../citylistdlg.py" line="109"/>
+        <location filename="../citylistdlg.py" line="112"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>Miasto &quot;{0}&quot; zostało usunięte</translation>
     </message>
@@ -145,43 +139,23 @@
 <context>
     <name>Extreme UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="170"/>
-        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
-                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
-                                    </source>
-        <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Zalecenia: Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Unikaj słońca co najmniej trzy godziny po południu.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="182"/>
         <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>High UV recommended protection</name>
-    <message>
-        <location filename="../conditions.py" line="163"/>
-        <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
-                                    wear a hat, reduce time in the sun within three hours of solar noon,
-                                    and wear sunglasses.</source>
-        <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw słoneczne.</translation>
-    </message>
     <message>
         <location filename="../conditions.py" line="171"/>
         <source>Cover the body with sun protective clothing, use SPF 30+
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -214,21 +188,21 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
 <context>
     <name>Low UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="155"/>
-        <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
-                                    the ground, which reflects UV radiation, or if you have particularly
-                                    fair skin.</source>
-        <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Noś okulary przeciw słoneczne w intensywnie słoneczne dni. &lt;br/&gt;
-Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="159"/>
         <source>Wear sunglasses on bright days; use sunscreen if there is
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Message when trying to remove the last and unique city in the list</name>
+    <message>
+        <location filename="../citylistdlg.py" line="103"/>
+        <source>This is the default city !</source>
+        <comment>Cities list dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -442,20 +416,12 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Moderate UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="159"/>
-        <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
-                                    Stay in shade near midday when the sun is strongest.</source>
-        <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Zalecenia: chroń się przed słońcem pod cieniem budynków/drzew będąc na zewnątrz. &lt;br/&gt;
-</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="165"/>
         <source>Take precautions, such as covering up, if you will be
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -846,9 +812,9 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <name>Tray context menu</name>
     <message>
         <location filename="../meteo_qt.py" line="81"/>
-        <source>Toggle Panel</source>
-        <comment>Menu entry</comment>
-        <translation type="unfinished"></translation>
+        <source>Toggle Window</source>
+        <comment>Open/closes the application window</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -906,20 +872,11 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Very high UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="167"/>
-        <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
-                                    Do not stay in the sun for too long.</source>
-        <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Nie przebywaj zbyt długo na słońcu.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="177"/>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

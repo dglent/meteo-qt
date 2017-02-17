@@ -1,68 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="639"/>
-        <source>
-            Pavel Fric&lt;br/&gt;
-            [cs] Czech translation
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation, Project
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukrainian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation type="obsolete">
-Pavel Fric&lt;br/&gt;
-            [cs] переклад чеською
-Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] переклад німецькою
- &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-          [de] переклад німецькою, проект
-           &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] переклад грецькою
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] переклад іспанською
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-[fr] Переклад французькою
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] переклад французькою, проект
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] переклад польською
- Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-[pl] переклад польською
-           &lt;p&gt;Артем Воротніков &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-[ru] переклад російською
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-[tr] переклад турецькою
-&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] переклад українською
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] переклад китайською (традиційною)
-            &lt;p&gt;pmav99&lt;br/&gt;
-            проект</translation>
-    </message>
     <message encoding="UTF-8">
         <location filename="../meteo_qt.py" line="687"/>
         <source>
@@ -96,7 +34,36 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"></translation>
+        <translation>
+Pavel Fric&lt;br/&gt;
+            [cs] переклад чеською
+Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] переклад німецькою
+ &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
+          [de] переклад німецькою, проект
+           &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] переклад грецькою
+&lt;p&gt;juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;
+[es] переклад іспанською, проект
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] переклад іспанською
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+[fr] Переклад французькою
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] переклад французькою, проект
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+ Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
+[pl] переклад польською
+           &lt;p&gt;Артем Воротніков &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+[ru] переклад російською
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+[tr] переклад турецькою
+&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] переклад українською
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] переклад китайською (традиційною)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            проект</translation>
     </message>
 </context>
 <context>
@@ -123,7 +90,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../citylistdlg.py" line="50"/>
         <source>&amp;Translate</source>
         <comment>Edit cities dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>П&amp;ерекласти</translation>
     </message>
 </context>
 <context>
@@ -174,12 +141,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <translation>&amp;Упорядкувати</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
-        <source>The list is empty</source>
-        <translation>Список є порожнім</translation>
-    </message>
-    <message>
-        <location filename="../citylistdlg.py" line="109"/>
+        <location filename="../citylistdlg.py" line="112"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>Запис міста «{0}» вилучено</translation>
     </message>
@@ -206,43 +168,24 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Extreme UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="170"/>
-        <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved shirt and trousers,&lt;br/&gt;
-                                    sunglasses, and a very broad hat. Avoid the sun within three hours of solar noon.
-                                    </source>
-        <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Вживіть усіх запобіжних заходів: скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку із довгими рукавами та штани,&lt;br/&gt;
-                                    сонячні окуляри та капелюха із широкими крисами. Уникайте перебування на сонці протягом трьох полуденних годин.
-                                    </translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="182"/>
         <source>Take all precautions: Wear SPF 30+ sunscreen, a long-sleeved
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Вживіть усіх запобіжних заходів: скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку із довгими рукавами та штани,&lt;br/&gt;сонячні окуляри та капелюха із широкими крисами. Уникайте перебування на сонці протягом трьох полуденних годин.
+                                    </translation>
     </message>
 </context>
 <context>
     <name>High UV recommended protection</name>
-    <message>
-        <location filename="../conditions.py" line="163"/>
-        <source>Cover the body with sun protective clothing, use SPF 30+ sunscreen,&lt;br/&gt;
-                                    wear a hat, reduce time in the sun within three hours of solar noon,
-                                    and wear sunglasses.</source>
-        <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Вдягніть сонцезахисний одяг, скористайтеся сонцезахисним кремом SPF 30+,&lt;br/&gt;
-                                    вдягніть капелюха, зменшіть час перебування на сонці протягом трьох полуденних годин і
-                                    вдягніть сонцезахисні окуляри.</translation>
-    </message>
     <message>
         <location filename="../conditions.py" line="171"/>
         <source>Cover the body with sun protective clothing, use SPF 30+
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Вдягніть сонцезахисний одяг, скористайтеся сонцезахисним кремом SPF 30+,&lt;br/&gt;вдягніть капелюха, зменшіть час перебування на сонці протягом трьох полуденних годин і вдягніть сонцезахисні окуляри.</translation>
     </message>
 </context>
 <context>
@@ -275,22 +218,21 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Low UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="155"/>
-        <source>Wear sunglasses on bright days; use sunscreen if there is snow on&lt;br/&gt;
-                                    the ground, which reflects UV radiation, or if you have particularly
-                                    fair skin.</source>
-        <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Носіть сонцезахисні окуляри протягом світлих годин доби; скористайтеся сонцезахисним кремом, якщо лежить на землі сніг,&lt;br/&gt;
-                                    який відбиває ультрафіолетове випромінювання, або якщо маєте надто
-                                    чутливу шкіру.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="159"/>
         <source>Wear sunglasses on bright days; use sunscreen if there is
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Носіть сонцезахисні окуляри протягом світлих годин доби; скористайтеся сонцезахисним кремом, якщо лежить на землі сніг,&lt;br/&gt;який відбиває ультрафіолетове випромінювання, або якщо маєте надто чутливу шкіру.</translation>
+    </message>
+</context>
+<context>
+    <name>Message when trying to remove the last and unique city in the list</name>
+    <message>
+        <location filename="../citylistdlg.py" line="103"/>
+        <source>This is the default city !</source>
+        <comment>Cities list dialogue</comment>
+        <translation>Це місто є типовим!</translation>
     </message>
 </context>
 <context>
@@ -504,20 +446,12 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Moderate UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="159"/>
-        <source>Take precautions, such as covering up, if you will be outside.&lt;br/&gt;
-                                    Stay in shade near midday when the sun is strongest.</source>
-        <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Вживіть запобіжних заходів: вдягніться, якщо виходитимете на відкрите сонце.&lt;br/&gt;
-Залишайтеся у затінку опівдні, коли промені сонця є найяскравішими.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="165"/>
         <source>Take precautions, such as covering up, if you will be
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Вживіть запобіжних заходів: вдягніться, якщо виходитимете на відкрите сонце.&lt;br/&gt;Залишайтеся у затінку опівдні, коли промені сонця є найяскравішими.</translation>
     </message>
 </context>
 <context>
@@ -908,9 +842,9 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
     <name>Tray context menu</name>
     <message>
         <location filename="../meteo_qt.py" line="81"/>
-        <source>Toggle Panel</source>
-        <comment>Menu entry</comment>
-        <translation type="unfinished"></translation>
+        <source>Toggle Window</source>
+        <comment>Open/closes the application window</comment>
+        <translation>Увімкнути або вимкнути вікно</translation>
     </message>
 </context>
 <context>
@@ -968,19 +902,11 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Very high UV recommended protection</name>
     <message>
-        <location filename="../conditions.py" line="167"/>
-        <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a wide-brimmed hat.&lt;br/&gt;
-                                    Do not stay in the sun for too long.</source>
-        <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="obsolete">Скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку, сонячні окуляри та капелюха із широкими крисами.&lt;br/&gt;
-                                    Не залишайтеся на сонці надто довго.</translation>
-    </message>
-    <message>
         <location filename="../conditions.py" line="177"/>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку, сонячні окуляри та капелюха із широкими крисами.&lt;br/&gt;Не залишайтеся на сонці надто довго.</translation>
     </message>
 </context>
 <context>
