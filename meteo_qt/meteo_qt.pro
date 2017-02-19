@@ -1,6 +1,6 @@
 SOURCES         += about_dlg.py \
                    citylistdlg.py \
-                   citytranslate \
+                   citytranslate.py \
                    conditions.py \
                    meteo_qt.py \
                    overview.py \

@@ -1,8 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="nl" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="687"/>
+        <location filename="../meteo_qt.py" line="689"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -157,7 +158,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="824"/>
+        <location filename="../meteo_qt.py" line="826"/>
         <source>Error :
 </source>
         <translation>Fout:
@@ -717,7 +718,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="615"/>
+        <location filename="../meteo_qt.py" line="617"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>De applicatie moet worden herstart om de gewijzigde taalinstelling toe te passen</translation>
     </message>
@@ -730,67 +731,67 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <translation>Steden</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="84"/>
+        <location filename="../meteo_qt.py" line="89"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Tijdelijke stad</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="85"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;Update</source>
         <translation>&amp;Bijwerken</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="86"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>&amp;Settings</source>
         <translation>&amp;Instellingen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="87"/>
+        <location filename="../meteo_qt.py" line="92"/>
         <source>&amp;About</source>
         <translation>&amp;Over</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="88"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>Exit</source>
         <translation>Afsluiten</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="115"/>
         <source>Searching weather data...</source>
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="222"/>
+        <location filename="../meteo_qt.py" line="224"/>
         <source>Empty list</source>
         <translation>Lijst leegmaken</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="242"/>
+        <location filename="../meteo_qt.py" line="244"/>
         <source>Fetching weather data ...</source>
         <translation>Bezig met ophalen van weergegevens ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="260"/>
+        <location filename="../meteo_qt.py" line="262"/>
         <source>No city configured</source>
         <translation>Geen ingestelde stad</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>No city has been configured yet.</source>
         <translation>Er is nog geen stad ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klik met de rechtermuisknop op het pictogram en daarna op Instellingen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="656"/>
+        <location filename="../meteo_qt.py" line="658"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="664"/>
+        <location filename="../meteo_qt.py" line="666"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -799,7 +800,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="670"/>
+        <location filename="../meteo_qt.py" line="672"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -855,7 +856,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="81"/>
+        <location filename="../meteo_qt.py" line="83"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Venster in-/uitschakelen</translation>
@@ -864,7 +865,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="389"/>
+        <location filename="../meteo_qt.py" line="391"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
@@ -940,6 +941,15 @@ een breed gevoerde hoed. Spendeer niet teveel tijd in de zon.</translation>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Voer uw OpenWeatherMap-sleutel in</translation>
+    </message>
+</context>
+<context>
+    <name>Warning message in dialog status bar</name>
+    <message>
+        <location filename="../citytranslate.py" line="51"/>
+        <source>The city allready exist</source>
+        <comment>City translation</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1458,6 +1468,15 @@ een breed gevoerde hoed. Spendeer niet teveel tijd in de zon.</translation>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
         <translation>WNW</translation>
+    </message>
+</context>
+<context>
+    <name>Window title</name>
+    <message>
+        <location filename="../citytranslate.py" line="37"/>
+        <source>City translation</source>
+        <comment>City translation dialog</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

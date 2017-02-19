@@ -1,8 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="687"/>
+        <location filename="../meteo_qt.py" line="689"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -158,7 +159,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="824"/>
+        <location filename="../meteo_qt.py" line="826"/>
         <source>Error :
 </source>
         <translation>Помилка:
@@ -706,7 +707,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="615"/>
+        <location filename="../meteo_qt.py" line="617"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Для застосування перекладу програму слід перезапустити</translation>
     </message>
@@ -719,67 +720,67 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <translation>Міста</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="84"/>
+        <location filename="../meteo_qt.py" line="89"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Тимчасове місто</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="85"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;Update</source>
         <translation>&amp;Оновити</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="86"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>&amp;Settings</source>
         <translation>П&amp;араметри</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="87"/>
+        <location filename="../meteo_qt.py" line="92"/>
         <source>&amp;About</source>
         <translation>Пр&amp;о програму</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="88"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>Exit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="115"/>
         <source>Searching weather data...</source>
         <translation>Шукаємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="222"/>
+        <location filename="../meteo_qt.py" line="224"/>
         <source>Empty list</source>
         <translation>Порожній список</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="242"/>
+        <location filename="../meteo_qt.py" line="244"/>
         <source>Fetching weather data ...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="260"/>
+        <location filename="../meteo_qt.py" line="262"/>
         <source>No city configured</source>
         <translation>Міста не вказано</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>No city has been configured yet.</source>
         <translation>Вами ще не вказано міста.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Наведіть вказівник на піктограму, клацніть правою кнопкою і виберіть пункт «Параметри».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="656"/>
+        <location filename="../meteo_qt.py" line="658"/>
         <source>Fetching weather data...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="664"/>
+        <location filename="../meteo_qt.py" line="666"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -788,7 +789,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
                         &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="670"/>
+        <location filename="../meteo_qt.py" line="672"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -841,7 +842,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="81"/>
+        <location filename="../meteo_qt.py" line="83"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Увімкнути або вимкнути вікно</translation>
@@ -850,7 +851,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="389"/>
+        <location filename="../meteo_qt.py" line="391"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Шукаємо дані щодо погоди…</translation>
@@ -925,6 +926,15 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Будь ласка, вкажіть ваш ключ OpenWeatherMap</translation>
+    </message>
+</context>
+<context>
+    <name>Warning message in dialog status bar</name>
+    <message>
+        <location filename="../citytranslate.py" line="51"/>
+        <source>The city allready exist</source>
+        <comment>City translation</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1443,6 +1453,15 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
         <translation>З-Пн-З</translation>
+    </message>
+</context>
+<context>
+    <name>Window title</name>
+    <message>
+        <location filename="../citytranslate.py" line="37"/>
+        <source>City translation</source>
+        <comment>City translation dialog</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

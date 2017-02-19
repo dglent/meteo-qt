@@ -1,8 +1,9 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="687"/>
+        <location filename="../meteo_qt.py" line="689"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -158,7 +159,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="824"/>
+        <location filename="../meteo_qt.py" line="826"/>
         <source>Error :
 </source>
         <translation>Fehler :
@@ -707,7 +708,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="615"/>
+        <location filename="../meteo_qt.py" line="617"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
     </message>
@@ -720,67 +721,67 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
         <translation>&amp;Städte</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="84"/>
+        <location filename="../meteo_qt.py" line="89"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Temporäre Stadt</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="85"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;Update</source>
         <translation>&amp;Aktualisieren</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="86"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>&amp;Settings</source>
         <translation>&amp;Einstellungen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="87"/>
+        <location filename="../meteo_qt.py" line="92"/>
         <source>&amp;About</source>
         <translation>&amp;Über</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="88"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>Exit</source>
         <translation>&amp;Beenden</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="115"/>
         <source>Searching weather data...</source>
         <translation>Suche Wetterdaten...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="222"/>
+        <location filename="../meteo_qt.py" line="224"/>
         <source>Empty list</source>
         <translation>Leere Liste</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="242"/>
+        <location filename="../meteo_qt.py" line="244"/>
         <source>Fetching weather data ...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="260"/>
+        <location filename="../meteo_qt.py" line="262"/>
         <source>No city configured</source>
         <translation>Keine Stadt ausgewählt</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>No city has been configured yet.</source>
         <translation>Es wurde noch keine Stadt ausgewählt.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="276"/>
+        <location filename="../meteo_qt.py" line="278"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Mit der rechten Maustaste auf das Symbol klicken und Einstellungen wählen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="656"/>
+        <location filename="../meteo_qt.py" line="658"/>
         <source>Fetching weather data...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="664"/>
+        <location filename="../meteo_qt.py" line="666"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -789,7 +790,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="670"/>
+        <location filename="../meteo_qt.py" line="672"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -844,7 +845,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="81"/>
+        <location filename="../meteo_qt.py" line="83"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Fenster ein- und ausblenden</translation>
@@ -853,7 +854,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="389"/>
+        <location filename="../meteo_qt.py" line="391"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Suche Wetterdaten...</translation>
@@ -928,6 +929,15 @@ github&lt;/a&gt; erstellen.</translation>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Bitte hier den Schlüssel von OpenWeatherMap eintragen</translation>
+    </message>
+</context>
+<context>
+    <name>Warning message in dialog status bar</name>
+    <message>
+        <location filename="../citytranslate.py" line="51"/>
+        <source>The city allready exist</source>
+        <comment>City translation</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1446,6 +1456,15 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
         <translation>WNW</translation>
+    </message>
+</context>
+<context>
+    <name>Window title</name>
+    <message>
+        <location filename="../citytranslate.py" line="37"/>
+        <source>City translation</source>
+        <comment>City translation dialog</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
