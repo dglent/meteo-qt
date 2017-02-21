@@ -59,6 +59,8 @@ class SearchCity(QDialog):
                                                  QByteArray()))
         self.timer_search = QTimer(self)
         self.timer_search.timeout.connect(self.search)
+        self.setWindowTitle(QCoreApplication.translate('Window title',
+                               'Find a city', 'City search dialogue'))
 
     def timer_run(self):
         self.timer_search.start(1000)

@@ -35,7 +35,7 @@ class CityTranslate(QDialog):
         self.layout.addLayout(self.buttonLayout)
         self.setLayout(self.layout)
         self.setWindowTitle(QCoreApplication.translate('Window title',
-                            'City translation', 'City translation dialog'))
+                            'City translation', 'City translation dialogue'))
 
     def find_city_key(self, city):
         for key, value in self.trans_cities_dict.items():

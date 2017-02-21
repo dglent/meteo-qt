@@ -48,7 +48,7 @@ class CityListDlg(QDialog):
             buttonLayout.addWidget(button)
             button.clicked.connect(slot)
         self.translate_button = QPushButton(QCoreApplication.translate('Button',
-                                    '&Translate', 'Edit cities dialogue'))
+                                          '&Translate', 'Edit cities dialogue'))
         buttonLayout.addWidget(self.translate_button)
         self.translate_button.clicked.connect(self.translate)
         buttonLayout.addWidget(self.buttonBox)
@@ -56,6 +56,8 @@ class CityListDlg(QDialog):
         layoutT.addLayout(layout)
         layoutT.addWidget(self.status)
         self.setLayout(layoutT)
+        self.setWindowTitle(QCoreApplication.translate('Window title', 'Cities',
+                                                        'Cities list dialogue'))
         self.checklength()
 
     def add(self):
