@@ -138,8 +138,14 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentItem(item)
 
     def checklength(self):
-        if self.listWidget.count() == 0:
+        if self.listWidget.count() == 1:
+            # After adding the first city the entry is not activated
+            self.listWidget.setCurrentRow(0)
+        if self.listWidget.count() > 0:
+            self.translate_button.setEnabled(True)
             self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
+        else:
+            self.translate_button.setEnabled(False)
 
     def translate(self):
         city = self.listWidget.currentItem().text()
