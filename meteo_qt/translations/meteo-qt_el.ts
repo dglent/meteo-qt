@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -939,7 +938,7 @@
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Η πόλη υπάρχει ήδη</translation>
     </message>
 </context>
 <context>
@@ -1466,7 +1465,7 @@
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση της πόλης</translation>
     </message>
 </context>
 <context>

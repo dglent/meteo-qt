@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -944,7 +943,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Město již je</translation>
     </message>
 </context>
 <context>
@@ -1471,7 +1470,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Překlad pro město</translation>
     </message>
 </context>
 <context>

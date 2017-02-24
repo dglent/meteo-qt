@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -934,7 +933,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Запис міста вже існує</translation>
     </message>
 </context>
 <context>
@@ -1461,7 +1460,7 @@ Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Переклад назви міста</translation>
     </message>
 </context>
 <context>

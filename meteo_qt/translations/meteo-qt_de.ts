@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -718,7 +717,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
     <message>
         <location filename="../meteo_qt.py" line="80"/>
         <source>Cities</source>
-        <translation>&amp;Städte</translation>
+        <translation>Städte</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="89"/>
@@ -937,7 +936,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Diese Stadt ist bereits vorhanden</translation>
     </message>
 </context>
 <context>
@@ -1464,7 +1463,7 @@ github&lt;/a&gt; erstellen.</translation>
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Übersetzung von Städten</translation>
     </message>
 </context>
 <context>

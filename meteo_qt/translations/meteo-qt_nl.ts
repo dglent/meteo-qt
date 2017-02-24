@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="nl" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
@@ -949,7 +948,7 @@ een breed gevoerde hoed. Spendeer niet teveel tijd in de zon.</translation>
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>De stad bestaat al</translation>
     </message>
 </context>
 <context>
@@ -1476,7 +1475,7 @@ een breed gevoerde hoed. Spendeer niet teveel tijd in de zon.</translation>
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialog</comment>
-        <translation type="unfinished"></translation>
+        <translation>Stad-vertaling</translation>
     </message>
 </context>
 <context>
