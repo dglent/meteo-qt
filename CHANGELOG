@@ -1,3 +1,9 @@
+0.9.5
+Feature of cities translation
+Add open window action in tray menu (for Unity)
+Improvepments finding weather data
+Fixes some issues with crashes
+
 0.9.4
 Use a personal key to access the openweathemap api
 Each user has to create his own key
