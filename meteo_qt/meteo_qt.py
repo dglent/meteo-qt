@@ -522,7 +522,12 @@ class SystemTrayIcon(QMainWindow):
         pt.begin(icon)
         if self.tray_type != 'temp':
             pt.drawPixmap(0, -12, 64, 64, self.wIcon)
-        pt.setFont(QFont('sans-sertif', int(self.fontsize)))
+        self.bold_set = self.settings.value('Bold') or 'False'
+        if self.bold_set == 'True':
+            br = QFont.Bold
+        else:
+            br = QFont.Normal
+        pt.setFont(QFont('sans-sertif', int(self.fontsize), weight=br))
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp':
             pt.drawText(icon.rect(), Qt.AlignBottom | Qt.AlignCenter,
@@ -597,6 +602,7 @@ class SystemTrayIcon(QMainWindow):
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
+        bold_set = self.settings.value('Bold')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
         self.appid = '&APPID=' + self.settings.value('APPID') or ''
@@ -609,7 +615,8 @@ class SystemTrayIcon(QMainWindow):
         if traycolor is None:
             traycolor = ''
         if (self.traycolor != traycolor or self.tray_type != tray_type or
-                self.fontsize != fontsize or decimal != self.temp_decimal):
+                self.fontsize != fontsize or self.bold_set != bold_set or
+                decimal != self.temp_decimal):
             self.tray()
         if (city[0] == self.city and
            id_ == self.id_ and

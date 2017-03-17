@@ -208,6 +208,14 @@ class MeteoSettings(QDialog):
             self.settings.setValue('FontSize', '18')
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
+        # Font weight
+        self.bold_checkbox = QCheckBox(QCoreApplication.translate('Font setting - Checkbox label',
+                                        'Bold', 'Settings dialogue'))
+        bold_bool = self.settings.value('Bold') or 'False'
+        self.bold_bool = eval(bold_bool)
+        self.bold_checkbox.setChecked(self.bold_bool)
+        self.bold_checkbox.stateChanged.connect(self.bold)
+        self.bold_changed = False
         # Proxy
         self.proxy_label = QLabel(QCoreApplication.translate(
                             'Checkbox', 'Connection by proxy', 'Settings dialogue'))
@@ -259,6 +267,7 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.tray_icon_combo, 8, 1)
         self.panel.addWidget(self.fontsize_label, 9, 0)
         self.panel.addWidget(self.fontsize_spinbox, 9, 1)
+        self.panel.addWidget(self.bold_checkbox, 9, 2)
         self.panel.addWidget(self.proxy_label, 10, 0)
         self.panel.addWidget(self.proxy_chbox, 10, 1)
         self.panel.addWidget(self.proxy_button, 10, 2)
@@ -433,6 +442,18 @@ class MeteoSettings(QDialog):
         logging.debug('Apply fontsize: ' + str(self.fontsize_value))
         self.settings.setValue('FontSize', str(self.fontsize_value))
 
+    def bold(self, state):
+        self.bold_state = state
+        self.bold_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def bold_apply(self):
+        if self.bold_state == 2:
+            bold = 'True'
+        else:
+            bold = 'False'
+        self.settings.setValue('Bold', str(bold))
+
     def proxy(self, state):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         if state == 2:
@@ -533,6 +554,8 @@ class MeteoSettings(QDialog):
             self.tray_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
+        if self.bold_changed:
+            self.bold_apply()
         proxy_url = self.settings.value('Proxy_url') or ''
         if proxy_url == '':
             self.proxy_bool = False
