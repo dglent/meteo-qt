@@ -151,6 +151,7 @@ class OverviewCity(QDialog):
         self.precipitation_value = QLabel('<font color=grey>' +
                                           rain_mode + ' ' + rain_value + ' ' + rain_unit +
                                           '</font>')
+        # Sunrise Sunset Daylight
         self.sunrise_label = QLabel('<font color=grey><b>' +
                                     self.tr('Sunrise') + '</b></font>')
         self.sunset_label = QLabel('<font color=grey><b>' +
@@ -159,6 +160,13 @@ class OverviewCity(QDialog):
         set_str = self.utc('Sunset', 'weatherdata')
         self.sunrise_value = QLabel('<font color=grey>' + rise_str[:-3] + '</font>')
         self.sunset_value = QLabel('<font color=grey>' + set_str[:-3] + '</font>')
+        self.daylight_label = QLabel('<font color=grey><b>' +
+                                  QCoreApplication.translate(
+                                    'Daylight duration', 'Daylight',
+                                    'Weather overview dialogue') + '</b></font>')
+
+        daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
+        self.daylight_value_label = QLabel('<font color=grey>' + daylight_value + '</font>')
         # --UV---
         self.uv_label = QLabel(
             '<font size="3" color=grey><b>' + QCoreApplication.translate(
@@ -176,7 +184,6 @@ class OverviewCity(QDialog):
                 '<\b><\font>'))
         self.ozone_value_label = QLabel()
         self.ozone_value_label.setText(fetching_text)
-
         self.over_grid.addWidget(self.wind_label, 0, 0)
         self.over_grid.addWidget(self.wind, 0, 1)
         self.over_grid.addWidget(self.wind_icon_label, 0, 2)
@@ -192,11 +199,12 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.sunrise_value, 5, 1)
         self.over_grid.addWidget(self.sunset_label, 6, 0)
         self.over_grid.addWidget(self.sunset_value, 6, 1)
-        self.over_grid.addWidget(self.uv_label, 7, 0)
-        self.over_grid.addWidget(self.uv_value_label, 7, 1)
-        self.over_grid.addWidget(self.ozone_label, 8, 0)
-        self.over_grid.addWidget(self.ozone_value_label, 8, 1)
-
+        self.over_grid.addWidget(self.daylight_label, 7, 0)
+        self.over_grid.addWidget(self.daylight_value_label, 7, 1)
+        self.over_grid.addWidget(self.uv_label, 8, 0)
+        self.over_grid.addWidget(self.uv_value_label, 8, 1)
+        self.over_grid.addWidget(self.ozone_label, 9, 0)
+        self.over_grid.addWidget(self.ozone_value_label, 9, 1)
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -223,6 +231,15 @@ class OverviewCity(QDialog):
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("OverviewCity/Geometry",
                                                  QByteArray()))
+
+    def daylight_delta(self, s1, s2):
+        FMT = '%H:%M'
+        tdelta = (datetime.datetime.strptime(s2, FMT) -
+                  datetime.datetime.strptime(s1, FMT))
+        m, s = divmod(tdelta.seconds, 60)
+        h, m = divmod(m, 60)
+        daylight_in_hours = str(h) + ":" + str(m)
+        return daylight_in_hours
 
     def wind_icon_direction(self):
         transf = QTransform()
