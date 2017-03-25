@@ -201,10 +201,6 @@ class OverviewCity(QDialog):
         self.over_grid.addWidget(self.sunset_value, 6, 1)
         self.over_grid.addWidget(self.daylight_label, 7, 0)
         self.over_grid.addWidget(self.daylight_value_label, 7, 1)
-        self.over_grid.addWidget(self.uv_label, 8, 0)
-        self.over_grid.addWidget(self.uv_value_label, 8, 1)
-        self.over_grid.addWidget(self.ozone_label, 9, 0)
-        self.over_grid.addWidget(self.ozone_value_label, 9, 1)
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -571,6 +567,10 @@ class OverviewCity(QDialog):
                 100 Dobson Units.''', 'http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html'))
         else:
             self.ozone_value_label.setText('<font color=grey>' + str(du) + '</font>')
+        if du != '-':
+            self.over_grid.addWidget(self.ozone_label, 9, 0)
+            self.over_grid.addWidget(self.ozone_value_label, 9, 1)
+
 
     def uv_fetch(self):
         logging.debug('Download uv info...')
@@ -593,6 +593,10 @@ class OverviewCity(QDialog):
             self.uv_value_label.setText('<font color=grey>' + uv_gauge + '</font>')
         logging.debug('UV gauge ◼: ' + uv_gauge)
         self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
+        if uv_gauge != '-':
+            self.over_grid.addWidget(self.uv_label, 8, 0)
+            self.over_grid.addWidget(self.uv_value_label, 8, 1)
+
 
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
