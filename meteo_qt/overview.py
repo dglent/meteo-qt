@@ -133,9 +133,10 @@ class OverviewCity(QDialog):
                                      self.weatherdata['Humidity'][1] +
                                      '<\font>')
         self.precipitation_label = QLabel('<font size="3" color=grey><b>' +
-                                          QCoreApplication.translate('Precipitation type (no/rain/snow)',
+                                          QCoreApplication.translate(
+                                            'Precipitation type (no/rain/snow)',
                                             'Precipitation', 'Weather overview dialogue') +
-                                          '<\b><\font>')
+                                            '<\b><\font>')
         rain_mode = self.precipitation[self.weatherdata['Precipitation'][0]]
         rain_value = self.weatherdata['Precipitation'][1]
         rain_unit = ' mm '
@@ -164,7 +165,6 @@ class OverviewCity(QDialog):
                                   QCoreApplication.translate(
                                     'Daylight duration', 'Daylight',
                                     'Weather overview dialogue') + '</b></font>')
-
         daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
         self.daylight_value_label = QLabel('<font color=grey>' + daylight_value + '</font>')
         # --UV---
@@ -248,35 +248,35 @@ class OverviewCity(QDialog):
     def ozone_du(self, du):
         if du <= 125:
             return '#060106' # black
-        if du <= 150:
+        elif du <= 150:
             return '#340634' # magenta
-        if du <= 175:
+        elif du <= 175:
             return '#590b59' # fuccia
-        if du <= 200:
+        elif du <= 200:
             return '#421e85' # violet
-        if du <= 225:
+        elif du <= 225:
             return '#121e99' # blue
-        if du <= 250:
+        elif du <= 250:
             return '#125696' # blue sea
-        if du <= 275:
+        elif du <= 275:
             return '#198586' # raf
-        if du <= 300:
+        elif du <= 300:
             return '#21b1b1' # cyan
-        if du <= 325:
+        elif du <= 325:
             return '#64b341' # light green
-        if du <= 350:
+        elif du <= 350:
             return '#1cac1c' # green
-        if du <= 375:
+        elif du <= 375:
             return '#93a92c' # green oil
-        if du <= 400:
+        elif du <= 400:
             return '#baba2b' # yellow
-        if du <= 425:
+        elif du <= 425:
             return '#af771f' # orange
-        if du <= 450:
+        elif du <= 450:
             return '#842910' # brown
-        if du <= 475:
+        elif du <= 475:
             return '#501516' # brown dark
-        if du > 475:
+        elif du > 475:
             return '#210909' # darker brown
 
     def uv_color(self, uv):
@@ -330,7 +330,7 @@ class OverviewCity(QDialog):
 
     def utc(self, rise_set, what):
         ''' Convert sun rise/set from UTC to local time
-            'rise_set' is 'Sunrise' or 'Sunset when it is for weatherdata
+            'rise_set' is 'Sunrise' or 'Sunset' when it is for weatherdata
             or the index of hour in day forecast when dayforecast'''
         listtotime = ''
         # Create a list ['h', 'm', 's'] and pass it to QTime
@@ -385,6 +385,7 @@ class OverviewCity(QDialog):
                              weather_cond)
                 pass
             try:
+                # Take the label translated text and remove the html tags
                 doc.setHtml(self.precipitation_label.text())
                 precipitation_label = doc.toPlainText() + ': '
                 precipitation_type = self.tree[4][d][1].get('type')
@@ -421,7 +422,6 @@ class OverviewCity(QDialog):
             doc.setHtml(self.clouds_label.text())
             clouds_label = doc.toPlainText() + ': '
             weather_cond += '\n' + clouds_label + clouds + ' %'
-
             self.forecast_weather_list.append(weather_cond)
 
     def iconfetch(self):
@@ -571,7 +571,6 @@ class OverviewCity(QDialog):
             self.over_grid.addWidget(self.ozone_label, 9, 0)
             self.over_grid.addWidget(self.ozone_value_label, 9, 1)
 
-
     def uv_fetch(self):
         logging.debug('Download uv info...')
         self.uv_thread = Uv(self.uv_coord)
@@ -596,7 +595,6 @@ class OverviewCity(QDialog):
         if uv_gauge != '-':
             self.over_grid.addWidget(self.uv_label, 8, 0)
             self.over_grid.addWidget(self.uv_value_label, 8, 1)
-
 
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
