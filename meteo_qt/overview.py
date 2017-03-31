@@ -234,6 +234,8 @@ class OverviewCity(QDialog):
                   datetime.datetime.strptime(s1, FMT))
         m, s = divmod(tdelta.seconds, 60)
         h, m = divmod(m, 60)
+        if len(str(m)) == 1:
+            m = '0' + str(m)
         daylight_in_hours = str(h) + ":" + str(m)
         return daylight_in_hours
 
