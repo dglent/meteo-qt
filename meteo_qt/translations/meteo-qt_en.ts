@@ -170,7 +170,8 @@ Land: Whole trees in motion. Effort needed to walk against the wind</source>
     <name>Beaufort scale 8 - Wikipedia</name>
     <message>
         <location filename="../conditions.py" line="199"/>
-        <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne sprayLand: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
+        <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
+Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
@@ -179,7 +180,8 @@ Land: Whole trees in motion. Effort needed to walk against the wind</source>
     <name>Beaufort scale 9 - Wikipedia</name>
     <message>
         <location filename="../conditions.py" line="200"/>
-        <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibilityLand: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
+        <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
+Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
