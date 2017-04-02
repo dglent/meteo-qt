@@ -80,7 +80,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
     <name>Beaufort scale 10 - Wikipedia</name>
     <message>
         <location filename="../conditions.py" line="201"/>
-        <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibilityLand: Trees are broken off or uprooted, structural damage likely</source>
+        <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
+Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
