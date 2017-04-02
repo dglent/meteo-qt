@@ -109,6 +109,14 @@ class MeteoSettings(QDialog):
         self.units_combo.setCurrentIndex(self.units_combo.findText(
             self.units_dico[self.temp_unit]))
         self.units_combo.currentIndexChanged.connect(self.units)
+        # Beaufort
+        self.bft_checkbox = QCheckBox(QCoreApplication.translate('Wind unit - Checkbox label',
+                                        'Wind unit in Beaufort', 'Settings dialogue'))
+        bft_bool = self.settings.value('Beaufort') or 'False'
+        self.bft_bool = eval(bft_bool)
+        self.bft_checkbox.setChecked(self.bft_bool)
+        self.bft_checkbox.stateChanged.connect(self.beaufort)
+        self.bft_changed = False
         # Decimal in trayicon
         self.temp_decimal_label = QLabel(QCoreApplication.translate(
                     'If the temperature will be shown with a decimal or rounded in tray icon',
@@ -251,6 +259,7 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.language_combo, 1, 1)
         self.panel.addWidget(self.units_label, 2, 0)
         self.panel.addWidget(self.units_combo, 2, 1)
+        self.panel.addWidget(self.bft_checkbox, 2, 2)
         self.panel.addWidget(self.temp_decimal_label, 3, 0)
         self.panel.addWidget(self.temp_decimal_combo, 3, 1)
         self.panel.addWidget(self.interval_label, 4, 0)
@@ -454,6 +463,18 @@ class MeteoSettings(QDialog):
             bold = 'False'
         self.settings.setValue('Bold', str(bold))
 
+    def beaufort(self, state):
+        self.bft_state = state
+        self.bft_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def beaufort_apply(self):
+        if self.bft_state == 2:
+            bft = 'True'
+        else:
+            bft = 'False'
+        self.settings.setValue('Beaufort', str(bft))
+
     def proxy(self, state):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         if state == 2:
@@ -556,6 +577,8 @@ class MeteoSettings(QDialog):
             self.fontsize_apply()
         if self.bold_changed:
             self.bold_apply()
+        if self.bft_changed:
+            self.beaufort_apply()
         proxy_url = self.settings.value('Proxy_url') or ''
         if proxy_url == '':
             self.proxy_bool = False

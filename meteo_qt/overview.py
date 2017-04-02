@@ -42,6 +42,7 @@ class OverviewCity(QDialog):
         self.wind_direction = cond.wind_codes
         self.wind_name_dic = cond.wind
         self.clouds_name_dic = cond.clouds
+        self.beaufort_sea_land = cond.beaufort
         self.uv_risk = cond.uv_risk
         self.uv_recommend = cond.uv_recommend
         self.settings = QSettings()
@@ -97,17 +98,25 @@ class OverviewCity(QDialog):
                                  self.tr('Wind') + '<\font><\b>')
         self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
+        beaufort = self.settings.value('Beaufort') or 'False'
+        bft_bool = eval(beaufort)
         self.speed_unit = ' m/s '
         if wind_unit == 'imperial':
             self.speed_unit = ' mph '
         self.wind = QLabel('None')
+        wind_speed = '{0:.1f}'.format(float(self.weatherdata['Wind'][0]))
+        windTobeaufort = str(self.convertToBeaufort(wind_speed))
+        if bft_bool is True:
+            wind_speed = windTobeaufort
+            self.speed_unit = ' Bft. '
         try:
             self.wind = QLabel('<font color=grey>' +
                                self.weatherdata['Wind'][4] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
-                               '<br/>' + '{0:.1f}'.format(float(self.weatherdata['Wind'][0])) +
+                               '<br/>' + wind_speed +
                                self.speed_unit + self.weatherdata['Wind'][1] +
                                '<\font>')
+            self.wind.setToolTip(self.beaufort_sea_land[windTobeaufort])
         except:
             logging.error('Cannot find wind informations:\n' +
                           str(self.weatherdata['Wind']))
@@ -246,6 +255,63 @@ class OverviewCity(QDialog):
         transf.rotate(int(float(angle)))
         rotated = self.wind_icon.transformed(transf, mode=Qt.SmoothTransformation)
         self.wind_icon_label.setPixmap(rotated)
+
+    def convertToBeaufort(self, speed):
+        speed = float(speed)
+        if self.speed_unit.strip() == 'm/s':
+            if speed <= 0.2:
+                return 0
+            elif speed <= 1.5:
+                return 1
+            elif speed <= 3.3:
+                return 2
+            elif speed <= 5.4:
+                return 3
+            elif speed <= 7.9:
+                return 4
+            elif speed <= 10.7:
+                return 5
+            elif speed <= 13.8:
+                return 6
+            elif speed <= 17.1:
+                return 7
+            elif speed <= 20.7:
+                return 8
+            elif speed <= 24.4:
+                return 9
+            elif speed <= 28.4:
+                return 10
+            elif speed <= 32.4:
+                return 11
+            elif speed <= 36.9:
+                return 12
+        elif self.speed_unit.strip() == 'mph':
+            if speed < 1:
+                return 0
+            elif speed < 4:
+                return 1
+            elif speed < 8:
+                return 2
+            elif speed < 13:
+                return 3
+            elif speed < 18:
+                return 4
+            elif speed < 25:
+                return 5
+            elif speed < 32:
+                return 6
+            elif speed < 39:
+                return 7
+            elif speed < 47:
+                return 8
+            elif speed < 55:
+                return 9
+            elif speed < 64:
+                return 10
+            elif speed < 73:
+                return 11
+            elif speed <= 82:
+                return 12
 
     def ozone_du(self, du):
         if du <= 125:

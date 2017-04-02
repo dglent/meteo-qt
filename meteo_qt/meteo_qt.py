@@ -257,6 +257,7 @@ class SystemTrayIcon(QMainWindow):
         self.cities_menu()
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
+        self.beaufort = self.settings.value('Beaufort') or 'False'
         self.suffix = ('&mode=xml&units=' + self.unit + self.appid)
         self.interval = int(self.settings.value('Interval') or 30)*60*1000
         self.timer.start(self.interval)
@@ -599,6 +600,7 @@ class SystemTrayIcon(QMainWindow):
         id_ = self.settings.value('ID')
         country = self.settings.value('Country')
         unit = self.settings.value('Unit')
+        beaufort = self.settings.value('Beaufort')
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
@@ -621,7 +623,8 @@ class SystemTrayIcon(QMainWindow):
         if (city[0] == self.city and
            id_ == self.id_ and
            country == self.country and
-           unit == self.unit):
+           unit == self.unit and
+           beaufort == self.beaufort):
             return
         else:
             logging.debug('Apply changes from settings...')
