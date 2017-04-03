@@ -140,7 +140,7 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
     <name>Beaufort scale 5 - Wikipedia</name>
     <message>
         <location filename="../conditions.py" line="196"/>
-        <source>Moderate waves of some length. Many whitecaps. Small amounts of spray
+        <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
