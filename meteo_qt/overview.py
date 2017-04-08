@@ -99,22 +99,24 @@ class OverviewCity(QDialog):
         self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
         beaufort = self.settings.value('Beaufort') or 'False'
-        bft_bool = eval(beaufort)
-        self.speed_unit = ' m/s '
+        self.bft_bool = eval(beaufort)
+        self.unit_system = ' m/s '
+        self.unit_system_wind = ' m/s '
         if wind_unit == 'imperial':
-            self.speed_unit = ' mph '
+            self.unit_system = ' mph '
+            self.unit_system_wind = ' mph '
         self.wind = QLabel('None')
         wind_speed = '{0:.1f}'.format(float(self.weatherdata['Wind'][0]))
         windTobeaufort = str(self.convertToBeaufort(wind_speed))
-        if bft_bool is True:
+        if self.bft_bool is True:
             wind_speed = windTobeaufort
-            self.speed_unit = ' Bft. '
+            self.unit_system_wind = ' Bft. '
         try:
             self.wind = QLabel('<font color=grey>' +
                                self.weatherdata['Wind'][4] +
                                ' ' + self.weatherdata['Wind'][2] + '° ' +
                                '<br/>' + wind_speed +
-                               self.speed_unit + self.weatherdata['Wind'][1] +
+                               self.unit_system_wind + self.weatherdata['Wind'][1] +
                                '<\font>')
             self.wind.setToolTip(self.beaufort_sea_land[windTobeaufort])
         except:
@@ -258,7 +260,7 @@ class OverviewCity(QDialog):
 
     def convertToBeaufort(self, speed):
         speed = float(speed)
-        if self.speed_unit.strip() == 'm/s':
+        if self.unit_system.strip() == 'm/s':
             if speed <= 0.2:
                 return 0
             elif speed <= 1.5:
@@ -285,7 +287,7 @@ class OverviewCity(QDialog):
                 return 11
             elif speed <= 36.9:
                 return 12
-        elif self.speed_unit.strip() == 'mph':
+        elif self.unit_system.strip() == 'mph':
             if speed < 1:
                 return 0
             elif speed < 4:
@@ -460,7 +462,7 @@ class OverviewCity(QDialog):
                 precipitation_type = self.precipitation[precipitation_type] + ' '
                 precipitation_value = self.tree[4][d][1].get('value')
                 rain_unit = ' mm'
-                if self.speed_unit == ' mph ':
+                if self.unit_system == ' mph ':
                     rain_unit = ' inch'
                     precipitation_value = str(float(precipitation_value) / 25.4) + ' '
                     precipitation_value = "{0:.2f}".format(float(precipitation_value))
@@ -477,7 +479,9 @@ class OverviewCity(QDialog):
             except:
                 wind_direction = ''
             wind_speed = '{0:.1f}'.format(float(self.tree[4][d][3].get('mps')))
-            weather_cond += '\n' + wind + wind_speed + self.speed_unit + wind_direction
+            if self.bft_bool:
+                wind_speed = str(self.convertToBeaufort(wind_speed))
+            weather_cond += '\n' + wind + wind_speed + self.unit_system_wind + wind_direction
             doc.setHtml(self.pressure_label.text())
             pressure_label = doc.toPlainText() + ': '
             pressure = '{0:.1f}'.format(float(self.tree[4][d][5].get('value')))
@@ -587,7 +591,9 @@ class OverviewCity(QDialog):
             else:
                 ttip = ttip.replace('snow', self.tr('snow'))
                 ttip = ttip.replace('rain', self.tr('rain'))
-            ttip = ttip + (str(windspeed) + ' ' + self.speed_unit)
+            if self.bft_bool is True:
+                windspeed = self.convertToBeaufort(windspeed)
+            ttip = ttip + (str(windspeed) + ' ' + self.unit_system_wind)
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
