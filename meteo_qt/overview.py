@@ -581,10 +581,13 @@ class OverviewCity(QDialog):
             unit = self.settings.value('Unit') or 'metric'
             if unit == 'metric':
                 mu = 'mm'
+                if precipitation.count('None') == 0:
+                    precipitation = "{0:.1f}".format(float(precipitation))
             elif unit == 'imperial':
                 mu = 'inch'
                 if precipitation.count('None') == 0:
                     precipitation = str(float(precipitation) / 25.0)
+                    precipitation = "{0:.2f}".format(float(precipitation))
             ttip = str(precipitation) + ' ' + mu + ' ' + precipitation_type + '<br/>'
             if ttip.count('None') >= 1:
                 ttip = ''
