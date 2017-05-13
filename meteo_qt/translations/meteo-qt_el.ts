@@ -2,7 +2,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="689"/>
+        <location filename="../meteo_qt.py" line="699"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -85,6 +85,149 @@
     </message>
 </context>
 <context>
+    <name>Beaufort scale 0 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="191"/>
+        <source>Sea: Sea like a mirror
+Land: Calm. Smoke rises vertically</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Επίπεδη, κατοπτρική επιφάνεια (κοινώς «θάλασσα λάδι»)
+Ξηρά: Δεν φυσά άνεμος, ο καπνός υψώνεται κατακόρυφα</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 1 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="192"/>
+        <source>Sea: Ripples with the appearance of scales are formed, but without foam crests
+Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Το νερό κάνει μικρές «ρυτίδες»
+Ξηρά: Ο άνεμος μετακινεί τον καπνό, όχι όμως τον ανεμοδείκτη</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 10 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="201"/>
+        <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
+Land: Trees are broken off or uprooted, structural damage likely</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Πολύ υψηλά (8 - 12,5 μ.) κύματα με μακριές λοφώδεις ράχες. Το σπάσιμο και κύλισμα των κορυφών των κυμάτων γίνεται έντονο και βίαιο. Η θάλασσα εμφανίζει μεγάλα λευκά μπαλώματα και η συνολική της εμφάνιση αρχίζει να ασπρίζει. Η ορατότητα μειώνεται
+Ξηρά: Σπάνια παρατηρείται στο εσωτερικό της ξηράς. Δέντρα σπάζουν ή ξεριζώνονται. Πολλά κεραμίδια αποσπώνται από τις σκεπές, αρκετές ζημιές στο εξωτερικό των κτιρίων</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 11 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="202"/>
+        <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
+Land: Widespread vegetation and structural damage likely</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Εξαιρετικά υψηλά (9 - 14 μ.) ογκώδη κύματα, μεγάλες ποσότητες αιωρούμενου αφρού, μικρή ορατότητα. Δύσκολη η θέα πλοίων μικρής και μεσαίας χωρητικότητας, ίσως για λίγη ώρα να χάνονται πίσω από τα κύματα
+Ξηρά: Πολύ σπάνια παρατηρείται στο εσωτερικό της ξηράς. Πολλές στέγες υφίστανται μεγάλη ζημιά. Αρκετές ζημιές σε κτίρια, αυτοκίνητα, πάρκα. Έπιπλα και βαριά αντικείμενα εκτός κτιρίων παρασύρονται. Αδύνατη η όρθια στάση. Εκτεταμένες ζημιές στην βλάστηση.</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 12 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="203"/>
+        <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
+Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Τεράστια κύματα (14 μ. και άνω). Ο αέρας γεμίζει με αφρό και πίτυλο, η θάλασσα ασπρίζει εντελώς. Ελάχιστη έως μηδενική ορατότητα.
+Ξηρά: Εξαιρετικά σπάνιο συμβάν στο εσωτερικό της ξηράς. Σοβαρές καταστροφές σε μεγάλη έκταση. Μερικά παράθυρα μπορεί να σπάσουν. Κινητά σπίτια, καθώς και κακής κατασκευής υπόστεγα και αχυρώνες υφίστανται μεγάλες ζημιές ή και καταστρέφονται. Συντρίμμια εκσφενδονίζονται και παρασύρονται. Πολύ εκτεταμένες ζημιές στην βλάστηση</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 2 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="193"/>
+        <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
+Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Μικρά κυματάκια που δεν «σπάνε». Οι κορυφές τους έχουν υαλώδη μορφή και ποτέ αφρό
+Ξηρά: Ο άνεμος γίνεται αισθητός στο δέρμα, τα φύλλα κινούνται</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 3 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="194"/>
+        <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
+Land: Leaves and small twigs constantly moving, light flags extended</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Τα μικρά κύματα αρχίζουν να σπάνε και εμφανίζεται λίγος αφρός («προβατάκια»)
+Ξηρά: Φύλλα και μικρά κλαριά κινούνται διαρκώς</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 4 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="195"/>
+        <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
+Land: Dust and loose paper raised. Small branches begin to move</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Μέτρια κύματα, εμφανίζεται αφρός και σταγονίδια νερού (πίτυλος)
+Ξηρά: Ο άνεμος σηκώνει σκόνη και πεσμένα χαρτιά. Τα κλαδιά αρχίζουν να κινούνται</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 5 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="196"/>
+        <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
+Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Μεγαλύτερα κύματα (ύψους 1,2 - 2,5 μ.), εμφανίζονται αφρώδεις κορυφές παντού
+Ξηρά:Μικρά δέντρα αρχίζουν να κινούνται</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 6 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="197"/>
+        <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
+Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Μεγάλα κύματα (ύψους 2 - 4 μ.) με επιμήκεις αφρώδεις κορυφές («άσπρα άλογα») και έντονο πίτυλο
+Ξηρά: Μεγάλα κλαδιά κινούνται και ο αέρας σφυρίζει. Η χρήση της ομπρέλας γίνεται δύσκολη</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 7 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="198"/>
+        <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
+Land: Whole trees in motion. Effort needed to walk against the wind</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Η θάλασσα ογκούται και λευκός αφρός από κύματα (ύψους 3 - 5 μ.) που σπάζουν αρχίζει να παρασύρεται και να σχηματίζονται ραβδώσεις κατά την διεύθυνση του ανέμου
+Ξηρά: Τα δέντρα κινούνται ολόκληρα και το περπάτημα ενάντια στον άνεμο γίνεται δύσκολο</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 8 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="199"/>
+        <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
+Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Η θάλασσα αρχίζει να φουρτουνιάζει. Σχετικά υψηλά κύματα (4 - 6 μ.) με προεξέχουσες κορυφές που αρχίζουν να σπάνε. Σχηματίζονται έντονες λωρίδες αφρού κατά την διεύθυνση του ανέμου. Μεγάλες ποσότητες αιωρούμενου αφρού
+Ξηρά: Μεγάλα δέντρα κινούνται ολόκληρα και μικρά κλαδιά σπάνε. Η οδήγηση γίνεται δύσκολη και το περπάτημα ενάντια στον άνεμο εξαιρετικά δύσκολο.</translation>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 9 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="200"/>
+        <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
+Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation>Θάλασσα: Υψηλά κύματα (6 - 9 μ.) με πυκνές ραβδώσεις αφρού κατά την διεύθυνση του ανέμου. Οι κορυφές των κυμάτων αρχίζουν να γέρνουν, να πέφτουν και να κυλίονται. Ο αφρός είναι δυνατόν να επηρεάζει την ορατότητα
+Ξηρά: Μεγάλα κλαδιά σπάνε, μικρές ζημιές σε καμινάδες και σκεπές. Προσωρινή σήμανση και οδοφράγματα παρασύρονται. Δύσκολη η όρθια στάση</translation>
+    </message>
+</context>
+<context>
     <name>Button</name>
     <message>
         <location filename="../citylistdlg.py" line="50"/>
@@ -102,7 +245,7 @@
         <translation>Χρήση πιστοποίησης διαμεσολαβητή</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="213"/>
+        <location filename="../settings.py" line="229"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Σύνδεση μέσω διαμεσολαβητή</translation>
@@ -141,15 +284,24 @@
         <translation>&amp;Ταξινόμηση</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="112"/>
+        <location filename="../citylistdlg.py" line="114"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>Αφαιρέθηκε η πόλη «{0}» </translation>
     </message>
 </context>
 <context>
+    <name>Daylight duration</name>
+    <message>
+        <location filename="../overview.py" line="174"/>
+        <source>Daylight</source>
+        <comment>Weather overview dialogue</comment>
+        <translation>Φως ημέρας</translation>
+    </message>
+</context>
+<context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="554"/>
+        <location filename="../overview.py" line="635"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -158,7 +310,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="826"/>
+        <location filename="../meteo_qt.py" line="836"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
@@ -177,6 +329,15 @@
     </message>
 </context>
 <context>
+    <name>Font setting - Checkbox label</name>
+    <message>
+        <location filename="../settings.py" line="221"/>
+        <source>Bold</source>
+        <comment>Settings dialogue</comment>
+        <translation>Έντονα</translation>
+    </message>
+</context>
+<context>
     <name>High UV recommended protection</name>
     <message>
         <location filename="../conditions.py" line="171"/>
@@ -191,7 +352,7 @@
 <context>
     <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
     <message>
-        <location filename="../settings.py" line="114"/>
+        <location filename="../settings.py" line="122"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
         <translation>Ακρίβεια της θερμοκρασίας στο πλαίσιο συστήματος</translation>
@@ -200,7 +361,7 @@
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="221"/>
+        <location filename="../settings.py" line="237"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Ρυθμίσεις</translation>
@@ -209,7 +370,7 @@
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="229"/>
+        <location filename="../settings.py" line="245"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Δημιουργία κλειδιού&lt;/a&gt;</translation>
@@ -229,7 +390,7 @@
 <context>
     <name>Message when trying to remove the last and unique city in the list</name>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
+        <location filename="../citylistdlg.py" line="105"/>
         <source>This is the default city !</source>
         <comment>Cities list dialogue</comment>
         <translation>Αυτή είναι η προεπιλεγμένη πόλη!</translation>
@@ -403,42 +564,42 @@
         <translation>Μονάδα θερμοκρασίας</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="127"/>
+        <location filename="../settings.py" line="135"/>
         <source>Update interval</source>
         <translation>Χρονικό διάστημα ενημέρωσης</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="128"/>
+        <location filename="../settings.py" line="136"/>
         <source>minutes</source>
         <translation>λεπτά</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="150"/>
+        <location filename="../settings.py" line="158"/>
         <source>Launch at startup</source>
         <translation>Εκτέλεση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="158"/>
+        <location filename="../settings.py" line="166"/>
         <source>Font colour in the tray</source>
         <translation>Χρώμα γραμματοσειράς στο πλαίσιο συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="164"/>
+        <location filename="../settings.py" line="172"/>
         <source>Reset</source>
         <translation>Επαναφορά</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="173"/>
         <source>Reset font colour to system default</source>
         <translation>Επαναφορά του χρώματος της γραμματοσειράς στην εξ ορισμού του συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="169"/>
+        <location filename="../settings.py" line="177"/>
         <source>Notification on weather update</source>
         <translation>Ειδοποίηση κατά την ενημέρωση των καιρικών συνθηκών</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="282"/>
+        <location filename="../settings.py" line="300"/>
         <source>Meteo-qt Configuration</source>
         <translation>Διαμόρφωση meteo-qt</translation>
     </message>
@@ -475,7 +636,7 @@
     <message>
         <location filename="../overview.py" line="35"/>
         <source>Thu</source>
-        <translation>Πεμ</translation>
+        <translation>Πέμ</translation>
     </message>
     <message>
         <location filename="../overview.py" line="36"/>
@@ -485,7 +646,7 @@
     <message>
         <location filename="../overview.py" line="37"/>
         <source>Sat</source>
-        <translation>Σαβ</translation>
+        <translation>Σάβ</translation>
     </message>
     <message>
         <location filename="../overview.py" line="38"/>
@@ -493,52 +654,52 @@
         <translation>Κυρ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="96"/>
+        <location filename="../overview.py" line="97"/>
         <source>Wind</source>
         <translation>Άνεμος</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="119"/>
+        <location filename="../overview.py" line="128"/>
         <source>Cloudiness</source>
         <translation>Νέφωση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="123"/>
+        <location filename="../overview.py" line="132"/>
         <source>Pressure</source>
         <translation>Πίεση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="129"/>
+        <location filename="../overview.py" line="138"/>
         <source>Humidity</source>
         <translation>Υγρασία</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="155"/>
+        <location filename="../overview.py" line="166"/>
         <source>Sunrise</source>
         <translation>Ανατολή</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="157"/>
+        <location filename="../overview.py" line="168"/>
         <source>Sunset</source>
         <translation>Δύση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="224"/>
+        <location filename="../overview.py" line="237"/>
         <source>Weather status</source>
         <translation>Μετεωρολογικό δελτίο</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="365"/>
+        <location filename="../overview.py" line="446"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="514"/>
+        <location filename="../overview.py" line="595"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="515"/>
+        <location filename="../overview.py" line="596"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
@@ -546,7 +707,7 @@
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="174"/>
+        <location filename="../overview.py" line="191"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Όζον</translation>
@@ -555,7 +716,7 @@
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="558"/>
+        <location filename="../overview.py" line="639"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -591,7 +752,7 @@
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="135"/>
+        <location filename="../overview.py" line="144"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Υετός</translation>
@@ -641,22 +802,22 @@
         <translation>&amp;Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="108"/>
+        <location filename="../searchcity.py" line="110"/>
         <source>Please type more than three letters</source>
         <translation>Παρακαλώ πληκτρολογήστε πάνω από τρία γράμματα</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="163"/>
+        <location filename="../searchcity.py" line="165"/>
         <source>No results</source>
         <translation>Κανένα αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="165"/>
+        <location filename="../searchcity.py" line="167"/>
         <source>Found {0} city</source>
         <translation>Βρέθηκε {0} πόλη</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="167"/>
+        <location filename="../searchcity.py" line="169"/>
         <source>Found {0} cities</source>
         <translation>Βρέθηκαν {0} πόλεις</translation>
     </message>
@@ -664,7 +825,7 @@
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="202"/>
+        <location filename="../settings.py" line="210"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Μέγεθος γραμματοσειράς στο πλαίσιο συστήματος</translation>
@@ -673,26 +834,26 @@
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="177"/>
+        <location filename="../settings.py" line="185"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Εικονίδιο του πλαισίου συστήματος</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="182"/>
+        <location filename="../settings.py" line="190"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Εικονίδιο &amp; θερμοκρασία</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="193"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Εικονίδιο</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="188"/>
+        <location filename="../settings.py" line="196"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Θερμοκρασία</translation>
@@ -701,7 +862,7 @@
 <context>
     <name>Status bar message</name>
     <message>
-        <location filename="../citylistdlg.py" line="82"/>
+        <location filename="../citylistdlg.py" line="84"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
         <translation>Η πόλη υπάρχει ήδη στην λίστα</translation>
@@ -710,7 +871,7 @@
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="617"/>
+        <location filename="../meteo_qt.py" line="625"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψιν η γλώσσα</translation>
     </message>
@@ -768,22 +929,22 @@
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="278"/>
+        <location filename="../meteo_qt.py" line="279"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="278"/>
+        <location filename="../meteo_qt.py" line="279"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="658"/>
+        <location filename="../meteo_qt.py" line="668"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="666"/>
+        <location filename="../meteo_qt.py" line="676"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -792,7 +953,7 @@
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="672"/>
+        <location filename="../meteo_qt.py" line="682"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -818,7 +979,7 @@
                         OpenWeatherMap&lt;/a&gt;.
                         &lt;br/&gt;Αυτό το πρόγραμμα κάνει χρήση εικονιδίων από το &lt;a href=&quot;http://www.kde.org/&quot;&gt;έργο Oxygen&lt;/a&gt;.
                         &lt;p&gt;Για να μεταφράσετε το meteo-qt στη γλώσσα σας ή να συνεισφέρετε σε μια
-                        υπάρχουσα μετάφραση, μπορείτε να χρησιμοποιήσετε την πλατφόρμα &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;Transifex&lt;/a&gt;.
+                        υπάρχουσα μετάφραση, μπορείτε να χρησιμοποιήσετε το πλατύβαθρο &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;Transifex&lt;/a&gt;.
                         &lt;p&gt;Αν θέλετε να αναφέρετε μια δυσλειτουργία ή μια πρόταση,
                         μη διστάσετε να ανοίξετε ένα &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         θέμα&lt;/a&gt; στο github.</translation>
@@ -827,7 +988,7 @@
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="226"/>
+        <location filename="../settings.py" line="242"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Κλειδί OpenWeatherMap</translation>
@@ -854,7 +1015,7 @@
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="391"/>
+        <location filename="../meteo_qt.py" line="392"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Αναζήτηση των μετεωρολογικών δεδομένων...</translation>
@@ -891,13 +1052,13 @@
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="164"/>
+        <location filename="../overview.py" line="181"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>UV</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="169"/>
+        <location filename="../overview.py" line="186"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Λήψη...</translation>
@@ -917,7 +1078,7 @@
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="278"/>
+        <location filename="../settings.py" line="296"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Παρακαλώ προσθέστε μια πόλη</translation>
@@ -926,7 +1087,7 @@
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="275"/>
+        <location filename="../settings.py" line="293"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Παρακαλώ εισαγάγετε το κλειδί σας του OpenWeatherMap</translation>
@@ -1460,35 +1621,56 @@
     </message>
 </context>
 <context>
+    <name>Wind unit - Checkbox label</name>
+    <message>
+        <location filename="../settings.py" line="114"/>
+        <source>Wind unit in Beaufort</source>
+        <comment>Settings dialogue</comment>
+        <translation>Μονάδα ανέμου σε Μποφόρ</translation>
+    </message>
+</context>
+<context>
     <name>Window title</name>
+    <message>
+        <location filename="../citylistdlg.py" line="59"/>
+        <source>Cities</source>
+        <comment>Cities list dialogue</comment>
+        <translation>Πόλεις</translation>
+    </message>
     <message>
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
-        <comment>City translation dialog</comment>
+        <comment>City translation dialogue</comment>
         <translation>Μετάφραση της πόλης</translation>
+    </message>
+    <message>
+        <location filename="../searchcity.py" line="62"/>
+        <source>Find a city</source>
+        <comment>City search dialogue</comment>
+        <translation>Αναζήτηση μιας πόλης</translation>
     </message>
 </context>
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="../searchcity.py" line="209"/>
+        <location filename="../searchcity.py" line="211"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Σφάλμα δεδομένων, παρακαλώ προσπαθήστε ξανά αργότερα
 ή δοκιμάστε να αλλάξετε την πόλη</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="233"/>
+        <location filename="../searchcity.py" line="235"/>
         <source>Please wait, searching...</source>
         <translation>Παρακαλώ περιμένετε, γίνεται αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="242"/>
+        <location filename="../searchcity.py" line="244"/>
         <source>Error: </source>
         <translation>Σφάλμα: </translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="242"/>
+        <location filename="../searchcity.py" line="244"/>
         <source>
 Try again later</source>
         <translation>

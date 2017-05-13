@@ -2,7 +2,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="689"/>
+        <location filename="../meteo_qt.py" line="699"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -85,6 +85,136 @@
     </message>
 </context>
 <context>
+    <name>Beaufort scale 0 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="191"/>
+        <source>Sea: Sea like a mirror
+Land: Calm. Smoke rises vertically</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 1 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="192"/>
+        <source>Sea: Ripples with the appearance of scales are formed, but without foam crests
+Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 10 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="201"/>
+        <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
+Land: Trees are broken off or uprooted, structural damage likely</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 11 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="202"/>
+        <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
+Land: Widespread vegetation and structural damage likely</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 12 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="203"/>
+        <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
+Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 2 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="193"/>
+        <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
+Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 3 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="194"/>
+        <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
+Land: Leaves and small twigs constantly moving, light flags extended</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 4 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="195"/>
+        <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
+Land: Dust and loose paper raised. Small branches begin to move</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 5 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="196"/>
+        <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
+Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 6 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="197"/>
+        <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
+Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 7 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="198"/>
+        <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
+Land: Whole trees in motion. Effort needed to walk against the wind</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 8 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="199"/>
+        <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
+Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Beaufort scale 9 - Wikipedia</name>
+    <message>
+        <location filename="../conditions.py" line="200"/>
+        <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
+Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
+        <comment>Tooltip in Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Button</name>
     <message>
         <location filename="../citylistdlg.py" line="50"/>
@@ -102,7 +232,7 @@
         <translation>Authentifizierung am Proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="213"/>
+        <location filename="../settings.py" line="229"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Über Proxy verbinden</translation>
@@ -141,15 +271,24 @@
         <translation>alphabetisch &amp;Sortieren</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="112"/>
+        <location filename="../citylistdlg.py" line="114"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>Die Stadt &quot;{0}&quot; wurde entfernt</translation>
     </message>
 </context>
 <context>
+    <name>Daylight duration</name>
+    <message>
+        <location filename="../overview.py" line="174"/>
+        <source>Daylight</source>
+        <comment>Weather overview dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="554"/>
+        <location filename="../overview.py" line="635"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -158,7 +297,7 @@
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="826"/>
+        <location filename="../meteo_qt.py" line="836"/>
         <source>Error :
 </source>
         <translation>Fehler :
@@ -178,6 +317,15 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
     </message>
 </context>
 <context>
+    <name>Font setting - Checkbox label</name>
+    <message>
+        <location filename="../settings.py" line="221"/>
+        <source>Bold</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>High UV recommended protection</name>
     <message>
         <location filename="../conditions.py" line="171"/>
@@ -191,7 +339,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context>
     <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
     <message>
-        <location filename="../settings.py" line="114"/>
+        <location filename="../settings.py" line="122"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
         <translation>Genauigkeit der Temperaturanzeige in der Leiste</translation>
@@ -200,7 +348,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="221"/>
+        <location filename="../settings.py" line="237"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Einstellungen</translation>
@@ -209,7 +357,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="229"/>
+        <location filename="../settings.py" line="245"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Schlüssel erstellen&lt;/a&gt;</translation>
@@ -229,7 +377,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context>
     <name>Message when trying to remove the last and unique city in the list</name>
     <message>
-        <location filename="../citylistdlg.py" line="103"/>
+        <location filename="../citylistdlg.py" line="105"/>
         <source>This is the default city !</source>
         <comment>Cities list dialogue</comment>
         <translation>Die Liste muss mindestens eine Stadt enthalten!</translation>
@@ -403,42 +551,42 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
         <translation>Temperatureinheit</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="127"/>
+        <location filename="../settings.py" line="135"/>
         <source>Update interval</source>
         <translation>Aktualisierungsintervall</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="128"/>
+        <location filename="../settings.py" line="136"/>
         <source>minutes</source>
         <translation>Minuten</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="150"/>
+        <location filename="../settings.py" line="158"/>
         <source>Launch at startup</source>
         <translation>Bei Sitzungsbeginn starten</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="158"/>
+        <location filename="../settings.py" line="166"/>
         <source>Font colour in the tray</source>
         <translation>Schriftfarbe in der Systemleiste</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="164"/>
+        <location filename="../settings.py" line="172"/>
         <source>Reset</source>
         <translation>Zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="165"/>
+        <location filename="../settings.py" line="173"/>
         <source>Reset font colour to system default</source>
         <translation>Schriftfarbe in der Seitenleiste zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="169"/>
+        <location filename="../settings.py" line="177"/>
         <source>Notification on weather update</source>
         <translation>Benachrichtigen bei Wetteraktualiserungen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="282"/>
+        <location filename="../settings.py" line="300"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Konfiguration</translation>
     </message>
@@ -492,52 +640,52 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
         <translation>So</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="96"/>
+        <location filename="../overview.py" line="97"/>
         <source>Wind</source>
         <translation>Wind</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="119"/>
+        <location filename="../overview.py" line="128"/>
         <source>Cloudiness</source>
         <translation>Bewölkung</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="123"/>
+        <location filename="../overview.py" line="132"/>
         <source>Pressure</source>
         <translation>Luftdruck</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="129"/>
+        <location filename="../overview.py" line="138"/>
         <source>Humidity</source>
         <translation>Luftfeuchtigkeit</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="155"/>
+        <location filename="../overview.py" line="166"/>
         <source>Sunrise</source>
         <translation>Sonnenaufgang</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="157"/>
+        <location filename="../overview.py" line="168"/>
         <source>Sunset</source>
         <translation>Sonnenuntergang</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="224"/>
+        <location filename="../overview.py" line="237"/>
         <source>Weather status</source>
         <translation>Wetterstatus</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="365"/>
+        <location filename="../overview.py" line="446"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="514"/>
+        <location filename="../overview.py" line="595"/>
         <source>snow</source>
         <translation>Schnee</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="515"/>
+        <location filename="../overview.py" line="596"/>
         <source>rain</source>
         <translation>Regen</translation>
     </message>
@@ -545,7 +693,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="174"/>
+        <location filename="../overview.py" line="191"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Ozon</translation>
@@ -554,7 +702,7 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="558"/>
+        <location filename="../overview.py" line="639"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -588,7 +736,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="135"/>
+        <location filename="../overview.py" line="144"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Niederschlag</translation>
@@ -638,22 +786,22 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
         <translation>Abbre&amp;chen</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="108"/>
+        <location filename="../searchcity.py" line="110"/>
         <source>Please type more than three letters</source>
         <translation>Bitte mehr als drei Buchstaben eingeben</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="163"/>
+        <location filename="../searchcity.py" line="165"/>
         <source>No results</source>
         <translation>Keine Ergebnisse</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="165"/>
+        <location filename="../searchcity.py" line="167"/>
         <source>Found {0} city</source>
         <translation>{0} Stadt gefunden</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="167"/>
+        <location filename="../searchcity.py" line="169"/>
         <source>Found {0} cities</source>
         <translation>{0} Städte gefunden</translation>
     </message>
@@ -661,7 +809,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="202"/>
+        <location filename="../settings.py" line="210"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Schriftgröße in der Leiste</translation>
@@ -670,26 +818,26 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="177"/>
+        <location filename="../settings.py" line="185"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Darstellung in der Leiste</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="182"/>
+        <location filename="../settings.py" line="190"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Symbol und Temperatur</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="193"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Symbol</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="188"/>
+        <location filename="../settings.py" line="196"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Temperatur</translation>
@@ -698,7 +846,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>Status bar message</name>
     <message>
-        <location filename="../citylistdlg.py" line="82"/>
+        <location filename="../citylistdlg.py" line="84"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
         <translation>Die Stadt ist bereits in der Liste enthalten</translation>
@@ -707,7 +855,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="617"/>
+        <location filename="../meteo_qt.py" line="625"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
     </message>
@@ -765,22 +913,22 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
         <translation>Keine Stadt ausgewählt</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="278"/>
+        <location filename="../meteo_qt.py" line="279"/>
         <source>No city has been configured yet.</source>
         <translation>Es wurde noch keine Stadt ausgewählt.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="278"/>
+        <location filename="../meteo_qt.py" line="279"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Mit der rechten Maustaste auf das Symbol klicken und Einstellungen wählen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="658"/>
+        <location filename="../meteo_qt.py" line="668"/>
         <source>Fetching weather data...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="666"/>
+        <location filename="../meteo_qt.py" line="676"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -789,7 +937,7 @@ Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der Antarktis vers
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} unter {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="672"/>
+        <location filename="../meteo_qt.py" line="682"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -826,7 +974,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="226"/>
+        <location filename="../settings.py" line="242"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Schlüssel von OpenWeatherMap</translation>
@@ -853,7 +1001,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="391"/>
+        <location filename="../meteo_qt.py" line="392"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Suche Wetterdaten...</translation>
@@ -890,13 +1038,13 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="164"/>
+        <location filename="../overview.py" line="181"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>UV</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="169"/>
+        <location filename="../overview.py" line="186"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Rufe ab...</translation>
@@ -915,7 +1063,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="278"/>
+        <location filename="../settings.py" line="296"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Bitte eine Stadt hinzufügen</translation>
@@ -924,7 +1072,7 @@ github&lt;/a&gt; erstellen.</translation>
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="275"/>
+        <location filename="../settings.py" line="293"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Bitte hier den Schlüssel von OpenWeatherMap eintragen</translation>
@@ -1458,34 +1606,55 @@ github&lt;/a&gt; erstellen.</translation>
     </message>
 </context>
 <context>
+    <name>Wind unit - Checkbox label</name>
+    <message>
+        <location filename="../settings.py" line="114"/>
+        <source>Wind unit in Beaufort</source>
+        <comment>Settings dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Window title</name>
+    <message>
+        <location filename="../citylistdlg.py" line="59"/>
+        <source>Cities</source>
+        <comment>Cities list dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
     <message>
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
-        <comment>City translation dialog</comment>
-        <translation>Übersetzung von Städten</translation>
+        <comment>City translation dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../searchcity.py" line="62"/>
+        <source>Find a city</source>
+        <comment>City search dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="../searchcity.py" line="209"/>
+        <location filename="../searchcity.py" line="211"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation>Datenfehler, bitte später noch einmal versuchen oder den Namen der Stadt ändern</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="233"/>
+        <location filename="../searchcity.py" line="235"/>
         <source>Please wait, searching...</source>
         <translation>Bitte warten, suche...</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="242"/>
+        <location filename="../searchcity.py" line="244"/>
         <source>Error: </source>
         <translation>Fehler:</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="242"/>
+        <location filename="../searchcity.py" line="244"/>
         <source>
 Try again later</source>
         <translation>Bitte später noch einmal probieren</translation>
