@@ -502,7 +502,7 @@ class MeteoSettings(QDialog):
             self.settings.setValue('CityList', str(self.city_list_before))
             logging.debug('write ' + 'CityList ' + str(self.city_list_before))
             try:
-                cities = eval(self.city_list_before)
+                cities = self.city_list_before
                 cities.append(self.citytosave)
             except:
                 logging.debug('Empty cities list, default city: ' + str(cities))

@@ -205,7 +205,7 @@ class SystemTrayIcon(QMainWindow):
                 self.settings.setValue('ID', citytosetlist[2])
                 if prev_city not in cities_list:
                     cities_list.append(prev_city)
-                self.settings.setValue('CityList', cities_list)
+                self.settings.setValue('CityList', str(cities_list))
                 logging.debug(cities_list)
         self.refresh()
 
