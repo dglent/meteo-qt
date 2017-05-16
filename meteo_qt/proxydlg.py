@@ -23,13 +23,17 @@ class Proxy(QDialog):
         self.buttonBox.accepted.connect(self.accept)
         self.buttonLayout.addWidget(self.buttonBox)
 
-        self.proxy_url_label = QLabel('Proxy URL:')
+        self.proxy_url_label = QLabel(QCoreApplication.translate(
+                                'Entry label for the proxy url',
+                                'Proxy URL:', 'Proxy settings dialogue'))
         self.proxy_url_line = QLineEdit()
         url = self.settings.value('Proxy_url') or ''
         self.proxy_url_line = QLineEdit(url)
         self.proxy_url_line.setMinimumWidth(300)
 
-        self.proxy_port_label = QLabel('Port:')
+        self.proxy_port_label = QLabel(QCoreApplication.translate(
+                            'Entry label for the proxy port', 'Port:',
+                            'Proxy settings dialogue'))
         port = self.settings.value('Proxy_port') or ''
         self.proxy_port_line = QLineEdit(port)
 
