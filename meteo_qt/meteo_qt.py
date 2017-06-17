@@ -113,8 +113,10 @@ class SystemTrayIcon(QMainWindow):
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Searching weather data...'))
         self.notification = ''
-        self.notification_temp = 0
-        self.notifications_id = ''
+        self.hPaTrend = 0
+        self.trendCities_dic = {}
+        self.notifier_id = ''
+        self.temp_trend = ''
         self.systray.show()
         # The dictionnary has to be intialized here. If there is an error
         # the program couldn't become functionnal if the dictionnary is
@@ -314,7 +316,7 @@ class SystemTrayIcon(QMainWindow):
             self.overviewcity = overview.OverviewCity(
                 self.weatherDataDico, self.wIcon, self.forecast_data,
                 self.dayforecast_data, self.json_data_bool, self.unit, self.forecast_icon_url,
-                self.uv_coord, self)
+                self.uv_coord, self.hPaTrend, self.temp_trend, self)
             self.overviewcity.closed_status_dialogue.connect(self.remove_object)
         except:
             self.inerror = True
@@ -475,8 +477,21 @@ class SystemTrayIcon(QMainWindow):
         if rain_value == None:
             rain_value = ''
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
+        if self.id_ not in self.trendCities_dic:
+            # dict {'id': 'hPa', 'T°'}
+            self.trendCities_dic[self.id_] = [''] * 2
+        # hPa self.temp_trend
+        pressure = int(self.weatherDataDico['Pressure'][0])
+        if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
+            self.hPaTrend = pressure - int(self.trendCities_dic[self.id_][0])
+        else:
+            self.hPaTrend = 0
+        self.trendCities_dic[self.id_][0] = pressure
+        # Temperature trend
+        self.notifier()
 
     def tooltip_weather(self):
+        # Creation of the tray tootltip
         trans_cities = self.settings.value('CitiesTranslation') or '{}'
         trans_cities_dict = eval(trans_cities)
         city = self.city + '_' + self.country + '_' + self.id_
@@ -487,7 +502,6 @@ class SystemTrayIcon(QMainWindow):
         else:
             self.city_weather_info = (self.city + ' ' + self.country + ' ' +
                                   self.temp_decimal + ' ' + self.meteo)
-        self.systray.setToolTip(self.city_weather_info)
 
     def tray(self):
         temp_decimal = eval(self.settings.value('Decimal') or 'False')
@@ -541,25 +555,50 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setIcon(QIcon(self.wIcon))
         else:
             self.systray.setIcon(QIcon(icon))
-        try:
-            if not self.overviewcity.isVisible():
-                notifier = self.settings.value('Notifications') or 'True'
-                notifier = eval(notifier)
-                if notifier:
-                    temp = int(re.search('\d+', self.temp_decimal).group())
-                    if temp != self.notification_temp or self.id_ != self.notifications_id:
-                        self.notifications_id = self.id_
-                        self.notification_temp = temp
-                        self.systray.showMessage('meteo-qt', self.notification)
-        except:
-            logging.debug('OverviewCity has been deleted' +
-                          'Download weather information again...')
-            self.try_again()
-            return
+        if self.notifier_settings():
+            if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
+                    '' or self.id_ != self.notifier_id):
+                try:
+                    if not self.overviewcity.isVisible():
+                        self.systray.showMessage('meteo-qt', self.notification +
+                                                 self.temp_trend)
+                except AttributeError:
+                    logging.debug('!!! OverviewCity in garbages, try again...')
+                    self.systray.showMessage('meteo-qt', self.notification +
+                                             self.temp_trend)
+                    self.try_again()
+                    return
+        self.notifier_id = self.id_
         self.restore_city()
         self.tentatives = 0
         self.tooltip_weather()
         logging.info('Actual weather status for: ' + self.notification)
+
+    def notifier_settings(self):
+        notifier = self.settings.value('Notifications') or 'True'
+        notifier = eval(notifier)
+        if notifier:
+            return True
+        else:
+            return False
+
+    def notifier(self):
+        ''' The notification is being shown:
+        On a city change or first launch or if the temperature changes
+        The notification is not shown if is turned off from the settings.
+        The tray tooltip is set here '''
+        self.temp_trend = ''
+        temp = float(self.tempFloat)
+        # if self.notifier_settings():
+        if (self.id_ in self.trendCities_dic and
+                self.trendCities_dic[self.id_][1] is not '' and
+                self.id_ == self.notifier_id):
+            if temp > float(self.trendCities_dic[self.id_][1]):
+                self.temp_trend = " "
+            elif temp < float(self.trendCities_dic[self.id_][1]):
+                self.temp_trend = " "
+        self.trendCities_dic[self.id_][1] = temp
+        self.systray.setToolTip(self.city_weather_info + self.temp_trend)
 
     def restore_city(self):
         if self.temporary_city_status:

@@ -25,7 +25,8 @@ class OverviewCity(QDialog):
                   ' ': '°K'}
 
     def __init__(self, weatherdata, icon, forecast, dayforecast,
-                 json_data_bool, unit, icon_url, uv_coord, parent=None):
+                 json_data_bool, unit, icon_url, uv_coord, hPaTrend,
+                 temp_trend, parent=None):
         super(OverviewCity, self).__init__(parent)
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.json_data_bool = json_data_bool
@@ -43,6 +44,7 @@ class OverviewCity(QDialog):
         self.wind_name_dic = cond.wind
         self.clouds_name_dic = cond.clouds
         self.beaufort_sea_land = cond.beaufort
+        self.hpa_indications = cond.pressure
         self.uv_risk = cond.uv_risk
         self.uv_recommend = cond.uv_recommend
         self.settings = QSettings()
@@ -50,6 +52,8 @@ class OverviewCity(QDialog):
         self.tree_day = dayforecast
         self.icon_url = icon_url
         self.uv_coord = uv_coord
+        self.hPaTrend = hPaTrend
+        self.temp_trend = temp_trend
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
         self.weatherdata = weatherdata
@@ -81,8 +85,8 @@ class OverviewCity(QDialog):
         self.icontemp_layout.addWidget(self.icon_label)
         self.temp_label = QLabel(
             '<font size="5"><b>' + '{0:.1f}'.format(
-                float(self.weatherdata['Temp'][:-1])) + ' ' + self.unit_temp +
-            '<\b><\font>')
+            float(self.weatherdata['Temp'][:-1])) + ' ' + self.unit_temp +
+            self.temp_trend + '<\b><\font>')
         self.icontemp_layout.addWidget(self.temp_label)
         self.over_layout.addLayout(self.icontemp_layout)
         self.weather = QLabel('<font size="4"><b>' +
@@ -126,23 +130,33 @@ class OverviewCity(QDialog):
         self.wind_icon_label.setAlignment(Qt.AlignLeft)
         self.wind_icon = QPixmap(':/arrow')
         self.wind_icon_direction()
-        # ----------------
+        # Clouds
         self.clouds_label = QLabel('<font size="3" color=grey><b>' +
                                    self.tr('Cloudiness') + '<\b><\font>')
         self.clouds_name = QLabel('<font color=grey>' +
                                   self.weatherdata['Clouds'] + '<\font>')
+        # Pressure
         self.pressure_label = QLabel('<font size="3" color=grey><b>' +
                                      self.tr('Pressure') + '<\b><\font>')
+        if self.hPaTrend == 0:
+            hpa = ""
+        elif self.hPaTrend < 0:
+            hpa = ""
+        elif self.hPaTrend > 0:
+            hpa = ""
         self.pressure_value = QLabel('<font color=grey>' +
-                                     str(round(float(self.weatherdata['Pressure'][0]))) + ' ' +
-                                     self.weatherdata['Pressure'][1] +
-                                     '<\font>')
+                                     str(round(float(self.weatherdata['Pressure'][0]))) +
+                                     ' ' + self.weatherdata['Pressure'][1]
+                                     + " " + hpa + '<\font>')
+        self.pressure_value.setToolTip(self.hpa_indications['hpa'])
+        # Humidity
         self.humidity_label = QLabel('<font size="3" color=grey><b>' +
                                      self.tr('Humidity') + '<\b><\font>')
         self.humidity_value = QLabel('<font color=grey>' +
                                      self.weatherdata['Humidity'][0] + ' ' +
                                      self.weatherdata['Humidity'][1] +
                                      '<\font>')
+        # Precipitation
         self.precipitation_label = QLabel('<font size="3" color=grey><b>' +
                                           QCoreApplication.translate(
                                             'Precipitation type (no/rain/snow)',
