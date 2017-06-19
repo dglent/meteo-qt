@@ -3,7 +3,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="700"/>
+        <location filename="../meteo_qt.py" line="741"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -251,7 +251,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../overview.py" line="176"/>
+        <location filename="../overview.py" line="190"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
@@ -260,7 +260,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="644"/>
+        <location filename="../overview.py" line="658"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation type="unfinished"></translation>
@@ -269,7 +269,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="837"/>
+        <location filename="../meteo_qt.py" line="878"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
@@ -310,6 +310,20 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="221"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
+    <message>
+        <location filename="../conditions.py" line="205"/>
+        <source>If the barometric pressure is rising, the weather is improving.
+If the barometric pressure is falling, the weather is worsening.
+Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled weather/warmer temperatures.
+1010-1020 hPa would be weak to normal storms.
+990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
+Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
+        <comment>Tooltip for the pressure label in weather overview</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -593,87 +607,87 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>OverviewCity</name>
     <message>
-        <location filename="../overview.py" line="32"/>
+        <location filename="../overview.py" line="33"/>
         <source>Mon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="33"/>
+        <location filename="../overview.py" line="34"/>
         <source>Tue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="34"/>
+        <location filename="../overview.py" line="35"/>
         <source>Wed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="35"/>
+        <location filename="../overview.py" line="36"/>
         <source>Thu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="36"/>
+        <location filename="../overview.py" line="37"/>
         <source>Fri</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="37"/>
+        <location filename="../overview.py" line="38"/>
         <source>Sat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="38"/>
+        <location filename="../overview.py" line="39"/>
         <source>Sun</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="97"/>
+        <location filename="../overview.py" line="101"/>
         <source>Wind</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="130"/>
+        <location filename="../overview.py" line="134"/>
         <source>Cloudiness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="134"/>
+        <location filename="../overview.py" line="139"/>
         <source>Pressure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="140"/>
+        <location filename="../overview.py" line="153"/>
         <source>Humidity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="168"/>
+        <location filename="../overview.py" line="182"/>
         <source>Sunrise</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="170"/>
+        <location filename="../overview.py" line="184"/>
         <source>Sunset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="239"/>
+        <location filename="../overview.py" line="253"/>
         <source>Weather status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="448"/>
+        <location filename="../overview.py" line="462"/>
         <source>Min Max Temperature of the day</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="602"/>
+        <location filename="../overview.py" line="616"/>
         <source>snow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="603"/>
+        <location filename="../overview.py" line="617"/>
         <source>rain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -681,7 +695,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="193"/>
+        <location filename="../overview.py" line="207"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"></translation>
@@ -690,7 +704,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="648"/>
+        <location filename="../overview.py" line="662"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -723,7 +737,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="146"/>
+        <location filename="../overview.py" line="160"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation type="unfinished"></translation>
@@ -842,7 +856,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="626"/>
+        <location filename="../meteo_qt.py" line="667"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -885,44 +899,44 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="225"/>
+        <location filename="../meteo_qt.py" line="228"/>
         <source>Empty list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="245"/>
+        <location filename="../meteo_qt.py" line="248"/>
         <source>Fetching weather data ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="263"/>
+        <location filename="../meteo_qt.py" line="266"/>
         <source>No city configured</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="669"/>
+        <location filename="../meteo_qt.py" line="710"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="677"/>
+        <location filename="../meteo_qt.py" line="718"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="683"/>
+        <location filename="../meteo_qt.py" line="724"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -972,7 +986,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="393"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation type="unfinished"></translation>
@@ -1009,13 +1023,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="183"/>
+        <location filename="../overview.py" line="197"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../overview.py" line="188"/>
+        <location filename="../overview.py" line="202"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"></translation>
