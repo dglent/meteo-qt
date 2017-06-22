@@ -591,8 +591,7 @@ class SystemTrayIcon(QMainWindow):
         temp = float(self.tempFloat)
         # if self.notifier_settings():
         if (self.id_ in self.trendCities_dic and
-                self.trendCities_dic[self.id_][1] is not '' and
-                self.id_ == self.notifier_id):
+                self.trendCities_dic[self.id_][1] is not ''):
             if temp > float(self.trendCities_dic[self.id_][1]):
                 self.temp_trend = " "
             elif temp < float(self.trendCities_dic[self.id_][1]):
