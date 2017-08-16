@@ -2,7 +2,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="699"/>
+        <location filename="../meteo_qt.py" line="741"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -34,7 +34,36 @@
             &lt;p&gt;pmav99&lt;br/&gt;
             Project</source>
         <comment>List of contributors</comment>
-        <translation type="unfinished"/>
+        <translation>
+            Pavel Fric&lt;br/&gt;
+            [cs] перевод на Чешский
+            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
+            [de] перевод на немецкий
+            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
+            [de] перевод на немецкий, проект
+            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
+            [el] перевод на греческий
+            &lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] перевод на испанский, проект
+            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [es] перевод на испанский
+            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
+            [fr] перевод на французский
+            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
+            [fr] перевод на французский, проект
+            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
+            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [pl] перевод на польский
+            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
+            [ru] перевод на русский
+            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [tr] перевод на турецкий
+            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
+            [uk] перевод на украинский
+            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
+            [zh_TW] перевод на китайский (Тайвань)
+            &lt;p&gt;pmav99&lt;br/&gt;
+            Проект</translation>
     </message>
 </context>
 <context>
@@ -62,7 +91,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Зеркально гладкое море
+Суша: Безветрие, дым поднимается вертикально, листья деревьев неподвижны</translation>
     </message>
 </context>
 <context>
@@ -72,7 +102,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed, but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Рябь, пены на гребнях волн нет. Высота волн до 0,1 м
+Суша: Направление ветра заметно по относу дыма, но не по флюгеру</translation>
     </message>
 </context>
 <context>
@@ -82,7 +113,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Очень высокие волны с длинными загибающимися вниз гребнями. Образующаяся пена выдувается ветром большими хлопьями в виде густых белых полос. Поверхность моря белая от пены. Сильный грохот волн подобен ударам
+Суша: Значительные разрушения строений, ветер вырывает деревья с корнем</translation>
     </message>
 </context>
 <context>
@@ -92,7 +124,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Видимость плохая. Исключительно высокие волны. Море всё покрыто длинными белыми хлопьями пены, располагающимися по ветру. Края волн повсюду сдуваются в пену
+Суша: Большие разрушения на значительном пространстве. Наблюдается очень редко.</translation>
     </message>
 </context>
 <context>
@@ -102,7 +135,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Исключительно плохая видимость. Воздух наполнен пеной и брызгами. Всё море покрыто полосами пены
+Суша: Огромные разрушения, серьезно повреждены здания, строения и дома, деревья вырваны с корнями, растительность уничтожена. Случай очень редкий.</translation>
     </message>
 </context>
 <context>
@@ -112,7 +146,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Короткие волны максимальной высотой до 0,3 м, гребни не опрокидываются и кажутся стекловидными
+Суша: Движение ветра ощущается лицом, шелестят листья, приводится в движение флюгер</translation>
     </message>
 </context>
 <context>
@@ -122,7 +157,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Короткие, хорошо выраженные волны. Гребни, опрокидываясь, образуют стекловидную пену. Изредка образуются маленькие барашки.
+Суша: Листья и тонкие ветви деревьев всё время колышутся, ветер развевает лёгкие флаги</translation>
     </message>
 </context>
 <context>
@@ -132,7 +168,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Волны удлинённые, барашки видны во многих местах.
+Суша: Ветер поднимает пыль и мусор, приводит в движение тонкие ветви деревьев</translation>
     </message>
 </context>
 <context>
@@ -142,7 +179,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Хорошо развитые в длину, но не крупные волны. Повсюду видны белые барашки, в отдельных случаях образуются брызги
+Суша: Качаются тонкие стволы деревьев, движение ветра ощущается рукой</translation>
     </message>
 </context>
 <context>
@@ -152,7 +190,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Начинают образовываться крупные волны. Белые пенистые гребни занимают значительные площади, вероятны брызги
+Суша: Качаются толстые сучья деревьев, гудят телеграфные провода</translation>
     </message>
 </context>
 <context>
@@ -162,7 +201,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort needed to walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Волны громоздятся, гребни волн срываются, пена ложится полосами по ветру.
+Суша: Качаются стволы деревьев</translation>
     </message>
 </context>
 <context>
@@ -172,7 +212,8 @@ Land: Whole trees in motion. Effort needed to walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Умеренно высокие длинные волны. По краям гребней начинают взлетать брызги. Полосы пены ложатся рядами по направлению ветра.
+Суша: Ветер ломает сучья деревьев, идти против ветра очень трудно</translation>
     </message>
 </context>
 <context>
@@ -182,7 +223,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Пена широкими плотными полосами ложится по ветру. Гребни волн начинают опрокидываться и рассыпаться в брызги, которые ухудшают видимость
+Суша: Небольшие повреждения, ветер начинает разрушать крыши зданий</translation>
     </message>
 </context>
 <context>
@@ -191,22 +233,22 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="50"/>
         <source>&amp;Translate</source>
         <comment>Edit cities dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Переводить</translation>
     </message>
 </context>
 <context>
     <name>Checkbox</name>
     <message>
-        <location filename="../proxydlg.py" line="38"/>
+        <location filename="../proxydlg.py" line="42"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Использовать прокси аутентификацию</translation>
     </message>
     <message>
         <location filename="../settings.py" line="229"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Подключение через прокси</translation>
     </message>
 </context>
 <context>
@@ -250,29 +292,47 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../overview.py" line="174"/>
+        <location filename="../overview.py" line="190"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>День</translation>
     </message>
 </context>
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="635"/>
+        <location filename="../overview.py" line="658"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
-        <translation type="unfinished"/>
+        <translation>Единицы Добсона</translation>
     </message>
 </context>
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="836"/>
+        <location filename="../meteo_qt.py" line="878"/>
         <source>Error :
 </source>
         <translation>Ошибка :
 </translation>
+    </message>
+</context>
+<context>
+    <name>Entry label for the proxy port</name>
+    <message>
+        <location filename="../proxydlg.py" line="35"/>
+        <source>Port:</source>
+        <comment>Proxy settings dialogue</comment>
+        <translation>Порт</translation>
+    </message>
+</context>
+<context>
+    <name>Entry label for the proxy url</name>
+    <message>
+        <location filename="../proxydlg.py" line="26"/>
+        <source>Proxy URL:</source>
+        <comment>Proxy settings dialogue</comment>
+        <translation>URL прокси</translation>
     </message>
 </context>
 <context>
@@ -283,7 +343,9 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Используйте все меры: Солнцезащитный крем 30+, рубашка
+                с длинными рукавами и брюки,&lt;br/&gt;солнцезащитные очки, и шляпа с очень широкими полями.
+                Воздержитесь от пребывания под солнцем в течении трех часов солнечного полдня.</translation>
     </message>
 </context>
 <context>
@@ -292,7 +354,26 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="221"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Жирный</translation>
+    </message>
+</context>
+<context>
+    <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
+    <message>
+        <location filename="../conditions.py" line="205"/>
+        <source>If the barometric pressure is rising, the weather is improving.
+If the barometric pressure is falling, the weather is worsening.
+Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled weather/warmer temperatures.
+1010-1020 hPa would be weak to normal storms.
+990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
+Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
+        <comment>Tooltip for the pressure label in weather overview</comment>
+        <translation>Если давление растет, погода улучшается.
+Если давление падает, погода ухудшается.
+Выше 1020 кПа погода спокойная и холодная, а ниже погода непостоянная и более теплая.
+1010-1020 кПа возможны штормы.
+990-1010 кПа возможны сильные штормы, а также ураганы, торнадо и тайфуны.
+Ниже 990 кПа всё очень плохо, сильные ураганы, торнадо и тайфуны.</translation>
     </message>
 </context>
 <context>
@@ -303,7 +384,9 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Покройте тело одеждой, используйте солнцезащитный крем
+с коеффициентом 30+,&lt;br/&gt;надевайте головной убор, сокращайте время пребывания под солнцем в течении трех
+часов солнечного полдня, и надевайте солнцезащитные очки.</translation>
     </message>
 </context>
 <context>
@@ -312,7 +395,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="122"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Точность температуры в трее</translation>
     </message>
 </context>
 <context>
@@ -321,7 +404,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="237"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Настройки</translation>
     </message>
 </context>
 <context>
@@ -330,7 +413,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="245"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Создать ключ&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -341,7 +424,8 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Одевайте солнцезащитные очки в ясные дни; используйте крем от загара если
+на земле&lt;br/&gt;есть снег, который отражает УФ излучение или у вас чувствительная кожа.</translation>
     </message>
 </context>
 <context>
@@ -350,7 +434,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="105"/>
         <source>This is the default city !</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>В списке должен быть хоть один город!</translation>
     </message>
 </context>
 <context>
@@ -569,93 +653,94 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Укройте кожу, если собираетесь
+быть на улице.&lt;br/&gt;Находитесь в тени в середине дня, когда солнце греет сильнее всего.</translation>
     </message>
 </context>
 <context>
     <name>OverviewCity</name>
     <message>
-        <location filename="../overview.py" line="32"/>
+        <location filename="../overview.py" line="33"/>
         <source>Mon</source>
         <translation>Пн</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="33"/>
+        <location filename="../overview.py" line="34"/>
         <source>Tue</source>
         <translation>Вт</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="34"/>
+        <location filename="../overview.py" line="35"/>
         <source>Wed</source>
         <translation>Ср</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="35"/>
+        <location filename="../overview.py" line="36"/>
         <source>Thu</source>
         <translation>Чт</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="36"/>
+        <location filename="../overview.py" line="37"/>
         <source>Fri</source>
         <translation>Пт</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="37"/>
+        <location filename="../overview.py" line="38"/>
         <source>Sat</source>
         <translation>Сб</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="38"/>
+        <location filename="../overview.py" line="39"/>
         <source>Sun</source>
         <translation>Вс</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="97"/>
+        <location filename="../overview.py" line="101"/>
         <source>Wind</source>
         <translation>Ветер</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="128"/>
+        <location filename="../overview.py" line="134"/>
         <source>Cloudiness</source>
         <translation>Облачность</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="132"/>
+        <location filename="../overview.py" line="139"/>
         <source>Pressure</source>
         <translation>Давление</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="138"/>
+        <location filename="../overview.py" line="153"/>
         <source>Humidity</source>
         <translation>Влажность</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="166"/>
+        <location filename="../overview.py" line="182"/>
         <source>Sunrise</source>
         <translation>Восход</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="168"/>
+        <location filename="../overview.py" line="184"/>
         <source>Sunset</source>
         <translation>Закат</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="237"/>
+        <location filename="../overview.py" line="253"/>
         <source>Weather status</source>
         <translation>Состояние погоды</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="446"/>
+        <location filename="../overview.py" line="462"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мин Макс Температура дня</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="595"/>
+        <location filename="../overview.py" line="616"/>
         <source>snow</source>
         <translation>снег</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="596"/>
+        <location filename="../overview.py" line="617"/>
         <source>rain</source>
         <translation>дождь</translation>
     </message>
@@ -663,22 +748,25 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="191"/>
+        <location filename="../overview.py" line="207"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Озоновый слой</translation>
     </message>
 </context>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="639"/>
+        <location filename="../overview.py" line="662"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Средняя плотность ознового слоя в &lt;br/&gt; атмосере
+                около 300 единиц Добсона. То, что ученые называют озоновой “дырой”
+                это место, где плотность озонового слоя падает до
+                100 единиц Добсона.</translation>
     </message>
 </context>
 <context>
@@ -687,46 +775,46 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>нет</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>дождь</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>снег</translation>
     </message>
 </context>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="144"/>
+        <location filename="../overview.py" line="160"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Осадки</translation>
     </message>
 </context>
 <context>
     <name>Proxy password authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="51"/>
+        <location filename="../proxydlg.py" line="55"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Пароль:</translation>
     </message>
 </context>
 <context>
     <name>Proxy username authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="47"/>
+        <location filename="../proxydlg.py" line="51"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>ID пользователя</translation>
     </message>
 </context>
 <context>
@@ -734,7 +822,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
     <message>
         <location filename="../searchcity.py" line="31"/>
         <source>Start typing the city...</source>
-        <translation type="unfinished"/>
+        <translation>Начните вводить город...</translation>
     </message>
 </context>
 <context>
@@ -757,7 +845,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
     <message>
         <location filename="../searchcity.py" line="110"/>
         <source>Please type more than three letters</source>
-        <translation type="unfinished"/>
+        <translation>Пожалуйста, введите больше трех символов </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="165"/>
@@ -781,7 +869,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="210"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Размер шрифта в трее</translation>
     </message>
 </context>
 <context>
@@ -791,25 +879,25 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Иконка в трее</translation>
     </message>
     <message>
         <location filename="../settings.py" line="190"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Тип иконки</translation>
     </message>
     <message>
         <location filename="../settings.py" line="193"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Иконка</translation>
     </message>
     <message>
         <location filename="../settings.py" line="196"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Температура</translation>
     </message>
 </context>
 <context>
@@ -818,15 +906,15 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="84"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Город уже в списке</translation>
     </message>
 </context>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="625"/>
+        <location filename="../meteo_qt.py" line="667"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"/>
+        <translation>Для применения языковых настроек необходим перезапуск</translation>
     </message>
 </context>
 <context>
@@ -837,67 +925,67 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation>Города</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="89"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Временный город</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>&amp;Update</source>
         <translation>&amp;Обновить</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="92"/>
         <source>&amp;Settings</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="92"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="93"/>
+        <location filename="../meteo_qt.py" line="94"/>
         <source>Exit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="115"/>
+        <location filename="../meteo_qt.py" line="116"/>
         <source>Searching weather data...</source>
         <translation>Поиск данных о погоде...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="224"/>
+        <location filename="../meteo_qt.py" line="228"/>
         <source>Empty list</source>
         <translation>Список пуст</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="244"/>
+        <location filename="../meteo_qt.py" line="248"/>
         <source>Fetching weather data ...</source>
         <translation>Загрузка данных о погоде ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="262"/>
+        <location filename="../meteo_qt.py" line="266"/>
         <source>No city configured</source>
         <translation>Город не указан</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="279"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>No city has been configured yet.</source>
         <translation>Не был указан город.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="279"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Нажмите ПКМ по значку и выберите &quot;Настройки&quot;.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="668"/>
+        <location filename="../meteo_qt.py" line="710"/>
         <source>Fetching weather data...</source>
         <translation>Загрузка данных о погоде...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="676"/>
+        <location filename="../meteo_qt.py" line="718"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -906,7 +994,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="682"/>
+        <location filename="../meteo_qt.py" line="724"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -923,7 +1011,15 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Автор: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+&lt;p&gt;Простой индикатор погоды в системном трее.
+&lt;br/&gt;Сайт: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+https://github.com/dglent/meteo-qt&lt;/a&gt;
+&lt;br/&gt;Данные: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+http://openweathermap.org/&lt;/a&gt;.
+&lt;p&gt;Заметили ошибку или есть предложения?
+Сообщите нам на &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+багтрекере&lt;/a&gt; github.</translation>
     </message>
 </context>
 <context>
@@ -932,7 +1028,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="242"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>ключ OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -941,25 +1037,25 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="56"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Для применения языковых настроек необходим перезапуск</translation>
     </message>
 </context>
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="83"/>
+        <location filename="../meteo_qt.py" line="84"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation type="unfinished"/>
+        <translation>Переключить окно</translation>
     </message>
 </context>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="392"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"/>
+        <translation>Поиск данных о погоде...</translation>
     </message>
 </context>
 <context>
@@ -967,42 +1063,42 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
     <message>
         <location filename="../conditions.py" line="146"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Низкий</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation>Умеренный</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="151"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Высокий</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="153"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation>Очень высокий</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="155"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation>Экстремальный</translation>
     </message>
 </context>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="181"/>
+        <location filename="../overview.py" line="197"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation> УФ излучение</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="186"/>
+        <location filename="../overview.py" line="202"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation type="unfinished"/>
+        <translation>Загрузка...</translation>
     </message>
 </context>
 <context>
@@ -1012,7 +1108,8 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Используйте солнезащитный крем 30+, надевайте рубашку, солнцезащитные очки, и
+                шляпу с широкими полями.&lt;br/&gt;Не находитесь под солнцем слишком долго.</translation>
     </message>
 </context>
 <context>
@@ -1021,7 +1118,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="296"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Пожалуйста,  укажите город</translation>
     </message>
 </context>
 <context>
@@ -1030,7 +1127,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="293"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Пожалуйста, введите ключ OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -1039,7 +1136,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"/>
+        <translation>Город уже добавлен</translation>
     </message>
 </context>
 <context>
@@ -1212,192 +1309,192 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation type="unfinished"/>
+        <translation>много мокрого снега</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation type="unfinished"/>
+        <translation>небольшой дождь и снег</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation type="unfinished"/>
+        <translation>дождь и снег</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation type="unfinished"/>
+        <translation>небольшой снегопад</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation type="unfinished"/>
+        <translation>снегопад</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation type="unfinished"/>
+        <translation>сильный снегопад</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
         <source>mist</source>
-        <translation type="unfinished"/>
+        <translation>туман</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="48"/>
         <source>smoke</source>
-        <translation type="unfinished"/>
+        <translation>смог</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation type="unfinished"/>
+        <translation>легкий туман</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"/>
+        <translation>песчаная буря</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"/>
+        <translation>туман</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation type="unfinished"/>
+        <translation>песок</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation type="unfinished"/>
+        <translation>пыль</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"/>
+        <translation>вулканический пепел</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"/>
+        <translation>порывы ветра</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"/>
+        <translation>торнадо</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"/>
+        <translation>безоблачно</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation type="unfinished"/>
+        <translation>малая облачность</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation type="unfinished"/>
+        <translation>рассеянные облака</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation type="unfinished"/>
+        <translation>разорванные облака</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation type="unfinished"/>
+        <translation>пасмурно</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"/>
+        <translation>тропический ливень</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"/>
+        <translation>ураган</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"/>
+        <translation>холодно</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"/>
+        <translation>жарко</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"/>
+        <translation>ветрено</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation type="unfinished"/>
+        <translation>град</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation type="unfinished"/>
+        <translation>штиль</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"/>
+        <translation>легкий ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"/>
+        <translation>слабый ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"/>
+        <translation>умеренный ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"/>
+        <translation>свежий бриз</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"/>
+        <translation>сильный ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"/>
+        <translation>крепкий ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"/>
+        <translation>очень крепкий ветер</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation type="unfinished"/>
+        <translation>шторм</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
         <source>storm</source>
-        <translation type="unfinished"/>
+        <translation>сильный шторм</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"/>
+        <translation>жестокий шторм</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
@@ -1566,7 +1663,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="114"/>
         <source>Wind unit in Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Шкала Бофорта</translation>
     </message>
 </context>
 <context>
@@ -1575,19 +1672,19 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="59"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Города</translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="37"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Перевод города</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="62"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Найти город</translation>
     </message>
 </context>
 <context>
@@ -1602,7 +1699,7 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="235"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"/>
+        <translation>Идет поиск, пожалуйста, подождите...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="244"/>

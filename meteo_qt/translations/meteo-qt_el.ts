@@ -2,7 +2,7 @@
 <context encoding="UTF-8">
     <name>About dialog</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="699"/>
+        <location filename="../meteo_qt.py" line="741"/>
         <source>
             Pavel Fric&lt;br/&gt;
             [cs] Czech translation
@@ -239,7 +239,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkbox</name>
     <message>
-        <location filename="../proxydlg.py" line="38"/>
+        <location filename="../proxydlg.py" line="42"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
         <translation>Χρήση πιστοποίησης διαμεσολαβητή</translation>
@@ -292,7 +292,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../overview.py" line="174"/>
+        <location filename="../overview.py" line="190"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Φως ημέρας</translation>
@@ -301,7 +301,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="635"/>
+        <location filename="../overview.py" line="658"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -310,10 +310,28 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="836"/>
+        <location filename="../meteo_qt.py" line="878"/>
         <source>Error :
 </source>
         <translation>Σφάλμα:</translation>
+    </message>
+</context>
+<context>
+    <name>Entry label for the proxy port</name>
+    <message>
+        <location filename="../proxydlg.py" line="35"/>
+        <source>Port:</source>
+        <comment>Proxy settings dialogue</comment>
+        <translation>Θύρα:</translation>
+    </message>
+</context>
+<context>
+    <name>Entry label for the proxy url</name>
+    <message>
+        <location filename="../proxydlg.py" line="26"/>
+        <source>Proxy URL:</source>
+        <comment>Proxy settings dialogue</comment>
+        <translation>URL Διαμεσολαβητή:</translation>
     </message>
 </context>
 <context>
@@ -335,6 +353,25 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation>Έντονα</translation>
+    </message>
+</context>
+<context>
+    <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
+    <message>
+        <location filename="../conditions.py" line="205"/>
+        <source>If the barometric pressure is rising, the weather is improving.
+If the barometric pressure is falling, the weather is worsening.
+Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled weather/warmer temperatures.
+1010-1020 hPa would be weak to normal storms.
+990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
+Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
+        <comment>Tooltip for the pressure label in weather overview</comment>
+        <translation>Εάν η βαρομετρική πίεση αυξάνεται, ο καιρός βελτιώνεται
+Εάν η βαρομετρική πίεση μειώνεται, ο καιρός επιδεινώνεται.
+Πάνω από 1020 hPa έχουμε ήπιες καιρικές συνθήκες / ψυχρότερες θερμοκρασίες και σε χαμηλότερη πίεση ο καιρός είναι ανάστατος / υψηλότερες θερμοκρασίες.
+Μεταξύ 1010-1020 hPa έχουμε ασθενείς με τυπικές καταιγίδες.
+Μεταξύ 990-1010 hPa έχουμε σφοδρές θύελλες ενδεχομένως τροπικούς κυκλώνες, σίφωνες και τυφώνες.
+Κάτω από 990 hPa η πίεση αντιστοιχεί σε πολύ κακούς και ισχυρούς τυφώνες, σίφωνες και τυφώνες.</translation>
     </message>
 </context>
 <context>
@@ -619,87 +656,87 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>OverviewCity</name>
     <message>
-        <location filename="../overview.py" line="32"/>
+        <location filename="../overview.py" line="33"/>
         <source>Mon</source>
         <translation>Δευ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="33"/>
+        <location filename="../overview.py" line="34"/>
         <source>Tue</source>
         <translation>Τρί</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="34"/>
+        <location filename="../overview.py" line="35"/>
         <source>Wed</source>
         <translation>Τετ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="35"/>
+        <location filename="../overview.py" line="36"/>
         <source>Thu</source>
         <translation>Πέμ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="36"/>
+        <location filename="../overview.py" line="37"/>
         <source>Fri</source>
         <translation>Παρ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="37"/>
+        <location filename="../overview.py" line="38"/>
         <source>Sat</source>
         <translation>Σάβ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="38"/>
+        <location filename="../overview.py" line="39"/>
         <source>Sun</source>
         <translation>Κυρ</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="97"/>
+        <location filename="../overview.py" line="101"/>
         <source>Wind</source>
         <translation>Άνεμος</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="128"/>
+        <location filename="../overview.py" line="134"/>
         <source>Cloudiness</source>
         <translation>Νέφωση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="132"/>
+        <location filename="../overview.py" line="139"/>
         <source>Pressure</source>
         <translation>Πίεση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="138"/>
+        <location filename="../overview.py" line="153"/>
         <source>Humidity</source>
         <translation>Υγρασία</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="166"/>
+        <location filename="../overview.py" line="182"/>
         <source>Sunrise</source>
         <translation>Ανατολή</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="168"/>
+        <location filename="../overview.py" line="184"/>
         <source>Sunset</source>
         <translation>Δύση</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="237"/>
+        <location filename="../overview.py" line="253"/>
         <source>Weather status</source>
         <translation>Μετεωρολογικό δελτίο</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="446"/>
+        <location filename="../overview.py" line="462"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="595"/>
+        <location filename="../overview.py" line="616"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="596"/>
+        <location filename="../overview.py" line="617"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
@@ -707,7 +744,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="191"/>
+        <location filename="../overview.py" line="207"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Όζον</translation>
@@ -716,7 +753,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="639"/>
+        <location filename="../overview.py" line="662"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -752,7 +789,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="144"/>
+        <location filename="../overview.py" line="160"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Υετός</translation>
@@ -761,7 +798,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Proxy password authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="51"/>
+        <location filename="../proxydlg.py" line="55"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
         <translation>Κωδικός πρόσβασης:</translation>
@@ -770,7 +807,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Proxy username authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="47"/>
+        <location filename="../proxydlg.py" line="51"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
         <translation>Αναγνωριστικό χρήστη:</translation>
@@ -871,7 +908,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="625"/>
+        <location filename="../meteo_qt.py" line="667"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψιν η γλώσσα</translation>
     </message>
@@ -884,67 +921,67 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation>Πόλεις</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="89"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Προσωρινή πόλη</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>&amp;Update</source>
         <translation>&amp;Ενημέρωση</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="92"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="92"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="93"/>
+        <location filename="../meteo_qt.py" line="94"/>
         <source>Exit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="115"/>
+        <location filename="../meteo_qt.py" line="116"/>
         <source>Searching weather data...</source>
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="224"/>
+        <location filename="../meteo_qt.py" line="228"/>
         <source>Empty list</source>
         <translation>Κενή λίστα</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="244"/>
+        <location filename="../meteo_qt.py" line="248"/>
         <source>Fetching weather data ...</source>
         <translation>Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="262"/>
+        <location filename="../meteo_qt.py" line="266"/>
         <source>No city configured</source>
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="279"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="279"/>
+        <location filename="../meteo_qt.py" line="283"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="668"/>
+        <location filename="../meteo_qt.py" line="710"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="676"/>
+        <location filename="../meteo_qt.py" line="718"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -953,7 +990,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="682"/>
+        <location filename="../meteo_qt.py" line="724"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1006,7 +1043,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="83"/>
+        <location filename="../meteo_qt.py" line="84"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Εναλλαγή παραθύρου</translation>
@@ -1015,7 +1052,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="392"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Αναζήτηση των μετεωρολογικών δεδομένων...</translation>
@@ -1052,13 +1089,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="181"/>
+        <location filename="../overview.py" line="197"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>UV</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="186"/>
+        <location filename="../overview.py" line="202"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Λήψη...</translation>
