@@ -1,3 +1,9 @@
+0.9.6
+- Dailight duration
+- Show UV / Ozone only if available
+- Add option for Beaufort wind speed unit
+- Show the T° and hPa trend
+
 0.9.5
 Feature of cities translation
 Add open window action in tray menu (for Unity)
