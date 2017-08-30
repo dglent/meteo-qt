@@ -9,7 +9,6 @@ import logging
 import logging.handlers
 import os
 import platform
-import re
 import sys
 import urllib.request
 from functools import partial
@@ -64,10 +63,7 @@ class SystemTrayIcon(QMainWindow):
         self.tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
-        self.forecast_url = ('http://api.openweathermap.org/data/2.5/forecast/'
-                             'daily?id=')
-        self.day_forecast_url = ('http://api.openweathermap.org/data/2.5/'
-                                 'forecast?id=')
+        self.day_forecast_url = ('http://api.openweathermap.org/data/2.5/forecast?id=')
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         apikey = self.settings.value('APPID') or ''
         self.appid = '&APPID=' + apikey
@@ -282,12 +278,11 @@ class SystemTrayIcon(QMainWindow):
         self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
-            self.wIconUrl, self.baseurl, self.forecast_url,
-            self.day_forecast_url, self.id_, self.suffix)
+            self.wIconUrl, self.baseurl, self.day_forecast_url,
+            self.id_, self.suffix)
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
-        self.downloadThread.forecast_rawpage.connect(self.forecast)
         self.downloadThread.day_forecast_rawpage.connect(self.dayforecast)
         self.downloadThread.uv_signal.connect(self.uv)
         self.downloadThread.error.connect(self.error)
@@ -296,9 +291,6 @@ class SystemTrayIcon(QMainWindow):
 
     def uv(self, value):
         self.uv_coord = value
-
-    def forecast(self, data):
-        self.forecast_data = data
 
     def dayforecast(self, data):
         if type(data) == dict:
@@ -314,7 +306,7 @@ class SystemTrayIcon(QMainWindow):
                 logging.debug('Deleting overviewcity instance...')
                 del self.overviewcity
             self.overviewcity = overview.OverviewCity(
-                self.weatherDataDico, self.wIcon, self.forecast_data,
+                self.weatherDataDico, self.wIcon,
                 self.dayforecast_data, self.json_data_bool, self.unit, self.forecast_icon_url,
                 self.uv_coord, self.hPaTrend, self.temp_trend, self)
             self.overviewcity.closed_status_dialogue.connect(self.remove_object)
@@ -340,7 +332,7 @@ class SystemTrayIcon(QMainWindow):
         if hasattr(self, 'updateicon'):
             # Keep a reference of the image to update the icon in overview
             self.wIcon = self.updateicon
-        if hasattr(self, 'forecast_data'):
+        if hasattr(self, 'dayforecast_data'):
             if hasattr(self, 'overviewcity'):
                 try:
                     # Update also the overview dialog if open
@@ -765,12 +757,11 @@ class Download(QThread):
     error = pyqtSignal(['QString'])
     done = pyqtSignal([int])
 
-    def __init__(self, iconurl, baseurl, forecast_url, day_forecast_url, id_,
+    def __init__(self, iconurl, baseurl, day_forecast_url, id_,
                  suffix, parent=None):
         QThread.__init__(self, parent)
         self.wIconUrl = iconurl
         self.baseurl = baseurl
-        self.forecast_url = forecast_url
         self.day_forecast_url = day_forecast_url
         self.id_ = id_
         self.suffix = suffix
@@ -805,21 +796,13 @@ class Download(QThread):
                           self.id_ + self.suffix)
             req = urllib.request.urlopen(
                 self.baseurl + self.id_ + self.suffix, timeout=5)
-            logging.debug('Fetching url for 6 days :' + self.forecast_url +
-                          self.id_ + self.suffix + '&cnt=7')
-            reqforecast = urllib.request.urlopen(self.forecast_url + self.id_ +
-                                                 self.suffix + '&cnt=7',
-                                                 timeout=5)
-            logging.debug('Fetching url for forecast of the day :' +
+            logging.debug('Fetching url for forecast of the day + 4:' +
                           self.day_forecast_url + self.id_ + self.suffix)
             reqdayforecast = urllib.request.urlopen(
                 self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
-            pageforecast = reqforecast.read()
             pagedayforecast = reqdayforecast.read()
             if self.html404(page, 'city'):
-                raise urllib.error.HTTPError
-            elif self.html404(pageforecast, 'forecast'):
                 raise urllib.error.HTTPError
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
@@ -840,7 +823,6 @@ class Download(QThread):
             lon = tree[0][0].get('lon')
             uv_ind = (lat, lon)
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
-            treeforecast = etree.fromstring(pageforecast)
             if not use_json_day_forecast:
                 treedayforecast = etree.fromstring(pagedayforecast)
             weather_icon = tree[8].get('icon')
@@ -851,7 +833,6 @@ class Download(QThread):
                 raise urllib.error.HTTPError
             self.xmlpage['PyQt_PyObject'].emit(tree)
             self.wimage['PyQt_PyObject'].emit(data)
-            self.forecast_rawpage['PyQt_PyObject'].emit(treeforecast)
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError, TypeError) as error:

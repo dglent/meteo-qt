@@ -24,7 +24,7 @@ class OverviewCity(QDialog):
                   'imperial': '°F',
                   ' ': '°K'}
 
-    def __init__(self, weatherdata, icon, forecast, dayforecast,
+    def __init__(self, weatherdata, icon, dayforecast,
                  json_data_bool, unit, icon_url, uv_coord, hPaTrend,
                  temp_trend, parent=None):
         super(OverviewCity, self).__init__(parent)
@@ -48,7 +48,6 @@ class OverviewCity(QDialog):
         self.uv_risk = cond.uv_risk
         self.uv_recommend = cond.uv_recommend
         self.settings = QSettings()
-        self.tree = forecast
         self.tree_day = dayforecast
         self.icon_url = icon_url
         self.uv_coord = uv_coord
@@ -239,7 +238,7 @@ class OverviewCity(QDialog):
         self.forecastdata()
         logging.debug('Fetched forecast data')
         self.iconfetch()
-        logging.debug('Fetched 6 days forecast icons')
+        logging.debug('Fetched 4 days forecast icons')
         self.dayforecastdata()
         logging.debug('Fetched day forecast data')
         self.dayiconfetch()
@@ -433,36 +432,38 @@ class OverviewCity(QDialog):
         return utc_time_str
 
     def forecastdata(self):
-        '''Forecast for the next 6 days'''
+        '''Forecast for the next 4 days'''
         # Some times server sends less data
         doc = QTextDocument()
-        periods = 7
-        fetched_file_periods = (len(self.tree.xpath('//time')))
-        if fetched_file_periods < periods:
-            periods = fetched_file_periods
-            logging.warn('Reduce forecast for the next 6 days to {0}'.format(
-                periods-1))
-        for d in range(1, periods):
-            date_list = self.tree[4][d].get('day').split('-')
+        fetched_file_periods = (len(self.tree_day.xpath('//time')))
+        for d in range(1, fetched_file_periods):
+            # Find the day for the forecast (today+1) at 12:00:00
+            date_list = self.tree_day[4][d].get('from').split('-')
+            date_list_time = date_list[2].split('T')
+            date_list[2] = date_list_time[0]
+            date_list.append(date_list_time[1])
+            if (datetime.datetime.now().day == int(date_list[2]) or
+                    date_list[3] != '12:00:00'):
+                continue
             day_of_week = str(datetime.date(
                 int(date_list[0]), int(date_list[1]),
                 int(date_list[2])).weekday())
             label = QLabel('' + self.days_dico[day_of_week] + '')
-            label.setToolTip(self.tree[4][d].get('day'))
+            label.setToolTip('-'.join(i for i in date_list[:3]))
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel(
                 '<font color=grey>' + '{0:.0f}'.format(float(
-                    self.tree[4][d][4].get('min'))) + '°<br/>' +
-                '{0:.0f}'.format(float(self.tree[4][d][4].get('max'))) +
+                    self.tree_day[4][d][4].get('min'))) + '°<br/>' +
+                '{0:.0f}'.format(float(self.tree_day[4][d][4].get('max'))) +
                 '°</font>')
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecast_minmax_layout.addWidget(mlabel)
-            self.icon_list.append(self.tree[4][d][0].get('var'))  # icon
-            weather_cond = self.tree[4][d][0].get('name')
+            self.icon_list.append(self.tree_day[4][d][0].get('var'))  # icon
+            weather_cond = self.tree_day[4][d][0].get('name')
             try:
-                weather_cond = self.conditions[self.tree[4][d][0].get(
+                weather_cond = self.conditions[self.tree_day[4][d][0].get(
                     'number')]
             except:
                 logging.warn('Cannot find localisation string for :' +
@@ -472,9 +473,9 @@ class OverviewCity(QDialog):
                 # Take the label translated text and remove the html tags
                 doc.setHtml(self.precipitation_label.text())
                 precipitation_label = doc.toPlainText() + ': '
-                precipitation_type = self.tree[4][d][1].get('type')
+                precipitation_type = self.tree_day[4][d][1].get('type')
                 precipitation_type = self.precipitation[precipitation_type] + ' '
-                precipitation_value = self.tree[4][d][1].get('value')
+                precipitation_value = self.tree_day[4][d][1].get('value')
                 rain_unit = ' mm'
                 if self.unit_system == ' mph ':
                     rain_unit = ' inch'
@@ -489,36 +490,36 @@ class OverviewCity(QDialog):
             doc.setHtml(self.wind_label.text())
             wind = doc.toPlainText() + ': '
             try:
-                wind_direction = self.wind_direction[self.tree[4][d][2].get('code')]
+                wind_direction = self.wind_direction[self.tree_day[4][d][2].get('code')]
             except:
                 wind_direction = ''
-            wind_speed = '{0:.1f}'.format(float(self.tree[4][d][3].get('mps')))
+            wind_speed = '{0:.1f}'.format(float(self.tree_day[4][d][3].get('mps')))
             if self.bft_bool:
                 wind_speed = str(self.convertToBeaufort(wind_speed))
             weather_cond += '\n' + wind + wind_speed + self.unit_system_wind + wind_direction
             doc.setHtml(self.pressure_label.text())
             pressure_label = doc.toPlainText() + ': '
-            pressure = '{0:.1f}'.format(float(self.tree[4][d][5].get('value')))
+            pressure = '{0:.1f}'.format(float(self.tree_day[4][d][5].get('value')))
             weather_cond += '\n' + pressure_label + pressure + ' hPa'
-            humidity = self.tree[4][d][6].get('value')
+            humidity = self.tree_day[4][d][6].get('value')
             doc.setHtml(self.humidity_label.text())
             humidity_label = doc.toPlainText() + ': '
             weather_cond += '\n' + humidity_label + humidity + ' %'
-            clouds = self.tree[4][d][7].get('all')
+            clouds = self.tree_day[4][d][7].get('all')
             doc.setHtml(self.clouds_label.text())
             clouds_label = doc.toPlainText() + ': '
             weather_cond += '\n' + clouds_label + clouds + ' %'
             self.forecast_weather_list.append(weather_cond)
 
     def iconfetch(self):
-        logging.debug('Download 6 days forecast icons...')
+        logging.debug('Download 4 days forecast icons...')
         self.download_thread = IconDownload(self.icon_url, self.icon_list)
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.url_error_signal['QString'].connect(self.error)
         self.download_thread.start()
 
     def iconwidget(self, icon):
-        '''6 days forecast icons'''
+        '''4 days forecast icons'''
         image = QImage()
         image.loadFromData(icon)
         iconlabel = QLabel()
