@@ -1,3 +1,8 @@
+0.9.7
+- Fix stop working with message 'Fix error '401 Invalid API key'
+  since the 6 days forecast is provided only with the paid service
+  Now the days forcast is limited to 4 days
+
 0.9.6
 - Dailight duration
 - Show UV / Ozone only if available
