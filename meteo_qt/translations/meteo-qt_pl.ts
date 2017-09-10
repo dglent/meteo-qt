@@ -281,7 +281,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../proxydlg.py" line="35"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Port:</translation>
     </message>
 </context>
 <context>
@@ -290,7 +290,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../proxydlg.py" line="26"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>URL proxy:</translation>
     </message>
 </context>
 <context>
@@ -382,7 +382,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="105"/>
         <source>This is the default city !</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>To jest domyślne miasto!</translation>
     </message>
 </context>
 <context>
@@ -1083,7 +1083,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citytranslate.py" line="51"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"/>
+        <translation>To miasto już istnieje</translation>
     </message>
 </context>
 <context>
@@ -1619,7 +1619,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="59"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Miasta</translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="37"/>
@@ -1631,7 +1631,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="62"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Znajdź miasto</translation>
     </message>
 </context>
 <context>
