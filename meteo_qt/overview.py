@@ -431,11 +431,25 @@ class OverviewCity(QDialog):
         utc_time_str = utc_time.toString()
         return utc_time_str
 
+    def find_min_max(self, fetched_file_periods):
+        ''' Find the minimum and maximum temperature of
+            the day in the 4 days forecast '''
+        self.date_temp_forecast = {}
+        for d in range(1, fetched_file_periods):
+            date_list = self.tree_day[4][d].get('from').split('-')
+            date_list_time = date_list[2].split('T')
+            date_list[2] = date_list_time[0]
+            if not date_list[2] in self.date_temp_forecast:
+                self.date_temp_forecast[date_list[2]] = []
+            self.date_temp_forecast[date_list[2]].append(
+                float(self.tree_day[4][d][4].get('max')))
+
     def forecastdata(self):
         '''Forecast for the next 4 days'''
         # Some times server sends less data
         doc = QTextDocument()
         fetched_file_periods = (len(self.tree_day.xpath('//time')))
+        self.find_min_max(fetched_file_periods)
         for d in range(1, fetched_file_periods):
             # Find the day for the forecast (today+1) at 12:00:00
             date_list = self.tree_day[4][d].get('from').split('-')
@@ -452,11 +466,11 @@ class OverviewCity(QDialog):
             label.setToolTip('-'.join(i for i in date_list[:3]))
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
+            temp_min = min(self.date_temp_forecast[date_list[2]])
+            temp_max = max(self.date_temp_forecast[date_list[2]])
             mlabel = QLabel(
-                '<font color=grey>' + '{0:.0f}'.format(float(
-                    self.tree_day[4][d][4].get('min'))) + '°<br/>' +
-                '{0:.0f}'.format(float(self.tree_day[4][d][4].get('max'))) +
-                '°</font>')
+                '<font color=grey>' + '{0:.0f}'.format(temp_min) + '°<br/>' +
+                '{0:.0f}'.format(temp_max) + '°</font>')
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecast_minmax_layout.addWidget(mlabel)
