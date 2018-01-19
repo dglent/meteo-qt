@@ -1,11 +1,11 @@
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, QCoreApplication
 from PyQt5.QtGui import QPixmap, QTextCursor
 from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
                              QTabWidget, QTextBrowser, QVBoxLayout)
 
 
 class AboutDialog(QDialog):
-    def __init__(self, title, text, image, contributors, parent=None):
+    def __init__(self, title, text, image, parent=None):
         super(AboutDialog, self).__init__(parent)
         layout = QVBoxLayout()
         titleLayout = QHBoxLayout()
@@ -15,7 +15,7 @@ class AboutDialog(QDialog):
         aboutBrowser.append(text)
         aboutBrowser.setOpenExternalLinks(True)
         creditsBrowser = QTextBrowser()
-        creditsBrowser.append(contributors)
+        creditsBrowser.append(self.contributors())
         creditsBrowser.setOpenExternalLinks(True)
         TabWidget = QTabWidget()
         TabWidget.addTab(aboutBrowser, self.tr('About'))
@@ -38,3 +38,21 @@ class AboutDialog(QDialog):
         buttonBox.clicked.connect(self.accept)
         self.setMinimumSize(QSize(380, 400))
         self.setWindowTitle(self.tr('About Meteo-qt'))
+
+    def contributors(self):
+
+        contributors = (QCoreApplication.translate('', 'Pavel Fric<br/> [cs] Czech translation', '') +
+                        QCoreApplication.translate('', '<p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>[de] German translation', '') +
+                        QCoreApplication.translate('', '<p>Peter Mattern <a href="mailto:pmattern@arcor.de">pmattern@arcor.de</a><br/> [de] German translation, Project', '') +
+                        QCoreApplication.translate('', '<p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/> [el] Greek translation', '') +
+                        QCoreApplication.translate('', '<p> juancarlospaco <a href="mailto:JuanCarlosPaco@gmail.com">JuanCarlosPaco@gmail.com</a><br/> [es] Spanish translation, Project', '') +
+                        QCoreApplication.translate('', '<p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/> [es] Spanish translation', '') +
+                        QCoreApplication.translate('', '<p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a><br/> [fr] French translation', '') +
+                        QCoreApplication.translate('', '<p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/> [fr] French translation, Project', '') +
+                        QCoreApplication.translate('', '<p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/> Tomasz Przybył <a href="mailto:fademind@gmail.com">fademind@gmail.com</a><br/> [pl] Polish translation', '') +
+                        QCoreApplication.translate('', '<p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/> [ru] Russian translation', '') +
+                        QCoreApplication.translate('', '<p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a><br/> [tr] Turkish translation', '') +
+                        QCoreApplication.translate('', '<p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/> [uk] Ukrainian translation', '') +
+                        QCoreApplication.translate('', '<p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/> [zh_TW] Chinese (Taiwan) translation', '') +
+                        QCoreApplication.translate('', '<p>pmav99<br/> Project', ''))
+        return contributors

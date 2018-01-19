@@ -719,38 +719,7 @@ class SystemTrayIcon(QMainWindow):
                         feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
                         github</a>.""")
 
-        contributors = QCoreApplication.translate("About dialog", """
-            Pavel Fric<br/>
-            [cs] Czech translation
-            <p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>
-            [de] German translation
-            <p>Peter Mattern <a href="mailto:pmattern@arcor.de">pmattern@arcor.de</a><br/>
-            [de] German translation, Project
-            <p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/>
-            [el] Greek translation
-            <p> juancarlospaco <a href="mailto:JuanCarlosPaco@gmail.com">JuanCarlosPaco@gmail.com</a><br/>
-            [es] Spanish translation, Project
-            <p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/>
-            [es] Spanish translation
-            <p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a><br/>
-            [fr] French translation
-            <p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/>
-            [fr] French translation, Project
-            <p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/>
-            Tomasz Przybył <a href="mailto:fademind@gmail.com">fademind@gmail.com</a><br/>
-            [pl] Polish translation
-            <p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/>
-            [ru] Russian translation
-            <p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a><br/>
-            [tr] Turkish translation
-            <p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/>
-            [uk] Ukrainian translation
-            <p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/>
-            [zh_TW] Chinese (Taiwan) translation
-            <p>pmav99<br/>
-            Project""", "List of contributors")
-
-        dialog = about_dlg.AboutDialog(title, text, image, contributors, self)
+        dialog = about_dlg.AboutDialog(title, text, image, self)
         dialog.exec_()
 
 
