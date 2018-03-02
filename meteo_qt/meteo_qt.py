@@ -479,9 +479,9 @@ class SystemTrayIcon(QMainWindow):
             # dict {'id': 'hPa', 'T°'}
             self.trendCities_dic[self.id_] = [''] * 2
         # hPa self.temp_trend
-        pressure = int(self.weatherDataDico['Pressure'][0])
+        pressure = float(self.weatherDataDico['Pressure'][0])
         if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
-            self.hPaTrend = pressure - int(self.trendCities_dic[self.id_][0])
+            self.hPaTrend = pressure - float(self.trendCities_dic[self.id_][0])
         else:
             self.hPaTrend = 0
         self.trendCities_dic[self.id_][0] = pressure

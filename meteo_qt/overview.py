@@ -145,7 +145,7 @@ class OverviewCity(QDialog):
         elif self.hPaTrend > 0:
             hpa = ""
         self.pressure_value = QLabel('<font color=grey>' +
-                                     str(round(float(self.weatherdata['Pressure'][0]))) +
+                                     str(float(self.weatherdata['Pressure'][0])) +
                                      ' ' + self.weatherdata['Pressure'][1]
                                      + " " + hpa + '<\font>')
         self.pressure_value.setToolTip(self.hpa_indications['hpa'])
