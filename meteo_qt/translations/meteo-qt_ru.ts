@@ -1,69 +1,85 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.0">
-<context encoding="UTF-8">
-    <name>About dialog</name>
+<context>
+    <name/>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
+        <translation type="unfinished"/>
+    </message>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="741"/>
-        <source>
-            Pavel Fric&lt;br/&gt;
-            [cs] Czech translation
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation, Project
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation, Project
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukrainian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation>
-            Pavel Fric&lt;br/&gt;
-            [cs] перевод на Чешский
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] перевод на немецкий
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-            [de] перевод на немецкий, проект
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] перевод на греческий
-            &lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] перевод на испанский, проект
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] перевод на испанский
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] перевод на французский
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] перевод на французский, проект
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] перевод на польский
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] перевод на русский
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] перевод на турецкий
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] перевод на украинский
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] перевод на китайский (Тайвань)
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Проект</translation>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
+        <translation type="unfinished"/>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -301,7 +317,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="658"/>
+        <location filename="../overview.py" line="754"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>Единицы Добсона</translation>
@@ -310,7 +326,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="878"/>
+        <location filename="../meteo_qt.py" line="844"/>
         <source>Error :
 </source>
         <translation>Ошибка :
@@ -725,22 +741,22 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Закат</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="253"/>
+        <location filename="../overview.py" line="254"/>
         <source>Weather status</source>
         <translation>Состояние погоды</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="462"/>
+        <location filename="../overview.py" line="558"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мин Макс Температура дня</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="616"/>
+        <location filename="../overview.py" line="712"/>
         <source>snow</source>
         <translation>снег</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="617"/>
+        <location filename="../overview.py" line="713"/>
         <source>rain</source>
         <translation>дождь</translation>
     </message>
@@ -757,7 +773,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="662"/>
+        <location filename="../overview.py" line="758"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -912,7 +928,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="667"/>
+        <location filename="../meteo_qt.py" line="664"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Для применения языковых настроек необходим перезапуск</translation>
     </message>
@@ -920,72 +936,72 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="80"/>
+        <location filename="../meteo_qt.py" line="77"/>
         <source>Cities</source>
         <translation>Города</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="87"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Временный город</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="88"/>
         <source>&amp;Update</source>
         <translation>&amp;Обновить</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="92"/>
+        <location filename="../meteo_qt.py" line="89"/>
         <source>&amp;Settings</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="93"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="94"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>Exit</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="116"/>
+        <location filename="../meteo_qt.py" line="113"/>
         <source>Searching weather data...</source>
         <translation>Поиск данных о погоде...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="228"/>
+        <location filename="../meteo_qt.py" line="225"/>
         <source>Empty list</source>
         <translation>Список пуст</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="248"/>
+        <location filename="../meteo_qt.py" line="245"/>
         <source>Fetching weather data ...</source>
         <translation>Загрузка данных о погоде ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="266"/>
+        <location filename="../meteo_qt.py" line="263"/>
         <source>No city configured</source>
         <translation>Город не указан</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="283"/>
+        <location filename="../meteo_qt.py" line="280"/>
         <source>No city has been configured yet.</source>
         <translation>Не был указан город.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="283"/>
+        <location filename="../meteo_qt.py" line="280"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Нажмите ПКМ по значку и выберите &quot;Настройки&quot;.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="710"/>
+        <location filename="../meteo_qt.py" line="707"/>
         <source>Fetching weather data...</source>
         <translation>Загрузка данных о погоде...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="718"/>
+        <location filename="../meteo_qt.py" line="715"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -994,7 +1010,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="724"/>
+        <location filename="../meteo_qt.py" line="721"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1043,7 +1059,7 @@ http://openweathermap.org/&lt;/a&gt;.
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="84"/>
+        <location filename="../meteo_qt.py" line="81"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Переключить окно</translation>
@@ -1052,7 +1068,7 @@ http://openweathermap.org/&lt;/a&gt;.
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="396"/>
+        <location filename="../meteo_qt.py" line="394"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Поиск данных о погоде...</translation>

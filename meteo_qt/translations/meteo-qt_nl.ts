@@ -1,68 +1,85 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
-<context encoding="UTF-8">
-    <name>About dialog</name>
+<context>
+    <name/>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
+        <translation>Pavel Fric&lt;br/&gt; [cs] Tsjechische vertaling</translation>
+    </message>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="741"/>
-        <source>
-            Pavel Fric&lt;br/&gt;
-            [cs] Czech translation
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-            [de] German translation, Project
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Greek translation
-            &lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation, Project
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spanish translation
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] French translation, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Polish translation
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russian translation
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkish translation
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Ukrainian translation
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) translation
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</source>
-        <comment>List of contributors</comment>
-        <translation>
-            Pavel Fric&lt;br/&gt;
-            [cs] Tjechse vertaling
-            &lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;
-            [de] Duitse vertaling
-            &lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;
-            [de] Duitse vertaling, Project
-            &lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;
-            [el] Griekse vertaling
-            &lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt; &lt;br/&gt;
-            &lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [es] Spaanse vertaling
-            &lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;
-            [fr] Franse vertaling
-            &lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;
-            [fr] Franse vertaling, Project
-            &lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt;
-            Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [pl] Poolse vertaling
-            &lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt;
-            [ru] Russische vertaling
-            &lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [tr] Turkse vertaling
-            &lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt;
-            [uk] Oekraïense vertaling
-            &lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt;
-            [zh_TW] Chinese (Taiwan) vertaling
-            &lt;p&gt;pmav99&lt;br/&gt;
-            Project</translation>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
+        <translation>&lt;p&gt;Jürgen&lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Duitse vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;[de] Duitse vertaling, project</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;[el] Griekse vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
+        <translation>&lt;p&gt;juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling, project</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling</translation>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling, project</translation>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przbył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;[pl] Poolse vertaling</translation>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkse vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
+        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Oekraïense vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
+        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; Project</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt;[nl] Nederlandse vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt; [ru] Russische vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
+        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hongaarse vertaling</translation>
     </message>
 </context>
 <context>
@@ -300,7 +317,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="658"/>
+        <location filename="../overview.py" line="754"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -309,7 +326,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="878"/>
+        <location filename="../meteo_qt.py" line="844"/>
         <source>Error :
 </source>
         <translation>Fout:
@@ -728,22 +745,22 @@ Blijf in de schaduw wanneer,
         <translation>Zonsondergang</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="253"/>
+        <location filename="../overview.py" line="254"/>
         <source>Weather status</source>
         <translation>Weerstatus</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="462"/>
+        <location filename="../overview.py" line="558"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min/Max temperatuur van de dag</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="616"/>
+        <location filename="../overview.py" line="712"/>
         <source>snow</source>
         <translation>sneeuw</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="617"/>
+        <location filename="../overview.py" line="713"/>
         <source>rain</source>
         <translation>regen</translation>
     </message>
@@ -760,7 +777,7 @@ Blijf in de schaduw wanneer,
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="662"/>
+        <location filename="../overview.py" line="758"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -915,7 +932,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="667"/>
+        <location filename="../meteo_qt.py" line="664"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>De applicatie moet worden herstart om de gewijzigde taalinstelling toe te passen</translation>
     </message>
@@ -923,72 +940,72 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="80"/>
+        <location filename="../meteo_qt.py" line="77"/>
         <source>Cities</source>
         <translation>Steden</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="87"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Tijdelijke stad</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="88"/>
         <source>&amp;Update</source>
         <translation>&amp;Bijwerken</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="92"/>
+        <location filename="../meteo_qt.py" line="89"/>
         <source>&amp;Settings</source>
         <translation>&amp;Instellingen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="93"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>&amp;About</source>
         <translation>&amp;Over</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="94"/>
+        <location filename="../meteo_qt.py" line="91"/>
         <source>Exit</source>
         <translation>Afsluiten</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="116"/>
+        <location filename="../meteo_qt.py" line="113"/>
         <source>Searching weather data...</source>
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="228"/>
+        <location filename="../meteo_qt.py" line="225"/>
         <source>Empty list</source>
         <translation>Lijst leegmaken</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="248"/>
+        <location filename="../meteo_qt.py" line="245"/>
         <source>Fetching weather data ...</source>
         <translation>Bezig met ophalen van weergegevens ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="266"/>
+        <location filename="../meteo_qt.py" line="263"/>
         <source>No city configured</source>
         <translation>Geen ingestelde stad</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="283"/>
+        <location filename="../meteo_qt.py" line="280"/>
         <source>No city has been configured yet.</source>
         <translation>Er is nog geen stad ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="283"/>
+        <location filename="../meteo_qt.py" line="280"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klik met de rechtermuisknop op het pictogram en daarna op Instellingen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="710"/>
+        <location filename="../meteo_qt.py" line="707"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="718"/>
+        <location filename="../meteo_qt.py" line="715"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -997,7 +1014,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="724"/>
+        <location filename="../meteo_qt.py" line="721"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1053,7 +1070,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="84"/>
+        <location filename="../meteo_qt.py" line="81"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Venster in-/uitschakelen</translation>
@@ -1062,7 +1079,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="396"/>
+        <location filename="../meteo_qt.py" line="394"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
