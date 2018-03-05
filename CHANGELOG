@@ -1,3 +1,6 @@
+0.9.8
+- Fix crash when Pressure value is float number (patch from Reinhard Karcher)
+
 0.9.7
 - Fix stop working with message 'Fix error '401 Invalid API key'
   since the 6 days forecast is provided only with the paid service
