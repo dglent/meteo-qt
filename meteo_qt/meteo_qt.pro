@@ -3,7 +3,6 @@ SOURCES         += about_dlg.py \
                    citytranslate.py \
                    conditions.py \
                    meteo_qt.py \
-                   overview.py \
                    proxydlg.py \
                    searchcity.py \
                    settings.py
