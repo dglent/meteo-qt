@@ -4,82 +4,82 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Pavel Fric&lt;br/&gt; [cs] Překlad do češtiny</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Překlad do němčiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] Překlad do němčiny, projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Překlad do řečtiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Překlad do španělštiny, projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Překlad do španělštiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Překlad do francouzštiny</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Překlad do francouzštiny, projekt</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Překlad do polštiny</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Překlad do turečtiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Překlad do ukrajinštiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Překlad do čínštiny (Tchaj-wan)</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; Projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Překlad do nizozemštiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Překlad do maďarštiny</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Překlad do ruštiny</translation>
     </message>
 </context>
 <context>
@@ -296,7 +296,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../overview.py" line="190"/>
+        <location filename="../meteo_qt.py" line="289"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denní světlo</translation>
@@ -305,7 +305,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="754"/>
+        <location filename="../meteo_qt.py" line="855"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DJ</translation>
@@ -314,7 +314,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="844"/>
+        <location filename="../meteo_qt.py" line="1550"/>
         <source>Error :
 </source>
         <translation>Chyba:</translation>
@@ -657,96 +657,11 @@ zůstaňte ve stínu.</translation>
 </context>
 <context>
     <name>OverviewCity</name>
-    <message>
-        <location filename="../overview.py" line="33"/>
-        <source>Mon</source>
-        <translation>Po</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="34"/>
-        <source>Tue</source>
-        <translation>Út</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="35"/>
-        <source>Wed</source>
-        <translation>St</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="36"/>
-        <source>Thu</source>
-        <translation>Čt</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="37"/>
-        <source>Fri</source>
-        <translation>Pá</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="38"/>
-        <source>Sat</source>
-        <translation>So</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="39"/>
-        <source>Sun</source>
-        <translation>Ne</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="101"/>
-        <source>Wind</source>
-        <translation>Vítr</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="134"/>
-        <source>Cloudiness</source>
-        <translation>Oblačnost</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="139"/>
-        <source>Pressure</source>
-        <translation>Tlak</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="153"/>
-        <source>Humidity</source>
-        <translation>Vlhkost vzduchu</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="182"/>
-        <source>Sunrise</source>
-        <translation>Východ slunce</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="184"/>
-        <source>Sunset</source>
-        <translation>Západ slunce</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="254"/>
-        <source>Weather status</source>
-        <translation>Stav počasí</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="558"/>
-        <source>Min Max Temperature of the day</source>
-        <translation>Nejnižší/Nejvyšší teplota dne</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="712"/>
-        <source>snow</source>
-        <translation>Sněžení</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="713"/>
-        <source>rain</source>
-        <translation>Déšť</translation>
-    </message>
 </context>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="207"/>
+        <location filename="../meteo_qt.py" line="306"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Ozón</translation>
@@ -755,7 +670,7 @@ zůstaňte ve stínu.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="758"/>
+        <location filename="../meteo_qt.py" line="859"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -791,7 +706,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="160"/>
+        <location filename="../meteo_qt.py" line="259"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Přeháňka</translation>
@@ -910,7 +825,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="664"/>
+        <location filename="../meteo_qt.py" line="1370"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
@@ -918,72 +833,72 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="77"/>
+        <location filename="../meteo_qt.py" line="83"/>
         <source>Cities</source>
         <translation>Města</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="87"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Dočasné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="88"/>
+        <location filename="../meteo_qt.py" line="94"/>
         <source>&amp;Update</source>
         <translation>&amp;Aktualizace</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="89"/>
+        <location filename="../meteo_qt.py" line="95"/>
         <source>&amp;Settings</source>
         <translation>&amp;Nastavení</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="96"/>
         <source>&amp;About</source>
         <translation>&amp;O programu</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="97"/>
         <source>Exit</source>
         <translation>Ukončit</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="119"/>
         <source>Searching weather data...</source>
         <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="225"/>
+        <location filename="../meteo_qt.py" line="1019"/>
         <source>Empty list</source>
         <translation>Prázdný seznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="245"/>
+        <location filename="../meteo_qt.py" line="1024"/>
         <source>Fetching weather data ...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="263"/>
+        <location filename="../meteo_qt.py" line="1035"/>
         <source>No city configured</source>
         <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="1052"/>
         <source>No city has been configured yet.</source>
         <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="1052"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="707"/>
+        <location filename="../meteo_qt.py" line="1413"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="715"/>
+        <location filename="../meteo_qt.py" line="1421"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -992,7 +907,7 @@ zůstaňte ve stínu.</translation>
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="721"/>
+        <location filename="../meteo_qt.py" line="1427"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1026,6 +941,91 @@ Transifex&lt;/a&gt;.
 klidně tuto otázku otevřete na &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
 github&lt;/a&gt;.</translation>
     </message>
+    <message>
+        <location filename="../meteo_qt.py" line="142"/>
+        <source>Mon</source>
+        <translation>Po</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="143"/>
+        <source>Tue</source>
+        <translation>Út</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="144"/>
+        <source>Wed</source>
+        <translation>St</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="145"/>
+        <source>Thu</source>
+        <translation>Čt</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="146"/>
+        <source>Fri</source>
+        <translation>Pá</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="147"/>
+        <source>Sat</source>
+        <translation>So</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="148"/>
+        <source>Sun</source>
+        <translation>Ne</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="200"/>
+        <source>Wind</source>
+        <translation>Vítr</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="233"/>
+        <source>Cloudiness</source>
+        <translation>Oblačnost</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="238"/>
+        <source>Pressure</source>
+        <translation>Tlak</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="252"/>
+        <source>Humidity</source>
+        <translation>Vlhkost vzduchu</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="281"/>
+        <source>Sunrise</source>
+        <translation>Východ slunce</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="283"/>
+        <source>Sunset</source>
+        <translation>Západ slunce</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="353"/>
+        <source>Weather status</source>
+        <translation>Stav počasí</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="657"/>
+        <source>Min Max Temperature of the day</source>
+        <translation>Nejnižší/Nejvyšší teplota dne</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="813"/>
+        <source>snow</source>
+        <translation>Sníh</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="814"/>
+        <source>rain</source>
+        <translation>Déšť</translation>
+    </message>
 </context>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
@@ -1048,7 +1048,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="81"/>
+        <location filename="../meteo_qt.py" line="87"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Přepnout okno</translation>
@@ -1057,7 +1057,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="394"/>
+        <location filename="../meteo_qt.py" line="1114"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hledají se data o počasí...</translation>
@@ -1094,13 +1094,13 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="197"/>
+        <location filename="../meteo_qt.py" line="296"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Ultrafialové záření</translation>
     </message>
     <message>
-        <location filename="../overview.py" line="202"/>
+        <location filename="../meteo_qt.py" line="301"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Natahuje se...</translation>

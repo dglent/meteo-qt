@@ -1,3 +1,10 @@
+0.9.9
+- Use the weather panel as central widget
+- Better memory usage
+- Fixes #65
+- Possible fix for #44 (as now there is no any Qt dialog destroy case)
+- The dialog has an entry in the windows manager (LXQt)
+
 0.9.8
 - Fix crash when Pressure value is float number (patch from Reinhard Karcher)
 

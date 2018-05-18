@@ -73,12 +73,12 @@
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
+        <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
+        <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -296,7 +296,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../overview.py" line="190"/>
+        <location filename="../meteo_qt.py" line="289"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Napfény</translation>
@@ -305,7 +305,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../overview.py" line="754"/>
+        <location filename="../meteo_qt.py" line="855"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -314,7 +314,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="844"/>
+        <location filename="../meteo_qt.py" line="1550"/>
         <source>Error :
 </source>
         <translation>Hiba:
@@ -654,96 +654,11 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 </context>
 <context>
     <name>OverviewCity</name>
-    <message>
-        <location filename="../overview.py" line="33"/>
-        <source>Mon</source>
-        <translation>Hé</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="34"/>
-        <source>Tue</source>
-        <translation>Ke</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="35"/>
-        <source>Wed</source>
-        <translation>Sze</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="36"/>
-        <source>Thu</source>
-        <translation>Csü</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="37"/>
-        <source>Fri</source>
-        <translation>Pé</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="38"/>
-        <source>Sat</source>
-        <translation>Szo</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="39"/>
-        <source>Sun</source>
-        <translation>Vas</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="101"/>
-        <source>Wind</source>
-        <translation>Szél</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="134"/>
-        <source>Cloudiness</source>
-        <translation>Felhőzet</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="139"/>
-        <source>Pressure</source>
-        <translation>Nyomás</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="153"/>
-        <source>Humidity</source>
-        <translation>Páratartalom</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="182"/>
-        <source>Sunrise</source>
-        <translation>Napkelte</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="184"/>
-        <source>Sunset</source>
-        <translation>Napnyugta</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="254"/>
-        <source>Weather status</source>
-        <translation>Időjárás állapota</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="558"/>
-        <source>Min Max Temperature of the day</source>
-        <translation>Min-max napi hőmérséklet</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="712"/>
-        <source>snow</source>
-        <translation>hó</translation>
-    </message>
-    <message>
-        <location filename="../overview.py" line="713"/>
-        <source>rain</source>
-        <translation>eső</translation>
-    </message>
 </context>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../overview.py" line="207"/>
+        <location filename="../meteo_qt.py" line="306"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation>Ozone</translation>
@@ -752,7 +667,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../overview.py" line="758"/>
+        <location filename="../meteo_qt.py" line="859"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
                 is an area where the ozone concentration drops to an average of about
@@ -785,7 +700,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../overview.py" line="160"/>
+        <location filename="../meteo_qt.py" line="259"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Csapadék</translation>
@@ -904,7 +819,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="664"/>
+        <location filename="../meteo_qt.py" line="1370"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"/>
     </message>
@@ -912,79 +827,79 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="77"/>
+        <location filename="../meteo_qt.py" line="83"/>
         <source>Cities</source>
         <translation>Városok</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="87"/>
+        <location filename="../meteo_qt.py" line="93"/>
         <source>&amp;Temporary city</source>
         <translation>Ideiglenes város</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="88"/>
+        <location filename="../meteo_qt.py" line="94"/>
         <source>&amp;Update</source>
         <translation>&amp;Frissítés</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="89"/>
+        <location filename="../meteo_qt.py" line="95"/>
         <source>&amp;Settings</source>
         <translation>&amp;Beállítások</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="96"/>
         <source>&amp;About</source>
         <translation>&amp;Súgó</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="91"/>
+        <location filename="../meteo_qt.py" line="97"/>
         <source>Exit</source>
         <translation>Kilépés</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="119"/>
         <source>Searching weather data...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="225"/>
+        <location filename="../meteo_qt.py" line="1019"/>
         <source>Empty list</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="245"/>
+        <location filename="../meteo_qt.py" line="1024"/>
         <source>Fetching weather data ...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="263"/>
+        <location filename="../meteo_qt.py" line="1035"/>
         <source>No city configured</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="1052"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="280"/>
+        <location filename="../meteo_qt.py" line="1052"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="707"/>
+        <location filename="../meteo_qt.py" line="1413"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="715"/>
+        <location filename="../meteo_qt.py" line="1421"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="721"/>
+        <location filename="../meteo_qt.py" line="1427"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1001,6 +916,91 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                         &lt;p&gt;If you want to report a dysfunction or a suggestion,
                         feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         github&lt;/a&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="142"/>
+        <source>Mon</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="143"/>
+        <source>Tue</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="144"/>
+        <source>Wed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="145"/>
+        <source>Thu</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="146"/>
+        <source>Fri</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="147"/>
+        <source>Sat</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="148"/>
+        <source>Sun</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="200"/>
+        <source>Wind</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="233"/>
+        <source>Cloudiness</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="238"/>
+        <source>Pressure</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="252"/>
+        <source>Humidity</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="281"/>
+        <source>Sunrise</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="283"/>
+        <source>Sunset</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="353"/>
+        <source>Weather status</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="657"/>
+        <source>Min Max Temperature of the day</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="813"/>
+        <source>snow</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="814"/>
+        <source>rain</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1025,7 +1025,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="81"/>
+        <location filename="../meteo_qt.py" line="87"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation type="unfinished"/>
@@ -1034,7 +1034,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="394"/>
+        <location filename="../meteo_qt.py" line="1114"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation type="unfinished"/>
@@ -1071,13 +1071,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../overview.py" line="197"/>
+        <location filename="../meteo_qt.py" line="296"/>
         <source>UV</source>
         <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../overview.py" line="202"/>
+        <location filename="../meteo_qt.py" line="301"/>
         <source>Fetching...</source>
         <comment>&lt;<byte value="xc"/>ont&gt;</comment>
         <translation type="unfinished"/>
