@@ -79,7 +79,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Перевод на русский язык</translation>
     </message>
 </context>
 <context>
@@ -955,87 +955,87 @@ http://openweathermap.org/&lt;/a&gt;.
     <message>
         <location filename="../meteo_qt.py" line="142"/>
         <source>Mon</source>
-        <translation type="unfinished"/>
+        <translation>Пн</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="143"/>
         <source>Tue</source>
-        <translation type="unfinished"/>
+        <translation>Вт</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="144"/>
         <source>Wed</source>
-        <translation type="unfinished"/>
+        <translation>Ср</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="145"/>
         <source>Thu</source>
-        <translation type="unfinished"/>
+        <translation>Чт</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="146"/>
         <source>Fri</source>
-        <translation type="unfinished"/>
+        <translation>Пт</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="147"/>
         <source>Sat</source>
-        <translation type="unfinished"/>
+        <translation>Сб</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="148"/>
         <source>Sun</source>
-        <translation type="unfinished"/>
+        <translation>Вс</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="200"/>
         <source>Wind</source>
-        <translation type="unfinished"/>
+        <translation>Ветер</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="233"/>
         <source>Cloudiness</source>
-        <translation type="unfinished"/>
+        <translation>Облачность</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="238"/>
         <source>Pressure</source>
-        <translation type="unfinished"/>
+        <translation>Давление</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="252"/>
         <source>Humidity</source>
-        <translation type="unfinished"/>
+        <translation>Влажность</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="281"/>
         <source>Sunrise</source>
-        <translation type="unfinished"/>
+        <translation>Восход</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="283"/>
         <source>Sunset</source>
-        <translation type="unfinished"/>
+        <translation>Закат</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="353"/>
         <source>Weather status</source>
-        <translation type="unfinished"/>
+        <translation>Погода</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="657"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"/>
+        <translation>Мин Макс Температура дня</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="813"/>
         <source>snow</source>
-        <translation type="unfinished"/>
+        <translation>снег</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="814"/>
         <source>rain</source>
-        <translation type="unfinished"/>
+        <translation>дождь</translation>
     </message>
 </context>
 <context>

@@ -79,7 +79,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt; [ru] Russian translation</translation>
     </message>
 </context>
 <context>
@@ -936,87 +936,87 @@ github&lt;/a&gt; erstellen.</translation>
     <message>
         <location filename="../meteo_qt.py" line="142"/>
         <source>Mon</source>
-        <translation type="unfinished"/>
+        <translation>Mo</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="143"/>
         <source>Tue</source>
-        <translation type="unfinished"/>
+        <translation>Di</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="144"/>
         <source>Wed</source>
-        <translation type="unfinished"/>
+        <translation>Mi</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="145"/>
         <source>Thu</source>
-        <translation type="unfinished"/>
+        <translation>Do</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="146"/>
         <source>Fri</source>
-        <translation type="unfinished"/>
+        <translation>Fr</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="147"/>
         <source>Sat</source>
-        <translation type="unfinished"/>
+        <translation>Sa</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="148"/>
         <source>Sun</source>
-        <translation type="unfinished"/>
+        <translation>So</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="200"/>
         <source>Wind</source>
-        <translation type="unfinished"/>
+        <translation>Wind</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="233"/>
         <source>Cloudiness</source>
-        <translation type="unfinished"/>
+        <translation>Bewölkung</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="238"/>
         <source>Pressure</source>
-        <translation type="unfinished"/>
+        <translation>Druck</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="252"/>
         <source>Humidity</source>
-        <translation type="unfinished"/>
+        <translation>Feuchtigkeit</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="281"/>
         <source>Sunrise</source>
-        <translation type="unfinished"/>
+        <translation>Sonnenaufgang</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="283"/>
         <source>Sunset</source>
-        <translation type="unfinished"/>
+        <translation>Sonnenuntergang</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="353"/>
         <source>Weather status</source>
-        <translation type="unfinished"/>
+        <translation>Wetterstatus</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="657"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"/>
+        <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="813"/>
         <source>snow</source>
-        <translation type="unfinished"/>
+        <translation>Schnee</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="814"/>
         <source>rain</source>
-        <translation type="unfinished"/>
+        <translation>Regen</translation>
     </message>
 </context>
 <context>
