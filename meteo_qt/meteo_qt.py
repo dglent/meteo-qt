@@ -245,8 +245,8 @@ class SystemTrayIcon(QMainWindow):
             hpa = ""
         self.pressure_value = QLabel('<font color=grey>' +
                                      str(float(self.weatherDataDico['Pressure'][0])) +
-                                     ' ' + self.weatherDataDico['Pressure'][1]
-                                     + " " + hpa + '<\font>')
+                                     ' ' + self.weatherDataDico['Pressure'][1] +
+                                     " " + hpa + '<\font>')
         self.pressure_value.setToolTip(self.hpa_indications['hpa'])
         # Humidity
         self.humidity_label = QLabel('<font size="3" color=grey><b>' +
@@ -451,37 +451,37 @@ class SystemTrayIcon(QMainWindow):
 
     def ozone_du(self, du):
         if du <= 125:
-            return '#060106' # black
+            return '#060106'  # black
         elif du <= 150:
-            return '#340634' # magenta
+            return '#340634'  # magenta
         elif du <= 175:
-            return '#590b59' # fuccia
+            return '#590b59'  # fuccia
         elif du <= 200:
-            return '#421e85' # violet
+            return '#421e85'  # violet
         elif du <= 225:
-            return '#121e99' # blue
+            return '#121e99'  # blue
         elif du <= 250:
-            return '#125696' # blue sea
+            return '#125696'  # blue sea
         elif du <= 275:
-            return '#198586' # raf
+            return '#198586'  # raf
         elif du <= 300:
-            return '#21b1b1' # cyan
+            return '#21b1b1'  # cyan
         elif du <= 325:
-            return '#64b341' # light green
+            return '#64b341'  # light green
         elif du <= 350:
-            return '#1cac1c' # green
+            return '#1cac1c'  # green
         elif du <= 375:
-            return '#93a92c' # green oil
+            return '#93a92c'  # green oil
         elif du <= 400:
-            return '#baba2b' # yellow
+            return '#baba2b'  # yellow
         elif du <= 425:
-            return '#af771f' # orange
+            return '#af771f'  # orange
         elif du <= 450:
-            return '#842910' # brown
+            return '#842910'  # brown
         elif du <= 475:
-            return '#501516' # brown dark
+            return '#501516'  # brown dark
         elif du > 475:
-            return '#210909' # darker brown
+            return '#210909'  # darker brown
 
     def uv_color(self, uv):
         try:
@@ -554,7 +554,7 @@ class SystemTrayIcon(QMainWindow):
         if fetched_file_periods < periods:
             periods = fetched_file_periods
             logging.warn('Reduce forecast for the next 6 days to {0}'.format(
-                periods-1))
+                periods - 1))
         for d in range(1, periods):
             date_list = self.forecast6_data[4][d].get('day').split('-')
             day_of_week = str(datetime.date(
@@ -733,7 +733,7 @@ class SystemTrayIcon(QMainWindow):
             if fetched_file_periods < periods:
                 # Some times server sends less data
                 periods = fetched_file_periods
-                logging.warn('Reduce forecast of the day to {0}'.format(periods-1))
+                logging.warn('Reduce forecast of the day to {0}'.format(periods - 1))
         for d in range(start, periods):
             clouds_translated = ''
             wind = ''
@@ -1000,7 +1000,7 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def find_city_key(self, city):
-        for key,value in self.cities_trans_dict.items():
+        for key, value in self.cities_trans_dict.items():
             if value == city:
                 return key
         return city
@@ -1189,7 +1189,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
         self.weatherDataDico['Sunset'] = tree[0][2].get('set')
         rain_value = tree[7].get('value')
-        if rain_value == None:
+        if rain_value is None:
             rain_value = ''
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
         if self.id_ not in self.trendCities_dic:
@@ -1349,7 +1349,7 @@ class SystemTrayIcon(QMainWindow):
         decimal = self.settings.value('Decimal')
         self.appid = '&APPID=' + self.settings.value('APPID') or ''
         if language != self.language and language is not None:
-            self.systray.showMessage('meteo-qt:',QCoreApplication.translate(
+            self.systray.showMessage('meteo-qt:', QCoreApplication.translate(
                     "System tray notification",
                     "The application has to be restarted to apply the language setting", ''))
             self.language = language
