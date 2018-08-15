@@ -131,6 +131,12 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def overviewcity(self):
+        temp_trend = ''
+        if self.temp_trend == " ↗":
+            temp_trend = " "
+        elif self.temp_trend == " ↘":
+            temp_trend = ""
+
         self.overviewcitydlg = QDialog()
         self.setCentralWidget(self.overviewcitydlg)
         self.days_dico = {'0': self.tr('Mon'),
@@ -179,7 +185,7 @@ class SystemTrayIcon(QMainWindow):
         self.temp_label = QLabel(
             '<font size="5"><b>' + '{0:.1f}'.format(
             float(self.weatherDataDico['Temp'][:-1])) + ' ' + self.unit_temp +
-            self.temp_trend + '<\b><\font>')
+            temp_trend + '<\b><\font>')
         self.icontemp_layout.addWidget(self.temp_label)
         self.over_layout.addLayout(self.icontemp_layout)
         self.weather = QLabel('<font size="4"><b>' +
@@ -1290,9 +1296,9 @@ class SystemTrayIcon(QMainWindow):
         if (self.id_ in self.trendCities_dic and
                 self.trendCities_dic[self.id_][1] is not ''):
             if temp > float(self.trendCities_dic[self.id_][1]):
-                self.temp_trend = " "
+                self.temp_trend = " ↗"
             elif temp < float(self.trendCities_dic[self.id_][1]):
-                self.temp_trend = " "
+                self.temp_trend = " ↘"
         self.trendCities_dic[self.id_][1] = temp
         self.systray.setToolTip(self.city_weather_info + self.temp_trend)
 
