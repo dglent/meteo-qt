@@ -208,20 +208,20 @@ class SystemTrayIcon(QMainWindow):
         if wind_unit == 'imperial':
             self.unit_system = ' mph '
             self.unit_system_wind = ' mph '
-        self.wind = QLabel('None')
+        self.windLabelDescr = QLabel('None')
         wind_speed = '{0:.1f}'.format(float(self.weatherDataDico['Wind'][0]))
         windTobeaufort = str(self.convertToBeaufort(wind_speed))
         if self.bft_bool is True:
             wind_speed = windTobeaufort
             self.unit_system_wind = ' Bft. '
         try:
-            self.wind = QLabel('<font color=grey>' +
+            self.windLabelDescr = QLabel('<font color=grey>' +
                                self.weatherDataDico['Wind'][4] +
                                ' ' + self.weatherDataDico['Wind'][2] + '° ' +
                                '<br/>' + wind_speed +
                                self.unit_system_wind + self.weatherDataDico['Wind'][1] +
                                '<\font>')
-            self.wind.setToolTip(self.beaufort_sea_land[windTobeaufort])
+            self.windLabelDescr.setToolTip(self.beaufort_sea_land[windTobeaufort])
         except:
             logging.error('Cannot find wind informations:\n' +
                           str(self.weatherDataDico['Wind']))
@@ -309,7 +309,7 @@ class SystemTrayIcon(QMainWindow):
         self.ozone_value_label = QLabel()
         self.ozone_value_label.setText(fetching_text)
         self.over_grid.addWidget(self.wind_label, 0, 0)
-        self.over_grid.addWidget(self.wind, 0, 1)
+        self.over_grid.addWidget(self.windLabelDescr, 0, 1)
         self.over_grid.addWidget(self.wind_icon_label, 0, 2)
         self.over_grid.addWidget(self.clouds_label, 1, 0)
         self.over_grid.addWidget(self.clouds_name, 1, 1)
