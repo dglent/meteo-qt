@@ -115,6 +115,7 @@ class SystemTrayIcon(QMainWindow):
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Searching weather data...'))
+
         self.notification = ''
         self.hPaTrend = 0
         self.trendCities_dic = {}
@@ -927,6 +928,30 @@ class SystemTrayIcon(QMainWindow):
     def manual_refresh(self):
         self.tentatives = 0
         self.refresh()
+
+    def wheelEvent(self, event):
+        current_city = self.city
+        current_id = self.id_
+        current_country = self.country
+
+        cities = eval(self.settings.value('CityList') or [])
+        cities_trans = self.settings.value('CitiesTranslation') or '{}'
+        cities_trans_dict = eval(cities_trans)
+        direction = event.pixelDelta().y()
+        actual_city = current_city + '_' + current_country + '_' + current_id
+        for key, value in cities_trans_dict.items():
+            if current_city + '_' + current_country + '_' + current_id == key:
+                actual_city = key
+        current_city_index = cities.index(actual_city)
+        if direction > 0:
+            current_city_index += 1
+            if current_city_index >= len(cities):
+                current_city_index = 0
+        else:
+            current_city_index -= 1
+            if current_city_index < 0:
+                current_city_index = len(cities) - 1
+        self.changecity(cities[current_city_index])
 
     def cities_menu(self):
         # Don't add the temporary city in the list
