@@ -1290,12 +1290,15 @@ class SystemTrayIcon(QMainWindow):
         else:
             self.systray.setIcon(QIcon(icon))
         if self.notifier_settings():
-            if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
-                    '' or self.id_ != self.notifier_id):
-                if not self.isVisible():
-                    self.systray.showMessage('meteo-qt', self.notification +
-                                                 self.temp_trend)
-                    return
+            try:
+                if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
+                        '' or self.id_ != self.notifier_id):
+                    if not self.isVisible():
+                        self.systray.showMessage('meteo-qt', self.notification +
+                                                     self.temp_trend)
+                        return
+            except KeyError:
+                return
         self.notifier_id = self.id_
         self.restore_city()
         self.tentatives = 0
