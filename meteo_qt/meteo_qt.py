@@ -930,6 +930,9 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def wheelEvent(self, event):
+        if self.day_download_thread.isRunning():
+            logging.debug('Downloading icons - remaining thread...')
+            return
         current_city = self.city
         current_id = self.id_
         current_country = self.country
