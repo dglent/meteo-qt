@@ -935,6 +935,8 @@ class SystemTrayIcon(QMainWindow):
         current_country = self.country
 
         cities = eval(self.settings.value('CityList') or [])
+        if len(cities) == 0:
+            return
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
         direction = event.pixelDelta().y()
@@ -942,6 +944,8 @@ class SystemTrayIcon(QMainWindow):
         for key, value in cities_trans_dict.items():
             if current_city + '_' + current_country + '_' + current_id == key:
                 actual_city = key
+        if actual_city not in cities:
+            cities.append(actual_city)
         current_city_index = cities.index(actual_city)
         if direction > 0:
             current_city_index += 1
