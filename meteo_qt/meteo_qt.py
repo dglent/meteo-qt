@@ -336,8 +336,11 @@ class SystemTrayIcon(QMainWindow):
         self.total_layout.addLayout(self.forecast_icons_layout)
         self.total_layout.addLayout(self.forecast_days_layout)
         self.total_layout.addLayout(self.forecast_minmax_layout)
-        # self.forecastdata() # old methode for 4 days forecast
-        self.forecast6data()
+
+        if self.forcast6daysBool:
+            self.forecast6data()
+        else:
+            self.forecastdata()
         self.iconfetch()
         logging.debug('Fetched 6 days forecast icons')
         self.dayforecastdata()
@@ -730,7 +733,7 @@ class SystemTrayIcon(QMainWindow):
         if not self.json_data_bool:
             start = 1
             periods = 7
-            fetched_file_periods = (len(self.forecast6_data.xpath('//time')))
+            fetched_file_periods = (len(self.dayforecast_data.xpath('//time')))
             if fetched_file_periods < periods:
                 # Some times server sends less data
                 periods = fetched_file_periods
@@ -1086,6 +1089,7 @@ class SystemTrayIcon(QMainWindow):
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
         self.downloadThread.day_forecast_rawpage.connect(self.dayforecast)
+        self.forcast6daysBool = False
         self.downloadThread.forecast6_rawpage.connect(self.forecast6)
         self.downloadThread.uv_signal.connect(self.uv)
         self.downloadThread.error.connect(self.error)
@@ -1096,6 +1100,7 @@ class SystemTrayIcon(QMainWindow):
         self.uv_coord = value
 
     def forecast6(self, data):
+        self.forcast6daysBool = True
         self.forecast6_data = data
 
     def dayforecast(self, data):
@@ -1505,27 +1510,35 @@ class Download(QThread):
             opener = urllib.request.build_opener(proxy_handler)
             urllib.request.install_opener(opener)
         done = 0
+
+        logging.debug('Fetching url for 6 days :' + self.forecast6_url +
+                          self.id_ + self.suffix + '&cnt=7')
+        pagedayforecast6 = ''
+        try:
+            reqforecast6 = urllib.request.urlopen(
+                                self.forecast6_url + self.id_ +
+                                self.suffix + '&cnt=7', timeout=5
+                                             )
+            pageforecast6 = reqforecast6.read()
+            treeforecast6 = etree.fromstring(pageforecast6)
+            forcast6days = True
+        except urllib.error.HTTPError as e:
+            forcast6days = False
+            logging.error('6 days forcast not available : ' + str(e))
+
         try:
             logging.debug('Fetching url for actual weather: ' + self.baseurl +
                           self.id_ + self.suffix)
             req = urllib.request.urlopen(
                 self.baseurl + self.id_ + self.suffix, timeout=5)
-            logging.debug('Fetching url for 6 days :' + self.forecast6_url +
-                          self.id_ + self.suffix + '&cnt=7')
-            reqforecast6 = urllib.request.urlopen(self.forecast6_url + self.id_ +
-                                                  self.suffix + '&cnt=7',
-                                                  timeout=5)
             logging.debug('Fetching url for forecast of the day + 4:' +
                           self.day_forecast_url + self.id_ + self.suffix)
             reqdayforecast = urllib.request.urlopen(
                 self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
-            pageforecast6 = reqforecast6.read()
             pagedayforecast = reqdayforecast.read()
             if self.html404(page, 'city'):
                 raise urllib.error.HTTPError
-            elif self.html404(pageforecast6, 'forecast'):
-                logging.debug('Error fetching the 6 days forecast')
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
                 logging.debug('Fetching json url for forecast of the day :' +
@@ -1545,7 +1558,6 @@ class Download(QThread):
             lon = tree[0][0].get('lon')
             uv_ind = (lat, lon)
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
-            treeforecast6 = etree.fromstring(pageforecast6)
             if not use_json_day_forecast:
                 treedayforecast = etree.fromstring(pagedayforecast)
             weather_icon = tree[8].get('icon')
@@ -1556,7 +1568,8 @@ class Download(QThread):
                 raise urllib.error.HTTPError
             self.xmlpage['PyQt_PyObject'].emit(tree)
             self.wimage['PyQt_PyObject'].emit(data)
-            self.forecast6_rawpage['PyQt_PyObject'].emit(treeforecast6)
+            if forcast6days:
+                self.forecast6_rawpage['PyQt_PyObject'].emit(treeforecast6)
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
         except (urllib.error.HTTPError, urllib.error.URLError, TypeError) as error:
