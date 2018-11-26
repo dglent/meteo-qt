@@ -1232,7 +1232,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
         if self.id_ not in self.trendCities_dic:
             # dict {'id': 'hPa', 'T°'}
-            self.trendCities_dic[self.id_] = [''] * 2
+            self.trendCities_dic[self.id_] = [''] * 4
         # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
         if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
@@ -1242,6 +1242,25 @@ class SystemTrayIcon(QMainWindow):
         self.trendCities_dic[self.id_][0] = pressure
         # Temperature trend
         self.notifier()
+
+    def notifier(self):
+        ''' The notification is being shown:
+        On a city change or first launch or if the temperature changes
+        The notification is not shown if is turned off from the settings.
+        The tray tooltip is set here '''
+        temp = float(self.tempFloat)
+        if (self.id_ in self.trendCities_dic and
+                self.trendCities_dic[self.id_][2] is not ''):
+            if temp > float(self.trendCities_dic[self.id_][2]):
+                self.temp_trend = " ↗"
+                self.trendCities_dic[self.id_][3] = self.temp_trend
+            elif temp < float(self.trendCities_dic[self.id_][2]):
+                self.temp_trend = " ↘"
+                self.trendCities_dic[self.id_][3] = self.temp_trend
+            else:
+                self.temp_trend = self.trendCities_dic[self.id_][3]
+        self.trendCities_dic[self.id_][2] = temp
+        self.systray.setToolTip(self.city_weather_info + self.temp_trend)
 
     def tooltip_weather(self):
         # Creation of the tray tootltip
@@ -1325,21 +1344,6 @@ class SystemTrayIcon(QMainWindow):
             return True
         else:
             return False
-
-    def notifier(self):
-        ''' The notification is being shown:
-        On a city change or first launch or if the temperature changes
-        The notification is not shown if is turned off from the settings.
-        The tray tooltip is set here '''
-        temp = float(self.tempFloat)
-        if (self.id_ in self.trendCities_dic and
-                self.trendCities_dic[self.id_][1] is not ''):
-            if temp > float(self.trendCities_dic[self.id_][1]):
-                self.temp_trend = " ↗"
-            elif temp < float(self.trendCities_dic[self.id_][1]):
-                self.temp_trend = " ↘"
-        self.trendCities_dic[self.id_][1] = temp
-        self.systray.setToolTip(self.city_weather_info + self.temp_trend)
 
     def restore_city(self):
         if self.temporary_city_status:
