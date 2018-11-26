@@ -1330,7 +1330,6 @@ class SystemTrayIcon(QMainWindow):
         On a city change or first launch or if the temperature changes
         The notification is not shown if is turned off from the settings.
         The tray tooltip is set here '''
-        self.temp_trend = ''
         temp = float(self.tempFloat)
         # if self.notifier_settings():
         if (self.id_ in self.trendCities_dic and
