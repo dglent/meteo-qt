@@ -82,9 +82,12 @@ class SystemTrayIcon(QMainWindow):
         desktops_no_left_click = ['ubuntu', 'budgie-desktop']
         if os.environ.get('DESKTOP_SESSION') in desktops_no_left_click:
             # Missing left click on Unity environment issue 63
-            self.panelAction = QAction(QCoreApplication.translate(
-                                "Tray context menu", "Toggle Window",
-                                "Open/closes the application window"), self)
+            self.panelAction = QAction(
+                QCoreApplication.translate(
+                    "Tray context menu", "Toggle Window",
+                    "Open/closes the application window"
+                ), self
+            )
             self.panelAction.setIcon(QIcon(':/panel'))
             self.menu.addAction(self.panelAction)
             self.panelAction.triggered.connect(self.showpanel)
@@ -287,10 +290,12 @@ class SystemTrayIcon(QMainWindow):
         set_str = self.utc('Sunset', 'weatherdata')
         self.sunrise_value = QLabel('<font color=grey>' + rise_str[:-3] + '</font>')
         self.sunset_value = QLabel('<font color=grey>' + set_str[:-3] + '</font>')
-        self.daylight_label = QLabel('<font color=grey><b>' +
-                                  QCoreApplication.translate(
-                                    'Daylight duration', 'Daylight',
-                                    'Weather overview dialogue') + '</b></font>')
+        self.daylight_label = QLabel(
+            '<font color=grey><b>' +
+            QCoreApplication.translate(
+                'Daylight duration', 'Daylight', 'Weather overview dialogue'
+            ) + '</b></font>'
+        )
         daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
         self.daylight_value_label = QLabel('<font color=grey>' + daylight_value + '</font>')
         # --UV---
@@ -299,8 +304,10 @@ class SystemTrayIcon(QMainWindow):
                 'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
                 '<\b><\font>'))
         self.uv_label.setAlignment(Qt.AlignTop)
-        fetching_text = ('<font color=grey>' + QCoreApplication.translate(
-                            'Ultraviolet index', 'Fetching...', '' + '<\font>'))
+        fetching_text = (
+            '<font color=grey>' + QCoreApplication.translate(
+                'Ultraviolet index', 'Fetching...', '' + '<\font>')
+        )
         self.uv_value_label = QLabel()
         self.uv_value_label.setText(fetching_text)
         # Ozone
@@ -570,10 +577,12 @@ class SystemTrayIcon(QMainWindow):
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel(
-                            '<font color=grey>' + '{0:.0f}'.format(float(
-                            self.forecast6_data[4][d][4].get('min'))) + '°<br/>' +
-                            '{0:.0f}'.format(float(self.forecast6_data[4][d][4].get('max'))) +
-                            '°</font>')
+                '<font color=grey>' + '{0:.0f}'.format(float(
+                    self.forecast6_data[4][d][4].get('min'))) + '°<br/>' +
+                '{0:.0f}'.format(
+                    float(self.forecast6_data[4][d][4].get('max'))) +
+                '°</font>'
+            )
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecast_minmax_layout.addWidget(mlabel)
@@ -850,8 +859,10 @@ class SystemTrayIcon(QMainWindow):
             o3_color = None
         du_unit = QCoreApplication.translate('Dobson Units', 'DU', 'Ozone value label')
         if o3_color is not None:
-            self.ozone_value_label.setText('<font color=grey>' + str(du) + ' ' + du_unit +
-                    '</font>' + '<font color=' + o3_color + '> ' + gauge + '</font>')
+            self.ozone_value_label.setText(
+                '<font color=grey>' + str(du) + ' ' + du_unit +
+                '</font>' + '<font color=' + o3_color + '> ' + gauge + '</font>'
+            )
             self.ozone_value_label.setToolTip(QCoreApplication.translate(
                 'Ozone value tooltip', '''The average amount of ozone in the <br/> atmosphere is
                 roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
@@ -876,10 +887,12 @@ class SystemTrayIcon(QMainWindow):
             uv_gauge = '◼' * int(round(float(index)))
             if uv_gauge == '':
                 uv_gauge = '◼'
-            self.uv_value_label.setText('<font color=grey>' + '{0:.1f}'.format(float(index)) +
-                    '  ' + self.uv_risk[uv_color[1]] + '</font>' +
-                    '<br/>' + '<font color=' + uv_color[0] + '><b>' +
-                    uv_gauge + '</b></font>')
+            self.uv_value_label.setText(
+                '<font color=grey>' + '{0:.1f}'.format(float(index)) +
+                '  ' + self.uv_risk[uv_color[1]] + '</font>' +
+                '<br/>' + '<font color=' + uv_color[0] + '><b>' +
+                uv_gauge + '</b></font>'
+            )
         else:
             self.uv_value_label.setText('<font color=grey>' + uv_gauge + '</font>')
         logging.debug('UV gauge ◼: ' + uv_gauge)
@@ -975,9 +988,11 @@ class SystemTrayIcon(QMainWindow):
         if type(cities) is str:
             cities = eval(cities)
         try:
-            current_city = (self.settings.value('City') + '_' +
-                        self.settings.value('Country') + '_' +
-                        self.settings.value('ID'))
+            current_city = (
+                self.settings.value('City') + '_' +
+                self.settings.value('Country') + '_' +
+                self.settings.value('ID')
+            )
         except:
             # firsttime run,if clic cancel in settings without any city configured
             pass
@@ -1064,7 +1079,7 @@ class SystemTrayIcon(QMainWindow):
         self.unit = self.settings.value('Unit') or 'metric'
         self.beaufort = self.settings.value('Beaufort') or 'False'
         self.suffix = ('&mode=xml&units=' + self.unit + self.appid)
-        self.interval = int(self.settings.value('Interval') or 30)*60*1000
+        self.interval = int(self.settings.value('Interval') or 30) * 60 * 1000
         self.timer.start(self.interval)
         self.update()
 
@@ -1272,8 +1287,9 @@ class SystemTrayIcon(QMainWindow):
                                       ' ' + self.temp_decimal +
                                       ' ' + self.meteo)
         else:
-            self.city_weather_info = (self.city + ' ' + self.country + ' ' +
-                                  self.temp_decimal + ' ' + self.meteo)
+            self.city_weather_info = (
+                self.city + ' ' + self.country + ' ' + self.temp_decimal + ' ' + self.meteo
+            )
 
     def tray(self):
         temp_decimal = eval(self.settings.value('Decimal') or 'False')
@@ -1326,8 +1342,9 @@ class SystemTrayIcon(QMainWindow):
                 if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
                         '' or self.id_ != self.notifier_id):
                     if not self.isVisible():
-                        self.systray.showMessage('meteo-qt', self.notification +
-                                                     self.temp_trend)
+                        self.systray.showMessage(
+                            'meteo-qt', self.notification + self.temp_trend
+                        )
                         return
             except KeyError:
                 return
@@ -1392,9 +1409,12 @@ class SystemTrayIcon(QMainWindow):
         decimal = self.settings.value('Decimal')
         self.appid = '&APPID=' + self.settings.value('APPID') or ''
         if language != self.language and language is not None:
-            self.systray.showMessage('meteo-qt:', QCoreApplication.translate(
+            self.systray.showMessage(
+                'meteo-qt:', QCoreApplication.translate(
                     "System tray notification",
-                    "The application has to be restarted to apply the language setting", ''))
+                    "The application has to be restarted to apply the language setting", ''
+                )
+            )
             self.language = language
         # Check if update is needed
         if traycolor is None:
@@ -1442,11 +1462,14 @@ class SystemTrayIcon(QMainWindow):
         logging.debug('write ' + str(what[0]) + ' ' + str(what[1]))
 
     def about(self):
-        title = self.tr("""<b>meteo-qt</b> v{0}
+        title = self.tr(
+            """<b>meteo-qt</b> v{0}
             <br/>License: GPLv3
-            <br/>Python {1} - Qt {2} - PyQt {3} on {4}""").format(
-                __version__, platform.python_version(),
-                QT_VERSION_STR, PYQT_VERSION_STR, platform.system())
+            <br/>Python {1} - Qt {2} - PyQt {3} on {4}"""
+        ).format(
+            __version__, platform.python_version(),
+            QT_VERSION_STR, PYQT_VERSION_STR, platform.system()
+        )
         image = ':/logo'
         text = self.tr("""<p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
                         <p>A simple application showing the weather status
@@ -1515,13 +1538,12 @@ class Download(QThread):
         done = 0
 
         logging.debug('Fetching url for 6 days :' + self.forecast6_url +
-                          self.id_ + self.suffix + '&cnt=7')
-        pagedayforecast6 = ''
+                      self.id_ + self.suffix + '&cnt=7')
         try:
             reqforecast6 = urllib.request.urlopen(
-                                self.forecast6_url + self.id_ +
-                                self.suffix + '&cnt=7', timeout=5
-                                             )
+                self.forecast6_url + self.id_ +
+                self.suffix + '&cnt=7', timeout=5
+            )
             pageforecast6 = reqforecast6.read()
             treeforecast6 = etree.fromstring(pageforecast6)
             forcast6days = True
@@ -1545,10 +1567,12 @@ class Download(QThread):
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
                 logging.debug('Fetching json url for forecast of the day :' +
-                          self.day_forecast_url + self.id_ + self.suffix.replace('xml', 'json'))
+                              self.day_forecast_url + self.id_ + self.suffix.replace('xml', 'json')
+                              )
                 reqdayforecast = urllib.request.urlopen(
-                        self.day_forecast_url + self.id_ +
-                        self.suffix.replace('xml', 'json'), timeout=5)
+                    self.day_forecast_url + self.id_ +
+                    self.suffix.replace('xml', 'json'), timeout=5
+                )
                 pagedayforecast = reqdayforecast.read().decode('utf-8')
                 if self.html404(pagedayforecast, 'day_forecast'):
                     raise urllib.error.HTTPError
