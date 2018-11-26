@@ -185,8 +185,8 @@ class SystemTrayIcon(QMainWindow):
         self.icontemp_layout.addWidget(self.icon_label)
         self.temp_label = QLabel(
             '<font size="5"><b>' + '{0:.1f}'.format(
-            float(self.weatherDataDico['Temp'][:-1])) + ' ' + self.unit_temp +
-            temp_trend + '<\b><\font>')
+                float(self.weatherDataDico['Temp'][:-1])) + ' ' +
+            self.unit_temp + temp_trend + '<\b><\font>')
         self.icontemp_layout.addWidget(self.temp_label)
         self.over_layout.addLayout(self.icontemp_layout)
         self.weather = QLabel('<font size="4"><b>' +
@@ -216,12 +216,12 @@ class SystemTrayIcon(QMainWindow):
             wind_speed = windTobeaufort
             self.unit_system_wind = ' Bft. '
         try:
-            self.windLabelDescr = QLabel('<font color=grey>' +
-                               self.weatherDataDico['Wind'][4] +
-                               ' ' + self.weatherDataDico['Wind'][2] + '° ' +
-                               '<br/>' + wind_speed +
-                               self.unit_system_wind + self.weatherDataDico['Wind'][1] +
-                               '<\font>')
+            self.windLabelDescr = QLabel(
+                '<font color=grey>' + self.weatherDataDico['Wind'][4] +
+                ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>' +
+                wind_speed + self.unit_system_wind +
+                self.weatherDataDico['Wind'][1] + '<\font>'
+            )
             self.windLabelDescr.setToolTip(self.beaufort_sea_land[windTobeaufort])
         except:
             logging.error('Cannot find wind informations:\n' +
@@ -257,11 +257,12 @@ class SystemTrayIcon(QMainWindow):
                                      self.weatherDataDico['Humidity'][1] +
                                      '<\font>')
         # Precipitation
-        self.precipitation_label = QLabel('<font size="3" color=grey><b>' +
-                                          QCoreApplication.translate(
-                                            'Precipitation type (no/rain/snow)',
-                                            'Precipitation', 'Weather overview dialogue') +
-                                            '<\b><\font>')
+        self.precipitation_label = QLabel(
+            '<font size="3" color=grey><b>' +
+            QCoreApplication.translate(
+                'Precipitation type (no/rain/snow)',
+                'Precipitation', 'Weather overview dialogue'
+            ) + '<\b><\font>')
         rain_mode = self.precipitation[self.weatherDataDico['Precipitation'][0]]
         rain_value = self.weatherDataDico['Precipitation'][1]
         rain_unit = ' mm '
@@ -1232,7 +1233,7 @@ class SystemTrayIcon(QMainWindow):
         if self.id_ not in self.trendCities_dic:
             # dict {'id': 'hPa', 'T°'}
             self.trendCities_dic[self.id_] = [''] * 2
-        # hPa self.temp_trend
+        # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
         if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
             self.hPaTrend = pressure - float(self.trendCities_dic[self.id_][0])
@@ -1331,7 +1332,6 @@ class SystemTrayIcon(QMainWindow):
         The notification is not shown if is turned off from the settings.
         The tray tooltip is set here '''
         temp = float(self.tempFloat)
-        # if self.notifier_settings():
         if (self.id_ in self.trendCities_dic and
                 self.trendCities_dic[self.id_][1] is not ''):
             if temp > float(self.trendCities_dic[self.id_][1]):
