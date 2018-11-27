@@ -54,6 +54,9 @@ class SystemTrayIcon(QMainWindow):
         super(SystemTrayIcon, self).__init__(parent)
         self.setAttribute(Qt.WA_DeleteOnClose)
         self.settings = QSettings()
+        self.cityChangeTimer = QTimer()
+        self.cityChangeTimer.timeout.connect(self.update_city_gif)
+
         self.language = self.settings.value('Language') or ''
         self.temp_decimal_bool = self.settings.value('Decimal') or False
         # initialize the tray icon type in case of first run: issue#42
@@ -942,6 +945,17 @@ class SystemTrayIcon(QMainWindow):
         gif_frame = self.gif_loading.currentPixmap()
         self.systray.setIcon(QIcon(gif_frame))
 
+    def icon_city_loading(self):
+        self.city_label.setText('▉')
+        self.cityChangeTimer.start(20)
+
+    def update_city_gif(self):
+        current = self.city_label.text()
+        current += '▌'
+        if len(current) > 35:
+            current = '▉'
+        self.city_label.setText(current)
+
     def manual_refresh(self):
         self.tentatives = 0
         self.refresh()
@@ -1091,6 +1105,8 @@ class SystemTrayIcon(QMainWindow):
             '\n' + self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
+        if hasattr(self, 'city_label'):
+            self.icon_city_loading()
         if hasattr(self, 'downloadThread'):
             if self.downloadThread.isRunning():
                 logging.debug('remaining thread...')
@@ -1127,6 +1143,7 @@ class SystemTrayIcon(QMainWindow):
         self.dayforecast_data = data
 
     def done(self, done):
+        self.cityChangeTimer.stop()
         if done == 0:
             self.inerror = False
         elif done == 1:
