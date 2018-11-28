@@ -729,7 +729,7 @@ class SystemTrayIcon(QMainWindow):
         self.download_thread.start()
 
     def iconwidget(self, icon):
-        '''forecast icons'''
+        '''Next days forecast icons'''
         image = QImage()
         image.loadFromData(icon)
         iconlabel = QLabel()
@@ -962,8 +962,9 @@ class SystemTrayIcon(QMainWindow):
 
     def wheelEvent(self, event):
         if self.day_download_thread.isRunning():
-            logging.debug('Downloading icons - remaining thread...')
+            logging.debug('WheelEvent : Downloading icons - remaining thread...')
             return
+        self.icon_city_loading()
         current_city = self.city
         current_id = self.id_
         current_country = self.country
@@ -989,7 +990,11 @@ class SystemTrayIcon(QMainWindow):
             current_city_index -= 1
             if current_city_index < 0:
                 current_city_index = len(cities) - 1
-        self.changecity(cities[current_city_index])
+        citytosetlist = cities[current_city_index].split('_')
+        self.settings.setValue('City', citytosetlist[0])
+        self.settings.setValue('Country', citytosetlist[1])
+        self.settings.setValue('ID', citytosetlist[2])
+        self.timer.singleShot(500, self.refresh)
 
     def cities_menu(self):
         # Don't add the temporary city in the list
@@ -1008,7 +1013,7 @@ class SystemTrayIcon(QMainWindow):
                 self.settings.value('ID')
             )
         except:
-            # firsttime run,if clic cancel in settings without any city configured
+            logging.debug('Cities menu : firsttime run,if clic cancel in settings without any city configured')
             pass
         # Prevent duplicate entries
         try:
@@ -1036,6 +1041,8 @@ class SystemTrayIcon(QMainWindow):
 
     @pyqtSlot(str)
     def changecity(self, city):
+        if hasattr(self, 'city_label'):
+            self.icon_city_loading()
         cities_list = self.settings.value('CityList')
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         self.cities_trans_dict = eval(cities_trans)
@@ -1105,8 +1112,6 @@ class SystemTrayIcon(QMainWindow):
             '\n' + self.tr('Right click on the icon and click on Settings.'))
 
     def update(self):
-        if hasattr(self, 'city_label'):
-            self.icon_city_loading()
         if hasattr(self, 'downloadThread'):
             if self.downloadThread.isRunning():
                 logging.debug('remaining thread...')
@@ -1263,7 +1268,7 @@ class SystemTrayIcon(QMainWindow):
             rain_value = ''
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
         if self.id_ not in self.trendCities_dic:
-            # dict {'id': 'hPa', 'T°'}
+            # dict {'id': 'hPa', , '',  'T°', 'temp_trend'}
             self.trendCities_dic[self.id_] = [''] * 4
         # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
