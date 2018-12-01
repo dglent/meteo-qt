@@ -736,8 +736,12 @@ class SystemTrayIcon(QMainWindow):
         iconlabel.setAlignment(Qt.AlignHCenter)
         iconpixmap = QPixmap(image)
         iconlabel.setPixmap(iconpixmap)
-        iconlabel.setToolTip(self.forecast_weather_list.pop(0))
-        self.forecast_icons_layout.addWidget(iconlabel)
+        try:
+            iconlabel.setToolTip(self.forecast_weather_list.pop(0))
+            self.forecast_icons_layout.addWidget(iconlabel)
+        except IndexError as error:
+            logging.error(str(error) + ' forecast_weather_list')
+            return
 
     def dayforecastdata(self):
         '''Fetch forecast for the day'''
@@ -921,8 +925,11 @@ class SystemTrayIcon(QMainWindow):
         iconlabel.setAlignment(Qt.AlignHCenter)
         iconpixmap = QPixmap(image)
         iconlabel.setPixmap(iconpixmap)
-        iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
-        self.dayforecast_layout.addWidget(iconlabel)
+        try:
+            iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
+            self.dayforecast_layout.addWidget(iconlabel)
+        except IndexError as error:
+            logging.error(str(error) + 'dayforecast_weather_list')
 
     def moveEvent(self, event):
         self.settings.setValue("MainWindow/Geometry", self.saveGeometry())
@@ -961,7 +968,7 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def wheelEvent(self, event):
-        if self.day_download_thread.isRunning():
+        if self.day_download_thread.isRunning() or self.download_thread.isRunning():
             logging.debug('WheelEvent : Downloading icons - remaining thread...')
             return
         self.icon_city_loading()
