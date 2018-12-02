@@ -1377,11 +1377,14 @@ class SystemTrayIcon(QMainWindow):
             try:
                 if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
                         '' or self.id_ != self.notifier_id):
-                    if (not self.isVisible() and self.trendCities_dic[self.id_][4] is True or
-                        self.trendCities_dic[self.id_][4] == ''):
-                        self.systray.showMessage(
-                            'meteo-qt', self.notification + self.temp_trend
-                        )
+                    if not self.isVisible():
+                        # Don't show the notification when window is open
+                        # Show only if there is the weather changed
+                        if (self.trendCities_dic[self.id_][4] is True or
+                            self.trendCities_dic[self.id_][4] == ''):
+                            self.systray.showMessage(
+                                'meteo-qt', self.notification + self.temp_trend
+                            )
                         return
             except KeyError:
                 return
