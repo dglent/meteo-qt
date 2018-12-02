@@ -204,7 +204,7 @@ class SystemTrayIcon(QMainWindow):
         # ------Second part overview day---------
         self.over_grid = QGridLayout()
         # Wind
-        self.wind_label = QLabel('<font size="3" color=grey><b>' +
+        self.wind_label = QLabel('<font size="3" color=><b>' +
                                  self.tr('Wind') + '<\font><\b>')
         self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
@@ -223,7 +223,7 @@ class SystemTrayIcon(QMainWindow):
             self.unit_system_wind = ' Bft. '
         try:
             self.windLabelDescr = QLabel(
-                '<font color=grey>' + self.weatherDataDico['Wind'][4] +
+                '<font color=>' + self.weatherDataDico['Wind'][4] +
                 ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>' +
                 wind_speed + self.unit_system_wind +
                 self.weatherDataDico['Wind'][1] + '<\font>'
@@ -237,12 +237,12 @@ class SystemTrayIcon(QMainWindow):
         self.wind_icon = QPixmap(':/arrow')
         self.wind_icon_direction()
         # Clouds
-        self.clouds_label = QLabel('<font size="3" color=grey><b>' +
+        self.clouds_label = QLabel('<font size="3" color=><b>' +
                                    self.tr('Cloudiness') + '<\b><\font>')
-        self.clouds_name = QLabel('<font color=grey>' +
+        self.clouds_name = QLabel('<font color=>' +
                                   self.weatherDataDico['Clouds'] + '<\font>')
         # Pressure
-        self.pressure_label = QLabel('<font size="3" color=grey><b>' +
+        self.pressure_label = QLabel('<font size="3" color=><b>' +
                                      self.tr('Pressure') + '<\b><\font>')
         if self.hPaTrend == 0:
             hpa = ""
@@ -250,21 +250,21 @@ class SystemTrayIcon(QMainWindow):
             hpa = ""
         elif self.hPaTrend > 0:
             hpa = ""
-        self.pressure_value = QLabel('<font color=grey>' +
+        self.pressure_value = QLabel('<font color=>' +
                                      str(float(self.weatherDataDico['Pressure'][0])) +
                                      ' ' + self.weatherDataDico['Pressure'][1] +
                                      " " + hpa + '<\font>')
         self.pressure_value.setToolTip(self.hpa_indications['hpa'])
         # Humidity
-        self.humidity_label = QLabel('<font size="3" color=grey><b>' +
+        self.humidity_label = QLabel('<font size="3" color=><b>' +
                                      self.tr('Humidity') + '<\b><\font>')
-        self.humidity_value = QLabel('<font color=grey>' +
+        self.humidity_value = QLabel('<font color=>' +
                                      self.weatherDataDico['Humidity'][0] + ' ' +
                                      self.weatherDataDico['Humidity'][1] +
                                      '<\font>')
         # Precipitation
         self.precipitation_label = QLabel(
-            '<font size="3" color=grey><b>' +
+            '<font size="3" color=><b>' +
             QCoreApplication.translate(
                 'Precipitation type (no/rain/snow)',
                 'Precipitation', 'Weather overview dialogue'
@@ -281,41 +281,41 @@ class SystemTrayIcon(QMainWindow):
                 rain_value = "{0:.4f}".format(float(rain_value))
             else:
                 rain_value = "{0:.2f}".format(float(rain_value))
-        self.precipitation_value = QLabel('<font color=grey>' +
+        self.precipitation_value = QLabel('<font color=>' +
                                           rain_mode + ' ' + rain_value + ' ' + rain_unit +
                                           '</font>')
         # Sunrise Sunset Daylight
-        self.sunrise_label = QLabel('<font color=grey><b>' +
+        self.sunrise_label = QLabel('<font color=><b>' +
                                     self.tr('Sunrise') + '</b></font>')
-        self.sunset_label = QLabel('<font color=grey><b>' +
+        self.sunset_label = QLabel('<font color=><b>' +
                                    self.tr('Sunset') + '</b></font>')
         rise_str = self.utc('Sunrise', 'weatherdata')
         set_str = self.utc('Sunset', 'weatherdata')
-        self.sunrise_value = QLabel('<font color=grey>' + rise_str[:-3] + '</font>')
-        self.sunset_value = QLabel('<font color=grey>' + set_str[:-3] + '</font>')
+        self.sunrise_value = QLabel('<font color=>' + rise_str[:-3] + '</font>')
+        self.sunset_value = QLabel('<font color=>' + set_str[:-3] + '</font>')
         self.daylight_label = QLabel(
-            '<font color=grey><b>' +
+            '<font color=><b>' +
             QCoreApplication.translate(
                 'Daylight duration', 'Daylight', 'Weather overview dialogue'
             ) + '</b></font>'
         )
         daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
-        self.daylight_value_label = QLabel('<font color=grey>' + daylight_value + '</font>')
+        self.daylight_value_label = QLabel('<font color=>' + daylight_value + '</font>')
         # --UV---
         self.uv_label = QLabel(
-            '<font size="3" color=grey><b>' + QCoreApplication.translate(
+            '<font size="3" color=><b>' + QCoreApplication.translate(
                 'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
                 '<\b><\font>'))
         self.uv_label.setAlignment(Qt.AlignTop)
         fetching_text = (
-            '<font color=grey>' + QCoreApplication.translate(
+            '<font color=>' + QCoreApplication.translate(
                 'Ultraviolet index', 'Fetching...', '' + '<\font>')
         )
         self.uv_value_label = QLabel()
         self.uv_value_label.setText(fetching_text)
         # Ozone
         self.ozone_label = QLabel(
-            '<font size="3" color=grey><b>' + QCoreApplication.translate(
+            '<font size="3" color=><b>' + QCoreApplication.translate(
                 'Ozone data title', 'Ozone', 'Label in weather info dialogue' +
                 '<\b><\font>'))
         self.ozone_value_label = QLabel()
@@ -580,7 +580,7 @@ class SystemTrayIcon(QMainWindow):
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel(
-                '<font color=grey>' + '{0:.0f}'.format(float(
+                '<font color=>' + '{0:.0f}'.format(float(
                     self.forecast6_data[4][d][4].get('min'))) + '°<br/>' +
                 '{0:.0f}'.format(
                     float(self.forecast6_data[4][d][4].get('max'))) +
@@ -665,7 +665,7 @@ class SystemTrayIcon(QMainWindow):
             temp_min = min(self.date_temp_forecast[date_list[2]])
             temp_max = max(self.date_temp_forecast[date_list[2]])
             mlabel = QLabel(
-                '<font color=grey>' + '{0:.0f}'.format(temp_min) + '°<br/>' +
+                '<font color=>' + '{0:.0f}'.format(temp_min) + '°<br/>' +
                 '{0:.0f}'.format(temp_max) + '°</font>')
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
@@ -803,7 +803,7 @@ class SystemTrayIcon(QMainWindow):
 
             self.dayforecast_weather_list.append(weather_cond)
             daytime = QLabel(
-                '<font color=grey>' + timeofday[:-3] + '<br/>' +
+                '<font color=>' + timeofday[:-3] + '<br/>' +
                 '{0:.0f}'.format(temperature_at_hour) +
                 '°' + '</font>')
             daytime.setAlignment(Qt.AlignHCenter)
@@ -867,7 +867,7 @@ class SystemTrayIcon(QMainWindow):
         du_unit = QCoreApplication.translate('Dobson Units', 'DU', 'Ozone value label')
         if o3_color is not None:
             self.ozone_value_label.setText(
-                '<font color=grey>' + str(du) + ' ' + du_unit +
+                '<font color=>' + str(du) + ' ' + du_unit +
                 '</font>' + '<font color=' + o3_color + '> ' + gauge + '</font>'
             )
             self.ozone_value_label.setToolTip(QCoreApplication.translate(
@@ -876,7 +876,7 @@ class SystemTrayIcon(QMainWindow):
                 is an area where the ozone concentration drops to an average of about
                 100 Dobson Units.''', 'http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html'))
         else:
-            self.ozone_value_label.setText('<font color=grey>' + str(du) + '</font>')
+            self.ozone_value_label.setText('<font color=>' + str(du) + '</font>')
         if du != '-':
             self.over_grid.addWidget(self.ozone_label, 9, 0)
             self.over_grid.addWidget(self.ozone_value_label, 9, 1)
@@ -895,13 +895,13 @@ class SystemTrayIcon(QMainWindow):
             if uv_gauge == '':
                 uv_gauge = '◼'
             self.uv_value_label.setText(
-                '<font color=grey>' + '{0:.1f}'.format(float(index)) +
+                '<font color=>' + '{0:.1f}'.format(float(index)) +
                 '  ' + self.uv_risk[uv_color[1]] + '</font>' +
                 '<br/>' + '<font color=' + uv_color[0] + '><b>' +
                 uv_gauge + '</b></font>'
             )
         else:
-            self.uv_value_label.setText('<font color=grey>' + uv_gauge + '</font>')
+            self.uv_value_label.setText('<font color=>' + uv_gauge + '</font>')
         logging.debug('UV gauge ◼: ' + uv_gauge)
         self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
         if uv_gauge != '-':
