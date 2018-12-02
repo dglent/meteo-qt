@@ -911,8 +911,9 @@ class SystemTrayIcon(QMainWindow):
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
         logging.debug('Download forecast icons for the day...')
-        self.day_download_thread = IconDownload(self.forecast_icon_url,
-                                                self.dayforecast_icon_list)
+        self.day_download_thread = IconDownload(
+            self.forecast_icon_url, self.dayforecast_icon_list
+        )
         self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
         self.day_download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
         self.day_download_thread.start()
@@ -1275,8 +1276,8 @@ class SystemTrayIcon(QMainWindow):
             rain_value = ''
         self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
         if self.id_ not in self.trendCities_dic:
-            # dict {'id': 'hPa', , '',  'T°', 'temp_trend'}
-            self.trendCities_dic[self.id_] = [''] * 4
+            # dict {'id': 'hPa', , '',  'T°', 'temp_trend', 'weather changedBool'}
+            self.trendCities_dic[self.id_] = [''] * 5
         # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
         if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
@@ -1303,8 +1304,14 @@ class SystemTrayIcon(QMainWindow):
                 self.trendCities_dic[self.id_][3] = self.temp_trend
             else:
                 self.temp_trend = self.trendCities_dic[self.id_][3]
+            if int(temp) == int(self.trendCities_dic[self.id_][2]):
+                self.trendCities_dic[self.id_][4] = False
+            else:
+                self.trendCities_dic[self.id_][4] = True
+
         self.trendCities_dic[self.id_][2] = temp
         self.systray.setToolTip(self.city_weather_info + self.temp_trend)
+        print(self.trendCities_dic)
 
     def tooltip_weather(self):
         # Creation of the tray tootltip
@@ -1370,14 +1377,15 @@ class SystemTrayIcon(QMainWindow):
             try:
                 if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
                         '' or self.id_ != self.notifier_id):
-                    if not self.isVisible():
+                    if (not self.isVisible() and self.trendCities_dic[self.id_][4] is True or
+                        self.trendCities_dic[self.id_][4] == ''):
                         self.systray.showMessage(
                             'meteo-qt', self.notification + self.temp_trend
                         )
                         return
             except KeyError:
                 return
-        self.notifier_id = self.id_
+        self.notifier_id = self.id_  # To always notify when city changes
         self.restore_city()
         self.tentatives = 0
         self.tooltip_weather()
