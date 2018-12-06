@@ -1304,14 +1304,13 @@ class SystemTrayIcon(QMainWindow):
                 self.trendCities_dic[self.id_][3] = self.temp_trend
             else:
                 self.temp_trend = self.trendCities_dic[self.id_][3]
-            if int(temp) == int(self.trendCities_dic[self.id_][2]):
+            if temp == self.trendCities_dic[self.id_][2]:
                 self.trendCities_dic[self.id_][4] = False
             else:
                 self.trendCities_dic[self.id_][4] = True
 
         self.trendCities_dic[self.id_][2] = temp
         self.systray.setToolTip(self.city_weather_info + self.temp_trend)
-        print(self.trendCities_dic)
 
     def tooltip_weather(self):
         # Creation of the tray tootltip
@@ -1375,17 +1374,21 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setIcon(QIcon(icon))
         if self.notifier_settings():
             try:
-                if (self.temp_trend != '' or self.trendCities_dic[self.id_][1] ==
-                        '' or self.id_ != self.notifier_id):
+                if (
+                    self.temp_trend != '' or self.trendCities_dic[self.id_][1] == ''
+                    or self.id_ != self.notifier_id
+                ):
                     if not self.isVisible():
                         # Don't show the notification when window is open
                         # Show only if there is the weather changed
-                        if (self.trendCities_dic[self.id_][4] is True or
-                            self.trendCities_dic[self.id_][4] == ''):
+                        if (
+                            self.trendCities_dic[self.id_][4] is
+                                True or self.trendCities_dic[self.id_][4] == ''
+                        ):
                             self.systray.showMessage(
                                 'meteo-qt', self.notification + self.temp_trend
                             )
-                        return
+                            return
             except KeyError:
                 return
         self.notifier_id = self.id_  # To always notify when city changes
