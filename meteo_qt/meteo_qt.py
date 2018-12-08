@@ -1380,7 +1380,7 @@ class SystemTrayIcon(QMainWindow):
                 ):
                     if not self.isVisible():
                         # Don't show the notification when window is open
-                        # Show only if there is the weather changed
+                        # Show only if the temperature has changed
                         if (
                             self.trendCities_dic[self.id_][4] is
                                 True or self.trendCities_dic[self.id_][4] == ''
@@ -1874,42 +1874,56 @@ def main():
         locale = QLocale.system().name()
     appTranslator = QTranslator()
     if os.path.exists(filePath + '/translations/'):
-        appTranslator.load(filePath + "/translations/meteo-qt_" + locale)
+        appTranslator.load(
+            filePath + "/translations/meteo-qt_" + locale
+        )
     else:
-        appTranslator.load("/usr/share/meteo_qt/translations/meteo-qt_" +
-                           locale)
+        appTranslator.load(
+            "/usr/share/meteo_qt/translations/meteo-qt_" + locale
+        )
     app.installTranslator(appTranslator)
     qtTranslator = QTranslator()
-    qtTranslator.load("qt_" + locale,
-                      QLibraryInfo.location(QLibraryInfo.TranslationsPath))
+    qtTranslator.load(
+        "qt_" + locale, QLibraryInfo.location(
+            QLibraryInfo.TranslationsPath
+        )
+    )
     app.installTranslator(qtTranslator)
 
-    log_level = settings.value('Logging/Level')
-    if log_level == '' or log_level is None:
-        log_level = 'INFO'
+    logLevel = settings.value('Logging/Level')
+    if logLevel == '' or logLevel is None:
+        logLevel = 'INFO'
         settings.setValue('Logging/Level', 'INFO')
 
-    log_filename = os.path.dirname(settings.fileName())
-    if not os.path.exists(log_filename):
-        os.makedirs(log_filename)
-    log_filename = log_filename + '/meteo-qt.log'
+    logPath = os.path.dirname(settings.fileName())
+    logFile = logPath + '/meteo-qt.log'
+    if not os.path.exists(logPath):
+        os.makedirs(logPath)
+    if os.path.isfile(logFile):
+        fsize = os.stat(logFile).st_size
+        if fsize > 10240000:
+            with open(logFile, 'rb') as rFile:
+                rFile.seek(102400)
+                logData = rFile.read()
+            with open(logFile, 'wb') as wFile:
+                wFile.write(logData)
 
-    logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s - %(module)s - %(name)s',
-                        datefmt='%m/%d/%Y %H:%M:%S',
-                        filename=log_filename, level=log_level)
+    logging.basicConfig(
+        format='%(asctime)s %(levelname)s: %(message)s - %(lineno)s: %(module)s',
+        datefmt='%Y/%m/%d %H:%M:%S',
+        filename=logFile, level=logLevel
+    )
     logger = logging.getLogger('meteo-qt')
-    logger.setLevel(log_level)
-    handler = logging.handlers.RotatingFileHandler(
-        log_filename, maxBytes=1024, backupCount=1)
-    logger1 = logging.getLogger()
-    handler1 = logging.StreamHandler()
-    logger1Formatter = logging.Formatter('%(levelname)s: %(message)s - %(module)s')
-    handler1.setFormatter(logger1Formatter)
-    logger.addHandler(handler)
-    logger1.addHandler(handler1)
+    logger.setLevel(logLevel)
+    loggerStream = logging.getLogger()
+    handlerStream = logging.StreamHandler()
+    loggerStreamFormatter = logging.Formatter('%(levelname)s: %(message)s - %(lineno)s :%(module)s')
+    handlerStream.setFormatter(loggerStreamFormatter)
+    loggerStream.addHandler(handlerStream)
 
     m = SystemTrayIcon()
     app.exec_()
+
 
 if __name__ == '__main__':
     main()
