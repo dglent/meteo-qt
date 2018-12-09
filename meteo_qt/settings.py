@@ -289,11 +289,14 @@ class MeteoSettings(QDialog):
         self.statusbar = QLabel()
         self.layout.addWidget(self.statusbar)
         self.nokey_message = QCoreApplication.translate(
-                'Warning message after pressing Ok', 'Please enter your OpenWeatherMap key',
-                'Settings dialogue')
+            'Warning message after pressing Ok',
+            'Please enter your OpenWeatherMap key',
+            'Settings dialogue'
+        )
         self.nocity_message = QCoreApplication.translate(
-                'Warning message after pressing OK', 'Please add a city',
-                'Settings dialogue')
+            'Warning message after pressing OK', 'Please add a city',
+            'Settings dialogue'
+        )
         self.setLayout(self.layout)
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
@@ -335,8 +338,9 @@ class MeteoSettings(QDialog):
         if apikey == '':
             self.statusbar.setText(self.nokey_message)
             return
-        dialog = citylistdlg.CityListDlg(self.citylist, self.accurate_url,
-                                         apiid, self.trans_cities_dict, self)
+        dialog = citylistdlg.CityListDlg(
+            self.citylist, self.accurate_url, apiid, self.trans_cities_dict, self
+        )
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.citiesdict_signal.connect(self.cities_dict)
         dialog.exec_()
@@ -497,19 +501,10 @@ class MeteoSettings(QDialog):
     def clear_translations(self):
         ''' Save the list of the current cities list
             and remove the odd or blank translations'''
-        cities = self.citylist
-        if hasattr(self, 'city_list_before'):
-            self.settings.setValue('CityList', str(self.city_list_before))
-            logging.debug('write ' + 'CityList ' + str(self.city_list_before))
-            try:
-                cities = self.city_list_before
-                cities.append(self.citytosave)
-            except:
-                logging.debug('Empty cities list, default city: ' + str(cities))
-                pass
+        self.settings.setValue('CityList', str(self.citylist))
         translations_to_delete = []
         for key, value in self.trans_cities_dict.items():
-            if key == value or value == '' or key not in cities:
+            if key == value or value == '' or key not in self.citylist:
                 translations_to_delete.append(key)
         for i in translations_to_delete:
             del self.trans_cities_dict[i]
