@@ -265,6 +265,8 @@ class WorkThread(QThread):
             city = tree[3][i][0].get('name')
             country = tree[3][i][0][1].text
             id_ = tree[3][i][0].get('id')
+            lon = tree[3][i][0][0].get('lon')
+            lat = tree[3][i][0][0].get('lat')
             if int(id_) == 0:
                 logging.error('Error ID: ' + str(id_))
                 if self.tentatives == 10:
@@ -293,7 +295,12 @@ class WorkThread(QThread):
             try:
                 if id_ == '0':
                     continue
-                place = (id_ + ' - ' + city + ' - ' + country)
+
+                place = (
+                    id_ + ' - ' + city + ' - ' + country + '-' +
+                    ' lat: N S {0}°' + '-' + ' lon: E W {1}°'
+                ).format(lat, lon)
+
                 if place in self.lista:
                     continue
                 self.lista.append(place)
