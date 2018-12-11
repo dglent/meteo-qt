@@ -1590,7 +1590,7 @@ class Download(QThread):
             pageforecast6 = reqforecast6.read()
             treeforecast6 = etree.fromstring(pageforecast6)
             forcast6days = True
-        except urllib.error.HTTPError as e:
+        except (urllib.error.HTTPError, urllib.error.URLError, etree.XMLSyntaxError) as e:
             forcast6days = False
             logging.error('6 days forcast not available : ' + str(e))
 
