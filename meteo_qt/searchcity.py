@@ -297,7 +297,7 @@ class WorkThread(QThread):
                     continue
 
                 place = (
-                    id_ + ' - ' + city + ' - ' + country + '-' +
+                    id_ + ' - ' + city + ' - ' + country + ' - ' +
                     ' lat: N S {0}°' + '-' + ' lon: E W {1}°'
                 ).format(lat, lon)
 
