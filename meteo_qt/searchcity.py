@@ -28,8 +28,14 @@ class SearchCity(QDialog):
         self.buttonSearch = QPushButton()
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
-        self.line_search = QLineEdit(QCoreApplication.translate(
-            'Search city dialogue', 'Start typing the city...', ''))
+        self.line_search = QLineEdit(
+            QCoreApplication.translate(
+                'Search city dialogue',
+                'Start typing the city or the geographic '
+                'coordinates "latitude, longitude"',
+                ''
+            )
+        )
         self.line_search.selectAll()
         self.listWidget = QListWidget()
         self.status = QLabel()
@@ -46,7 +52,7 @@ class SearchCity(QDialog):
         self.buttonLayout.addWidget(self.buttonOk)
         self.buttonLayout.addWidget(self.buttonCancel)
         self.layout.addLayout(self.buttonLayout)
-        self.setMinimumWidth(int(len(self.line_search.text())*20))
+        self.setMinimumWidth(800)
         self.setLayout(self.layout)
         self.line_search.returnPressed.connect(self.search)
         self.line_search.textChanged.connect(self.timer_run)
@@ -107,7 +113,7 @@ class SearchCity(QDialog):
         self.city = (self.line_search.text())
         self.thread_terminate()
         if len(self.city) < 3:
-            self.status.setText(self.tr('Please type more than three letters'))
+            self.status.setText(self.tr('Please type more than three characters'))
             return
         self.lista = []
         self.errorStatus = False
@@ -177,11 +183,19 @@ class WorkThread(QThread):
     def __init__(self, accurate_url, city, suffix, parent=None):
         QThread.__init__(self, parent)
         self.accurate_url = accurate_url
-        # Search in any language
-        self.city = city  # self.encode_utf8(city)
+        self.city = city
         self.suffix = suffix
         self.tentatives = 1
         self.settings = QSettings()
+        coordinates = city.split(',')
+        try:
+            coordinates[0], coordinates[1] = float(coordinates[0]), float(coordinates[1])
+            self.city = 'lat=' + str(coordinates[0]) + '&lon=' + str(coordinates[1])
+            self.accurate_url = self.accurate_url.replace('q=', '')
+            logging.debug('Search by geographic coordinates' + str(self.city))
+        except (ValueError, IndexError) as e:
+            logging.debug('Cannot find geographic coordinates' + str(e))
+            logging.debug('Search by city name' + str(self.city))
 
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
@@ -264,6 +278,8 @@ class WorkThread(QThread):
         for i in range(int(tree[1].text)):
             city = tree[3][i][0].get('name')
             country = tree[3][i][0][1].text
+            if country is None:
+                country = ''
             id_ = tree[3][i][0].get('id')
             lon = tree[3][i][0][0].get('lon')
             lat = tree[3][i][0][0].get('lat')
@@ -283,7 +299,7 @@ class WorkThread(QThread):
                             "b'", "").replace("\\x", "%").replace(
                             "'", "").replace(' ', '%20')
                     self.run()
-            if city == '' or country is None:
+            if city == '':
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
                     return
