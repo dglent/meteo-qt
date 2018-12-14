@@ -1,6 +1,7 @@
 import logging
 import urllib.request
 from socket import timeout
+import json
 
 from lxml import etree
 from PyQt5.QtCore import (QByteArray, QCoreApplication, QSettings, QThread,
@@ -28,6 +29,16 @@ class SearchCity(QDialog):
         self.buttonSearch = QPushButton()
         self.buttonSearch.setIcon(QIcon(':/find'))
         self.buttonSearch.clicked.connect(self.search)
+        self.buttonMyLocation = QPushButton()
+        self.buttonMyLocation.setIcon(QIcon(':/mylocation'))
+        self.buttonMyLocation.setToolTip(
+            QCoreApplication.translate(
+                'Search city button tooltip',
+                'Find my location',
+                'Automatic search of my place'
+            )
+        )
+        self.buttonMyLocation.clicked.connect(self.myLocation)
         self.line_search = QLineEdit(
             QCoreApplication.translate(
                 'Search city dialogue',
@@ -41,6 +52,7 @@ class SearchCity(QDialog):
         self.status = QLabel()
         self.lineLayout.addWidget(self.line_search)
         self.lineLayout.addWidget(self.buttonSearch)
+        self.lineLayout.addWidget(self.buttonMyLocation)
         self.layout.addLayout(self.lineLayout)
         self.layout.addWidget(self.listWidget)
         self.layout.addWidget(self.status)
@@ -107,6 +119,13 @@ class SearchCity(QDialog):
         if hasattr(self, 'workThread'):
             if self.workThread.isRunning():
                 self.workThread.terminate()
+
+    def myLocation(self):
+        page = urllib.request.urlopen('http://ipinfo.io/json')
+        rep = page.read().decode('utf-8')
+        locdic = json.loads(rep)
+        loc = locdic['loc']
+        self.line_search.setText(loc)
 
     def search(self):
         self.timer_search.stop()
