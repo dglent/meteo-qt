@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import glob
 import os
 from distutils.command.build import build
@@ -11,7 +10,7 @@ class BuildQm(build):
     # os.system('pyrcc5 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
     os.system('pylupdate5 meteo_qt/meteo_qt.pro')
     for ts in glob.glob('meteo_qt/translations/*.ts'):
-        os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2]+'qm')))
+        os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2] + 'qm')))
 
 
 setup(
@@ -38,7 +37,8 @@ setup(
                      'meteo_qt/images/meteo-qt.png',
                      'meteo_qt/images/noicon.png',
                      'meteo_qt/images/preferences-web-browser-shortcuts.png',
-                     'meteo_qt/images/view-refresh.png']),
+                     'meteo_qt/images/view-refresh.png',
+                     'meteo_qt/images/mylocation.png']),
                 ('/usr/share/meteo_qt/translations',
                     ['meteo_qt/translations/meteo-qt_bg.qm',
                      'meteo_qt/translations/meteo-qt_ca.qm',
@@ -86,5 +86,5 @@ setup(
             'Programming Language :: Python :: 3',
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: Implementation :: CPython',
-        ],
+    ],
 )
