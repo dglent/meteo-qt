@@ -41,20 +41,70 @@ class AboutDialog(QDialog):
 
     def contributors(self):
 
-        contributors = (QCoreApplication.translate('', 'Pavel Fric<br/> [cs] Czech translation', '') +
-                        QCoreApplication.translate('', '<p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a><br/>[de] German translation', '') +
-                        QCoreApplication.translate('', '<p>Peter Mattern <a href="mailto:pmattern@arcor.de">pmattern@arcor.de</a><br/> [de] German translation, Project', '') +
-                        QCoreApplication.translate('', '<p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a><br/> [el] Greek translation', '') +
-                        QCoreApplication.translate('', '<p> juancarlospaco <a href="mailto:JuanCarlosPaco@gmail.com">JuanCarlosPaco@gmail.com</a><br/> [es] Spanish translation, Project', '') +
-                        QCoreApplication.translate('', '<p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a><br/> [es] Spanish translation', '') +
-                        QCoreApplication.translate('', '<p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a><br/> [fr] French translation', '') +
-                        QCoreApplication.translate('', '<p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a><br/> [fr] French translation, Project', '') +
-                        QCoreApplication.translate('', '<p>werthad <a href="mailto:werthad@gmail.com">werthad@gmail.com</a><br/> [hu] Hungarian translation', '') +
-                        QCoreApplication.translate('', '<p>Heimen Stoffels <a href="mailto:vistausss@outlook.com">vistausss@outlook.com</a><br/> [nl] Dutch translation', '') +
-                        QCoreApplication.translate('', '<p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a><br/> Tomasz Przybył <a href="mailto:fademind@gmail.com">fademind@gmail.com</a><br/> [pl] Polish translation', '') +
-                        QCoreApplication.translate('', '<p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a><br/> Sergey Shitikov <a href="mailto:rw4lll@yandex.ru">rw4lll@yandex.ru</a><br/>Alexey Zakaldaev <a href="mailto:nelex111@gmail.com">nelex111@gmail.com</a><br/>Liliya Panova<br/> [ru] Russian translation', '') +
-                        QCoreApplication.translate('', '<p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a><br/> [tr] Turkish translation', '') +
-                        QCoreApplication.translate('', '<p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a><br/> [uk] Ukrainian translation', '') +
-                        QCoreApplication.translate('', '<p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a><br/> [zh_TW] Chinese (Taiwan) translation', '') +
-                        QCoreApplication.translate('', '<p>pmav99<br/> Project', ''))
+        contributors = (
+            QCoreApplication.translate(
+                '', 'Pavel Fric<br/> [cs] Czech translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a>'
+                '<br/>[de] German translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Peter Mattern <a href="mailto:pmattern@arcor.de">pmattern@arcor.de</a>'
+                '<br/> [de] German translation, Project', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>'
+                '<br/> [el] Greek translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p> juancarlospaco <a href="mailto:JuanCarlosPaco@gmail.com">JuanCarlosPaco@gmail.com</a>'
+                '<br/> [es] Spanish translation,
+                Project', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Ozkar L. Garcell <a href="mailto:ozkar.garcell@gmail.com">ozkar.garcell@gmail.com</a>'
+                '<br/> [es] Spanish translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Laurene Albrand <a href="mailto:laurenealbrand@outlook.com">laurenealbrand@outlook.com</a>'
+                '<br/> [fr] French translation',
+                ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Rémi Verschelde <a href="mailto:remi@verschelde.fr">remi@verschelde.fr</a>'
+                '<br/> [fr] French translation, Project', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>werthad <a href="mailto:werthad@gmail.com">werthad@gmail.com</a>'
+                '<br/> [hu] Hungarian translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Heimen Stoffels <a href="mailto:vistausss@outlook.com">vistausss@outlook.com</a>'
+                '<br/> [nl] Dutch translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Daniel Napora <a href="mailto:napcok@gmail.com">napcok@gmail.com</a>'
+                '<br/> Tomasz Przybył <a href="mailto:fademind@gmail.com">fademind@gmail.com</a>'
+                '<br/> [pl] Polish translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Artem Vorotnikov <a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a>'
+                '<br/> Sergey Shitikov <a href="mailto:rw4lll@yandex.ru">rw4lll@yandex.ru</a>'
+                '<br/>Alexey Zakaldaev <a href="mailto:nelex111@gmail.com">nelex111@gmail.com</a>'
+                '<br/>Liliya Panova<br/> [ru] Russian translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Atilla Öntaş <a href="mailto:tarakbumba@gmail.com">tarakbumba@gmail.com</a>'
+                '<br/> [tr] Turkish translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>Yuri Chornoivan <a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a>'
+                '<br/> [uk] Ukrainian translation', ''
+            )
+            + QCoreApplication.translate(
+                '', '<p>You-Cheng Hsieh <a href="mailto:yochenhsieh@gmail.com">yochenhsieh@gmail.com</a>'
+                '<br/> [zh_TW] Chinese (Taiwan) translation', ''
+            )
+            + QCoreApplication.translate('', '<p>pmav99<br/> Project', ''))
         return contributors
