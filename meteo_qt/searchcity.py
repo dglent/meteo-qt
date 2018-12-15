@@ -71,26 +71,37 @@ class SearchCity(QDialog):
         self.buttonOk.clicked.connect(self.accept)
         self.buttonCancel.clicked.connect(self.reject)
         self.listWidget.itemSelectionChanged.connect(self.buttonCheck)
-        self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(
-            self.accept)
-        self.restoreGeometry(self.settings.value("SearchCity/Geometry",
-                                                 QByteArray()))
+        self.listWidget.itemDoubleClicked['QListWidgetItem *'].connect(self.accept)
+        self.restoreGeometry(
+            self.settings.value("SearchCity/Geometry", QByteArray())
+        )
         self.timer_search = QTimer(self)
         self.timer_search.timeout.connect(self.search)
-        self.setWindowTitle(QCoreApplication.translate('Window title',
-                               'Find a city', 'City search dialogue'))
+        self.setWindowTitle(
+            QCoreApplication.translate(
+                'Window title',
+                'Find a city',
+                'City search dialogue'
+            )
+        )
 
     def timer_run(self):
         self.timer_search.start(1000)
 
     def closeEvent(self, event):
-        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
+        self.settings.setValue(
+            "SearchCity/Geometry", self.saveGeometry()
+        )
 
     def moveEvent(self, event):
-        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
+        self.settings.setValue(
+            "SearchCity/Geometry", self.saveGeometry()
+        )
 
     def resizeEvent(self, event):
-        self.settings.setValue("SearchCity/Geometry", self.saveGeometry())
+        self.settings.setValue(
+            "SearchCity/Geometry", self.saveGeometry()
+        )
 
     def buttonCheck(self):
         '''Enable OK button if an item is selected.'''
@@ -136,8 +147,15 @@ class SearchCity(QDialog):
         self.city = (self.line_search.text())
         self.thread_terminate()
         if len(self.city) < 3:
-            self.status.setText(self.tr('Please type more than three characters'))
+            self.status.setText(
+                QCoreApplication.translate(
+                    'SearchCity window',
+                    'Please type more than three characters',
+                    'Message in the statusbar'
+                )
+            )
             return
+
         self.lista = []
         self.errorStatus = False
         self.buttonOk.setEnabled(False)
@@ -224,7 +242,8 @@ class WorkThread(QThread):
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
         proxy_auth = self.settings.value(
-            'Use_proxy_authentification') or 'False'
+            'Use_proxy_authentification'
+        ) or 'False'
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -233,33 +252,48 @@ class WorkThread(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = ('http://' + proxy_user + ':' + proxy_password +
-                             '@' + proxy_url + ':' + proxy_port)
+                proxy_tot = (
+                    'http://' + proxy_user + ':' + proxy_password + '@'
+                    + proxy_url + ':' + proxy_port
+                )
             proxy = urllib.request.ProxyHandler({"http": proxy_tot})
             auth = urllib.request.HTTPBasicAuthHandler()
             opener = urllib.request.build_opener(
-                proxy, auth, urllib.request.HTTPHandler)
+                proxy, auth, urllib.request.HTTPHandler
+            )
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
             opener = urllib.request.build_opener(proxy_handler)
             urllib.request.install_opener(opener)
-        error_message = self.tr('Data error, please try again later\n'
-                                'or modify the name of the city')
+        error_message = self.tr(
+            'Data error, please try again later\n'
+            'or modify the name of the city'
+        )
         self.lista = []
         if self.city == '':
             return
         try:
             logging.debug(
-                self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'", "").replace("\\x", "%").replace(
-                    "'", "").replace(' ', '%20') + self.suffix)
-            logging.debug('City before utf8 encode :' + self.accurate_url +
-                          self.city + self.suffix)
+                self.accurate_url + repr(self.city.encode('utf-8'))
+                .replace("b'", "")
+                .replace("\\x", "%")
+                .replace("'", "")
+                .replace(' ', '%20')
+                + self.suffix
+            )
+            logging.debug(
+                'City before utf8 encode :' + self.accurate_url
+                + self.city + self.suffix
+            )
             req = urllib.request.urlopen(
-                self.accurate_url + repr(self.city.encode('utf-8')).replace(
-                    "b'", "").replace("\\x", "%").replace(
-                    "'", "").replace(' ', '%20') + self.suffix, timeout=5)
+                self.accurate_url + repr(self.city.encode('utf-8'))
+                .replace("b'", "")
+                .replace("\\x", "%")
+                .replace("'", "")
+                .replace(' ', '%20')
+                + self.suffix, timeout=5
+            )
             page = req.read()
             tree = etree.fromstring(page)
         except timeout:
@@ -276,8 +310,10 @@ class WorkThread(QThread):
             code = ''
             if hasattr(error, 'code'):
                 code = str(error.code)
-            m_error = (self.tr('Error: ') + code + ' ' + str(error.reason) +
-                       self.tr('\nTry again later'))
+            m_error = (
+                self.tr('Error: ') + code + ' ' + str(error.reason)
+                + self.tr('\nTry again later')
+            )
             if self.tentatives == 10:
                 self.error['QString'].emit(m_error)
                 return
@@ -318,9 +354,13 @@ class WorkThread(QThread):
                     # Try with a fuzzy city name
                     if city != '':
                         logging.info('Change search to:' + city)
-                        self.city = repr(city.encode('utf-8')).replace(
-                            "b'", "").replace("\\x", "%").replace(
-                            "'", "").replace(' ', '%20')
+                        self.city = (
+                            repr(city.encode('utf-8'))
+                            .replace("b'", "")
+                            .replace("\\x", "%")
+                            .replace("'", "")
+                            .replace(' ', '%20')
+                        )
                     self.run()
             if city == '':
                 if self.tentatives == 10:
