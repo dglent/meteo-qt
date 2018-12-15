@@ -28,12 +28,19 @@ class SearchCity(QDialog):
         self.lineLayout = QHBoxLayout()
         self.buttonSearch = QPushButton()
         self.buttonSearch.setIcon(QIcon(':/find'))
+        self.buttonSearch.setToolTip(
+            QCoreApplication.translate(
+                'Search city button Tooltip',
+                'Search city',
+                'Search for the given place'
+            )
+        )
         self.buttonSearch.clicked.connect(self.search)
         self.buttonMyLocation = QPushButton()
         self.buttonMyLocation.setIcon(QIcon(':/mylocation'))
         self.buttonMyLocation.setToolTip(
             QCoreApplication.translate(
-                'Search city button tooltip',
+                'Search by geolocalisation button tooltip',
                 'Find my location',
                 'Automatic search of my place'
             )
@@ -44,7 +51,7 @@ class SearchCity(QDialog):
                 'Search city dialogue',
                 'Start typing the city or the geographic '
                 'coordinates "latitude, longitude"',
-                ''
+                'Default message in the search field'
             )
         )
         self.line_search.selectAll()
@@ -132,7 +139,12 @@ class SearchCity(QDialog):
                 self.workThread.terminate()
 
     def myLocation(self):
-        loc = 'N/A'
+        loc = QCoreApplication.translate(
+            'Search city',
+            'N/A',
+            'Inserted in search field when the automatic'
+            'geolocalisation is not available'
+        )
         try:
             page = urllib.request.urlopen('http://ipinfo.io/json')
             rep = page.read().decode('utf-8')
@@ -377,7 +389,7 @@ class WorkThread(QThread):
 
                 place = (
                     id_ + ' - ' + city + ' - ' + country + ' - ' +
-                    ' lat: N S {0}°' + '-' + ' lon: E W {1}°'
+                    ' {0}°' + '-' + ' {1}°'
                 ).format(lat, lon)
 
                 if place in self.lista:
