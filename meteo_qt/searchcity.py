@@ -121,10 +121,14 @@ class SearchCity(QDialog):
                 self.workThread.terminate()
 
     def myLocation(self):
-        page = urllib.request.urlopen('http://ipinfo.io/json')
-        rep = page.read().decode('utf-8')
-        locdic = json.loads(rep)
-        loc = locdic['loc']
+        loc = 'N/A'
+        try:
+            page = urllib.request.urlopen('http://ipinfo.io/json')
+            rep = page.read().decode('utf-8')
+            locdic = json.loads(rep)
+            loc = locdic['loc']
+        except (KeyError, urllib.error.HTTPError) as e:
+            logging.critical('Error fetching geolocalisation : ' + str(e))
         self.line_search.setText(loc)
 
     def search(self):
