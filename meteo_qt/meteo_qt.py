@@ -1089,6 +1089,8 @@ class SystemTrayIcon(QMainWindow):
         self.citiesMenu.addAction(self.tr('Empty list'))
 
     def refresh(self):
+        if hasattr(self, 'overviewcitydlg') and not self.cityChangeTimer.isActive():
+            self.icon_city_loading()
         self.inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Fetching weather data ...'))
