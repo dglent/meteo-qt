@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
 try:
     import searchcity
     import citytranslate
-except:
+except ImportError:
     from meteo_qt import searchcity
     from meteo_qt import citytranslate
 
@@ -30,8 +30,9 @@ class CityListDlg(QDialog):
         buttonLayout = QVBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok |
-                                          QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(
+            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+        )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
         layoutT = QVBoxLayout()
@@ -47,8 +48,13 @@ class CityListDlg(QDialog):
             button = QPushButton(text)
             buttonLayout.addWidget(button)
             button.clicked.connect(slot)
-        self.translate_button = QPushButton(QCoreApplication.translate('Button',
-                                          '&Translate', 'Edit cities dialogue'))
+        self.translate_button = QPushButton(
+            QCoreApplication.translate(
+                'Button',
+                '&Translate',
+                'Edit cities name'
+            )
+        )
         buttonLayout.addWidget(self.translate_button)
         self.translate_button.clicked.connect(self.translate)
         buttonLayout.addWidget(self.buttonBox)
@@ -56,8 +62,13 @@ class CityListDlg(QDialog):
         layoutT.addLayout(layout)
         layoutT.addWidget(self.status)
         self.setLayout(layoutT)
-        self.setWindowTitle(QCoreApplication.translate('Window title', 'Cities',
-                                                        'Cities list dialogue'))
+        self.setWindowTitle(
+            QCoreApplication.translate(
+                'Window title',
+                'Cities',
+                'Cities list dialogue'
+            )
+        )
         self.checklength()
 
     def add(self):
@@ -72,19 +83,31 @@ class CityListDlg(QDialog):
         dialog.city_signal.connect(self.addcity)
         dialog.country_signal.connect(self.addcity)
         if dialog.exec_() == 1:
-            newitem = (self.citytoadd + '_' + self.countrytoadd + '_' +
-                       self._idtoadd)
+            newitem = (
+                self.citytoadd + '_' + self.countrytoadd
+                + '_' + self._idtoadd
+            )
             for row in range(self.listWidget.count()):
                 lista.append(self.listWidget.item(row).text())
             if newitem in lista:
-                self.status.setText(QCoreApplication.translate(
-                    'Status bar message',
-                    'The city already exists in the list',
-                    'Cities list dialogue'))
+                self.status.setText(
+                    QCoreApplication.translate(
+                        'Status bar message',
+                        'The city already exists in the list',
+                        'Cities list dialogue'
+                    )
+                )
                 return
             else:
                 self.listWidget.addItem(newitem)
                 self.checklength()
+                self.status.setText(
+                    QCoreApplication.translate(
+                        'Status bar message',
+                        'ℹ ' + 'Toggle cities with mouse scroll on the weather window',
+                        'Cities list dialogue'
+                    )
+                )
 
     def addcity(self, what):
         self.status.setText('')
@@ -98,10 +121,14 @@ class CityListDlg(QDialog):
     def remove(self):
         self.status.setText('')
         if self.listWidget.count() == 1:
-            self.status.setText(QCoreApplication.translate(
-                    'Message when trying to remove the last and unique city in the list',
+            self.status.setText(
+                QCoreApplication.translate(
+                    'Message when trying to remove the'
+                    'last and unique city in the list',
                     'This is the default city !',
-                    'Cities list dialogue'))
+                    'Cities list dialogue'
+                )
+            )
             return
         row = self.listWidget.currentRow()
         item = self.listWidget.item(row)

@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import (QCheckBox, QColorDialog, QComboBox, QDialog,
 try:
     import citylistdlg
     import proxydlg
-except:
+except ImportError:
     from meteo_qt import citylistdlg
     from meteo_qt import proxydlg
 

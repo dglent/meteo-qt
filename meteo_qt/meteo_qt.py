@@ -34,7 +34,7 @@ try:
     import searchcity
     import conditions
     import about_dlg
-except:
+except ImportError:
     from meteo_qt import qrc_resources
     from meteo_qt import settings
     from meteo_qt import searchcity
