@@ -1771,14 +1771,15 @@ class Uv(QThread):
         try:
             lat = self.uv_coord[0]
             lon = self.uv_coord[1]
-            url = ('http://api.owm.io/air/1.0/uvi/current?lat=' +
-                   lat + '&lon=' + lon +
-                   '&appid=' + self.appid)
+            url = (
+                'http://api.openweathermap.org/data/2.5/uvi?lat='
+                + lat + '&lon=' + lon + '&appid=' + self.appid
+            )
             logging.debug('Fetching url for uv index: ' + str(url))
             req = urllib.request.urlopen(url, timeout=5)
-            page = req.read()
-            dico_value = eval(page)
-            uv_ind = dico_value['value']
+            page = req.read().decode('utf-8')
+            dicUV = json.loads(page)
+            uv_ind = dicUV['value']
             logging.debug('UV index: ' + str(uv_ind))
         except:
             uv_ind = '-'
