@@ -2,6 +2,7 @@ import logging
 import urllib.request
 from socket import timeout
 import json
+import re
 
 from lxml import etree
 from PyQt5.QtCore import (QByteArray, QCoreApplication, QSettings, QThread,
@@ -146,12 +147,31 @@ class SearchCity(QDialog):
             'geolocalisation is not available'
         )
         try:
-            page = urllib.request.urlopen('http://ipinfo.io/json')
+            page = urllib.request.urlopen('http://ipinfo.io/json', timeout=5)
             rep = page.read().decode('utf-8')
             locdic = json.loads(rep)
             loc = locdic['loc']
         except (KeyError, urllib.error.HTTPError) as e:
-            logging.critical('Error fetching geolocalisation : ' + str(e))
+            logging.critical(
+                'Error fetching geolocation from http://ipinfo.io/json: '
+                + str(e)
+            )
+            try:
+                data = str(urllib.request.urlopen('http://checkip.dyndns.com/').read())
+                myip = re.compile(r'Address: (\d+\.\d+\.\d+\.\d+)').search(data).group(1)
+                url = (
+                    'http://api.ipstack.com/{}?access_key=1f5f4144cd87a4eda32832dad469b586'
+                    .format(myip)
+                )
+                page = urllib.request.urlopen(url, timeout=5)
+                rep = page.read().decode('utf-8')
+                locdic = json.loads(rep)
+                loc = str(locdic['latitude']) + ',' + str(locdic['longitude'])
+            except (KeyError, urllib.error.HTTPError) as e:
+                logging.critical(
+                    'Error fetching geolocation from {}: '.format(url)
+                    + str(e)
+                )
         self.line_search.setText(loc)
 
     def search(self):
