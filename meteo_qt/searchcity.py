@@ -151,13 +151,13 @@ class SearchCity(QDialog):
             rep = page.read().decode('utf-8')
             locdic = json.loads(rep)
             loc = locdic['loc']
-        except (KeyError, urllib.error.HTTPError) as e:
+        except (KeyError, urllib.error.HTTPError, timeout) as e:
             logging.critical(
                 'Error fetching geolocation from http://ipinfo.io/json: '
                 + str(e)
             )
             try:
-                data = str(urllib.request.urlopen('http://checkip.dyndns.com/').read())
+                data = str(urllib.request.urlopen('http://checkip.dyndns.com/', timeout=5).read())
                 myip = re.compile(r'Address: (\d+\.\d+\.\d+\.\d+)').search(data).group(1)
                 url = (
                     'http://api.ipstack.com/{}?access_key=1f5f4144cd87a4eda32832dad469b586'
@@ -167,7 +167,7 @@ class SearchCity(QDialog):
                 rep = page.read().decode('utf-8')
                 locdic = json.loads(rep)
                 loc = str(locdic['latitude']) + ',' + str(locdic['longitude'])
-            except (KeyError, urllib.error.HTTPError) as e:
+            except (KeyError, urllib.error.HTTPError, timeout) as e:
                 logging.critical(
                     'Error fetching geolocation from {}: '.format(url)
                     + str(e)
