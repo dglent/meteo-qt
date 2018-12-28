@@ -314,7 +314,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="1677"/>
+        <location filename="../meteo_qt.py" line="1679"/>
         <source>Error :
 </source>
         <translation type="unfinished"></translation>
@@ -721,7 +721,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search by geolocalisation button tooltip</name>
     <message>
-        <location filename="../searchcity.py" line="41"/>
+        <location filename="../searchcity.py" line="42"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
         <translation type="unfinished"></translation>
@@ -730,7 +730,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city</name>
     <message>
-        <location filename="../searchcity.py" line="142"/>
+        <location filename="../searchcity.py" line="151"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
         <translation type="unfinished"></translation>
@@ -739,7 +739,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city button Tooltip</name>
     <message>
-        <location filename="../searchcity.py" line="31"/>
+        <location filename="../searchcity.py" line="32"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
         <translation type="unfinished"></translation>
@@ -748,7 +748,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city dialogue</name>
     <message>
-        <location filename="../searchcity.py" line="49"/>
+        <location filename="../searchcity.py" line="50"/>
         <source>Start typing the city or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
         <translation type="unfinished"></translation>
@@ -757,32 +757,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SearchCity</name>
     <message>
-        <location filename="../searchcity.py" line="23"/>
+        <location filename="../searchcity.py" line="24"/>
         <source>Searching...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="68"/>
+        <location filename="../searchcity.py" line="69"/>
         <source>&amp;Ok</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="70"/>
+        <location filename="../searchcity.py" line="71"/>
         <source>&amp;Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="224"/>
+        <location filename="../searchcity.py" line="256"/>
         <source>No results</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="226"/>
+        <location filename="../searchcity.py" line="258"/>
         <source>Found {0} city</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="228"/>
+        <location filename="../searchcity.py" line="260"/>
         <source>Found {0} cities</source>
         <translation type="unfinished"></translation>
     </message>
@@ -790,7 +790,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SearchCity window</name>
     <message>
-        <location filename="../searchcity.py" line="162"/>
+        <location filename="../searchcity.py" line="194"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
         <translation type="unfinished"></translation>
@@ -841,17 +841,26 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <comment>Cities list dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../citylistdlg.py" line="108"/>
-        <source>ℹ Toggle cities with mouse scroll on the weather window</source>
+        <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Status message</name>
+    <message>
+        <location filename="../searchcity.py" line="95"/>
+        <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
+        <comment>City search dialogue</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1481"/>
+        <location filename="../meteo_qt.py" line="1483"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -899,39 +908,39 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1111"/>
+        <location filename="../meteo_qt.py" line="1113"/>
         <source>Fetching weather data ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1122"/>
+        <location filename="../meteo_qt.py" line="1124"/>
         <source>No city configured</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1139"/>
+        <location filename="../meteo_qt.py" line="1141"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1139"/>
+        <location filename="../meteo_qt.py" line="1141"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1528"/>
+        <location filename="../meteo_qt.py" line="1530"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1536"/>
+        <location filename="../meteo_qt.py" line="1538"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1545"/>
+        <location filename="../meteo_qt.py" line="1547"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;A simple application showing the weather status
                         information on the system tray.
@@ -1066,7 +1075,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1204"/>
+        <location filename="../meteo_qt.py" line="1206"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation type="unfinished"></translation>
@@ -1694,7 +1703,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="87"/>
+        <location filename="../searchcity.py" line="88"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
         <translation type="unfinished"></translation>
@@ -1703,23 +1712,23 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="../searchcity.py" line="282"/>
+        <location filename="../searchcity.py" line="314"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="318"/>
+        <location filename="../searchcity.py" line="350"/>
         <source>Please wait, searching...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="327"/>
+        <location filename="../searchcity.py" line="359"/>
         <source>Error: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="327"/>
+        <location filename="../searchcity.py" line="359"/>
         <source>
 Try again later</source>
         <translation type="unfinished"></translation>
