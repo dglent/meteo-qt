@@ -92,6 +92,13 @@ class SearchCity(QDialog):
                 'City search dialogue'
             )
         )
+        self.status.setText(
+            'ℹ ' + QCoreApplication.translate(
+                'Status message',
+                'Click on "Find my Location" button for automatic geolocation',
+                'City search dialogue'
+            )
+        )
 
     def timer_run(self):
         self.timer_search.start(1000)
@@ -140,6 +147,7 @@ class SearchCity(QDialog):
                 self.workThread.terminate()
 
     def myLocation(self):
+        locFound = False
         loc = QCoreApplication.translate(
             'Search city',
             'N/A',
@@ -151,11 +159,15 @@ class SearchCity(QDialog):
             rep = page.read().decode('utf-8')
             locdic = json.loads(rep)
             loc = locdic['loc']
+            locFound = True
         except (KeyError, urllib.error.HTTPError, timeout) as e:
+            locFound = False
             logging.critical(
                 'Error fetching geolocation from http://ipinfo.io/json: '
                 + str(e)
             )
+        if locFound is False:
+
             try:
                 data = str(urllib.request.urlopen('http://checkip.dyndns.com/', timeout=5).read())
                 myip = re.compile(r'Address: (\d+\.\d+\.\d+\.\d+)').search(data).group(1)

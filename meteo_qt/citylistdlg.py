@@ -102,9 +102,9 @@ class CityListDlg(QDialog):
                 self.listWidget.addItem(newitem)
                 self.checklength()
                 self.status.setText(
-                    QCoreApplication.translate(
+                    'ℹ ' + QCoreApplication.translate(
                         'Status bar message',
-                        'ℹ ' + 'Toggle cities with mouse scroll on the weather window',
+                        'Toggle cities with mouse scroll on the weather window',
                         'Cities list dialogue'
                     )
                 )
@@ -186,7 +186,7 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentRow(row)
 
     def current_translation(self, translated_city):
-        for city,translated in translated_city.items():
+        for city, translated in translated_city.items():
             if translated == '':
                 translated = city
             self.trans_cities_dict[city] = translated
@@ -204,7 +204,7 @@ class CityListDlg(QDialog):
         QDialog.accept(self)
 
     def find_city_key(self, city):
-        for key,value in self.trans_cities_dict.items():
+        for key, value in self.trans_cities_dict.items():
             if value == city:
                 return key
         return city
