@@ -17,32 +17,47 @@ class Proxy(QDialog):
         self.buttonLayout = QHBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok |
-                                          QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(
+            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+        )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
         self.buttonLayout.addWidget(self.buttonBox)
 
-        self.proxy_url_label = QLabel(QCoreApplication.translate(
-                                'Entry label for the proxy url',
-                                'Proxy URL:', 'Proxy settings dialogue'))
+        self.proxy_url_label = QLabel(
+            QCoreApplication.translate(
+                'Entry label for the proxy url',
+                'Proxy URL:',
+                'Proxy settings dialogue'
+            )
+        )
         self.proxy_url_line = QLineEdit()
         url = self.settings.value('Proxy_url') or ''
         self.proxy_url_line = QLineEdit(url)
         self.proxy_url_line.setMinimumWidth(300)
 
-        self.proxy_port_label = QLabel(QCoreApplication.translate(
-                            'Entry label for the proxy port', 'Port:',
-                            'Proxy settings dialogue'))
+        self.proxy_port_label = QLabel(
+            QCoreApplication.translate(
+                'Entry label for the proxy port',
+                'Port:',
+                'Proxy settings dialogue'
+            )
+        )
         port = self.settings.value('Proxy_port') or ''
         self.proxy_port_line = QLineEdit(port)
 
-        self.proxy_auth_label = QLabel(QCoreApplication.translate(
-                                    'Checkbox', 'Use proxy authentification',
-                                    'Proxy settings dialogue'))
+        self.proxy_auth_label = QLabel(
+            QCoreApplication.translate(
+                'Checkbox',
+                'Use proxy authentification',
+                'Proxy settings dialogue'
+            )
+        )
         self.proxy_auth_checkbox = QCheckBox()
-        self.proxy_auth_bool = eval(self.settings.value(
-                                    'Use_proxy_authentification') or 'False')
+        self.proxy_auth_bool = eval(
+            self.settings.value('Use_proxy_authentification')
+            or 'False'
+        )
         self.proxy_auth_checkbox.setChecked(self.proxy_auth_bool)
         self.proxy_auth_checkbox.stateChanged.connect(self.proxy_auth)
 

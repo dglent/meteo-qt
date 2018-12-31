@@ -14,7 +14,9 @@ class CityListDlg(QDialog):
     citieslist_signal = pyqtSignal([list])
     citiesdict_signal = pyqtSignal([dict])
 
-    def __init__(self, citylist, accurate_url, appid, trans_cities_dict, parent=None):
+    def __init__(
+        self, citylist, accurate_url, appid, trans_cities_dict, parent=None
+    ):
         super(CityListDlg, self).__init__(parent)
         self.settings = QSettings()
         self.citylist = citylist
@@ -170,13 +172,17 @@ class CityListDlg(QDialog):
             self.listWidget.setCurrentRow(0)
         if self.listWidget.count() > 0:
             self.translate_button.setEnabled(True)
-            self.listWidget.setMinimumWidth(self.listWidget.sizeHintForColumn(0))
+            self.listWidget.setMinimumWidth(
+                self.listWidget.sizeHintForColumn(0)
+            )
         else:
             self.translate_button.setEnabled(False)
 
     def translate(self):
         city = self.listWidget.currentItem().text()
-        dialog = citytranslate.CityTranslate(city, self.trans_cities_dict, self)
+        dialog = citytranslate.CityTranslate(
+            city, self.trans_cities_dict, self
+        )
         dialog.city_signal.connect(self.current_translation)
         if dialog.exec_() == 1:
             row = self.listWidget.currentRow()

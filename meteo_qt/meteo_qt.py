@@ -72,8 +72,12 @@ class SystemTrayIcon(QMainWindow):
         self.tentatives = 0
         self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
         self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
-        self.day_forecast_url = ('http://api.openweathermap.org/data/2.5/forecast?id=')
-        self.forecast6_url = ('http://api.openweathermap.org/data/2.5/forecast/daily?id=')
+        self.day_forecast_url = (
+            'http://api.openweathermap.org/data/2.5/forecast?id='
+        )
+        self.forecast6_url = (
+            'http://api.openweathermap.org/data/2.5/forecast/daily?id='
+        )
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         apikey = self.settings.value('APPID') or ''
         self.appid = '&APPID=' + apikey
@@ -174,29 +178,38 @@ class SystemTrayIcon(QMainWindow):
         # Check for city translation
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
-        city_notrans = (self.weatherDataDico['City'] + '_' +
-                        self.weatherDataDico['Country'] + '_' +
-                        self.weatherDataDico['Id'])
+        city_notrans = (
+            self.weatherDataDico['City'] + '_'
+            + self.weatherDataDico['Country'] + '_'
+            + self.weatherDataDico['Id']
+        )
         if city_notrans in cities_trans_dict:
             city_label = cities_trans_dict[city_notrans]
         else:
-            city_label = (self.weatherDataDico['City'] + ',  ' +
-                          self.weatherDataDico['Country'])
-        self.city_label = QLabel('<font size="4"><b>' +
-                                 city_label + '<\b><\font>')
+            city_label = (
+                self.weatherDataDico['City'] + ',  '
+                + self.weatherDataDico['Country']
+            )
+        self.city_label = QLabel(
+            '<font size="4"><b>' + city_label + '<\b><\font>'
+        )
         self.over_layout.addWidget(self.city_label)
         self.icontemp_layout = QHBoxLayout()
         self.icon_label = QLabel()
         self.icon_label.setPixmap(self.wIcon)
         self.icontemp_layout.addWidget(self.icon_label)
         self.temp_label = QLabel(
-            '<font size="5"><b>' + '{0:.1f}'.format(
-                float(self.weatherDataDico['Temp'][:-1])) + ' ' +
-            self.unit_temp + temp_trend + '<\b><\font>')
+            '<font size="5"><b>' + '{0:.1f}'
+            .format(float(self.weatherDataDico['Temp'][:-1])) + ' '
+            + self.unit_temp + temp_trend + '<\b><\font>'
+        )
         self.icontemp_layout.addWidget(self.temp_label)
         self.over_layout.addLayout(self.icontemp_layout)
-        self.weather = QLabel('<font size="4"><b>' +
-                              self.weatherDataDico['Meteo'] + '<\b><\font>')
+        self.weather = QLabel(
+            '<font size="4"><b>'
+            + self.weatherDataDico['Meteo']
+            + '<\b><\font>'
+        )
         self.icontemp_layout.addWidget(self.weather)
         self.icontemp_layout.addStretch()
         self.over_layout.addLayout(self.dayforecast_layout)
@@ -204,8 +217,9 @@ class SystemTrayIcon(QMainWindow):
         # ------Second part overview day---------
         self.over_grid = QGridLayout()
         # Wind
-        self.wind_label = QLabel('<font size="3" color=><b>' +
-                                 self.tr('Wind') + '<\font><\b>')
+        self.wind_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Wind') + '<\font><\b>'
+        )
         self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
         beaufort = self.settings.value('Beaufort') or 'False'
@@ -223,53 +237,65 @@ class SystemTrayIcon(QMainWindow):
             self.unit_system_wind = ' Bft. '
         try:
             self.windLabelDescr = QLabel(
-                '<font color=>' + self.weatherDataDico['Wind'][4] +
-                ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>' +
-                wind_speed + self.unit_system_wind +
-                self.weatherDataDico['Wind'][1] + '<\font>'
+                '<font color=>' + self.weatherDataDico['Wind'][4]
+                + ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>'
+                + wind_speed + self.unit_system_wind
+                + self.weatherDataDico['Wind'][1] + '<\font>'
             )
-            self.windLabelDescr.setToolTip(self.beaufort_sea_land[windTobeaufort])
+            self.windLabelDescr.setToolTip(
+                self.beaufort_sea_land[windTobeaufort]
+            )
         except:
-            logging.error('Cannot find wind informations:\n' +
-                          str(self.weatherDataDico['Wind']))
+            logging.error(
+                'Cannot find wind informations:\n'
+                + str(self.weatherDataDico['Wind'])
+            )
         self.wind_icon_label = QLabel()
         self.wind_icon_label.setAlignment(Qt.AlignLeft)
         self.wind_icon = QPixmap(':/arrow')
         self.wind_icon_direction()
         # Clouds
-        self.clouds_label = QLabel('<font size="3" color=><b>' +
-                                   self.tr('Cloudiness') + '<\b><\font>')
-        self.clouds_name = QLabel('<font color=>' +
-                                  self.weatherDataDico['Clouds'] + '<\font>')
+        self.clouds_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Cloudiness') + '<\b><\font>'
+        )
+        self.clouds_name = QLabel(
+            '<font color=>' + self.weatherDataDico['Clouds'] + '<\font>'
+        )
         # Pressure
-        self.pressure_label = QLabel('<font size="3" color=><b>' +
-                                     self.tr('Pressure') + '<\b><\font>')
+        self.pressure_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Pressure') + '<\b><\font>'
+        )
         if self.hPaTrend == 0:
             hpa = ""
         elif self.hPaTrend < 0:
             hpa = ""
         elif self.hPaTrend > 0:
             hpa = ""
-        self.pressure_value = QLabel('<font color=>' +
-                                     str(float(self.weatherDataDico['Pressure'][0])) +
-                                     ' ' + self.weatherDataDico['Pressure'][1] +
-                                     " " + hpa + '<\font>')
+        self.pressure_value = QLabel(
+            '<font color=>' + str(float(self.weatherDataDico['Pressure'][0]))
+            + ' ' + self.weatherDataDico['Pressure'][1] + " " + hpa + '<\font>'
+        )
         self.pressure_value.setToolTip(self.hpa_indications['hpa'])
         # Humidity
-        self.humidity_label = QLabel('<font size="3" color=><b>' +
-                                     self.tr('Humidity') + '<\b><\font>')
-        self.humidity_value = QLabel('<font color=>' +
-                                     self.weatherDataDico['Humidity'][0] + ' ' +
-                                     self.weatherDataDico['Humidity'][1] +
-                                     '<\font>')
+        self.humidity_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Humidity') + '<\b><\font>'
+        )
+        self.humidity_value = QLabel(
+            '<font color=>' + self.weatherDataDico['Humidity'][0] + ' '
+            + self.weatherDataDico['Humidity'][1] + '<\font>'
+        )
         # Precipitation
         self.precipitation_label = QLabel(
-            '<font size="3" color=><b>' +
-            QCoreApplication.translate(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
                 'Precipitation type (no/rain/snow)',
                 'Precipitation', 'Weather overview dialogue'
-            ) + '<\b><\font>')
-        rain_mode = self.precipitation[self.weatherDataDico['Precipitation'][0]]
+            )
+            + '<\b><\font>'
+        )
+        rain_mode = (
+            self.precipitation[self.weatherDataDico['Precipitation'][0]]
+        )
         rain_value = self.weatherDataDico['Precipitation'][1]
         rain_unit = ' mm '
         if rain_value == '':
@@ -281,43 +307,66 @@ class SystemTrayIcon(QMainWindow):
                 rain_value = "{0:.4f}".format(float(rain_value))
             else:
                 rain_value = "{0:.2f}".format(float(rain_value))
-        self.precipitation_value = QLabel('<font color=>' +
-                                          rain_mode + ' ' + rain_value + ' ' + rain_unit +
-                                          '</font>')
+        self.precipitation_value = QLabel(
+            '<font color=>' + rain_mode + ' ' + rain_value
+            + ' ' + rain_unit + '</font>'
+        )
         # Sunrise Sunset Daylight
-        self.sunrise_label = QLabel('<font color=><b>' +
-                                    self.tr('Sunrise') + '</b></font>')
-        self.sunset_label = QLabel('<font color=><b>' +
-                                   self.tr('Sunset') + '</b></font>')
+        self.sunrise_label = QLabel(
+            '<font color=><b>' + self.tr('Sunrise') + '</b></font>'
+        )
+        self.sunset_label = QLabel(
+            '<font color=><b>' + self.tr('Sunset') + '</b></font>'
+        )
         rise_str = self.utc('Sunrise', 'weatherdata')
         set_str = self.utc('Sunset', 'weatherdata')
-        self.sunrise_value = QLabel('<font color=>' + rise_str[:-3] + '</font>')
+        self.sunrise_value = QLabel(
+            '<font color=>' + rise_str[:-3] + '</font>'
+        )
         self.sunset_value = QLabel('<font color=>' + set_str[:-3] + '</font>')
         self.daylight_label = QLabel(
-            '<font color=><b>' +
-            QCoreApplication.translate(
-                'Daylight duration', 'Daylight', 'Weather overview dialogue'
-            ) + '</b></font>'
+            '<font color=><b>'
+            + QCoreApplication.translate(
+                'Daylight duration', 'Daylight',
+                'Weather overview dialogue'
+            )
+            + '</b></font>'
         )
         daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
-        self.daylight_value_label = QLabel('<font color=>' + daylight_value + '</font>')
+        self.daylight_value_label = QLabel(
+            '<font color=>' + daylight_value + '</font>'
+        )
         # --UV---
         self.uv_label = QLabel(
-            '<font size="3" color=><b>' + QCoreApplication.translate(
-                'Ultraviolet index', 'UV', 'Label in weather info dialogue' +
-                '<\b><\font>'))
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Ultraviolet index', 'UV',
+                'Label in weather info dialogue'
+            )
+            + '<\b><\font>'
+        )
         self.uv_label.setAlignment(Qt.AlignTop)
         fetching_text = (
-            '<font color=>' + QCoreApplication.translate(
-                'Ultraviolet index', 'Fetching...', '' + '<\font>')
+            '<font color=>'
+            + QCoreApplication.translate(
+                'Ultraviolet index',
+                'Fetching...',
+                ''
+            )
+            + '<\font>'
         )
         self.uv_value_label = QLabel()
         self.uv_value_label.setText(fetching_text)
         # Ozone
         self.ozone_label = QLabel(
-            '<font size="3" color=><b>' + QCoreApplication.translate(
-                'Ozone data title', 'Ozone', 'Label in weather info dialogue' +
-                '<\b><\font>'))
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Ozone data title',
+                'Ozone',
+                'Label in weather info dialogue'
+            )
+            + '<\b><\font>'
+        )
         self.ozone_value_label = QLabel()
         self.ozone_value_label.setText(fetching_text)
         self.over_grid.addWidget(self.wind_label, 0, 0)
@@ -370,8 +419,10 @@ class SystemTrayIcon(QMainWindow):
 
     def daylight_delta(self, s1, s2):
         FMT = '%H:%M'
-        tdelta = (datetime.datetime.strptime(s2, FMT) -
-                  datetime.datetime.strptime(s1, FMT))
+        tdelta = (
+            datetime.datetime.strptime(s2, FMT)
+            - datetime.datetime.strptime(s1, FMT)
+        )
         m, s = divmod(tdelta.seconds, 60)
         h, m = divmod(m, 60)
         if len(str(m)) == 1:
@@ -386,12 +437,20 @@ class SystemTrayIcon(QMainWindow):
         listtotime = ''
         # Create a list ['h', 'm', 's'] and pass it to QTime
         if what == 'weatherdata':
-            listtotime = self.weatherDataDico[rise_set].split('T')[1].split(':')
+            listtotime = (
+                self.weatherDataDico[rise_set].split('T')[1].split(':')
+            )
         elif what == 'dayforecast':
             if not self.json_data_bool:
-                listtotime = self.dayforecast_data[4][rise_set].get('from').split('T')[1].split(':')
+                listtotime = (
+                    self.dayforecast_data[4][rise_set].get('from')
+                    .split('T')[1].split(':')
+                )
             else:
-                listtotime = self.dayforecast_data['list'][rise_set]['dt_txt'][10:].split(':')
+                listtotime = (
+                    self.dayforecast_data['list'][rise_set]['dt_txt'][10:]
+                    .split(':')
+                )
         suntime = QTime(int(listtotime[0]), int(listtotime[1]), int(
             listtotime[2]))
         # add the diff UTC-local in seconds
@@ -461,7 +520,9 @@ class SystemTrayIcon(QMainWindow):
         angle = self.weatherDataDico['Wind'][2]
         logging.debug('Wind degrees direction: ' + angle)
         transf.rotate(int(float(angle)))
-        rotated = self.wind_icon.transformed(transf, mode=Qt.SmoothTransformation)
+        rotated = self.wind_icon.transformed(
+            transf, mode=Qt.SmoothTransformation
+        )
         self.wind_icon_label.setPixmap(rotated)
 
     def ozone_du(self, du):
@@ -580,55 +641,84 @@ class SystemTrayIcon(QMainWindow):
             label.setAlignment(Qt.AlignHCenter)
             self.forecast_days_layout.addWidget(label)
             mlabel = QLabel(
-                '<font color=>' + '{0:.0f}'.format(float(
-                    self.forecast6_data[4][d][4].get('min'))) + '°<br/>' +
-                '{0:.0f}'.format(
-                    float(self.forecast6_data[4][d][4].get('max'))) +
-                '°</font>'
+                '<font color=>' + '{0:.0f}'
+                .format(float(self.forecast6_data[4][d][4].get('min')))
+                + '°<br/>' + '{0:.0f}'
+                .format(float(self.forecast6_data[4][d][4].get('max')))
+                + '°</font>'
             )
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecast_minmax_layout.addWidget(mlabel)
-            self.icon_list.append(self.forecast6_data[4][d][0].get('var'))  # icon
+            # icon
+            self.icon_list.append(self.forecast6_data[4][d][0].get('var'))
             weather_cond = self.forecast6_data[4][d][0].get('name')
             try:
-                weather_cond = self.conditions[self.forecast6_data[4][d][0].get(
-                    'number')]
+                weather_cond = (
+                    self.conditions[self.forecast6_data[4][d][0].get('number')]
+                )
             except:
-                logging.warn('Cannot find localisation string for :' +
-                             weather_cond)
+                logging.warn(
+                    'Cannot find localisation string for :'
+                    + weather_cond
+                )
                 pass
             try:
                 # Take the label translated text and remove the html tags
                 doc.setHtml(self.precipitation_label.text())
                 precipitation_label = doc.toPlainText() + ': '
                 precipitation_type = self.forecast6_data[4][d][1].get('type')
-                precipitation_type = self.precipitation[precipitation_type] + ' '
+                precipitation_type = (
+                    self.precipitation[precipitation_type] + ' '
+                )
                 precipitation_value = self.forecast6_data[4][d][1].get('value')
                 rain_unit = ' mm'
                 if self.unit_system == ' mph ':
                     rain_unit = ' inch'
-                    precipitation_value = str(float(precipitation_value) / 25.4) + ' '
-                    precipitation_value = "{0:.2f}".format(float(precipitation_value))
+                    precipitation_value = (
+                        str(float(precipitation_value) / 25.4) + ' '
+                    )
+                    precipitation_value = (
+                        "{0:.2f}".format(float(precipitation_value))
+                    )
                 else:
-                    precipitation_value = "{0:.1f}".format(float(precipitation_value))
-                weather_cond += ('\n' + precipitation_label + precipitation_type +
-                                 precipitation_value + rain_unit)
+                    precipitation_value = (
+                        "{0:.1f}".format(float(precipitation_value))
+                    )
+                weather_cond += (
+                    '\n' + precipitation_label + precipitation_type
+                    + precipitation_value + rain_unit
+                )
             except:
                 pass
             doc.setHtml(self.wind_label.text())
             wind = doc.toPlainText() + ': '
             try:
-                wind_direction = self.wind_direction[self.forecast6_data[4][d][2].get('code')]
+                wind_direction = (
+                    self.wind_direction[
+                        self.forecast6_data[4][d][2].get('code')
+                    ]
+                )
             except:
                 wind_direction = ''
-            wind_speed = '{0:.1f}'.format(float(self.forecast6_data[4][d][3].get('mps')))
+            wind_speed = (
+                '{0:.1f}'.format(
+                    float(self.forecast6_data[4][d][3].get('mps'))
+                )
+            )
             if self.bft_bool:
                 wind_speed = str(self.convertToBeaufort(wind_speed))
-            weather_cond += '\n' + wind + wind_speed + self.unit_system_wind + wind_direction
+            weather_cond += (
+                '\n' + wind + wind_speed + self.unit_system_wind
+                + wind_direction
+            )
             doc.setHtml(self.pressure_label.text())
             pressure_label = doc.toPlainText() + ': '
-            pressure = '{0:.1f}'.format(float(self.forecast6_data[4][d][5].get('value')))
+            pressure = (
+                '{0:.1f}'.format(
+                    float(self.forecast6_data[4][d][5].get('value'))
+                )
+            )
             weather_cond += '\n' + pressure_label + pressure + ' hPa'
             humidity = self.forecast6_data[4][d][6].get('value')
             doc.setHtml(self.humidity_label.text())
@@ -652,8 +742,10 @@ class SystemTrayIcon(QMainWindow):
             date_list_time = date_list[2].split('T')
             date_list[2] = date_list_time[0]
             date_list.append(date_list_time[1])
-            if (datetime.datetime.now().day == int(date_list[2]) or
-                    date_list[3] != '12:00:00'):
+            if (
+                datetime.datetime.now().day == int(date_list[2])
+                or date_list[3] != '12:00:00'
+            ):
                 continue
             day_of_week = str(datetime.date(
                 int(date_list[0]), int(date_list[1]),
@@ -665,51 +757,85 @@ class SystemTrayIcon(QMainWindow):
             temp_min = min(self.date_temp_forecast[date_list[2]])
             temp_max = max(self.date_temp_forecast[date_list[2]])
             mlabel = QLabel(
-                '<font color=>' + '{0:.0f}'.format(temp_min) + '°<br/>' +
-                '{0:.0f}'.format(temp_max) + '°</font>')
+                '<font color=>' + '{0:.0f}'.format(temp_min) + '°<br/>'
+                + '{0:.0f}'.format(temp_max) + '°</font>'
+            )
             mlabel.setAlignment(Qt.AlignHCenter)
             mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
             self.forecast_minmax_layout.addWidget(mlabel)
-            self.icon_list.append(self.dayforecast_data[4][d][0].get('var'))  # icon
+            # icon
+            self.icon_list.append(self.dayforecast_data[4][d][0].get('var'))
             weather_cond = self.dayforecast_data[4][d][0].get('name')
             try:
-                weather_cond = self.conditions[self.dayforecast_data[4][d][0].get(
-                    'number')]
+                weather_cond = (
+                    self.conditions[
+                        self.dayforecast_data[4][d][0].get('number')
+                    ]
+                )
             except:
-                logging.warn('Cannot find localisation string for :' +
-                             weather_cond)
+                logging.warn(
+                    'Cannot find localisation string for :'
+                    + weather_cond
+                )
                 pass
             try:
                 # Take the label translated text and remove the html tags
                 doc.setHtml(self.precipitation_label.text())
                 precipitation_label = doc.toPlainText() + ': '
                 precipitation_type = self.dayforecast_data[4][d][1].get('type')
-                precipitation_type = self.precipitation[precipitation_type] + ' '
-                precipitation_value = self.dayforecast_data[4][d][1].get('value')
+                precipitation_type = (
+                    self.precipitation[precipitation_type] + ' '
+                )
+                precipitation_value = (
+                    self.dayforecast_data[4][d][1].get('value')
+                )
                 rain_unit = ' mm'
                 if self.unit_system == ' mph ':
                     rain_unit = ' inch'
-                    precipitation_value = str(float(precipitation_value) / 25.4) + ' '
-                    precipitation_value = "{0:.2f}".format(float(precipitation_value))
+                    precipitation_value = (
+                        str(float(precipitation_value) / 25.4) + ' '
+                    )
+                    precipitation_value = (
+                        "{0:.2f}".format(float(precipitation_value))
+                    )
                 else:
-                    precipitation_value = "{0:.1f}".format(float(precipitation_value))
-                weather_cond += ('\n' + precipitation_label + precipitation_type +
-                                 precipitation_value + rain_unit)
+                    precipitation_value = (
+                        "{0:.1f}".format(float(precipitation_value))
+                    )
+                weather_cond += (
+                    '\n' + precipitation_label + precipitation_type
+                    + precipitation_value + rain_unit
+                )
             except:
                 pass
             doc.setHtml(self.wind_label.text())
             wind = doc.toPlainText() + ': '
             try:
-                wind_direction = self.wind_direction[self.dayforecast_data[4][d][2].get('code')]
+                wind_direction = (
+                    self.wind_direction[
+                        self.dayforecast_data[4][d][2].get('code')
+                    ]
+                )
             except:
                 wind_direction = ''
-            wind_speed = '{0:.1f}'.format(float(self.dayforecast_data[4][d][3].get('mps')))
+            wind_speed = (
+                '{0:.1f}'.format(
+                    float(self.dayforecast_data[4][d][3].get('mps'))
+                )
+            )
             if self.bft_bool:
                 wind_speed = str(self.convertToBeaufort(wind_speed))
-            weather_cond += '\n' + wind + wind_speed + self.unit_system_wind + wind_direction
+            weather_cond += (
+                '\n' + wind + wind_speed + self.unit_system_wind
+                + wind_direction
+            )
             doc.setHtml(self.pressure_label.text())
             pressure_label = doc.toPlainText() + ': '
-            pressure = '{0:.1f}'.format(float(self.dayforecast_data[4][d][5].get('value')))
+            pressure = (
+                '{0:.1f}'.format(
+                    float(self.dayforecast_data[4][d][5].get('value'))
+                )
+            )
             weather_cond += '\n' + pressure_label + pressure + ' hPa'
             humidity = self.dayforecast_data[4][d][6].get('value')
             doc.setHtml(self.humidity_label.text())
@@ -723,7 +849,9 @@ class SystemTrayIcon(QMainWindow):
 
     def iconfetch(self):
         logging.debug('Download forecast icons...')
-        self.download_thread = IconDownload(self.forecast_icon_url, self.icon_list)
+        self.download_thread = (
+            IconDownload(self.forecast_icon_url, self.icon_list)
+        )
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
         self.download_thread.start()
@@ -754,23 +882,37 @@ class SystemTrayIcon(QMainWindow):
             if fetched_file_periods < periods:
                 # Some times server sends less data
                 periods = fetched_file_periods
-                logging.warn('Reduce forecast of the day to {0}'.format(periods - 1))
+                logging.warn(
+                    'Reduce forecast of the day to {0}'.format(periods - 1)
+                )
         for d in range(start, periods):
             clouds_translated = ''
             wind = ''
             timeofday = self.utc(d, 'dayforecast')
             if not self.json_data_bool:
-                weather_cond = self.conditions[self.dayforecast_data[4][d][0].get('number')]
-                self.dayforecast_icon_list.append(self.dayforecast_data[4][d][0].get('var'))
-                temperature_at_hour = float(self.dayforecast_data[4][d][4].get('value'))
-                precipitation = str(self.dayforecast_data[4][d][1].get('value'))
-                precipitation_type = str(self.dayforecast_data[4][d][1].get('type'))
+                weather_cond = self.conditions[
+                    self.dayforecast_data[4][d][0].get('number')
+                ]
+                self.dayforecast_icon_list.append(
+                    self.dayforecast_data[4][d][0].get('var')
+                )
+                temperature_at_hour = float(
+                    self.dayforecast_data[4][d][4].get('value')
+                )
+                precipitation = str(
+                    self.dayforecast_data[4][d][1].get('value')
+                )
+                precipitation_type = str(
+                    self.dayforecast_data[4][d][1].get('type')
+                )
                 windspeed = self.dayforecast_data[4][d][3].get('mps')
                 winddircode = self.dayforecast_data[4][d][2].get('code')
                 wind_name = self.dayforecast_data[4][d][3].get('name')
                 try:
-                    wind_name_translated = (self.conditions[self.wind_name_dic[wind_name.lower()]] +
-                                            '<br/>')
+                    wind_name_translated = (
+                        self.conditions[self.wind_name_dic[wind_name.lower()]]
+                        + '<br/>'
+                    )
                     wind += wind_name_translated
                 except KeyError:
                     logging.warn('Cannot find wind name :' + str(wind_name))
@@ -782,30 +924,52 @@ class SystemTrayIcon(QMainWindow):
                 clouds = self.dayforecast_data[4][d][7].get('value')
                 cloudspercent = self.dayforecast_data[4][d][7].get('all')
             else:
-                weather_cond = self.conditions[str(self.dayforecast_data['list'][d]['weather'][0]['id'])]
-                self.dayforecast_icon_list.append(self.dayforecast_data['list'][d]['weather'][0]['icon'])
-                temperature_at_hour = float(self.dayforecast_data['list'][d]['main']['temp'])
+                weather_cond = self.conditions[
+                    str(self.dayforecast_data['list'][d]['weather'][0]['id'])
+                ]
+                self.dayforecast_icon_list.append(
+                    self.dayforecast_data['list'][d]['weather'][0]['icon']
+                )
+                temperature_at_hour = float(
+                    self.dayforecast_data['list'][d]['main']['temp']
+                )
                 precipitation_orig = self.dayforecast_data['list'][d]
                 precipitation_rain = precipitation_orig.get('rain')
                 precipitation_snow = precipitation_orig.get('snow')
-                if precipitation_rain is not None and len(precipitation_rain) > 0:
+                if (
+                    precipitation_rain is not None
+                    and len(precipitation_rain) > 0
+                ):
                     precipitation_type = 'rain'
                     precipitation = precipitation_rain['3h']
-                elif precipitation_snow is not None and len(precipitation_snow) > 0:
+                elif (
+                    precipitation_snow is not None
+                    and len(precipitation_snow) > 0
+                ):
                     precipitation_type = 'snow'
                     precipitation_snow['3h']
                 else:
                     precipitation = 'None'
                 windspeed = self.dayforecast_data['list'][d]['wind']['speed']
-                winddircode = self.winddir_json_code(self.dayforecast_data['list'][d]['wind'].get('deg'))
-                clouds = self.dayforecast_data['list'][d]['weather'][0]['description']
-                cloudspercent = self.dayforecast_data['list'][0]['clouds']['all']
+                winddircode = (
+                    self.winddir_json_code(
+                        self.dayforecast_data['list'][d]['wind'].get('deg')
+                    )
+                )
+                clouds = (
+                    self.dayforecast_data['list']
+                    [d]['weather'][0]['description']
+                )
+                cloudspercent = (
+                    self.dayforecast_data['list'][0]['clouds']['all']
+                )
 
             self.dayforecast_weather_list.append(weather_cond)
             daytime = QLabel(
-                '<font color=>' + timeofday[:-3] + '<br/>' +
-                '{0:.0f}'.format(temperature_at_hour) +
-                '°' + '</font>')
+                '<font color=>' + timeofday[:-3] + '<br/>'
+                + '{0:.0f}'.format(temperature_at_hour)
+                + '°' + '</font>'
+            )
             daytime.setAlignment(Qt.AlignHCenter)
             unit = self.settings.value('Unit') or 'metric'
             if unit == 'metric':
@@ -819,7 +983,10 @@ class SystemTrayIcon(QMainWindow):
                     precipitation = "{0:.2f}".format(float(precipitation))
             elif unit == ' ':
                 mu = 'kelvin'
-            ttip = str(precipitation) + ' ' + mu + ' ' + precipitation_type + '<br/>'
+            ttip = (
+                str(precipitation) + ' ' + mu + ' ' + precipitation_type
+                + '<br/>'
+            )
             if ttip.count('None') >= 1:
                 ttip = ''
             else:
@@ -831,14 +998,20 @@ class SystemTrayIcon(QMainWindow):
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
-                logging.warn('Wind direction code is missing: ' +
-                             str(winddircode))
+                logging.warn(
+                    'Wind direction code is missing: '
+                    + str(winddircode)
+                )
             if clouds != '':
                 try:
                     # In JSON there is no clouds description
-                    clouds_translated = self.conditions[self.clouds_name_dic[clouds.lower()]]
+                    clouds_translated = (
+                        self.conditions[self.clouds_name_dic[clouds.lower()]]
+                    )
                 except KeyError:
-                    logging.warn('The clouding description in json is not relevant')
+                    logging.warn(
+                        'The clouding description in json is not relevant'
+                    )
                     clouds_translated = ''
             else:
                 logging.warn('Clouding name is missing: ' + str(clouds))
@@ -864,19 +1037,32 @@ class SystemTrayIcon(QMainWindow):
         except:
             du = '-'
             o3_color = None
-        du_unit = QCoreApplication.translate('Dobson Units', 'DU', 'Ozone value label')
+        du_unit = QCoreApplication.translate(
+            'Dobson Units',
+            'DU',
+            'Ozone value label'
+        )
         if o3_color is not None:
             self.ozone_value_label.setText(
-                '<font color=>' + str(du) + ' ' + du_unit +
-                '</font>' + '<font color=' + o3_color + '> ' + gauge + '</font>'
+                '<font color=>' + str(du) + ' ' + du_unit
+                + '</font>' + '<font color=' + o3_color
+                + '> ' + gauge + '</font>'
             )
-            self.ozone_value_label.setToolTip(QCoreApplication.translate(
-                'Ozone value tooltip', '''The average amount of ozone in the <br/> atmosphere is
-                roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
-                is an area where the ozone concentration drops to an average of about
-                100 Dobson Units.''', 'http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html'))
+            self.ozone_value_label.setToolTip(
+                QCoreApplication.translate(
+                    'Ozone value tooltip',
+                    '''The average amount of ozone in the <br/> atmosphere is
+                    roughly 300 Dobson Units. What scientists call the
+                    Antarctic Ozone “Hole” is an area where the ozone
+                    concentration drops to an average of about 100 Dobson
+                    Units.''',
+                    'http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html'
+                )
+            )
         else:
-            self.ozone_value_label.setText('<font color=>' + str(du) + '</font>')
+            self.ozone_value_label.setText(
+                '<font color=>' + str(du) + '</font>'
+            )
         if du != '-':
             self.over_grid.addWidget(self.ozone_label, 9, 0)
             self.over_grid.addWidget(self.ozone_value_label, 9, 1)
@@ -895,10 +1081,10 @@ class SystemTrayIcon(QMainWindow):
             if uv_gauge == '':
                 uv_gauge = '◼'
             self.uv_value_label.setText(
-                '<font color=>' + '{0:.1f}'.format(float(index)) +
-                '  ' + self.uv_risk[uv_color[1]] + '</font>' +
-                '<br/>' + '<font color=' + uv_color[0] + '><b>' +
-                uv_gauge + '</b></font>'
+                '<font color=>' + '{0:.1f}'.format(float(index))
+                + '  ' + self.uv_risk[uv_color[1]] + '</font>'
+                + '<br/>' + '<font color=' + uv_color[0] + '><b>'
+                + uv_gauge + '</b></font>'
             )
         else:
             self.uv_value_label.setText('<font color=>' + uv_gauge + '</font>')
@@ -969,8 +1155,13 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def wheelEvent(self, event):
-        if self.day_download_thread.isRunning() or self.download_thread.isRunning():
-            logging.debug('WheelEvent : Downloading icons - remaining thread...')
+        if (
+            self.day_download_thread.isRunning()
+            or self.download_thread.isRunning()
+        ):
+            logging.debug(
+                'WheelEvent : Downloading icons - remaining thread...'
+            )
             return
         self.icon_city_loading()
         current_city = self.city
@@ -1016,12 +1207,15 @@ class SystemTrayIcon(QMainWindow):
             cities = eval(cities)
         try:
             current_city = (
-                self.settings.value('City') + '_' +
-                self.settings.value('Country') + '_' +
-                self.settings.value('ID')
+                self.settings.value('City') + '_'
+                + self.settings.value('Country') + '_'
+                + self.settings.value('ID')
             )
         except:
-            logging.debug('Cities menu : firsttime run,if clic cancel in settings without any city configured')
+            logging.debug(
+                'Cities menu : firsttime run,'
+                'if clic cancel in settings without any city configured'
+            )
             pass
         # Prevent duplicate entries
         try:
@@ -1031,8 +1225,12 @@ class SystemTrayIcon(QMainWindow):
         finally:
             cities.insert(0, city_toadd)
         # If we delete all cities it results to a '__'
-        if (cities is not None and cities != '' and cities != '[]' and
-                cities != ['__']):
+        if (
+            cities is not None
+            and cities != ''
+            and cities != '[]'
+            and cities != ['__']
+        ):
             if type(cities) is not list:
                 # FIXME sometimes the list of cities is read as a string (?)
                 # eval to a list
@@ -1060,9 +1258,11 @@ class SystemTrayIcon(QMainWindow):
         if type(cities_list) is not list:
             # FIXME some times is read as string (?)
             cities_list = eval(cities_list)
-        prev_city = (self.settings.value('City') + '_' +
-                     self.settings.value('Country') + '_' +
-                     self.settings.value('ID'))
+        prev_city = (
+            self.settings.value('City') + '_'
+            + self.settings.value('Country') + '_'
+            + self.settings.value('ID')
+        )
         citytoset = ''
         # Set the chosen city as the default
         for town in cities_list:
@@ -1089,7 +1289,10 @@ class SystemTrayIcon(QMainWindow):
         self.citiesMenu.addAction(self.tr('Empty list'))
 
     def refresh(self):
-        if hasattr(self, 'overviewcitydlg') and not self.cityChangeTimer.isActive():
+        if (
+            hasattr(self, 'overviewcitydlg')
+            and not self.cityChangeTimer.isActive()
+        ):
             self.icon_city_loading()
         self.inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
@@ -1118,8 +1321,10 @@ class SystemTrayIcon(QMainWindow):
         self.temp = ''
         self.wIcon = QPixmap(':/noicon')
         self.systray.showMessage(
-            'meteo-qt:\n', self.tr('No city has been configured yet.') +
-            '\n' + self.tr('Right click on the icon and click on Settings.'))
+            'meteo-qt:\n',
+            self.tr('No city has been configured yet.')
+            + '\n' + self.tr('Right click on the icon and click on Settings.')
+        )
 
     def update(self):
         if hasattr(self, 'downloadThread'):
@@ -1130,8 +1335,9 @@ class SystemTrayIcon(QMainWindow):
         self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
-            self.wIconUrl, self.baseurl, self.day_forecast_url, self.forecast6_url,
-            self.id_, self.suffix)
+            self.wIconUrl, self.baseurl, self.day_forecast_url,
+            self.forecast6_url, self.id_, self.suffix
+        )
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
@@ -1221,16 +1427,20 @@ class SystemTrayIcon(QMainWindow):
             clouds = self.clouds[clouds]
             clouds = self.conditions[clouds]
         except:
-            logging.debug('Cannot find localisation string for clouds:' +
-                          str(clouds))
+            logging.debug(
+                'Cannot find localisation string for clouds:'
+                + str(clouds)
+            )
             pass
         wind = tree[4][0].get('name').lower()
         try:
             wind = self.wind[wind]
             wind = self.conditions[wind]
         except:
-            logging.debug('Cannot find localisation string for wind:' +
-                          str(wind))
+            logging.debug(
+                'Cannot find localisation string for wind:'
+                + str(wind)
+            )
             pass
         try:
             wind_codes = tree[4][2].get('code')
@@ -1243,17 +1453,23 @@ class SystemTrayIcon(QMainWindow):
         try:
             wind_codes = self.wind_codes[wind_codes]
         except:
-            logging.debug('Cannot find localisation string for wind_codes:' +
-                          str(wind_codes))
+            logging.debug(
+                'Cannot find localisation string for wind_codes:'
+                + str(wind_codes)
+            )
             pass
         try:
             wind_dir = self.wind_dir[tree[4][2].get('code')]
         except:
-            logging.debug('Cannot find localisation string for wind_dir:' +
-                          str(wind_dir))
+            logging.debug(
+                'Cannot find localisation string for wind_dir:'
+                + str(wind_dir)
+            )
             pass
-        self.city_weather_info = (self.city + ' ' + self.country + ' ' +
-                                  self.temp_decimal + ' ' + self.meteo)
+        self.city_weather_info = (
+            self.city + ' ' + self.country + ' '
+            + self.temp_decimal + ' ' + self.meteo
+        )
         self.tooltip_weather()
         self.notification = self.city_weather_info
         self.weatherDataDico['Id'] = self.id_
@@ -1276,13 +1492,18 @@ class SystemTrayIcon(QMainWindow):
         rain_value = tree[7].get('value')
         if rain_value is None:
             rain_value = ''
-        self.weatherDataDico['Precipitation'] = (tree[7].get('mode'), rain_value)
+        self.weatherDataDico['Precipitation'] = (
+            tree[7].get('mode'), rain_value
+        )
         if self.id_ not in self.trendCities_dic:
             # dict {'id': 'hPa', , '',  'T°', 'temp_trend', 'weather changedBool'}
             self.trendCities_dic[self.id_] = [''] * 5
         # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
-        if self.id_ in self.trendCities_dic and self.trendCities_dic[self.id_][0] is not '':
+        if (
+            self.id_ in self.trendCities_dic
+            and self.trendCities_dic[self.id_][0] is not ''
+        ):
             self.hPaTrend = pressure - float(self.trendCities_dic[self.id_][0])
         else:
             self.hPaTrend = 0
@@ -1296,8 +1517,10 @@ class SystemTrayIcon(QMainWindow):
         The notification is not shown if is turned off from the settings.
         The tray tooltip is set here '''
         temp = float(self.tempFloat)
-        if (self.id_ in self.trendCities_dic and
-                self.trendCities_dic[self.id_][2] is not ''):
+        if (
+            self.id_ in self.trendCities_dic
+            and self.trendCities_dic[self.id_][2] is not ''
+        ):
             if temp > float(self.trendCities_dic[self.id_][2]):
                 self.temp_trend = " ↗"
                 self.trendCities_dic[self.id_][3] = self.temp_trend
@@ -1320,12 +1543,14 @@ class SystemTrayIcon(QMainWindow):
         trans_cities_dict = eval(trans_cities)
         city = self.city + '_' + self.country + '_' + self.id_
         if city in trans_cities_dict:
-            self.city_weather_info = (trans_cities_dict[city] +
-                                      ' ' + self.temp_decimal +
-                                      ' ' + self.meteo)
+            self.city_weather_info = (
+                trans_cities_dict[city] + ' '
+                + self.temp_decimal + ' ' + self.meteo
+            )
         else:
             self.city_weather_info = (
-                self.city + ' ' + self.country + ' ' + self.temp_decimal + ' ' + self.meteo
+                self.city + ' ' + self.country + ' '
+                + self.temp_decimal + ' ' + self.meteo
             )
 
     def tray(self):
@@ -1377,7 +1602,8 @@ class SystemTrayIcon(QMainWindow):
         if self.notifier_settings():
             try:
                 if (
-                    self.temp_trend != '' or self.trendCities_dic[self.id_][1] == ''
+                    self.temp_trend != ''
+                    or self.trendCities_dic[self.id_][1] == ''
                     or self.id_ != self.notifier_id
                 ):
                     if not self.isVisible():
@@ -1409,9 +1635,15 @@ class SystemTrayIcon(QMainWindow):
 
     def restore_city(self):
         if self.temporary_city_status:
-            logging.debug('Restore the default settings (city)' +
-                          'Forget the temporary city...')
-            for e in ('ID', self.id_2), ('City', self.city2), ('Country', self.country2):
+            logging.debug(
+                'Restore the default settings (city) '
+                + 'Forget the temporary city...'
+            )
+            for e in (
+                ('ID', self.id_2),
+                ('City', self.city2),
+                ('Country', self.country2)
+            ):
                 self.citydata(e)
             self.temporary_city_status = False
 
@@ -1455,24 +1687,31 @@ class SystemTrayIcon(QMainWindow):
         self.appid = '&APPID=' + self.settings.value('APPID') or ''
         if language != self.language and language is not None:
             self.systray.showMessage(
-                'meteo-qt:', QCoreApplication.translate(
+                'meteo-qt:',
+                QCoreApplication.translate(
                     "System tray notification",
-                    "The application has to be restarted to apply the language setting", ''
+                    "The application has to be restarted to apply the language setting",
+                    ''
                 )
             )
             self.language = language
         # Check if update is needed
         if traycolor is None:
             traycolor = ''
-        if (self.traycolor != traycolor or self.tray_type != tray_type or
-                self.fontsize != fontsize or self.bold_set != bold_set or
-                decimal != self.temp_decimal):
+        if (
+            self.traycolor != traycolor
+            or self.tray_type != tray_type
+            or self.fontsize != fontsize or self.bold_set != bold_set
+            or decimal != self.temp_decimal
+        ):
             self.tray()
-        if (city[0] == self.city and
-           id_ == self.id_ and
-           country == self.country and
-           unit == self.unit and
-           beaufort == self.beaufort):
+        if (
+            city[0] == self.city
+            and id_ == self.id_
+            and country == self.country
+            and unit == self.unit
+            and beaufort == self.beaufort
+        ):
             return
         else:
             logging.debug('Apply changes from settings...')
@@ -1516,22 +1755,26 @@ class SystemTrayIcon(QMainWindow):
             QT_VERSION_STR, PYQT_VERSION_STR, platform.system()
         )
         image = ':/logo'
-        text = self.tr("""<p>Author: Dimitrios Glentadakis <a href="mailto:dglent@free.fr">dglent@free.fr</a>
-                        <p>A simple application showing the weather status
-                        information on the system tray.
-                        <p>Website: <a href="https://github.com/dglent/meteo-qt">
-                        https://github.com/dglent/meteo-qt</a>
-                        <br/>Data source: <a href="http://openweathermap.org/">
-                        OpenWeatherMap</a>.
-                        <br/>This software uses icons from the
-                        <a href="http://www.kde.org/">Oxygen Project</a>.
-                        <p>To translate meteo-qt in your language or contribute to
-                        current translations, you can use the
-                        <a href="https://www.transifex.com/projects/p/meteo-qt/">
-                        Transifex</a> platform.
-                        <p>If you want to report a dysfunction or a suggestion,
-                        feel free to open an issue in <a href="https://github.com/dglent/meteo-qt/issues">
-                        github</a>.""")
+        text = self.tr(
+            """<p>Author: Dimitrios Glentadakis
+            <a href="mailto:dglent@free.fr">dglent@free.fr</a>
+            <p>A simple application showing the weather status
+            information on the system tray.
+            <p>Website: <a href="https://github.com/dglent/meteo-qt">
+            https://github.com/dglent/meteo-qt</a>
+            <br/>Data source: <a href="http://openweathermap.org/">
+            OpenWeatherMap</a>.
+            <br/>This software uses icons from the
+            <a href="http://www.kde.org/">Oxygen Project</a>.
+            <p>To translate meteo-qt in your language or contribute to
+            current translations, you can use the
+            <a href="https://www.transifex.com/projects/p/meteo-qt/">
+            Transifex</a> platform.
+            <p>If you want to report a dysfunction or a suggestion,
+            feel free to open an issue in
+            <a href="https://github.com/dglent/meteo-qt/issues">
+            github</a>."""
+        )
 
         dialog = about_dlg.AboutDialog(title, text, image, self)
         dialog.exec_()
@@ -1562,7 +1805,10 @@ class Download(QThread):
         use_json_day_forecast = False
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
-        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = (
+            self.settings.value('Use_proxy_authentification')
+            or 'False'
+        )
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -1571,10 +1817,17 @@ class Download(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
-            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+                proxy_tot = (
+                    'http://' + proxy_user + ':' + proxy_password
+                    + '@' + proxy_url + ':' + proxy_port
+                )
+            proxy = urllib.request.ProxyHandler(
+                {"http": proxy_tot}
+            )
             auth = urllib.request.HTTPBasicAuthHandler()
-            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            opener = urllib.request.build_opener(
+                proxy, auth, urllib.request.HTTPHandler
+            )
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
@@ -1582,27 +1835,35 @@ class Download(QThread):
             urllib.request.install_opener(opener)
         done = 0
 
-        logging.debug('Fetching url for 6 days :' + self.forecast6_url +
-                      self.id_ + self.suffix + '&cnt=7')
+        logging.debug(
+            'Fetching url for 6 days :' + self.forecast6_url
+            + self.id_ + self.suffix + '&cnt=7'
+        )
         try:
             reqforecast6 = urllib.request.urlopen(
-                self.forecast6_url + self.id_ +
-                self.suffix + '&cnt=7', timeout=5
+                self.forecast6_url + self.id_
+                + self.suffix + '&cnt=7', timeout=5
             )
             pageforecast6 = reqforecast6.read()
             treeforecast6 = etree.fromstring(pageforecast6)
             forcast6days = True
-        except (urllib.error.HTTPError, urllib.error.URLError, etree.XMLSyntaxError) as e:
+        except (
+            urllib.error.HTTPError, urllib.error.URLError, etree.XMLSyntaxError
+        ) as e:
             forcast6days = False
             logging.error('6 days forcast not available : ' + str(e))
 
         try:
-            logging.debug('Fetching url for actual weather: ' + self.baseurl +
-                          self.id_ + self.suffix)
+            logging.debug(
+                'Fetching url for actual weather: ' + self.baseurl
+                + self.id_ + self.suffix
+            )
             req = urllib.request.urlopen(
                 self.baseurl + self.id_ + self.suffix, timeout=5)
-            logging.debug('Fetching url for forecast of the day + 4:' +
-                          self.day_forecast_url + self.id_ + self.suffix)
+            logging.debug(
+                'Fetching url for forecast of the day + 4:'
+                + self.day_forecast_url + self.id_ + self.suffix
+            )
             reqdayforecast = urllib.request.urlopen(
                 self.day_forecast_url + self.id_ + self.suffix, timeout=5)
             page = req.read()
@@ -1611,12 +1872,14 @@ class Download(QThread):
                 raise urllib.error.HTTPError
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
-                logging.debug('Fetching json url for forecast of the day :' +
-                              self.day_forecast_url + self.id_ + self.suffix.replace('xml', 'json')
-                              )
+                logging.debug(
+                    'Fetching json url for forecast of the day :'
+                    + self.day_forecast_url + self.id_
+                    + self.suffix.replace('xml', 'json')
+                )
                 reqdayforecast = urllib.request.urlopen(
-                    self.day_forecast_url + self.id_ +
-                    self.suffix.replace('xml', 'json'), timeout=5
+                    self.day_forecast_url + self.id_
+                    + self.suffix.replace('xml', 'json'), timeout=5
                 )
                 pagedayforecast = reqdayforecast.read().decode('utf-8')
                 if self.html404(pagedayforecast, 'day_forecast'):
@@ -1624,7 +1887,9 @@ class Download(QThread):
                 else:
                     treedayforecast = json.loads(pagedayforecast)
                     use_json_day_forecast = True
-                    logging.debug('Found json page for the forecast of the day')
+                    logging.debug(
+                        'Found json page for the forecast of the day'
+                    )
             tree = etree.fromstring(page)
             lat = tree[0][0].get('lat')
             lon = tree[0][0].get('lon')
@@ -1644,11 +1909,16 @@ class Download(QThread):
                 self.forecast6_rawpage['PyQt_PyObject'].emit(treeforecast6)
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
-        except (urllib.error.HTTPError, urllib.error.URLError, TypeError) as error:
+        except (
+            urllib.error.HTTPError, urllib.error.URLError, TypeError
+        ) as error:
             if self.tentatives >= 10:
                 done = 1
                 try:
-                    m_error = self.tr('Error :\n') + str(error.code) + ' ' + str(error.reason)
+                    m_error = (
+                        self.tr('Error :\n') + str(error.code)
+                        + ' ' + str(error.reason)
+                    )
                 except:
                     m_error = str(error)
                 logging.error(m_error)
@@ -1668,8 +1938,10 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn('5 secondes timeout, new tentative: ' +
-                             str(self.tentatives))
+                logging.warn(
+                    '5 secondes timeout, new tentative: '
+                    + str(self.tentatives)
+                )
                 self.run()
         except (etree.XMLSyntaxError) as error:
             logging.critical('Error: ' + str(error))
@@ -1702,7 +1974,9 @@ class Ozone(QThread):
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
-        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = (
+            self.settings.value('Use_proxy_authentification') or 'False'
+        )
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -1711,10 +1985,15 @@ class Ozone(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
-            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+                proxy_tot = (
+                    'http://' + proxy_user + ':' + proxy_password
+                    + '@' + proxy_url + ':' + proxy_port
+                )
+            proxy = urllib.request.ProxyHandler({"http": proxy_tot})
             auth = urllib.request.HTTPBasicAuthHandler()
-            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            opener = urllib.request.build_opener(
+                proxy, auth, urllib.request.HTTPHandler
+            )
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
@@ -1723,9 +2002,11 @@ class Ozone(QThread):
         try:
             lat = self.coord[0]
             lon = self.coord[1]
-            url = ('http://api.openweathermap.org/pollution/v1/o3/' +
-                   lat + ',' + lon +
-                   '/current.json?appid=' + self.appid)
+            url = (
+                'http://api.openweathermap.org/pollution/v1/o3/'
+                + lat + ',' + lon
+                + '/current.json?appid=' + self.appid
+            )
             logging.debug('Fetching url for ozone index: ' + str(url))
             req = urllib.request.urlopen(url, timeout=5)
             page = req.read()
@@ -1750,7 +2031,9 @@ class Uv(QThread):
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
-        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = (
+            self.settings.value('Use_proxy_authentification') or 'False'
+        )
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -1759,10 +2042,15 @@ class Uv(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
-            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+                proxy_tot = (
+                    'http://' + proxy_user + ':' + proxy_password
+                    + '@' + proxy_url + ':' + proxy_port
+                )
+            proxy = urllib.request.ProxyHandler({"http": proxy_tot})
             auth = urllib.request.HTTPBasicAuthHandler()
-            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            opener = urllib.request.build_opener(
+                proxy, auth, urllib.request.HTTPHandler
+            )
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
@@ -1806,7 +2094,9 @@ class IconDownload(QThread):
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
         use_proxy = eval(use_proxy)
-        proxy_auth = self.settings.value('Use_proxy_authentification') or 'False'
+        proxy_auth = (
+            self.settings.value('Use_proxy_authentification') or 'False'
+        )
         proxy_auth = eval(proxy_auth)
         if use_proxy:
             proxy_url = self.settings.value('Proxy_url')
@@ -1815,10 +2105,15 @@ class IconDownload(QThread):
             if proxy_auth:
                 proxy_user = self.settings.value('Proxy_user')
                 proxy_password = self.settings.value('Proxy_pass')
-                proxy_tot = 'http://' + proxy_user + ':' + proxy_password + '@' + proxy_url + ':' + proxy_port
-            proxy = urllib.request.ProxyHandler({"http":proxy_tot})
+                proxy_tot = (
+                    'http://' + proxy_user + ':' + proxy_password
+                    + '@' + proxy_url + ':' + proxy_port
+                )
+            proxy = urllib.request.ProxyHandler({"http": proxy_tot})
             auth = urllib.request.HTTPBasicAuthHandler()
-            opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+            opener = urllib.request.build_opener(
+                proxy, auth, urllib.request.HTTPHandler
+            )
             urllib.request.install_opener(opener)
         else:
             proxy_handler = urllib.request.ProxyHandler({})
@@ -1835,7 +2130,9 @@ class IconDownload(QThread):
                 self.wimage['PyQt_PyObject'].emit(data)
         except (urllib.error.HTTPError, urllib.error.URLError) as error:
             try:
-                url_error = 'Error: ' + str(error.code) + ': ' + str(error.reason)
+                url_error = (
+                    'Error: ' + str(error.code) + ': ' + str(error.reason)
+                )
             except:
                 url_error = error
             logging.error(str(url_error))
@@ -1846,8 +2143,10 @@ class IconDownload(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.info('5 secondes timeout, new tentative: ' +
-                             str(self.tentatives))
+                logging.info(
+                    '5 secondes timeout, new tentative: '
+                    + str(self.tentatives)
+                )
                 self.run()
         logging.debug('Download forecast icons thread done')
 
@@ -1912,7 +2211,8 @@ def main():
                 wFile.write(logData)
 
     logging.basicConfig(
-        format='%(asctime)s %(levelname)s: %(message)s - %(lineno)s: %(module)s',
+        format='%(asctime)s %(levelname)s: %(message)s'
+        '- %(lineno)s: %(module)s',
         datefmt='%Y/%m/%d %H:%M:%S',
         filename=logFile, level=logLevel
     )
@@ -1920,7 +2220,9 @@ def main():
     logger.setLevel(logLevel)
     loggerStream = logging.getLogger()
     handlerStream = logging.StreamHandler()
-    loggerStreamFormatter = logging.Formatter('%(levelname)s: %(message)s - %(lineno)s :%(module)s')
+    loggerStreamFormatter = logging.Formatter(
+        '%(levelname)s: %(message)s - %(lineno)s :%(module)s'
+    )
     handlerStream.setFormatter(loggerStreamFormatter)
     loggerStream.addHandler(handlerStream)
 

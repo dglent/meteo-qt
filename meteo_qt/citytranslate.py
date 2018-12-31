@@ -15,8 +15,9 @@ class CityTranslate(QDialog):
         self.buttonLayout = QHBoxLayout()
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QDialogButtonBox.Ok |
-                                          QDialogButtonBox.Cancel)
+        self.buttonBox.setStandardButtons(
+            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+        )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
         self.buttonLayout.addWidget(self.buttonBox)
@@ -47,11 +48,22 @@ class CityTranslate(QDialog):
         city_dict = {}
         current_city = self.translate_line.text()
         for city, trans in self.trans_cities_dict.items():
-            if current_city == trans and city != self.untranslate_city_label.text():
-                self.status_label.setText(QCoreApplication.translate(
-                            'Warning message in dialog status bar',
-                            'The city allready exist', 'City translation'))
+            if (
+                current_city == trans
+                and city != self.untranslate_city_label.text()
+            ):
+                self.status_label.setText(
+                    QCoreApplication.translate(
+                        'Warning message in dialog status bar',
+                        'The city allready exist',
+                        'City translation'
+                    )
+                )
                 return
-        city_dict[self.untranslate_city_label.text()] = self.translate_line.text()
+
+        city_dict[self.untranslate_city_label.text()] = (
+            self.translate_line.text()
+        )
+
         self.city_signal[dict].emit(city_dict)
         QDialog.accept(self)

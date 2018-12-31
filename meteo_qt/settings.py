@@ -53,9 +53,12 @@ class MeteoSettings(QDialog):
         self.language_label = QLabel(self.tr('Language'))
         self.language_combo = QComboBox()
         self.language_combo.setToolTip(
-            QCoreApplication.translate('Tooltip',
+            QCoreApplication.translate(
+                'Tooltip',
                 'The application has to be restared to apply the language setting',
-                'Settings dialogue'))
+                'Settings dialogue'
+            )
+        )
         self.language_dico = {'bg': self.tr('Bulgarian'),
                               'ca': self.tr('Catalan'),
                               'cs': self.tr('Czech'),
@@ -91,8 +94,9 @@ class MeteoSettings(QDialog):
             locale = 'en'
         self.setLanguage = self.settings.value('Language') or locale
         self.language_combo.addItems(lang_list)
-        self.language_combo.setCurrentIndex(self.language_combo.findText
-                                            (self.language_dico[self.setLanguage]))
+        self.language_combo.setCurrentIndex(
+            self.language_combo.findText(self.language_dico[self.setLanguage])
+        )
         self.language_combo.currentIndexChanged.connect(self.language)
         self.lang_changed = False
         # Unit system
@@ -110,24 +114,37 @@ class MeteoSettings(QDialog):
             self.units_dico[self.temp_unit]))
         self.units_combo.currentIndexChanged.connect(self.units)
         # Beaufort
-        self.bft_checkbox = QCheckBox(QCoreApplication.translate('Wind unit - Checkbox label',
-                                        'Wind unit in Beaufort', 'Settings dialogue'))
+        self.bft_checkbox = QCheckBox(
+            QCoreApplication.translate(
+                'Wind unit - Checkbox label',
+                'Wind unit in Beaufort',
+                'Settings dialogue'
+            )
+        )
         bft_bool = self.settings.value('Beaufort') or 'False'
         self.bft_bool = eval(bft_bool)
         self.bft_checkbox.setChecked(self.bft_bool)
         self.bft_checkbox.stateChanged.connect(self.beaufort)
         self.bft_changed = False
         # Decimal in trayicon
-        self.temp_decimal_label = QLabel(QCoreApplication.translate(
-                    'If the temperature will be shown with a decimal or rounded in tray icon',
-                    'Temperature accuracy in system tray', 'Settings dialogue'))
+        self.temp_decimal_label = QLabel(
+            QCoreApplication.translate(
+                'If the temperature will be shown with a decimal or rounded in tray icon',
+                'Temperature accuracy in system tray', 'Settings dialogue'
+            )
+        )
         self.temp_decimal_combo = QComboBox()
         temp_decimal_combo_dico = {'False': '0°', 'True': '0.1°'}
-        temp_decimal_combo_list = [temp_decimal_combo_dico['False'], temp_decimal_combo_dico['True']]
+        temp_decimal_combo_list = [
+            temp_decimal_combo_dico['False'], temp_decimal_combo_dico['True']
+        ]
         self.temp_decimal_combo.addItems(temp_decimal_combo_list)
         temp_decimal_bool_str = self.settings.value('Decimal') or 'False'
-        self.temp_decimal_combo.setCurrentIndex(self.temp_decimal_combo.findText(
-                                temp_decimal_combo_dico[temp_decimal_bool_str]))
+        self.temp_decimal_combo.setCurrentIndex(
+            self.temp_decimal_combo.findText(
+                temp_decimal_combo_dico[temp_decimal_bool_str]
+            )
+        )
         self.temp_decimal_combo.currentIndexChanged.connect(self.temp_decimal)
         self.temp_decimal_changed = False
         # Interval of updates
@@ -146,7 +163,8 @@ class MeteoSettings(QDialog):
         self.buttonBox = QDialogButtonBox()
         self.buttonBox.setOrientation(Qt.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok | QDialogButtonBox.Apply | QDialogButtonBox.Cancel)
+            QDialogButtonBox.Ok | QDialogButtonBox.Apply | QDialogButtonBox.Cancel
+        )
         self.buttonBox.setContentsMargins(0, 30, 0, 0)
         self.buttonLayout.addWidget(self.buttonBox)
         self.buttonBox.button(QDialogButtonBox.Apply).clicked.connect(self.apply_settings)
@@ -217,34 +235,56 @@ class MeteoSettings(QDialog):
         self.fontsize_changed = False
         self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
         # Font weight
-        self.bold_checkbox = QCheckBox(QCoreApplication.translate('Font setting - Checkbox label',
-                                        'Bold', 'Settings dialogue'))
+        self.bold_checkbox = QCheckBox(
+            QCoreApplication.translate(
+                'Font setting - Checkbox label',
+                'Bold',
+                'Settings dialogue'
+            )
+        )
         bold_bool = self.settings.value('Bold') or 'False'
         self.bold_bool = eval(bold_bool)
         self.bold_checkbox.setChecked(self.bold_bool)
         self.bold_checkbox.stateChanged.connect(self.bold)
         self.bold_changed = False
         # Proxy
-        self.proxy_label = QLabel(QCoreApplication.translate(
-                            'Checkbox', 'Connection by proxy', 'Settings dialogue'))
+        self.proxy_label = QLabel(
+            QCoreApplication.translate(
+                'Checkbox',
+                'Connection by proxy',
+                'Settings dialogue'
+            )
+        )
         self.proxy_chbox = QCheckBox()
         proxy_bool = self.settings.value('Proxy') or 'False'
         self.proxy_bool = eval(proxy_bool)
         self.proxy_chbox.setChecked(self.proxy_bool)
         self.proxy_chbox.stateChanged.connect(self.proxy)
         self.proxy_changed = False
-        self.proxy_button = QPushButton(QCoreApplication.translate(
-            'Label of button to open the proxy dialogue', 'Settings', 'Settings dialogue'))
+        self.proxy_button = QPushButton(
+            QCoreApplication.translate(
+                'Label of button to open the proxy dialogue',
+                'Settings',
+                'Settings dialogue'
+            )
+        )
         self.proxy_button.clicked.connect(self.proxy_settings)
         self.proxy_button.setEnabled(self.proxy_bool)
         # Openweathermap key
-        self.owmkey_label = QLabel(QCoreApplication.translate(
-            'The key that user can generate in his OpenWeatherMap profile',
-            'OpenWeatherMap key', 'Settings dialogue'))
-        self.owmkey_create = QLabel(QCoreApplication.translate(
-            'Link to create a profile in OpenWeatherMap',
-            "<a href=\"http://home.openweathermap.org/users/sign_up\">Create key</a>",
-            'Settings dialogue'))
+        self.owmkey_label = QLabel(
+            QCoreApplication.translate(
+                'The key that user can generate in his OpenWeatherMap profile',
+                'OpenWeatherMap key',
+                'Settings dialogue'
+            )
+        )
+        self.owmkey_create = QLabel(
+            QCoreApplication.translate(
+                'Link to create a profile in OpenWeatherMap',
+                "<a href=\"http://home.openweathermap.org/users/sign_up\">Create key</a>",
+                'Settings dialogue'
+            )
+        )
         self.owmkey_create.setOpenExternalLinks(True)
         apikey = self.settings.value('APPID') or ''
         self.owmkey_text = QLineEdit()
@@ -294,7 +334,8 @@ class MeteoSettings(QDialog):
             'Settings dialogue'
         )
         self.nocity_message = QCoreApplication.translate(
-            'Warning message after pressing OK', 'Please add a city',
+            'Warning message after pressing OK',
+            'Please add a city',
             'Settings dialogue'
         )
         self.setLayout(self.layout)
@@ -309,7 +350,9 @@ class MeteoSettings(QDialog):
         self.lang_changed = True
 
     def city_default(self):
-        allitems = [self.city_combo.itemText(i) for i in range(self.city_combo.count())]
+        allitems = [
+            self.city_combo.itemText(i) for i in range(self.city_combo.count())
+        ]
         allitems_not_translated = []
         for i in allitems:
             allitems_not_translated.append(self.find_city_key(i))
@@ -339,7 +382,8 @@ class MeteoSettings(QDialog):
             self.statusbar.setText(self.nokey_message)
             return
         dialog = citylistdlg.CityListDlg(
-            self.citylist, self.accurate_url, apiid, self.trans_cities_dict, self
+            self.citylist, self.accurate_url, apiid,
+            self.trans_cities_dict, self
         )
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.citiesdict_signal.connect(self.cities_dict)
@@ -443,7 +487,9 @@ class MeteoSettings(QDialog):
         tray = self.tray_icon_combo.currentText()
         self.settings.setValue('Tray', tray)
         logging.debug('Write >' + 'Tray >' + str(tray))
-        settray = [key for key, value in self.tray_dico.items() if value == tray]
+        settray = [
+            key for key, value in self.tray_dico.items() if value == tray
+        ]
         self.settings.setValue('TrayType', settray[0])
 
     def fontsize_change(self, size):
@@ -508,8 +554,12 @@ class MeteoSettings(QDialog):
                 translations_to_delete.append(key)
         for i in translations_to_delete:
             del self.trans_cities_dict[i]
-        self.settings.setValue('CitiesTranslation', str(self.trans_cities_dict))
-        logging.debug('write ' + 'CitiesTranslation ' + str(self.trans_cities_dict))
+        self.settings.setValue(
+            'CitiesTranslation', str(self.trans_cities_dict)
+        )
+        logging.debug(
+            'write ' + 'CitiesTranslation ' + str(self.trans_cities_dict)
+        )
 
     def accepted(self):
         self.clear_translations()
@@ -540,7 +590,9 @@ class MeteoSettings(QDialog):
             self.settings.setValue('TrayColor', self.color_before)
             if self.color_before == '':
                 self.color_before = 'None'
-            logging.debug('Write font color for temp in tray: {0}'.format(self.color_before))
+            logging.debug(
+                'Write font color for temp in tray: {0}'.format(self.color_before)
+            )
         if self.autostart_changed:
             self.autostart_apply()
         if self.interval_changed:
@@ -549,12 +601,16 @@ class MeteoSettings(QDialog):
             logging.debug('Write ' + 'Interval ' + str(time))
         if self.lang_changed:
             lang = self.language_combo.currentText()
-            setlang = [key for key, value in self.language_dico.items() if value == lang]
+            setlang = [
+                key for key, value in self.language_dico.items() if value == lang
+            ]
             self.settings.setValue('Language', setlang[0])
             logging.debug('Write ' + 'Language ' + str(setlang[0]))
         if self.units_changed:
             unit = self.units_combo.currentText()
-            setUnit = [key for key, value in self.units_dico.items() if value == unit]
+            setUnit = [
+                key for key, value in self.units_dico.items() if value == unit
+            ]
             self.settings.setValue('Unit', setUnit[0])
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
         if self.temp_decimal_changed:
@@ -601,12 +657,16 @@ class MeteoSettings(QDialog):
             list_cities = self.settings.value('CityList')
             if list_cities is not None:
                 self.city_list_before = list_cities[:]
-            self.citylist = [self.set_city + '_' +
-                             self.settings.value('Country') + '_' +
-                             self.settings.value('ID')]
+            self.citylist = [
+                self.set_city + '_'
+                + self.settings.value('Country') + '_'
+                + self.settings.value('ID')
+            ]
         else:
-            self.citylist = [self.city_before + '_' + self.country_before +
-                             '_' + self.id_before]
+            self.citylist = [
+                self.city_before + '_' + self.country_before
+                + '_' + self.id_before
+            ]
             list_cities = self.city_list_before[:]
         if list_cities is None:
             list_cities = []
@@ -625,7 +685,7 @@ class MeteoSettings(QDialog):
         self.city_combo.addItems(self.translated)
         if len(list_cities) > 0:
             maxi = len(max(list_cities, key=len))
-            self.city_combo.setMinimumSize(maxi*8, 23)
+            self.city_combo.setMinimumSize(maxi * 8, 23)
 
     def find_city_key(self, city):
         for key, value in self.trans_cities_dict.items():
