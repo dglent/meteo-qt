@@ -1,6 +1,7 @@
 %define aname meteo_qt
+
 Name:           meteo-qt
-Version:        0.9.7
+Version:        1.0.0
 Release:        %mkrel 1
 Group:          Graphical desktop/Other
 Summary:        Weather status system tray application
@@ -8,8 +9,7 @@ License:        GPLv3
 URL:            https://github.com/dglent/meteo-qt
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  python-qt5-devel
-BuildRequires:  python3
+BuildRequires:  python3-qt5-devel
 BuildRequires:  qttools5
 BuildRequires:  imagemagick
 Requires:       python3-qt5
@@ -37,7 +37,6 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicol
 %files
 %doc TODO CHANGELOG README.md
 %exclude %_defaultdocdir/%{name}/LICENSE
-%{_datadir}/%{aname}/images/
 %{_bindir}/%{name}
 %{_iconsdir}/%{name}.png
 %{python3_sitelib}/%{aname}-%{version}-py%python3_version.egg-info

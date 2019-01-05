@@ -18,15 +18,19 @@ import json
 import time
 import datetime
 
-from PyQt5.QtCore import (PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication,
-                          QByteArray, QLibraryInfo, QLocale, QSettings, Qt,
-                          QThread, QTimer, QTranslator, pyqtSignal, pyqtSlot,
-                          QTime)
-from PyQt5.QtGui import (QColor, QCursor, QFont, QIcon, QImage, QMovie,
-                         QPainter, QPixmap, QTransform, QTextDocument)
-from PyQt5.QtWidgets import (QDialog, QAction, QApplication, QMainWindow, QMenu,
-                             QSystemTrayIcon, qApp, QVBoxLayout, QHBoxLayout,
-                             QLabel, QGridLayout)
+from PyQt5.QtCore import (
+    PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication, QByteArray,
+    QLibraryInfo, QLocale, QSettings, Qt, QThread, QTimer, QTranslator,
+    pyqtSignal, pyqtSlot, QTime
+)
+from PyQt5.QtGui import (
+    QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
+    QTransform, QTextDocument
+)
+from PyQt5.QtWidgets import (
+    QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
+    QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
+)
 
 try:
     import qrc_resources
@@ -42,7 +46,7 @@ except ImportError:
     from meteo_qt import about_dlg
 
 
-__version__ = "0.9.9"
+__version__ = "1.0.0"
 
 
 class SystemTrayIcon(QMainWindow):

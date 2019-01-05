@@ -1,3 +1,25 @@
+1.0.0
+- Automatic detection of the geolocation
+- Reenable UV Ozone in weather information
+- Toggle cities with the mouse wheel from the weather information window
+- Show the coordinates in search city results
+- Fix crash when network connection is not available
+- Keep the log file size upto 10mb
+- Fix city not saved in cities list if set as default when adding it
+- Don't apply any text format so the desktop environment colour scheme is applied (eg by qt5ct)
+- Add progress gauge in the overview window when changing the city
+- Remember temperature trend for the city
+- If the 7 days forcast is not avaimabe (with a free license key) provide the 4 days forcast
+- Fix crash at first startup after configuring a city and press enter
+- Fix translation of wind when changing city
+- Use different arrow for notifier as in some systems is displayed as a square
+- Update Dutch translation - Vistaus
+- Update Ukrainian translation - yurchor
+- Update German translation - psyca
+- Update Czech translation - fri
+- Update Spanish translation - vania182004
+- Update Russian translation -  liliya.panova13579
+
 0.9.9
 - Use the weather panel as central widget
 - Better memory usage

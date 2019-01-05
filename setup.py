@@ -15,7 +15,7 @@ class BuildQm(build):
 
 setup(
     name='meteo_qt',
-    version='0.9.9',
+    version='1.0.0',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',
@@ -25,7 +25,6 @@ setup(
     keywords=['weather', 'qt', 'trayicon', 'openweathermap', 'forecast'],
     data_files=[('/usr/share/applications', ['share/meteo-qt.desktop']),
                 ('/usr/share/icons', ['meteo_qt/images/meteo-qt.png']),
-                ('/usr/share/meteo_qt/images', ['meteo_qt/images/meteo-qt.png']),
                 ('/usr/share/meteo_qt/translations',
                     ['meteo_qt/translations/meteo-qt_bg.qm',
                      'meteo_qt/translations/meteo-qt_ca.qm',
