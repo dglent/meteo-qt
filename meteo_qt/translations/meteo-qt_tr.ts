@@ -103,7 +103,7 @@
 <context>
     <name>Beaufort scale 0 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="191"/>
+        <location filename="../conditions.py" line="192"/>
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -114,18 +114,17 @@ Kara : Sakin. Duman dikey olarak yükseliyor</translation>
 <context>
     <name>Beaufort scale 1 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="192"/>
-        <source>Sea: Ripples with the appearance of scales are formed, but without foam crests
+        <location filename="../conditions.py" line="197"/>
+        <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Deniz : Köpüksüz terazi görünümlü dalgalanmalar oluşur
-Karar : Duman yönü rüzgar yönünü belirtir. Yapraklar ve rüzgar kanatları hareketsiz</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 10 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="201"/>
+        <location filename="../conditions.py" line="267"/>
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -135,7 +134,7 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
 <context>
     <name>Beaufort scale 11 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="202"/>
+        <location filename="../conditions.py" line="277"/>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -145,7 +144,7 @@ Land: Widespread vegetation and structural damage likely</source>
 <context>
     <name>Beaufort scale 12 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="203"/>
+        <location filename="../conditions.py" line="285"/>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -155,7 +154,7 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
 <context>
     <name>Beaufort scale 2 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="193"/>
+        <location filename="../conditions.py" line="204"/>
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -165,7 +164,7 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
 <context>
     <name>Beaufort scale 3 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="194"/>
+        <location filename="../conditions.py" line="212"/>
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -175,7 +174,7 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
 <context>
     <name>Beaufort scale 4 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="195"/>
+        <location filename="../conditions.py" line="219"/>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -186,7 +185,7 @@ Kara : Toz ve gevşek kağıt parçalarını kaldırabilir . Küçük dallar har
 <context>
     <name>Beaufort scale 5 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="196"/>
+        <location filename="../conditions.py" line="226"/>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -197,7 +196,7 @@ Arazi: Orta ölçekli maddeler uçuşabilir. Küçük ağaç yaprakları sallan�
 <context>
     <name>Beaufort scale 6 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="197"/>
+        <location filename="../conditions.py" line="233"/>
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -207,9 +206,9 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
 <context>
     <name>Beaufort scale 7 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="198"/>
+        <location filename="../conditions.py" line="241"/>
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
-Land: Whole trees in motion. Effort needed to walk against the wind</source>
+Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation type="unfinished"/>
     </message>
@@ -217,7 +216,7 @@ Land: Whole trees in motion. Effort needed to walk against the wind</source>
 <context>
     <name>Beaufort scale 8 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="199"/>
+        <location filename="../conditions.py" line="249"/>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -227,7 +226,7 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
 <context>
     <name>Beaufort scale 9 - Wikipedia</name>
     <message>
-        <location filename="../conditions.py" line="200"/>
+        <location filename="../conditions.py" line="258"/>
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
@@ -237,7 +236,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Button</name>
     <message>
-        <location filename="../citylistdlg.py" line="51"/>
+        <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
         <translation type="unfinished"/>
@@ -246,13 +245,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkbox</name>
     <message>
-        <location filename="../proxydlg.py" line="42"/>
+        <location filename="../proxydlg.py" line="51"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
         <translation>Proxy kimlik doğrulamasını kullan</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="229"/>
+        <location filename="../settings.py" line="252"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Proxy bağlantısı</translation>
@@ -261,37 +260,37 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>CityListDlg</name>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
         <translation>&amp;Ekle...</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
         <translation>&amp;Kaldır...</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
         <translation>&amp;Yukarı</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Down</source>
         <translation>&amp;Aşağı</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>De&amp;fault</source>
         <translation>Ön&amp;tanımlı</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="42"/>
+        <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
         <translation>&amp;Sırala</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="141"/>
+        <location filename="../citylistdlg.py" line="143"/>
         <source>The city &quot;{0}&quot; has been removed</source>
         <translation>&quot;{0}&quot; şehri kaldırıldı</translation>
     </message>
@@ -299,7 +298,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="304"/>
+        <location filename="../meteo_qt.py" line="335"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Gün ışığı</translation>
@@ -308,7 +307,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="883"/>
+        <location filename="../meteo_qt.py" line="1057"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -317,7 +316,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="1679"/>
+        <location filename="../meteo_qt.py" line="1951"/>
         <source>Error :
 </source>
         <translation>Hata:
@@ -327,7 +326,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Entry label for the proxy port</name>
     <message>
-        <location filename="../proxydlg.py" line="35"/>
+        <location filename="../proxydlg.py" line="40"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
         <translation type="unfinished"/>
@@ -336,7 +335,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Entry label for the proxy url</name>
     <message>
-        <location filename="../proxydlg.py" line="26"/>
+        <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
         <translation type="unfinished"/>
@@ -356,7 +355,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Font setting - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="221"/>
+        <location filename="../settings.py" line="239"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation>Koyu</translation>
@@ -365,7 +364,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
     <message>
-        <location filename="../conditions.py" line="205"/>
+        <location filename="../conditions.py" line="295"/>
         <source>If the barometric pressure is rising, the weather is improving.
 If the barometric pressure is falling, the weather is worsening.
 Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled weather/warmer temperatures.
@@ -390,7 +389,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
     <message>
-        <location filename="../settings.py" line="122"/>
+        <location filename="../settings.py" line="131"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
         <translation>Sistem tepsisinde sıcaklık hassasiyeti</translation>
@@ -399,7 +398,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="237"/>
+        <location filename="../settings.py" line="265"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Ayarlar</translation>
@@ -408,7 +407,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="245"/>
+        <location filename="../settings.py" line="282"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Anahtar oluştur&lt;/a&gt;</translation>
@@ -428,7 +427,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Message when trying to remove thelast and unique city in the list</name>
     <message>
-        <location filename="../citylistdlg.py" line="128"/>
+        <location filename="../citylistdlg.py" line="130"/>
         <source>This is the default city !</source>
         <comment>Cities list dialogue</comment>
         <translation type="unfinished"/>
@@ -452,192 +451,192 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Dil</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="60"/>
+        <location filename="../settings.py" line="63"/>
         <source>Bulgarian</source>
         <translation>Bulgarca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="61"/>
+        <location filename="../settings.py" line="64"/>
         <source>Catalan</source>
         <translation>Katalanca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="62"/>
+        <location filename="../settings.py" line="65"/>
         <source>Czech</source>
         <translation>Çekçe</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="63"/>
+        <location filename="../settings.py" line="66"/>
         <source>Danish</source>
         <translation>Danca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="64"/>
+        <location filename="../settings.py" line="67"/>
         <source>German</source>
         <translation>Almanca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="65"/>
+        <location filename="../settings.py" line="68"/>
         <source>Greek</source>
         <translation>Yunanca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="66"/>
+        <location filename="../settings.py" line="69"/>
         <source>English</source>
         <translation>İngilizce</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="67"/>
+        <location filename="../settings.py" line="70"/>
         <source>Spanish</source>
         <translation>İspanyolca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="68"/>
+        <location filename="../settings.py" line="71"/>
         <source>Finnish</source>
         <translation>Fince</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="69"/>
+        <location filename="../settings.py" line="72"/>
         <source>French</source>
         <translation>Fransızca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="70"/>
+        <location filename="../settings.py" line="73"/>
         <source>Hebrew</source>
         <translation>İbranice</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="71"/>
+        <location filename="../settings.py" line="74"/>
         <source>Croatian</source>
         <translation>Hırvatça</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="72"/>
+        <location filename="../settings.py" line="75"/>
         <source>Hungarian</source>
         <translation>Macarca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="73"/>
+        <location filename="../settings.py" line="76"/>
         <source>Italian</source>
         <translation>İtalyanca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="74"/>
+        <location filename="../settings.py" line="77"/>
         <source>Japanese</source>
         <translation>Japonca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="75"/>
+        <location filename="../settings.py" line="78"/>
         <source>Lithuanian</source>
         <translation>Litvanca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="76"/>
+        <location filename="../settings.py" line="79"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Norveççe (Bokmaal)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="77"/>
+        <location filename="../settings.py" line="80"/>
         <source>Dutch</source>
         <translation>Felemenkçe</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="78"/>
+        <location filename="../settings.py" line="81"/>
         <source>Polish</source>
         <translation>Lehçe</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="79"/>
+        <location filename="../settings.py" line="82"/>
         <source>Portuguese</source>
         <translation>Portekizce</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="80"/>
+        <location filename="../settings.py" line="83"/>
         <source>Brazil Portuguese</source>
         <translation>Brezilya Portekizcesi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="81"/>
+        <location filename="../settings.py" line="84"/>
         <source>Romanian</source>
         <translation>Rumence</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="82"/>
+        <location filename="../settings.py" line="85"/>
         <source>Russian</source>
         <translation>Rusça</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="83"/>
+        <location filename="../settings.py" line="86"/>
         <source>Slovak</source>
         <translation>Slovakça</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="84"/>
+        <location filename="../settings.py" line="87"/>
         <source>Swedish</source>
         <translation>İsveççe</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="85"/>
+        <location filename="../settings.py" line="88"/>
         <source>Turkish</source>
         <translation>Türkçe</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="86"/>
+        <location filename="../settings.py" line="89"/>
         <source>Ukrainian</source>
         <translation>Ukraynaca</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="87"/>
+        <location filename="../settings.py" line="90"/>
         <source>Chinese Traditional</source>
         <translation>Geleneksel Çince</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="88"/>
+        <location filename="../settings.py" line="91"/>
         <source>Chinese Simplified</source>
         <translation>Basitleştirilmiş Çince</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="105"/>
+        <location filename="../settings.py" line="109"/>
         <source>Temperature unit</source>
         <translation>Sıcaklık birimi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="135"/>
+        <location filename="../settings.py" line="152"/>
         <source>Update interval</source>
         <translation>Güncelleme sıklığı</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="136"/>
+        <location filename="../settings.py" line="153"/>
         <source>minutes</source>
         <translation>dakika</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="158"/>
+        <location filename="../settings.py" line="176"/>
         <source>Launch at startup</source>
         <translation>Açılışta çalıştır</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="166"/>
+        <location filename="../settings.py" line="184"/>
         <source>Font colour in the tray</source>
         <translation>Sistem tablasındaki yazıtipi rengi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="172"/>
+        <location filename="../settings.py" line="190"/>
         <source>Reset</source>
         <translation>Sıfırla</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="173"/>
+        <location filename="../settings.py" line="191"/>
         <source>Reset font colour to system default</source>
         <translation>Yazıtipi rengini sistem öntanımlısına sıfırla</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="177"/>
+        <location filename="../settings.py" line="195"/>
         <source>Notification on weather update</source>
         <translation>Hava durumu güncellemesinde uyarı</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="303"/>
+        <location filename="../settings.py" line="344"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Yapılandırması</translation>
     </message>
@@ -656,20 +655,21 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="325"/>
+        <location filename="../meteo_qt.py" line="370"/>
         <source>Ozone</source>
-        <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation>Ozon</translation>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="889"/>
+        <location filename="../meteo_qt.py" line="1068"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
-                roughly 300 Dobson Units. What scientists call the Antarctic Ozone “Hole”
-                is an area where the ozone concentration drops to an average of about
-                100 Dobson Units.</source>
+                    roughly 300 Dobson Units. What scientists call the
+                    Antarctic Ozone “Hole” is an area where the ozone
+                    concentration drops to an average of about 100 Dobson
+                    Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
         <translation type="unfinished"/>
     </message>
@@ -698,7 +698,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="273"/>
+        <location filename="../meteo_qt.py" line="295"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Yağış</translation>
@@ -707,7 +707,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Proxy password authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="55"/>
+        <location filename="../proxydlg.py" line="70"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
         <translation>Parola:</translation>
@@ -716,7 +716,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Proxy username authentification</name>
     <message>
-        <location filename="../proxydlg.py" line="51"/>
+        <location filename="../proxydlg.py" line="66"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
         <translation>Kullanıcı ID:</translation>
@@ -803,7 +803,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="210"/>
+        <location filename="../settings.py" line="228"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>tepside yazı boyutu</translation>
@@ -812,26 +812,26 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="185"/>
+        <location filename="../settings.py" line="203"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Sistem tepsisi simgesi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="190"/>
+        <location filename="../settings.py" line="208"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Simge ve sıcaklık</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="193"/>
+        <location filename="../settings.py" line="211"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Simge</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="196"/>
+        <location filename="../settings.py" line="214"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Sıcaklık</translation>
@@ -840,13 +840,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Status bar message</name>
     <message>
-        <location filename="../citylistdlg.py" line="97"/>
+        <location filename="../citylistdlg.py" line="99"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
         <translation>Şehir zaten listede mevcut</translation>
     </message>
     <message>
-        <location filename="../citylistdlg.py" line="108"/>
+        <location filename="../citylistdlg.py" line="110"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
         <translation type="unfinished"/>
@@ -864,7 +864,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1483"/>
+        <location filename="../meteo_qt.py" line="1720"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Dil ayarını uygulamak için uygulama yeniden başlatılmalıdır</translation>
     </message>
@@ -872,72 +872,72 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="86"/>
+        <location filename="../meteo_qt.py" line="90"/>
         <source>Cities</source>
         <translation>Şehirler</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="99"/>
+        <location filename="../meteo_qt.py" line="103"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Geçici şehir</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="100"/>
+        <location filename="../meteo_qt.py" line="104"/>
         <source>&amp;Update</source>
         <translation>&amp;Güncelle</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="101"/>
+        <location filename="../meteo_qt.py" line="105"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ayarlar</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="102"/>
+        <location filename="../meteo_qt.py" line="106"/>
         <source>&amp;About</source>
         <translation>&amp;Hakkında</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="103"/>
+        <location filename="../meteo_qt.py" line="107"/>
         <source>Exit</source>
         <translation>Çıkış</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="125"/>
+        <location filename="../meteo_qt.py" line="129"/>
         <source>Searching weather data...</source>
         <translation>Hava durumu verisi aranıyor...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1106"/>
+        <location filename="../meteo_qt.py" line="1308"/>
         <source>Empty list</source>
         <translation>Listeyi boşalt</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1113"/>
+        <location filename="../meteo_qt.py" line="1318"/>
         <source>Fetching weather data ...</source>
         <translation>Hava durumu verisi getiriliyor...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1124"/>
+        <location filename="../meteo_qt.py" line="1329"/>
         <source>No city configured</source>
         <translation>Herhangi bir şehir yapılandırılmamış</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1141"/>
+        <location filename="../meteo_qt.py" line="1346"/>
         <source>No city has been configured yet.</source>
         <translation>Henüz herhangi bir şehir yapılandırılmamış</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1141"/>
+        <location filename="../meteo_qt.py" line="1346"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Simge üzerinde sağ tıklayın ve ayarlara tıklayın.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1530"/>
+        <location filename="../meteo_qt.py" line="1774"/>
         <source>Fetching weather data...</source>
         <translation>Hava durumu verisi getiriliyor...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1538"/>
+        <location filename="../meteo_qt.py" line="1782"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -946,131 +946,117 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             &lt;br/&gt;{4} üzerinde Python {1} - Qt {2} - PyQt {3}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1547"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;A simple application showing the weather status
-                        information on the system tray.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;This software uses icons from the
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;To translate meteo-qt in your language or contribute to
-                        current translations, you can use the
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        Transifex&lt;/a&gt; platform.
-                        &lt;p&gt;If you want to report a dysfunction or a suggestion,
-                        feel free to open an issue in &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Yazar: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Sistem tablasında hava durumunu gösteren
-                        basit bir uygulama.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Veri kaynağı: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;Bu yazılım şu adresteki simgeleri kullanmaktadır:
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;Meteo-qt&apos; yi dilinize çevirmek veya mevcut çevirilere
-                        katkıda bulunmak için
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        Transifex&lt;/a&gt; platformunu kullanabilirsiniz.
-                        &lt;p&gt;Bir sorun bildirmek veya öneride bulunmak istiyorsanız
-                        &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt; üzerinde bir hata kaydı
-                        açabilirsiniz.</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="156"/>
+        <location filename="../meteo_qt.py" line="160"/>
         <source>Mon</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="157"/>
+        <location filename="../meteo_qt.py" line="161"/>
         <source>Tue</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="158"/>
+        <location filename="../meteo_qt.py" line="162"/>
         <source>Wed</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="159"/>
+        <location filename="../meteo_qt.py" line="163"/>
         <source>Thu</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="160"/>
+        <location filename="../meteo_qt.py" line="164"/>
         <source>Fri</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="161"/>
+        <location filename="../meteo_qt.py" line="165"/>
         <source>Sat</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="162"/>
+        <location filename="../meteo_qt.py" line="166"/>
         <source>Sun</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="214"/>
+        <location filename="../meteo_qt.py" line="227"/>
         <source>Wind</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="247"/>
+        <location filename="../meteo_qt.py" line="265"/>
         <source>Cloudiness</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="252"/>
+        <location filename="../meteo_qt.py" line="272"/>
         <source>Pressure</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="266"/>
+        <location filename="../meteo_qt.py" line="287"/>
         <source>Humidity</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="296"/>
+        <location filename="../meteo_qt.py" line="323"/>
         <source>Sunrise</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="298"/>
+        <location filename="../meteo_qt.py" line="326"/>
         <source>Sunset</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="375"/>
+        <location filename="../meteo_qt.py" line="425"/>
         <source>Weather status</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="681"/>
+        <location filename="../meteo_qt.py" line="775"/>
         <source>Min Max Temperature of the day</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="841"/>
+        <location filename="../meteo_qt.py" line="1009"/>
         <source>snow</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="842"/>
+        <location filename="../meteo_qt.py" line="1010"/>
         <source>rain</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="1791"/>
+        <source>&lt;p&gt;Author: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;A simple application showing the weather status
+            information on the system tray.
+            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;This software uses icons from the
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+            &lt;p&gt;To translate meteo-qt in your language or contribute to
+            current translations, you can use the
+            &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+            Transifex&lt;/a&gt; platform.
+            &lt;p&gt;If you want to report a dysfunction or a suggestion,
+            feel free to open an issue in
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="242"/>
+        <location filename="../settings.py" line="275"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>OpenWeatherMap anahtarı</translation>
@@ -1088,7 +1074,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="90"/>
+        <location filename="../meteo_qt.py" line="94"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Pencereyi Aç / Kapat</translation>
@@ -1097,7 +1083,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1206"/>
+        <location filename="../meteo_qt.py" line="1414"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hava durumu bilgisi aranıyor...</translation>
@@ -1134,16 +1120,15 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="313"/>
+        <location filename="../meteo_qt.py" line="348"/>
         <source>UV</source>
-        <comment>Label in weather info dialogue&lt;<byte value="x8"/>&gt;&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation>UV</translation>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="318"/>
+        <location filename="../meteo_qt.py" line="357"/>
         <source>Fetching...</source>
-        <comment>&lt;<byte value="xc"/>ont&gt;</comment>
-        <translation>Getiriliyor...</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1159,7 +1144,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="298"/>
+        <location filename="../settings.py" line="338"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Bir şehir ekleyin</translation>
@@ -1168,7 +1153,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="293"/>
+        <location filename="../settings.py" line="333"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Lütfen OpenWeatherMap anahtarınızı girin</translation>
@@ -1177,7 +1162,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message in dialog status bar</name>
     <message>
-        <location filename="../citytranslate.py" line="51"/>
+        <location filename="../citytranslate.py" line="55"/>
         <source>The city allready exist</source>
         <comment>City translation</comment>
         <translation>Şehir zaten var</translation>
@@ -1704,7 +1689,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Wind unit - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="114"/>
+        <location filename="../settings.py" line="118"/>
         <source>Wind unit in Beaufort</source>
         <comment>Settings dialogue</comment>
         <translation>Beaufort&apos;taki rüzgar ünitesi</translation>
@@ -1713,13 +1698,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Window title</name>
     <message>
-        <location filename="../citylistdlg.py" line="65"/>
+        <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
         <translation>Şehirler</translation>
     </message>
     <message>
-        <location filename="../citytranslate.py" line="37"/>
+        <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
         <translation>Şehir çevirisi</translation>
