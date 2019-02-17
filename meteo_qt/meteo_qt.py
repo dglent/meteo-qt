@@ -17,6 +17,8 @@ from lxml import etree
 import json
 import time
 import datetime
+import traceback
+from io import StringIO
 
 from PyQt5.QtCore import (
     PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication, QByteArray,
@@ -2233,6 +2235,43 @@ def main():
     m = SystemTrayIcon()
     app.exec_()
 
+
+def excepthook(exc_type, exc_value, tracebackobj):
+    """
+    Global function to catch unhandled exceptions.
+
+    Parameters
+    ----------
+    exc_type : str
+        exception type
+    exc_value : int
+        exception value
+    tracebackobj : traceback
+        traceback object
+    """
+    separator = '-' * 80
+
+    now = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S") + ' CRASH:'
+
+    info = StringIO()
+    traceback.print_tb(tracebackobj, None, info)
+    info.seek(0)
+    info = info.read()
+
+    errmsg = '{}\t \n{}'.format(exc_type, exc_value)
+    sections = [now, separator, errmsg, separator, info]
+    msg = '\n'.join(sections)
+
+    print(msg)
+
+    settings = QSettings()
+    logPath = os.path.dirname(settings.fileName())
+    logFile = logPath + '/meteo-qt.log'
+    with open(logFile, 'a') as logfile:
+        logfile.write(msg)
+
+
+sys.excepthook = excepthook
 
 if __name__ == '__main__':
     main()
