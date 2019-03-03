@@ -422,6 +422,12 @@ class SystemTrayIcon(QMainWindow):
         self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(self.settings.value("MainWindow/Geometry",
                                                  QByteArray()))
+        ##  Option to start with the panel closed, true by defaut
+        #   starting with the panel open can be useful for users who don't have plasma
+        #   installed (to set keyboard shortcuts or other default window behaviours)
+        start_minimized = self.settings.value('StartMinimized') or 'True'
+        if start_minimized == 'False':
+            self.showpanel()
 
     def daylight_delta(self, s1, s2):
         FMT = '%H:%M'
@@ -1657,10 +1663,14 @@ class SystemTrayIcon(QMainWindow):
         self.activate(3)
 
     def activate(self, reason):
+        ##  Option to start with the panel closed, true by defaut
+        #   starting with the panel open can be useful for users who don't have plasma
+        #   installed (to set keyboard shortcuts or other default window behaviours)
+        start_minimized = self.settings.value('StartMinimized') or 'True'
         if reason == 3:
             if self.inerror or self.id_ is None or self.id_ == '':
                 return
-            if self.isVisible():
+            if self.isVisible() and start_minimized == 'True':
                 self.hide()
             else:
                 self.show()

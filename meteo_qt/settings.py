@@ -290,6 +290,20 @@ class MeteoSettings(QDialog):
         self.owmkey_text = QLineEdit()
         self.owmkey_text.setText(apikey)
         self.owmkey_text.textChanged.connect(self.apikey_changed)
+
+        self.start_minimized_label = QLabel(
+            QCoreApplication.translate(
+                'Checkable option to show or not the window at startup',
+                'Start minimized',
+                'Settings dialogue'
+            )
+        )
+        self.start_minimized_chbx = QCheckBox()
+        start_minimized_bool = self.settings.value('StartMinimized') or 'True'
+        self.start_minimized_bool = eval(start_minimized_bool)
+        self.start_minimized_chbx.setChecked(self.start_minimized_bool)
+        self.start_minimized_chbx.stateChanged.connect(self.start_minimized)
+
         # ----------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
@@ -323,6 +337,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.owmkey_label, 11, 0)
         self.panel.addWidget(self.owmkey_text, 11, 1)
         self.panel.addWidget(self.owmkey_create, 11, 2)
+        self.panel.addWidget(self.start_minimized_label, 12, 0)
+        self.panel.addWidget(self.start_minimized_chbx, 12, 1)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -513,6 +529,18 @@ class MeteoSettings(QDialog):
             bold = 'False'
         self.settings.setValue('Bold', str(bold))
 
+    def start_minimized(self, state):
+        self.start_minimized_state = state
+        self.start_minimized_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def start_minimized_apply(self):
+        if self.start_minimized_state == 2:
+            start_minimized = 'True'
+        else:
+            start_minimized = 'False'
+        self.settings.setValue('StartMinimized', start_minimized)
+
     def beaufort(self, state):
         self.bft_state = state
         self.bft_changed = True
@@ -630,6 +658,8 @@ class MeteoSettings(QDialog):
             self.bold_apply()
         if self.bft_changed:
             self.beaufort_apply()
+        if self.start_minimized_changed:
+            self.start_minimized_apply()
         proxy_url = self.settings.value('Proxy_url') or ''
         if proxy_url == '':
             self.proxy_bool = False
