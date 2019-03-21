@@ -303,6 +303,7 @@ class MeteoSettings(QDialog):
         self.start_minimized_bool = eval(start_minimized_bool)
         self.start_minimized_chbx.setChecked(self.start_minimized_bool)
         self.start_minimized_chbx.stateChanged.connect(self.start_minimized)
+        self.start_minimized_changed = False
 
         # ----------
         self.panel = QGridLayout()
