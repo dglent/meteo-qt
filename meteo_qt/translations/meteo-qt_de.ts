@@ -236,7 +236,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation type="unfinished"/>
+        <translation>Überse&amp;tzen</translation>
     </message>
 </context>
 <context>
@@ -661,7 +661,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="370"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Ozon</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -852,7 +852,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../citylistdlg.py" line="110"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Wechsel zwischen den Städten mit dem Mausrad auf dem Wetterfenster</translation>
     </message>
 </context>
 <context>
@@ -861,7 +861,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="95"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Klicke auf &quot;Finde meinen Standort&quot; für eine automatische Ortung</translation>
     </message>
 </context>
 <context>
@@ -932,7 +932,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../meteo_qt.py" line="1346"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Mit der rechten Maustaste auf das Symbol klicken und Einstellungen wählen.</translation>
+        <translation>Klicke mit der rechten Maustaste auf das Symbol und wähle Einstellungen.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1774"/>
@@ -1053,7 +1053,24 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Eine einfache Anwendung um die Wetterinformationen
+            im Benachrichtigungsfeld anzuzeigen.
+            &lt;p&gt;Webseite: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Diese Software verwendet Symbole vom
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+            &lt;p&gt;Um meteo-qt in Ihre Sprache zu übersetzen oder bei den
+            aktuellen Übersetzungen mitzuwirken, können Sie die
+            &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+            Transifex&lt;/a&gt; Plattform verwenden.
+            &lt;p&gt;Falls Sie eine Fehlfunktion oder eine Anregung melden 
+            möchten, können Sie einen Eintrag in
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt; öffnen.</translation>
     </message>
 </context>
 <context>
@@ -1126,12 +1143,12 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="348"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>UV</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="357"/>
         <source>Fetching...</source>
-        <translation type="unfinished"/>
+        <translation>Rufe ab...</translation>
     </message>
 </context>
 <context>
