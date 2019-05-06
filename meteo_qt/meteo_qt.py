@@ -1861,6 +1861,10 @@ class Download(QThread):
             'Fetching url for 6 days :' + self.forecast6_url
             + self.id_ + self.suffix + '&cnt=7'
         )
+        reqforecast6 = (
+            self.forecast6_url + self.id_
+            + self.suffix + '&cnt=7'
+        )
         try:
             reqforecast6 = urllib.request.urlopen(
                 self.forecast6_url + self.id_
