@@ -676,7 +676,7 @@ class SystemTrayIcon(QMainWindow):
                     self.conditions[self.forecast6_data[4][d][0].get('number')]
                 )
             except:
-                logging.warn(
+                logging.warning(
                     'Cannot find localisation string for :'
                     + weather_cond
                 )
@@ -791,7 +791,7 @@ class SystemTrayIcon(QMainWindow):
                     ]
                 )
             except:
-                logging.warn(
+                logging.warning(
                     'Cannot find localisation string for :'
                     + weather_cond
                 )
@@ -900,7 +900,7 @@ class SystemTrayIcon(QMainWindow):
             if fetched_file_periods < periods:
                 # Some times server sends less data
                 periods = fetched_file_periods
-                logging.warn(
+                logging.warning(
                     'Reduce forecast of the day to {0}'.format(periods - 1)
                 )
         for d in range(start, periods):
@@ -933,7 +933,7 @@ class SystemTrayIcon(QMainWindow):
                     )
                     wind += wind_name_translated
                 except KeyError:
-                    logging.warn('Cannot find wind name :' + str(wind_name))
+                    logging.warning('Cannot find wind name :' + str(wind_name))
                     logging.info('Set wind name to None')
                     wind = ''
                 finally:
@@ -1016,7 +1016,7 @@ class SystemTrayIcon(QMainWindow):
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
-                logging.warn(
+                logging.warning(
                     'Wind direction code is missing: '
                     + str(winddircode)
                 )
@@ -1027,12 +1027,12 @@ class SystemTrayIcon(QMainWindow):
                         self.conditions[self.clouds_name_dic[clouds.lower()]]
                     )
                 except KeyError:
-                    logging.warn(
+                    logging.warning(
                         'The clouding description in json is not relevant'
                     )
                     clouds_translated = ''
             else:
-                logging.warn('Clouding name is missing: ' + str(clouds))
+                logging.warning('Clouding name is missing: ' + str(clouds))
             clouds_cond = clouds_translated + ' ' + str(cloudspercent) + '%'
             ttip = ttip + wind + clouds_cond
             daytime.setToolTip(ttip)
@@ -1956,7 +1956,7 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn('Error: ' + str(error))
+                logging.warning('Error: ' + str(error))
                 logging.info('Try again...' + str(self.tentatives))
                 self.run()
         except timeout:
@@ -1967,7 +1967,7 @@ class Download(QThread):
                 return
             else:
                 self.tentatives += 1
-                logging.warn(
+                logging.warning(
                     '5 secondes timeout, new tentative: '
                     + str(self.tentatives)
                 )
