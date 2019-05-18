@@ -327,7 +327,7 @@ class WorkThread(QThread):
                 + self.suffix
             )
             logging.debug(
-                'City before utf8 encode :' + self.accurate_url
+                'City before utf8 encode: ' + self.accurate_url
                 + self.city + self.suffix
             )
             req = urllib.request.urlopen(

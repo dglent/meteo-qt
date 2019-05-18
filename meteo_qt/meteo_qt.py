@@ -677,7 +677,7 @@ class SystemTrayIcon(QMainWindow):
                 )
             except:
                 logging.warning(
-                    'Cannot find localisation string for :'
+                    'Cannot find localisation string for: '
                     + weather_cond
                 )
                 pass
@@ -792,7 +792,7 @@ class SystemTrayIcon(QMainWindow):
                 )
             except:
                 logging.warning(
-                    'Cannot find localisation string for :'
+                    'Cannot find localisation string for: '
                     + weather_cond
                 )
                 pass
@@ -933,7 +933,7 @@ class SystemTrayIcon(QMainWindow):
                     )
                     wind += wind_name_translated
                 except KeyError:
-                    logging.warning('Cannot find wind name :' + str(wind_name))
+                    logging.warning('Cannot find wind name: ' + str(wind_name))
                     logging.info('Set wind name to None')
                     wind = ''
                 finally:
@@ -1178,7 +1178,7 @@ class SystemTrayIcon(QMainWindow):
             or self.download_thread.isRunning()
         ):
             logging.debug(
-                'WheelEvent : Downloading icons - remaining thread...'
+                'WheelEvent: Downloading icons - remaining thread...'
             )
             return
         self.icon_city_loading()
@@ -1231,8 +1231,8 @@ class SystemTrayIcon(QMainWindow):
             )
         except:
             logging.debug(
-                'Cities menu : firsttime run,'
-                'if clic cancel in settings without any city configured'
+                'Cities menu: firsttime run,'
+                'if clicked cancel in settings without any city configured'
             )
             pass
         # Prevent duplicate entries
@@ -1314,7 +1314,7 @@ class SystemTrayIcon(QMainWindow):
             self.icon_city_loading()
         self.inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
-        self.systray.setToolTip(self.tr('Fetching weather data ...'))
+        self.systray.setToolTip(self.tr('Fetching weather data...'))
         self.city = self.settings.value('City') or ''
         self.id_ = self.settings.value('ID') or None
         if self.id_ is None:
@@ -1387,7 +1387,7 @@ class SystemTrayIcon(QMainWindow):
             self.inerror = False
         elif done == 1:
             self.inerror = True
-            logging.debug('Trying to retrieve data ...')
+            logging.debug('Trying to retrieve data...')
             self.timer.singleShot(10000, self.try_again)
             return
         if hasattr(self, 'updateicon'):
@@ -1858,7 +1858,7 @@ class Download(QThread):
         done = 0
 
         logging.debug(
-            'Fetching url for 6 days :' + self.forecast6_url
+            'Fetching url for 6 days: ' + self.forecast6_url
             + self.id_ + self.suffix + '&cnt=7'
         )
         reqforecast6 = (
@@ -1879,8 +1879,8 @@ class Download(QThread):
             urllib.error.HTTPError, urllib.error.URLError, etree.XMLSyntaxError, TypeError
         ) as e:
             forcast6days = False
-            logging.error(' Url of 6 days forcast not available : ' + str(reqforecast6))
-            logging.error('6 days forcast not available : ' + str(e))
+            logging.error('Url of 6 days forcast not available: ' + str(reqforecast6))
+            logging.error('6 days forcast not available: ' + str(e))
 
         try:
             logging.debug(
@@ -1902,7 +1902,7 @@ class Download(QThread):
             elif self.html404(pagedayforecast, 'day_forecast'):
                 # Try with json
                 logging.debug(
-                    'Fetching json url for forecast of the day :'
+                    'Fetching json url for forecast of the day: '
                     + self.day_forecast_url + self.id_
                     + self.suffix.replace('xml', 'json')
                 )
@@ -1945,7 +1945,7 @@ class Download(QThread):
                 done = 1
                 try:
                     m_error = (
-                        self.tr('Error :\n') + str(error.code)
+                        self.tr('Error:\n') + str(error.code)
                         + ' ' + str(error.reason)
                     )
                 except:
@@ -2250,7 +2250,7 @@ def main():
     loggerStream = logging.getLogger()
     handlerStream = logging.StreamHandler()
     loggerStreamFormatter = logging.Formatter(
-        '%(levelname)s: %(message)s - %(lineno)s :%(module)s'
+        '%(levelname)s: %(message)s - %(lineno)s: %(module)s'
     )
     handlerStream.setFormatter(loggerStreamFormatter)
     loggerStream.addHandler(handlerStream)
