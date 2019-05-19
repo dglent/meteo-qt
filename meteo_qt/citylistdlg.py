@@ -127,7 +127,7 @@ class CityListDlg(QDialog):
                 QCoreApplication.translate(
                     'Message when trying to remove the'
                     'last and unique city in the list',
-                    'This is the default city !',
+                    'This is the default city!',
                     'Cities list dialogue'
                 )
             )
