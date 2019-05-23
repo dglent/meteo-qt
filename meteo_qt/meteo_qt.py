@@ -247,6 +247,9 @@ class SystemTrayIcon(QMainWindow):
         if self.bft_bool is True:
             wind_speed = windTobeaufort
             unit_system_wind = ' Bft. '
+        else:
+            unit_system_wind = self.unit_system_wind
+
         try:
             windLabelDescr = QLabel(
                 '<font color=>' + self.weatherDataDico['Wind'][4]
