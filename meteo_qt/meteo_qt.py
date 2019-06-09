@@ -167,15 +167,8 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def overviewcity(self):
-        # temp_trend = ''
-        # if self.temp_trend == " ↗":
-        #     temp_trend = " "
-        # elif self.temp_trend == " ↘":
-        #     temp_trend = ""
         self.overviewcitydlg = QDialog()
         self.setCentralWidget(self.overviewcitydlg)
-
-
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
         self.icon_list = []
@@ -401,6 +394,8 @@ class SystemTrayIcon(QMainWindow):
         self.over_grid.addWidget(sunset_value, 6, 1)
         self.over_grid.addWidget(daylight_label, 7, 0)
         self.over_grid.addWidget(daylight_value_label, 7, 1)
+        self.over_grid.addWidget(self.uv_label, 8, 0)
+        self.over_grid.addWidget(self.uv_value_label, 8, 1)
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -537,8 +532,15 @@ class SystemTrayIcon(QMainWindow):
                 return 12
 
     def wind_icon_direction(self):
-        transf = QTransform()
         angle = self.weatherDataDico['Wind'][2]
+        if angle == '':
+            if self.wind_icon_label.isVisible is True:
+                self.wind_icon_label.hide()
+            return
+        else:
+            if self.wind_icon_label.isVisible is False:
+                self.wind_icon_label.show()
+        transf = QTransform()
         logging.debug('Wind degrees direction: ' + angle)
         transf.rotate(int(float(angle)))
         rotated = self.wind_icon.transformed(
@@ -1111,9 +1113,12 @@ class SystemTrayIcon(QMainWindow):
             self.uv_value_label.setText('<font color=>' + uv_gauge + '</font>')
         logging.debug('UV gauge ◼: ' + uv_gauge)
         self.uv_value_label.setToolTip(self.uv_recommend[uv_color[1]])
-        if uv_gauge != '-':
-            self.over_grid.addWidget(self.uv_label, 8, 0)
-            self.over_grid.addWidget(self.uv_value_label, 8, 1)
+        if uv_gauge == '-':
+            self.uv_label.hide()
+            self.uv_value_label.hide()
+        else:
+            self.uv_label.show()
+            self.uv_value_label.show()
 
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
@@ -1471,22 +1476,32 @@ class SystemTrayIcon(QMainWindow):
             wind_codes = tree[4][1].get('code')
             wind_dir_value = tree[4][1].get('value')
             wind_dir = tree[4][1].get('name')
+
+        try:
+            wind_dir_value = str(int(float(wind_dir_value)))
+        except TypeError:
+            wind_dir_value = ''
+
         try:
             wind_codes = self.wind_codes[wind_codes]
-        except:
+        except KeyError:
             logging.debug(
                 'Cannot find localisation string for wind_codes:'
                 + str(wind_codes)
             )
-            pass
+            if wind_codes is None:
+                wind_codes = ''
+
         try:
             wind_dir = self.wind_dir[tree[4][2].get('code')]
-        except:
+        except KeyError:
             logging.debug(
                 'Cannot find localisation string for wind_dir:'
                 + str(wind_dir)
             )
-            pass
+            if wind_dir is None:
+                wind_dir = ''
+
         self.city_weather_info = (
             self.city + ' ' + self.country + ' '
             + self.temp_decimal + ' ' + self.meteo
@@ -1500,9 +1515,14 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Meteo'] = self.meteo
         self.weatherDataDico['Humidity'] = (tree[2].get('value'),
                                             tree[2].get('unit'))
+
         self.weatherDataDico['Wind'] = (
-            tree[4][0].get('value'), wind, str(int(float(wind_dir_value))),
-            wind_codes, wind_dir)
+            tree[4][0].get('value'),
+            wind,
+            wind_dir_value,
+            wind_codes,
+            wind_dir
+        )
         self.weatherDataDico['Clouds'] = (clouds_percent + ' ' + clouds)
         self.weatherDataDico['Pressure'] = (tree[3].get('value'),
                                             tree[3].get('unit'))
@@ -1879,7 +1899,11 @@ class Download(QThread):
             treeforecast6 = etree.fromstring(pageforecast6)
             forcast6days = True
         except (
-            urllib.error.HTTPError, urllib.error.URLError, etree.XMLSyntaxError, TypeError
+                timeout,
+                urllib.error.HTTPError,
+                urllib.error.URLError,
+                etree.XMLSyntaxError,
+                TypeError
         ) as e:
             forcast6days = False
             logging.error('Url of 6 days forcast not available: ' + str(reqforecast6))
@@ -1942,7 +1966,10 @@ class Download(QThread):
             self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
             self.done.emit(int(done))
         except (
-            urllib.error.HTTPError, urllib.error.URLError, TypeError
+                ConnectionResetError,
+                urllib.error.HTTPError,
+                urllib.error.URLError,
+                TypeError
         ) as error:
             if self.tentatives >= 10:
                 done = 1
