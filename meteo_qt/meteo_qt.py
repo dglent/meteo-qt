@@ -281,11 +281,11 @@ class SystemTrayIcon(QMainWindow):
             '<font size="3" color=><b>' + self.tr('Pressure') + '<\b><\font>'
         )
         if self.hPaTrend == 0:
-            hpa = ""
+            hpa = "→"
         elif self.hPaTrend < 0:
-            hpa = ""
+            hpa = "↘"
         elif self.hPaTrend > 0:
-            hpa = ""
+            hpa = "↗"
         pressure_value = QLabel(
             '<font color=>' + str(float(self.weatherDataDico['Pressure'][0]))
             + ' ' + self.weatherDataDico['Pressure'][1] + " " + hpa + '<\font>'
