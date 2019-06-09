@@ -167,11 +167,11 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def overviewcity(self):
-        temp_trend = ''
-        if self.temp_trend == " ↗":
-            temp_trend = " "
-        elif self.temp_trend == " ↘":
-            temp_trend = ""
+        # temp_trend = ''
+        # if self.temp_trend == " ↗":
+        #     temp_trend = " "
+        # elif self.temp_trend == " ↘":
+        #     temp_trend = ""
         self.overviewcitydlg = QDialog()
         self.setCentralWidget(self.overviewcitydlg)
 
@@ -213,7 +213,7 @@ class SystemTrayIcon(QMainWindow):
         temp_label = QLabel(
             '<font size="5"><b>' + '{0:.1f}'
             .format(float(self.weatherDataDico['Temp'][:-1])) + ' '
-            + self.unit_temp + temp_trend + '<\b><\font>'
+            + self.unit_temp + self.temp_trend + '<\b><\font>'
         )
         icontemp_layout.addWidget(temp_label)
         over_layout.addLayout(icontemp_layout)
