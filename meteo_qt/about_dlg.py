@@ -102,7 +102,8 @@ class AboutDialog(QDialog):
                 '',
                 '<p>werthad <a href="mailto:werthad@gmail.com">'
                 'werthad@gmail.com</a>'
-                '<br/> [hu] Hungarian translation', ''
+                '<br/> [hu] Hungarian translation',
+                ''
             )
             + QCoreApplication.translate(
                 '',
@@ -129,7 +130,8 @@ class AboutDialog(QDialog):
                 '<a href="mailto:rw4lll@yandex.ru">rw4lll@yandex.ru</a>'
                 '<br/>Alexey Zakaldaev '
                 '<a href="mailto:nelex111@gmail.com">nelex111@gmail.com</a>'
-                '<br/>Liliya Panova<br/> [ru] Russian translation', ''
+                '<br/>Liliya Panova<br/> [ru] Russian translation',
+                ''
             )
             + QCoreApplication.translate(
                 '',
@@ -144,20 +146,28 @@ class AboutDialog(QDialog):
                 '<p>Atilla Öntaş '
                 '<a href="mailto:tarakbumba@gmail.com">'
                 'tarakbumba@gmail.com</a>'
-                '<br/> [tr] Turkish translation', ''
+                '<br/> [tr] Turkish translation',
+                ''
             )
             + QCoreApplication.translate(
                 '',
                 '<p>Yuri Chornoivan '
                 '<a href="mailto:yurchor@ukr.net">yurchor@ukr.net</a>'
-                '<br/> [uk] Ukrainian translation', ''
+                '<br/> [uk] Ukrainian translation',
+                ''
             )
             + QCoreApplication.translate(
                 '',
                 '<p>You-Cheng Hsieh '
                 '<a href="mailto:yochenhsieh@gmail.com">'
                 'yochenhsieh@gmail.com</a>'
-                '<br/> [zh_TW] Chinese (Taiwan) translation', ''
+                '<br/> [zh_TW] Chinese (Taiwan) translation',
+                ''
             )
-            + QCoreApplication.translate('', '<p>pmav99<br/> Project', ''))
+            + QCoreApplication.translate(
+                '',
+                '<p>pmav99<br/> Project',
+                ''
+            )
+        )
         return contributors
