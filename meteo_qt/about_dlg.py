@@ -133,6 +133,14 @@ class AboutDialog(QDialog):
             )
             + QCoreApplication.translate(
                 '',
+                '<p>jose1711 '
+                '<a href="mailto:jose1711@gmail.com">'
+                'jose1711@gmail.com</a>'
+                '<br> [sk] Slovak translation, Project',
+                ''
+            )
+            + QCoreApplication.translate(
+                '',
                 '<p>Atilla Öntaş '
                 '<a href="mailto:tarakbumba@gmail.com">'
                 'tarakbumba@gmail.com</a>'
