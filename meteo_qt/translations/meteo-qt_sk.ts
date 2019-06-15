@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sk">
+<!DOCTYPE TS><TS version="2.0" language="sk" sourcelanguage="">
 <context>
     <name></name>
     <message>
@@ -8,10 +7,10 @@
         <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
         <translation>Pavel Fric&lt;br/&gt; [cs] Preklad do češtiny</translation>
     </message>
-    <message>
+    <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="obsolete">&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Preklad do nemčiny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
@@ -33,20 +32,20 @@
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny</translation>
     </message>
-    <message>
+    <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="obsolete">&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny, Projekt</translation>
+        <translation type="unfinished"></translation>
     </message>
-    <message>
+    <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przyby? &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation type="obsolete">&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Preklad do poľštiny</translation>
+        <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Preklad do poľštiny</translation>
     </message>
-    <message>
+    <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Atilla Önta? &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation type="obsolete">&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Preklad do turečtiny</translation>
+        <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Preklad do turečtiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
@@ -85,13 +84,8 @@
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Preklad do poľštiny</translation>
-    </message>
-    <message>
-        <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Preklad do turečtiny</translation>
+        <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -329,7 +323,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="339"/>
+        <location filename="../meteo_qt.py" line="335"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denné svetlo</translation>
@@ -338,7 +332,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1058"/>
+        <location filename="../meteo_qt.py" line="1063"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DJ</translation>
@@ -347,14 +341,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
-        <source>Error :
-</source>
-        <translation type="obsolete">Chyba :
-</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1947"/>
+        <location filename="../meteo_qt.py" line="1977"/>
         <source>Error:
 </source>
         <translation>Chyba:
@@ -471,12 +458,6 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 </context>
 <context>
     <name>Message when trying to remove thelast and unique city in the list</name>
-    <message>
-        <location filename="../citylistdlg.py" line="130"/>
-        <source>This is the default city !</source>
-        <comment>Cities list dialogue</comment>
-        <translation type="obsolete">Toto je východzie mesto !</translation>
-    </message>
     <message>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
@@ -706,27 +687,16 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="373"/>
+        <location filename="../meteo_qt.py" line="369"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozón</translation>
     </message>
 </context>
-<context>
+<context encoding="UTF-8">
     <name>Ozone value tooltip</name>
-    <message>
-        <location filename="../meteo_qt.py" line="1068"/>
-        <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
-                    roughly 300 Dobson Units. What scientists call the
-                    Antarctic Ozone ?Hole? is an area where the ozone
-                    concentration drops to an average of about 100 Dobson
-                    Units.</source>
-        <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="obsolete">Priemerné množstvo ozónu&lt;br/&gt;
-v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarktickou ozónovou &quot;dierou&quot; je miesto, kde koncentrácia ozónu klesá v priemere ku 100 Dobsonovým jednotkám.</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1069"/>
+    <message encoding="UTF-8">
+        <location filename="../meteo_qt.py" line="1074"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -761,7 +731,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="300"/>
+        <location filename="../meteo_qt.py" line="296"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Zrážky</translation>
@@ -927,7 +897,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1711"/>
+        <location filename="../meteo_qt.py" line="1734"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Pre aplikovanie jazykového nastavenia je potrebné reštartovať aplikáciu</translation>
     </message>
@@ -970,37 +940,32 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <translation>Vyhľadávam údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1307"/>
+        <location filename="../meteo_qt.py" line="1315"/>
         <source>Empty list</source>
         <translation>Prázdny zoznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1318"/>
-        <source>Fetching weather data ...</source>
-        <translation type="obsolete">Sťahujem údaje o počasí ...</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1326"/>
+        <location filename="../meteo_qt.py" line="1334"/>
         <source>No city configured</source>
         <translation>Nebolo nastavené žiadne mesto</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1341"/>
+        <location filename="../meteo_qt.py" line="1349"/>
         <source>No city has been configured yet.</source>
         <translation>Nebolo ešte nastavené žiadne mesto.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1341"/>
+        <location filename="../meteo_qt.py" line="1349"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Kliknite pravým tlačidlom na ikonu a vyberte Nastavenia.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1763"/>
+        <location filename="../meteo_qt.py" line="1786"/>
         <source>Fetching weather data...</source>
         <translation>Sťahujem údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1771"/>
+        <location filename="../meteo_qt.py" line="1794"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1044,57 +1009,57 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <translation>Ned</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="232"/>
+        <location filename="../meteo_qt.py" line="225"/>
         <source>Wind</source>
         <translation>Vietor</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="270"/>
+        <location filename="../meteo_qt.py" line="266"/>
         <source>Cloudiness</source>
         <translation>Oblačnosť</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="277"/>
+        <location filename="../meteo_qt.py" line="273"/>
         <source>Pressure</source>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="292"/>
+        <location filename="../meteo_qt.py" line="288"/>
         <source>Humidity</source>
         <translation>Vlhkosť</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="327"/>
+        <location filename="../meteo_qt.py" line="323"/>
         <source>Sunrise</source>
         <translation>Východ slnka</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="330"/>
+        <location filename="../meteo_qt.py" line="326"/>
         <source>Sunset</source>
         <translation>Západ slnka</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="428"/>
+        <location filename="../meteo_qt.py" line="426"/>
         <source>Weather status</source>
         <translation>Stav počasia</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="782"/>
+        <location filename="../meteo_qt.py" line="787"/>
         <source>Min Max Temperature of the day</source>
         <translation>Najnižšia/Najvyššia teplota dňa</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1011"/>
+        <location filename="../meteo_qt.py" line="1016"/>
         <source>snow</source>
         <translation>sneh</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1012"/>
+        <location filename="../meteo_qt.py" line="1017"/>
         <source>rain</source>
         <translation>dážď</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1780"/>
+        <location filename="../meteo_qt.py" line="1803"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1163,7 +1128,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1409"/>
+        <location filename="../meteo_qt.py" line="1417"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Vyhľadávam údaje o počasí...</translation>
@@ -1200,13 +1165,13 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="352"/>
+        <location filename="../meteo_qt.py" line="348"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV žiarenie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="361"/>
+        <location filename="../meteo_qt.py" line="357"/>
         <source>Fetching...</source>
         <translation>Sťahujem...</translation>
     </message>
