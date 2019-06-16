@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.0">
 <context>
-    <name></name>
+    <name/>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
@@ -15,7 +14,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] переклад німецькою, проект</translation>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] переклад німецькою, проєкт</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
@@ -35,7 +34,7 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] переклад французькою, проект</translation>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] переклад французькою, проєкт</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
@@ -60,7 +59,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation>&lt;p&gt;pmav99&lt;br/&gt; проект</translation>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; проєкт</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
@@ -85,7 +84,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Переклад словацькою, проєкт</translation>
     </message>
 </context>
 <context>
@@ -264,7 +263,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="294"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Запускати мінімізованим</translation>
     </message>
 </context>
 <context>
@@ -341,17 +340,11 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
-        <source>Error :
-</source>
-        <translation type="obsolete">Помилка:
-</translation>
-    </message>
-    <message>
         <location filename="../meteo_qt.py" line="1977"/>
         <source>Error:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка:
+</translation>
     </message>
 </context>
 <context>
@@ -464,16 +457,10 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Message when trying to remove thelast and unique city in the list</name>
     <message>
-        <location filename="../citylistdlg.py" line="130"/>
-        <source>This is the default city !</source>
-        <comment>Cities list dialogue</comment>
-        <translation type="obsolete">Це місто є типовим!</translation>
-    </message>
-    <message>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Це типове місто!</translation>
     </message>
 </context>
 <context>
@@ -955,11 +942,6 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Порожній список</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1318"/>
-        <source>Fetching weather data ...</source>
-        <translation type="obsolete">Отримуємо дані щодо погоди…</translation>
-    </message>
-    <message>
         <location filename="../meteo_qt.py" line="1334"/>
         <source>No city configured</source>
         <translation>Міста не вказано</translation>
@@ -1101,7 +1083,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                         &lt;br/&gt;Джерело даних: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         OpenWeatherMap&lt;/a&gt;.
                         &lt;br/&gt;У цій програмі використано піктограми з
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;проекту Oxygen&lt;/a&gt;.
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;проєкту Oxygen&lt;/a&gt;.
                         &lt;p&gt;Якщо ви хочете перекласти meteo-qt вашою мовою або доповнити наявний переклад, скористайтеся платформою
                         &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
                         Transifex&lt;/a&gt;.

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="el" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
-    <name></name>
+    <name/>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
@@ -85,7 +84,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Σλοβακική μετάφραση, Έργο</translation>
     </message>
 </context>
 <context>
@@ -264,7 +263,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="294"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Εκκίνηση ελαχιστοποιημένο</translation>
     </message>
 </context>
 <context>
@@ -341,17 +340,11 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
-        <source>Error :
-</source>
-        <translation type="obsolete">Σφάλμα:
-</translation>
-    </message>
-    <message>
         <location filename="../meteo_qt.py" line="1977"/>
         <source>Error:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Σφάλμα:
+</translation>
     </message>
 </context>
 <context>
@@ -465,16 +458,10 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Message when trying to remove thelast and unique city in the list</name>
     <message>
-        <location filename="../citylistdlg.py" line="130"/>
-        <source>This is the default city !</source>
-        <comment>Cities list dialogue</comment>
-        <translation type="obsolete">Αυτή είναι η προεπιλεγμένη πόλη!</translation>
-    </message>
-    <message>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή είναι η προεπιλεγμένη πόλη!</translation>
     </message>
 </context>
 <context>
@@ -958,11 +945,6 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1315"/>
         <source>Empty list</source>
         <translation>Κενή λίστα</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1318"/>
-        <source>Fetching weather data ...</source>
-        <translation type="obsolete">Λήψη δεδομένων καιρού...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1334"/>
