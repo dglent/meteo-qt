@@ -993,7 +993,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="154"/>
         <source>Thu</source>
-        <translation>Πεμ</translation>
+        <translation>Πέμ</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="155"/>
@@ -1003,7 +1003,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="156"/>
         <source>Sat</source>
-        <translation>Σαβ</translation>
+        <translation>Σάβ</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="157"/>

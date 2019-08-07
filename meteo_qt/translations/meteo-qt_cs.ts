@@ -84,7 +84,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;JP&lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;spotter@bloguje.cz&lt;/a&gt;&lt;br&gt; [cz] Czech translation, Project</translation>
     </message>
 </context>
 <context>
@@ -123,7 +123,8 @@ Země: Klid. Kouř stoupá svisle vzhůru</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: vznikají zčeřené vlnky, ale bez pěnových hřebenů
+Na zemi: Drift kouře udává směr větru. Listy a větrné lopatky se nehýbají</translation>
     </message>
 </context>
 <context>
@@ -133,7 +134,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Velmi vysoké vlny s převislými hřebeny. Velké skvrny pěny z vlnových hřebenů dávají moři bílý vzhled. Výrazné překlápění vln s velkým dopadem. Velké množství rozprašované vody do vzduchu snižuje viditelnost
+Na zemi: Stromy jsou polámané nebo vytrhané z kořenů, je pravděpodobné strukturální poškození</translation>
     </message>
 </context>
 <context>
@@ -143,7 +145,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Výjimečně vysoké vlny. Velkou část mořského povrchu pokrývají velmi velké pěnové skvrny, poháněné větrem. Velmi velké množství rozprašované vody do vzduchu výrazně snižuje viditelnost
+Na zemi: Pravděpodobně se vyskytují rozsáhlé strukturální škody na vegetaci. </translation>
     </message>
 </context>
 <context>
@@ -153,7 +156,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Obrovské vlny. Moře je zcela bílé s pěnou a vodní tříští. Vzduch je plný vodních kapek, což výrazně snižuje viditelnost
+Na zemi: Silné rozsáhlé poškození vegetace a struktur. Odpadky a nezajištěné objekty jsou poházené kolem</translation>
     </message>
 </context>
 <context>
@@ -163,7 +167,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Malé vlnky, stále ještě krátké, ale výraznější; hřebeny mají sklovitý vzhled a nelámou se
+Na zemi: Na nezakryté kůži je cítit vítr. Listy šustí. Větrné lopatky se začnou pohybovat</translation>
     </message>
 </context>
 <context>
@@ -173,7 +178,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Velké vlny. Hřebeny se začnou rozpadat; rozptýlené bílé vrcholky
+Na zemi: Listy a malé větvičky se neustále pohybují, lehké vlajky se nadouvají</translation>
     </message>
 </context>
 <context>
@@ -183,7 +189,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Malé vlny s lámavými hřebeny. Docela časté bílé vrcholky
+Na zemi: Zvířený prach a poletující papír. Malé větve se začínají pohybovat</translation>
     </message>
 </context>
 <context>
@@ -193,7 +200,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Mírné vlny, některé delší. Mnoho bílých vrcholků. Malé množství vodní tříště
+Na zemi: Větvičky střední velikosti v pohybu. Malé listnaté stromky se začínají hýbat</translation>
     </message>
 </context>
 <context>
@@ -203,7 +211,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Dlouhé vlny se začínají formovat. Velmi časté jsou bílé pěnové hřebeny. Nějaké vodní kapky ve vzduchu
+Na zemi: Velké větve v pohybu. V drátech elektrického napětí  se ozývá pískání. Použití deštníku je obtížné. Prázdné plastové koše se převrhnou</translation>
     </message>
 </context>
 <context>
@@ -213,7 +222,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Moře se houpe. Nějaká pěna od lámání vln je foukána do pruhů ve směru větru. Střední množství rozprašované vody do vzduchu
+Na zemi: Celé stromy v pohybu. Je třeba vynaložit úsilí, abyste šli proti větru</translation>
     </message>
 </context>
 <context>
@@ -223,7 +233,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Středně vysoké vlny s lámavými hřebeny tvořícími vřeteno. Dobře znatelné pruhy pěny jsou vyfukovány ve směru větru- Silná vodní tříšť ve vzduchu.
+Na zemi: Některé větvičky se odlamují ze stromů. Auta jsou na silnici ovlivněná větrem. Pěší chůze je velmi těžká</translation>
     </message>
 </context>
 <context>
@@ -233,7 +244,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Vysoké vlny, jejichž hřebeny se občas převalují. Hustá pěna je foukána ve směru větru. Velké množství rozprašovaného vzduchu může snížit viditelnost
+Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vyvrací. Stavební / provizorní značky a ohrazení padají větrem</translation>
     </message>
 </context>
 <context>
@@ -386,7 +398,12 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation type="unfinished"/>
+        <translation>Pokud barometrický tlak stoupá, počasí se zlepšuje.
+Pokud barometrický tlak klesá, počasí se zhoršuje.
+Nad 1020 hPa je chladná teplota / chladnější teplota a pod touto teplotou jsou teploty nestabilní.
+1010-1020 hPa má sklon k normálním bouřkám.
+990-1010 hPa by bylo silná bouře s možnými hurikány, tornády a tajfuny.
+Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
     </message>
 </context>
 <context>

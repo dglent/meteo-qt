@@ -84,7 +84,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slowakische Übersetzung, Projekt</translation>
     </message>
 </context>
 <context>
@@ -112,7 +112,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Meer wie ein Spiegel
+Land: Windstille. Rauch steigt vertikal</translation>
     </message>
 </context>
 <context>
@@ -688,7 +689,11 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
                     concentration drops to an average of about 100 Dobson
                     Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Die durchschnittliche Stärke der Ozonschicht &lt;br/&gt; in der Atmosphäre liegt 
+bei ca. 300 Dobson-Einheiten (DU für engl. Dobson Units).
+Unter dem sogenannten &quot;Ozonloch&quot; insbesondere über der 
+Antarktis versteht man eine Ausdünnung dieser Schicht 
+auf Werte um 100DU.</translation>
     </message>
 </context>
 <context>
@@ -1721,7 +1726,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="117"/>
         <source>Wind unit in Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation>Windgeschwindigkeit in Beaufort</translation>
+        <translation>Windstärke in Beaufort</translation>
     </message>
 </context>
 <context>
@@ -1736,7 +1741,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Stadtnamen übersetzen</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="88"/>
@@ -1767,7 +1772,8 @@ or modify the name of the city</source>
         <location filename="../searchcity.py" line="357"/>
         <source>
 Try again later</source>
-        <translation>Bitte später noch einmal probieren</translation>
+        <translation>
+Bitte später noch einmal probieren</translation>
     </message>
 </context>
 </TS>
