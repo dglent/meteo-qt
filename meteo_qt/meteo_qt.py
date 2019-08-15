@@ -654,104 +654,141 @@ class SystemTrayIcon(QMainWindow):
             periods = fetched_file_periods
             logging.warning('Reduce forecast for the next 6 days to {0}'.format(
                 periods - 1))
-        for d in range(1, periods):
-            date_list = self.forecast6_data[4][d].get('day').split('-')
-            day_of_week = str(datetime.date(
-                int(date_list[0]), int(date_list[1]),
-                int(date_list[2])).weekday())
-            label = QLabel('' + self.days_dico[day_of_week] + '')
-            label.setToolTip(self.forecast6_data[4][d].get('day'))
-            label.setAlignment(Qt.AlignHCenter)
-            self.forecast_days_layout.addWidget(label)
-            mlabel = QLabel(
-                '<font color=>' + '{0:.0f}'
-                .format(float(self.forecast6_data[4][d][4].get('min')))
-                + '°<br/>' + '{0:.0f}'
-                .format(float(self.forecast6_data[4][d][4].get('max')))
-                + '°</font>'
-            )
-            mlabel.setAlignment(Qt.AlignHCenter)
-            mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
-            self.forecast_minmax_layout.addWidget(mlabel)
-            # icon
-            self.icon_list.append(self.forecast6_data[4][d][0].get('var'))
-            weather_cond = self.forecast6_data[4][d][0].get('name')
-            try:
-                weather_cond = (
-                    self.conditions[self.forecast6_data[4][d][0].get('number')]
+        counter_day = 0
+        forecast_data = False
+
+        for element in self.forecast6_data.iter():
+
+            if element.tag == 'time':
+                forecast_data = True
+            if forecast_data is False:
+                continue
+
+            if element.tag == 'time':
+                counter_day += 1
+                if counter_day == periods:
+                    break
+
+                weather_end = False
+                date_list = element.get('day').split('-')
+                day_of_week = str(datetime.date(
+                    int(date_list[0]), int(date_list[1]),
+                    int(date_list[2])).weekday()
                 )
-            except:
-                logging.warning(
-                    'Cannot find localisation string for: '
-                    + weather_cond
+                label = QLabel('' + self.days_dico[day_of_week] + '')
+                label.setToolTip(element.get('day'))
+                label.setAlignment(Qt.AlignHCenter)
+                self.forecast_days_layout.addWidget(label)
+
+            if element.tag == 'temperature':
+                mlabel = QLabel(
+                    '<font color=>' + '{0:.0f}'
+                    .format(float(element.get('min')))
+                    + '°<br/>' + '{0:.0f}'
+                    .format(float(element.get('max')))
+                    + '°</font>'
                 )
-                pass
-            try:
-                # Take the label translated text and remove the html tags
-                doc.setHtml(self.precipitation_label.text())
-                precipitation_label = doc.toPlainText() + ': '
-                precipitation_type = self.forecast6_data[4][d][1].get('type')
-                precipitation_type = (
-                    self.precipitation[precipitation_type] + ' '
+                mlabel.setAlignment(Qt.AlignHCenter)
+                mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
+                self.forecast_minmax_layout.addWidget(mlabel)
+
+            if element.tag == 'symbol':
+                # icon
+                self.icon_list.append(element.get('var'))
+                weather_cond = element.get('name')
+                try:
+                    weather_cond = (
+                        self.conditions[element.get('number')]
+                    )
+                except KeyError:
+                    logging.warning(
+                        'Cannot find localisation string for: '
+                        + weather_cond
+                    )
+                    pass
+
+            if element.tag == 'precipitation':
+
+                try:
+                    # Take the label translated text and remove the html tags
+                    doc.setHtml(self.precipitation_label.text())
+                    precipitation_label = doc.toPlainText() + ': '
+                    precipitation_type = element.get('type')
+                    precipitation_type = (
+                        self.precipitation[precipitation_type] + ' '
+                    )
+                    precipitation_value = element.get('value')
+                    rain_unit = ' mm'
+                    if self.unit_system == ' mph ':
+                        rain_unit = ' inch'
+                        precipitation_value = (
+                            str(float(precipitation_value) / 25.4) + ' '
+                        )
+                        precipitation_value = (
+                            "{0:.2f}".format(float(precipitation_value))
+                        )
+                    else:
+                        precipitation_value = (
+                            "{0:.1f}".format(float(precipitation_value))
+                        )
+                    weather_cond += (
+                        '\n' + precipitation_label + precipitation_type
+                        + precipitation_value + rain_unit
+                    )
+                except:
+                    pass
+
+            if element.tag == 'windDirection':
+                doc.setHtml(self.wind_label.text())
+                wind = doc.toPlainText() + ': '
+                try:
+                    wind_direction = (
+                        self.wind_direction[element.get('code')]
+                    )
+                except KeyError:
+                    wind_direction = ''
+
+            if element.tag == 'windSpeed':
+                wind_speed = (
+                    '{0:.1f}'.format(float(element.get('mps')))
                 )
-                precipitation_value = self.forecast6_data[4][d][1].get('value')
-                rain_unit = ' mm'
-                if self.unit_system == ' mph ':
-                    rain_unit = ' inch'
-                    precipitation_value = (
-                        str(float(precipitation_value) / 25.4) + ' '
-                    )
-                    precipitation_value = (
-                        "{0:.2f}".format(float(precipitation_value))
-                    )
-                else:
-                    precipitation_value = (
-                        "{0:.1f}".format(float(precipitation_value))
-                    )
+                if self.bft_bool:
+                    wind_speed = str(self.convertToBeaufort(wind_speed))
                 weather_cond += (
-                    '\n' + precipitation_label + precipitation_type
-                    + precipitation_value + rain_unit
+                    '\n'
+                    + wind
+                    + wind_speed
+                    + self.unit_system_wind
+                    + wind_direction
                 )
-            except:
-                pass
-            doc.setHtml(self.wind_label.text())
-            wind = doc.toPlainText() + ': '
-            try:
-                wind_direction = (
-                    self.wind_direction[
-                        self.forecast6_data[4][d][2].get('code')
-                    ]
+
+            if element.tag == 'pressure':
+
+                doc.setHtml(self.pressure_label.text())
+                pressure_label = doc.toPlainText() + ': '
+                pressure = (
+                    '{0:.1f}'.format(
+                        float(element.get('value'))
+                    )
                 )
-            except:
-                wind_direction = ''
-            wind_speed = (
-                '{0:.1f}'.format(
-                    float(self.forecast6_data[4][d][3].get('mps'))
-                )
-            )
-            if self.bft_bool:
-                wind_speed = str(self.convertToBeaufort(wind_speed))
-            weather_cond += (
-                '\n' + wind + wind_speed + self.unit_system_wind
-                + wind_direction
-            )
-            doc.setHtml(self.pressure_label.text())
-            pressure_label = doc.toPlainText() + ': '
-            pressure = (
-                '{0:.1f}'.format(
-                    float(self.forecast6_data[4][d][5].get('value'))
-                )
-            )
-            weather_cond += '\n' + pressure_label + pressure + ' hPa'
-            humidity = self.forecast6_data[4][d][6].get('value')
-            doc.setHtml(self.humidity_label.text())
-            humidity_label = doc.toPlainText() + ': '
-            weather_cond += '\n' + humidity_label + humidity + ' %'
-            clouds = self.forecast6_data[4][d][7].get('all')
-            doc.setHtml(self.clouds_label.text())
-            clouds_label = doc.toPlainText() + ': '
-            weather_cond += '\n' + clouds_label + clouds + ' %'
-            self.forecast_weather_list.append(weather_cond)
+                weather_cond += '\n' + pressure_label + pressure + ' hPa'
+
+            if element.tag == 'humidity':
+                humidity = element.get('value')
+                doc.setHtml(self.humidity_label.text())
+                humidity_label = doc.toPlainText() + ': '
+                weather_cond += '\n' + humidity_label + humidity + ' %'
+
+            if element.tag == 'clouds':
+                clouds = element.get('all')
+                doc.setHtml(self.clouds_label.text())
+                clouds_label = doc.toPlainText() + ': '
+                weather_cond += '\n' + clouds_label + clouds + ' %'
+                weather_end = True
+
+            if weather_end is True:
+                self.forecast_weather_list.append(weather_cond)
+                weather_end = False
 
     def forecastdata(self):
         '''Forecast for the next 4 days'''
@@ -1436,71 +1473,104 @@ class SystemTrayIcon(QMainWindow):
     def weatherdata(self, tree):
         if self.inerror:
             return
-        self.tempFloat = tree[1].get('value')
-        self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
-        self.temp_decimal = '{0:.1f}'.format(float(self.tempFloat)) + '°'
-        self.meteo = tree[8].get('value')
-        meteo_condition = tree[8].get('number')
-        try:
-            self.meteo = self.conditions[meteo_condition]
-        except:
-            logging.debug('Cannot find localisation string for'
-                          'meteo_condition:' + str(meteo_condition))
-            pass
-        clouds = tree[5].get('name')
-        clouds_percent = tree[5].get('value') + '%'
-        try:
-            clouds = self.clouds[clouds]
-            clouds = self.conditions[clouds]
-        except:
-            logging.debug(
-                'Cannot find localisation string for clouds:'
-                + str(clouds)
-            )
-            pass
-        wind = tree[4][0].get('name').lower()
-        try:
-            wind = self.wind[wind]
-            wind = self.conditions[wind]
-        except:
-            logging.debug(
-                'Cannot find localisation string for wind:'
-                + str(wind)
-            )
-            pass
-        try:
-            wind_codes = tree[4][2].get('code')
-            wind_dir_value = tree[4][2].get('value')
-            wind_dir = tree[4][2].get('name')
-        except:
-            wind_codes = tree[4][1].get('code')
-            wind_dir_value = tree[4][1].get('value')
-            wind_dir = tree[4][1].get('name')
 
-        try:
-            wind_dir_value = str(int(float(wind_dir_value)))
-        except TypeError:
-            wind_dir_value = ''
+        for element in tree.iter():
 
-        try:
-            wind_codes = self.wind_codes[wind_codes]
-        except KeyError:
-            logging.debug(
-                'Cannot find localisation string for wind_codes:'
-                + str(wind_codes)
-            )
-            if wind_codes is None:
-                wind_codes = ''
+            if element.tag == 'sun':
+                self.weatherDataDico['Sunrise'] = element.get('rise')
+                self.weatherDataDico['Sunset'] = element.get('set')
 
-        try:
-            wind_dir = self.wind_dir[tree[4][2].get('code')]
-        except KeyError:
-            logging.debug(
-                'Cannot find localisation string for wind_dir:'
-                + str(wind_dir)
-            )
-            if wind_dir is None:
-                wind_dir = ''
+            if element.tag == 'temperature':
+                self.tempFloat = element.get('value')
+                self.temp = ' ' + str(round(float(self.tempFloat))) + '°'
+                self.temp_decimal = '{0:.1f}'.format(float(self.tempFloat)) + '°'
+
+            if element.tag == 'weather':
+                self.meteo = element.get('value')
+                meteo_condition = element.get('number')
+                try:
+                    self.meteo = self.conditions[meteo_condition]
+                except KeyError:
+                    logging.debug(
+                        'Cannot find localisation string for'
+                        ' meteo_condition:'
+                        + str(meteo_condition)
+                    )
+                    pass
+
+            if element.tag == 'clouds':
+                clouds = element.get('name')
+                clouds_percent = element.get('value') + '%'
+                try:
+                    clouds = self.clouds[clouds]
+                    clouds = self.conditions[clouds]
+                except KeyError:
+                    logging.debug(
+                        'Cannot find localisation string for clouds:'
+                        + str(clouds)
+                    )
+                    pass
+
+            if element.tag == 'speed':
+                wind_value = element.get('value')
+                wind = element.get('name').lower()
+                try:
+                    wind = self.wind[wind]
+                    wind = self.conditions[wind]
+                except KeyError:
+                    logging.debug(
+                        'Cannot find localisation string for wind:'
+                        + str(wind)
+                    )
+                    pass
+            if element.tag == 'direction':
+                wind_codes = element.get('code')
+                wind_dir_value = element.get('value')
+                wind_dir = element.get('name')
+
+                try:
+                    wind_dir_value = str(int(float(wind_dir_value)))
+                except TypeError:
+                    wind_dir_value = ''
+
+                try:
+                    wind_codes = self.wind_codes[wind_codes]
+                except KeyError:
+                    logging.debug(
+                        'Cannot find localisation string for wind_codes:'
+                        + str(wind_codes)
+                    )
+                    if wind_codes is None:
+                        wind_codes = ''
+
+                try:
+                    wind_dir = self.wind_dir[wind_dir]
+                except KeyError:
+                    logging.debug(
+                        'Cannot find localisation string for wind_dir:'
+                        + str(wind_dir)
+                    )
+                    if wind_dir is None:
+                        wind_dir = ''
+
+            if element.tag == 'humidity':
+                self.weatherDataDico['Humidity'] = (
+                    element.get('value'), element.get('unit')
+                )
+
+            if element.tag == 'pressure':
+                self.weatherDataDico['Pressure'] = (
+                    element.get('value'), element.get('unit')
+                )
+
+            if element.tag == 'precipitation':
+                rain_mode = element.get('mode')
+                rain_value = element.get('value')
+                if rain_value is None:
+                    rain_value = ''
+                self.weatherDataDico['Precipitation'] = (
+                    rain_mode, rain_value
+                )
 
         self.city_weather_info = (
             self.city + ' ' + self.country + ' '
@@ -1513,29 +1583,16 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Country'] = self.country
         self.weatherDataDico['Temp'] = self.tempFloat + '°'
         self.weatherDataDico['Meteo'] = self.meteo
-        self.weatherDataDico['Humidity'] = (tree[2].get('value'),
-                                            tree[2].get('unit'))
 
         self.weatherDataDico['Wind'] = (
-            tree[4][0].get('value'),
+            wind_value,
             wind,
             wind_dir_value,
             wind_codes,
             wind_dir
         )
         self.weatherDataDico['Clouds'] = (clouds_percent + ' ' + clouds)
-        self.weatherDataDico['Pressure'] = (tree[3].get('value'),
-                                            tree[3].get('unit'))
-        self.weatherDataDico['Humidity'] = (tree[2].get('value'),
-                                            tree[2].get('unit'))
-        self.weatherDataDico['Sunrise'] = tree[0][2].get('rise')
-        self.weatherDataDico['Sunset'] = tree[0][2].get('set')
-        rain_value = tree[7].get('value')
-        if rain_value is None:
-            rain_value = ''
-        self.weatherDataDico['Precipitation'] = (
-            tree[7].get('mode'), rain_value
-        )
+
         if self.id_ not in self.trendCities_dic:
             # dict {'id': 'hPa', , '',  'T°', 'temp_trend', 'weather changedBool'}
             self.trendCities_dic[self.id_] = [''] * 5
