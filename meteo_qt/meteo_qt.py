@@ -215,6 +215,7 @@ class SystemTrayIcon(QMainWindow):
             + self.weatherDataDico['Meteo']
             + '<\b><\font>'
         )
+        weather.setWordWrap(True)
         icontemp_layout.addWidget(weather)
         icontemp_layout.addStretch()
         over_layout.addLayout(self.dayforecast_layout)
