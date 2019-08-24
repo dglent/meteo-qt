@@ -1,3 +1,11 @@
+1.1
+- Option to show the window at start-up
+- Fixes for crashes
+- Show wind info when Bft unit option is unchecked
+- Use unicode arrows for hPa and T° trend
+- Wrap weather information of the day on panel
+- Update translations [German, Slovak, Czech]
+
 1.0.0
 - Automatic detection of the geolocation
 - Reenable UV Ozone in weather information

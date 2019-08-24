@@ -49,15 +49,13 @@ except ImportError:
     from meteo_qt import about_dlg
 
 
-__version__ = "1.1"
+__version__ = "1.2"
 
 
 class SystemTrayIcon(QMainWindow):
     units_dico = {'metric': '°C',
                   'imperial': '°F',
                   ' ': '°K'}
-
-
 
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
