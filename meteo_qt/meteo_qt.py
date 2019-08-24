@@ -1534,13 +1534,15 @@ class SystemTrayIcon(QMainWindow):
 
                 try:
                     wind_codes = self.wind_codes[wind_codes_english]
-                except KeyError:
+                except (KeyError, UnboundLocalError):
                     logging.debug(
                         'Cannot find localisation string for wind_codes:'
-                        + str(wind_codes)
+                        + str(wind_codes_english)
                     )
-                    if wind_codes is None:
-                        wind_codes = ''
+                    wind_codes = wind_codes_english
+
+                if wind_codes is None:
+                    wind_codes = ''
 
                 try:
                     wind_dir = self.wind_dir[wind_codes_english]
