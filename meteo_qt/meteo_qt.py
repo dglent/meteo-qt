@@ -1525,7 +1525,7 @@ class SystemTrayIcon(QMainWindow):
                     )
                     pass
             if element.tag == 'direction':
-                wind_codes = element.get('code')
+                wind_codes_english = element.get('code')
                 wind_dir_value = element.get('value')
                 wind_dir = element.get('name')
 
@@ -1535,7 +1535,7 @@ class SystemTrayIcon(QMainWindow):
                     wind_dir_value = ''
 
                 try:
-                    wind_codes = self.wind_codes[wind_codes]
+                    wind_codes = self.wind_codes[wind_codes_english]
                 except KeyError:
                     logging.debug(
                         'Cannot find localisation string for wind_codes:'
@@ -1545,7 +1545,7 @@ class SystemTrayIcon(QMainWindow):
                         wind_codes = ''
 
                 try:
-                    wind_dir = self.wind_dir[wind_dir]
+                    wind_dir = self.wind_dir[wind_codes_english]
                 except KeyError:
                     logging.debug(
                         'Cannot find localisation string for wind_dir:'
