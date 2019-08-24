@@ -323,7 +323,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="335"/>
+        <location filename="../meteo_qt.py" line="336"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denné svetlo</translation>
@@ -332,7 +332,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1100"/>
+        <location filename="../meteo_qt.py" line="1101"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DJ</translation>
@@ -341,7 +341,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="2034"/>
+        <location filename="../meteo_qt.py" line="2035"/>
         <source>Error:
 </source>
         <translation>Chyba:
@@ -687,7 +687,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="369"/>
+        <location filename="../meteo_qt.py" line="370"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozón</translation>
@@ -696,7 +696,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1111"/>
+        <location filename="../meteo_qt.py" line="1112"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -731,7 +731,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="296"/>
+        <location filename="../meteo_qt.py" line="297"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Zrážky</translation>
@@ -897,7 +897,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1791"/>
+        <location filename="../meteo_qt.py" line="1792"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Pre aplikovanie jazykového nastavenia je potrebné reštartovať aplikáciu</translation>
     </message>
@@ -940,32 +940,32 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <translation>Vyhľadávam údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1352"/>
+        <location filename="../meteo_qt.py" line="1353"/>
         <source>Empty list</source>
         <translation>Prázdny zoznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1371"/>
+        <location filename="../meteo_qt.py" line="1372"/>
         <source>No city configured</source>
         <translation>Nebolo nastavené žiadne mesto</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1386"/>
+        <location filename="../meteo_qt.py" line="1387"/>
         <source>No city has been configured yet.</source>
         <translation>Nebolo ešte nastavené žiadne mesto.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1386"/>
+        <location filename="../meteo_qt.py" line="1387"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Kliknite pravým tlačidlom na ikonu a vyberte Nastavenia.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1843"/>
+        <location filename="../meteo_qt.py" line="1844"/>
         <source>Fetching weather data...</source>
         <translation>Sťahujem údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1851"/>
+        <location filename="../meteo_qt.py" line="1852"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1009,57 +1009,57 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <translation>Ned</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="225"/>
+        <location filename="../meteo_qt.py" line="226"/>
         <source>Wind</source>
         <translation>Vietor</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="266"/>
+        <location filename="../meteo_qt.py" line="267"/>
         <source>Cloudiness</source>
         <translation>Oblačnosť</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="273"/>
+        <location filename="../meteo_qt.py" line="274"/>
         <source>Pressure</source>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="288"/>
+        <location filename="../meteo_qt.py" line="289"/>
         <source>Humidity</source>
         <translation>Vlhkosť</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="323"/>
+        <location filename="../meteo_qt.py" line="324"/>
         <source>Sunrise</source>
         <translation>Východ slnka</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="326"/>
+        <location filename="../meteo_qt.py" line="327"/>
         <source>Sunset</source>
         <translation>Západ slnka</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="426"/>
+        <location filename="../meteo_qt.py" line="427"/>
         <source>Weather status</source>
         <translation>Stav počasia</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="824"/>
+        <location filename="../meteo_qt.py" line="825"/>
         <source>Min Max Temperature of the day</source>
         <translation>Najnižšia/Najvyššia teplota dňa</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1053"/>
+        <location filename="../meteo_qt.py" line="1054"/>
         <source>snow</source>
         <translation>sneh</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1054"/>
+        <location filename="../meteo_qt.py" line="1055"/>
         <source>rain</source>
         <translation>dážď</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1860"/>
+        <location filename="../meteo_qt.py" line="1861"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1128,7 +1128,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1454"/>
+        <location filename="../meteo_qt.py" line="1455"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Vyhľadávam údaje o počasí...</translation>
@@ -1165,13 +1165,13 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="348"/>
+        <location filename="../meteo_qt.py" line="349"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV žiarenie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="357"/>
+        <location filename="../meteo_qt.py" line="358"/>
         <source>Fetching...</source>
         <translation>Sťahujem...</translation>
     </message>
