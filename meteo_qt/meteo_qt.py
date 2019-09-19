@@ -106,7 +106,7 @@ class SystemTrayIcon(QMainWindow):
             self.menu.addAction(self.panelAction)
             self.panelAction.triggered.connect(self.showpanel)
         self.tempCityAction = QAction(self.tr('&Temporary city'), self)
-        self.refreshAction = QAction(self.tr('&Update'), self)
+        self.refreshAction = QAction(self.tr('&Refresh'), self)
         self.settingsAction = QAction(self.tr('&Settings'), self)
         self.aboutAction = QAction(self.tr('&About'), self)
         self.exitAction = QAction(self.tr('Exit'), self)
