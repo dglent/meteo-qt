@@ -325,8 +325,17 @@ class SystemTrayIcon(QMainWindow):
         sunset_label = QLabel(
             '<font color=><b>' + self.tr('Sunset') + '</b></font>'
         )
-        rise_str = self.utc('Sunrise', 'weatherdata')
-        set_str = self.utc('Sunset', 'weatherdata')
+
+        try:
+            rise_str = self.utc('Sunrise', 'weatherdata')
+            set_str = self.utc('Sunset', 'weatherdata')
+        except (AttributeError, ValueError):
+            logging.error(
+                'Cannot find sunrise, sunset time info')
+            # if value is None
+            rise_str = '00:00:00'
+            set_str = '00:00:00'
+
         sunrise_value = QLabel(
             '<font color=>' + rise_str[:-3] + '</font>'
         )
