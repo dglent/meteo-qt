@@ -226,27 +226,37 @@ class SystemTrayIcon(QMainWindow):
         )
         self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
-        beaufort = self.settings.value('Beaufort') or 'False'
-        self.bft_bool = eval(beaufort)
+        wind_unit_speed_config = self.settings.value('Wind_unit') or 'df'
+        if wind_unit_speed_config == 'bf':
+            self.bft_bool = True
+        else:
+            self.bft_bool = False
         self.unit_system = ' m/s '
         self.unit_system_wind = ' m/s '
         if wind_unit == 'imperial':
             self.unit_system = ' mph '
             self.unit_system_wind = ' mph '
+
         windLabelDescr = QLabel('None')
         wind_speed = '{0:.1f}'.format(float(self.weatherDataDico['Wind'][0]))
         windTobeaufort = str(self.convertToBeaufort(wind_speed))
+
         if self.bft_bool is True:
             wind_speed = windTobeaufort
-            unit_system_wind = ' Bft. '
+            self.unit_system_wind = ' Bft. '
+
+        if wind_unit == 'metric' and wind_unit_speed_config == 'km':
+            self.wind_km_bool = True
+            wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
+            self.unit_system_wind = ' km/h '
         else:
-            unit_system_wind = self.unit_system_wind
+            self.wind_km_bool = False
 
         try:
             windLabelDescr = QLabel(
                 '<font color=>' + self.weatherDataDico['Wind'][4]
                 + ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>'
-                + wind_speed + unit_system_wind
+                + wind_speed + self.unit_system_wind
                 + self.weatherDataDico['Wind'][1] + '<\font>'
             )
             windLabelDescr.setToolTip(
@@ -762,6 +772,9 @@ class SystemTrayIcon(QMainWindow):
                 )
                 if self.bft_bool:
                     wind_speed = str(self.convertToBeaufort(wind_speed))
+                if self.wind_km_bool:
+                    wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
+
                 weather_cond += (
                     '\n'
                     + wind
@@ -893,6 +906,8 @@ class SystemTrayIcon(QMainWindow):
             )
             if self.bft_bool:
                 wind_speed = str(self.convertToBeaufort(wind_speed))
+            if self.wind_km_bool:
+                wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
             weather_cond += (
                 '\n' + wind + wind_speed + self.unit_system_wind
                 + wind_direction
@@ -1062,6 +1077,8 @@ class SystemTrayIcon(QMainWindow):
                 ttip = ttip.replace('rain', self.tr('rain'))
             if self.bft_bool is True:
                 windspeed = self.convertToBeaufort(windspeed)
+            if self.wind_km_bool:
+                windspeed = '{0:.1f}'.format(float(windspeed) * 3.6)
             ttip = ttip + (str(windspeed) + ' ' + self.unit_system_wind)
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
@@ -1382,7 +1399,7 @@ class SystemTrayIcon(QMainWindow):
         self.cities_menu()
         self.country = self.settings.value('Country') or ''
         self.unit = self.settings.value('Unit') or 'metric'
-        self.beaufort = self.settings.value('Beaufort') or 'False'
+        self.wind_unit_speed = self.settings.value('Wind_unit') or 'df'
         self.suffix = ('&mode=xml&units=' + self.unit + self.appid)
         self.interval = int(self.settings.value('Interval') or 30) * 60 * 1000
         self.timer.start(self.interval)
@@ -1789,7 +1806,7 @@ class SystemTrayIcon(QMainWindow):
         id_ = self.settings.value('ID')
         country = self.settings.value('Country')
         unit = self.settings.value('Unit')
-        beaufort = self.settings.value('Beaufort')
+        wind_unit_speed = self.settings.value('Wind_unit')
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         fontsize = self.settings.value('FontSize')
@@ -1822,7 +1839,7 @@ class SystemTrayIcon(QMainWindow):
             and id_ == self.id_
             and country == self.country
             and unit == self.unit
-            and beaufort == self.beaufort
+            and wind_unit_speed == self.wind_unit_speed
         ):
             return
         else:

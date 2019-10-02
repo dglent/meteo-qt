@@ -113,19 +113,28 @@ class MeteoSettings(QDialog):
         self.units_combo.setCurrentIndex(self.units_combo.findText(
             self.units_dico[self.temp_unit]))
         self.units_combo.currentIndexChanged.connect(self.units)
-        # Beaufort
-        self.bft_checkbox = QCheckBox(
-            QCoreApplication.translate(
-                'Wind unit - Checkbox label',
-                'Wind unit in Beaufort',
-                'Settings dialogue'
-            )
-        )
-        bft_bool = self.settings.value('Beaufort') or 'False'
-        self.bft_bool = eval(bft_bool)
-        self.bft_checkbox.setChecked(self.bft_bool)
-        self.bft_checkbox.stateChanged.connect(self.beaufort)
-        self.bft_changed = False
+        # Wind unit
+        self.wind_unit_changed = False
+        self.wind_unit = self.settings.value('Wind_unit')
+        if self.wind_unit is None or self.wind_unit == '':
+            self.wind_unit = 'df'
+            self.wind_unit_changed = True
+        self.wind_unit_label = QLabel(self.tr('Wind speed unit'))
+        self.wind_unit_combo = QComboBox()
+        wind_units_list = [self.tr('Default'), self.tr('Beaufort'), 'Km/h']
+        self.wind_unit_dico = {
+            'df': wind_units_list[0],
+            'bf': wind_units_list[1],
+            'km': wind_units_list[2]
+        }
+
+        self.wind_unit_combo.addItems(wind_units_list)
+        self.wind_unit_combo.setCurrentIndex(self.wind_unit_combo.findText(
+            self.wind_unit_dico[self.wind_unit]))
+        self.wind_unit_combo.currentIndexChanged.connect(self.wind_unit_change_apply)
+        self.wind_unit_combo.model().item(2).setEnabled(False)
+        if self.temp_unit == 'metric':
+            self.wind_unit_combo.model().item(2).setEnabled(True)
         # Decimal in trayicon
         self.temp_decimal_label = QLabel(
             QCoreApplication.translate(
@@ -314,32 +323,33 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.language_combo, 1, 1)
         self.panel.addWidget(self.units_label, 2, 0)
         self.panel.addWidget(self.units_combo, 2, 1)
-        self.panel.addWidget(self.bft_checkbox, 2, 2)
-        self.panel.addWidget(self.temp_decimal_label, 3, 0)
-        self.panel.addWidget(self.temp_decimal_combo, 3, 1)
-        self.panel.addWidget(self.interval_label, 4, 0)
-        self.panel.addWidget(self.interval_combo, 4, 1)
-        self.panel.addWidget(self.interval_min, 4, 2)
-        self.panel.addWidget(self.autostart_label, 5, 0)
-        self.panel.addWidget(self.autostart_checkbox, 5, 1)
-        self.panel.addWidget(self.temp_colorLabel, 6, 0)
-        self.panel.addWidget(self.temp_colorButton, 6, 1)
-        self.panel.addWidget(self.temp_color_resetButton, 6, 2)
-        self.panel.addWidget(self.notifier_label, 7, 0)
-        self.panel.addWidget(self.notifier_checkbox, 7, 1)
-        self.panel.addWidget(self.tray_icon_temp_label, 8, 0)
-        self.panel.addWidget(self.tray_icon_combo, 8, 1)
-        self.panel.addWidget(self.fontsize_label, 9, 0)
-        self.panel.addWidget(self.fontsize_spinbox, 9, 1)
-        self.panel.addWidget(self.bold_checkbox, 9, 2)
-        self.panel.addWidget(self.proxy_label, 10, 0)
-        self.panel.addWidget(self.proxy_chbox, 10, 1)
-        self.panel.addWidget(self.proxy_button, 10, 2)
-        self.panel.addWidget(self.owmkey_label, 11, 0)
-        self.panel.addWidget(self.owmkey_text, 11, 1)
-        self.panel.addWidget(self.owmkey_create, 11, 2)
-        self.panel.addWidget(self.start_minimized_label, 12, 0)
-        self.panel.addWidget(self.start_minimized_chbx, 12, 1)
+        self.panel.addWidget(self.wind_unit_label, 3, 0)
+        self.panel.addWidget(self.wind_unit_combo, 3, 1)
+        self.panel.addWidget(self.temp_decimal_label, 4, 0)
+        self.panel.addWidget(self.temp_decimal_combo, 4, 1)
+        self.panel.addWidget(self.interval_label, 5, 0)
+        self.panel.addWidget(self.interval_combo, 5, 1)
+        self.panel.addWidget(self.interval_min, 5, 2)
+        self.panel.addWidget(self.autostart_label, 6, 0)
+        self.panel.addWidget(self.autostart_checkbox, 6, 1)
+        self.panel.addWidget(self.temp_colorLabel, 7, 0)
+        self.panel.addWidget(self.temp_colorButton, 7, 1)
+        self.panel.addWidget(self.temp_color_resetButton, 7, 2)
+        self.panel.addWidget(self.notifier_label, 8, 0)
+        self.panel.addWidget(self.notifier_checkbox, 8, 1)
+        self.panel.addWidget(self.tray_icon_temp_label, 9, 0)
+        self.panel.addWidget(self.tray_icon_combo, 9, 1)
+        self.panel.addWidget(self.fontsize_label, 10, 0)
+        self.panel.addWidget(self.fontsize_spinbox, 10, 1)
+        self.panel.addWidget(self.bold_checkbox, 10, 2)
+        self.panel.addWidget(self.proxy_label, 11, 0)
+        self.panel.addWidget(self.proxy_chbox, 11, 1)
+        self.panel.addWidget(self.proxy_button, 11, 2)
+        self.panel.addWidget(self.owmkey_label, 12, 0)
+        self.panel.addWidget(self.owmkey_text, 12, 1)
+        self.panel.addWidget(self.owmkey_create, 12, 2)
+        self.panel.addWidget(self.start_minimized_label, 13, 0)
+        self.panel.addWidget(self.start_minimized_chbx, 13, 1)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -358,9 +368,29 @@ class MeteoSettings(QDialog):
         self.setLayout(self.layout)
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
+    def wind_unit_change_apply(self):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.wind_unit_changed = True
+
     def units(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.units_changed = True
+        unit = self.units_combo.currentText()
+        setUnit = [
+            key for key, value in self.units_dico.items() if value == unit
+        ]
+        if setUnit[0] == 'metric':
+            self.wind_unit_combo.model().item(2).setEnabled(True)
+        else:
+            self.wind_unit_combo.model().item(2).setEnabled(False)
+            wind = self.wind_unit_combo.currentText()
+            setWind = [
+                key for key, value in self.wind_unit_dico.items() if value == wind
+            ]
+            if setWind[0] == 'km':
+                self.wind_unit_combo.setCurrentIndex(
+                    self.wind_unit_combo.findText(self.wind_unit_dico[self.wind_unit])
+                )
 
     def language(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
@@ -542,18 +572,6 @@ class MeteoSettings(QDialog):
             start_minimized = 'False'
         self.settings.setValue('StartMinimized', start_minimized)
 
-    def beaufort(self, state):
-        self.bft_state = state
-        self.bft_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
-
-    def beaufort_apply(self):
-        if self.bft_state == 2:
-            bft = 'True'
-        else:
-            bft = 'False'
-        self.settings.setValue('Beaufort', str(bft))
-
     def proxy(self, state):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         if state == 2:
@@ -642,6 +660,13 @@ class MeteoSettings(QDialog):
             ]
             self.settings.setValue('Unit', setUnit[0])
             logging.debug('Write ' + 'Unit ' + str(setUnit[0]))
+        if self.wind_unit_changed:
+            wind = self.wind_unit_combo.currentText()
+            setWind = [
+                key for key, value in self.wind_unit_dico.items() if value == wind
+            ]
+            logging.debug('Write ' + 'Wind_unit ' + str(setWind[0]))
+            self.settings.setValue('Wind_unit', str(setWind[0]))
         if self.temp_decimal_changed:
             decimal = self.temp_decimal_combo.currentText()
             decimal_bool_str = 'False'
@@ -657,8 +682,6 @@ class MeteoSettings(QDialog):
             self.fontsize_apply()
         if self.bold_changed:
             self.bold_apply()
-        if self.bft_changed:
-            self.beaufort_apply()
         if self.start_minimized_changed:
             self.start_minimized_apply()
         proxy_url = self.settings.value('Proxy_url') or ''
