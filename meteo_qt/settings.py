@@ -389,7 +389,7 @@ class MeteoSettings(QDialog):
             ]
             if setWind[0] == 'km':
                 self.wind_unit_combo.setCurrentIndex(
-                    self.wind_unit_combo.findText(self.wind_unit_dico[self.wind_unit])
+                    self.wind_unit_combo.findText(self.wind_unit_dico['df'])
                 )
 
     def language(self):
