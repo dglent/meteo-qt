@@ -1,13 +1,15 @@
 import logging
 import os
 
-from PyQt5.QtCore import (QCoreApplication, QLocale, QSettings, QSize, Qt,
-                          pyqtSignal)
+from PyQt5.QtCore import (
+    QCoreApplication, QLocale, QSettings, QSize, Qt, pyqtSignal
+)
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (QCheckBox, QColorDialog, QComboBox, QDialog,
-                             QDialogButtonBox, QGridLayout, QHBoxLayout,
-                             QLabel, QLineEdit, QPushButton, QSpinBox,
-                             QVBoxLayout)
+from PyQt5.QtWidgets import (
+    QCheckBox, QColorDialog, QComboBox, QDialog, QDialogButtonBox,
+    QGridLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QSpinBox,
+    QVBoxLayout
+)
 
 try:
     import citylistdlg
@@ -59,35 +61,37 @@ class MeteoSettings(QDialog):
                 'Settings dialogue'
             )
         )
-        self.language_dico = {'bg': self.tr('Bulgarian'),
-                              'ca': self.tr('Catalan'),
-                              'cs': self.tr('Czech'),
-                              'da': self.tr('Danish'),
-                              'de': self.tr('German'),
-                              'el': self.tr('Greek'),
-                              'en': self.tr('English'),
-                              'es': self.tr('Spanish'),
-                              'fi': self.tr('Finnish'),
-                              'fr': self.tr('French'),
-                              'he': self.tr('Hebrew'),
-                              'hr': self.tr('Croatian'),
-                              'hu': self.tr('Hungarian'),
-                              'it': self.tr('Italian'),
-                              'ja': self.tr('Japanese'),
-                              'lt': self.tr('Lithuanian'),
-                              'nb': self.tr('Norwegian (Bokmaal)'),
-                              'nl': self.tr('Dutch'),
-                              'pl': self.tr('Polish'),
-                              'pt': self.tr('Portuguese'),
-                              'pt_BR': self.tr('Brazil Portuguese'),
-                              'ro': self.tr('Romanian'),
-                              'ru': self.tr('Russian'),
-                              'sk': self.tr('Slovak'),
-                              'sv': self.tr('Swedish'),
-                              'tr': self.tr('Turkish'),
-                              'uk': self.tr('Ukrainian'),
-                              'zh_TW': self.tr('Chinese Traditional'),
-                              'zh_CN': self.tr('Chinese Simplified')}
+        self.language_dico = {
+            'bg': self.tr('Bulgarian'),
+            'ca': self.tr('Catalan'),
+            'cs': self.tr('Czech'),
+            'da': self.tr('Danish'),
+            'de': self.tr('German'),
+            'el': self.tr('Greek'),
+            'en': self.tr('English'),
+            'es': self.tr('Spanish'),
+            'fi': self.tr('Finnish'),
+            'fr': self.tr('French'),
+            'he': self.tr('Hebrew'),
+            'hr': self.tr('Croatian'),
+            'hu': self.tr('Hungarian'),
+            'it': self.tr('Italian'),
+            'ja': self.tr('Japanese'),
+            'lt': self.tr('Lithuanian'),
+            'nb': self.tr('Norwegian (Bokmaal)'),
+            'nl': self.tr('Dutch'),
+            'pl': self.tr('Polish'),
+            'pt': self.tr('Portuguese'),
+            'pt_BR': self.tr('Brazil Portuguese'),
+            'ro': self.tr('Romanian'),
+            'ru': self.tr('Russian'),
+            'sk': self.tr('Slovak'),
+            'sv': self.tr('Swedish'),
+            'tr': self.tr('Turkish'),
+            'uk': self.tr('Ukrainian'),
+            'zh_TW': self.tr('Chinese Traditional'),
+            'zh_CN': self.tr('Chinese Simplified')
+        }
         lang_list = sorted(self.language_dico.values())
         # English as fallback language
         if locale not in self.language_dico:
@@ -129,8 +133,9 @@ class MeteoSettings(QDialog):
         }
 
         self.wind_unit_combo.addItems(wind_units_list)
-        self.wind_unit_combo.setCurrentIndex(self.wind_unit_combo.findText(
-            self.wind_unit_dico[self.wind_unit]))
+        self.wind_unit_combo.setCurrentIndex(
+            self.wind_unit_combo.findText(self.wind_unit_dico[self.wind_unit])
+        )
         self.wind_unit_combo.currentIndexChanged.connect(self.wind_unit_change_apply)
         self.wind_unit_combo.model().item(2).setEnabled(False)
         if self.temp_unit == 'metric':
@@ -139,7 +144,8 @@ class MeteoSettings(QDialog):
         self.temp_decimal_label = QLabel(
             QCoreApplication.translate(
                 'If the temperature will be shown with a decimal or rounded in tray icon',
-                'Temperature accuracy in system tray', 'Settings dialogue'
+                'Temperature accuracy in system tray',
+                'Settings dialogue'
             )
         )
         self.temp_decimal_combo = QComboBox()
@@ -215,27 +221,37 @@ class MeteoSettings(QDialog):
         self.tray_icon_combo = QComboBox()
         tray_icon_temp = QCoreApplication.translate(
             "Settings dialogue", "Icon & temperature",
-            'Setting to choose the type of the icon on the tray')
+            'Setting to choose the type of the icon on the tray'
+        )
         tray_icon = QCoreApplication.translate(
             "Settings dialogue", "Icon",
-            'Setting to choose the type of the icon on the tray')
+            'Setting to choose the type of the icon on the tray'
+        )
         tray_temp = QCoreApplication.translate(
             "Settings dialogue", "Temperature",
-            'Setting to choose the type of the icon on the tray')
-        self.tray_dico = {'icon&temp': tray_icon_temp, 'icon': tray_icon,
-                          'temp': tray_temp}
+            'Setting to choose the type of the icon on the tray'
+        )
+        self.tray_dico = {
+            'icon&temp': tray_icon_temp,
+            'icon': tray_icon,
+            'temp': tray_temp
+        }
         set_tray_icon = self.settings.value('TrayType') or 'icon&temp'
         tray_icon_list = sorted(self.tray_dico.values())
         self.tray_icon_combo.addItems(tray_icon_list)
-        self.tray_icon_combo.setCurrentIndex(self.tray_icon_combo.findText
-                                             (self.tray_dico[set_tray_icon]))
+        self.tray_icon_combo.setCurrentIndex(
+            self.tray_icon_combo.findText(self.tray_dico[set_tray_icon])
+        )
         self.tray_icon_combo.currentIndexChanged.connect(self.tray)
         self.tray_changed = False
         # Font size
         fontsize = self.settings.value('FontSize') or '18'
-        self.fontsize_label = QLabel(QCoreApplication.translate(
-            "Settings dialog", "Font size in tray",
-            "Setting for the font size of the temperature in the tray icon"))
+        self.fontsize_label = QLabel(
+            QCoreApplication.translate(
+                "Settings dialog", "Font size in tray",
+                "Setting for the font size of the temperature in the tray icon"
+            )
+        )
         self.fontsize_spinbox = QSpinBox()
         self.fontsize_spinbox.setRange(12, 32)
         self.fontsize_spinbox.setValue(int(fontsize))
@@ -470,12 +486,14 @@ class MeteoSettings(QDialog):
         home = os.getenv('HOME')
         total_path = home + dir_auto + d_file
         if self.autostart_state == 2:
-            desktop_file = ['[Desktop Entry]\n',
-                            'Exec=meteo-qt\n',
-                            'Name=meteo-qt\n',
-                            'Type=Application\n',
-                            'Version=1.0\n',
-                            'X-LXQt-Need-Tray=true\n']
+            desktop_file = [
+                '[Desktop Entry]\n',
+                'Exec=meteo-qt\n',
+                'Name=meteo-qt\n',
+                'Type=Application\n',
+                'Version=1.0\n',
+                'X-LXQt-Need-Tray=true\n'
+            ]
             if not os.path.exists(home + dir_auto):
                 os.system('mkdir -p {}'.format(os.path.dirname(total_path)))
             with open(total_path, 'w') as out_file:
@@ -494,7 +512,8 @@ class MeteoSettings(QDialog):
         col = QColorDialog.getColor()
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
-                'QWidget {{ background-color: {0} }}'.format(col.name()))
+                'QWidget {{ background-color: {0} }}'.format(col.name())
+            )
             # focus to next elem to show immediatley the colour
             # in the button (in some DEs)
             self.temp_color_resetButton.setFocus()
