@@ -125,7 +125,23 @@ class MeteoSettings(QDialog):
             self.wind_unit_changed = True
         self.wind_unit_label = QLabel(self.tr('Wind speed unit'))
         self.wind_unit_combo = QComboBox()
-        wind_units_list = [self.tr('Default'), self.tr('Beaufort'), 'Km/h']
+        wind_units_list = [
+            QCoreApplication.translate(
+                'Option to choose the default wind speed unit',
+                'Default',
+                'Settings diaogue'
+            ),
+            QCoreApplication.translate(
+                'Option to choose wind speed unit',
+                'Beaufort',
+                'Settings dialogue'
+            ),
+            QCoreApplication.translate(
+                'Option to choose wind speed unit',
+                'Km/h',
+                'Settings dialogue'
+            )
+        ]
         self.wind_unit_dico = {
             'df': wind_units_list[0],
             'bf': wind_units_list[1],

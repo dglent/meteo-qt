@@ -248,7 +248,12 @@ class SystemTrayIcon(QMainWindow):
         if wind_unit == 'metric' and wind_unit_speed_config == 'km':
             self.wind_km_bool = True
             wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
-            self.unit_system_wind = ' km/h '
+            self.unit_system_wind = QCoreApplication.translate(
+                '''Unit displayed after the wind speed value and before
+                the wind description (keep the spaces before and after)''',
+                ' km/h ',
+                'Weather Infos panel'
+            )
         else:
             self.wind_km_bool = False
 
