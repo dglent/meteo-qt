@@ -123,7 +123,13 @@ class MeteoSettings(QDialog):
         if self.wind_unit is None or self.wind_unit == '':
             self.wind_unit = 'df'
             self.wind_unit_changed = True
-        self.wind_unit_label = QLabel(self.tr('Wind speed unit'))
+        self.wind_unit_label = QLabel(
+            QCoreApplication.translate(
+                'Label of the checkbox',
+                'Wind speed unit',
+                'Settings dialogue'
+            )
+        )
         self.wind_unit_combo = QComboBox()
         wind_units_list = [
             QCoreApplication.translate(
