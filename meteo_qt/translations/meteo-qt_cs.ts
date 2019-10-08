@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.0">
 <context>
-    <name></name>
+    <name/>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
@@ -104,6 +103,15 @@
         <location filename="../about_dlg.py" line="40"/>
         <source>About Meteo-qt</source>
         <translation>O programu Meteo-qt</translation>
+    </message>
+</context>
+<context>
+    <name>Action to refresh the weather infos from the server</name>
+    <message>
+        <location filename="../meteo_qt.py" line="109"/>
+        <source>&amp;Refresh</source>
+        <comment>Systray icon context menu</comment>
+        <translation>&amp;Obnovit</translation>
     </message>
 </context>
 <context>
@@ -261,7 +269,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="294"/>
+        <location filename="../settings.py" line="341"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Spustit zmenšeno</translation>
@@ -276,7 +284,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <translation>Použít autentizaci proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="251"/>
+        <location filename="../settings.py" line="298"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Připojení pomocí proxy</translation>
@@ -323,7 +331,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="336"/>
+        <location filename="../meteo_qt.py" line="365"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denní světlo</translation>
@@ -332,7 +340,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1101"/>
+        <location filename="../meteo_qt.py" line="1137"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DJ</translation>
@@ -341,7 +349,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="2035"/>
+        <location filename="../meteo_qt.py" line="2073"/>
         <source>Error:
 </source>
         <translation>Chyba:
@@ -382,7 +390,7 @@ Vyhněte se pobytu na slunci v době slunečního poledne, kdy je slunce po tři
 <context>
     <name>Font setting - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="238"/>
+        <location filename="../settings.py" line="285"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation>Tučné</translation>
@@ -421,7 +429,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
     <message>
-        <location filename="../settings.py" line="130"/>
+        <location filename="../settings.py" line="166"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
         <translation>Přesnost teploty v oznamovací oblasti panelu</translation>
@@ -430,16 +438,25 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="264"/>
+        <location filename="../settings.py" line="311"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Nastavení</translation>
     </message>
 </context>
 <context>
+    <name>Label of the checkbox</name>
+    <message>
+        <location filename="../settings.py" line="126"/>
+        <source>Wind speed unit</source>
+        <comment>Settings dialogue</comment>
+        <translation>Jednotka rychlosti větru</translation>
+    </message>
+</context>
+<context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="281"/>
+        <location filename="../settings.py" line="328"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Vytvořit klíč&lt;/a&gt;</translation>
@@ -470,207 +487,207 @@ máte obzvláště světlou pokožku.</translation>
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="../settings.py" line="47"/>
+        <location filename="../settings.py" line="49"/>
         <source>City</source>
         <translation>Město</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="50"/>
+        <location filename="../settings.py" line="52"/>
         <source>Click to edit the cities list</source>
         <translation>Klepněte pro upravení seznamu měst</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="53"/>
+        <location filename="../settings.py" line="55"/>
         <source>Language</source>
         <translation>Jazyk</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="62"/>
+        <location filename="../settings.py" line="65"/>
         <source>Bulgarian</source>
         <translation>Bulharský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="63"/>
+        <location filename="../settings.py" line="66"/>
         <source>Catalan</source>
         <translation>Katalánský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="64"/>
+        <location filename="../settings.py" line="67"/>
         <source>Czech</source>
         <translation>Český</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="65"/>
+        <location filename="../settings.py" line="68"/>
         <source>Danish</source>
         <translation>Dánský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="66"/>
+        <location filename="../settings.py" line="69"/>
         <source>German</source>
         <translation>Německý</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="67"/>
+        <location filename="../settings.py" line="70"/>
         <source>Greek</source>
         <translation>Řecký</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="68"/>
+        <location filename="../settings.py" line="71"/>
         <source>English</source>
         <translation>Anglický</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="69"/>
+        <location filename="../settings.py" line="72"/>
         <source>Spanish</source>
         <translation>Španělský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="70"/>
+        <location filename="../settings.py" line="73"/>
         <source>Finnish</source>
         <translation>Finský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="71"/>
+        <location filename="../settings.py" line="74"/>
         <source>French</source>
         <translation>Francouzský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="72"/>
+        <location filename="../settings.py" line="75"/>
         <source>Hebrew</source>
         <translation>Hebrejský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="73"/>
+        <location filename="../settings.py" line="76"/>
         <source>Croatian</source>
         <translation>Chorvatský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="74"/>
+        <location filename="../settings.py" line="77"/>
         <source>Hungarian</source>
         <translation>Maďarský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="75"/>
+        <location filename="../settings.py" line="78"/>
         <source>Italian</source>
         <translation>Italský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="76"/>
+        <location filename="../settings.py" line="79"/>
         <source>Japanese</source>
         <translation>Japonský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="77"/>
+        <location filename="../settings.py" line="80"/>
         <source>Lithuanian</source>
         <translation>Litevský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="78"/>
+        <location filename="../settings.py" line="81"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Norský (Bokmaal)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="79"/>
+        <location filename="../settings.py" line="82"/>
         <source>Dutch</source>
         <translation>Holandský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="80"/>
+        <location filename="../settings.py" line="83"/>
         <source>Polish</source>
         <translation>Polský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="81"/>
+        <location filename="../settings.py" line="84"/>
         <source>Portuguese</source>
         <translation>Portugalský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="82"/>
+        <location filename="../settings.py" line="85"/>
         <source>Brazil Portuguese</source>
         <translation>Portugalský (Brazílie)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="83"/>
+        <location filename="../settings.py" line="86"/>
         <source>Romanian</source>
         <translation>Rumunský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="84"/>
+        <location filename="../settings.py" line="87"/>
         <source>Russian</source>
         <translation>Ruský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="85"/>
+        <location filename="../settings.py" line="88"/>
         <source>Slovak</source>
         <translation>Slovenský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="86"/>
+        <location filename="../settings.py" line="89"/>
         <source>Swedish</source>
         <translation>Švédský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="87"/>
+        <location filename="../settings.py" line="90"/>
         <source>Turkish</source>
         <translation>Turecký</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="88"/>
+        <location filename="../settings.py" line="91"/>
         <source>Ukrainian</source>
         <translation>Ukrajinský</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="89"/>
+        <location filename="../settings.py" line="92"/>
         <source>Chinese Traditional</source>
         <translation>Čínský (tradiční)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="90"/>
+        <location filename="../settings.py" line="93"/>
         <source>Chinese Simplified</source>
         <translation>Čínský (zjednodušený)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="108"/>
+        <location filename="../settings.py" line="112"/>
         <source>Temperature unit</source>
         <translation>Jednotka teploty</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="151"/>
+        <location filename="../settings.py" line="188"/>
         <source>Update interval</source>
         <translation>Obnovovací interval</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="152"/>
+        <location filename="../settings.py" line="189"/>
         <source>minutes</source>
         <translation>minut</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="175"/>
+        <location filename="../settings.py" line="212"/>
         <source>Launch at startup</source>
         <translation>Spustit při spuštění</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="183"/>
+        <location filename="../settings.py" line="220"/>
         <source>Font colour in the tray</source>
         <translation>Barva písma v oznamovací oblasti panelu</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="189"/>
+        <location filename="../settings.py" line="226"/>
         <source>Reset</source>
         <translation>Nastavit znovu</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="190"/>
+        <location filename="../settings.py" line="227"/>
         <source>Reset font colour to system default</source>
         <translation>Nastavit barvu písma znovu na výchozí systému</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="194"/>
+        <location filename="../settings.py" line="231"/>
         <source>Notification on weather update</source>
         <translation>Upozornění na změnu počasi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
+        <location filename="../settings.py" line="407"/>
         <source>Meteo-qt Configuration</source>
         <translation>Nastavení Meteo-qt</translation>
     </message>
@@ -689,9 +706,33 @@ zůstaňte ve stínu.</translation>
     </message>
 </context>
 <context>
+    <name>Option to choose the default wind speed unit</name>
+    <message>
+        <location filename="../settings.py" line="135"/>
+        <source>Default</source>
+        <comment>Settings diaogue</comment>
+        <translation>Výchozí</translation>
+    </message>
+</context>
+<context>
+    <name>Option to choose wind speed unit</name>
+    <message>
+        <location filename="../settings.py" line="140"/>
+        <source>Beaufort</source>
+        <comment>Settings dialogue</comment>
+        <translation>Beaufort</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="145"/>
+        <source>Km/h</source>
+        <comment>Settings dialogue</comment>
+        <translation>Km/h</translation>
+    </message>
+</context>
+<context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="370"/>
+        <location filename="../meteo_qt.py" line="399"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozón</translation>
@@ -700,7 +741,7 @@ zůstaňte ve stínu.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1112"/>
+        <location filename="../meteo_qt.py" line="1148"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -737,7 +778,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="297"/>
+        <location filename="../meteo_qt.py" line="317"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Přeháňka</translation>
@@ -842,7 +883,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="227"/>
+        <location filename="../settings.py" line="271"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Velikost písma v oznamovací oblasti</translation>
@@ -851,26 +892,26 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="202"/>
+        <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray (only icon,
             only text, icon&amp;text</comment>
         <translation>Ikona v oznamovací oblasti</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="207"/>
+        <location filename="../settings.py" line="244"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikona a teplota</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="210"/>
+        <location filename="../settings.py" line="248"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikona</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="213"/>
+        <location filename="../settings.py" line="252"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Teplota</translation>
@@ -903,7 +944,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1792"/>
+        <location filename="../meteo_qt.py" line="1830"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
@@ -911,67 +952,62 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="97"/>
+        <location filename="../meteo_qt.py" line="95"/>
         <source>Cities</source>
         <translation>Města</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="110"/>
+        <location filename="../meteo_qt.py" line="108"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Dočasné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="111"/>
-        <source>&amp;Update</source>
-        <translation>&amp;Aktualizace</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="112"/>
+        <location filename="../meteo_qt.py" line="117"/>
         <source>&amp;Settings</source>
         <translation>&amp;Nastavení</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="113"/>
+        <location filename="../meteo_qt.py" line="118"/>
         <source>&amp;About</source>
         <translation>&amp;O programu</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="114"/>
+        <location filename="../meteo_qt.py" line="119"/>
         <source>Exit</source>
         <translation>Ukončit</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="136"/>
+        <location filename="../meteo_qt.py" line="141"/>
         <source>Searching weather data...</source>
         <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1353"/>
+        <location filename="../meteo_qt.py" line="1389"/>
         <source>Empty list</source>
         <translation>Prázdný seznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1372"/>
+        <location filename="../meteo_qt.py" line="1408"/>
         <source>No city configured</source>
         <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1387"/>
+        <location filename="../meteo_qt.py" line="1423"/>
         <source>No city has been configured yet.</source>
         <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1387"/>
+        <location filename="../meteo_qt.py" line="1423"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1844"/>
+        <location filename="../meteo_qt.py" line="1882"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1852"/>
+        <location filename="../meteo_qt.py" line="1890"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -980,92 +1016,92 @@ zůstaňte ve stínu.</translation>
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="151"/>
+        <location filename="../meteo_qt.py" line="156"/>
         <source>Mon</source>
         <translation>Po</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="152"/>
+        <location filename="../meteo_qt.py" line="157"/>
         <source>Tue</source>
         <translation>Út</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="153"/>
+        <location filename="../meteo_qt.py" line="158"/>
         <source>Wed</source>
         <translation>St</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="154"/>
+        <location filename="../meteo_qt.py" line="159"/>
         <source>Thu</source>
         <translation>Čt</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="155"/>
+        <location filename="../meteo_qt.py" line="160"/>
         <source>Fri</source>
         <translation>Pá</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="156"/>
+        <location filename="../meteo_qt.py" line="161"/>
         <source>Sat</source>
         <translation>So</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="157"/>
+        <location filename="../meteo_qt.py" line="162"/>
         <source>Sun</source>
         <translation>Ne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="226"/>
+        <location filename="../meteo_qt.py" line="231"/>
         <source>Wind</source>
         <translation>Vítr</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="267"/>
+        <location filename="../meteo_qt.py" line="287"/>
         <source>Cloudiness</source>
         <translation>Oblačnost</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="274"/>
+        <location filename="../meteo_qt.py" line="294"/>
         <source>Pressure</source>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="289"/>
+        <location filename="../meteo_qt.py" line="309"/>
         <source>Humidity</source>
         <translation>Vlhkost vzduchu</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="324"/>
+        <location filename="../meteo_qt.py" line="344"/>
         <source>Sunrise</source>
         <translation>Východ slunce</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="327"/>
+        <location filename="../meteo_qt.py" line="347"/>
         <source>Sunset</source>
         <translation>Západ slunce</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="427"/>
+        <location filename="../meteo_qt.py" line="456"/>
         <source>Weather status</source>
         <translation>Stav počasí</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="825"/>
+        <location filename="../meteo_qt.py" line="857"/>
         <source>Min Max Temperature of the day</source>
         <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1054"/>
+        <location filename="../meteo_qt.py" line="1088"/>
         <source>snow</source>
         <translation>Sníh</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1055"/>
+        <location filename="../meteo_qt.py" line="1089"/>
         <source>rain</source>
         <translation>Déšť</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1861"/>
+        <location filename="../meteo_qt.py" line="1899"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1107,7 +1143,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="274"/>
+        <location filename="../settings.py" line="321"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Klíč k OpenWeatherMap</translation>
@@ -1116,7 +1152,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tooltip</name>
     <message>
-        <location filename="../settings.py" line="55"/>
+        <location filename="../settings.py" line="57"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
@@ -1125,7 +1161,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="101"/>
+        <location filename="../meteo_qt.py" line="99"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Přepnout okno</translation>
@@ -1134,7 +1170,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1455"/>
+        <location filename="../meteo_qt.py" line="1491"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hledají se data o počasí...</translation>
@@ -1171,15 +1207,25 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="349"/>
+        <location filename="../meteo_qt.py" line="378"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ultrafialové záření</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="358"/>
+        <location filename="../meteo_qt.py" line="387"/>
         <source>Fetching...</source>
         <translation>Natahuje se...</translation>
+    </message>
+</context>
+<context>
+    <name>Unit displayed after the wind speed value and before
+                the wind description (keep the spaces before and after)</name>
+    <message>
+        <location filename="../meteo_qt.py" line="258"/>
+        <source> km/h </source>
+        <comment>Weather Infos panel</comment>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
@@ -1196,7 +1242,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="353"/>
+        <location filename="../settings.py" line="401"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Přidejte, prosím, město</translation>
@@ -1205,7 +1251,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="348"/>
+        <location filename="../settings.py" line="396"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Zadejte, prosím, svůj klíč k OpenWeatherMap</translation>
@@ -1736,15 +1782,6 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
         <translation>ZSZ</translation>
-    </message>
-</context>
-<context>
-    <name>Wind unit - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="117"/>
-        <source>Wind unit in Beaufort</source>
-        <comment>Settings dialogue</comment>
-        <translation>Jednotka větru v Beaufortech</translation>
     </message>
 </context>
 <context>
