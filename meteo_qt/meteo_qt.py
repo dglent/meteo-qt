@@ -216,7 +216,7 @@ class SystemTrayIcon(QMainWindow):
         icontemp_layout.addWidget(temp_label)
         over_layout.addLayout(icontemp_layout)
         weather = QLabel(
-            '<font size="4"><b>'
+            '<font size="3"><b>'
             + self.weatherDataDico['Meteo']
             + '<\b><\font>'
         )
