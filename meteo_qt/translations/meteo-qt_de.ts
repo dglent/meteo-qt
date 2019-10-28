@@ -111,7 +111,7 @@
         <location filename="../meteo_qt.py" line="109"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>Aktualisie&amp;ren</translation>
     </message>
 </context>
 <context>
@@ -437,7 +437,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="126"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Windgeschwindigkeit in</translation>
     </message>
 </context>
 <context>
@@ -694,7 +694,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="135"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"/>
+        <translation>Standard</translation>
     </message>
 </context>
 <context>
@@ -703,13 +703,13 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="140"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Beaufort</translation>
     </message>
     <message>
         <location filename="../settings.py" line="145"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Km/h</translation>
     </message>
 </context>
 <context>
@@ -1209,7 +1209,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="258"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"/>
+        <translation>km/h</translation>
     </message>
 </context>
 <context>
