@@ -2042,15 +2042,36 @@ class Download(QThread):
                     logging.debug(
                         'Found json page for the forecast of the day'
                     )
-            tree = etree.fromstring(page)
-            lat = tree[0][0].get('lat')
-            lon = tree[0][0].get('lon')
+            try:
+                tree = etree.fromstring(page)
+                lat = tree[0][0].get('lat')
+                lon = tree[0][0].get('lon')
+
+                weather_icon = tree[8].get('icon')
+                for var_ in [lat, lon, weather_icon]:
+                    if isinstance(var_, type(None)):
+                        raise TypeError
+            except TypeError as error:
+                logging.debug(
+                    'Error, use JSON page for the actual weather info'
+                    + str(traceback.print_exc())
+                )
+                req = urllib.request.urlopen(
+                    self.baseurl + self.id_ + self.suffix.replace('xml', 'json'), timeout=5
+                )
+                page = req.read().decode('utf-8').replace("'", '"')
+                actual_weather_dic = json.loads(page)
+                lat = str(actual_weather_dic["coord"]["lat"])
+                lon = str(actual_weather_dic["coord"]["lon"])
+                weather_icon = actual_weather_dic["weather"][0]["icon"]
+
             uv_ind = (lat, lon)
+            url = self.wIconUrl + weather_icon + '.png'
+
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
             if not use_json_day_forecast:
                 treedayforecast = etree.fromstring(pagedayforecast)
-            weather_icon = tree[8].get('icon')
-            url = self.wIconUrl + weather_icon + '.png'
+
             logging.debug('Icon url: ' + url)
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
@@ -2064,8 +2085,7 @@ class Download(QThread):
         except (
                 ConnectionResetError,
                 urllib.error.HTTPError,
-                urllib.error.URLError,
-                TypeError
+                urllib.error.URLError
         ) as error:
             if self.tentatives >= 10:
                 done = 1
