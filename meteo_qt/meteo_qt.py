@@ -211,8 +211,10 @@ class SystemTrayIcon(QMainWindow):
         temp_label = QLabel(
             '<font size="5"><b>' + '{0:.1f}'
             .format(float(self.weatherDataDico['Temp'][:-1])) + ' '
-            + self.unit_temp + self.temp_trend + '<\b><\font>'
+            + self.unit_temp + self.temp_trend + '<\b>'
+            + '<\font>'
         )
+        temp_label.setWordWrap(True)
         icontemp_layout.addWidget(temp_label)
         over_layout.addLayout(icontemp_layout)
         weather = QLabel(
@@ -227,6 +229,21 @@ class SystemTrayIcon(QMainWindow):
         over_layout.addLayout(self.dayforecast_temp_layout)
         # ------Second part overview day---------
         self.over_grid = QGridLayout()
+        # Feels Like
+        feels_like_label = QLabel(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Label (For the temperature)',
+                'Feels like',
+                'Weather info panel'
+            )
+            + '</b><\font>'
+        )
+        feels_like_value = QLabel(
+            self.weatherDataDico['Feels_like'][0]
+            + ' '
+            + self.weatherDataDico['Feels_like'][1]
+        )
         # Wind
         self.wind_label = QLabel(
             '<font size="3" color=><b>' + self.tr('Wind') + '<\font><\b>'
@@ -407,25 +424,27 @@ class SystemTrayIcon(QMainWindow):
         )
         self.ozone_value_label = QLabel()
         self.ozone_value_label.setText(fetching_text)
-        self.over_grid.addWidget(self.wind_label, 0, 0)
-        self.over_grid.addWidget(windLabelDescr, 0, 1)
-        self.over_grid.addWidget(self.wind_icon_label, 0, 2)
-        self.over_grid.addWidget(self.clouds_label, 1, 0)
-        self.over_grid.addWidget(clouds_name, 1, 1)
-        self.over_grid.addWidget(self.pressure_label, 2, 0)
-        self.over_grid.addWidget(pressure_value, 2, 1)
-        self.over_grid.addWidget(self.humidity_label, 3, 0)
-        self.over_grid.addWidget(humidity_value, 3, 1, 1, 3)  # align left
-        self.over_grid.addWidget(precipitation_label, 4, 0)
-        self.over_grid.addWidget(precipitation_value, 4, 1)
-        self.over_grid.addWidget(sunrise_label, 5, 0)
-        self.over_grid.addWidget(sunrise_value, 5, 1)
-        self.over_grid.addWidget(sunset_label, 6, 0)
-        self.over_grid.addWidget(sunset_value, 6, 1)
-        self.over_grid.addWidget(daylight_label, 7, 0)
-        self.over_grid.addWidget(daylight_value_label, 7, 1)
-        self.over_grid.addWidget(self.uv_label, 8, 0)
-        self.over_grid.addWidget(self.uv_value_label, 8, 1)
+        self.over_grid.addWidget(feels_like_label, 0, 0)
+        self.over_grid.addWidget(feels_like_value, 0, 1)
+        self.over_grid.addWidget(self.wind_label, 1, 0)
+        self.over_grid.addWidget(windLabelDescr, 1, 1)
+        self.over_grid.addWidget(self.wind_icon_label, 1, 2)
+        self.over_grid.addWidget(self.clouds_label, 2, 0)
+        self.over_grid.addWidget(clouds_name, 2, 1)
+        self.over_grid.addWidget(self.pressure_label, 3, 0)
+        self.over_grid.addWidget(pressure_value, 3, 1)
+        self.over_grid.addWidget(self.humidity_label, 4, 0)
+        self.over_grid.addWidget(humidity_value, 4, 1, 1, 3)  # align left
+        self.over_grid.addWidget(precipitation_label, 5, 0)
+        self.over_grid.addWidget(precipitation_value, 5, 1)
+        self.over_grid.addWidget(sunrise_label, 6, 0)
+        self.over_grid.addWidget(sunrise_value, 6, 1)
+        self.over_grid.addWidget(sunset_label, 7, 0)
+        self.over_grid.addWidget(sunset_value, 7, 1)
+        self.over_grid.addWidget(daylight_label, 8, 0)
+        self.over_grid.addWidget(daylight_value_label, 8, 1)
+        self.over_grid.addWidget(self.uv_label, 9, 0)
+        self.over_grid.addWidget(self.uv_value_label, 9, 1)
         # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -665,14 +684,16 @@ class SystemTrayIcon(QMainWindow):
         ''' Find the minimum and maximum temperature of
             the day in the 4 days forecast '''
         self.date_temp_forecast = {}
-        for d in range(1, fetched_file_periods):
-            date_list = self.dayforecast_data[4][d].get('from').split('-')
-            date_list_time = date_list[2].split('T')
-            date_list[2] = date_list_time[0]
-            if not date_list[2] in self.date_temp_forecast:
-                self.date_temp_forecast[date_list[2]] = []
-            self.date_temp_forecast[date_list[2]].append(
-                float(self.dayforecast_data[4][d][4].get('max')))
+        for element in self.dayforecast_data.iter():
+            if element.tag == 'time':
+                date_list = element.get('from').split('-')
+                date_list_time = date_list[2].split('T')
+                date_list[2] = date_list_time[0]
+            if element.tag == 'temperature':
+                if not date_list[2] in self.date_temp_forecast:
+                    self.date_temp_forecast[date_list[2]] = []
+                self.date_temp_forecast[date_list[2]].append(
+                    float(element.get('max')))
 
     def forecast6data(self):
         '''Forecast for the next 6 days'''
@@ -829,118 +850,162 @@ class SystemTrayIcon(QMainWindow):
         doc = QTextDocument()
         fetched_file_periods = (len(self.dayforecast_data.xpath('//time')))
         self.find_min_max(fetched_file_periods)
-        for d in range(1, fetched_file_periods):
+        weather_end = False
+        collate_info = False
+        for element in self.dayforecast_data.iter():
             # Find the day for the forecast (today+1) at 12:00:00
-            date_list = self.dayforecast_data[4][d].get('from').split('-')
-            date_list_time = date_list[2].split('T')
-            date_list[2] = date_list_time[0]
-            date_list.append(date_list_time[1])
-            if (
-                datetime.datetime.now().day == int(date_list[2])
-                or date_list[3] != '12:00:00'
-            ):
-                continue
-            day_of_week = str(datetime.date(
-                int(date_list[0]), int(date_list[1]),
-                int(date_list[2])).weekday())
-            label = QLabel('' + self.days_dico[day_of_week] + '')
-            label.setToolTip('-'.join(i for i in date_list[:3]))
-            label.setAlignment(Qt.AlignHCenter)
-            self.forecast_days_layout.addWidget(label)
-            temp_min = min(self.date_temp_forecast[date_list[2]])
-            temp_max = max(self.date_temp_forecast[date_list[2]])
-            mlabel = QLabel(
-                '<font color=>' + '{0:.0f}'.format(temp_min) + '°<br/>'
-                + '{0:.0f}'.format(temp_max) + '°</font>'
-            )
-            mlabel.setAlignment(Qt.AlignHCenter)
-            mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
-            self.forecast_minmax_layout.addWidget(mlabel)
-            # icon
-            self.icon_list.append(self.dayforecast_data[4][d][0].get('var'))
-            weather_cond = self.dayforecast_data[4][d][0].get('name')
-            try:
-                weather_cond = (
-                    self.conditions[
-                        self.dayforecast_data[4][d][0].get('number')
-                    ]
-                )
-            except:
-                logging.warning(
-                    'Cannot find localisation string for: '
-                    + weather_cond
-                )
-                pass
-            try:
-                # Take the label translated text and remove the html tags
-                doc.setHtml(self.precipitation_label.text())
-                precipitation_label = doc.toPlainText() + ': '
-                precipitation_type = self.dayforecast_data[4][d][1].get('type')
-                precipitation_type = (
-                    self.precipitation[precipitation_type] + ' '
-                )
-                precipitation_value = (
-                    self.dayforecast_data[4][d][1].get('value')
-                )
-                rain_unit = ' mm'
-                if self.unit_system == ' mph ':
-                    rain_unit = ' inch'
-                    precipitation_value = (
-                        str(float(precipitation_value) / 25.4) + ' '
-                    )
-                    precipitation_value = (
-                        "{0:.2f}".format(float(precipitation_value))
-                    )
+            if element.tag == 'time':
+                date_list = element.get('from').split('-')
+                date_list_time = date_list[2].split('T')
+                date_list[2] = date_list_time[0]
+                date_list.append(date_list_time[1])
+                if (
+                    datetime.datetime.now().day == int(date_list[2])
+                    or date_list[3] != '12:00:00'
+                ):
+                    collate_info = False
+                    continue
                 else:
-                    precipitation_value = (
-                        "{0:.1f}".format(float(precipitation_value))
+                    collate_info = True
+                day_of_week = str(
+                    datetime.date(
+                        int(date_list[0]),
+                        int(date_list[1]),
+                        int(date_list[2])
+                    ).weekday()
+                )
+
+                label = QLabel('' + self.days_dico[day_of_week] + '')
+                label.setToolTip('-'.join(i for i in date_list[:3]))
+                label.setAlignment(Qt.AlignHCenter)
+                self.forecast_days_layout.addWidget(label)
+                temp_min = min(self.date_temp_forecast[date_list[2]])
+                temp_max = max(self.date_temp_forecast[date_list[2]])
+                mlabel = QLabel(
+                    '<font color=>' + '{0:.0f}'.format(temp_min) + '°<br/>'
+                    + '{0:.0f}'.format(temp_max) + '°</font>'
+                )
+                mlabel.setAlignment(Qt.AlignHCenter)
+                mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
+                self.forecast_minmax_layout.addWidget(mlabel)
+
+            if element.tag == 'symbol' and collate_info:
+                # icon
+                self.icon_list.append(element.get('var'))
+                weather_cond = element.get('name')
+                try:
+                    weather_cond = (
+                        self.conditions[
+                            element.get('number')
+                        ]
                     )
+                except:
+                    logging.warning(
+                        'Cannot find localisation string for: '
+                        + weather_cond
+                    )
+                    pass
+            if element.tag == 'precipitation' and collate_info:
+                try:
+                    # Take the label translated text and remove the html tags
+                    doc.setHtml(self.precipitation_label.text())
+                    precipitation_label = doc.toPlainText() + ': '
+                    precipitation_type = element.get('type')
+                    precipitation_type = (
+                        self.precipitation[precipitation_type] + ' '
+                    )
+                    precipitation_value = (
+                        element.get('value')
+                    )
+                    rain_unit = ' mm'
+                    if self.unit_system == ' mph ':
+                        rain_unit = ' inch'
+                        precipitation_value = (
+                            str(float(precipitation_value) / 25.4) + ' '
+                        )
+                        precipitation_value = (
+                            "{0:.2f}".format(float(precipitation_value))
+                        )
+                    else:
+                        precipitation_value = (
+                            "{0:.1f}".format(float(precipitation_value))
+                        )
+                    weather_cond += (
+                        '\n' + precipitation_label + precipitation_type
+                        + precipitation_value + rain_unit
+                    )
+                except:
+                    pass
+
+                doc.setHtml(self.wind_label.text())
+                wind = doc.toPlainText() + ': '
+
+            if element.tag == 'windDirection' and collate_info:
+                try:
+                    wind_direction = (
+                        self.wind_direction[
+                            element.get('code')
+                        ]
+                    )
+                except:
+                    wind_direction = ''
+
+            if element.tag == 'windSpeed' and collate_info:
+                wind_speed = (
+                    '{0:.1f}'.format(
+                        float(element.get('mps'))
+                    )
+                )
+                if self.bft_bool:
+                    wind_speed = str(self.convertToBeaufort(wind_speed))
+                if self.wind_km_bool:
+                    wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
                 weather_cond += (
-                    '\n' + precipitation_label + precipitation_type
-                    + precipitation_value + rain_unit
+                    '\n' + wind + wind_speed + self.unit_system_wind
+                    + wind_direction
                 )
-            except:
-                pass
-            doc.setHtml(self.wind_label.text())
-            wind = doc.toPlainText() + ': '
-            try:
-                wind_direction = (
-                    self.wind_direction[
-                        self.dayforecast_data[4][d][2].get('code')
-                    ]
+            if element.tag == 'feels_like' and collate_info:
+                feels_like_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 4 days forecast',
+                    'Feels like',
+                    'Weather information window'
                 )
-            except:
-                wind_direction = ''
-            wind_speed = (
-                '{0:.1f}'.format(
-                    float(self.dayforecast_data[4][d][3].get('mps'))
+                feels_like_value = element.get('value')
+                feels_like_unit = element.get('unit')
+                if feels_like_unit == 'celsius':
+                    feels_like_unit = '°C'
+                if feels_like_unit == 'fahrenheit':
+                    feels_like_unit = '°F'
+                weather_cond += f'\n{feels_like_label} : {feels_like_value} {feels_like_unit}'
+
+            if element.tag == 'pressure' and collate_info:
+                doc.setHtml(self.pressure_label.text())
+                pressure_label = doc.toPlainText() + ': '
+                pressure = (
+                    '{0:.1f}'.format(
+                        float(
+                            element.get('value')
+                        )
+                    )
                 )
-            )
-            if self.bft_bool:
-                wind_speed = str(self.convertToBeaufort(wind_speed))
-            if self.wind_km_bool:
-                wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
-            weather_cond += (
-                '\n' + wind + wind_speed + self.unit_system_wind
-                + wind_direction
-            )
-            doc.setHtml(self.pressure_label.text())
-            pressure_label = doc.toPlainText() + ': '
-            pressure = (
-                '{0:.1f}'.format(
-                    float(self.dayforecast_data[4][d][5].get('value'))
-                )
-            )
-            weather_cond += '\n' + pressure_label + pressure + ' hPa'
-            humidity = self.dayforecast_data[4][d][6].get('value')
-            doc.setHtml(self.humidity_label.text())
-            humidity_label = doc.toPlainText() + ': '
-            weather_cond += '\n' + humidity_label + humidity + ' %'
-            clouds = self.dayforecast_data[4][d][7].get('all')
-            doc.setHtml(self.clouds_label.text())
-            clouds_label = doc.toPlainText() + ': '
-            weather_cond += '\n' + clouds_label + clouds + ' %'
-            self.forecast_weather_list.append(weather_cond)
+                weather_cond += '\n' + pressure_label + pressure + ' hPa'
+
+            if element.tag == 'humidity' and collate_info:
+                humidity = element.get('value')
+                doc.setHtml(self.humidity_label.text())
+                humidity_label = doc.toPlainText() + ': '
+                weather_cond += '\n' + humidity_label + humidity + ' %'
+
+            if element.tag == 'clouds' and collate_info:
+                clouds = element.get('all')
+                doc.setHtml(self.clouds_label.text())
+                clouds_label = doc.toPlainText() + ': '
+                weather_cond += '\n' + clouds_label + clouds + ' %'
+                weather_end = True
+
+            if weather_end is True:
+                self.forecast_weather_list.append(weather_cond)
+                weather_end = False
 
     def iconfetch(self):
         logging.debug('Download forecast icons...')
@@ -1611,6 +1676,10 @@ class SystemTrayIcon(QMainWindow):
                     rain_mode, rain_value
                 )
 
+            if element.tag == 'feels_like':
+                t_unit = {'celsius': '°C', 'fahrenheit': '°F'}
+                self.weatherDataDico['Feels_like'] = [element.get('value'), t_unit[element.get('unit')]]
+
         self.city_weather_info = (
             self.city + ' ' + self.country + ' '
             + self.temp_decimal + ' ' + self.meteo
@@ -2046,14 +2115,13 @@ class Download(QThread):
                 tree = etree.fromstring(page)
                 lat = tree[0][0].get('lat')
                 lon = tree[0][0].get('lon')
-
-                weather_icon = tree[8].get('icon')
+                weather_icon = tree[9].get('icon')
                 for var_ in [lat, lon, weather_icon]:
                     if isinstance(var_, type(None)):
                         raise TypeError
-            except TypeError as error:
+            except TypeError:
                 logging.debug(
-                    'Error, use JSON page for the actual weather info'
+                    'Error, use JSON page for the actual weather info '
                     + str(traceback.print_exc())
                 )
                 req = urllib.request.urlopen(
