@@ -1059,6 +1059,10 @@ class SystemTrayIcon(QMainWindow):
                 temperature_at_hour = float(
                     self.dayforecast_data[4][d][4].get('value')
                 )
+                feels_like_value = self.dayforecast_data[4][d][5].get('value')
+                feels_like_unit_dic = {'celsius': '°C', 'fahrenheit': '°F'}
+                feels_like_unit = feels_like_unit_dic[self.dayforecast_data[4][d][5].get('unit')]
+
                 precipitation = str(
                     self.dayforecast_data[4][d][1].get('value')
                 )
@@ -1081,8 +1085,8 @@ class SystemTrayIcon(QMainWindow):
                 finally:
                     if wind == '':
                         wind += '<br/>'
-                clouds = self.dayforecast_data[4][d][7].get('value')
-                cloudspercent = self.dayforecast_data[4][d][7].get('all')
+                clouds = self.dayforecast_data[4][d][8].get('value')
+                cloudspercent = self.dayforecast_data[4][d][8].get('all')
             else:
                 weather_cond = self.conditions[
                     str(self.dayforecast_data['list'][d]['weather'][0]['id'])
@@ -1144,19 +1148,26 @@ class SystemTrayIcon(QMainWindow):
             elif unit == ' ':
                 mu = 'kelvin'
             ttip = (
+                f'{QCoreApplication.translate("Tootltip forcast of the day", "Feels like", "Weather info window")} '
+                f'{feels_like_value} {feels_like_unit}'
+                '<br/>'
+            )
+            ttip_prec = (
                 str(precipitation) + ' ' + mu + ' ' + precipitation_type
                 + '<br/>'
             )
-            if ttip.count('None') >= 1:
-                ttip = ''
+            if ttip_prec.count('None') >= 1:
+                ttip_prec = ''
+                logging.warning(f'Actual day forcast n° {d} : No precipitation info provided')
             else:
-                ttip = ttip.replace('snow', self.tr('snow'))
-                ttip = ttip.replace('rain', self.tr('rain'))
+                ttip_prec = ttip_prec.replace('snow', self.tr('snow'))
+                ttip_prec = ttip_prec.replace('rain', self.tr('rain'))
+                ttip += ttip_prec
             if self.bft_bool is True:
                 windspeed = self.convertToBeaufort(windspeed)
             if self.wind_km_bool:
                 windspeed = '{0:.1f}'.format(float(windspeed) * 3.6)
-            ttip = ttip + (str(windspeed) + ' ' + self.unit_system_wind)
+            ttip += (str(windspeed) + ' ' + self.unit_system_wind)
             if winddircode != '':
                 wind = self.wind_direction[winddircode] + ' '
             else:
@@ -1178,7 +1189,7 @@ class SystemTrayIcon(QMainWindow):
             else:
                 logging.warning('Clouding name is missing: ' + str(clouds))
             clouds_cond = clouds_translated + ' ' + str(cloudspercent) + '%'
-            ttip = ttip + wind + clouds_cond
+            ttip += wind + clouds_cond
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
 
