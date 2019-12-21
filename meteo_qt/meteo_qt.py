@@ -1085,6 +1085,8 @@ class SystemTrayIcon(QMainWindow):
                 finally:
                     if wind == '':
                         wind += '<br/>'
+                pressure = self.dayforecast_data[4][d][6].get('value')
+                humidity = self.dayforecast_data[4][d][7].get('value')
                 clouds = self.dayforecast_data[4][d][8].get('value')
                 cloudspercent = self.dayforecast_data[4][d][8].get('all')
             else:
@@ -1189,7 +1191,9 @@ class SystemTrayIcon(QMainWindow):
             else:
                 logging.warning('Clouding name is missing: ' + str(clouds))
             clouds_cond = clouds_translated + ' ' + str(cloudspercent) + '%'
-            ttip += wind + clouds_cond
+            ttip += wind + '<br/>' + clouds_cond + '<br/>'
+            ttip += f'{QCoreApplication.translate("Tootltip forcast of the day", "Pressure", "Weather info window")} {pressure}  hPa<br/>'
+            ttip += f'{QCoreApplication.translate("Tootltip forcast of the day", "Humidity", "Weather info window")} {humidity} %'
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
 
