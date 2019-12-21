@@ -1740,7 +1740,7 @@ class SystemTrayIcon(QMainWindow):
         temp = float(self.tempFloat)
         if (
             self.id_ in self.trendCities_dic
-            and self.trendCities_dic[self.id_][2] is not ''
+            and self.trendCities_dic[self.id_][2] != ''
         ):
             if temp > float(self.trendCities_dic[self.id_][2]):
                 self.temp_trend = " ↗"
