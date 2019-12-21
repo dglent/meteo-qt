@@ -1763,15 +1763,25 @@ class SystemTrayIcon(QMainWindow):
         trans_cities = self.settings.value('CitiesTranslation') or '{}'
         trans_cities_dict = eval(trans_cities)
         city = self.city + '_' + self.country + '_' + self.id_
+        feels_like = (
+            QCoreApplication.translate(
+                'Temperature info',
+                'Feels like',
+                'SystemTrayIcon ToolTip'
+            )
+            + ' '
+            + ' '.join(fl for fl in self.weatherDataDico['Feels_like'])
+        )
+
         if city in trans_cities_dict:
             self.city_weather_info = (
                 trans_cities_dict[city] + ' '
-                + self.temp_decimal + ' ' + self.meteo
+                + self.temp_decimal + '<br/>' + feels_like + '<br/>' + self.meteo
             )
         else:
             self.city_weather_info = (
                 self.city + ' ' + self.country + ' '
-                + self.temp_decimal + ' ' + self.meteo
+                + self.temp_decimal + '<br/>' + feels_like + '<br/> ' + self.meteo
             )
 
     def tray(self):
