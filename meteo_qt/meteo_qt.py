@@ -1809,9 +1809,14 @@ class SystemTrayIcon(QMainWindow):
         self.traycolor = self.settings.value('TrayColor') or ''
         self.fontsize = self.settings.value('FontSize') or '18'
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
+        if self.tray_type == 'feels_like_temp' or self.tray_type == 'icon&feels_like':
+            temp_tray = '{0:.0f}'.format(float(self.weatherDataDico['Feels_like'][0]))
+            if temp_decimal:
+                temp_tray = '{0:.1f}'.format(float(self.weatherDataDico['Feels_like'][0]))
+            temp_tray += '°'
         pt = QPainter()
         pt.begin(icon)
-        if self.tray_type != 'temp':
+        if self.tray_type != 'temp' and self.tray_type != 'feels_like_temp':
             pt.drawPixmap(0, -12, 64, 64, self.wIcon)
         self.bold_set = self.settings.value('Bold') or 'False'
         if self.bold_set == 'True':
@@ -1820,10 +1825,10 @@ class SystemTrayIcon(QMainWindow):
             br = QFont.Normal
         pt.setFont(QFont('sans-sertif', int(self.fontsize), weight=br))
         pt.setPen(QColor(self.traycolor))
-        if self.tray_type == 'icon&temp':
+        if self.tray_type == 'icon&temp' or self.tray_type == 'icon&feels_like':
             pt.drawText(icon.rect(), Qt.AlignBottom | Qt.AlignCenter,
                         str(temp_tray))
-        if self.tray_type == 'temp':
+        if self.tray_type == 'temp' or self.tray_type == 'feels_like_temp':
             pt.drawText(icon.rect(), Qt.AlignCenter, str(temp_tray))
         pt.end()
         if self.tray_type == 'icon':

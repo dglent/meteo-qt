@@ -236,27 +236,46 @@ class MeteoSettings(QDialog):
         self.notifier_checkbox.stateChanged.connect(self.notifier)
         self.notifier_changed = False
         # Icon & Temp
-        self.tray_icon_temp_label = QLabel(QCoreApplication.translate(
-            "Settings dialogue", "System tray icon",
-            '''Setting to choose the type of the icon on the tray (only icon,
-            only text, icon&text'''))
+        self.tray_icon_temp_label = QLabel(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'System tray icon',
+                'Setting to choose the type of the icon on the tray'
+                '(only icon only text, icon&text'
+            )
+        )
         self.tray_icon_combo = QComboBox()
         tray_icon_temp = QCoreApplication.translate(
-            "Settings dialogue", "Icon & temperature",
+            'Settings dialogue',
+            'Icon & temperature',
             'Setting to choose the type of the icon on the tray'
         )
         tray_icon = QCoreApplication.translate(
-            "Settings dialogue", "Icon",
+            'Settings dialogue',
+            'Icon',
             'Setting to choose the type of the icon on the tray'
         )
         tray_temp = QCoreApplication.translate(
-            "Settings dialogue", "Temperature",
+            'Settings dialogue',
+            'Temperature',
+            'Setting to choose the type of the icon on the tray'
+        )
+        tray_icon_feels_like = QCoreApplication.translate(
+            'Settings dialogue',
+            'Icon & Feels like temperature',
+            'Setting to choose the type of the icon on the tray'
+        )
+        tray_feels_like = QCoreApplication.translate(
+            'Settings dialogue',
+            'Feels like temperature',
             'Setting to choose the type of the icon on the tray'
         )
         self.tray_dico = {
             'icon&temp': tray_icon_temp,
             'icon': tray_icon,
-            'temp': tray_temp
+            'temp': tray_temp,
+            'icon&feels_like': tray_icon_feels_like,
+            'feels_like_temp': tray_feels_like,
         }
         set_tray_icon = self.settings.value('TrayType') or 'icon&temp'
         tray_icon_list = sorted(self.tray_dico.values())
@@ -270,8 +289,9 @@ class MeteoSettings(QDialog):
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(
             QCoreApplication.translate(
-                "Settings dialog", "Font size in tray",
-                "Setting for the font size of the temperature in the tray icon"
+                'Settings dialog',
+                'Font size in tray',
+                'Setting for the font size of the temperature in the tray icon'
             )
         )
         self.fontsize_spinbox = QSpinBox()
