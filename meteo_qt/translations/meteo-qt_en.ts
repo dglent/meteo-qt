@@ -257,7 +257,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="341"/>
+        <location filename="../settings.py" line="361"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -272,7 +272,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="298"/>
+        <location filename="../settings.py" line="318"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -328,7 +328,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1217"/>
+        <location filename="../meteo_qt.py" line="1227"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation type="unfinished"></translation>
@@ -337,7 +337,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Download</name>
     <message>
-        <location filename="../meteo_qt.py" line="2186"/>
+        <location filename="../meteo_qt.py" line="2201"/>
         <source>Error:
 </source>
         <translation type="unfinished"></translation>
@@ -375,7 +375,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Font setting - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="285"/>
+        <location filename="../settings.py" line="305"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -427,7 +427,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="311"/>
+        <location filename="../settings.py" line="331"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -445,7 +445,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="328"/>
+        <location filename="../settings.py" line="348"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -674,7 +674,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="407"/>
+        <location filename="../settings.py" line="427"/>
         <source>Meteo-qt Configuration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -726,7 +726,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1228"/>
+        <location filename="../meteo_qt.py" line="1238"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -865,7 +865,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Settings dialog</name>
     <message>
-        <location filename="../settings.py" line="271"/>
+        <location filename="../settings.py" line="290"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation type="unfinished"></translation>
@@ -874,27 +874,38 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="239"/>
-        <source>System tray icon</source>
-        <comment>Setting to choose the type of the icon on the tray (only icon,
-            only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="244"/>
+        <location filename="../settings.py" line="248"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="248"/>
+        <location filename="../settings.py" line="253"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="252"/>
+        <location filename="../settings.py" line="258"/>
         <source>Temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="239"/>
+        <source>System tray icon</source>
+        <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="263"/>
+        <source>Icon &amp; Feels like temperature</source>
+        <comment>Setting to choose the type of the icon on the tray</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="268"/>
+        <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"></translation>
     </message>
@@ -926,7 +937,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="1924"/>
+        <location filename="../meteo_qt.py" line="1939"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -964,32 +975,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1469"/>
+        <location filename="../meteo_qt.py" line="1479"/>
         <source>Empty list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1488"/>
+        <location filename="../meteo_qt.py" line="1498"/>
         <source>No city configured</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1503"/>
+        <location filename="../meteo_qt.py" line="1513"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1503"/>
+        <location filename="../meteo_qt.py" line="1513"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1976"/>
+        <location filename="../meteo_qt.py" line="1991"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="1999"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1081,7 +1092,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1993"/>
+        <location filename="../meteo_qt.py" line="2008"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1106,7 +1117,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Temperature info</name>
     <message>
-        <location filename="../meteo_qt.py" line="1766"/>
+        <location filename="../meteo_qt.py" line="1776"/>
         <source>Feels like</source>
         <comment>SystemTrayIcon ToolTip</comment>
         <translation type="unfinished"></translation>
@@ -1115,7 +1126,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="321"/>
+        <location filename="../settings.py" line="341"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -1140,6 +1151,21 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
+    <name>Tootltip forcast of the day</name>
+    <message>
+        <location filename="../meteo_qt.py" line="1195"/>
+        <source>Pressure</source>
+        <comment>Weather info window</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="1200"/>
+        <source>Humidity</source>
+        <comment>Weather info window</comment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Tray context menu</name>
     <message>
         <location filename="../meteo_qt.py" line="99"/>
@@ -1151,7 +1177,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1571"/>
+        <location filename="../meteo_qt.py" line="1581"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation type="unfinished"></translation>
@@ -1222,7 +1248,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="401"/>
+        <location filename="../settings.py" line="421"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
@@ -1231,7 +1257,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="396"/>
+        <location filename="../settings.py" line="416"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"></translation>
