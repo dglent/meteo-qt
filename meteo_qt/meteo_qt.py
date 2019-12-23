@@ -1192,8 +1192,18 @@ class SystemTrayIcon(QMainWindow):
                 logging.warning('Clouding name is missing: ' + str(clouds))
             clouds_cond = clouds_translated + ' ' + str(cloudspercent) + '%'
             ttip += wind + '<br/>' + clouds_cond + '<br/>'
-            ttip += f'{QCoreApplication.translate("Tootltip forcast of the day", "Pressure", "Weather info window")} {pressure}  hPa<br/>'
-            ttip += f'{QCoreApplication.translate("Tootltip forcast of the day", "Humidity", "Weather info window")} {humidity} %'
+            pressure_local = QCoreApplication.translate(
+                'Tootltip forcast of the day',
+                'Pressure',
+                'Weather info window'
+            )
+            humidity_local = QCoreApplication.translate(
+                'Tootltip forcast of the day',
+                'Humidity',
+                'Weather info window'
+            )
+            ttip += f'{pressure_local} {pressure}  hPa<br/>'
+            ttip += f'{humidity_local} {humidity} %'
             daytime.setToolTip(ttip)
             self.dayforecast_temp_layout.addWidget(daytime)
 
