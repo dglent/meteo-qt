@@ -102,6 +102,14 @@ class SearchCity(QDialog):
 
     def timer_run(self):
         self.timer_search.start(1000)
+        self.status.setText(
+            "ℹ "
+            + QCoreApplication.translate(
+                "Status message",
+                "Put the city's name, comma, 2-letter country code (ex: London, GB)",
+                "City search dialogue"
+            )
+        )
 
     def closeEvent(self, event):
         self.settings.setValue(
@@ -268,7 +276,12 @@ class WorkThread(QThread):
     def __init__(self, accurate_url, city, suffix, parent=None):
         QThread.__init__(self, parent)
         self.accurate_url = accurate_url
-        self.city = city
+        if city.count(',') == 1:
+            ccity = city.split(',')[0]
+            ccode = city.split(',')[1]
+            self.city = ccity + ',' + ccode.upper()
+        else:
+            self.city = city
         self.suffix = suffix
         self.tentatives = 1
         self.settings = QSettings()
