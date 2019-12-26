@@ -166,23 +166,177 @@ class SystemTrayIcon(QMainWindow):
         self.hpa_indications = self.cond.pressure
         self.uv_risk = self.cond.uv_risk
         self.uv_recommend = self.cond.uv_recommend
-
+        self.doc = QTextDocument()
+        self.create_overview()
         self.refresh()
 
-    def overviewcity(self):
+
+    def create_overview(self):
         self.overviewcitydlg = QDialog()
         self.setCentralWidget(self.overviewcitydlg)
+        self.total_layout = QVBoxLayout()
+
+        # ----First part overview day -----
+        self.over_layout = QVBoxLayout()
+        self.dayforecast_layout = QHBoxLayout()
+        self.dayforecast_temp_layout = QHBoxLayout()
+
+        self.city_label = QLabel()
+        self.over_layout.addWidget(self.city_label)
+        self.icontemp_layout = QHBoxLayout()
+        self.icon_label = QLabel()
+        self.icontemp_layout.addWidget(self.icon_label)
+        self.temp_label = QLabel()
+        self.temp_label.setWordWrap(True)
+        self.icontemp_layout.addWidget(self.temp_label)
+        self.over_layout.addLayout(self.icontemp_layout)
+        self.weather_label = QLabel()
+        self.weather_label.setWordWrap(True)
+        self.icontemp_layout.addWidget(self.weather_label)
+        self.icontemp_layout.addStretch()
+        self.over_layout.addLayout(self.dayforecast_layout)
+        self.over_layout.addLayout(self.dayforecast_temp_layout)
+        # ------Second part overview day---------
+        self.over_grid = QGridLayout()
+        # Feels Like
+        self.feels_like_label = QLabel(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Label (For the temperature)',
+                'Feels like',
+                'Weather info panel'
+            )
+            + '</b><\font>'
+        )
+        self.feels_like_value = QLabel()
+        # Wind
+        self.wind_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Wind') + '<\font><\b>'
+        )
+        self.wind_label.setAlignment(Qt.AlignTop)
+        self.windLabelDescr = QLabel('None')
+        self.wind_icon_label = QLabel()
+        self.wind_icon_label.setAlignment(Qt.AlignLeft)
+        self.wind_icon = QPixmap(':/arrow')
+        # Clouds
+        self.clouds_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Cloudiness') + '<\b><\font>'
+        )
+        self.clouds_name = QLabel()
+
+        # Pressure
+        self.pressure_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Pressure') + '<\b><\font>'
+        )
+        self.pressure_value = QLabel()
+
+        # Humidity
+        self.humidity_label = QLabel(
+            '<font size="3" color=><b>' + self.tr('Humidity') + '<\b><\font>'
+        )
+        self.humidity_value = QLabel()
+        # Precipitation
+        self.precipitation_label = QLabel(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Precipitation type (no/rain/snow)',
+                'Precipitation', 'Weather overview dialogue'
+            )
+            + '<\b><\font>'
+        )
+        self.precipitation_value = QLabel()
+
+        # Sunrise Sunset Daylight
+        self.sunrise_label = QLabel(
+            '<font color=><b>' + self.tr('Sunrise') + '</b></font>'
+        )
+        self.sunset_label = QLabel(
+            '<font color=><b>' + self.tr('Sunset') + '</b></font>'
+        )
+
+        self.sunrise_value = QLabel()
+        self.sunset_value = QLabel()
+        self.daylight_label = QLabel(
+            '<font color=><b>'
+            + QCoreApplication.translate(
+                'Daylight duration',
+                'Daylight',
+                'Weather overview dialogue'
+            )
+            + '</b></font>'
+        )
+        self.daylight_value_label = QLabel()
+
+        # --UV---
+        self.uv_label = QLabel(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Ultraviolet index', 'UV',
+                'Label in weather info dialogue'
+            )
+            + '<\b><\font>'
+        )
+        self.uv_label.setAlignment(Qt.AlignTop)
+        self.uv_value_label = QLabel()
+        # Ozone
+        self.ozone_label = QLabel(
+            '<font size="3" color=><b>'
+            + QCoreApplication.translate(
+                'Ozone data title',
+                'Ozone',
+                'Label in weather info dialogue'
+            )
+            + '<\b><\font>'
+        )
+        self.ozone_value_label = QLabel()
+
+        self.over_grid.addWidget(self.feels_like_label, 0, 0)
+        self.over_grid.addWidget(self.feels_like_value, 0, 1)
+        self.over_grid.addWidget(self.wind_label, 1, 0)
+        self.over_grid.addWidget(self.windLabelDescr, 1, 1)
+        self.over_grid.addWidget(self.wind_icon_label, 1, 2)
+        self.over_grid.addWidget(self.clouds_label, 2, 0)
+        self.over_grid.addWidget(self.clouds_name, 2, 1)
+        self.over_grid.addWidget(self.pressure_label, 3, 0)
+        self.over_grid.addWidget(self.pressure_value, 3, 1)
+        self.over_grid.addWidget(self.humidity_label, 4, 0)
+        self.over_grid.addWidget(self.humidity_value, 4, 1, 1, 3)  # align left
+        self.over_grid.addWidget(self.precipitation_label, 5, 0)
+        self.over_grid.addWidget(self.precipitation_value, 5, 1)
+        self.over_grid.addWidget(self.sunrise_label, 6, 0)
+        self.over_grid.addWidget(self.sunrise_value, 6, 1)
+        self.over_grid.addWidget(self.sunset_label, 7, 0)
+        self.over_grid.addWidget(self.sunset_value, 7, 1)
+        self.over_grid.addWidget(self.daylight_label, 8, 0)
+        self.over_grid.addWidget(self.daylight_value_label, 8, 1)
+        self.over_grid.addWidget(self.uv_label, 9, 0)
+        self.over_grid.addWidget(self.uv_value_label, 9, 1)
+        # # -------------Forecast-------------
+        self.forecast_days_layout = QHBoxLayout()
+        self.forecast_icons_layout = QHBoxLayout()
+        self.forecast_minmax_layout = QHBoxLayout()
+        # ----------------------------------
+        self.total_layout.addLayout(self.over_layout)
+        self.total_layout.addLayout(self.over_grid)
+        self.total_layout.addLayout(self.forecast_icons_layout)
+        self.total_layout.addLayout(self.forecast_days_layout)
+        self.total_layout.addLayout(self.forecast_minmax_layout)
+
+        # Doesn't work since a lot time (free account)
+        # self.ozone_fetch()
+        # logging.debug('Fetched ozone data')
+
+        self.overviewcitydlg.setLayout(self.total_layout)
+        self.setWindowTitle(self.tr('Weather status'))
+
+    def overviewcity(self):
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
         self.icon_list = []
         self.dayforecast_icon_list = []
         self.unit_temp = self.units_dico[self.unit]
-        total_layout = QVBoxLayout()
-
         # ----First part overview day -----
-        over_layout = QVBoxLayout()
-        self.dayforecast_layout = QHBoxLayout()
-        self.dayforecast_temp_layout = QHBoxLayout()
+
         # Check for city translation
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
@@ -198,55 +352,30 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['City'] + ',  '
                 + self.weatherDataDico['Country']
             )
-        self.city_label = QLabel(
-            '<font size="4"><b>' + city_label + '<\b><\font>'
-        )
-        over_layout.addWidget(self.city_label)
-        icontemp_layout = QHBoxLayout()
-        icon_label = QLabel()
-        icon_label.setPixmap(self.wIcon)
-        icontemp_layout.addWidget(icon_label)
-        temp_label = QLabel(
+        self.city_label.setText('<font size="4"><b>' + city_label + '<\b><\font>')
+
+        self.icon_label.setPixmap(self.wIcon)
+        self.temp_label.setText(
             '<font size="5"><b>' + '{0:.1f}'
             .format(float(self.weatherDataDico['Temp'][:-1])) + ' '
             + self.unit_temp + self.temp_trend + '<\b>'
             + '<\font>'
         )
-        temp_label.setWordWrap(True)
-        icontemp_layout.addWidget(temp_label)
-        over_layout.addLayout(icontemp_layout)
-        weather = QLabel(
+        self.weather_label.setText(
             '<font size="3"><b>'
             + self.weatherDataDico['Meteo']
             + '<\b><\font>'
         )
-        weather.setWordWrap(True)
-        icontemp_layout.addWidget(weather)
-        icontemp_layout.addStretch()
-        over_layout.addLayout(self.dayforecast_layout)
-        over_layout.addLayout(self.dayforecast_temp_layout)
-        # ------Second part overview day---------
-        self.over_grid = QGridLayout()
-        # Feels Like
-        feels_like_label = QLabel(
-            '<font size="3" color=><b>'
-            + QCoreApplication.translate(
-                'Label (For the temperature)',
-                'Feels like',
-                'Weather info panel'
-            )
-            + '</b><\font>'
-        )
-        feels_like_value = QLabel(
+        self.feels_like_value.setText(
             self.weatherDataDico['Feels_like'][0]
             + ' '
             + self.weatherDataDico['Feels_like'][1]
         )
+
         # Wind
-        self.wind_label = QLabel(
+        self.wind_label.setText(
             '<font size="3" color=><b>' + self.tr('Wind') + '<\font><\b>'
         )
-        self.wind_label.setAlignment(Qt.AlignTop)
         wind_unit = self.settings.value('Unit') or 'metric'
         wind_unit_speed_config = self.settings.value('Wind_unit') or 'df'
         if wind_unit_speed_config == 'bf':
@@ -259,7 +388,6 @@ class SystemTrayIcon(QMainWindow):
             self.unit_system = ' mph '
             self.unit_system_wind = ' mph '
 
-        windLabelDescr = QLabel('None')
         wind_speed = '{0:.1f}'.format(float(self.weatherDataDico['Wind'][0]))
         windTobeaufort = str(self.convertToBeaufort(wind_speed))
 
@@ -280,13 +408,13 @@ class SystemTrayIcon(QMainWindow):
             self.wind_km_bool = False
 
         try:
-            windLabelDescr = QLabel(
+            self.windLabelDescr.setText(
                 '<font color=>' + self.weatherDataDico['Wind'][4]
                 + ' ' + self.weatherDataDico['Wind'][2] + '° ' + '<br/>'
                 + wind_speed + self.unit_system_wind
                 + self.weatherDataDico['Wind'][1] + '<\font>'
             )
-            windLabelDescr.setToolTip(
+            self.windLabelDescr.setToolTip(
                 self.beaufort_sea_land[windTobeaufort]
             )
         except:
@@ -294,49 +422,32 @@ class SystemTrayIcon(QMainWindow):
                 'Cannot find wind informations:\n'
                 + str(self.weatherDataDico['Wind'])
             )
-        self.wind_icon_label = QLabel()
-        self.wind_icon_label.setAlignment(Qt.AlignLeft)
-        self.wind_icon = QPixmap(':/arrow')
+
         self.wind_icon_direction()
+
         # Clouds
-        self.clouds_label = QLabel(
-            '<font size="3" color=><b>' + self.tr('Cloudiness') + '<\b><\font>'
-        )
-        clouds_name = QLabel(
+        self.clouds_name.setText(
             '<font color=>' + self.weatherDataDico['Clouds'] + '<\font>'
         )
+
         # Pressure
-        self.pressure_label = QLabel(
-            '<font size="3" color=><b>' + self.tr('Pressure') + '<\b><\font>'
-        )
         if self.hPaTrend == 0:
             hpa = "→"
         elif self.hPaTrend < 0:
             hpa = "↘"
         elif self.hPaTrend > 0:
             hpa = "↗"
-        pressure_value = QLabel(
+        self.pressure_value.setText(
             '<font color=>' + str(float(self.weatherDataDico['Pressure'][0]))
             + ' ' + self.weatherDataDico['Pressure'][1] + " " + hpa + '<\font>'
         )
-        pressure_value.setToolTip(self.hpa_indications['hpa'])
+        self.pressure_value.setToolTip(self.hpa_indications['hpa'])
         # Humidity
-        self.humidity_label = QLabel(
-            '<font size="3" color=><b>' + self.tr('Humidity') + '<\b><\font>'
-        )
-        humidity_value = QLabel(
+        self.humidity_value.setText(
             '<font color=>' + self.weatherDataDico['Humidity'][0] + ' '
             + self.weatherDataDico['Humidity'][1] + '<\font>'
         )
         # Precipitation
-        precipitation_label = QLabel(
-            '<font size="3" color=><b>'
-            + QCoreApplication.translate(
-                'Precipitation type (no/rain/snow)',
-                'Precipitation', 'Weather overview dialogue'
-            )
-            + '<\b><\font>'
-        )
         rain_mode = (
             self.precipitation[self.weatherDataDico['Precipitation'][0]]
         )
@@ -351,18 +462,11 @@ class SystemTrayIcon(QMainWindow):
                 rain_value = "{0:.4f}".format(float(rain_value))
             else:
                 rain_value = "{0:.2f}".format(float(rain_value))
-        precipitation_value = QLabel(
+        self.precipitation_value.setText(
             '<font color=>' + rain_mode + ' ' + rain_value
             + ' ' + rain_unit + '</font>'
         )
         # Sunrise Sunset Daylight
-        sunrise_label = QLabel(
-            '<font color=><b>' + self.tr('Sunrise') + '</b></font>'
-        )
-        sunset_label = QLabel(
-            '<font color=><b>' + self.tr('Sunset') + '</b></font>'
-        )
-
         try:
             rise_str = self.utc('Sunrise', 'weatherdata')
             set_str = self.utc('Sunset', 'weatherdata')
@@ -373,32 +477,18 @@ class SystemTrayIcon(QMainWindow):
             rise_str = '00:00:00'
             set_str = '00:00:00'
 
-        sunrise_value = QLabel(
+        self.sunrise_value.setText(
             '<font color=>' + rise_str[:-3] + '</font>'
         )
-        sunset_value = QLabel('<font color=>' + set_str[:-3] + '</font>')
-        daylight_label = QLabel(
-            '<font color=><b>'
-            + QCoreApplication.translate(
-                'Daylight duration', 'Daylight',
-                'Weather overview dialogue'
-            )
-            + '</b></font>'
-        )
+        self.sunset_value.setText('<font color=>' + set_str[:-3] + '</font>')
+
         daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
-        daylight_value_label = QLabel(
-            '<font color=>' + daylight_value + '</font>'
+        self.daylight_value_label.setText(
+            '<font color=>'
+            + daylight_value
+            + '</font>'
         )
         # --UV---
-        self.uv_label = QLabel(
-            '<font size="3" color=><b>'
-            + QCoreApplication.translate(
-                'Ultraviolet index', 'UV',
-                'Label in weather info dialogue'
-            )
-            + '<\b><\font>'
-        )
-        self.uv_label.setAlignment(Qt.AlignTop)
         fetching_text = (
             '<font color=>'
             + QCoreApplication.translate(
@@ -408,51 +498,9 @@ class SystemTrayIcon(QMainWindow):
             )
             + '<\font>'
         )
-        self.uv_value_label = QLabel()
         self.uv_value_label.setText(fetching_text)
         # Ozone
-        self.ozone_label = QLabel(
-            '<font size="3" color=><b>'
-            + QCoreApplication.translate(
-                'Ozone data title',
-                'Ozone',
-                'Label in weather info dialogue'
-            )
-            + '<\b><\font>'
-        )
-        self.ozone_value_label = QLabel()
         self.ozone_value_label.setText(fetching_text)
-        self.over_grid.addWidget(feels_like_label, 0, 0)
-        self.over_grid.addWidget(feels_like_value, 0, 1)
-        self.over_grid.addWidget(self.wind_label, 1, 0)
-        self.over_grid.addWidget(windLabelDescr, 1, 1)
-        self.over_grid.addWidget(self.wind_icon_label, 1, 2)
-        self.over_grid.addWidget(self.clouds_label, 2, 0)
-        self.over_grid.addWidget(clouds_name, 2, 1)
-        self.over_grid.addWidget(self.pressure_label, 3, 0)
-        self.over_grid.addWidget(pressure_value, 3, 1)
-        self.over_grid.addWidget(self.humidity_label, 4, 0)
-        self.over_grid.addWidget(humidity_value, 4, 1, 1, 3)  # align left
-        self.over_grid.addWidget(precipitation_label, 5, 0)
-        self.over_grid.addWidget(precipitation_value, 5, 1)
-        self.over_grid.addWidget(sunrise_label, 6, 0)
-        self.over_grid.addWidget(sunrise_value, 6, 1)
-        self.over_grid.addWidget(sunset_label, 7, 0)
-        self.over_grid.addWidget(sunset_value, 7, 1)
-        self.over_grid.addWidget(daylight_label, 8, 0)
-        self.over_grid.addWidget(daylight_value_label, 8, 1)
-        self.over_grid.addWidget(self.uv_label, 9, 0)
-        self.over_grid.addWidget(self.uv_value_label, 9, 1)
-        # -------------Forecast-------------
-        self.forecast_days_layout = QHBoxLayout()
-        self.forecast_icons_layout = QHBoxLayout()
-        self.forecast_minmax_layout = QHBoxLayout()
-        # ----------------------------------
-        total_layout.addLayout(over_layout)
-        total_layout.addLayout(self.over_grid)
-        total_layout.addLayout(self.forecast_icons_layout)
-        total_layout.addLayout(self.forecast_days_layout)
-        total_layout.addLayout(self.forecast_minmax_layout)
 
         if self.forcast6daysBool:
             self.forecast6data()
@@ -470,8 +518,8 @@ class SystemTrayIcon(QMainWindow):
         # self.ozone_fetch()
         # logging.debug('Fetched ozone data')
 
-        self.overviewcitydlg.setLayout(total_layout)
-        self.setWindowTitle(self.tr('Weather status'))
+        # self.overviewcitydlg.setLayout(total_layout)
+        # self.setWindowTitle(self.tr('Weather status'))
         self.restoreGeometry(
             self.settings.value(
                 "MainWindow/Geometry",
@@ -684,8 +732,9 @@ class SystemTrayIcon(QMainWindow):
             return 'NNW'
 
     def find_min_max(self, fetched_file_periods):
-        ''' Find the minimum and maximum temperature of
-            the day in the 4 days forecast '''
+        ''' Collate the temperature of each forecast time
+            to find the min max T° of the forecast
+            of the day in the 4 days forecast '''
         self.date_temp_forecast = {}
         for element in self.dayforecast_data.iter():
             if element.tag == 'time':
@@ -701,7 +750,8 @@ class SystemTrayIcon(QMainWindow):
     def forecast6data(self):
         '''Forecast for the next 6 days'''
         # Some times server sends less data
-        doc = QTextDocument()
+        self.clearLayout(self.forecast_minmax_layout)
+        self.clearLayout(self.forecast_days_layout)
         periods = 7
         fetched_file_periods = (len(self.forecast6_data.xpath('//time')))
         if fetched_file_periods < periods:
@@ -765,8 +815,8 @@ class SystemTrayIcon(QMainWindow):
 
                 try:
                     # Take the label translated text and remove the html tags
-                    doc.setHtml(self.precipitation_label.text())
-                    precipitation_label = doc.toPlainText() + ': '
+                    self.doc.setHtml(self.precipitation_label.text())
+                    precipitation_label = self.doc.toPlainText() + ': '
                     precipitation_type = element.get('type')
                     precipitation_type = (
                         self.precipitation[precipitation_type] + ' '
@@ -793,8 +843,8 @@ class SystemTrayIcon(QMainWindow):
                     pass
 
             if element.tag == 'windDirection':
-                doc.setHtml(self.wind_label.text())
-                wind = doc.toPlainText() + ': '
+                self.doc.setHtml(self.wind_label.text())
+                wind = self.doc.toPlainText() + ': '
                 try:
                     wind_direction = (
                         self.wind_direction[element.get('code')]
@@ -821,8 +871,8 @@ class SystemTrayIcon(QMainWindow):
 
             if element.tag == 'pressure':
 
-                doc.setHtml(self.pressure_label.text())
-                pressure_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.pressure_label.text())
+                pressure_label = self.doc.toPlainText() + ': '
                 pressure = (
                     '{0:.1f}'.format(
                         float(element.get('value'))
@@ -832,14 +882,14 @@ class SystemTrayIcon(QMainWindow):
 
             if element.tag == 'humidity':
                 humidity = element.get('value')
-                doc.setHtml(self.humidity_label.text())
-                humidity_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.humidity_label.text())
+                humidity_label = self.doc.toPlainText() + ': '
                 weather_cond += '\n' + humidity_label + humidity + ' %'
 
             if element.tag == 'clouds':
                 clouds = element.get('all')
-                doc.setHtml(self.clouds_label.text())
-                clouds_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.clouds_label.text())
+                clouds_label = self.doc.toPlainText() + ': '
                 weather_cond += '\n' + clouds_label + clouds + ' %'
                 weather_end = True
 
@@ -850,7 +900,8 @@ class SystemTrayIcon(QMainWindow):
     def forecastdata(self):
         '''Forecast for the next 4 days'''
         # Some times server sends less data
-        doc = QTextDocument()
+        self.clearLayout(self.forecast_minmax_layout)
+        self.clearLayout(self.forecast_days_layout)
         fetched_file_periods = (len(self.dayforecast_data.xpath('//time')))
         self.find_min_max(fetched_file_periods)
         weather_end = False
@@ -911,8 +962,8 @@ class SystemTrayIcon(QMainWindow):
             if element.tag == 'precipitation' and collate_info:
                 try:
                     # Take the label translated text and remove the html tags
-                    doc.setHtml(self.precipitation_label.text())
-                    precipitation_label = doc.toPlainText() + ': '
+                    self.doc.setHtml(self.precipitation_label.text())
+                    precipitation_label = self.doc.toPlainText() + ': '
                     precipitation_type = element.get('type')
                     precipitation_type = (
                         self.precipitation[precipitation_type] + ' '
@@ -940,8 +991,8 @@ class SystemTrayIcon(QMainWindow):
                 except:
                     pass
 
-                doc.setHtml(self.wind_label.text())
-                wind = doc.toPlainText() + ': '
+                self.doc.setHtml(self.wind_label.text())
+                wind = self.doc.toPlainText() + ': '
 
             if element.tag == 'windDirection' and collate_info:
                 try:
@@ -982,8 +1033,8 @@ class SystemTrayIcon(QMainWindow):
                 weather_cond += f'\n{feels_like_label} : {feels_like_value} {feels_like_unit}'
 
             if element.tag == 'pressure' and collate_info:
-                doc.setHtml(self.pressure_label.text())
-                pressure_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.pressure_label.text())
+                pressure_label = self.doc.toPlainText() + ': '
                 pressure = (
                     '{0:.1f}'.format(
                         float(
@@ -995,14 +1046,14 @@ class SystemTrayIcon(QMainWindow):
 
             if element.tag == 'humidity' and collate_info:
                 humidity = element.get('value')
-                doc.setHtml(self.humidity_label.text())
-                humidity_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.humidity_label.text())
+                humidity_label = self.doc.toPlainText() + ': '
                 weather_cond += '\n' + humidity_label + humidity + ' %'
 
             if element.tag == 'clouds' and collate_info:
                 clouds = element.get('all')
-                doc.setHtml(self.clouds_label.text())
-                clouds_label = doc.toPlainText() + ': '
+                self.doc.setHtml(self.clouds_label.text())
+                clouds_label = self.doc.toPlainText() + ': '
                 weather_cond += '\n' + clouds_label + clouds + ' %'
                 weather_end = True
 
@@ -1011,6 +1062,7 @@ class SystemTrayIcon(QMainWindow):
                 weather_end = False
 
     def iconfetch(self):
+        self.clearLayout(self.forecast_icons_layout)
         logging.debug('Download forecast icons...')
         self.download_thread = (
             IconDownload(self.forecast_icon_url, self.icon_list)
@@ -1018,6 +1070,16 @@ class SystemTrayIcon(QMainWindow):
         self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
         self.download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
         self.download_thread.start()
+
+    def clearLayout(self, layout):
+        if layout is not None:
+            while layout.count():
+                item = layout.takeAt(0)
+                widget = item.widget()
+                if widget is not None:
+                    widget.deleteLater()
+                else:
+                    self.clearLayout(item.layout())
 
     def iconwidget(self, icon):
         '''Next days forecast icons'''
@@ -1033,9 +1095,12 @@ class SystemTrayIcon(QMainWindow):
         except IndexError as error:
             logging.error(str(error) + ' forecast_weather_list')
             return
+        del image
+        del iconlabel
 
     def dayforecastdata(self):
         '''Fetch forecast for the day'''
+        self.clearLayout(self.dayforecast_temp_layout)
         periods = 6
         start = 0
         if not self.json_data_bool:
@@ -1289,6 +1354,7 @@ class SystemTrayIcon(QMainWindow):
 
     def dayiconfetch(self):
         '''Icons for the forecast of the day'''
+        self.clearLayout(self.dayforecast_layout)
         logging.debug('Download forecast icons for the day...')
         self.day_download_thread = IconDownload(
             self.forecast_icon_url, self.dayforecast_icon_list
@@ -1310,6 +1376,9 @@ class SystemTrayIcon(QMainWindow):
             self.dayforecast_layout.addWidget(iconlabel)
         except IndexError as error:
             logging.error(str(error) + 'dayforecast_weather_list')
+        del image
+        del iconlabel
+        del iconpixmap
 
     def moveEvent(self, event):
         self.settings.setValue("MainWindow/Geometry", self.saveGeometry())
