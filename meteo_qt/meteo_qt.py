@@ -19,7 +19,6 @@ import time
 import datetime
 import traceback
 from io import StringIO
-import gc
 
 from PyQt5.QtCore import (
     PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication, QByteArray,
@@ -59,7 +58,6 @@ class SystemTrayIcon(QMainWindow):
 
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
-        self.setAttribute(Qt.WA_DeleteOnClose)
         self.settings = QSettings()
         self.cityChangeTimer = QTimer()
         self.cityChangeTimer.timeout.connect(self.update_city_gif)
@@ -468,16 +466,21 @@ class SystemTrayIcon(QMainWindow):
         logging.debug('Fetched day forcast icons')
         self.uv_fetch()
         logging.debug('Fetched uv index')
-        self.ozone_fetch()
-        logging.debug('Fetched ozone data')
+        # Doesn't work since a lot time (free account)
+        # self.ozone_fetch()
+        # logging.debug('Fetched ozone data')
 
         self.overviewcitydlg.setLayout(total_layout)
         self.setWindowTitle(self.tr('Weather status'))
-        self.restoreGeometry(self.settings.value("MainWindow/Geometry",
-                                                 QByteArray()))
-        ##  Option to start with the panel closed, true by defaut
-        #   starting with the panel open can be useful for users who don't have plasma
-        #   installed (to set keyboard shortcuts or other default window behaviours)
+        self.restoreGeometry(
+            self.settings.value(
+                "MainWindow/Geometry",
+                QByteArray()
+            )
+        )
+        # Option to start with the panel closed, true by defaut
+        # starting with the panel open can be useful for users who don't have plasma
+        # installed (to set keyboard shortcuts or other default window behaviours)
         start_minimized = self.settings.value('StartMinimized') or 'True'
         if start_minimized == 'False':
             self.showpanel()
@@ -1536,7 +1539,7 @@ class SystemTrayIcon(QMainWindow):
         self.downloadThread.forecast6_rawpage.connect(self.forecast6)
         self.downloadThread.uv_signal.connect(self.uv)
         self.downloadThread.error.connect(self.error)
-        self.downloadThread.done.connect(self.done, Qt.QueuedConnection)
+        self.downloadThread.done.connect(self.done)
         self.downloadThread.start()
 
     def uv(self, value):
@@ -2492,6 +2495,7 @@ def main():
                 logData = rFile.read()
             with open(logFile, 'wb') as wFile:
                 wFile.write(logData)
+            del logData
 
     logging.basicConfig(
         format='%(asctime)s %(levelname)s: %(message)s'
@@ -2511,7 +2515,6 @@ def main():
 
     m = SystemTrayIcon()
     app.exec_()
-
 
 def excepthook(exc_type, exc_value, tracebackobj):
     """
