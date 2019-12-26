@@ -50,7 +50,7 @@ class SearchCity(QDialog):
         self.line_search = QLineEdit(
             QCoreApplication.translate(
                 'Search city dialogue',
-                'Start typing the city or the geographic '
+                'Start typing the city or the ID or the geographic '
                 'coordinates "latitude, longitude"',
                 'Default message in the search field'
             )
@@ -281,6 +281,11 @@ class WorkThread(QThread):
         except (ValueError, IndexError) as e:
             logging.debug('Cannot find geographic coordinates' + str(e))
             logging.debug('Search by city name' + str(self.city))
+        self.search_by_id = False
+        if self.city.isdecimal():
+            self.accurate_url = self.accurate_url.replace('find?q=', 'weather?id=')
+            self.search_by_id = True
+            logging.debug('Search city by ID')
 
     def run(self):
         use_proxy = self.settings.value('Proxy') or 'False'
@@ -366,46 +371,88 @@ class WorkThread(QThread):
                 logging.debug('Tries: ' + str(self.tentatives))
                 self.run()
         # No result
-        try:
-            if int(tree[1].text) == 0:
-                logging.debug('Number of cities: 0')
-                if self.tentatives == 10:
+        if self.search_by_id is False:
+            try:
+                if int(tree[1].text) == 0:
+                    logging.debug('Number of cities: 0')
+                    if self.tentatives == 10:
+                        return
+                    else:
+                        self.tentatives += 1
+                        logging.debug('Tries: ' + str(self.tentatives))
+                        logging.debug('Try to retreive city information...')
+                        self.run()
+            except:
+                return
+
+            for i in range(int(tree[1].text)):
+                city = tree[3][i][0].get('name')
+                country = tree[3][i][0][1].text
+                if country is None:
+                    country = ''
+                id_ = tree[3][i][0].get('id')
+                lon = tree[3][i][0][0].get('lon')
+                lat = tree[3][i][0][0].get('lat')
+                if int(id_) == 0:
+                    logging.error('Error ID: ' + str(id_))
+                    if self.tentatives == 10:
+                        self.error['QString'].emit(error_message)
+                        return
+                    else:
+                        self.tentatives += 1
+                        logging.debug('Tries: ' + str(self.tentatives))
+                        logging.debug('Try to retrieve city information...')
+                        # Try with a fuzzy city name
+                        if city != '':
+                            logging.info('Change search to:' + city)
+                            self.city = (
+                                repr(city.encode('utf-8'))
+                                .replace("b'", "")
+                                .replace("\\x", "%")
+                                .replace("'", "")
+                                .replace(' ', '%20')
+                            )
+                        self.run()
+                if city == '':
+                    if self.tentatives == 10:
+                        self.error['QString'].emit(error_message)
+                        return
+                    else:
+                        self.tentatives += 1
+                        logging.debug('Tries: ' + str(self.tentatives))
+                        logging.debug('Try to retrieve city information...')
+                        self.run()
+                try:
+                    if id_ == '0':
+                        continue
+
+                    place = (
+                        id_
+                        + ' - '
+                        + city
+                        + ' - '
+                        + country
+                        + ' - '
+                        + ' {0}° '
+                        + '-'
+                        + ' {1}°'
+                    ).format(lat, lon)
+
+                    if place in self.lista:
+                        continue
+                    self.lista.append(place)
+                except:
+                    logging.critical('An error has occured:')
+                    logging.critical('ID' + str(id_))
+                    logging.critical('City' + str(city))
+                    logging.critical('Country' + str(country))
                     return
-                else:
-                    self.tentatives += 1
-                    logging.debug('Tries: ' + str(self.tentatives))
-                    logging.debug('Try to retreive city information...')
-                    self.run()
-        except:
-            return
-        for i in range(int(tree[1].text)):
-            city = tree[3][i][0].get('name')
-            country = tree[3][i][0][1].text
-            if country is None:
-                country = ''
-            id_ = tree[3][i][0].get('id')
-            lon = tree[3][i][0][0].get('lon')
-            lat = tree[3][i][0][0].get('lat')
-            if int(id_) == 0:
-                logging.error('Error ID: ' + str(id_))
-                if self.tentatives == 10:
-                    self.error['QString'].emit(error_message)
-                    return
-                else:
-                    self.tentatives += 1
-                    logging.debug('Tries: ' + str(self.tentatives))
-                    logging.debug('Try to retrieve city information...')
-                    # Try with a fuzzy city name
-                    if city != '':
-                        logging.info('Change search to:' + city)
-                        self.city = (
-                            repr(city.encode('utf-8'))
-                            .replace("b'", "")
-                            .replace("\\x", "%")
-                            .replace("'", "")
-                            .replace(' ', '%20')
-                        )
-                    self.run()
+        else:
+            try:
+                city = tree[0].get('name')
+            except UnboundLocalError:
+                logging.debug(f"Could'nt find any city with the ID {self.city}")
+                return
             if city == '':
                 if self.tentatives == 10:
                     self.error['QString'].emit(error_message)
@@ -415,25 +462,26 @@ class WorkThread(QThread):
                     logging.debug('Tries: ' + str(self.tentatives))
                     logging.debug('Try to retrieve city information...')
                     self.run()
-            try:
-                if id_ == '0':
-                    continue
+            country = tree[0][1].text
+            if country is None:
+                country = ''
+            id_ = tree[0].get('id')
+            lon = tree[0][0].get('lon')
+            lat = tree[0][0].get('lat')
+            place = (
+                id_
+                + ' - '
+                + city
+                + ' - '
+                + country
+                + ' - '
+                + ' {0}° '
+                + '-'
+                + ' {1}°'
+            ).format(lat, lon)
+            self.lista.append(place)
 
-                place = (
-                    id_ + ' - ' + city + ' - ' + country + ' - ' +
-                    ' {0}°' + '-' + ' {1}°'
-                ).format(lat, lon)
 
-                if place in self.lista:
-                    continue
-                self.lista.append(place)
-            except:
-                logging.critical('An error has occured:')
-                logging.critical('ID' + str(id_))
-                logging.critical('City' + str(city))
-                logging.critical('Country' + str(country))
-                return
         for i in self.lista:
             self.city_signal['QString'].emit(i)
         logging.debug('City thread done')
-        return
