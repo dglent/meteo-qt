@@ -73,14 +73,11 @@ class SystemTrayIcon(QMainWindow):
         self.wind_codes = self.cond.wind_codes
         self.inerror = False
         self.tentatives = 0
-        self.baseurl = 'http://api.openweathermap.org/data/2.5/weather?id='
-        self.accurate_url = 'http://api.openweathermap.org/data/2.5/find?q='
-        self.day_forecast_url = (
-            'http://api.openweathermap.org/data/2.5/forecast?id='
-        )
-        self.forecast6_url = (
-            'http://api.openweathermap.org/data/2.5/forecast/daily?id='
-        )
+        url_prefix = 'http://api.openweathermap.org/data/2.5'
+        self.baseurl = f'{url_prefix}/weather?id='
+        self.accurate_url = f'{url_prefix}/find?q='
+        self.day_forecast_url = f'{url_prefix}/forecast?id='
+        self.forecast6_url = f'{url_prefix}/forecast/daily?id='
         self.wIconUrl = 'http://openweathermap.org/img/w/'
         apikey = self.settings.value('APPID') or ''
         self.appid = '&APPID=' + apikey
@@ -94,9 +91,11 @@ class SystemTrayIcon(QMainWindow):
             # Missing left click on Unity environment issue 63
             self.panelAction = QAction(
                 QCoreApplication.translate(
-                    "Tray context menu", "Toggle Window",
+                    "Tray context menu",
+                    "Toggle Window",
                     "Open/closes the application window"
-                ), self
+                ),
+                self
             )
             self.panelAction.setIcon(QIcon(':/panel'))
             self.menu.addAction(self.panelAction)
