@@ -50,9 +50,11 @@ __version__ = "1.4"
 
 
 class SystemTrayIcon(QMainWindow):
-    units_dico = {'metric': '°C',
-                  'imperial': '°F',
-                  ' ': '°K'}
+    units_dico = {
+        'metric': '°C',
+        'imperial': '°F',
+        ' ': '°K'
+    }
 
     def __init__(self, parent=None):
         super(SystemTrayIcon, self).__init__(parent)
@@ -167,6 +169,11 @@ class SystemTrayIcon(QMainWindow):
         self.uv_recommend = self.cond.uv_recommend
         self.doc = QTextDocument()
         self.create_overview()
+        self.city = self.settings.value('City') or ''
+        self.country = self.settings.value('Country') or ''
+        self.id_ = self.settings.value('ID') or ''
+        self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
+        self.cities_menu()
         self.refresh()
 
     def create_overview(self):
@@ -1456,23 +1463,20 @@ class SystemTrayIcon(QMainWindow):
             )
             return
         self.icon_city_loading()
-        current_city = self.city
-        current_id = self.id_
-        current_country = self.country
-
         cities = eval(self.settings.value('CityList') or [])
         if len(cities) == 0:
             return
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
-        direction = event.pixelDelta().y()
-        actual_city = f'{current_city}_{current_country}_{current_id}'
+        direction = event.angleDelta().y()
+        actual_city = self.current_city_display
         for key, value in cities_trans_dict.items():
-            if f'{current_city}_{current_country}_{current_id}' == key:
+            if self.current_city_display == key:
                 actual_city = key
         if actual_city not in cities:
             cities.append(actual_city)
         current_city_index = cities.index(actual_city)
+
         if direction > 0:
             current_city_index += 1
             if current_city_index >= len(cities):
@@ -1481,43 +1485,18 @@ class SystemTrayIcon(QMainWindow):
             current_city_index -= 1
             if current_city_index < 0:
                 current_city_index = len(cities) - 1
-        citytosetlist = cities[current_city_index].split('_')
-        self.settings.setValue('City', citytosetlist[0])
-        self.settings.setValue('Country', citytosetlist[1])
-        self.settings.setValue('ID', citytosetlist[2])
+        self.current_city_display = cities[current_city_index]
+        self.city, self.country, self.id_ = self.current_city_display.split('_')
         self.timer.singleShot(500, self.refresh)
 
     def cities_menu(self):
-        # Don't add the temporary city in the list
-        if self.temporary_city_status:
-            return
         self.citiesMenu.clear()
         cities = self.settings.value('CityList') or []
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
         if type(cities) is str:
             cities = eval(cities)
-        try:
-            current_city = (
-                '{0}_{1}_{2}'.format(
-                    self.settings.value('City'),
-                    self.settings.value('Country'),
-                    self.settings.value('ID')
-                )
-            )
-        except:
-            logging.debug(
-                'Cities menu: firsttime run,'
-                'if clicked cancel in settings without any city configured'
-            )
-            pass
-        # Prevent duplicate entries
-        try:
-            city_toadd = cities.pop(cities.index(current_city))
-        except:
-            city_toadd = current_city
-        finally:
-            cities.insert(0, city_toadd)
+
         # If we delete all cities it results to a '__'
         if (
             cities is not None
@@ -1552,27 +1531,10 @@ class SystemTrayIcon(QMainWindow):
         if type(cities_list) is not list:
             # FIXME some times is read as string (?)
             cities_list = eval(cities_list)
-        prev_city = (
-            '{0}_{1}_{2}'.format(
-                self.settings.value('City'),
-                self.settings.value('Country'),
-                self.settings.value('ID')
-            )
-        )
-        citytoset = ''
-        # Set the chosen city as the default
         for town in cities_list:
             if town == self.find_city_key(city):
                 ind = cities_list.index(town)
-                citytoset = cities_list[ind]
-                citytosetlist = citytoset.split('_')
-                self.settings.setValue('City', citytosetlist[0])
-                self.settings.setValue('Country', citytosetlist[1])
-                self.settings.setValue('ID', citytosetlist[2])
-                if prev_city not in cities_list:
-                    cities_list.append(prev_city)
-                self.settings.setValue('CityList', str(cities_list))
-                logging.debug(cities_list)
+                self.current_city_display = cities_list[ind]
         self.refresh()
 
     def find_city_key(self, city):
@@ -1593,9 +1555,7 @@ class SystemTrayIcon(QMainWindow):
         self.inerror = False
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Fetching weather data...'))
-        self.city = self.settings.value('City') or ''
-        self.id_ = self.settings.value('ID') or None
-        if self.id_ is None:
+        if self.id_ == '':
             # Clear the menu, no cities configured
             self.citiesMenu.clear()
             self.empty_cities_list()
@@ -1603,9 +1563,7 @@ class SystemTrayIcon(QMainWindow):
             self.id_ = ''
             self.systray.setToolTip(self.tr('No city configured'))
             return
-        # A city has been found, create the cities menu now
-        self.cities_menu()
-        self.country = self.settings.value('Country') or ''
+        self.city, self.country, self.id_ = self.current_city_display.split('_')
         self.unit = self.settings.value('Unit') or 'metric'
         self.wind_unit_speed = self.settings.value('Wind_unit') or 'df'
         self.suffix = f'&mode=xml&units={self.unit}{self.appid}'
@@ -1988,7 +1946,8 @@ class SystemTrayIcon(QMainWindow):
             except KeyError:
                 return
         self.notifier_id = self.id_  # To always notify when city changes
-        self.restore_city()
+        if self.temporary_city_status:
+            self.restore_city()
         self.tentatives = 0
         self.tooltip_weather()
         logging.info(f'Actual weather status for: {self.notification}')
@@ -2002,18 +1961,11 @@ class SystemTrayIcon(QMainWindow):
             return False
 
     def restore_city(self):
-        if self.temporary_city_status:
-            logging.debug(
-                'Restore the default settings (city) '
-                'Forget the temporary city...'
-            )
-            for e in (
-                ('ID', self.id_2),
-                ('City', self.city2),
-                ('Country', self.country2)
-            ):
-                self.citydata(e)
-            self.temporary_city_status = False
+        self.city = self.settings.value('City') or ''
+        self.country = self.settings.value('Country') or ''
+        self.id_ = self.settings.value('ID') or ''
+        self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
+        self.temporary_city_status = False
 
     def showpanel(self):
         self.activate(3)
@@ -2045,7 +1997,7 @@ class SystemTrayIcon(QMainWindow):
 
     def config_save(self):
         logging.debug('Config saving...')
-        city = self.settings.value('City'),
+        city = self.settings.value('City')
         id_ = self.settings.value('ID')
         country = self.settings.value('Country')
         unit = self.settings.value('Unit')
@@ -2078,7 +2030,7 @@ class SystemTrayIcon(QMainWindow):
         ):
             self.tray()
         if (
-            city[0] == self.city
+            city == self.city
             and id_ == self.id_
             and country == self.country
             and unit == self.unit
@@ -2087,6 +2039,8 @@ class SystemTrayIcon(QMainWindow):
             return
         else:
             logging.debug('Apply changes from settings...')
+            self.city, self.country, self.id_ = city, country, id_
+            self.current_city_display = f'{city}_{country}_{id_}'
             self.refresh()
 
     def config(self):
@@ -2098,26 +2052,23 @@ class SystemTrayIcon(QMainWindow):
             self.cities_menu()
 
     def tempcity(self):
-        # Prevent to register a temporary city
-        # This happen when a temporary city is still loading
-        self.restore_city()
         dialog = searchcity.SearchCity(self.accurate_url, self.appid, self)
-        self.id_2, self.city2, self.country2 = (
-            self.settings.value('ID'),
-            self.settings.value('City'),
-            self.settings.value('Country')
-        )
         dialog.id_signal[tuple].connect(self.citydata)
         dialog.city_signal[tuple].connect(self.citydata)
         dialog.country_signal[tuple].connect(self.citydata)
         if dialog.exec_():
             self.temporary_city_status = True
+            self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
             self.systray.setToolTip(self.tr('Fetching weather data...'))
             self.refresh()
 
     def citydata(self, what):
-        self.settings.setValue(what[0], what[1])
-        logging.debug(f'write {str(what[0])} {str(what[1])}')
+        if what[0] == 'City':
+            self.city = what[1]
+        elif what[0] == 'Country':
+            self.country = what[1]
+        elif what[0] == 'ID':
+            self.id_ = what[1]
 
     def about(self):
         title = self.tr(
