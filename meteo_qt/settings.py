@@ -372,6 +372,23 @@ class MeteoSettings(QDialog):
         self.start_minimized_chbx.stateChanged.connect(self.start_minimized)
         self.start_minimized_changed = False
 
+        self.logging_label = QLabel(
+            QCoreApplication.translate(
+                'Option for logging level',
+                'Logging level',
+                'Settings window'
+            )
+        )
+        self.logging_level_combo = QComboBox()
+        logging_levels = ['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG']
+        self.logging_level_combo.addItems(logging_levels)
+        level = self.settings.value('Logging/Level') or 'INFO'
+        self.logging_level_combo.setCurrentIndex(
+            self.logging_level_combo.findText(level)
+        )
+        self.logging_level_combo.currentIndexChanged.connect(self.logging_set)
+        self.logging_changed = False
+
         # ----------
         self.panel = QGridLayout()
         self.panel.addWidget(self.city_title, 0, 0)
@@ -408,6 +425,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.owmkey_create, 12, 2)
         self.panel.addWidget(self.start_minimized_label, 13, 0)
         self.panel.addWidget(self.start_minimized_chbx, 13, 1)
+        self.panel.addWidget(self.logging_label, 14, 0)
+        self.panel.addWidget(self.logging_level_combo, 14, 1)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -633,6 +652,14 @@ class MeteoSettings(QDialog):
             start_minimized = 'False'
         self.settings.setValue('StartMinimized', start_minimized)
 
+    def logging_set(self):
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.logging_changed = True
+
+    def logging_level_apply(self):
+        level = self.logging_level_combo.currentText()
+        self.settings.setValue('Logging/Level', level)
+
     def proxy(self, state):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         if state == 2:
@@ -745,6 +772,8 @@ class MeteoSettings(QDialog):
             self.bold_apply()
         if self.start_minimized_changed:
             self.start_minimized_apply()
+        if self.logging_changed:
+            self.logging_level_apply()
         proxy_url = self.settings.value('Proxy_url') or ''
         if proxy_url == '':
             self.proxy_bool = False
