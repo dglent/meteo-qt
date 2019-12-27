@@ -447,7 +447,7 @@ class WorkThread(QThread):
                         + country
                         + ' - '
                         + ' {0}° '
-                        + '-'
+                        + ','
                         + ' {1}°'
                     ).format(lat, lon)
 

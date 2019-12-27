@@ -330,10 +330,6 @@ class SystemTrayIcon(QMainWindow):
         self.total_layout.addLayout(self.forecast_days_layout)
         self.total_layout.addLayout(self.forecast_minmax_layout)
 
-        # Doesn't work since a lot time (free account)
-        # self.ozone_fetch()
-        # logging.debug('Fetched ozone data')
-
         self.overviewcitydlg.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
 
@@ -539,9 +535,8 @@ class SystemTrayIcon(QMainWindow):
         logging.debug('Fetched day forcast icons')
         self.uv_fetch()
         logging.debug('Fetched uv index')
-        # Doesn't work since a lot time (free account)
-        # self.ozone_fetch()
-        # logging.debug('Fetched ozone data')
+        self.ozone_fetch()
+        logging.debug('Fetched ozone data')
 
         self.restoreGeometry(
             self.settings.value(
@@ -1313,11 +1308,17 @@ class SystemTrayIcon(QMainWindow):
 
     def ozone_fetch(self):
         logging.debug('Download ozone info...')
+        if hasattr(self, 'ozone_thread'):
+            if self.ozone_thread.isRunning():
+                logging.debug('Terminate running ozone thread...')
+                self.ozone_thread.terminate()
+                self.ozone_thread.wait()
         self.ozone_thread = Ozone(self.uv_coord)
         self.ozone_thread.o3_signal['PyQt_PyObject'].connect(self.ozone_index)
         self.ozone_thread.start()
 
     def ozone_index(self, index):
+        logging.debug(f'Ozone index : {index}')
         try:
             du = int(index)
             o3_color = self.ozone_du(du)
