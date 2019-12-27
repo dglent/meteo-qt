@@ -132,7 +132,8 @@ Land: Windstille. Rauch steigt vertikal</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Wellen mit auftretenden Schuppen, aber ohne Schaumkämme.
+Land: Rauch steigt in Windrichtung. Blätter und Windfahnen bewegen sich nicht.</translation>
     </message>
 </context>
 <context>
@@ -142,7 +143,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Sehr hohe Wellen mit überschlagenden Wellenkämmen. Große Flächen mit Schaum von Wellenkämmen geben dem Meer eine weißliches Aussehen. Ständig brandende Wellen haben einen großen Einschlag. Eine Menge an in die Luft gewirbelte Gischt reduziert die Sicht.
+Land: Bäume brechen ab oder werden entwurzelt. Beschädigungen an Gebäuden möglich.</translation>
     </message>
 </context>
 <context>
@@ -152,7 +154,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Außergewöhnlich hohe Wellen. Sehr große Flächen an Schaum, bedecken eine große Fläche des Meers. Eine große Menge an Gischt schränkt die Sicht ein.
+Land: Größere Flächen der Vegetation und Gebäude können beschädigt werden.</translation>
     </message>
 </context>
 <context>
@@ -162,7 +165,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Hohe Wellen. Das Meer ist durch den Schaum und die Gischt vollständig weiß. Die Luft ist erfüllt mit Gischt und schränkt die Sicht stark ein.
+Land: Schwere größflächige Beschädigungen an der Vegetation und Gebäuden. Müll und ungesicherte Objekte werden herumgeschleudert.</translation>
     </message>
 </context>
 <context>
@@ -172,7 +176,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Kleine Wellen, kurz aber etwas stärker. Wellenkämme haben eine glasige Erscheinung und brechen nicht.
+Land: Wind ist auf der Haut spürbar. Blätter rascheln. Windfahnen beginnen sich zu bewegen.</translation>
     </message>
 </context>
 <context>
@@ -182,7 +187,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Große Wellen. Wellenkämme beginnen zu brechen. Vereinzelt Schaumkronen.
+Land: Blätter und kleine Äste sind ständig in Bewegung. Leichte Flaggen wehen.</translation>
     </message>
 </context>
 <context>
@@ -192,7 +198,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Kleine Wellen mit brechenden Wellenkämme. Häufiger auftretende Schaumkronen.
+Land: Staub und loses Papier hebt sich. Schmale Äste fangen an sich zu bewegen.</translation>
     </message>
 </context>
 <context>
@@ -202,7 +209,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Mäßige Wellen mit gößerer Länge. Viele Schaumkronen. Geringes Auftreten an Gischt.
+Land: Geäst mit einer mäßigen Größe bewegt sich. Schmale Bäume beginnen zu Schwanken.</translation>
     </message>
 </context>
 <context>
@@ -212,7 +220,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Lange Wellen beginnen sich zu formen. Weiße Schaumkronen kommen sehr häufig vor. In die Luft aufspritzende Gischt ist vorhanden.
+Land: Großes Geäst ist in Bewegung. Hörbares Pfeifen an Oberleitungen. Verwenden eines Regenschirms wird schwierig. Leere Plastikeimer fallen um.</translation>
     </message>
 </context>
 <context>
@@ -222,7 +231,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Das Meer türm sich auf. Etwas Schaum durch brechende Wellen werden in Windrichtung geweht. Mäßige Anzahl an fliegender Gischt.
+Land: Ganze Bäume sind in Bewegung. Gegen den Wind zu laufen ist anstrengend.</translation>
     </message>
 </context>
 <context>
@@ -232,7 +242,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Mäßig hohe Wellen mit brechenden Wellenkämmen verursachen Gischt. Gut sichtbare Streifen an Schaum werden in Windrichtung geblasen. Beträchliche Gischt.
+Land: Einige Zweige brechen von Bäumen. Autos schwenken auf Straßen. Vorankommen zu Fuß ist stark eingeschränkt.</translation>
     </message>
 </context>
 <context>
@@ -242,7 +253,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Meer: Hohe Wellen, dessen Wellenkämme manchmal umkippen. Dichter Schaum wird in Windrichtung geblasen. Größe Mengen an Gischt reduziert die Sicht.
+Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktionen/Temporäre Schilder und Absperrungen werden herumgeweht.</translation>
     </message>
 </context>
 <context>
@@ -428,7 +440,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="233"/>
         <source>Feels like</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Fühlt sich an wie</translation>
     </message>
 </context>
 <context>
@@ -906,19 +918,19 @@ auf Werte um 100DU.</translation>
         <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Systemleisten-Symbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="263"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Symbol &amp; gefühlte Temperatur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="268"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Gefühlte Temperatur</translation>
     </message>
 </context>
 <context>
@@ -1150,7 +1162,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="1776"/>
         <source>Feels like</source>
         <comment>SystemTrayIcon ToolTip</comment>
-        <translation type="unfinished"/>
+        <translation>Fühlt sich an wie</translation>
     </message>
 </context>
 <context>
@@ -1177,7 +1189,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="968"/>
         <source>Feels like</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Fühlt sich an wie</translation>
     </message>
 </context>
 <context>
@@ -1186,13 +1198,13 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="1195"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Druck</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1200"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Feuchtigkeit</translation>
     </message>
 </context>
 <context>
