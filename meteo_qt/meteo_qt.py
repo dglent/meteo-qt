@@ -1671,9 +1671,6 @@ class SystemTrayIcon(QMainWindow):
             logging.debug('Trying to retrieve data...')
             self.timer.singleShot(10000, self.try_again)
             return
-        if hasattr(self, 'updateicon'):
-            # Keep a reference of the image to update the icon in overview
-            self.wIcon = self.updateicon
         if hasattr(self, 'dayforecast_data'):
             self.overviewcity()
             return
@@ -1705,8 +1702,6 @@ class SystemTrayIcon(QMainWindow):
         image = QImage()
         image.loadFromData(data)
         self.wIcon = QPixmap(image)
-        # Keep a reference of the image to update the icon in overview
-        self.updateicon = self.wIcon
 
     def weatherdata(self, tree):
         if self.inerror:
