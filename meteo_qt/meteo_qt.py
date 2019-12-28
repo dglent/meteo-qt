@@ -205,7 +205,7 @@ class SystemTrayIcon(QMainWindow):
         self.over_grid = QGridLayout()
         # Feels Like
         self.feels_like_label = QLabel(
-            '<font size="3" color=><b>{}</b><\font>'.format(
+            '<font size="3" color=><b>{}</b></font>'.format(
                 QCoreApplication.translate(
                     'Label (For the temperature)',
                     'Feels like',
@@ -213,11 +213,16 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
         )
-
         self.feels_like_value = QLabel()
         # Wind
         self.wind_label = QLabel(
-            f'<font size="3" color=><b>{self.tr("Wind")}<\font><\b>'
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label before the wind description',
+                    'Wind',
+                    'Weather info panel'
+                )
+            )
         )
         self.wind_label.setAlignment(Qt.AlignTop)
         self.windLabelDescr = QLabel('None')
@@ -226,24 +231,42 @@ class SystemTrayIcon(QMainWindow):
         self.wind_icon = QPixmap(':/arrow')
         # Clouds
         self.clouds_label = QLabel(
-            f'<font size="3" color=><b>{self.tr("Cloudiness")}<\b><\font>'
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for the cloudiness (%)',
+                    'Cloudiness',
+                    'Weather info panel'
+                )
+            )
         )
         self.clouds_name = QLabel()
 
         # Pressure
         self.pressure_label = QLabel(
-            f'<font size="3" color=><b>{self.tr("Pressure")}<\b><\font>'
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for the pressure (hPa)',
+                    'Pressure',
+                    'Weather info panel'
+                )
+            )
         )
         self.pressure_value = QLabel()
 
         # Humidity
         self.humidity_label = QLabel(
-            f'<font size="3" color=><b>{self.tr("Humidity")}<\b><\font>'
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for the humidity (%)',
+                    'Humidity',
+                    'Weather info panel'
+                )
+            )
         )
         self.humidity_value = QLabel()
         # Precipitation
         self.precipitation_label = QLabel(
-            '<font size="3" color=><b>{}<\b><\font>'.format(
+            '<font size="3" color=><b>{}</b></font>'.format(
                 QCoreApplication.translate(
                     'Precipitation type (no/rain/snow)',
                     'Precipitation',
@@ -252,15 +275,25 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.precipitation_value = QLabel()
-
         # Sunrise Sunset Daylight
         self.sunrise_label = QLabel(
-            f'<font color=><b>{self.tr("Sunrise")}</b></font>'
+            '<font color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for the sunrise time (hh:mm)',
+                    'Sunrise',
+                    'Weather info panel'
+                )
+            )
         )
         self.sunset_label = QLabel(
-            f'<font color=><b>{self.tr("Sunset")}</b></font>'
+            '<font color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for the sunset (hh:mm)',
+                    'Sunset',
+                    'Weather info panel'
+                )
+            )
         )
-
         self.sunrise_value = QLabel()
         self.sunset_value = QLabel()
         self.daylight_label = QLabel(
@@ -273,10 +306,9 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.daylight_value_label = QLabel()
-
         # --UV---
         self.uv_label = QLabel(
-            '<font size="3" color=><b>{}<\b><\font>'.format(
+            '<font size="3" color=><b>{}</b></font>'.format(
                 QCoreApplication.translate(
                     'Ultraviolet index',
                     'UV',
@@ -288,7 +320,7 @@ class SystemTrayIcon(QMainWindow):
         self.uv_value_label = QLabel()
         # Ozone
         self.ozone_label = QLabel(
-            '<font size="3" color=><b>{}<\b><\font>'.format(
+            '<font size="3" color=><b>{}</b></font>'.format(
                 QCoreApplication.translate(
                     'Ozone data title',
                     'Ozone',
@@ -361,19 +393,19 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
         self.city_label.setText(
-            f'<font size="4"><b>{city_label}<\b><\font>'
+            f'<font size="4"><b>{city_label}</b></font>'
         )
 
         self.icon_label.setPixmap(self.wIcon)
         self.temp_label.setText(
-            '<font size="5"><b>{0} {1}{2}<\b><\font>'.format(
+            '<font size="5"><b>{0} {1}{2}</b></font>'.format(
                 '{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])),
                 self.unit_temp,
                 self.temp_trend
             )
         )
         self.weather_label.setText(
-            f'<font size="3"><b>{self.weatherDataDico["Meteo"]}<\b><\font>'
+            f'<font size="3"><b>{self.weatherDataDico["Meteo"]}</b></font>'
         )
         self.feels_like_value.setText(
             '{0} {1}'.format(
@@ -383,9 +415,6 @@ class SystemTrayIcon(QMainWindow):
         )
 
         # Wind
-        self.wind_label.setText(
-            f'<font size="3" color=><b>{self.tr("Wind")}<\font><\b>'
-        )
         wind_unit = self.settings.value('Unit') or 'metric'
         wind_unit_speed_config = self.settings.value('Wind_unit') or 'df'
         if wind_unit_speed_config == 'bf':
@@ -419,7 +448,7 @@ class SystemTrayIcon(QMainWindow):
 
         try:
             self.windLabelDescr.setText(
-                '<font color=>{0} {1}° <br/>{2}{3}{4}<\font>'.format(
+                '<font color=>{0} {1}° <br/>{2}{3}{4}</font>'.format(
                     self.weatherDataDico['Wind'][4],
                     self.weatherDataDico['Wind'][2],
                     wind_speed,
@@ -441,7 +470,7 @@ class SystemTrayIcon(QMainWindow):
 
         # Clouds
         self.clouds_name.setText(
-            f'<font color=>{self.weatherDataDico["Clouds"]}<\font>'
+            f'<font color=>{self.weatherDataDico["Clouds"]}</font>'
         )
 
         # Pressure
@@ -452,7 +481,7 @@ class SystemTrayIcon(QMainWindow):
         elif self.hPaTrend > 0:
             hpa = "↗"
         self.pressure_value.setText(
-            '<font color=>{0} {1} {2}<\font>'.format(
+            '<font color=>{0} {1} {2}</font>'.format(
                 str(float(self.weatherDataDico['Pressure'][0])),
                 self.weatherDataDico['Pressure'][1],
                 hpa
@@ -461,7 +490,7 @@ class SystemTrayIcon(QMainWindow):
         self.pressure_value.setToolTip(self.hpa_indications['hpa'])
         # Humidity
         self.humidity_value.setText(
-            '<font color=>{0} {1}<\font>'.format(
+            '<font color=>{0} {1}</font>'.format(
                 self.weatherDataDico['Humidity'][0],
                 self.weatherDataDico['Humidity'][1]
             )
@@ -511,7 +540,7 @@ class SystemTrayIcon(QMainWindow):
         )
         # --UV---
         fetching_text = (
-            '<font color=>{}<\font>'.format(
+            '<font color=>{}</font>'.format(
                 QCoreApplication.translate(
                     'Ultraviolet index waiting text label',
                     'Fetching...',
