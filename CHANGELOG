@@ -1,10 +1,15 @@
+1.5
+- Add the Feels like temperature in weather information
+- Option to show the Feels like T° on the system tray icon
+- Add Humidity and Pressure info in the current day forecast tooltip
+
 1.4
 - Reduce weather condition font size to avoid layout breakage
 - Option to set the wind speed in 'km/h'
 - Fix crash when the Sunrise/Sunset time is not provided
 - Updated translations:
     Czech trendspotter
-    Dutch Heimen Stoffels 
+    Dutch Heimen Stoffels
     Greek
     Ukrainian Yuri Chornoivan
 
