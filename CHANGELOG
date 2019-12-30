@@ -2,6 +2,10 @@
 - Add the Feels like temperature in weather information
 - Option to show the Feels like T° on the system tray icon
 - Add Humidity and Pressure info in the current day forecast tooltip
+- Option to choose the logging level from gui
+- Remember the default city from settings and show the weather info of this city at startup
+- Improve performance and memory usage
+- Search city by ID
 
 1.4
 - Reduce weather condition font size to avoid layout breakage
