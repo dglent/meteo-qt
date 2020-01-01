@@ -597,25 +597,24 @@ class SystemTrayIcon(QMainWindow):
         ''' Convert sun rise/set from UTC to local time
             'rise_set' is 'Sunrise' or 'Sunset' when it is for weatherdata
             or the index of hour in day forecast when dayforecast'''
-        listtotime = ''
-        # Create a list ['h', 'm', 's'] and pass it to QTime
+        strtime = ''
         if what == 'weatherdata':
-            listtotime = (
-                self.weatherDataDico[rise_set].split('T')[1].split(':')
+            strtime = (
+                self.weatherDataDico[rise_set].split('T')[1]
             )
         elif what == 'dayforecast':
             if not self.json_data_bool:
-                listtotime = (
+                strtime = (
                     self.dayforecast_data[4][rise_set].get('from')
-                    .split('T')[1].split(':')
+                    .split('T')[1]
                 )
             else:
-                listtotime = (
+                strtime = (
                     self.dayforecast_data['list'][rise_set]['dt_txt'][10:]
-                    .split(':')
                 )
-        suntime = QTime(int(listtotime[0]), int(listtotime[1]), int(
-            listtotime[2]))
+
+        suntime = QTime.fromString(strtime)
+
         # add the diff UTC-local in seconds
         utc_time = suntime.addSecs(time.localtime().tm_gmtoff)
         utc_time_str = utc_time.toString()
