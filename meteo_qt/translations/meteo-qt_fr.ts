@@ -111,7 +111,7 @@
         <location filename="../meteo_qt.py" line="106"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Rafraîchir</translation>
     </message>
 </context>
 <context>
@@ -121,8 +121,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Mer : Mer d&apos;huile
-Terre : Calm. La fumée monte à la verticale</translation>
+        <translation>En mer : La mer est comme un miroir, lisse et sans vague
+Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignent aucun mouvement.</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@ Terre : Calm. La fumée monte à la verticale</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m.
+Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;orientent pas.</translation>
     </message>
 </context>
 <context>
@@ -142,7 +143,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Conditions exceptionnelles : Très grosses lames à longue crête en panache. L&apos;écume produite s&apos;agglomère en larges bancs et est soufflée dans le lit du vent en épaisses traînées blanches. Dans son ensemble, la surface des eaux semble blanche. Le déferlement en rouleaux devient intense et brutal. Visibilité réduite, Vagues de 9 à 12,5m
+Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s&apos;envoler. Certains arbres sont déracinés.</translation>
     </message>
 </context>
 <context>
@@ -163,7 +165,8 @@ Sur terre: Importants dégâts à la végétation. Nombreuses destructions </tra
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Conditions exceptionnelles : L&apos;air est plein d&apos;écume et d&apos;embruns. La mer est entièrement blanche du fait des bancs d&apos;écume dérivants. Visibilité fortement réduite. Vagues supérieures à 14m
+Sur terre : Dégâts très importants de l&apos;ordre de la catastrophe naturelle.</translation>
     </message>
 </context>
 <context>
@@ -173,7 +176,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
+Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
     </message>
 </context>
 <context>
@@ -183,7 +187,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Très petites vagues de 0,5 à 1m. Les crêtes commencent à déferler. Écume d&apos;aspect vitreux. Parfois quelques moutons épars
+Sur terre : Les drapeaux flottent au vent. Les feuilles sont sans cesse en mouvement</translation>
     </message>
 </context>
 <context>
@@ -193,7 +198,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
+Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</translation>
     </message>
 </context>
 <context>
@@ -203,7 +209,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Vagues modérées 2 à 3m, moutons, éventuellement embruns
+Sur terre : Le tronc des arbustes et arbrisseaux en feuilles balance. La cime de tous les arbres est agitée. Des vaguelettes se forment sur les eaux intérieures.</translation>
     </message>
 </context>
 <context>
@@ -213,7 +220,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Crêtes d&apos;écume blanches, lames, embruns, vagues de 3 à 4m.
+Sur terre : On entend siffler le vent. Les branches de large diamètre s&apos;agitent. Les parapluies sont susceptibles de se retourner</translation>
     </message>
 </context>
 <context>
@@ -223,7 +231,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Traînées d&apos;écume, lames déferlantes, vagues de 4 à 5,5m.
+Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir difficile.</translation>
     </message>
 </context>
 <context>
@@ -233,7 +242,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Tourbillons d&apos;écume à la crête des lames, traînées d&apos;écume, vagues de 5,5 à 7,5m
+Sur terre : Les branches sont susceptibles de casser. La marche contre le vent est très difficile, voire impossible.</translation>
     </message>
 </context>
 <context>
@@ -243,7 +253,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>En mer : Lames déferlantes grosses à énormes, visibilité réduite par les embruns, vagues de 7 à 10m.
+Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuiles, d&apos;ardoises, chutes de cheminées.</translation>
     </message>
 </context>
 <context>
@@ -417,7 +428,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="207"/>
         <source>Feels like</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Ressenti</translation>
     </message>
 </context>
 <context>
@@ -426,7 +437,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="218"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vent</translation>
     </message>
 </context>
 <context>
@@ -435,7 +446,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="233"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Nuageux</translation>
     </message>
 </context>
 <context>
@@ -444,7 +455,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="257"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Humidité</translation>
     </message>
 </context>
 <context>
@@ -453,7 +464,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="245"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Pression</translation>
     </message>
 </context>
 <context>
@@ -462,7 +473,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="279"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Aube</translation>
     </message>
 </context>
 <context>
@@ -471,7 +482,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="288"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Crépuscule</translation>
     </message>
 </context>
 <context>
@@ -774,7 +785,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="145"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Km/h</translation>
     </message>
 </context>
 <context>
@@ -961,7 +972,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Icône de notification</translation>
     </message>
     <message>
         <location filename="../settings.py" line="263"/>
@@ -1164,7 +1175,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../meteo_qt.py" line="1873"/>
         <source>Feels like</source>
         <comment>SystemTrayIcon ToolTip</comment>
-        <translation type="unfinished"/>
+        <translation>Ressenti</translation>
     </message>
 </context>
 <context>
@@ -1191,7 +1202,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../meteo_qt.py" line="1084"/>
         <source>Feels like</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Ressenti</translation>
     </message>
 </context>
 <context>
@@ -1200,13 +1211,13 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../meteo_qt.py" line="1323"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Pression</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1328"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Humidité</translation>
     </message>
 </context>
 <context>
@@ -1270,7 +1281,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../meteo_qt.py" line="542"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Acquisition des données... </translation>
     </message>
 </context>
 <context>
@@ -1280,7 +1291,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../meteo_qt.py" line="440"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"/>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
