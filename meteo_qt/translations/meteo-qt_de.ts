@@ -439,7 +439,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="218"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Wind</translation>
     </message>
 </context>
 <context>
@@ -448,7 +448,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="233"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Bewölkung</translation>
     </message>
 </context>
 <context>
@@ -457,7 +457,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="257"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Luftfeuchtigkeit</translation>
     </message>
 </context>
 <context>
@@ -466,7 +466,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="245"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Luftdruck</translation>
     </message>
 </context>
 <context>
@@ -475,7 +475,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="279"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Sonnenaufgang</translation>
     </message>
 </context>
 <context>
@@ -484,7 +484,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="288"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Sonnenuntergang</translation>
     </message>
 </context>
 <context>
@@ -759,7 +759,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="375"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"/>
+        <translation>Protokollierungsstufe</translation>
     </message>
 </context>
 <context>
@@ -893,7 +893,7 @@ auf Werte um 100DU.</translation>
         <location filename="../searchcity.py" line="50"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"/>
+        <translation>Geben Sie die Stadt, die ID, oder die geografischen Koordinaten ein &quot;Breitengrad, Längengrad&quot;</translation>
     </message>
 </context>
 <context>
@@ -1013,7 +1013,7 @@ auf Werte um 100DU.</translation>
         <location filename="../searchcity.py" line="105"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Geben Sie den Namen der Stadt, Komma, den 2-stelligen Ländercode (z. B. London, GB) ein</translation>
     </message>
 </context>
 <context>
@@ -1297,7 +1297,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="542"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Rufe ab...</translation>
     </message>
 </context>
 <context>
@@ -1909,7 +1909,7 @@ or modify the name of the city</source>
         <source>
 Try again later</source>
         <translation>
-Bitte später noch einmal probieren</translation>
+Bitte versuchen Sie es später noch einmal</translation>
     </message>
 </context>
 </TS>
