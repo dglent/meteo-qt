@@ -431,7 +431,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="207"/>
         <source>Feels like</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitová teplota</translation>
     </message>
 </context>
 <context>
@@ -440,7 +440,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="218"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vítr</translation>
     </message>
 </context>
 <context>
@@ -449,7 +449,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="233"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Oblačnost</translation>
     </message>
 </context>
 <context>
@@ -458,7 +458,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="257"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vlhkost</translation>
     </message>
 </context>
 <context>
@@ -467,7 +467,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="245"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Tlak</translation>
     </message>
 </context>
 <context>
@@ -476,7 +476,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="279"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Svítání</translation>
     </message>
 </context>
 <context>
@@ -485,7 +485,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="288"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Západ slunce</translation>
     </message>
 </context>
 <context>
@@ -764,7 +764,7 @@ zůstaňte ve stínu.</translation>
         <location filename="../settings.py" line="375"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"/>
+        <translation>Úroveň protokolování</translation>
     </message>
 </context>
 <context>
@@ -897,7 +897,7 @@ zůstaňte ve stínu.</translation>
         <location filename="../searchcity.py" line="50"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"/>
+        <translation>Začněte psát město nebo ID nebo zeměpisné souřadnice „zeměpisná šířka, délka“</translation>
     </message>
 </context>
 <context>
@@ -975,19 +975,19 @@ zůstaňte ve stínu.</translation>
         <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona na hlavním panelu</translation>
     </message>
     <message>
         <location filename="../settings.py" line="263"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona a pocitová teplota</translation>
     </message>
     <message>
         <location filename="../settings.py" line="268"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitová teplota</translation>
     </message>
 </context>
 <context>
@@ -1017,7 +1017,7 @@ zůstaňte ve stínu.</translation>
         <location filename="../searchcity.py" line="105"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Zadejte název města, čárku, 2-místný kód země (např .: Londýn, GB)</translation>
     </message>
 </context>
 <context>
@@ -1195,7 +1195,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="1873"/>
         <source>Feels like</source>
         <comment>SystemTrayIcon ToolTip</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitově</translation>
     </message>
 </context>
 <context>
@@ -1222,7 +1222,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="1084"/>
         <source>Feels like</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitově</translation>
     </message>
 </context>
 <context>
@@ -1231,13 +1231,13 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="1323"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Tlak</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1328"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Vlhkost</translation>
     </message>
 </context>
 <context>
@@ -1301,7 +1301,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="542"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Načítání...</translation>
     </message>
 </context>
 <context>
