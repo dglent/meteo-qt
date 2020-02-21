@@ -858,6 +858,50 @@ class SystemTrayIcon(QMainWindow):
                     )
                     pass
 
+            if element.tag == 'feels_like':
+                feels_like_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 6 days forecast',
+                    'Feels like',
+                    'Weather information window'
+                )
+                feels_like_day = element.get('day')
+                feels_like_morning = element.get('morn')
+                feels_like_night = element.get('night')
+                feels_like_eve = element.get('eve')
+                feels_like_unit = element.get('unit')
+                if feels_like_unit == 'celsius':
+                    feels_like_unit = '°C'
+                else:
+                    feels_like_unit = '°F'
+                feels_like_day_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 6 days forecast',
+                    'Day',
+                    'Weather information window'
+                )
+                feels_like_morning_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 6 days forecast',
+                    'Morning',
+                    'Weather information window'
+                )
+                feels_like_eve_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 6 days forecast',
+                    'Evening',
+                    'Weather information window'
+                )
+                feels_like_night_label = QCoreApplication.translate(
+                    'Tooltip on weather icon on 6 days forecast',
+                    'Night',
+                    'Weather information window'
+                )
+                weather_cond += (
+                    f'\n―――――\n{feels_like_label} \n'
+                    f'{feels_like_morning_label} {feels_like_morning} {feels_like_unit}\n'
+                    f'{feels_like_day_label} {feels_like_day} {feels_like_unit}\n'
+                    f'{feels_like_eve_label} {feels_like_eve} {feels_like_unit}\n'
+                    f'{feels_like_night_label} {feels_like_night} {feels_like_unit}\n'
+                    '―――――'
+                )
+
             if element.tag == 'precipitation':
 
                 try:
