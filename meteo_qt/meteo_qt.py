@@ -21,7 +21,7 @@ from io import StringIO
 from PyQt5.QtCore import (
     PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication, QByteArray,
     QLibraryInfo, QLocale, QSettings, Qt, QThread, QTimer, QTranslator,
-    pyqtSignal, pyqtSlot, QTime
+    pyqtSignal, pyqtSlot, QTime, QSize
 )
 from PyQt5.QtGui import (
     QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
@@ -75,6 +75,25 @@ class SystemTrayIcon(QMainWindow):
         self.wind_codes = self.cond.wind_codes
         self.inerror = False
         self.tentatives = 0
+        self.system_icons_dico = {
+            '01d': 'weather-clear',
+            '01n': 'weather-clear-night',
+            '02d': 'weather-few-clouds',
+            '02n': 'weather-few-clouds-night',
+            '03d': 'weather-clouds',
+            '03n': 'weather-clouds-night',
+            '04d': 'weather-many-clouds',
+            '04n': 'weather-many-clouds',
+            '09d': 'weather-showers',
+            '09n': 'weather-showers',
+            '10d': 'weather-showers-day',
+            '10n': 'weather-showers-night',
+            '11d': 'weather-storm-day',
+            '11n': 'weather-storm-night',
+            '13d': 'weather-snow',
+            '13n': 'weather-snow',
+            '50d': 'weather-fog'
+        }
         url_prefix = 'http://api.openweathermap.org/data/2.5'
         self.baseurl = f'{url_prefix}/weather?id='
         self.accurate_url = f'{url_prefix}/find?q='
@@ -1168,12 +1187,36 @@ class SystemTrayIcon(QMainWindow):
     def iconfetch(self):
         self.clearLayout(self.forecast_icons_layout)
         logging.debug('Download forecast icons...')
-        self.download_thread = (
-            IconDownload(self.forecast_icon_url, self.icon_list)
-        )
-        self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
-        self.download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
-        self.download_thread.start()
+        self.system_icons = self.settings.value('SystemIcons') or 'False'
+        if self.system_icons == 'True':
+            for icon in self.icon_list:
+                logging.debug(
+                    f'Use the system icon "{self.system_icons_dico.get(icon, False)}" '
+                    f'for the openweathermap icon "{icon}"'
+                )
+                image = QIcon.fromTheme(self.system_icons_dico[icon])
+                if image.name() == '':
+                    logging.critical(
+                        f"The icon {self.system_icons_dico.get(icon, False)} "
+                        f"doesn't exist in the system icons theme {QIcon.themeName()}"
+                    )
+
+                iconlabel = QLabel()
+                iconlabel.setAlignment(Qt.AlignHCenter)
+                iconpixmap = image.pixmap(QSize(50, 50))
+                iconlabel.setPixmap(iconpixmap)
+                try:
+                    iconlabel.setToolTip(self.forecast_weather_list.pop(0))
+                    self.forecast_icons_layout.addWidget(iconlabel)
+                except IndexError as error:
+                    logging.error(f'{str(error)} forecast_weather_list')
+        else:
+            self.download_thread = (
+                IconDownload(self.forecast_icon_url, self.icon_list)
+            )
+            self.download_thread.wimage['PyQt_PyObject'].connect(self.iconwidget)
+            self.download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
+            self.download_thread.start()
 
     def clearLayout(self, layout):
         if layout is not None:
@@ -1468,12 +1511,37 @@ class SystemTrayIcon(QMainWindow):
         '''Icons for the forecast of the day'''
         self.clearLayout(self.dayforecast_layout)
         logging.debug('Download forecast icons for the day...')
-        self.day_download_thread = IconDownload(
-            self.forecast_icon_url, self.dayforecast_icon_list
-        )
-        self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
-        self.day_download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
-        self.day_download_thread.start()
+        self.system_icons = self.settings.value('SystemIcons') or 'False'
+        if self.system_icons == 'True':
+            for icon in self.dayforecast_icon_list:
+                logging.debug(
+                    f'Day forecast icons\n'
+                    f'Use the system icon "{self.system_icons_dico.get(icon, False)}" '
+                    f'for the openweathermap icon "{icon}"'
+                )
+                image = QIcon.fromTheme(self.system_icons_dico[icon])
+                if image.name() == '':
+                    logging.critical(
+                        f"The icon {self.system_icons_dico.get(icon, False)} "
+                        f"doesn't exist in the system icons theme {QIcon.themeName()}"
+                    )
+
+                iconlabel = QLabel()
+                iconlabel.setAlignment(Qt.AlignHCenter)
+                iconpixmap = image.pixmap(QSize(50, 50))
+                iconlabel.setPixmap(iconpixmap)
+                try:
+                    iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
+                    self.dayforecast_layout.addWidget(iconlabel)
+                except IndexError as error:
+                    logging.error(f'{str(error)} dayforecast_weather_list')
+        else:
+            self.day_download_thread = IconDownload(
+                self.forecast_icon_url, self.dayforecast_icon_list
+            )
+            self.day_download_thread.wimage['PyQt_PyObject'].connect(self.dayiconwidget)
+            self.day_download_thread.url_error_signal['QString'].connect(self.errorIconFetch)
+            self.day_download_thread.start()
 
     def dayiconwidget(self, icon):
         '''Forecast icons of the day'''
@@ -1526,14 +1594,19 @@ class SystemTrayIcon(QMainWindow):
         self.refresh()
 
     def wheelEvent(self, event):
-        if (
-            self.day_download_thread.isRunning()
-            or self.download_thread.isRunning()
-        ):
-            logging.debug(
-                'WheelEvent: Downloading icons - remaining thread...'
-            )
-            return
+        if hasattr(self, 'day_download_thread'):
+            if self.day_download_thread.isRunning():
+                logging.debug(
+                    'WheelEvent: Downloading icons - remaining thread "day_download_thread"...'
+                )
+                return
+        if hasattr(self, 'download_thread'):
+            if self.download_thread.isRunning():
+                logging.debug(
+                    'WheelEvent: Downloading icons - remaining thread "download_thread"...'
+                )
+                return
+
         self.icon_city_loading()
         cities = eval(self.settings.value('CityList') or [])
         if len(cities) == 0:
@@ -1667,6 +1740,7 @@ class SystemTrayIcon(QMainWindow):
             self.forecast6_url, self.id_, self.suffix
         )
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
+        self.downloadThread.weather_icon_signal.connect(self.weather_icon_name_set)
         self.downloadThread.finished.connect(self.tray)
         self.downloadThread.xmlpage['PyQt_PyObject'].connect(self.weatherdata)
         self.downloadThread.day_forecast_rawpage.connect(self.dayforecast)
@@ -1727,10 +1801,27 @@ class SystemTrayIcon(QMainWindow):
         self.timer.start(self.interval)
         self.inerror = True
 
+    def weather_icon_name_set(self, iconname):
+        self.weather_icon_name = iconname
+
     def makeicon(self, data):
         image = QImage()
         image.loadFromData(data)
         self.wIcon = QPixmap(image)
+        self.system_icons = self.settings.value('SystemIcons') or 'False'
+        if self.system_icons == 'True':
+            logging.debug(
+                f'Use the system icon "{self.system_icons_dico.get(self.weather_icon_name, False)}" '
+                f'for the openweathermap icon "{self.weather_icon_name}"'
+            )
+            if self.weather_icon_name not in self.system_icons_dico:
+                logging.critical(
+                    f"The icon {self.weather_icon_name} "
+                    f"doesn't exist in the system icons theme {QIcon.themeName()}"
+                )
+            else:
+                image = QIcon.fromTheme(self.system_icons_dico[self.weather_icon_name])
+                self.wIcon = image.pixmap(QSize(50, 50))
 
     def weatherdata(self, tree):
         if self.inerror:
@@ -2076,6 +2167,7 @@ class SystemTrayIcon(QMainWindow):
         wind_unit_speed = self.settings.value('Wind_unit')
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
+        system_icons = self.settings.value('SystemIcons')
         fontsize = self.settings.value('FontSize')
         bold_set = self.settings.value('Bold')
         language = self.settings.value('Language')
@@ -2107,6 +2199,7 @@ class SystemTrayIcon(QMainWindow):
             and country == self.country
             and unit == self.unit
             and wind_unit_speed == self.wind_unit_speed
+            and system_icons == self.system_icons
         ):
             return
         else:
@@ -2179,6 +2272,7 @@ class SystemTrayIcon(QMainWindow):
 
 class Download(QThread):
     wimage = pyqtSignal(['PyQt_PyObject'])
+    weather_icon_signal = pyqtSignal(['QString'])
     xmlpage = pyqtSignal(['PyQt_PyObject'])
     forecast6_rawpage = pyqtSignal(['PyQt_PyObject'])
     day_forecast_rawpage = pyqtSignal(['PyQt_PyObject'])
@@ -2325,7 +2419,7 @@ class Download(QThread):
 
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
-
+            self.weather_icon_signal.emit(weather_icon)
             self.uv_signal['PyQt_PyObject'].emit(uv_ind)
             if not use_json_day_forecast:
                 treedayforecast = etree.fromstring(pagedayforecast)

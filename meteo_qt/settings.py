@@ -285,6 +285,22 @@ class MeteoSettings(QDialog):
         )
         self.tray_icon_combo.currentIndexChanged.connect(self.tray)
         self.tray_changed = False
+        # Weather icons
+        # Checked : use system theme icons
+        # Unchecked : OpenWeatherMap icons
+        self.checkbox_system_icontheme = QCheckBox(
+            QCoreApplication.translate(
+                'Settings dialog',
+                'Weather icons from system theme',
+                'Check box to use the icons from the system theme'
+            )
+        )
+        icontheme_bool = self.settings.value('SystemIcons') or 'False'
+        icontheme_bool = eval(icontheme_bool)
+        self.checkbox_system_icontheme.setChecked(icontheme_bool)
+        self.checkbox_system_icontheme.stateChanged.connect(self.system_theme_icons)
+        self.checkbox_system_icontheme_changed = False
+
         # Font size
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(
@@ -414,6 +430,7 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.notifier_checkbox, 8, 1)
         self.panel.addWidget(self.tray_icon_temp_label, 9, 0)
         self.panel.addWidget(self.tray_icon_combo, 9, 1)
+        self.panel.addWidget(self.checkbox_system_icontheme, 9, 2)
         self.panel.addWidget(self.fontsize_label, 10, 0)
         self.panel.addWidget(self.fontsize_spinbox, 10, 1)
         self.panel.addWidget(self.bold_checkbox, 10, 2)
@@ -628,6 +645,18 @@ class MeteoSettings(QDialog):
         logging.debug('Apply fontsize: ' + str(self.fontsize_value))
         self.settings.setValue('FontSize', str(self.fontsize_value))
 
+    def system_theme_icons(self, state):
+        self.system_icons_state = state
+        self.checkbox_system_icontheme_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def system_icontheme_apply(self):
+        if self.system_icons_state == 2:
+            system_icons = 'True'
+        else:
+            system_icons = 'False'
+        self.settings.setValue('SystemIcons', str(system_icons))
+
     def bold(self, state):
         self.bold_state = state
         self.bold_changed = True
@@ -770,6 +799,8 @@ class MeteoSettings(QDialog):
             self.fontsize_apply()
         if self.bold_changed:
             self.bold_apply()
+        if self.checkbox_system_icontheme_changed:
+            self.system_icontheme_apply()
         if self.start_minimized_changed:
             self.start_minimized_apply()
         if self.logging_changed:
