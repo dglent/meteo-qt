@@ -25,11 +25,11 @@ from PyQt5.QtCore import (
 )
 from PyQt5.QtGui import (
     QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
-    QTransform, QTextDocument
+    QTransform, QTextDocument, QColor
 )
 from PyQt5.QtWidgets import (
     QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
-    QVBoxLayout, QHBoxLayout, QLabel, QGridLayout
+    QVBoxLayout, QHBoxLayout, QLabel, QGridLayout, QGraphicsDropShadowEffect
 )
 
 try:
@@ -193,6 +193,14 @@ class SystemTrayIcon(QMainWindow):
         self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
         self.cities_menu()
         self.refresh()
+
+    def shadow_effect(self):
+        shadow = QGraphicsDropShadowEffect()
+        shadow.setColor(QColor(50, 50, 50, 100))
+        shadow.setXOffset(5)
+        shadow.setYOffset(5)
+        shadow.setBlurRadius(20)
+        return shadow
 
     def create_overview(self):
         self.overviewcitydlg = QDialog()
@@ -415,6 +423,11 @@ class SystemTrayIcon(QMainWindow):
         )
 
         self.icon_label.setPixmap(self.wIcon)
+        self.system_icons = self.settings.value('SystemIcons') or 'False'
+        if self.system_icons == 'True':
+            shadow = self.shadow_effect()
+            self.icon_label.setGraphicsEffect(shadow)
+
         self.temp_label.setText(
             '<font size="5"><b>{0} {1}{2}</b></font>'.format(
                 '{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])),
@@ -1185,6 +1198,7 @@ class SystemTrayIcon(QMainWindow):
                 weather_end = False
 
     def iconfetch(self):
+        '''Get icons for the next days forecast'''
         self.clearLayout(self.forecast_icons_layout)
         logging.debug('Download forecast icons...')
         self.system_icons = self.settings.value('SystemIcons') or 'False'
@@ -1205,6 +1219,8 @@ class SystemTrayIcon(QMainWindow):
                 iconlabel.setAlignment(Qt.AlignHCenter)
                 iconpixmap = image.pixmap(QSize(50, 50))
                 iconlabel.setPixmap(iconpixmap)
+                shadow = self.shadow_effect()
+                iconlabel.setGraphicsEffect(shadow)
                 try:
                     iconlabel.setToolTip(self.forecast_weather_list.pop(0))
                     self.forecast_icons_layout.addWidget(iconlabel)
@@ -1530,6 +1546,8 @@ class SystemTrayIcon(QMainWindow):
                 iconlabel.setAlignment(Qt.AlignHCenter)
                 iconpixmap = image.pixmap(QSize(50, 50))
                 iconlabel.setPixmap(iconpixmap)
+                shadow = self.shadow_effect()
+                iconlabel.setGraphicsEffect(shadow)
                 try:
                     iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
                     self.dayforecast_layout.addWidget(iconlabel)
