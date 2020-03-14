@@ -25,7 +25,7 @@ from PyQt5.QtCore import (
 )
 from PyQt5.QtGui import (
     QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
-    QTransform, QTextDocument, QColor
+    QTransform, QTextDocument
 )
 from PyQt5.QtWidgets import (
     QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
