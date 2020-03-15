@@ -767,7 +767,7 @@ class SystemTrayIcon(QMainWindow):
         if uv <= 2.99:
             return ('green', 'Low')
         elif uv <= 5.99:
-            return ('yellow', 'Moderate')
+            return ('gold', 'Moderate')
         elif uv <= 7.99:
             return ('orange', 'High')
         elif uv <= 10.99:
