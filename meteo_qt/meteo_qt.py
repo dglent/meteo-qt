@@ -154,7 +154,11 @@ class SystemTrayIcon(QMainWindow):
         self.systray.activated.connect(self.activate)
         self.systray.setIcon(QIcon(':/noicon'))
         self.systray.setToolTip(self.tr('Searching weather data...'))
-
+        self.feels_like_translated = QCoreApplication.translate(
+            "The Feels Like Temperature",
+            "Feels like",
+            "Weather info window"
+        )
         self.notification = ''
         self.hPaTrend = 0
         self.trendCities_dic = {}
@@ -232,11 +236,7 @@ class SystemTrayIcon(QMainWindow):
         # Feels Like
         self.feels_like_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
-                QCoreApplication.translate(
-                    'Label (For the temperature)',
-                    'Feels like',
-                    'Weather info panel'
-                )
+                self.feels_like_translated
             )
         )
         self.feels_like_value = QLabel()
@@ -890,11 +890,6 @@ class SystemTrayIcon(QMainWindow):
                     pass
 
             if element.tag == 'feels_like':
-                feels_like_label = QCoreApplication.translate(
-                    'Tooltip on weather icon on 6 days forecast',
-                    'Feels like',
-                    'Weather information window'
-                )
                 feels_like_day = element.get('day')
                 feels_like_morning = element.get('morn')
                 feels_like_night = element.get('night')
@@ -925,7 +920,7 @@ class SystemTrayIcon(QMainWindow):
                     'Weather information window'
                 )
                 weather_cond += (
-                    f'\n―――――\n{feels_like_label} \n'
+                    f'\n―――――\n{self.feels_like_translated} \n'
                     f'{feels_like_morning_label} {feels_like_morning} {feels_like_unit}\n'
                     f'{feels_like_day_label} {feels_like_day} {feels_like_unit}\n'
                     f'{feels_like_eve_label} {feels_like_eve} {feels_like_unit}\n'
@@ -1155,18 +1150,13 @@ class SystemTrayIcon(QMainWindow):
                     )
                 )
             if element.tag == 'feels_like' and collate_info:
-                feels_like_label = QCoreApplication.translate(
-                    'Tooltip on weather icon on 4 days forecast',
-                    'Feels like',
-                    'Weather information window'
-                )
                 feels_like_value = element.get('value')
                 feels_like_unit = element.get('unit')
                 if feels_like_unit == 'celsius':
                     feels_like_unit = '°C'
                 if feels_like_unit == 'fahrenheit':
                     feels_like_unit = '°F'
-                weather_cond += f'\n{feels_like_label} : {feels_like_value} {feels_like_unit}'
+                weather_cond += f'\n{self.feels_like_translated} : {feels_like_value} {feels_like_unit}'
 
             if element.tag == 'pressure' and collate_info:
                 self.doc.setHtml(self.pressure_label.text())
@@ -1379,7 +1369,7 @@ class SystemTrayIcon(QMainWindow):
             elif unit == ' ':
                 mu = 'kelvin'
             ttip = (
-                f'{QCoreApplication.translate("Tootltip forcast of the day", "Feels like", "Weather info window")} '
+                f'{self.feels_like_translated} '
                 f'{feels_like_value} {feels_like_unit}'
                 '<br/>'
             )
@@ -2023,11 +2013,7 @@ class SystemTrayIcon(QMainWindow):
         city = f'{self.city}_{self.country}_{self.id_}'
         feels_like = (
             '{0} {1}'.format(
-                QCoreApplication.translate(
-                    'Temperature info',
-                    'Feels like',
-                    'SystemTrayIcon ToolTip'
-                ),
+                self.feels_like_translated,
                 ' '.join(fl for fl in self.weatherDataDico['Feels_like'])
             )
         )
