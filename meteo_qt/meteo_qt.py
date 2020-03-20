@@ -1813,23 +1813,27 @@ class SystemTrayIcon(QMainWindow):
         self.weather_icon_name = iconname
 
     def makeicon(self, data):
-        image = QImage()
-        image.loadFromData(data)
-        self.wIcon = QPixmap(image)
+        def make_icon(data):
+            image = QImage()
+            image.loadFromData(data)
+            self.wIcon = QPixmap(image)
         self.system_icons = self.settings.value('SystemIcons') or 'False'
         if self.system_icons == 'True':
             logging.debug(
                 f'Use the system icon "{self.system_icons_dico.get(self.weather_icon_name, False)}" '
                 f'for the openweathermap icon "{self.weather_icon_name}"'
             )
-            if self.weather_icon_name not in self.system_icons_dico:
+            image = QIcon.fromTheme(self.system_icons_dico[self.weather_icon_name])
+            if image.name() == '':
                 logging.critical(
-                    f"The icon {self.weather_icon_name} "
+                    f"The icon {self.system_icons_dico.get(self.weather_icon_name, False)} "
                     f"doesn't exist in the system icons theme {QIcon.themeName()}"
                 )
+                make_icon(data)
             else:
-                image = QIcon.fromTheme(self.system_icons_dico[self.weather_icon_name])
                 self.wIcon = image.pixmap(QSize(50, 50))
+        else:
+            make_icon(data)
 
     def weatherdata(self, tree):
         if self.inerror:
