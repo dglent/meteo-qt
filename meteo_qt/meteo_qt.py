@@ -76,23 +76,23 @@ class SystemTrayIcon(QMainWindow):
         self.inerror = False
         self.tentatives = 0
         self.system_icons_dico = {
-            '01d': 'weather-clear',
-            '01n': 'weather-clear-night',
-            '02d': 'weather-few-clouds',
-            '02n': 'weather-few-clouds-night',
-            '03d': 'weather-clouds',
-            '03n': 'weather-clouds-night',
-            '04d': 'weather-many-clouds',
-            '04n': 'weather-many-clouds',
-            '09d': 'weather-showers',
-            '09n': 'weather-showers',
-            '10d': 'weather-showers-day',
-            '10n': 'weather-showers-night',
-            '11d': 'weather-storm-day',
-            '11n': 'weather-storm-night',
-            '13d': 'weather-snow',
-            '13n': 'weather-snow',
-            '50d': 'weather-fog'
+            '01d': ('weather-clear', 'weather-clear-symbolic'),
+            '01n': ('weather-clear-night', 'weather-clear-night-symbolic'),
+            '02d': ('weather-few-clouds', 'weather-few-clouds-symbolic'),
+            '02n': ('weather-few-clouds-night', 'weather-few-clouds-night-symbolic'),
+            '03d': ('weather-clouds', 'weather-overcast', 'weather-overcast-symbolic'),
+            '03n': ('weather-clouds-night', 'weather-overcast', 'weather-overcast-symbolic'),
+            '04d': ('weather-many-clouds', 'weather-overcast', 'weather-overcast-symbolic'),
+            '04n': ('weather-many-clouds', 'weather-overcast', 'weather-overcast-symbolic'),
+            '09d': ('weather-showers', 'weather-showers-symbolic'),
+            '09n': ('weather-showers', 'weather-showers-symbolic'),
+            '10d': ('weather-showers-day', 'weather-showers', 'weather-showers-symbolic'),
+            '10n': ('weather-showers-night', 'weather-showers', 'weather-showers-symbolic'),
+            '11d': ('weather-storm-day', 'weather-storm', 'weather-storm-symbolic'),
+            '11n': ('weather-storm-night', 'weather-storm', 'weather-storm-symbolic'),
+            '13d': ('weather-snow', 'weather-snow-symbolic'),
+            '13n': ('weather-snow', 'weather-snow-symbolic'),
+            '50d': ('weather-fog', 'weather-fog-symbolic'),
         }
         url_prefix = 'http://api.openweathermap.org/data/2.5'
         self.baseurl = f'{url_prefix}/weather?id='
@@ -1219,27 +1219,27 @@ class SystemTrayIcon(QMainWindow):
         icon_name = icon[1]
         iconlabel = QLabel()
         iconlabel.setAlignment(Qt.AlignHCenter)
+
         self.system_icons = self.settings.value('SystemIcons') or 'False'
         if self.system_icons == 'True':
-            logging.debug(
-                f'Use the system theme "{QIcon.themeName()}" - '
-                f'the system icon "{self.system_icons_dico.get(icon_name, False)}" '
-                f'for the openweathermap icon "{icon_name}"'
-            )
-            image = QIcon.fromTheme(self.system_icons_dico.get(icon_name, None))
-            if image.name() == '':
-                logging.warning(
-                    f"The icon {self.system_icons_dico.get(icon_name, False)} "
-                    f"doesn't exist in the system icons theme {QIcon.themeName()}"
-                )
-                iconpixmap = make_icon(icon_data)
-            else:
-                iconpixmap = image.pixmap(QSize(50, 50))
+            for icon in self.system_icons_dico[icon_name]:
+                image = QIcon.fromTheme(icon)
+                if image.name() == '':
+                    logging.warning(
+                        f"The icon {icon} for the openweathermap icon {icon_name} "
+                        f"doesn't exist in the system icons theme '{QIcon.themeName()}'"
+                    )
+                    iconpixmap = make_icon(icon_data)
+                else:
+                    iconpixmap = image.pixmap(QSize(50, 50))
+                    break
         else:
             iconpixmap = make_icon(icon_data)
+
         shadow = self.shadow_effect()
         iconlabel.setGraphicsEffect(shadow)
         iconlabel.setPixmap(iconpixmap)
+
         try:
             iconlabel.setToolTip(self.forecast_weather_list.pop(0))
             self.forecast_icons_layout.addWidget(iconlabel)
@@ -1533,27 +1533,27 @@ class SystemTrayIcon(QMainWindow):
         icon_name = icon[1]
         iconlabel = QLabel()
         iconlabel.setAlignment(Qt.AlignHCenter)
+
         self.system_icons = self.settings.value('SystemIcons') or 'False'
         if self.system_icons == 'True':
-            logging.debug(
-                f'Use the system theme "{QIcon.themeName()}" - '
-                f'the system icon "{self.system_icons_dico.get(icon_name, False)}" '
-                f'for the openweathermap icon "{icon_name}"'
-            )
-            image = QIcon.fromTheme(self.system_icons_dico.get(icon_name, None))
-            if image.name() == '':
-                logging.warning(
-                    f"The icon {self.system_icons_dico.get(icon_name, False)} "
-                    f"doesn't exist in the system icons theme {QIcon.themeName()}"
-                )
-                iconpixmap = make_icon(icon_data)
-            else:
-                iconpixmap = image.pixmap(QSize(50, 50))
+            for icon in self.system_icons_dico[icon_name]:
+                image = QIcon.fromTheme(icon)
+                if image.name() == '':
+                    logging.warning(
+                        f"The icon {icon} for the openweathermap icon {icon_name} "
+                        f"doesn't exist in the system icons theme '{QIcon.themeName()}'"
+                    )
+                    iconpixmap = make_icon(icon_data)
+                else:
+                    iconpixmap = image.pixmap(QSize(50, 50))
+                    break
         else:
             iconpixmap = make_icon(icon_data)
+
         shadow = self.shadow_effect()
         iconlabel.setGraphicsEffect(shadow)
         iconlabel.setPixmap(iconpixmap)
+
         try:
             iconlabel.setToolTip(self.dayforecast_weather_list.pop(0))
             self.dayforecast_layout.addWidget(iconlabel)
@@ -1814,19 +1814,17 @@ class SystemTrayIcon(QMainWindow):
             self.wIcon = QPixmap(image)
         self.system_icons = self.settings.value('SystemIcons') or 'False'
         if self.system_icons == 'True':
-            logging.debug(
-                f'Use the system icon "{self.system_icons_dico.get(self.weather_icon_name, False)}" '
-                f'for the openweathermap icon "{self.weather_icon_name}"'
-            )
-            image = QIcon.fromTheme(self.system_icons_dico[self.weather_icon_name])
-            if image.name() == '':
-                logging.critical(
-                    f"The icon {self.system_icons_dico.get(self.weather_icon_name, False)} "
-                    f"doesn't exist in the system icons theme {QIcon.themeName()}"
-                )
-                make_icon(data)
-            else:
-                self.wIcon = image.pixmap(QSize(50, 50))
+            for icon in self.system_icons_dico[self.weather_icon_name]:
+                image = QIcon.fromTheme(icon)
+                if image.name() == '':
+                    logging.warning(
+                        f"The icon {icon} for the openweathermap icon {self.weather_icon_name} "
+                        f"doesn't exist in the system icons theme '{QIcon.themeName()}'"
+                    )
+                    make_icon(data)
+                else:
+                    self.wIcon = image.pixmap(QSize(50, 50))
+                    break
         else:
             make_icon(data)
 
