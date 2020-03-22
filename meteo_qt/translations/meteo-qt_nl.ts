@@ -336,7 +336,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="325"/>
+        <location filename="../meteo_qt.py" line="327"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Daglicht</translation>
@@ -345,7 +345,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1461"/>
+        <location filename="../meteo_qt.py" line="1456"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -435,17 +435,11 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 </context>
 <context>
     <name>Label (For the temperature)</name>
-    <message>
-        <location filename="../meteo_qt.py" line="233"/>
-        <source>Feels like</source>
-        <comment>Weather info panel</comment>
-        <translation>Voelt als</translation>
-    </message>
 </context>
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="244"/>
+        <location filename="../meteo_qt.py" line="246"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Wind</translation>
@@ -454,7 +448,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="259"/>
+        <location filename="../meteo_qt.py" line="261"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Bewolkingsdichtheid</translation>
@@ -463,7 +457,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="283"/>
+        <location filename="../meteo_qt.py" line="285"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Luchtvochtigheid</translation>
@@ -472,7 +466,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="271"/>
+        <location filename="../meteo_qt.py" line="273"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Druk</translation>
@@ -481,7 +475,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="305"/>
+        <location filename="../meteo_qt.py" line="307"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Zonsopkomst</translation>
@@ -490,7 +484,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="314"/>
+        <location filename="../meteo_qt.py" line="316"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Zonsondergang</translation>
@@ -803,7 +797,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="348"/>
+        <location filename="../meteo_qt.py" line="350"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozon</translation>
@@ -812,7 +806,7 @@ de zon is dan op zijn felst.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1475"/>
+        <location filename="../meteo_qt.py" line="1476"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -849,7 +843,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="294"/>
+        <location filename="../meteo_qt.py" line="296"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Neerslag</translation>
@@ -1038,7 +1032,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2195"/>
+        <location filename="../meteo_qt.py" line="2189"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Herstart de applicatie om de taalwijziging toe te passen</translation>
     </message>
@@ -1076,32 +1070,32 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1710"/>
+        <location filename="../meteo_qt.py" line="1701"/>
         <source>Empty list</source>
         <translation>Lijst leegmaken</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1727"/>
+        <location filename="../meteo_qt.py" line="1718"/>
         <source>No city configured</source>
         <translation>Geen ingestelde stad</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1740"/>
+        <location filename="../meteo_qt.py" line="1733"/>
         <source>No city has been configured yet.</source>
         <translation>Er is nog geen stad ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1740"/>
+        <location filename="../meteo_qt.py" line="1733"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klik met de rechtermuisknop op het pictogram en daarna op Instellingen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2245"/>
+        <location filename="../meteo_qt.py" line="2232"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2257"/>
+        <location filename="../meteo_qt.py" line="2248"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1110,62 +1104,62 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="172"/>
+        <location filename="../meteo_qt.py" line="176"/>
         <source>Mon</source>
         <translation>ma</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="173"/>
+        <location filename="../meteo_qt.py" line="177"/>
         <source>Tue</source>
         <translation>di</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="174"/>
+        <location filename="../meteo_qt.py" line="178"/>
         <source>Wed</source>
         <translation>woe</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="175"/>
+        <location filename="../meteo_qt.py" line="179"/>
         <source>Thu</source>
         <translation>do</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="176"/>
+        <location filename="../meteo_qt.py" line="180"/>
         <source>Fri</source>
         <translation>vrij</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="177"/>
+        <location filename="../meteo_qt.py" line="181"/>
         <source>Sat</source>
         <translation>za</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="178"/>
+        <location filename="../meteo_qt.py" line="182"/>
         <source>Sun</source>
         <translation>zo</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="392"/>
+        <location filename="../meteo_qt.py" line="393"/>
         <source>Weather status</source>
         <translation>Weerstatus</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1072"/>
+        <location filename="../meteo_qt.py" line="1068"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max temperatuur van de dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1393"/>
+        <location filename="../meteo_qt.py" line="1384"/>
         <source>snow</source>
         <translation>sneeuw</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1394"/>
+        <location filename="../meteo_qt.py" line="1385"/>
         <source>rain</source>
         <translation>regen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2266"/>
+        <location filename="../meteo_qt.py" line="2272"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1204,10 +1198,13 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 </context>
 <context>
     <name>Temperature info</name>
+</context>
+<context>
+    <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="2024"/>
+        <location filename="../meteo_qt.py" line="157"/>
         <source>Feels like</source>
-        <comment>SystemTrayIcon ToolTip</comment>
+        <comment>Weather info window</comment>
         <translation>Voelt als</translation>
     </message>
 </context>
@@ -1231,21 +1228,9 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 </context>
 <context>
     <name>Tooltip on weather icon on 4 days forecast</name>
-    <message>
-        <location filename="../meteo_qt.py" line="1158"/>
-        <source>Feels like</source>
-        <comment>Weather information window</comment>
-        <translation>Voelt als</translation>
-    </message>
 </context>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
-    <message>
-        <location filename="../meteo_qt.py" line="893"/>
-        <source>Feels like</source>
-        <comment>Weather information window</comment>
-        <translation>Voelt als</translation>
-    </message>
     <message>
         <location filename="../meteo_qt.py" line="907"/>
         <source>Day</source>
@@ -1274,13 +1259,13 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1424"/>
+        <location filename="../meteo_qt.py" line="1419"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Druk</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1429"/>
+        <location filename="../meteo_qt.py" line="1424"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Luchtvochtigheid</translation>
@@ -1298,7 +1283,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1808"/>
+        <location filename="../meteo_qt.py" line="1803"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
@@ -1335,7 +1320,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="336"/>
+        <location filename="../meteo_qt.py" line="338"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1344,7 +1329,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="573"/>
+        <location filename="../meteo_qt.py" line="575"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Bezig met ophalen...</translation>
@@ -1354,7 +1339,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="471"/>
+        <location filename="../meteo_qt.py" line="477"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/u </translation>
