@@ -93,6 +93,7 @@ class SystemTrayIcon(QMainWindow):
             '13d': ('weather-snow', 'weather-snow-symbolic'),
             '13n': ('weather-snow', 'weather-snow-symbolic'),
             '50d': ('weather-fog', 'weather-fog-symbolic'),
+            '50n': ('weather-fog', 'weather-fog-symbolic'),
         }
         url_prefix = 'http://api.openweathermap.org/data/2.5'
         self.baseurl = f'{url_prefix}/weather?id='
