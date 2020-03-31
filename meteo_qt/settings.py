@@ -290,7 +290,7 @@ class MeteoSettings(QDialog):
         # Unchecked : OpenWeatherMap icons
         self.checkbox_system_icontheme = QCheckBox(
             QCoreApplication.translate(
-                'Settings dialog',
+                'Settings dialogue',
                 'Weather icons from system theme',
                 'Check box to use the icons from the system theme'
             )
@@ -329,7 +329,7 @@ class MeteoSettings(QDialog):
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(
             QCoreApplication.translate(
-                'Settings dialog',
+                'Settings dialogue',
                 'Font size in tray',
                 'Setting for the font size of the temperature in the tray icon'
             )
