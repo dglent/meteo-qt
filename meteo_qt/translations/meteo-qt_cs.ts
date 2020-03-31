@@ -89,7 +89,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italský překlad</translation>
     </message>
 </context>
 <context>
@@ -953,7 +953,7 @@ zůstaňte ve stínu.</translation>
         <location filename="../settings.py" line="291"/>
         <source>Weather icons from system theme</source>
         <comment>Check box to use the icons from the system theme</comment>
-        <translation type="unfinished"/>
+        <translation>Ikony počasí z motivu systému</translation>
     </message>
 </context>
 <context>
@@ -1203,7 +1203,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="157"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitově</translation>
     </message>
 </context>
 <context>
@@ -1233,25 +1233,25 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="907"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Den</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="912"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Ráno</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="917"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Večer</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="922"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Noc</translation>
     </message>
 </context>
 <context>
