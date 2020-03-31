@@ -301,6 +301,30 @@ class MeteoSettings(QDialog):
         self.checkbox_system_icontheme.stateChanged.connect(self.system_theme_icons)
         self.checkbox_system_icontheme_changed = False
 
+        # Toggle icon Temp
+        self.toggle_tray_label = QLabel(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Toggle tray icon interval',
+                'Label for the option of the checkbox to '
+                'activate the toggle of the tray icon and temperature'
+            )
+        )
+        toggle_interval = self.settings.value('Toggle_tray_interval') or '0'
+        self.toggle_tray_spinbox = QSpinBox()
+        self.toggle_tray_spinbox.setRange(0, 100000)
+        self.toggle_tray_spinbox_changed = False
+        self.toggle_tray_spinbox.valueChanged.connect(self.toggle_tray_interval_change)
+        self.toggle_tray_spinbox.setValue(int(toggle_interval))
+        self.toggle_tray_interval_label = QLabel(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'seconds. Set to 0 to deactivate toggle',
+                'Label after the spinbox to choose the interval '
+                'to toggle the tray icon and temperature'
+            )
+        )
+        self.activate_toggle_check()
         # Font size
         fontsize = self.settings.value('FontSize') or '18'
         self.fontsize_label = QLabel(
@@ -431,19 +455,22 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.tray_icon_temp_label, 9, 0)
         self.panel.addWidget(self.tray_icon_combo, 9, 1)
         self.panel.addWidget(self.checkbox_system_icontheme, 9, 2)
-        self.panel.addWidget(self.fontsize_label, 10, 0)
-        self.panel.addWidget(self.fontsize_spinbox, 10, 1)
-        self.panel.addWidget(self.bold_checkbox, 10, 2)
-        self.panel.addWidget(self.proxy_label, 11, 0)
-        self.panel.addWidget(self.proxy_chbox, 11, 1)
-        self.panel.addWidget(self.proxy_button, 11, 2)
-        self.panel.addWidget(self.owmkey_label, 12, 0)
-        self.panel.addWidget(self.owmkey_text, 12, 1)
-        self.panel.addWidget(self.owmkey_create, 12, 2)
-        self.panel.addWidget(self.start_minimized_label, 13, 0)
-        self.panel.addWidget(self.start_minimized_chbx, 13, 1)
-        self.panel.addWidget(self.logging_label, 14, 0)
-        self.panel.addWidget(self.logging_level_combo, 14, 1)
+        self.panel.addWidget(self.toggle_tray_label, 10, 0)
+        self.panel.addWidget(self.toggle_tray_spinbox, 10, 1)
+        self.panel.addWidget(self.toggle_tray_interval_label, 10, 2)
+        self.panel.addWidget(self.fontsize_label, 11, 0)
+        self.panel.addWidget(self.fontsize_spinbox, 11, 1)
+        self.panel.addWidget(self.bold_checkbox, 11, 2)
+        self.panel.addWidget(self.proxy_label, 12, 0)
+        self.panel.addWidget(self.proxy_chbox, 12, 1)
+        self.panel.addWidget(self.proxy_button, 12, 2)
+        self.panel.addWidget(self.owmkey_label, 13, 0)
+        self.panel.addWidget(self.owmkey_text, 13, 1)
+        self.panel.addWidget(self.owmkey_create, 13, 2)
+        self.panel.addWidget(self.start_minimized_label, 14, 0)
+        self.panel.addWidget(self.start_minimized_chbx, 14, 1)
+        self.panel.addWidget(self.logging_label, 15, 0)
+        self.panel.addWidget(self.logging_level_combo, 15, 1)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -623,9 +650,19 @@ class MeteoSettings(QDialog):
         self.temp_decimal_changed = True
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
+    def activate_toggle_check(self):
+        current_tray_option = self.tray_icon_combo.currentText()
+        for key, value in self.tray_dico.items():
+            if value == current_tray_option:
+                if key == 'icon&temp' or key == 'icon&feels_like':
+                    self.toggle_tray_spinbox.setEnabled(True)
+                else:
+                    self.toggle_tray_spinbox.setEnabled(False)
+
     def tray(self):
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
         self.tray_changed = True
+        self.activate_toggle_check()
 
     def tray_apply(self):
         tray = self.tray_icon_combo.currentText()
@@ -635,6 +672,14 @@ class MeteoSettings(QDialog):
             key for key, value in self.tray_dico.items() if value == tray
         ]
         self.settings.setValue('TrayType', settray[0])
+
+    def toggle_tray_interval_change(self, interval):
+        self.toggle_tray_spinbox_changed = True
+        self.toggle_tray_interval = interval
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def toggle_tray_interval_apply(self):
+        self.settings.setValue('Toggle_tray_interval', str(self.toggle_tray_interval))
 
     def fontsize_change(self, size):
         self.fontsize_changed = True
@@ -795,6 +840,8 @@ class MeteoSettings(QDialog):
             self.notifier_apply()
         if self.tray_changed:
             self.tray_apply()
+        if self.toggle_tray_spinbox_changed:
+            self.toggle_tray_interval_apply()
         if self.fontsize_changed:
             self.fontsize_apply()
         if self.bold_changed:

@@ -192,12 +192,51 @@ class SystemTrayIcon(QMainWindow):
         self.uv_recommend = self.cond.uv_recommend
         self.doc = QTextDocument()
         self.create_overview()
+        self.toggle_tray_timer = QTimer()
+        self.toggle_tray_bool = False
+        self.toggle_tray_action = False
+        self.toggle_tray_timer.timeout.connect(self.toggle_tray)
+        self.set_toggle_tray_interval()
         self.city = self.settings.value('City') or ''
         self.country = self.settings.value('Country') or ''
         self.id_ = self.settings.value('ID') or ''
         self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
         self.cities_menu()
         self.refresh()
+
+    def set_toggle_tray_interval(self):
+        interval = self.settings.value('Toggle_tray_interval') or '0'
+        interval = int(interval)
+        tray_type = self.settings.value('TrayType') or 'icon&temp'
+        self.tray_type_config = tray_type
+        self.toggle_tray_timer.stop()
+        if interval > 0 and tray_type in ['icon&temp', 'icon&feels_like']:
+            self.toggle_tray_bool = True
+            self.tray_type = 'icon'
+            self.toggle_tray_timer.start(interval * 1000)
+        else:
+            # Restore the value from the settings file
+            self.tray_type = tray_type
+            self.toggle_tray_bool = False
+
+    def toggle_tray_state(self):
+        tray_type = self.settings.value('TrayType') or 'icon&temp'
+        if tray_type == 'icon&temp':
+            if self.tray_type == 'icon':
+                self.tray_type = 'temp'
+            else:
+                self.tray_type = 'icon'
+        elif tray_type == 'icon&feels_like':
+            if self.tray_type == 'icon':
+                self.tray_type = 'feels_like_temp'
+            else:
+                self.tray_type = 'icon'
+
+    def toggle_tray(self):
+        self.toggle_tray_action = True
+        self.toggle_tray_state()
+        self.tray()
+        self.toggle_tray_action = False
 
     def shadow_effect(self):
         shadow = QGraphicsDropShadowEffect()
@@ -2060,7 +2099,9 @@ class SystemTrayIcon(QMainWindow):
         icon = QPixmap(':/empty')
         self.traycolor = self.settings.value('TrayColor') or ''
         self.fontsize = self.settings.value('FontSize') or '18'
-        self.tray_type = self.settings.value('TrayType') or 'icon&temp'
+        if not self.toggle_tray_bool:
+            self.tray_type = self.settings.value('TrayType') or 'icon&temp'
+
         if self.tray_type == 'feels_like_temp' or self.tray_type == 'icon&feels_like':
             temp_tray = '{0:.0f}'.format(float(self.weatherDataDico['Feels_like'][0]))
             if temp_decimal:
@@ -2101,12 +2142,14 @@ class SystemTrayIcon(QMainWindow):
                         # Don't show the notification when window is open
                         # Show only if the temperature has changed
                         if (
-                            self.trendCities_dic[self.id_][4] is
-                                True or self.trendCities_dic[self.id_][4] == ''
+                            self.trendCities_dic[self.id_][4] is True
+                            or self.trendCities_dic[self.id_][4] == ''
                         ):
-                            self.systray.showMessage(
-                                'meteo-qt', f'{self.notification}{self.temp_trend}'
-                            )
+                            # Don't show notifications when toggling the tray icon
+                            if not self.toggle_tray_action:
+                                self.systray.showMessage(
+                                    'meteo-qt', f'{self.notification}{self.temp_trend}'
+                                )
                             return
             except KeyError:
                 return
@@ -2115,7 +2158,8 @@ class SystemTrayIcon(QMainWindow):
             self.restore_city()
         self.tentatives = 0
         self.tooltip_weather()
-        logging.info(f'Actual weather status for: {self.notification}')
+        if not self.toggle_tray_action:
+            logging.info(f'Actual weather status for: {self.notification}')
 
     def notifier_settings(self):
         notifier = self.settings.value('Notifications') or 'True'
@@ -2174,6 +2218,8 @@ class SystemTrayIcon(QMainWindow):
         bold_set = self.settings.value('Bold')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
+        toggle_tray_interval = self.settings.value('Toggle_tray_interval') or '0'
+        toggle_tray_interval = int(toggle_tray_interval)
         self.appid = f'&APPID={self.settings.value("APPID")}' or ''
         if language != self.language and language is not None:
             self.systray.showMessage(
@@ -2185,14 +2231,25 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
             self.language = language
+
         # Check if update is needed
+        toggle_tray = False
+        if (
+            self.toggle_tray_timer.interval() != toggle_tray_interval
+            or self.tray_type_config != tray_type
+        ):
+            self.set_toggle_tray_interval()
+            toggle_tray = True
+
         if traycolor is None:
             traycolor = ''
         if (
             self.traycolor != traycolor
             or self.tray_type != tray_type
-            or self.fontsize != fontsize or self.bold_set != bold_set
+            or self.fontsize != fontsize
+            or self.bold_set != bold_set
             or decimal != self.temp_decimal
+            or toggle_tray
         ):
             self.tray()
         if (
