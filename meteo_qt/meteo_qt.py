@@ -2093,7 +2093,6 @@ class SystemTrayIcon(QMainWindow):
         except:
             # In first time run the gif is not animated
             pass
-        logging.debug('Paint tray icon...')
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
         icon = QPixmap(':/empty')
