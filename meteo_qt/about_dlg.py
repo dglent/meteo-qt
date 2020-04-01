@@ -44,7 +44,9 @@ class AboutDialog(QDialog):
         contributors = (
             QCoreApplication.translate(
                 '',
-                'Pavel Fric<br/> [cs] Czech translation',
+                'Jiri Podhorecky<br/>'
+                'Pavel Fric<br/>'
+                '[cs] Czech translation',
                 ''
             )
             + QCoreApplication.translate(
