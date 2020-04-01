@@ -913,9 +913,6 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
-    <name>Settings dialog</name>
-</context>
-<context>
     <name>Settings dialogue</name>
     <message>
         <location filename="../settings.py" line="248"/>
@@ -966,15 +963,15 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settings.py" line="319"/>
-        <source>seconds. Set to 0 to deactivate toggle</source>
-        <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="330"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="319"/>
+        <source>seconds. Set to 0 to deactivate</source>
+        <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>
