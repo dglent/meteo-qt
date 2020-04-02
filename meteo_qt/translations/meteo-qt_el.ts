@@ -1,11 +1,6 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name/>
-    <message>
-        <location filename="../about_dlg.py" line="44"/>
-        <source>Pavel Fric&lt;br/&gt; [cs] Czech translation</source>
-        <translation>Pavel Fric&lt;br/&gt; [cs] Τσεχική μετάφραση</translation>
-    </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
@@ -91,6 +86,11 @@
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
         <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Ιταλική μετάφραση</translation>
     </message>
+    <message>
+        <location filename="../about_dlg.py" line="44"/>
+        <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
+        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Τσεχική μετάφραση</translation>
+    </message>
 </context>
 <context>
     <name>AboutDialog</name>
@@ -113,7 +113,7 @@
 <context>
     <name>Action to refresh the weather infos from the server</name>
     <message>
-        <location filename="../meteo_qt.py" line="124"/>
+        <location filename="../meteo_qt.py" line="125"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
         <translation>Α&amp;νανέωση</translation>
@@ -274,7 +274,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="377"/>
+        <location filename="../settings.py" line="401"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Εκκίνηση ελαχιστοποιημένο</translation>
@@ -289,7 +289,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation>Χρήση πιστοποίησης διαμεσολαβητή</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="334"/>
+        <location filename="../settings.py" line="358"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Σύνδεση μέσω διαμεσολαβητή</translation>
@@ -336,7 +336,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="327"/>
+        <location filename="../meteo_qt.py" line="365"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Φως ημέρας</translation>
@@ -345,7 +345,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1456"/>
+        <location filename="../meteo_qt.py" line="1489"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -384,7 +384,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Font setting - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="321"/>
+        <location filename="../settings.py" line="345"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation>Έντονα</translation>
@@ -431,12 +431,9 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
-    <name>Label (For the temperature)</name>
-</context>
-<context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="246"/>
+        <location filename="../meteo_qt.py" line="284"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Άνεμος</translation>
@@ -445,7 +442,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="261"/>
+        <location filename="../meteo_qt.py" line="299"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Νέφωση</translation>
@@ -454,7 +451,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="285"/>
+        <location filename="../meteo_qt.py" line="323"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Υγρασία</translation>
@@ -463,7 +460,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="273"/>
+        <location filename="../meteo_qt.py" line="311"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Πίεση</translation>
@@ -472,7 +469,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="307"/>
+        <location filename="../meteo_qt.py" line="345"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Ανατολή</translation>
@@ -481,7 +478,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="316"/>
+        <location filename="../meteo_qt.py" line="354"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Δύση</translation>
@@ -490,7 +487,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="347"/>
+        <location filename="../settings.py" line="371"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Ρυθμίσεις</translation>
@@ -508,7 +505,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="364"/>
+        <location filename="../settings.py" line="388"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Δημιουργία κλειδιού&lt;/a&gt;</translation>
@@ -737,7 +734,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Ειδοποίηση κατά την ενημέρωση των καιρικών συνθηκών</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="463"/>
+        <location filename="../settings.py" line="490"/>
         <source>Meteo-qt Configuration</source>
         <translation>Διαμόρφωση meteo-qt</translation>
     </message>
@@ -757,7 +754,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="391"/>
+        <location filename="../settings.py" line="415"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Επίπεδο καταγραφών</translation>
@@ -790,7 +787,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="350"/>
+        <location filename="../meteo_qt.py" line="388"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Όζον</translation>
@@ -799,7 +796,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1476"/>
+        <location filename="../meteo_qt.py" line="1503"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -836,7 +833,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="296"/>
+        <location filename="../meteo_qt.py" line="334"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Υετός</translation>
@@ -939,21 +936,6 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
-    <name>Settings dialog</name>
-    <message>
-        <location filename="../settings.py" line="306"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Μέγεθος γραμματοσειράς στο πλαίσιο συστήματος</translation>
-    </message>
-    <message>
-        <location filename="../settings.py" line="291"/>
-        <source>Weather icons from system theme</source>
-        <comment>Check box to use the icons from the system theme</comment>
-        <translation>Εικονίδια καιρού από το θέμα συστήματος</translation>
-    </message>
-</context>
-<context>
     <name>Settings dialogue</name>
     <message>
         <location filename="../settings.py" line="248"/>
@@ -991,6 +973,30 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Αισθητή θερμοκρασία</translation>
     </message>
+    <message>
+        <location filename="../settings.py" line="291"/>
+        <source>Weather icons from system theme</source>
+        <comment>Check box to use the icons from the system theme</comment>
+        <translation>Εικονίδια καιρού από το θέμα του συστήματος</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="305"/>
+        <source>Toggle tray icon interval</source>
+        <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
+        <translation>Χρονικό διάστημα εναλλαγής εικονιδίου στο πλαίσιο συστήματος</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="330"/>
+        <source>Font size in tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation>Μέγεθος γραμματοσειράς στο πλαίσιο συστήματος</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="319"/>
+        <source>seconds. Set to 0 to deactivate</source>
+        <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
+        <translation>δευτερόλεπτα. Ορίστε το σε 0 για απενεργοποίηση</translation>
+    </message>
 </context>
 <context>
     <name>Status bar message</name>
@@ -1025,7 +1031,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2189"/>
+        <location filename="../meteo_qt.py" line="2224"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Θα πρέπει να γίνει επανεκκίνηση της εφαρμογής για να ληφθεί υπόψιν η γλώσσα</translation>
     </message>
@@ -1033,62 +1039,62 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="109"/>
+        <location filename="../meteo_qt.py" line="110"/>
         <source>Cities</source>
         <translation>Πόλεις</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="123"/>
+        <location filename="../meteo_qt.py" line="124"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Προσωρινή πόλη</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="132"/>
+        <location filename="../meteo_qt.py" line="133"/>
         <source>&amp;Settings</source>
         <translation>&amp;Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="133"/>
+        <location filename="../meteo_qt.py" line="134"/>
         <source>&amp;About</source>
         <translation>&amp;Σχετικά</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="134"/>
+        <location filename="../meteo_qt.py" line="135"/>
         <source>Exit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="156"/>
+        <location filename="../meteo_qt.py" line="157"/>
         <source>Searching weather data...</source>
         <translation>Αναζήτηση μετεωρολογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1701"/>
+        <location filename="../meteo_qt.py" line="1735"/>
         <source>Empty list</source>
         <translation>Κενή λίστα</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1718"/>
+        <location filename="../meteo_qt.py" line="1752"/>
         <source>No city configured</source>
         <translation>Καμιά πόλη διαμορφωμένη</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1733"/>
+        <location filename="../meteo_qt.py" line="1765"/>
         <source>No city has been configured yet.</source>
         <translation>Δεν υπάρχει κάποια πόλη διαμορφωμένη.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1733"/>
+        <location filename="../meteo_qt.py" line="1765"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Κάντε δεξί κλικ στο εικονίδιο και επιλέξτε «Ρυθμίσεις».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2232"/>
+        <location filename="../meteo_qt.py" line="2285"/>
         <source>Fetching weather data...</source>
         <translation>Λήψη των μετερωλογικών δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2248"/>
+        <location filename="../meteo_qt.py" line="2297"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1097,62 +1103,62 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} σε {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="176"/>
+        <location filename="../meteo_qt.py" line="177"/>
         <source>Mon</source>
         <translation>Δευ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="177"/>
+        <location filename="../meteo_qt.py" line="178"/>
         <source>Tue</source>
         <translation>Τρί</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="178"/>
+        <location filename="../meteo_qt.py" line="179"/>
         <source>Wed</source>
         <translation>Τετ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="179"/>
+        <location filename="../meteo_qt.py" line="180"/>
         <source>Thu</source>
         <translation>Πέμ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="180"/>
+        <location filename="../meteo_qt.py" line="181"/>
         <source>Fri</source>
         <translation>Παρ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="181"/>
+        <location filename="../meteo_qt.py" line="182"/>
         <source>Sat</source>
         <translation>Σάβ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="182"/>
+        <location filename="../meteo_qt.py" line="183"/>
         <source>Sun</source>
         <translation>Κυρ</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="393"/>
+        <location filename="../meteo_qt.py" line="432"/>
         <source>Weather status</source>
         <translation>Μετεωρολογικό δελτίο</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1068"/>
+        <location filename="../meteo_qt.py" line="1107"/>
         <source>Min Max Temperature of the day</source>
         <translation>Ελάχ Μεγ θερμοκρασία της ημέρας</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1384"/>
+        <location filename="../meteo_qt.py" line="1421"/>
         <source>snow</source>
         <translation>χιόνι</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1385"/>
+        <location filename="../meteo_qt.py" line="1422"/>
         <source>rain</source>
         <translation>βροχή</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2272"/>
+        <location filename="../meteo_qt.py" line="2306"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1187,12 +1193,9 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
-    <name>Temperature info</name>
-</context>
-<context>
     <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="157"/>
+        <location filename="../meteo_qt.py" line="158"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
         <translation>Αισθητή ως</translation>
@@ -1201,7 +1204,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="357"/>
+        <location filename="../settings.py" line="381"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Κλειδί OpenWeatherMap</translation>
@@ -1217,30 +1220,27 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
-    <name>Tooltip on weather icon on 4 days forecast</name>
-</context>
-<context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="907"/>
+        <location filename="../meteo_qt.py" line="942"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Ημέρα</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="912"/>
+        <location filename="../meteo_qt.py" line="947"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Πρωί</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="917"/>
+        <location filename="../meteo_qt.py" line="952"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Έσπερος</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="922"/>
+        <location filename="../meteo_qt.py" line="957"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Νύχτα</translation>
@@ -1249,13 +1249,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1419"/>
+        <location filename="../meteo_qt.py" line="1452"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Πίεση</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1424"/>
+        <location filename="../meteo_qt.py" line="1457"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Υγρασία</translation>
@@ -1264,7 +1264,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="112"/>
+        <location filename="../meteo_qt.py" line="113"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Εναλλαγή παραθύρου</translation>
@@ -1273,7 +1273,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="1803"/>
+        <location filename="../meteo_qt.py" line="1833"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Αναζήτηση των μετεωρολογικών δεδομένων...</translation>
@@ -1310,7 +1310,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="338"/>
+        <location filename="../meteo_qt.py" line="376"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1319,7 +1319,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="575"/>
+        <location filename="../meteo_qt.py" line="613"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Λήψη...</translation>
@@ -1329,7 +1329,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="477"/>
+        <location filename="../meteo_qt.py" line="511"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> χλμ/ω </translation>
@@ -1349,7 +1349,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="457"/>
+        <location filename="../settings.py" line="484"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Παρακαλώ προσθέστε μια πόλη</translation>
@@ -1358,7 +1358,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="452"/>
+        <location filename="../settings.py" line="479"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Παρακαλώ εισαγάγετε το κλειδί σας του OpenWeatherMap</translation>
