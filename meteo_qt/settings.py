@@ -319,7 +319,7 @@ class MeteoSettings(QDialog):
         self.toggle_tray_interval_label = QLabel(
             QCoreApplication.translate(
                 'Settings dialogue',
-                'seconds. Set to 0 to deactivate toggle',
+                'seconds. Set to 0 to deactivate',
                 'Label after the spinbox to choose the interval '
                 'to toggle the tray icon and temperature'
             )
