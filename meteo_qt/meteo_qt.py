@@ -866,11 +866,11 @@ class SystemTrayIcon(QMainWindow):
 
     def forecast6data(self):
         '''Forecast for the next 6 days'''
-        # Some times server sends less data
         self.clearLayout(self.forecast_minmax_layout)
         self.clearLayout(self.forecast_days_layout)
         periods = 7
         fetched_file_periods = (len(self.forecast6_data.xpath('//time')))
+        # Some times server sends less data
         if fetched_file_periods < periods:
             periods = fetched_file_periods
             logging.warning(
@@ -1061,7 +1061,6 @@ class SystemTrayIcon(QMainWindow):
 
     def forecastdata(self):
         '''Forecast for the next 4 days'''
-        # Some times server sends less data
         self.clearLayout(self.forecast_minmax_layout)
         self.clearLayout(self.forecast_days_layout)
         fetched_file_periods = (len(self.dayforecast_data.xpath('//time')))
@@ -1296,8 +1295,8 @@ class SystemTrayIcon(QMainWindow):
             start = 1
             periods = 7
             fetched_file_periods = (len(self.dayforecast_data.xpath('//time')))
+            # Some times server sends less data
             if fetched_file_periods < periods:
-                # Some times server sends less data
                 periods = fetched_file_periods
                 logging.warning(
                     'Reduce forecast of the day to {0}'.format(periods - 1)
@@ -1711,14 +1710,12 @@ class SystemTrayIcon(QMainWindow):
         if hasattr(self, 'city_label'):
             self.icon_city_loading()
         cities_list = self.settings.value('CityList')
+        cities_list = eval(cities_list)
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         self.cities_trans_dict = eval(cities_trans)
         logging.debug(f'Cities {str(cities_list)}')
         if cities_list is None:
             self.empty_cities_list()
-        if type(cities_list) is not list:
-            # FIXME some times is read as string (?)
-            cities_list = eval(cities_list)
         for town in cities_list:
             if town == self.find_city_key(city):
                 ind = cities_list.index(town)
@@ -1779,8 +1776,12 @@ class SystemTrayIcon(QMainWindow):
         self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
-            self.wIconUrl, self.baseurl, self.day_forecast_url,
-            self.forecast6_url, self.id_, self.suffix
+            self.wIconUrl,
+            self.baseurl,
+            self.day_forecast_url,
+            self.forecast6_url,
+            self.id_,
+            self.suffix,
         )
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.weather_icon_signal.connect(self.weather_icon_name_set)
@@ -1923,6 +1924,7 @@ class SystemTrayIcon(QMainWindow):
                         f'Cannot find localisation string for wind:{str(wind)}'
                     )
                     pass
+
             if element.tag == 'direction':
                 wind_codes_english = element.get('code')
                 wind_dir_value = element.get('value')
@@ -2002,7 +2004,7 @@ class SystemTrayIcon(QMainWindow):
         self.weatherDataDico['Clouds'] = (f'{clouds_percent} {clouds}')
 
         if self.id_ not in self.trendCities_dic:
-            # dict {'id': 'hPa', , '',  'T°', 'temp_trend', 'weather changedBool'}
+            # dict {'id': ['hPa', , '',  'T°', 'temp_trend', 'weather changedBool']}
             self.trendCities_dic[self.id_] = [''] * 5
         # hPa trend
         pressure = float(self.weatherDataDico['Pressure'][0])
@@ -2106,6 +2108,7 @@ class SystemTrayIcon(QMainWindow):
             if temp_decimal:
                 temp_tray = '{0:.1f}'.format(float(self.weatherDataDico['Feels_like'][0]))
             temp_tray += '°'
+        # --- Paint icon ----------
         pt = QPainter()
         pt.begin(icon)
         if self.tray_type != 'temp' and self.tray_type != 'feels_like_temp':
@@ -2126,11 +2129,13 @@ class SystemTrayIcon(QMainWindow):
         if self.tray_type == 'temp' or self.tray_type == 'feels_like_temp':
             pt.drawText(icon.rect(), Qt.AlignCenter, str(temp_tray))
         pt.end()
+        # -------------------------------
         if self.tray_type == 'icon':
             self.systray.setIcon(QIcon(self.wIcon))
         else:
             self.systray.setIcon(QIcon(icon))
-        if self.notifier_settings():
+        # Don't show notifications when toggling the tray icon
+        if self.notifier_settings() and not self.toggle_tray_action:
             try:
                 if (
                     self.temp_trend != ''
@@ -2144,11 +2149,9 @@ class SystemTrayIcon(QMainWindow):
                             self.trendCities_dic[self.id_][4] is True
                             or self.trendCities_dic[self.id_][4] == ''
                         ):
-                            # Don't show notifications when toggling the tray icon
-                            if not self.toggle_tray_action:
-                                self.systray.showMessage(
-                                    'meteo-qt', f'{self.notification}{self.temp_trend}'
-                                )
+                            self.systray.showMessage(
+                                'meteo-qt', f'{self.notification}{self.temp_trend}'
+                            )
                             return
             except KeyError:
                 return
@@ -2478,7 +2481,7 @@ class Download(QThread):
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
             self.weather_icon_signal.emit(weather_icon)
-            self.uv_signal['PyQt_PyObject'].emit(uv_ind)
+            self.uv_signal.emit(uv_ind)
             if not use_json_day_forecast:
                 treedayforecast = etree.fromstring(pagedayforecast)
 
@@ -2486,11 +2489,11 @@ class Download(QThread):
             data = urllib.request.urlopen(url).read()
             if self.html404(data, 'icon'):
                 raise urllib.error.HTTPError
-            self.xmlpage['PyQt_PyObject'].emit(tree)
-            self.wimage['PyQt_PyObject'].emit(data)
+            self.xmlpage.emit(tree)
+            self.wimage.emit(data)
             if forcast6days:
-                self.forecast6_rawpage['PyQt_PyObject'].emit(treeforecast6)
-            self.day_forecast_rawpage['PyQt_PyObject'].emit(treedayforecast)
+                self.forecast6_rawpage.emit(treeforecast6)
+            self.day_forecast_rawpage.emit(treedayforecast)
             self.done.emit(int(done))
         except (
                 ConnectionResetError,
@@ -2506,7 +2509,7 @@ class Download(QThread):
                 except:
                     m_error = str(error)
                 logging.error(m_error)
-                self.error['QString'].emit(m_error)
+                self.error.emit(m_error)
                 self.done.emit(int(done))
                 return
             else:
@@ -2600,7 +2603,7 @@ class Ozone(QThread):
         except:
             o3_ind = '-'
             logging.error('Cannot find Ozone index')
-        self.o3_signal['PyQt_PyObject'].emit(o3_ind)
+        self.o3_signal.emit(o3_ind)
 
 
 class Uv(QThread):
@@ -2654,7 +2657,7 @@ class Uv(QThread):
         except:
             uv_ind = '-'
             logging.error('Cannot find UV index')
-        self.uv_signal['PyQt_PyObject'].emit(uv_ind)
+        self.uv_signal.emit(uv_ind)
 
 
 class IconDownload(QThread):
@@ -2717,7 +2720,7 @@ class IconDownload(QThread):
             except:
                 url_error = error
             logging.error(str(url_error))
-            self.url_error_signal['QString'].emit(url_error)
+            self.url_error_signal.emit(url_error)
         except timeout:
             if self.tentatives >= 10:
                 logging.error('Timeout error, abandon...')
