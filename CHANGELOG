@@ -1,3 +1,21 @@
+1.7
+- Option to toggle tray icon/temperature
+Translations:
+    Update Czech translation (Jiri Podhorecky)
+
+1.6.1
+- Add missing icon (fog night) for the system theme icons
+
+1.6
+- Show the Feel Like T°
+- Option to show the Feels Like T° in the tray icon
+- Option to use icons from the system theme
+- Translations updates:
+    Czech by trendspotter
+    Ukranian by Yuri Chornoivan
+    Dutch by Heimen Stoffels
+    German by Jürgen
+
 1.5
 - Add the Feels like temperature in weather information
 - Option to show the Feels like T° on the system tray icon
