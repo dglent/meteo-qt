@@ -213,6 +213,8 @@ class SearchCity(QDialog):
         self.timer_search.stop()
         self.city = self.line_search.text().strip()
         self.thread_terminate()
+        if len(self.city) == 0:
+            return
         if len(self.city) < 3:
             self.status.setText(
                 QCoreApplication.translate(
