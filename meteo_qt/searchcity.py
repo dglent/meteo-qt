@@ -69,6 +69,7 @@ class SearchCity(QDialog):
         completer = QCompleter(owm_cities.cities_list, self)
         completer.setCaseSensitivity(Qt.CaseInsensitive)
         self.line_search.setCompleter(completer)
+        self.line_search.setClearButtonEnabled(True)
 
         self.listWidget = QListWidget()
         self.status = QLabel()
