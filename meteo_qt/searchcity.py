@@ -454,17 +454,7 @@ class WorkThread(QThread):
                     if id_ == '0':
                         continue
 
-                    place = (
-                        id_
-                        + ' - '
-                        + city
-                        + ' - '
-                        + country
-                        + ' - '
-                        + ' {0}° '
-                        + ','
-                        + ' {1}°'
-                    ).format(lat, lon)
+                    place = f'{id_} - {city} - {country} - {lat}° , {lon}°'
 
                     if place in self.lista:
                         continue
