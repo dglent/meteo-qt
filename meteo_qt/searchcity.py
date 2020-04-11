@@ -5,11 +5,20 @@ import json
 import re
 
 from lxml import etree
-from PyQt5.QtCore import (QByteArray, QCoreApplication, QSettings, QThread,
-                          QTimer, pyqtSignal)
+from PyQt5.QtCore import (
+    QByteArray, QCoreApplication, QSettings, QThread,
+    QTimer, pyqtSignal, Qt
+)
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (QDialog, QHBoxLayout, QLabel, QLineEdit,
-                             QListWidget, QPushButton, QVBoxLayout)
+from PyQt5.QtWidgets import (
+    QDialog, QHBoxLayout, QLabel, QLineEdit,
+    QListWidget, QPushButton, QVBoxLayout, QCompleter
+)
+
+try:
+    import owm_cities
+except ImportError:
+    from meteo_qt import owp_cities
 
 
 class SearchCity(QDialog):
@@ -56,6 +65,11 @@ class SearchCity(QDialog):
             )
         )
         self.line_search.selectAll()
+
+        completer = QCompleter(owm_cities.cities_list, self)
+        completer.setCaseSensitivity(Qt.CaseInsensitive)
+        self.line_search.setCompleter(completer)
+
         self.listWidget = QListWidget()
         self.status = QLabel()
         self.lineLayout.addWidget(self.line_search)
