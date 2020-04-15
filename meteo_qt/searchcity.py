@@ -211,11 +211,11 @@ class SearchCity(QDialog):
 
     def search(self):
         self.timer_search.stop()
-        self.city = self.line_search.text().strip()
+        city = self.line_search.text().strip()
         self.thread_terminate()
-        if len(self.city) == 0:
+        if len(city) == 0:
             return
-        if len(self.city) < 3:
+        if len(city) < 3:
             self.status.setText(
                 QCoreApplication.translate(
                     'SearchCity window',
@@ -230,7 +230,7 @@ class SearchCity(QDialog):
         self.buttonOk.setEnabled(False)
         self.listWidget.clear()
         self.status.setText(self.search_string)
-        self.workThread = WorkThread(self.accurate_url, self.city, self.suffix)
+        self.workThread = WorkThread(self.accurate_url, city, self.suffix)
         self.workThread.setTerminationEnabled(True)
         self.workThread.city_signal['QString'].connect(self.addlist)
         self.workThread.finished.connect(self.result)
