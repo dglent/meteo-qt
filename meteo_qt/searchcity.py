@@ -18,7 +18,7 @@ from PyQt5.QtWidgets import (
 try:
     import owm_cities
 except ImportError:
-    from meteo_qt import owp_cities
+    from meteo_qt import owm_cities
 
 
 class SearchCity(QDialog):
