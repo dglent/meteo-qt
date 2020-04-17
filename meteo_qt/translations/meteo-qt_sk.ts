@@ -1,10 +1,12 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="sk">
 <context>
-    <name/>
-    <message encoding="UTF-8">
+    <name></name>
+    <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Preklad do nemčiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
@@ -26,17 +28,17 @@
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny, Projekt</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
         <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Preklad do poľštiny</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
         <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Preklad do turečtiny</translation>
@@ -79,17 +81,17 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Preklad do slovenčiny, Projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Preklad do taliančiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Jiří Podhorecký&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Preklad do češtiny</translation>
     </message>
 </context>
 <context>
@@ -116,7 +118,7 @@
         <location filename="../meteo_qt.py" line="125"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Obnoviť</translation>
     </message>
 </context>
 <context>
@@ -436,7 +438,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="284"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vietor</translation>
     </message>
 </context>
 <context>
@@ -445,7 +447,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="299"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Oblačnosť</translation>
     </message>
 </context>
 <context>
@@ -454,7 +456,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="323"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vlhkosť</translation>
     </message>
 </context>
 <context>
@@ -463,7 +465,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="311"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Tlak</translation>
     </message>
 </context>
 <context>
@@ -472,7 +474,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="345"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Východ slnka</translation>
     </message>
 </context>
 <context>
@@ -481,7 +483,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="354"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Západ slnka</translation>
     </message>
 </context>
 <context>
@@ -499,7 +501,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../settings.py" line="126"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Jednotka rýchlosti vetra</translation>
     </message>
 </context>
 <context>
@@ -756,7 +758,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../settings.py" line="415"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"/>
+        <translation>Úroveň zaznamenávania</translation>
     </message>
 </context>
 <context>
@@ -765,7 +767,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../settings.py" line="135"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"/>
+        <translation>Predvolené</translation>
     </message>
 </context>
 <context>
@@ -774,13 +776,13 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../settings.py" line="140"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Beaufort</translation>
     </message>
     <message>
         <location filename="../settings.py" line="145"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Km/h</translation>
     </message>
 </context>
 <context>
@@ -792,9 +794,9 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <translation>Ozón</translation>
     </message>
 </context>
-<context encoding="UTF-8">
+<context>
     <name>Ozone value tooltip</name>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../meteo_qt.py" line="1503"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
@@ -887,7 +889,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../searchcity.py" line="50"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"/>
+        <translation>Začnite písať názov mesta alebo ID, prípadne zemepisné súradnice: &quot;šírka, dĺžka&quot;</translation>
     </message>
 </context>
 <context>
@@ -956,43 +958,43 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona v systémovej lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="263"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona a pocitová teplota</translation>
     </message>
     <message>
         <location filename="../settings.py" line="268"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitová teplota</translation>
     </message>
     <message>
         <location filename="../settings.py" line="291"/>
         <source>Weather icons from system theme</source>
         <comment>Check box to use the icons from the system theme</comment>
-        <translation type="unfinished"/>
+        <translation>Zaškrtnite políčko pre použitie ikon zo systémového motívu</translation>
     </message>
     <message>
         <location filename="../settings.py" line="305"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>Interval prepínania ikony v lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="330"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Veľkost písma v lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="319"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>sekundy. Nastavte 0 pre vypnutie</translation>
     </message>
 </context>
 <context>
@@ -1022,7 +1024,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../searchcity.py" line="105"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Zadajte názov mesta, čiarku, dvojpísmenný kód krajiny (napr. Bratislava, SK)</translation>
     </message>
 </context>
 <context>
@@ -1200,7 +1202,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../meteo_qt.py" line="158"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Pocitová teplota</translation>
     </message>
 </context>
 <context>
@@ -1227,25 +1229,25 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../meteo_qt.py" line="942"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Deň</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="947"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Ráno</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="952"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Večer</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="957"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Noc</translation>
     </message>
 </context>
 <context>
@@ -1254,13 +1256,13 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../meteo_qt.py" line="1452"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Tlak</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1457"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Vlhkosť</translation>
     </message>
 </context>
 <context>
@@ -1324,7 +1326,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../meteo_qt.py" line="613"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Získavam...</translation>
     </message>
 </context>
 <context>
@@ -1334,7 +1336,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../meteo_qt.py" line="511"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"/>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
