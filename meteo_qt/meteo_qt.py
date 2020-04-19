@@ -46,7 +46,7 @@ except ImportError:
     from meteo_qt import about_dlg
 
 
-__version__ = "1.7"
+__version__ = "1.8"
 
 
 class SystemTrayIcon(QMainWindow):
