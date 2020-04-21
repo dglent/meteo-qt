@@ -1067,6 +1067,7 @@ class SystemTrayIcon(QMainWindow):
         self.find_min_max(fetched_file_periods)
         weather_end = False
         collate_info = False
+        t_unit = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
         for element in self.dayforecast_data.iter():
             # Find the day for the forecast (today+1) at 12:00:00
             if element.tag == 'time':
@@ -1190,11 +1191,7 @@ class SystemTrayIcon(QMainWindow):
                 )
             if element.tag == 'feels_like' and collate_info:
                 feels_like_value = element.get('value')
-                feels_like_unit = element.get('unit')
-                if feels_like_unit == 'celsius':
-                    feels_like_unit = '°C'
-                if feels_like_unit == 'fahrenheit':
-                    feels_like_unit = '°F'
+                feels_like_unit = t_unit[element.get('unit')]
                 weather_cond += f'\n{self.feels_like_translated} : {feels_like_value} {feels_like_unit}'
 
             if element.tag == 'pressure' and collate_info:
@@ -1301,6 +1298,7 @@ class SystemTrayIcon(QMainWindow):
                 logging.warning(
                     'Reduce forecast of the day to {0}'.format(periods - 1)
                 )
+        feels_like_unit_dic = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
         for d in range(start, periods):
             clouds_translated = ''
             wind = ''
@@ -1315,8 +1313,8 @@ class SystemTrayIcon(QMainWindow):
                 temperature_at_hour = float(
                     self.dayforecast_data[4][d][4].get('value')
                 )
+
                 feels_like_value = self.dayforecast_data[4][d][5].get('value')
-                feels_like_unit_dic = {'celsius': '°C', 'fahrenheit': '°F'}
                 feels_like_unit = feels_like_unit_dic[self.dayforecast_data[4][d][5].get('unit')]
 
                 precipitation = str(
@@ -1872,7 +1870,7 @@ class SystemTrayIcon(QMainWindow):
     def weatherdata(self, tree):
         if self.inerror:
             return
-
+        t_unit = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
         for element in tree.iter():
 
             if element.tag == 'sun':
@@ -1975,7 +1973,6 @@ class SystemTrayIcon(QMainWindow):
                 )
 
             if element.tag == 'feels_like':
-                t_unit = {'celsius': '°C', 'fahrenheit': '°F'}
                 self.weatherDataDico['Feels_like'] = [element.get('value'), t_unit[element.get('unit')]]
 
         self.city_weather_info = (
@@ -2349,7 +2346,7 @@ class Download(QThread):
         self.day_forecast_url = day_forecast_url
         self.forecast6_url = forecast6_url
         self.id_ = id_
-        self.suffix = suffix
+        self.suffix = suffix.replace(' ', '%20%')
         self.tentatives = 0
         self.settings = QSettings()
 
