@@ -1,5 +1,3 @@
-# https://gist.github.com/sourceperl/45587ea99ff123745428
-
 import math
 from PyQt5.QtCore import (
     QCoreApplication, QObject
@@ -21,7 +19,7 @@ class Humidex(QObject):
         else:
             t_air_c = t_air
         dew_point_c = self.get_dew_point_c(t_air_c, rel_humidity)
-        self.comfort_text = self.comfort_level(dew_point_c)
+        self.comfort_text, self.comfort_ttip = self.comfort_level(dew_point_c)
         if unit == '°F':
             self.dew_point = '{0:.1f}'.format(dew_point_c * 1.8 + 32)
         elif unit == '°K':
@@ -31,46 +29,99 @@ class Humidex(QObject):
 
     def comfort_level(self, dew_point):
         if dew_point < 10.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Dry',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Dry',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'The drier air can cause skin to '
+                    'crack and become irritated more easily',
+                    'ToolTip in weather info dialogue'
+                )
             )
         elif dew_point < 13.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Very comfortable',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Very comfortable',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Comfort level excellent for exercise',
+                    'ToolTip in weather info dialogue'
+                )
             )
         elif dew_point < 16.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Comfortable',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Comfortable',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Hard efforts likely not affected',
+                    'ToolTip weather info dialogue'
+                )
             )
         elif dew_point < 19.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Alright',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Alright',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Expect race times to be slower than in optimal conditions',
+                    'ToolTip weather info dialogue'
+                )
             )
         elif dew_point < 22.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Uncomfortable',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Uncomfortable',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Easy training runs might feel OK '
+                    'but difficult to race well or do hard efforts',
+                    'ToolTip weather info dialogue'
+                )
             )
         elif dew_point < 25.0:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Very uncomfortable',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Very uncomfortable',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Expect pace to suffer greatly',
+                    'ToolTip weather info dialogue'
+                )
             )
         else:
-            return QCoreApplication.translate(
-                'Comfort level depending the dew point',
-                'Severely uncomfortable',
-                'Weather info dialogue'
+            return (
+                QCoreApplication.translate(
+                    'Comfort level depending on the dew point',
+                    'Severely uncomfortable',
+                    'Weather info dialogue'
+                ),
+                QCoreApplication.translate(
+                    'Comment about the comfort level depending on the dew point',
+                    'Avoid the exercise. Skip it or dramatically alter goal.\n'
+                    'The comfort level is severely uncomfortable and possibly '
+                    'deadly for asthma sufferers',
+                    'ToolTip in weather info dialogue'
+                )
             )
 
     def get_frost_point_c(self, t_air_c, dew_point_c):

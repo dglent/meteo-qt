@@ -605,6 +605,7 @@ class SystemTrayIcon(QMainWindow):
         self.comfort_value.setText(
             f'<font color=>{hum.comfort_text}</font>'
         )
+        self.comfort_value.setToolTip(hum.comfort_ttip)
         # Precipitation
         rain_mode = (
             self.precipitation[self.weatherDataDico['Precipitation'][0]]
