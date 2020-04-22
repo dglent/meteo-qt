@@ -5,7 +5,8 @@ SOURCES         += about_dlg.py \
                    meteo_qt.py \
                    proxydlg.py \
                    searchcity.py \
-                   settings.py
+                   settings.py \
+                   humidex.py
 
 TRANSLATIONS    += translations/meteo-qt_bg.ts \
                    translations/meteo-qt_ca.ts \

@@ -38,12 +38,14 @@ try:
     import searchcity
     import conditions
     import about_dlg
+    import humidex
 except ImportError:
     from meteo_qt import qrc_resources
     from meteo_qt import settings
     from meteo_qt import searchcity
     from meteo_qt import conditions
     from meteo_qt import about_dlg
+    from meteo_qt import humidex
 
 
 __version__ = "1.8"
@@ -306,7 +308,6 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.clouds_name = QLabel()
-
         # Pressure
         self.pressure_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
@@ -318,7 +319,6 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.pressure_value = QLabel()
-
         # Humidity
         self.humidity_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
@@ -330,6 +330,28 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.humidity_value = QLabel()
+        # Dew point
+        self.dew_point_label = QLabel(
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Dew point label',
+                    'Dew point',
+                    'Weather overview dialogue'
+                )
+            )
+        )
+        self.dew_point_value = QLabel()
+        # Comfort level
+        self.comfort_label = QLabel(
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Comfort level',
+                    'Comfort',
+                    'Weather overview dialogue'
+                )
+            )
+        )
+        self.comfort_value = QLabel()
         # Precipitation
         self.precipitation_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
@@ -407,16 +429,20 @@ class SystemTrayIcon(QMainWindow):
         self.over_grid.addWidget(self.pressure_value, 3, 1)
         self.over_grid.addWidget(self.humidity_label, 4, 0)
         self.over_grid.addWidget(self.humidity_value, 4, 1, 1, 3)  # align left
-        self.over_grid.addWidget(self.precipitation_label, 5, 0)
-        self.over_grid.addWidget(self.precipitation_value, 5, 1)
-        self.over_grid.addWidget(self.sunrise_label, 6, 0)
-        self.over_grid.addWidget(self.sunrise_value, 6, 1)
-        self.over_grid.addWidget(self.sunset_label, 7, 0)
-        self.over_grid.addWidget(self.sunset_value, 7, 1)
-        self.over_grid.addWidget(self.daylight_label, 8, 0)
-        self.over_grid.addWidget(self.daylight_value_label, 8, 1)
-        self.over_grid.addWidget(self.uv_label, 9, 0)
-        self.over_grid.addWidget(self.uv_value_label, 9, 1)
+        self.over_grid.addWidget(self.dew_point_label, 5, 0)
+        self.over_grid.addWidget(self.dew_point_value, 5, 1)
+        self.over_grid.addWidget(self.comfort_label, 6, 0)
+        self.over_grid.addWidget(self.comfort_value, 6, 1)
+        self.over_grid.addWidget(self.precipitation_label, 7, 0)
+        self.over_grid.addWidget(self.precipitation_value, 7, 1)
+        self.over_grid.addWidget(self.sunrise_label, 8, 0)
+        self.over_grid.addWidget(self.sunrise_value, 8, 1)
+        self.over_grid.addWidget(self.sunset_label, 9, 0)
+        self.over_grid.addWidget(self.sunset_value, 9, 1)
+        self.over_grid.addWidget(self.daylight_label, 10, 0)
+        self.over_grid.addWidget(self.daylight_value_label, 10, 1)
+        self.over_grid.addWidget(self.uv_label, 11, 0)
+        self.over_grid.addWidget(self.uv_value_label, 11, 1)
         # # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -486,7 +512,6 @@ class SystemTrayIcon(QMainWindow):
         )
 
         # Wind
-        wind_unit = self.settings.value('Unit') or 'metric'
         wind_unit_speed_config = self.settings.value('Wind_unit') or 'df'
         if wind_unit_speed_config == 'bf':
             self.bft_bool = True
@@ -494,7 +519,7 @@ class SystemTrayIcon(QMainWindow):
             self.bft_bool = False
         self.unit_system = ' m/s '
         self.unit_system_wind = ' m/s '
-        if wind_unit == 'imperial':
+        if self.unit == 'imperial':
             self.unit_system = ' mph '
             self.unit_system_wind = ' mph '
 
@@ -505,7 +530,7 @@ class SystemTrayIcon(QMainWindow):
             wind_speed = windTobeaufort
             self.unit_system_wind = ' Bft. '
 
-        if wind_unit == 'metric' and wind_unit_speed_config == 'km':
+        if self.unit == 'metric' and wind_unit_speed_config == 'km':
             self.wind_km_bool = True
             wind_speed = '{0:.1f}'.format(float(wind_speed) * 3.6)
             self.unit_system_wind = QCoreApplication.translate(
@@ -566,6 +591,20 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['Humidity'][1]
             )
         )
+        # Dew point
+        t_air = float('{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])))
+        hum = humidex.Humidex(
+            t_air=t_air,
+            rel_humidity=int(self.weatherDataDico['Humidity'][0]),
+            unit=self.unit_temp
+        )
+        self.dew_point_value.setText(
+            f'<font color=>{hum.dew_point} {self.unit_temp}</font>'
+        )
+        # Comfort
+        self.comfort_value.setText(
+            f'<font color=>{hum.comfort_text}</font>'
+        )
         # Precipitation
         rain_mode = (
             self.precipitation[self.weatherDataDico['Precipitation'][0]]
@@ -575,7 +614,7 @@ class SystemTrayIcon(QMainWindow):
         if rain_value == '':
             rain_unit = ''
         else:
-            if wind_unit == 'imperial':
+            if self.unit == 'imperial':
                 rain_unit = 'inch'
                 rain_value = str(float(rain_value) / 25.4)
                 rain_value = "{0:.4f}".format(float(rain_value))
@@ -1068,6 +1107,7 @@ class SystemTrayIcon(QMainWindow):
         weather_end = False
         collate_info = False
         t_unit = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
+        t_air = ''
         for element in self.dayforecast_data.iter():
             # Find the day for the forecast (today+1) at 12:00:00
             if element.tag == 'time':
@@ -1189,10 +1229,14 @@ class SystemTrayIcon(QMainWindow):
                         wind_direction
                     )
                 )
+
+            if element.tag == 'temperature':
+                t_air = element.get('value')
+
             if element.tag == 'feels_like' and collate_info:
                 feels_like_value = element.get('value')
                 feels_like_unit = t_unit[element.get('unit')]
-                weather_cond += f'\n{self.feels_like_translated} : {feels_like_value} {feels_like_unit}'
+                weather_cond += f'\n{self.feels_like_translated}: {feels_like_value} {feels_like_unit}'
 
             if element.tag == 'pressure' and collate_info:
                 self.doc.setHtml(self.pressure_label.text())
@@ -1211,12 +1255,22 @@ class SystemTrayIcon(QMainWindow):
                 self.doc.setHtml(self.humidity_label.text())
                 humidity_label = f'{self.doc.toPlainText()}: '
                 weather_cond += f'\n{humidity_label}{humidity} %'
+                if t_air != '':
+                    t_air = float('{0:.1f}'.format(float(t_air)))
+                    hum = humidex.Humidex(
+                        t_air=t_air,
+                        rel_humidity=int(humidity),
+                        unit=self.unit_temp
+                    )
+                    self.doc.setHtml(self.dew_point_label.text())
+                    weather_cond += f'\n{self.doc.toPlainText()}: {hum.dew_point} {self.unit_temp}'
+                    self.doc.setHtml(self.comfort_label.text())
+                    weather_cond += f'\n{self.doc.toPlainText()}: {hum.comfort_text}'
 
             if element.tag == 'clouds' and collate_info:
                 clouds = element.get('all')
                 self.doc.setHtml(self.clouds_label.text())
-                clouds_label = f'{self.doc.toPlainText()}: '
-                weather_cond += f'\n{clouds_label}{clouds} %'
+                weather_cond += f'\n{self.doc.toPlainText()}: {clouds} %'
                 weather_end = True
 
             if weather_end is True:
