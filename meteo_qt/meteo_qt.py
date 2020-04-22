@@ -1325,7 +1325,7 @@ class SystemTrayIcon(QMainWindow):
                     try:
                         weather_cond = (
                             self.conditions[
-                                tag['weather'][0]['id']
+                                str(tag['weather'][0]['id'])
                             ]
                         )
                     except:
@@ -1560,7 +1560,6 @@ class SystemTrayIcon(QMainWindow):
                 humidity = self.dayforecast_data['list'][d]['main']['humidity']
 
             self.dayforecast_weather_list.append(weather_cond)
-            print(timeofday)
             daytime = QLabel(
                 '<font color=>{0}<br/>{1}°</font>'.format(
                     timeofday[:-3],
@@ -1615,10 +1614,8 @@ class SystemTrayIcon(QMainWindow):
                         self.conditions[self.clouds_name_dic[clouds.lower()]]
                     )
                 except KeyError:
-                    logging.warning(
-                        'The clouding description in json is not relevant'
-                    )
-                    clouds_translated = ''
+                    self.doc.setHtml(self.clouds_label.text())
+                    clouds_translated = self.doc.toPlainText()
             else:
                 logging.warning(f'Clouding name is missing: {str(clouds)}')
             clouds_cond = f'{clouds_translated} {str(cloudspercent)}%'
