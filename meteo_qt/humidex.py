@@ -36,7 +36,7 @@ class Humidex(QObject):
                     'Weather info dialogue'
                 ),
                 QCoreApplication.translate(
-                    'Comfort level depending on the dew point',
+                    'Comment about the comfort level depending on the dew point',
                     'The drier air can cause skin to '
                     'crack and become irritated more easily',
                     'ToolTip in weather info dialogue'
