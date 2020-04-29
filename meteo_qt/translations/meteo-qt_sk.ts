@@ -1095,7 +1095,7 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../settings.py" line="330"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Veľkost písma v lište</translation>
+        <translation>Veľkosť písma v lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="319"/>
