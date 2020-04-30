@@ -68,6 +68,7 @@ class SystemTrayIcon(QMainWindow):
         self.temp_decimal_bool = self.settings.value('Decimal') or False
         # initialize the tray icon type in case of first run: issue#42
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
+        self.system_icons = self.settings.value('SystemIcons') or 'False'
         self.cond = conditions.WeatherConditions()
         self.temporary_city_status = False
         self.conditions = self.cond.trans
