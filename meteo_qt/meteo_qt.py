@@ -2583,8 +2583,8 @@ class Download(QThread):
                 TypeError
         ) as e:
             forcast6days = False
-            logging.error(f'Url of 6 days forcast not available: {str(reqforecast6)}')
-            logging.error(f'6 days forcast not available: {str(e)}')
+            logging.debug(f'Url of 6 days forcast not available: {str(reqforecast6)}')
+            logging.debug(f'6 days forcast not available: {str(e)}')
 
         try:
             logging.debug(
@@ -2773,9 +2773,9 @@ class Ozone(QThread):
             dico_value = eval(page)
             o3_ind = dico_value['data']
             logging.debug(f'Ozone index: {str(o3_ind)}')
-        except:
+        except urllib.error.HTTPError as error:
             o3_ind = '-'
-            logging.error('Cannot find Ozone index')
+            logging.debug(f'Cannot find Ozone index: {error}')
         self.o3_signal.emit(o3_ind)
 
 
