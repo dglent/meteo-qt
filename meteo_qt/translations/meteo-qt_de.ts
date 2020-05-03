@@ -399,25 +399,25 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Ideal fürs Training</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Erhöhte Anstrengungen haben keine Auswirkungen</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Erwarten Sie langsamere Rennzeiten als unter normalen Bedingungen</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Einfache Trainingsläufe sind OK, aber Wettrennen und erhöhte Anstrengungen sind schwierig</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
