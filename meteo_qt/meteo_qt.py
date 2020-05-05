@@ -111,7 +111,7 @@ class SystemTrayIcon(QMainWindow):
         self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
         self.citiesMenu = QMenu(self.tr('Cities'))
-        if os.environ.get('DESKTOP_SESSION') in ['ubuntu', 'budgie-desktop']:
+        if os.environ.get('DESKTOP_SESSION') in ['unity', 'ubuntu', 'budgie-desktop']:
             # Missing left click on Unity environment issue #63
             self.panelAction = QAction(
                 QCoreApplication.translate(
