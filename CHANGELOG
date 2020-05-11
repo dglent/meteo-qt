@@ -1,3 +1,10 @@
+1.9
+- Add dew point and comfort level information
+- Fix clouds description in tooltips
+- Fix displaying data with Kelvin unit
+- Add 'unity' in DE without left click
+- Provide a default key.
+
 1.8
 - Autocompletion in city search
 - Update Slovak translation by jose1711
