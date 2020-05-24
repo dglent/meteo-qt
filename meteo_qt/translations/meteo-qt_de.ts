@@ -339,7 +339,7 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <location filename="../meteo_qt.py" line="345"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfort</translation>
     </message>
 </context>
 <context>
@@ -354,7 +354,7 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Die trockenere Luft kann zu Hautrissen führen und die Haut schneller reizen.</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
@@ -423,14 +423,15 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Erwarten Sie ein stark eingeschränktes Tempo</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Vermeide Übungen. Überspringen Sie diese oder verändern Sie deutlich das Ziel.
+Das Komfortniveau ist sehr ungemütlich und womöglich tödlich für Asthmatiker</translation>
     </message>
 </context>
 <context>
@@ -1091,7 +1092,7 @@ auf Werte um 100DU.</translation>
         <location filename="../settings.py" line="305"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>Symbol in der Systemleiste wechseln</translation>
     </message>
     <message>
         <location filename="../settings.py" line="330"/>

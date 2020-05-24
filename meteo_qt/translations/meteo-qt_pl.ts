@@ -116,7 +116,7 @@
         <location filename="../meteo_qt.py" line="127"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Odśwież</translation>
     </message>
 </context>
 <context>
@@ -126,7 +126,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Morze jak lustro Ląd: Spokój. Dym unosi się pionowo</translation>
     </message>
 </context>
 <context>
@@ -136,7 +136,7 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Powstają zmarszczki o wyglądzie łusek, ale bez grzebieni z piany. Ląd: Dryf dymu wskazuje kierunek wiatru. Liście i wiatraczki są nieruchome</translation>
     </message>
 </context>
 <context>
@@ -146,7 +146,7 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Bardzo wysokie, silnie uderzające fale. Duże płaty piany nadają morzu biały wygląd. Duże ilości rozpylonej w powietrzu wody zmniejszają widoczność. Ląd: Drzewa są łamane lub wyrywane z korzeniami, prawdopodobne uszkodzenie budowli</translation>
     </message>
 </context>
 <context>
@@ -264,7 +264,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="401"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Rozpocznij zminimalizowany</translation>
     </message>
 </context>
 <context>
@@ -326,7 +326,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../meteo_qt.py" line="345"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfort</translation>
     </message>
 </context>
 <context>
@@ -335,49 +335,49 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sucho</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Suche powietrze może powodować pękanie skóry i podrażnienia</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Bardzo sprzyjające</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sprzyjające</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>W porządku</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Niesprzyjające</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Bardzo niesprzyjające</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Drastycznie niesprzyjające</translation>
     </message>
 </context>
 <context>
@@ -386,38 +386,38 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Warunki doskonałe do ćwiczeń</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Raczej brak wpływu na ciężki wysiłek</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Będziesz biegać wolniej niż w optymalnych warunkach</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Brak wpływu na lekki wysiłek, jednak cięższe zadania mogą być utrudnione</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Spodziewaj się, że tempo będzie bardzo cierpieć</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Unikaj ćwiczeń. Warunki są bardzo niesprzyjające i być może niebezpieczne dla osób cierpiących na astmę</translation>
     </message>
 </context>
 <context>
@@ -426,7 +426,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="387"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Światło dzienne</translation>
     </message>
 </context>
 <context>
@@ -435,7 +435,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="334"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Punkt rosy</translation>
     </message>
 </context>
 <context>
@@ -473,7 +473,9 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Zalecenia: Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Unikaj słońca co najmniej trzy godziny po południu.</translation>
     </message>
 </context>
 <context>
@@ -482,7 +484,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../settings.py" line="345"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Pogrubione</translation>
     </message>
 </context>
 <context>
@@ -507,7 +509,9 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw słoneczne.</translation>
     </message>
 </context>
 <context>
@@ -525,7 +529,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="286"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Wiatr</translation>
     </message>
 </context>
 <context>
@@ -534,7 +538,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="301"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Zachmurzenie</translation>
     </message>
 </context>
 <context>
@@ -543,7 +547,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="323"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Wilgotność</translation>
     </message>
 </context>
 <context>
@@ -552,7 +556,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="312"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Ciśnienie</translation>
     </message>
 </context>
 <context>
@@ -561,7 +565,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="367"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Wschód słońca</translation>
     </message>
 </context>
 <context>
@@ -570,7 +574,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="376"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Zachód słońca</translation>
     </message>
 </context>
 <context>
@@ -588,7 +592,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="126"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Jednostka prędkości wiatru</translation>
     </message>
 </context>
 <context>
@@ -608,7 +612,8 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Noś okulary przeciw słoneczne w intensywnie słoneczne dni. &lt;br/&gt;
+Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</translation>
     </message>
 </context>
 <context>
@@ -617,7 +622,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>To jest domyślne miasto!</translation>
     </message>
 </context>
 <context>
@@ -836,7 +841,8 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Zalecenia: chroń się przed słońcem w cieniu budynków/drzew będąc na zewnątrz. &lt;br/&gt;
+</translation>
     </message>
 </context>
 <context>
@@ -845,7 +851,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="415"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"/>
+        <translation>Poziom logów</translation>
     </message>
 </context>
 <context>
@@ -854,7 +860,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="135"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"/>
+        <translation>Domyślnie</translation>
     </message>
 </context>
 <context>
@@ -863,13 +869,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="140"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Beaufort</translation>
     </message>
     <message>
         <location filename="../settings.py" line="145"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Km/h</translation>
     </message>
 </context>
 <context>
@@ -878,7 +884,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="410"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Ozon</translation>
     </message>
 </context>
 <context encoding="UTF-8">
@@ -891,7 +897,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                     concentration drops to an average of about 100 Dobson
                     Units.</source>
         <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation type="unfinished"/>
+        <translation>Średnia ilość ozonu w &lt;br/&gt; atmosferze wynosi mniej więcej 300 jednostek Dobsona. Co naukowcy nazywają antarktyczną dziurą ozonową jest obszarem, gdzie koncentracja ozonu spada do średniej wynoszącej około 100 jednostek Dobsona.</translation>
     </message>
 </context>
 <context>
@@ -948,7 +954,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="51"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
-        <translation type="unfinished"/>
+        <translation>Znajdź moją lokalizację</translation>
     </message>
 </context>
 <context>
@@ -966,7 +972,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="41"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation type="unfinished"/>
+        <translation>Znajdź miasto</translation>
     </message>
 </context>
 <context>
@@ -975,7 +981,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="59"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"/>
+        <translation>Wpisz nazwę miasta, lub ID, lub współrzędne geograficzne „szerokość, długość”</translation>
     </message>
 </context>
 <context>
@@ -1017,7 +1023,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="219"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation type="unfinished"/>
+        <translation>Wpisz więcej niż trzy litery</translation>
     </message>
 </context>
 <context>
@@ -1044,25 +1050,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="239"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona w zasobniku systemowym</translation>
     </message>
     <message>
         <location filename="../settings.py" line="263"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Ikona &amp; Odczuwalna temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="268"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Odczuwalna temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="291"/>
         <source>Weather icons from system theme</source>
         <comment>Check box to use the icons from the system theme</comment>
-        <translation type="unfinished"/>
+        <translation>Ikony pogody z motywu systemu</translation>
     </message>
     <message>
         <location filename="../settings.py" line="305"/>
@@ -1074,7 +1080,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="330"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Rozmiar czcionki w zasobniku</translation>
     </message>
     <message>
         <location filename="../settings.py" line="319"/>
@@ -1095,7 +1101,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Przełącz miasta w oknie prognozy rolką myszy</translation>
     </message>
 </context>
 <context>
@@ -1104,13 +1110,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="110"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Kliknij przycisk &quot;Znajdź moją Lokalizację&quot; by zlokalizować automatycznie</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="120"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Wpisz nazwę miasta, przecinek, 2-literowy kod kraju (np: Warszawa, PL) </translation>
     </message>
 </context>
 <context>
@@ -1190,57 +1196,57 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="179"/>
         <source>Mon</source>
-        <translation type="unfinished"/>
+        <translation>Pon</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Tue</source>
-        <translation type="unfinished"/>
+        <translation>Wto</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="181"/>
         <source>Wed</source>
-        <translation type="unfinished"/>
+        <translation>Śro</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="182"/>
         <source>Thu</source>
-        <translation type="unfinished"/>
+        <translation>Czw</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="183"/>
         <source>Fri</source>
-        <translation type="unfinished"/>
+        <translation>Pią</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="184"/>
         <source>Sat</source>
-        <translation type="unfinished"/>
+        <translation>Sob</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="185"/>
         <source>Sun</source>
-        <translation type="unfinished"/>
+        <translation>Nie</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="458"/>
         <source>Weather status</source>
-        <translation type="unfinished"/>
+        <translation>Stan pogody</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1320"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"/>
+        <translation>Min Max Temperatura w ciągu dnia</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1595"/>
         <source>snow</source>
-        <translation type="unfinished"/>
+        <translation>śnieg</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1596"/>
         <source>rain</source>
-        <translation type="unfinished"/>
+        <translation>deszcz</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2481"/>
@@ -1271,7 +1277,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="160"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Odczuwalna temperatura</translation>
     </message>
 </context>
 <context>
@@ -1298,25 +1304,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="993"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Dzień</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="998"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Ranek</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1003"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Wieczór</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1008"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Noc</translation>
     </message>
 </context>
 <context>
@@ -1325,13 +1331,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1624"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Ciśnienie</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1629"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Wilgotność</translation>
     </message>
 </context>
 <context>
@@ -1340,7 +1346,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="115"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation type="unfinished"/>
+        <translation>Przełącz okno</translation>
     </message>
 </context>
 <context>
@@ -1386,7 +1392,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="398"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>UV</translation>
     </message>
 </context>
 <context>
@@ -1405,7 +1411,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="536"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"/>
+        <translation>km/h</translation>
     </message>
 </context>
 <context>
