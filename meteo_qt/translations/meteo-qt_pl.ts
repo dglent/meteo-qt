@@ -4,92 +4,92 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Tłumaczenie na niemiecki</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] Projekt, Tłumaczenie na niemiecki</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Tłumaczenie na grecki</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Tłumaczenie na hiszpański</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Tłumaczenie na francuski</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Projekt, tłumaczenie na francuski</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Tłumaczenie na polski</translation>
     </message>
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Tumaczenie na turecki</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Tłumaczenie na ukraiński</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Tłumaczenie na chiński (Tajwan)</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; Projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Tłumaczenie holenderskie</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Tłumaczenie na węgierski</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Tłumaczenie na rosyjski</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Projekt, tłumaczenie na hiszpański</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Projekt, tłumaczenie słowackie</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Tłumaczenie włoskie</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Tłumaczenie na czeski</translation>
     </message>
 </context>
 <context>
@@ -126,7 +126,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: Morze jak lustro Ląd: Spokój. Dym unosi się pionowo</translation>
+        <translation>Morze: Gładkie Ląd: Spokój, dym unosi się pionowo</translation>
     </message>
 </context>
 <context>
@@ -136,7 +136,7 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: Powstają zmarszczki o wyglądzie łusek, ale bez grzebieni z piany. Ląd: Dryf dymu wskazuje kierunek wiatru. Liście i wiatraczki są nieruchome</translation>
+        <translation>Morze: Zmarszczki na wodzie. Ląd: Ruch powietrza lekko oddziałuje na dym</translation>
     </message>
 </context>
 <context>
@@ -146,7 +146,7 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: Bardzo wysokie, silnie uderzające fale. Duże płaty piany nadają morzu biały wygląd. Duże ilości rozpylonej w powietrzu wody zmniejszają widoczność. Ląd: Drzewa są łamane lub wyrywane z korzeniami, prawdopodobne uszkodzenie budowli</translation>
+        <translation>Morze: Wielkie fale. Powierzchnia morza jest biała, fale przełamują się. Widoczność jest ograniczona. Ląd: Drzewa wyrywane z korzeniami. Poważne zniszczenia konstrukcji</translation>
     </message>
 </context>
 <context>
@@ -156,7 +156,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Nadzwyczaj wielkie fale
+Ląd: Znaczna część konstrukcji zniszczona</translation>
     </message>
 </context>
 <context>
@@ -166,7 +167,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Olbrzymie fale. Powietrze pełne piany i bryzgów. Morze całkowicie białe pokryte bryzgami. Widzialność bardzo ograniczona
+Ląd: Masowe i powszechne zniszczenia konstrukcji</translation>
     </message>
 </context>
 <context>
@@ -176,7 +178,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Małe falki
+Ląd: Wiatr wyczuwany na skórze. Liście szeleszczą</translation>
     </message>
 </context>
 <context>
@@ -186,7 +189,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Duże falki, ich grzbiety mają wygląd szklisty
+Ląd: Liście i małe gałązki w stałym ruchu</translation>
     </message>
 </context>
 <context>
@@ -196,7 +200,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Małe fale, na których grzbietach tworzy się piana. Słychać plusk
+Ląd: Kurz i papier podnoszą się. Gałęzie zaczynają się poruszać</translation>
     </message>
 </context>
 <context>
@@ -206,7 +211,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Szum morza przypomina pomruk, wiatr gwiżdże, fale umiarkowane, gęste białe grzebienie
+Ląd: Małe drzewa kołyszą się</translation>
     </message>
 </context>
 <context>
@@ -216,7 +222,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Tworzą się grzywacze, długa wysoka fala, szum morza. Fale z pianą na grzbietach i bryzgi
+Ląd: Duże gałęzie w ruchu. Słychać świst wiatru nad głową. Kapelusze zrywane z głowy</translation>
     </message>
 </context>
 <context>
@@ -226,7 +233,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Morze burzy się i piana zaczyna układać się w pasma
+Ląd: Całe drzewa w ruchu. Pod wiatr idzie się z wysiłkiem</translation>
     </message>
 </context>
 <context>
@@ -236,7 +244,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Umiarkowanie duże fale z poprzerywanymi obracającymi się grzbietami. Pasma piany
+Ląd: Gałązki są odłamywane od drzew. Samochody skręcają pod wpływem wiatru</translation>
     </message>
 </context>
 <context>
@@ -246,7 +255,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Morze: Bardzo duże fale z gęstą pianą. Grzbiety fal zaczynają się zawijać. Znaczne bryzgi
+Ląd: Lekkie konstrukcje ulegają zniszczeniu</translation>
     </message>
 </context>
 <context>
@@ -255,7 +265,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Tłumaczenie</translation>
     </message>
 </context>
 <context>
@@ -498,7 +508,12 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation type="unfinished"/>
+        <translation>Jeśli ciśnienie atmosferyczne rośnie, pogoda się poprawia.
+Jeśli ciśnienie barometryczne spada, pogoda się pogarsza.
+Powyżej 1020 hPa jest spokojnie/chłodniej, a poniżej pogoda robi się zmienna/ociepla się.
+1010-1020 hPa możliwe słabe burze.
+990-1010 hPa możliwe silne burze a nawet huragany, tornada i tajfuny.
+Poniżej 990 hPa to wskazanie na SILNE i NIEBEZPIECZNE huragany, tornada i tajfuny.</translation>
     </message>
 </context>
 <context>
@@ -963,7 +978,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="174"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
-        <translation type="unfinished"/>
+        <translation>N/A</translation>
     </message>
 </context>
 <context>
@@ -1074,7 +1089,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="305"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>Okres aktywności ikony na pasku zadań</translation>
     </message>
     <message>
         <location filename="../settings.py" line="330"/>
@@ -1086,7 +1101,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="319"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>sekundy. Ustaw 0 by wyłączyć.</translation>
     </message>
 </context>
 <context>
@@ -1268,7 +1283,19 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Prosta aplikacja pokazująca informacje pogodowe w zasobniku systemowym.
+                        &lt;p&gt;Strona www: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+                        https://github.com/dglent/meteo-qt&lt;/a&gt;
+                        &lt;br/&gt;Źródło danych: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+                        OpenWeatherMap&lt;/a&gt;.
+                        &lt;br/&gt;Ten program używa ikon z 
+                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+                        &lt;p&gt;Aby przetłumaczyć meteo-qt na swój język lub poprawić tłumaczenie skorzystaj z 
+                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
+                        Transifex&lt;/a&gt;.
+                        &lt;p&gt;Aby zgłosić błędy lub przekazać sugestie użyj &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1401,7 +1428,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="653"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Pobieram...</translation>
     </message>
 </context>
 <context>
@@ -1421,7 +1448,9 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"/>
+        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
+Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
+Nie przebywaj zbyt długo na słońcu.</translation>
     </message>
 </context>
 <context>
@@ -1891,12 +1920,12 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>N</source>
-        <translation>pn.</translation>
+        <translation>N</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NE</source>
-        <translation>pn.-wsch.</translation>
+        <translation>NE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
@@ -1906,7 +1935,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>NW</source>
-        <translation>pn.-zach.</translation>
+        <translation>NW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
@@ -1921,7 +1950,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SE</source>
-        <translation>pd.-wsch.</translation>
+        <translation>SE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
@@ -1931,7 +1960,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>SW</source>
-        <translation>pd.-zach.</translation>
+        <translation>SW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
@@ -1941,7 +1970,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>E</source>
-        <translation>wsch.</translation>
+        <translation>E</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
@@ -1956,7 +1985,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="141"/>
         <source>W</source>
-        <translation>zach.</translation>
+        <translation>W</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="142"/>
@@ -1981,7 +2010,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Tłumaczenie miast</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="103"/>
@@ -2012,7 +2041,8 @@ or modify the name of the city</source>
         <location filename="../searchcity.py" line="392"/>
         <source>
 Try again later</source>
-        <translation>Spróbuj ponownie później</translation>
+        <translation>
+Spróbuj ponownie później</translation>
     </message>
 </context>
 </TS>
