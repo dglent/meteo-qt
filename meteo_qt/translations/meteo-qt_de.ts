@@ -1796,27 +1796,27 @@ auf Werte um 100DU.</translation>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation>leichte Briese</translation>
+        <translation>leichte Brise</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation>schwache Briese</translation>
+        <translation>schwache Brise</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation>mäßige Briese</translation>
+        <translation>mäßige Brise</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation>frische Briese</translation>
+        <translation>frische Brise</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation>starke Briese</translation>
+        <translation>starke Brise</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
