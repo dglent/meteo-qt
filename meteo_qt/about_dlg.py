@@ -1,7 +1,9 @@
 from PyQt5.QtCore import QSize, QCoreApplication
-from PyQt5.QtGui import QPixmap, QTextCursor
-from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
-                             QTabWidget, QTextBrowser, QVBoxLayout)
+from PyQt5.QtGui import QPixmap, QTextCursor, QIcon
+from PyQt5.QtWidgets import (
+    QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
+    QTabWidget, QTextBrowser, QVBoxLayout
+)
 
 
 class AboutDialog(QDialog):
@@ -23,7 +25,11 @@ class AboutDialog(QDialog):
         aboutBrowser.moveCursor(QTextCursor.Start)
         creditsBrowser.moveCursor(QTextCursor.Start)
         imageLabel = QLabel()
-        imageLabel.setPixmap(QPixmap(image))
+        icon = QIcon.fromTheme('weather-few-clouds')
+        if icon.isNull():
+            imageLabel.setPixmap(QPixmap(image))
+        else:
+            imageLabel.setPixmap(icon.pixmap(48, 48))
         titleLayout.addWidget(imageLabel)
         titleLayout.addWidget(name_versionLabel)
         titleLayout.addStretch()

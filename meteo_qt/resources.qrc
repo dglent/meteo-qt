@@ -6,7 +6,7 @@
     <file alias="exit">images/application-exit.png</file>
     <file alias="info">images/dialog-information.png</file>
     <file alias="empty">images/empty.png</file>
-    <file alias="logo">images/meteo-qt.png</file>
+    <file alias="logo">images/weather-few-clouds.png</file>
     <file alias="tempcity">images/preferences-web-browser-shortcuts.png</file>
     <file alias="find">images/document-preview.png</file>
     <file alias="bookmarks">images/bookmarks-organize.png</file>

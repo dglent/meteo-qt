@@ -11,7 +11,6 @@ Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-qt5-devel
 BuildRequires:  qttools5
-BuildRequires:  imagemagick
 Requires:       python3-qt5
 Requires:       python3-sip
 Requires:       python3-urllib3
@@ -30,17 +29,13 @@ Weather data from: http://openweathermap.org/
 
 %install
 %py3_install
-%__mkdir -p %{buildroot}%{_iconsdir}/hicolor/{16x16,32x32}/apps
-convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/meteo-qt.png
-convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_iconsdir}/hicolor/32x32/apps/meteo-qt.png
 
 %files
 %doc TODO CHANGELOG README.md
 %exclude %_defaultdocdir/%{name}/LICENSE
 %{_bindir}/%{name}
-%{_iconsdir}/%{name}.png
+%{_iconsdir}/weather-few-clouds.png
 %{python3_sitelib}/%{aname}-%{version}-py%python3_version.egg-info
 %{python3_sitelib}/%{aname}/
 %{_datadir}/applications/%{name}.desktop
-%{_iconsdir}/hicolor/*/apps/meteo-qt.png
 %{_datadir}/meteo_qt/translations/

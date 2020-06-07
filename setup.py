@@ -24,7 +24,7 @@ setup(
     packages=['meteo_qt'],
     keywords=['weather', 'qt', 'trayicon', 'openweathermap', 'forecast'],
     data_files=[('/usr/share/applications', ['share/meteo-qt.desktop']),
-                ('/usr/share/icons', ['meteo_qt/images/meteo-qt.png']),
+                ('/usr/share/icons', ['meteo_qt/images/weather-few-clouds.png']),
                 ('/usr/share/meteo_qt/translations',
                     ['meteo_qt/translations/meteo-qt_bg.qm',
                      'meteo_qt/translations/meteo-qt_ca.qm',

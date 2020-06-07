@@ -37,7 +37,10 @@ class SearchCity(QDialog):
         self.layout = QVBoxLayout()
         self.lineLayout = QHBoxLayout()
         self.buttonSearch = QPushButton()
-        self.buttonSearch.setIcon(QIcon(':/find'))
+        icon = QIcon.fromTheme('system-search')
+        if icon.isNull():
+            icon = QIcon(':/find')
+        self.buttonSearch.setIcon(icon)
         self.buttonSearch.setToolTip(
             QCoreApplication.translate(
                 'Search city button Tooltip',
@@ -47,7 +50,10 @@ class SearchCity(QDialog):
         )
         self.buttonSearch.clicked.connect(self.search)
         self.buttonMyLocation = QPushButton()
-        self.buttonMyLocation.setIcon(QIcon(':/mylocation'))
+        icon = QIcon.fromTheme('network-wireless')
+        if icon.isNull():
+            icon = QIcon(':/mylocation')
+        self.buttonMyLocation.setIcon(icon)
         self.buttonMyLocation.setToolTip(
             QCoreApplication.translate(
                 'Search by geolocalisation button tooltip',

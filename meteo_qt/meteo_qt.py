@@ -121,7 +121,6 @@ class SystemTrayIcon(QMainWindow):
                 ),
                 self
             )
-            self.panelAction.setIcon(QIcon(':/panel'))
             self.menu.addAction(self.panelAction)
             self.panelAction.triggered.connect(self.showpanel)
         self.tempCityAction = QAction(self.tr('&Temporary city'), self)
@@ -136,12 +135,6 @@ class SystemTrayIcon(QMainWindow):
         self.settingsAction = QAction(self.tr('&Settings'), self)
         self.aboutAction = QAction(self.tr('&About'), self)
         self.exitAction = QAction(self.tr('Exit'), self)
-        self.exitAction.setIcon(QIcon(':/exit'))
-        self.aboutAction.setIcon(QIcon(':/info'))
-        self.refreshAction.setIcon(QIcon(':/refresh'))
-        self.settingsAction.setIcon(QIcon(':/configure'))
-        self.tempCityAction.setIcon(QIcon(':/tempcity'))
-        self.citiesMenu.setIcon(QIcon(':/bookmarks'))
         self.menu.addAction(self.settingsAction)
         self.menu.addAction(self.refreshAction)
         self.menu.addMenu(self.citiesMenu)
@@ -204,8 +197,40 @@ class SystemTrayIcon(QMainWindow):
         self.country = self.settings.value('Country') or ''
         self.id_ = self.settings.value('ID') or ''
         self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
+        self.tray_menu_icons()
         self.cities_menu()
         self.refresh()
+
+    def tray_menu_icons(self):
+        if hasattr(self, 'panelAction'):
+            icon = QIcon.fromTheme('preferences-system-windows')
+            if icon.isNull():
+                icon = QIcon(':/panel')
+            self.panelAction.setIcon(icon)
+        icon = QIcon.fromTheme('application-exit')
+        if icon.isNull():
+            icon = QIcon(':/exit')
+        self.exitAction.setIcon(icon)
+        icon = QIcon.fromTheme('help-about')
+        if icon.isNull():
+            icon = QIcon(':/info')
+        self.aboutAction.setIcon(icon)
+        icon = QIcon.fromTheme('view-refresh')
+        if icon.isNull():
+            icon = QIcon(':/refresh')
+        self.refreshAction.setIcon(icon)
+        icon = QIcon.fromTheme('applications-system')
+        if icon.isNull():
+            icon = QIcon(':/configure')
+        self.settingsAction.setIcon(icon)
+        icon = QIcon.fromTheme('go-jump')
+        if icon.isNull():
+            icon = QIcon(':/tempcity')
+        self.tempCityAction.setIcon(icon)
+        icon = QIcon.fromTheme('user-bookmarks')
+        if icon.isNull():
+            icon = QIcon(':/bookmarks')
+        self.citiesMenu.setIcon(icon)
 
     def set_toggle_tray_interval(self):
         interval = self.settings.value('Toggle_tray_interval') or '0'
@@ -2925,7 +2950,10 @@ def main():
     app.setOrganizationName('meteo-qt')
     app.setOrganizationDomain('meteo-qt')
     app.setApplicationName('meteo-qt')
-    app.setWindowIcon(QIcon(':/logo'))
+    icon = QIcon.fromTheme('weather-few-clouds')
+    if icon.isNull():
+        icon = QIcon(':/logo')
+    app.setWindowIcon(icon)
     filePath = os.path.dirname(os.path.realpath(__file__))
     settings = QSettings()
     locale = settings.value('Language')
