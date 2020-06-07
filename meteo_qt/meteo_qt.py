@@ -2399,11 +2399,6 @@ class SystemTrayIcon(QMainWindow):
         self.hide()
         self.settings.setValue("MainWindow/State", self.saveState())
 
-    def overview(self):
-        if self.inerror or len(self.weatherDataDico) == 0:
-            return
-        self.show()
-
     def config_save(self):
         logging.debug('Config saving...')
         city = self.settings.value('City')
