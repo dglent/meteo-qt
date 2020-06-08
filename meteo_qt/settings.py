@@ -295,8 +295,11 @@ class MeteoSettings(QDialog):
                 'Check box to use the icons from the system theme'
             )
         )
-        icontheme_bool = self.settings.value('SystemIcons') or 'False'
-        icontheme_bool = eval(icontheme_bool)
+        icontheme_bool = self.settings.value('SystemIcons') or 'true'
+        if icontheme_bool == 'true':
+            icontheme_bool = True
+        else:
+            icontheme_bool = False
         self.checkbox_system_icontheme.setChecked(icontheme_bool)
         self.checkbox_system_icontheme.stateChanged.connect(self.system_theme_icons)
         self.checkbox_system_icontheme_changed = False
@@ -697,9 +700,9 @@ class MeteoSettings(QDialog):
 
     def system_icontheme_apply(self):
         if self.system_icons_state == 2:
-            system_icons = 'True'
+            system_icons = 'true'
         else:
-            system_icons = 'False'
+            system_icons = 'false'
         self.settings.setValue('SystemIcons', str(system_icons))
 
     def bold(self, state):

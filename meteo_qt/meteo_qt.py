@@ -68,7 +68,7 @@ class SystemTrayIcon(QMainWindow):
         self.temp_decimal_bool = self.settings.value('Decimal') or False
         # initialize the tray icon type in case of first run: issue#42
         self.tray_type = self.settings.value('TrayType') or 'icon&temp'
-        self.system_icons = self.settings.value('SystemIcons') or 'False'
+        self.system_icons = self.settings.value('SystemIcons') or 'true'
         self.cond = conditions.WeatherConditions()
         self.temporary_city_status = False
         self.conditions = self.cond.trans
@@ -515,8 +515,8 @@ class SystemTrayIcon(QMainWindow):
         )
 
         self.icon_label.setPixmap(self.wIcon)
-        self.system_icons = self.settings.value('SystemIcons') or 'False'
-        if self.system_icons == 'True':
+        self.system_icons = self.settings.value('SystemIcons') or 'true'
+        if self.system_icons == 'true':
             shadow = self.shadow_effect()
             self.icon_label.setGraphicsEffect(shadow)
 
@@ -1454,8 +1454,8 @@ class SystemTrayIcon(QMainWindow):
         iconlabel = QLabel()
         iconlabel.setAlignment(Qt.AlignHCenter)
 
-        self.system_icons = self.settings.value('SystemIcons') or 'False'
-        if self.system_icons == 'True':
+        self.system_icons = self.settings.value('SystemIcons') or 'true'
+        if self.system_icons == 'true':
             for icon in self.system_icons_dico[icon_name]:
                 image = QIcon.fromTheme(icon)
                 if image.name() == '':
@@ -1772,8 +1772,8 @@ class SystemTrayIcon(QMainWindow):
         iconlabel = QLabel()
         iconlabel.setAlignment(Qt.AlignHCenter)
 
-        self.system_icons = self.settings.value('SystemIcons') or 'False'
-        if self.system_icons == 'True':
+        self.system_icons = self.settings.value('SystemIcons') or 'true'
+        if self.system_icons == 'true':
             for icon in self.system_icons_dico[icon_name]:
                 image = QIcon.fromTheme(icon)
                 if image.name() == '':
@@ -2052,8 +2052,8 @@ class SystemTrayIcon(QMainWindow):
             image = QImage()
             image.loadFromData(data)
             self.wIcon = QPixmap(image)
-        self.system_icons = self.settings.value('SystemIcons') or 'False'
-        if self.system_icons == 'True':
+        self.system_icons = self.settings.value('SystemIcons') or 'true'
+        if self.system_icons == 'true':
             for icon in self.system_icons_dico[self.weather_icon_name]:
                 image = QIcon.fromTheme(icon)
                 if image.name() == '':
