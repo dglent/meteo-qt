@@ -142,12 +142,7 @@ Package [meteo-qt](http://madb.mageia.org/package/show/name/meteo-qt/) is provid
 
 ## Configuration
 
-As of June 2016 users need to use a personal key to access OpenWeatherMap data. OpenWeatherMap is restricting access
-to the data by keys in order to avoid abuse, unfortunately the single key that was issued for meteo-qt as a whole
-had to be revoked as it was apparently hijacked.
-
-To register a personal key visit [openweathermap.org](https://openweathermap.org), once acquired the key has to be
-filed in the settings of meteo-qt.
+After installation you will be prompted to do a right click on the system tray icon to configure the cities, units and other settings for the weather informations and the application.
 
 ## Usage
 
