@@ -57,7 +57,7 @@ class AboutDialog(QDialog):
             )
             + QCoreApplication.translate(
                 '',
-                '<p>Jürgen <a href="mailto:linux@psyca.de">linux@psyca.de</a>'
+                '<p>Jürgen Thurau <a href="mailto:linux@psyca.de">linux@psyca.de</a>'
                 '<br/>[de] German translation',
                 ''
             )
