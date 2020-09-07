@@ -89,7 +89,7 @@
     <message>
         <location filename="../about_dlg.py" line="44"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation type="unfinished"/>
+        <translation>Jiří Podhorecký&lt;br/&gt;Pavel Frič&lt;br/&gt;[cs] Czech translation</translation>
     </message>
 </context>
 <context>
@@ -225,7 +225,7 @@ Na zemi: Větvičky střední velikosti v pohybu. Malé listnaté stromky se za�
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Na moři: Dlouhé vlny se začínají formovat. Velmi časté jsou bílé pěnové hřebeny. Nějaké vodní kapky ve vzduchu
+        <translation>Na moři: Začínají se tvořit dlouhé vlny. Velmi časté jsou bílé pěnové hřebeny. Nějaké vodní kapky ve vzduchu
 Na zemi: Velké větve v pohybu. V drátech elektrického napětí  se ozývá pískání. Použití deštníku je obtížné. Prázdné plastové koše se převrhnou</translation>
     </message>
 </context>
@@ -339,7 +339,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <location filename="../meteo_qt.py" line="345"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfortní</translation>
     </message>
 </context>
 <context>
@@ -348,49 +348,49 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Suché</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sušší vzduch může způsobit popraskání kůže a snadnější podráždění</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Velmi pohodlný</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfortní</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>V pořádku</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Nepříjemné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Velmi nepříjemné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Hrozně nepříjemné</translation>
     </message>
 </context>
 <context>
@@ -399,38 +399,39 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Úroveň pohodlí vynikající pro cvičení</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Pravděpodobné úsilí nebude ovlivněno</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Očekávejte, že závod bude pomalejší než za optimálních podmínek</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Snadné tréninkové jízdy mohou být pocitově v pořádku, ale bude obtížné dobře závodit nebo vyvinout velké úsilí</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Očekávejte, že tempo bude velmi trpět</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Vyhněte se cvičení. Přeskočte to nebo dramaticky změňte cíl.
+Úroveň pohodlí je pro osoby trpící astmatem velmi nepříjemná a možná smrtící</translation>
     </message>
 </context>
 <context>
@@ -448,7 +449,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="334"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Rosný bod</translation>
     </message>
 </context>
 <context>
@@ -1089,25 +1090,25 @@ zůstaňte ve stínu.</translation>
         <location filename="../settings.py" line="291"/>
         <source>Weather icons from system theme</source>
         <comment>Check box to use the icons from the system theme</comment>
-        <translation type="unfinished"/>
+        <translation>Ikony počasí z motivu systému</translation>
     </message>
     <message>
         <location filename="../settings.py" line="305"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>Přepnout interval ikony na liště</translation>
     </message>
     <message>
         <location filename="../settings.py" line="330"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Velikost písma v oznamovací oblasti</translation>
     </message>
     <message>
         <location filename="../settings.py" line="319"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"/>
+        <translation>sekundy. Nastavením na 0 deaktivujte</translation>
     </message>
 </context>
 <context>
