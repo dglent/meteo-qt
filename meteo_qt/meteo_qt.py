@@ -2255,25 +2255,19 @@ class SystemTrayIcon(QMainWindow):
             )
         )
 
+        city_name = self.city
         if city in trans_cities_dict:
-            self.city_weather_info = (
-                '{0} {1}<br/>{2}<br/>{3}'.format(
-                    trans_cities_dict[city],
-                    self.temp_decimal,
-                    feels_like,
-                    self.meteo
-                )
+            city_name = trans_cities_dict[city]
+
+        self.city_weather_info = (
+            '{0} {1} {2}\n{3}\n{4}'.format(
+                city_name,
+                self.country,
+                self.temp_decimal,
+                feels_like,
+                self.meteo
             )
-        else:
-            self.city_weather_info = (
-                '{0} {1} {2}<br/>{3}<br/>{4}'.format(
-                    self.city,
-                    self.country,
-                    self.temp_decimal,
-                    feels_like,
-                    self.meteo
-                )
-            )
+        )
 
     def tray(self):
         temp_decimal = eval(self.settings.value('Decimal') or 'False')
