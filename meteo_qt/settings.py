@@ -1,5 +1,6 @@
 import logging
 import os
+import glob
 
 from PyQt5.QtCore import (
     QCoreApplication, QLocale, QSettings, QSize, Qt, pyqtSignal
@@ -288,21 +289,39 @@ class MeteoSettings(QDialog):
         # Weather icons
         # Checked : use system theme icons
         # Unchecked : OpenWeatherMap icons
-        self.checkbox_system_icontheme = QCheckBox(
-            QCoreApplication.translate(
+        self.comboBox_icons_theme = QComboBox()
+        thema_list = ['OpenWeatherMap']
+        self.system_default_theme_translated = {
+            'System default': QCoreApplication.translate(
                 'Settings dialogue',
-                'Weather icons from system theme',
-                'Check box to use the icons from the system theme'
+                'System default',
+                'ComboBox to choose the system default icons theme'
             )
-        )
-        icontheme_bool = self.settings.value('SystemIcons') or 'true'
-        if icontheme_bool == 'true':
-            icontheme_bool = True
+        }
+        thema_list.append(self.system_default_theme_translated['System default'])
+        for themedir in QIcon.themeSearchPaths():
+            for dirpath in glob.glob(themedir + '/*/'):
+                for path in glob.glob(dirpath + '/*'):
+                    if path.count('index.theme'):
+                        thema = os.path.basename(os.path.dirname(path))
+                        if thema not in thema_list:
+                            thema_list.append(thema)
+
+        thema_list = sorted(thema_list, key=str.casefold)
+        self.comboBox_icons_theme.addItems(thema_list)
+
+        icontheme_conf = self.settings.value('IconsTheme') or 'System default'
+        if icontheme_conf == self.system_default_theme_translated['System default']:
+            self.comboBox_icons_theme.setCurrentIndex(
+                self.comboBox_icons_theme.findText(self.system_default_theme_translated['System default'])
+            )
         else:
-            icontheme_bool = False
-        self.checkbox_system_icontheme.setChecked(icontheme_bool)
-        self.checkbox_system_icontheme.stateChanged.connect(self.system_theme_icons)
-        self.checkbox_system_icontheme_changed = False
+            self.comboBox_icons_theme.setCurrentIndex(
+                self.comboBox_icons_theme.findText(icontheme_conf)
+            )
+
+        self.comboBox_icons_theme.currentIndexChanged.connect(self.system_theme_icons)
+        self.comboBox_icons_theme_changed = False
 
         # Toggle icon Temp
         self.toggle_tray_label = QLabel(
@@ -457,7 +476,7 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.notifier_checkbox, 8, 1)
         self.panel.addWidget(self.tray_icon_temp_label, 9, 0)
         self.panel.addWidget(self.tray_icon_combo, 9, 1)
-        self.panel.addWidget(self.checkbox_system_icontheme, 9, 2)
+        self.panel.addWidget(self.comboBox_icons_theme, 9, 2)
         self.panel.addWidget(self.toggle_tray_label, 10, 0)
         self.panel.addWidget(self.toggle_tray_spinbox, 10, 1)
         self.panel.addWidget(self.toggle_tray_interval_label, 10, 2)
@@ -693,17 +712,15 @@ class MeteoSettings(QDialog):
         logging.debug('Apply fontsize: ' + str(self.fontsize_value))
         self.settings.setValue('FontSize', str(self.fontsize_value))
 
-    def system_theme_icons(self, state):
-        self.system_icons_state = state
-        self.checkbox_system_icontheme_changed = True
+    def system_theme_icons(self):
+        self.comboBox_icons_theme_changed = True
         self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
 
     def system_icontheme_apply(self):
-        if self.system_icons_state == 2:
-            system_icons = 'true'
+        if self.comboBox_icons_theme.currentText() == self.system_default_theme_translated['System default']:
+            self.settings.setValue('IconsTheme', 'System default')
         else:
-            system_icons = 'false'
-        self.settings.setValue('SystemIcons', str(system_icons))
+            self.settings.setValue('IconsTheme', self.comboBox_icons_theme.currentText())
 
     def bold(self, state):
         self.bold_state = state
@@ -849,7 +866,7 @@ class MeteoSettings(QDialog):
             self.fontsize_apply()
         if self.bold_changed:
             self.bold_apply()
-        if self.checkbox_system_icontheme_changed:
+        if self.comboBox_icons_theme_changed:
             self.system_icontheme_apply()
         if self.start_minimized_changed:
             self.start_minimized_apply()
