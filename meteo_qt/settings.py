@@ -287,8 +287,6 @@ class MeteoSettings(QDialog):
         self.tray_icon_combo.currentIndexChanged.connect(self.tray)
         self.tray_changed = False
         # Weather icons
-        # Checked : use system theme icons
-        # Unchecked : OpenWeatherMap icons
         self.comboBox_icons_theme = QComboBox()
         thema_list = ['OpenWeatherMap']
         self.system_default_theme_translated = {
@@ -298,6 +296,13 @@ class MeteoSettings(QDialog):
                 'ComboBox to choose the system default icons theme'
             )
         }
+        self.comboBox_icons_theme.setToolTip(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Icons theme',
+                'Tooltip of the ComboBox to choose the icons theme'
+            )
+        )
         thema_list.append(self.system_default_theme_translated['System default'])
         for themedir in QIcon.themeSearchPaths():
             for dirpath in glob.glob(themedir + '/*/'):
