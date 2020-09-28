@@ -2458,6 +2458,11 @@ class SystemTrayIcon(QMainWindow):
             logging.debug('Apply changes from settings...')
             self.city, self.country, self.id_ = city, country, id_
             self.current_city_display = f'{city}_{country}_{id_}'
+            if system_icons != self.system_icons:
+                if system_icons == 'System default':
+                    # Apply the system default icons theme
+                    self.system_icons = self.settings.value('SystemIcons')
+                    QIcon.setThemeName(self.system_icons)
             self.refresh()
 
     def config(self):
@@ -2949,6 +2954,7 @@ def main():
     app.setWindowIcon(icon)
     filePath = os.path.dirname(os.path.realpath(__file__))
     settings = QSettings()
+    settings.setValue('SystemIcons', QIcon.themeName())
     locale = settings.value('Language')
     if locale is None or locale == '':
         locale = QLocale.system().name()
