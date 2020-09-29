@@ -316,7 +316,7 @@ class MeteoSettings(QDialog):
         self.comboBox_icons_theme.addItems(thema_list)
 
         icontheme_conf = self.settings.value('IconsTheme') or 'System default'
-        if icontheme_conf == self.system_default_theme_translated['System default']:
+        if icontheme_conf == 'System default':
             self.comboBox_icons_theme.setCurrentIndex(
                 self.comboBox_icons_theme.findText(self.system_default_theme_translated['System default'])
             )
