@@ -304,6 +304,7 @@ class MeteoSettings(QDialog):
             )
         )
         thema_list.append(self.system_default_theme_translated['System default'])
+        logging.debug('Icons theme paths : ' + str(QIcon.themeSearchPaths()))
         for themedir in QIcon.themeSearchPaths():
             for dirpath in glob.glob(themedir + '/*/'):
                 for path in glob.glob(dirpath + '/*'):
@@ -313,6 +314,7 @@ class MeteoSettings(QDialog):
                             thema_list.append(thema)
 
         thema_list = sorted(thema_list, key=str.casefold)
+        logging.debug('Found themes : ' + str(thema_list))
         self.comboBox_icons_theme.addItems(thema_list)
 
         icontheme_conf = self.settings.value('IconsTheme') or 'System default'
