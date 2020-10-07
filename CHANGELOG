@@ -1,3 +1,12 @@
+2.1
+- Option to choose the icons theme among the installed themes (further to issue #96)
+- Use plain text in tray tooltip - fixes #103
+- Translations update:
+    Update Dutch translation
+    Update Greek translation
+    Update Ukrainian translation
+    Update Czech translation
+
 2.0.1
 - add missing application icon
 
