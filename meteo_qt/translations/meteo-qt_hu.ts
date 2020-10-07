@@ -1,111 +1,111 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="hu" version="2.0">
 <context>
     <name/>
-    <message encoding="UTF-8">
-        <location filename="../about_dlg.py" line="44"/>
-        <source>&lt;p&gt;Jürgen &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
-    </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation type="unfinished"/>
     </message>
     <message encoding="UTF-8">
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
         <translation type="unfinished"/>
     </message>
     <message encoding="UTF-8">
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
         <translation type="unfinished"/>
     </message>
     <message encoding="UTF-8">
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="44"/>
+        <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
+        <translation type="unfinished"/>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../about_dlg.py" line="21"/>
+        <location filename="../about_dlg.py" line="23"/>
         <source>About</source>
         <translation>Súgó</translation>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="22"/>
+        <location filename="../about_dlg.py" line="24"/>
         <source>Contributors</source>
         <translation>Közreműködők</translation>
     </message>
     <message>
-        <location filename="../about_dlg.py" line="40"/>
+        <location filename="../about_dlg.py" line="46"/>
         <source>About Meteo-qt</source>
         <translation>A Meteo-qt -ról</translation>
     </message>
@@ -262,7 +262,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="401"/>
+        <location filename="../settings.py" line="428"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -277,7 +277,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation>Proxy használata az azonosításhoz</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="358"/>
+        <location filename="../settings.py" line="385"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Csatlakozás proxyval</translation>
@@ -324,7 +324,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="345"/>
+        <location filename="../meteo_qt.py" line="371"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation type="unfinished"/>
@@ -336,12 +336,6 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../humidex.py" line="32"/>
-        <source>The drier air can cause skin to crack and become irritated more easily</source>
-        <comment>ToolTip in weather info dialogue</comment>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -420,11 +414,17 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <comment>ToolTip in weather info dialogue</comment>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <location filename="../humidex.py" line="32"/>
+        <source>The drier air can cause skin to crack and become irritated more easily</source>
+        <comment>ToolTip in weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="387"/>
+        <location filename="../meteo_qt.py" line="413"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Napfény</translation>
@@ -433,7 +433,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="334"/>
+        <location filename="../meteo_qt.py" line="360"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation type="unfinished"/>
@@ -442,7 +442,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1661"/>
+        <location filename="../meteo_qt.py" line="1687"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -481,7 +481,7 @@ Kerülje a napsütés a délelőtti órákban.</translation>
 <context>
     <name>Font setting - Checkbox label</name>
     <message>
-        <location filename="../settings.py" line="345"/>
+        <location filename="../settings.py" line="372"/>
         <source>Bold</source>
         <comment>Settings dialogue</comment>
         <translation>Félkövér</translation>
@@ -515,7 +515,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>If the temperature will be shown with a decimal or rounded in tray icon</name>
     <message>
-        <location filename="../settings.py" line="166"/>
+        <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
         <translation>Hőmérséklet-pontosság a tálcán</translation>
@@ -524,7 +524,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="286"/>
+        <location filename="../meteo_qt.py" line="312"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -533,7 +533,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="301"/>
+        <location filename="../meteo_qt.py" line="327"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -542,7 +542,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="323"/>
+        <location filename="../meteo_qt.py" line="349"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -551,7 +551,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="312"/>
+        <location filename="../meteo_qt.py" line="338"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -560,7 +560,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="367"/>
+        <location filename="../meteo_qt.py" line="393"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -569,7 +569,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="376"/>
+        <location filename="../meteo_qt.py" line="402"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation type="unfinished"/>
@@ -578,7 +578,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="371"/>
+        <location filename="../settings.py" line="398"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Beállítások</translation>
@@ -587,7 +587,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of the checkbox</name>
     <message>
-        <location filename="../settings.py" line="126"/>
+        <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -596,7 +596,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="388"/>
+        <location filename="../settings.py" line="415"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Kulcs
@@ -626,207 +626,207 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>MeteoSettings</name>
     <message>
-        <location filename="../settings.py" line="49"/>
+        <location filename="../settings.py" line="50"/>
         <source>City</source>
         <translation>Város</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="52"/>
+        <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
         <translation>Kattintson a városok listájának szerkesztéséhez</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="55"/>
+        <location filename="../settings.py" line="56"/>
         <source>Language</source>
         <translation>Nyelv</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="65"/>
+        <location filename="../settings.py" line="66"/>
         <source>Bulgarian</source>
         <translation>Bolgár</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="66"/>
+        <location filename="../settings.py" line="67"/>
         <source>Catalan</source>
         <translation>Katalán</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="67"/>
+        <location filename="../settings.py" line="68"/>
         <source>Czech</source>
         <translation>Cseh</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="68"/>
+        <location filename="../settings.py" line="69"/>
         <source>Danish</source>
         <translation>Dán</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="69"/>
+        <location filename="../settings.py" line="70"/>
         <source>German</source>
         <translation>Német</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="70"/>
+        <location filename="../settings.py" line="71"/>
         <source>Greek</source>
         <translation>Görög</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="71"/>
+        <location filename="../settings.py" line="72"/>
         <source>English</source>
         <translation>Angol</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="72"/>
+        <location filename="../settings.py" line="73"/>
         <source>Spanish</source>
         <translation>Spanyol</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="73"/>
+        <location filename="../settings.py" line="74"/>
         <source>Finnish</source>
         <translation>Finn</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="74"/>
+        <location filename="../settings.py" line="75"/>
         <source>French</source>
         <translation>Francia</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="75"/>
+        <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
         <translation>Héber</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="76"/>
+        <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
         <translation>Horvát</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="77"/>
+        <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
         <translation>Magyar</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="78"/>
+        <location filename="../settings.py" line="79"/>
         <source>Italian</source>
         <translation>Olasz</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="79"/>
+        <location filename="../settings.py" line="80"/>
         <source>Japanese</source>
         <translation>Japán</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="80"/>
+        <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
         <translation>Litván</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="81"/>
+        <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
         <translation>Norvég (Bokmaal)</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="82"/>
+        <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
         <translation>Holland</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="83"/>
+        <location filename="../settings.py" line="84"/>
         <source>Polish</source>
         <translation>Lengyel</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="84"/>
+        <location filename="../settings.py" line="85"/>
         <source>Portuguese</source>
         <translation>Portugál</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="85"/>
+        <location filename="../settings.py" line="86"/>
         <source>Brazil Portuguese</source>
         <translation>Brazil portugál</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="86"/>
+        <location filename="../settings.py" line="87"/>
         <source>Romanian</source>
         <translation>Román</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="87"/>
+        <location filename="../settings.py" line="88"/>
         <source>Russian</source>
         <translation>Orosz</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="88"/>
+        <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
         <translation>Szlovák</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="89"/>
+        <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
         <translation>Svéd</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="90"/>
+        <location filename="../settings.py" line="91"/>
         <source>Turkish</source>
         <translation>Török</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="91"/>
+        <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
         <translation>Ukrán</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="92"/>
+        <location filename="../settings.py" line="93"/>
         <source>Chinese Traditional</source>
         <translation>Tradicionális Kínai</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="93"/>
+        <location filename="../settings.py" line="94"/>
         <source>Chinese Simplified</source>
         <translation>Egyszerűsített Kínai</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="112"/>
+        <location filename="../settings.py" line="113"/>
         <source>Temperature unit</source>
         <translation>Hőmérsékleti egység</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="188"/>
+        <location filename="../settings.py" line="189"/>
         <source>Update interval</source>
         <translation>Frissítési intervallum</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="189"/>
+        <location filename="../settings.py" line="190"/>
         <source>minutes</source>
         <translation>perc</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="212"/>
+        <location filename="../settings.py" line="213"/>
         <source>Launch at startup</source>
         <translation>Indulás a rendszerrel</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="220"/>
+        <location filename="../settings.py" line="221"/>
         <source>Font colour in the tray</source>
         <translation>Betűszín a tálcán</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="226"/>
+        <location filename="../settings.py" line="227"/>
         <source>Reset</source>
         <translation>Visszaállítás</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="227"/>
+        <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
         <translation>Betűszín visszaállítása alapértelmezettre</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="231"/>
+        <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
         <translation>Értesítés az időjárás frissítéséről</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="490"/>
+        <location filename="../settings.py" line="517"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Konfigurálása</translation>
     </message>
@@ -845,7 +845,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="415"/>
+        <location filename="../settings.py" line="442"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation type="unfinished"/>
@@ -854,7 +854,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option to choose the default wind speed unit</name>
     <message>
-        <location filename="../settings.py" line="135"/>
+        <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
         <translation type="unfinished"/>
@@ -863,13 +863,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option to choose wind speed unit</name>
     <message>
-        <location filename="../settings.py" line="140"/>
+        <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="145"/>
+        <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -878,7 +878,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="410"/>
+        <location filename="../meteo_qt.py" line="436"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation type="unfinished"/>
@@ -887,7 +887,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1675"/>
+        <location filename="../meteo_qt.py" line="1701"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -921,7 +921,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="356"/>
+        <location filename="../meteo_qt.py" line="382"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Csapadék</translation>
@@ -948,7 +948,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search by geolocalisation button tooltip</name>
     <message>
-        <location filename="../searchcity.py" line="51"/>
+        <location filename="../searchcity.py" line="57"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
         <translation type="unfinished"/>
@@ -957,7 +957,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city</name>
     <message>
-        <location filename="../searchcity.py" line="174"/>
+        <location filename="../searchcity.py" line="180"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
         <translation type="unfinished"/>
@@ -966,7 +966,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city button Tooltip</name>
     <message>
-        <location filename="../searchcity.py" line="41"/>
+        <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
         <translation type="unfinished"/>
@@ -975,7 +975,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Search city dialogue</name>
     <message>
-        <location filename="../searchcity.py" line="59"/>
+        <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
         <translation type="unfinished"/>
@@ -989,27 +989,27 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Keresés...</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="84"/>
+        <location filename="../searchcity.py" line="90"/>
         <source>&amp;Ok</source>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="86"/>
+        <location filename="../searchcity.py" line="92"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Mégse</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="280"/>
+        <location filename="../searchcity.py" line="286"/>
         <source>No results</source>
         <translation>Nincs találat</translation>
     </message>
     <message>
-        <location filename="../searchcity.py" line="282"/>
+        <location filename="../searchcity.py" line="288"/>
         <source>Found {0} city</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="284"/>
+        <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
         <translation type="unfinished"/>
     </message>
@@ -1017,7 +1017,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SearchCity window</name>
     <message>
-        <location filename="../searchcity.py" line="219"/>
+        <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
         <translation type="unfinished"/>
@@ -1026,63 +1026,69 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Settings dialogue</name>
     <message>
-        <location filename="../settings.py" line="248"/>
+        <location filename="../settings.py" line="249"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikon &amp; hőmérséklet</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="253"/>
+        <location filename="../settings.py" line="254"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Ikon</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="258"/>
+        <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation>Hőmérséklet</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="239"/>
+        <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="263"/>
+        <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="268"/>
+        <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="291"/>
-        <source>Weather icons from system theme</source>
-        <comment>Check box to use the icons from the system theme</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../settings.py" line="305"/>
+        <location filename="../settings.py" line="332"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="330"/>
+        <location filename="../settings.py" line="357"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="319"/>
+        <location filename="../settings.py" line="346"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../settings.py" line="293"/>
+        <source>System default</source>
+        <comment>ComboBox to choose the system default icons theme</comment>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../settings.py" line="299"/>
+        <source>Icons theme</source>
+        <comment>Tooltip of the ComboBox to choose the icons theme</comment>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1104,13 +1110,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Status message</name>
     <message>
-        <location filename="../searchcity.py" line="110"/>
+        <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="120"/>
+        <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
         <translation type="unfinished"/>
@@ -1119,7 +1125,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2399"/>
+        <location filename="../meteo_qt.py" line="2418"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"/>
     </message>
@@ -1127,7 +1133,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="112"/>
+        <location filename="../meteo_qt.py" line="113"/>
         <source>Cities</source>
         <translation>Városok</translation>
     </message>
@@ -1152,99 +1158,99 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Kilépés</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="159"/>
+        <location filename="../meteo_qt.py" line="153"/>
         <source>Searching weather data...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1905"/>
+        <location filename="../meteo_qt.py" line="1933"/>
         <source>Empty list</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1922"/>
+        <location filename="../meteo_qt.py" line="1950"/>
         <source>No city configured</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1935"/>
+        <location filename="../meteo_qt.py" line="1963"/>
         <source>No city has been configured yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1935"/>
+        <location filename="../meteo_qt.py" line="1963"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2460"/>
+        <location filename="../meteo_qt.py" line="2484"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2472"/>
+        <location filename="../meteo_qt.py" line="2496"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="179"/>
+        <location filename="../meteo_qt.py" line="173"/>
         <source>Mon</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="180"/>
+        <location filename="../meteo_qt.py" line="174"/>
         <source>Tue</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="181"/>
+        <location filename="../meteo_qt.py" line="175"/>
         <source>Wed</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="182"/>
+        <location filename="../meteo_qt.py" line="176"/>
         <source>Thu</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="183"/>
+        <location filename="../meteo_qt.py" line="177"/>
         <source>Fri</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="184"/>
+        <location filename="../meteo_qt.py" line="178"/>
         <source>Sat</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="185"/>
+        <location filename="../meteo_qt.py" line="179"/>
         <source>Sun</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="458"/>
+        <location filename="../meteo_qt.py" line="484"/>
         <source>Weather status</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1320"/>
+        <location filename="../meteo_qt.py" line="1344"/>
         <source>Min Max Temperature of the day</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1595"/>
+        <location filename="../meteo_qt.py" line="1621"/>
         <source>snow</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1596"/>
+        <location filename="../meteo_qt.py" line="1622"/>
         <source>rain</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2481"/>
+        <location filename="../meteo_qt.py" line="2505"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1269,7 +1275,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="160"/>
+        <location filename="../meteo_qt.py" line="154"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"/>
@@ -1278,7 +1284,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="381"/>
+        <location filename="../settings.py" line="408"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1287,7 +1293,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip</name>
     <message>
-        <location filename="../settings.py" line="57"/>
+        <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1296,25 +1302,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="993"/>
+        <location filename="../meteo_qt.py" line="1017"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="998"/>
+        <location filename="../meteo_qt.py" line="1022"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1003"/>
+        <location filename="../meteo_qt.py" line="1027"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1008"/>
+        <location filename="../meteo_qt.py" line="1032"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
@@ -1323,13 +1329,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1624"/>
+        <location filename="../meteo_qt.py" line="1650"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1629"/>
+        <location filename="../meteo_qt.py" line="1655"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"/>
@@ -1338,7 +1344,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="115"/>
+        <location filename="../meteo_qt.py" line="116"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation type="unfinished"/>
@@ -1347,7 +1353,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2007"/>
+        <location filename="../meteo_qt.py" line="2035"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation type="unfinished"/>
@@ -1384,7 +1390,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="398"/>
+        <location filename="../meteo_qt.py" line="424"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation type="unfinished"/>
@@ -1393,7 +1399,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="653"/>
+        <location filename="../meteo_qt.py" line="677"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation type="unfinished"/>
@@ -1403,7 +1409,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="536"/>
+        <location filename="../meteo_qt.py" line="560"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation type="unfinished"/>
@@ -1422,7 +1428,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="484"/>
+        <location filename="../settings.py" line="511"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1431,7 +1437,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="479"/>
+        <location filename="../settings.py" line="506"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1979,7 +1985,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="103"/>
+        <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
         <translation type="unfinished"/>
@@ -1988,23 +1994,23 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>WorkThread</name>
     <message>
-        <location filename="../searchcity.py" line="348"/>
+        <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="384"/>
+        <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="392"/>
+        <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../searchcity.py" line="392"/>
+        <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
         <translation type="unfinished"/>
