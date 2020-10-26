@@ -89,7 +89,7 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Deutsche Übersetzung</translation>
     </message>
 </context>
 <context>
@@ -431,7 +431,7 @@ Das Komfortniveau ist sehr ungemütlich und womöglich tödlich für Asthmatiker
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Die trockenere Luft kann zu Hautrissen führen und die Haut schneller reizen</translation>
     </message>
 </context>
 <context>
@@ -1104,13 +1104,13 @@ auf Werte um 100DU.</translation>
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Systemstandard</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Symbol-Themen</translation>
     </message>
 </context>
 <context>
