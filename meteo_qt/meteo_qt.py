@@ -933,7 +933,7 @@ class SystemTrayIcon(QMainWindow):
                 day = int(tag.get('dt'))
                 day = time.localtime(day)
                 day = str(day.tm_mday)
-                if not day in self.date_temp_forecast:
+                if day not in self.date_temp_forecast:
                     self.date_temp_forecast[day] = []
                 self.date_temp_forecast[day].append(
                     float(tag['main'].get('temp_max'))
