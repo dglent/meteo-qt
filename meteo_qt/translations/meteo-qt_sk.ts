@@ -89,7 +89,7 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Preklad do nemčiny</translation>
     </message>
 </context>
 <context>
@@ -339,7 +339,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
         <location filename="../meteo_qt.py" line="371"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfortné</translation>
     </message>
 </context>
 <context>
@@ -348,43 +348,43 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Suché</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Veľmi komfortné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Komfortné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>V poriadku</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Nepríjemné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Veľmi nepríjemné</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Strašne nepríjemné</translation>
     </message>
 </context>
 <context>
@@ -393,44 +393,45 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Úroveň pohodlia vynikajúca pre cvičenie</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Intenzívna snaha pravdepodobne nebude ovplyvnená</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Očakávajte, že výkony v pretekoch budú horšie ako za optimálnych podmienok</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Jednoduché tréningy sa pocitovo môžu zdať v poriadku, ale bude zložitejšie súťažiť alebo vyvinúť veľké úsilie</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Očakávajte, že tempo bude veľmi trpieť</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Vyhnite sa cvičeniu. Vynechajte ho alebo dramaticky zmeňte svoj cieľ.
+Úroveň pohodlia je pre osoby trpiace astmou veľmi nepríjemná a možno aj fatálna</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Suchší vzduch môže spôsobiť popraskanie a ľahšie podráždenie pokožky</translation>
     </message>
 </context>
 <context>
@@ -448,7 +449,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="360"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Rosný bod</translation>
     </message>
 </context>
 <context>
@@ -1101,13 +1102,13 @@ v atmosfére je zhruba 300 Dobsonových jednotiek. Čo vedci nazývajú Antarkti
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Predvolený pre systém</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Motív ikon</translation>
     </message>
 </context>
 <context>
