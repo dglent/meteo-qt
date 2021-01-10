@@ -2304,7 +2304,7 @@ class SystemTrayIcon(QMainWindow):
 
         alert_event = ''
         if self.alert_event != '':
-            alert_event = f'\n<b>{self.alert_event}</b>'
+            alert_event = f'\n<b>{self.alert_event.replace("warning", "")}</b>'
 
         self.city_weather_info = (
             '{0} {1} {2}{5}\n{3}\n{4}'.format(
