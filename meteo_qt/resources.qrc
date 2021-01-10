@@ -14,5 +14,6 @@
     <file alias="arrow">images/draw-arrow-down.png</file>
     <file alias="panel">images/preferences-system-windows.png</file>
     <file alias="mylocation">images/mylocation.png</file>
+    <file alias="dialog-warning">images/dialog-warning.png</file>
 </qresource>
 </RCC>

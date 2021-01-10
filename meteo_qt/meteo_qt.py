@@ -29,7 +29,8 @@ from PyQt5.QtGui import (
 )
 from PyQt5.QtWidgets import (
     QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
-    QVBoxLayout, QHBoxLayout, QLabel, QGridLayout, QGraphicsDropShadowEffect
+    QVBoxLayout, QHBoxLayout, QLabel, QGridLayout, QGraphicsDropShadowEffect,
+    QTextBrowser, QPushButton
 )
 
 try:
@@ -132,15 +133,28 @@ class SystemTrayIcon(QMainWindow):
             ),
             self
         )
+        self.alertsAction = QAction(
+            QCoreApplication.translate(
+                'Action to open the dialog with the weather alerts',
+                '&Alerts',
+                'Systray icon context menu'
+            ),
+            self
+        )
+        self.alert_json = None
+        self.alert_event = ''
+        self.alertsAction.setEnabled(False)
         self.settingsAction = QAction(self.tr('&Settings'), self)
         self.aboutAction = QAction(self.tr('&About'), self)
         self.exitAction = QAction(self.tr('Exit'), self)
+        self.menu.addAction(self.alertsAction)
         self.menu.addAction(self.settingsAction)
         self.menu.addAction(self.refreshAction)
         self.menu.addMenu(self.citiesMenu)
         self.menu.addAction(self.tempCityAction)
         self.menu.addAction(self.aboutAction)
         self.menu.addAction(self.exitAction)
+        self.alertsAction.triggered.connect(self.show_alert)
         self.settingsAction.triggered.connect(self.config)
         self.exitAction.triggered.connect(qApp.quit)
         self.refreshAction.triggered.connect(self.manual_refresh)
@@ -231,6 +245,10 @@ class SystemTrayIcon(QMainWindow):
         if icon.isNull():
             icon = QIcon(':/bookmarks')
         self.citiesMenu.setIcon(icon)
+        icon = QIcon.fromTheme('dialog-warning')
+        if icon.isNull():
+            icon = QIcon(':/dialog-warning')
+        self.alertsAction.setIcon(icon)
 
     def set_toggle_tray_interval(self):
         interval = self.settings.value('Toggle_tray_interval') or '0'
@@ -1984,6 +2002,8 @@ class SystemTrayIcon(QMainWindow):
             self.id_,
             self.suffix,
         )
+        self.alertsAction.setEnabled(False)
+        self.alert_event = ''
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.weather_icon_signal.connect(self.weather_icon_name_set)
         self.downloadThread.finished.connect(self.tray)
@@ -1994,7 +2014,19 @@ class SystemTrayIcon(QMainWindow):
         self.downloadThread.uv_signal.connect(self.uv)
         self.downloadThread.error.connect(self.error)
         self.downloadThread.done.connect(self.done)
+        self.downloadThread.alerts_signal.connect(self.alert_received)
         self.downloadThread.start()
+
+    def alert_received(self, alert_json):
+        self.alert_json = alert_json
+        self.alertsAction.setEnabled(True)
+        alert_json[0]['start'] = datetime.datetime.utcfromtimestamp(
+            alert_json[0]['start']
+        ).strftime('%Y-%m-%d %H:%M:%S')
+        alert_json[0]['end'] = datetime.datetime.utcfromtimestamp(
+            alert_json[0]['end']
+        ).strftime('%Y-%m-%d %H:%M:%S')
+        self.alert_event = f"⚠ {alert_json[0]['event']}"
 
     def uv(self, value):
         self.uv_coord = value
@@ -2245,7 +2277,10 @@ class SystemTrayIcon(QMainWindow):
                 self.trendCities_dic[self.id_][4] = True
 
         self.trendCities_dic[self.id_][2] = temp
-        self.systray.setToolTip(self.city_weather_info + self.temp_trend)
+        self.systray.setToolTip(
+            self.city_weather_info.replace('<b>', '').replace('</b>', '')
+            + self.temp_trend
+        )
 
     def tooltip_weather(self):
         # Creation of the tray tootltip
@@ -2263,13 +2298,18 @@ class SystemTrayIcon(QMainWindow):
         if city in trans_cities_dict:
             city_name = trans_cities_dict[city]
 
+        alert_event = ''
+        if self.alert_event != '':
+            alert_event = f'\n<b>{self.alert_event}</b>'
+
         self.city_weather_info = (
-            '{0} {1} {2}\n{3}\n{4}'.format(
+            '{0} {1} {2}{5}\n{3}\n{4}'.format(
                 city_name,
                 self.country,
                 self.temp_decimal,
                 feels_like,
-                self.meteo
+                self.meteo,
+                alert_event
             )
         )
 
@@ -2492,6 +2532,10 @@ class SystemTrayIcon(QMainWindow):
         elif what[0] == 'ID':
             self.id_ = what[1]
 
+    def show_alert(self):
+        dlg = AlertsDLG(self.alert_json, self)
+        dlg.show()
+
     def about(self):
         title = self.tr(
             """<b>meteo-qt</b> v{0}
@@ -2536,6 +2580,7 @@ class Download(QThread):
     uv_signal = pyqtSignal(['PyQt_PyObject'])
     error = pyqtSignal(['QString'])
     done = pyqtSignal([int])
+    alerts_signal = pyqtSignal(['PyQt_PyObject'])
 
     def __init__(self, iconurl, baseurl, day_forecast_url, forecast6_url, id_,
                  suffix, parent=None):
@@ -2673,6 +2718,17 @@ class Download(QThread):
                 lat = str(actual_weather_dic["coord"]["lat"])
                 lon = str(actual_weather_dic["coord"]["lon"])
                 weather_icon = actual_weather_dic["weather"][0]["icon"]
+
+            # ALERTS
+            appid_ind = self.suffix.find('&APPID=')
+            appid = self.suffix[appid_ind + 7:]
+            one_call_url = f'http://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={appid}'
+            one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
+            one_call_rep = one_call_req.read().decode('utf-8')
+            onecall_json = json.loads(one_call_rep)
+            one_call_alert = onecall_json.get('alerts', False)
+            if one_call_alert:
+                self.alerts_signal.emit(one_call_alert)
 
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
@@ -2940,6 +2996,33 @@ class IconDownload(QThread):
             return True
         except:
             return False
+
+
+class AlertsDLG(QDialog):
+
+    def __init__(self, alert_json, parent=None):
+        super(AlertsDLG, self).__init__(parent)
+        textBrowser = QTextBrowser()
+        layout = QVBoxLayout()
+        btn_layout = QHBoxLayout()
+        self.setLayout(layout)
+        layout.addWidget(textBrowser)
+        btn_ok = QPushButton('OK')
+        btn_ok.clicked.connect(self.close)
+        btn_layout.addStretch()
+        btn_layout.addWidget(btn_ok)
+        layout.addLayout(btn_layout)
+        self.setMinimumWidth(400)
+        icon = QIcon.fromTheme('dialog-warning')
+        if icon.isNull():
+            icon = QIcon(':/dialog-warning')
+        self.setWindowIcon(icon)
+        for key, value in alert_json[0].items():
+            if key == 'event':
+                color = "red"
+            else:
+                color = ""
+            textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
 
 
 def main():
