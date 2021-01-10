@@ -543,9 +543,12 @@ class SystemTrayIcon(QMainWindow):
                 self.temp_trend
             )
         )
-        self.weather_label.setText(
-            f'<font size="3"><b>{self.weatherDataDico["Meteo"]}</b></font>'
-        )
+        weather_des = f'<font size="3"><b>{self.weatherDataDico["Meteo"]}</b>'
+        if self.alert_event != '':
+            weather_des += f'<br/>{self.alert_event.replace("warning", "")}</font>'
+        else:
+            weather_des += '</font>'
+        self.weather_label.setText(weather_des)
         self.feels_like_value.setText(
             '{0} {1}'.format(
                 self.weatherDataDico['Feels_like'][0],
