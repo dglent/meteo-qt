@@ -2723,12 +2723,16 @@ class Download(QThread):
             appid_ind = self.suffix.find('&APPID=')
             appid = self.suffix[appid_ind + 7:]
             one_call_url = f'http://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={appid}'
-            one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
-            one_call_rep = one_call_req.read().decode('utf-8')
-            onecall_json = json.loads(one_call_rep)
-            one_call_alert = onecall_json.get('alerts', False)
-            if one_call_alert:
-                self.alerts_signal.emit(one_call_alert)
+            logging.debug(f'OneCall URL : {one_call_url}')
+            try:
+                one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
+                one_call_rep = one_call_req.read().decode('utf-8')
+                onecall_json = json.loads(one_call_rep)
+                one_call_alert = onecall_json.get('alerts', False)
+                if one_call_alert:
+                    self.alerts_signal.emit(one_call_alert)
+            except timeout:
+                logging.warning(f'Timeout error. Cannot fetch onecall data')
 
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
