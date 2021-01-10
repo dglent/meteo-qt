@@ -2725,7 +2725,11 @@ class Download(QThread):
             # ALERTS
             appid_ind = self.suffix.find('&APPID=')
             appid = self.suffix[appid_ind + 7:]
-            one_call_url = f'http://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={appid}'
+            exclude = 'current,minutely,hourly,daily'
+            one_call_url = (
+                f'http://api.openweathermap.org/data/2.5/onecall?'
+                f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}'
+            )
             logging.debug(f'OneCall URL : {one_call_url}')
             try:
                 one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
