@@ -2023,12 +2023,13 @@ class SystemTrayIcon(QMainWindow):
     def alert_received(self, alert_json):
         self.alert_json = alert_json
         self.alertsAction.setEnabled(True)
-        alert_json[0]['start'] = datetime.datetime.utcfromtimestamp(
-            alert_json[0]['start']
-        ).strftime('%Y-%m-%d %H:%M:%S')
-        alert_json[0]['end'] = datetime.datetime.utcfromtimestamp(
-            alert_json[0]['end']
-        ).strftime('%Y-%m-%d %H:%M:%S')
+        for i in range(len(alert_json)):
+            alert_json[i]['start'] = datetime.datetime.utcfromtimestamp(
+                alert_json[i]['start']
+            ).strftime('%Y-%m-%d %H:%M:%S')
+            alert_json[i]['end'] = datetime.datetime.utcfromtimestamp(
+                alert_json[i]['end']
+            ).strftime('%Y-%m-%d %H:%M:%S')
         self.alert_event = f"⚠ {alert_json[0]['event']}"
 
     def uv(self, value):
@@ -3028,12 +3029,15 @@ class AlertsDLG(QDialog):
         if icon.isNull():
             icon = QIcon(':/dialog-warning')
         self.setWindowIcon(icon)
-        for key, value in alert_json[0].items():
-            if key == 'event':
-                color = "red"
-            else:
-                color = ""
-            textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
+        for i in range(len(alert_json)):
+            for key, value in alert_json[i].items():
+                if key == 'event':
+                    color = "red"
+                else:
+                    color = ""
+                textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
+            if i < len(alert_json):
+                textBrowser.append('<br/>')
 
 
 def main():
