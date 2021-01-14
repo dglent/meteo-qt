@@ -25,7 +25,7 @@ from PyQt5.QtCore import (
 )
 from PyQt5.QtGui import (
     QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
-    QTransform, QTextDocument
+    QTransform, QTextDocument, QTextCursor
 )
 from PyQt5.QtWidgets import (
     QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
@@ -3038,6 +3038,7 @@ class AlertsDLG(QDialog):
                 textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
             if i < len(alert_json):
                 textBrowser.append('<br/>')
+        textBrowser.moveCursor(QTextCursor.Start)
 
 
 def main():
