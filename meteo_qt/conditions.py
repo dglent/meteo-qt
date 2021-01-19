@@ -190,19 +190,19 @@ class WeatherConditions(QObject):
 
         self.beaufort = {
             '0': QCoreApplication.translate(
-                'Beaufort scale 0 - Wikipedia',
+                'Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Sea like a mirror\nLand: Calm. Smoke rises vertically',
                 'Tooltip in Weather overview dialogue'
             ),
             '1': QCoreApplication.translate(
-                'Beaufort scale 1 - Wikipedia',
+                'Beaufort scale 1 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Ripples with the appearance of scales are formed,'
                 'but without foam crests\nLand: Smoke drift indicates wind '
                 'direction. Leaves and wind vanes are stationary',
                 'Tooltip in Weather overview dialogue'
             ),
             '2': QCoreApplication.translate(
-                'Beaufort scale 2 - Wikipedia',
+                'Beaufort scale 2 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Small wavelets, still short but more pronounced; '
                 'crests have a glassy appearance and do not break\nLand: '
                 'Wind felt on exposed skin. Leaves rustle. Wind vanes begin '
@@ -210,28 +210,28 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '3': QCoreApplication.translate(
-                'Beaufort scale 3 - Wikipedia',
+                'Beaufort scale 3 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Large wavelets. Crests begin to break; '
                 'scattered whitecaps\nLand: Leaves and small twigs constantly '
                 'moving, light flags extended',
                 'Tooltip in Weather overview dialogue'
             ),
             '4': QCoreApplication.translate(
-                'Beaufort scale 4 - Wikipedia',
+                'Beaufort scale 4 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Small waves with breaking crests. Fairly frequent '
                 'whitecaps\nLand: Dust and loose paper raised. Small branches '
                 'begin to move',
                 'Tooltip in Weather overview dialogue'
             ),
             '5': QCoreApplication.translate(
-                'Beaufort scale 5 - Wikipedia',
+                'Beaufort scale 5 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Moderate waves of some length. Many whitecaps. '
                 'Small amounts of spray\nLand: Branches of a moderate size '
                 'move. Small trees in leaf begin to sway',
                 'Tooltip in Weather overview dialogue'
             ),
             '6': QCoreApplication.translate(
-                'Beaufort scale 6 - Wikipedia',
+                'Beaufort scale 6 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Long waves begin to form. White foam crests are very '
                 'frequent. Some airborne spray is present\nLand: '
                 'Large branches in motion. Whistling heard in overhead wires. '
@@ -239,7 +239,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '7': QCoreApplication.translate(
-                'Beaufort scale 7 - Wikipedia',
+                'Beaufort scale 7 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Sea heaps up. Some foam from breaking waves is blown '
                 'into streaks along wind direction. Moderate amounts of '
                 'airborne spray\nLand: Whole trees in motion. Effort needed'
@@ -247,7 +247,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '8': QCoreApplication.translate(
-                'Beaufort scale 8 - Wikipedia',
+                'Beaufort scale 8 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Moderately high waves with breaking crests forming '
                 'spindrift. Well-marked streaks of foam are blown along wind '
                 'direction. Considerable airborne spray\nLand: Some twigs '
@@ -256,7 +256,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '9': QCoreApplication.translate(
-                'Beaufort scale 9 - Wikipedia',
+                'Beaufort scale 9 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: High waves whose crests sometimes roll over. '
                 'Dense foam is blown along wind direction. Large amounts '
                 'of airborne spray may begin to reduce visibility\nLand: '
@@ -265,7 +265,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '10': QCoreApplication.translate(
-                'Beaufort scale 10 - Wikipedia',
+                'Beaufort scale 10 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Very high waves with overhanging crests. '
                 'Large patches of foam from wave crests give the sea a white '
                 'appearance. Considerable tumbling of waves with heavy '
@@ -275,7 +275,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '11': QCoreApplication.translate(
-                'Beaufort scale 11 - Wikipedia',
+                'Beaufort scale 11 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Exceptionally high waves. Very large patches of foam, '
                 'driven before the wind, cover much of the sea surface. Very '
                 'large amounts of airborne spray severely reduce visibility\n'
@@ -283,7 +283,7 @@ class WeatherConditions(QObject):
                 'Tooltip in Weather overview dialogue'
             ),
             '12': QCoreApplication.translate(
-                'Beaufort scale 12 - Wikipedia',
+                'Beaufort scale 12 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Huge waves. Sea is completely white with foam and '
                 'spray. Air is filled with driving spray, greatly reducing '
                 'visibility\nLand: Severe widespread damage to '
