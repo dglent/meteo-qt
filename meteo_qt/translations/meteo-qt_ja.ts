@@ -841,7 +841,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>天気の更新を通知する</translation>
+        <translation>気象の更新を通知する</translation>
     </message>
     <message>
         <location filename="../settings.py" line="519"/>
@@ -1124,7 +1124,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation>天気ウィンドウでマウスのスクロールで地域を切り換えます</translation>
+        <translation>気象ウィンドウでマウスのスクロールで地域を切り換えます</translation>
     </message>
 </context>
 <context>
@@ -1254,7 +1254,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="502"/>
         <source>Weather status</source>
-        <translation>天気情報</translation>
+        <translation>気象情報</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1362"/>
@@ -1393,7 +1393,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="2067"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation>天気データを検索しています...</translation>
+        <translation>気象データを検索しています...</translation>
     </message>
 </context>
 <context>
