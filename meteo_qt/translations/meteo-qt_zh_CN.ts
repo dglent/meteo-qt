@@ -91,6 +91,11 @@
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>AboutDialog</name>
@@ -130,145 +135,171 @@
 </context>
 <context>
     <name>Beaufort scale 0 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="192"/>
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：海像镜子一样
-土地：平静。烟雾垂直上升</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 1 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 1 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="197"/>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：形成鳞片外观的涟漪，但没有泡沫峰
-地：烟雾漂移表示风向。叶子和风向叶是固定的</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 10 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 10 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="267"/>
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：非常高的波浪，有悬垂的波峰。来自波峰的大块泡沫使海洋呈现白色外观。波浪大幅翻滚，撞击严重。大量的空气喷雾会降低能见度
-地：树木被折断或连根拔起，可能造成结构性破坏</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 11 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 11 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="277"/>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：异常高的海浪。在风之前驱动的非常大的泡沫块覆盖了大部分海面。大量的空气喷雾会严重降低能见度
-地：可能是广泛的植被和结构破坏</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 12 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 12 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="285"/>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：巨浪。海是完全白色的泡沫和喷雾。空气中充满了驱动喷雾，大大降低了能见度
-地：植被和建筑物受到严重破坏。碎片和有安全隐患的物体被抛出</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 2 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 2 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="204"/>
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：小波浪，仍然短但更明显;波峰外观呈玻璃状，不会破裂
-地：暴露在皮肤上的风。叶沙沙作响。风向标开始移动</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 3 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 3 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="212"/>
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：大小波。波峰开始破裂;分散的白帽
-地：叶子和小树枝不断摆动，旗布伸张</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 4 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 4 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="219"/>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：破碎波峰的小波浪。相当频繁的白帽
-地：灰尘和松散的纸张飞起。小树枝开始移动</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 5 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 5 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="226"/>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：一定长度的中等波浪。许多白帽。少量喷雾
-地：中等大小的树枝分支摆动。叶子中的小树开始摇摆</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 6 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 6 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="233"/>
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：长波开始形成。白色泡沫峰是非常频繁的。存在一些空气喷雾
-地：大树枝在摇动。在架空电线中听到吹口哨声。伞的使用变得困难。空塑料箱呼啸</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 7 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 7 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="241"/>
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：海堆积起来。来自破碎波的一些泡沫被吹成沿风向的条纹。适量的空气喷雾
-地：整棵树在摇动。需要努力逆风行走</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 8 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 8 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="249"/>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：中等高波浪，破碎的波峰形成了浪花。沿着风向吹出明显的泡沫条纹。相当大的空气喷雾
-地：一些从树被折断树枝。汽车在路上被吹转向。步行的进展受到严重阻碍</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>Beaufort scale 9 - Wikipedia</name>
+</context>
+<context>
+    <name>Beaufort scale 9 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="258"/>
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>海：高波浪，其波峰有时会翻滚。密集的泡沫沿着风向吹。大量的空气喷雾可能会降低能见度
-地：一些树木树枝折断，一些小树木被吹倒了。施工/临时标志和路障被摧毁</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -463,7 +494,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1705"/>
+        <location filename="../meteo_qt.py" line="1708"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -918,7 +949,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1719"/>
+        <location filename="../meteo_qt.py" line="1722"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -1158,7 +1189,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2458"/>
+        <location filename="../meteo_qt.py" line="2462"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>必须重新启动应用程序才能应用语言设置</translation>
     </message>
@@ -1196,32 +1227,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>正在查找天气数据...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
+        <location filename="../meteo_qt.py" line="1954"/>
         <source>Empty list</source>
         <translation>空的列表</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1968"/>
+        <location filename="../meteo_qt.py" line="1971"/>
         <source>No city configured</source>
         <translation>没有配置城市</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1981"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>No city has been configured yet.</source>
         <translation>尚未配置任何城市。</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1981"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>右键单击图标，然后单击“设置”。</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2524"/>
+        <location filename="../meteo_qt.py" line="2528"/>
         <source>Fetching weather data...</source>
         <translation>获取天气数据......</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2540"/>
+        <location filename="../meteo_qt.py" line="2544"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1270,22 +1301,22 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>天气状况</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1362"/>
+        <location filename="../meteo_qt.py" line="1365"/>
         <source>Min Max Temperature of the day</source>
         <translation>当天最低最高温度</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1639"/>
+        <location filename="../meteo_qt.py" line="1642"/>
         <source>snow</source>
         <translation>雪</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1640"/>
+        <location filename="../meteo_qt.py" line="1643"/>
         <source>rain</source>
         <translation>雨</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2549"/>
+        <location filename="../meteo_qt.py" line="2553"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1354,25 +1385,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1035"/>
+        <location filename="../meteo_qt.py" line="1038"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1040"/>
+        <location filename="../meteo_qt.py" line="1043"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1045"/>
+        <location filename="../meteo_qt.py" line="1048"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1050"/>
+        <location filename="../meteo_qt.py" line="1053"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation type="unfinished"/>
@@ -1381,13 +1412,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1668"/>
+        <location filename="../meteo_qt.py" line="1671"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1673"/>
+        <location filename="../meteo_qt.py" line="1676"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"/>
@@ -1405,7 +1436,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2067"/>
+        <location filename="../meteo_qt.py" line="2071"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>正在查找天气数据...</translation>
@@ -1451,7 +1482,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="695"/>
+        <location filename="../meteo_qt.py" line="698"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation type="unfinished"/>
@@ -1461,7 +1492,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="578"/>
+        <location filename="../meteo_qt.py" line="581"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation type="unfinished"/>
