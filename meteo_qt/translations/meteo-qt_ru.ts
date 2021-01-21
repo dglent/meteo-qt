@@ -89,12 +89,12 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Перевод на немецкий</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Перевод на японский</translation>
     </message>
 </context>
 <context>
@@ -121,7 +121,7 @@
         <location filename="../meteo_qt.py" line="136"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Уведомления</translation>
     </message>
 </context>
 <context>
@@ -143,7 +143,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Зеркально гладкое море
+Суша: Безветрие, дым поднимается вертикально, листья деревьев неподвижны</translation>
     </message>
 </context>
 <context>
@@ -156,7 +157,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Рябь, пены на гребнях волн нет. Высота волн до 0,1 м
+Суша: Направление ветра заметно по относу дыма, но не по флюгеру</translation>
     </message>
 </context>
 <context>
@@ -169,7 +171,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Очень высокие волны с длинными загибающимися вниз гребнями. Образующаяся пена выдувается ветром большими хлопьями в виде густых белых полос. Поверхность моря белая от пены. Сильный грохот волн подобен ударам
+Суша: Значительные разрушения строений, ветер вырывает деревья с корнем</translation>
     </message>
 </context>
 <context>
@@ -182,7 +185,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Видимость плохая. Исключительно высокие волны. Море всё покрыто длинными белыми хлопьями пены, располагающимися по ветру. Края волн повсюду сдуваются в пену
+Суша: Большие разрушения на значительном пространстве. Наблюдается очень редко.</translation>
     </message>
 </context>
 <context>
@@ -195,7 +199,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Исключительно плохая видимость. Воздух наполнен пеной и брызгами. Всё море покрыто полосами пены
+Суша: Огромные разрушения, серьезно повреждены здания, строения и дома, деревья вырваны с корнями, растительность уничтожена. Случай очень редкий.</translation>
     </message>
 </context>
 <context>
@@ -208,7 +213,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Короткие волны максимальной высотой до 0,3 м, гребни не опрокидываются и кажутся стекловидными
+Суша: Движение ветра ощущается лицом, шелестят листья, приводится в движение флюгер</translation>
     </message>
 </context>
 <context>
@@ -221,7 +227,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Короткие, хорошо выраженные волны. Гребни, опрокидываясь, образуют стекловидную пену. Изредка образуются маленькие барашки.
+Суша: Листья и тонкие ветви деревьев всё время колышутся, ветер развевает лёгкие флаги</translation>
     </message>
 </context>
 <context>
@@ -234,7 +241,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Волны удлинённые, барашки видны во многих местах.
+Суша: Ветер поднимает пыль и мусор, приводит в движение тонкие ветви деревьев</translation>
     </message>
 </context>
 <context>
@@ -247,7 +255,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Хорошо развитые в длину, но не крупные волны. Повсюду видны белые барашки, в отдельных случаях образуются брызги
+Суша: Качаются тонкие стволы деревьев, движение ветра ощущается рукой</translation>
     </message>
 </context>
 <context>
@@ -260,7 +269,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Хорошо развитые в длину, но не крупные волны. Повсюду видны белые барашки, в отдельных случаях образуются брызги
+Суша: Качаются тонкие стволы деревьев, движение ветра ощущается рукой</translation>
     </message>
 </context>
 <context>
@@ -273,7 +283,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Волны громоздятся, гребни волн срываются, пена ложится полосами по ветру
+Суша: Качаются стволы деревьев. Требуется усилие чтобы идти против ветра</translation>
     </message>
 </context>
 <context>
@@ -286,7 +297,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Умеренно высокие длинные волны. По краям гребней начинают взлетать брызги. Полосы пены ложатся рядами по направлению ветра.
+Суша: Ветер ломает сучья деревьев, идти против ветра очень трудно</translation>
     </message>
 </context>
 <context>
@@ -299,7 +311,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Море: Пена широкими плотными полосами ложится по ветру. Гребни волн начинают опрокидываться и рассыпаться в брызги, которые ухудшают видимость
+Суша: Небольшие повреждения, ветер начинает разрушать крыши зданий</translation>
     </message>
 </context>
 <context>
@@ -488,7 +501,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="378"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Точка росы</translation>
     </message>
 </context>
 <context>
@@ -1148,13 +1161,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Системное значение по умолчанию</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"/>
+        <translation>Тема иконок</translation>
     </message>
 </context>
 <context>
