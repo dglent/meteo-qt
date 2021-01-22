@@ -63,6 +63,7 @@ class SystemTrayIcon(QMainWindow):
         super(SystemTrayIcon, self).__init__(parent)
         self.settings = QSettings()
         self.cityChangeTimer = QTimer()
+        self.alerts_dlg = AlertsDLG(parent=self)
         self.cityChangeTimer.timeout.connect(self.update_city_gif)
 
         self.language = self.settings.value('Language') or ''
@@ -2007,6 +2008,7 @@ class SystemTrayIcon(QMainWindow):
         )
         self.alertsAction.setEnabled(False)
         self.alert_event = ''
+        self.alerts_dlg.textBrowser.clear()
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.weather_icon_signal.connect(self.weather_icon_name_set)
         self.downloadThread.finished.connect(self.tray)
@@ -2030,7 +2032,11 @@ class SystemTrayIcon(QMainWindow):
             alert_json[i]['end'] = datetime.datetime.utcfromtimestamp(
                 alert_json[i]['end']
             ).strftime('%Y-%m-%d %H:%M:%S')
-        self.alert_event = f"⚠ {alert_json[0]['event']}"
+        total = ''
+        if len(alert_json) > 1:
+            total = f'1/{len(alert_json)}'
+        self.alert_event = f"⚠ {alert_json[0]['event']}{total}"
+        self.alerts_dlg.show_alert(self.alert_json)
 
     def uv(self, value):
         self.uv_coord = value
@@ -2537,8 +2543,8 @@ class SystemTrayIcon(QMainWindow):
             self.id_ = what[1]
 
     def show_alert(self):
-        dlg = AlertsDLG(self.alert_json, self)
-        dlg.show()
+        self.alerts_dlg.show_alert(self.alert_json)
+        self.alerts_dlg.show()
 
     def about(self):
         title = self.tr(
@@ -3012,13 +3018,13 @@ class IconDownload(QThread):
 
 class AlertsDLG(QDialog):
 
-    def __init__(self, alert_json, parent=None):
+    def __init__(self, parent=None):
         super(AlertsDLG, self).__init__(parent)
-        textBrowser = QTextBrowser()
+        self.textBrowser = QTextBrowser()
         layout = QVBoxLayout()
         btn_layout = QHBoxLayout()
         self.setLayout(layout)
-        layout.addWidget(textBrowser)
+        layout.addWidget(self.textBrowser)
         btn_ok = QPushButton('OK')
         btn_ok.clicked.connect(self.close)
         btn_layout.addStretch()
@@ -3029,16 +3035,19 @@ class AlertsDLG(QDialog):
         if icon.isNull():
             icon = QIcon(':/dialog-warning')
         self.setWindowIcon(icon)
+
+    def show_alert(self, alert_json):
+        self.textBrowser.clear()
         for i in range(len(alert_json)):
             for key, value in alert_json[i].items():
                 if key == 'event':
                     color = "red"
                 else:
                     color = ""
-                textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
+                self.textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
             if i < len(alert_json):
-                textBrowser.append('<br/>')
-        textBrowser.moveCursor(QTextCursor.Start)
+                self.textBrowser.append('<br/>')
+        self.textBrowser.moveCursor(QTextCursor.Start)
 
 
 def main():
