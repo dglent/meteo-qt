@@ -63,9 +63,10 @@ class SystemTrayIcon(QMainWindow):
         super(SystemTrayIcon, self).__init__(parent)
         self.settings = QSettings()
         self.cityChangeTimer = QTimer()
-        self.alerts_dlg = AlertsDLG(parent=self)
         self.cityChangeTimer.timeout.connect(self.update_city_gif)
-
+        self.alerts_dlg = AlertsDLG(parent=self)
+        self.alerts_timer = QTimer()
+        self.alerts_timer.timeout.connect(self.next_alert_event)
         self.language = self.settings.value('Language') or ''
         self.temp_decimal_bool = self.settings.value('Decimal') or False
         # initialize the tray icon type in case of first run: issue#42
@@ -502,6 +503,14 @@ class SystemTrayIcon(QMainWindow):
         self.overviewcitydlg.setLayout(self.total_layout)
         self.setWindowTitle(self.tr('Weather status'))
 
+    def overviewcity_weather_label(self):
+        weather_des = f'<font size="3"><b>{self.weatherDataDico["Meteo"]}</b>'
+        if self.alert_event != '':
+            weather_des += f'<br/>{self.alert_event.replace("warning", "")}</font>'
+        else:
+            weather_des += '</font>'
+        self.weather_label.setText(weather_des)
+
     def overviewcity(self):
         self.forecast_weather_list = []
         self.dayforecast_weather_list = []
@@ -544,12 +553,9 @@ class SystemTrayIcon(QMainWindow):
                 self.temp_trend
             )
         )
-        weather_des = f'<font size="3"><b>{self.weatherDataDico["Meteo"]}</b>'
-        if self.alert_event != '':
-            weather_des += f'<br/>{self.alert_event.replace("warning", "")}</font>'
-        else:
-            weather_des += '</font>'
-        self.weather_label.setText(weather_des)
+        # Set the current weather label + alert message
+        self.overviewcity_weather_label()
+
         self.feels_like_value.setText(
             '{0} {1}'.format(
                 self.weatherDataDico['Feels_like'][0],
@@ -2011,6 +2017,9 @@ class SystemTrayIcon(QMainWindow):
         )
         self.alertsAction.setEnabled(False)
         self.alert_event = ''
+        self.alerts_cycle = 0
+        self.alert_json = ''
+        self.alerts_timer.stop()
         self.alerts_dlg.textBrowser.clear()
         self.downloadThread.wimage['PyQt_PyObject'].connect(self.makeicon)
         self.downloadThread.weather_icon_signal.connect(self.weather_icon_name_set)
@@ -2027,6 +2036,8 @@ class SystemTrayIcon(QMainWindow):
 
     def alert_received(self, alert_json):
         self.alert_json = alert_json
+        if len(alert_json) > 0:
+            self.alerts_timer.start(3000)
         self.alertsAction.setEnabled(True)
         for i in range(len(alert_json)):
             alert_json[i]['start'] = datetime.datetime.utcfromtimestamp(
@@ -2035,11 +2046,21 @@ class SystemTrayIcon(QMainWindow):
             alert_json[i]['end'] = datetime.datetime.utcfromtimestamp(
                 alert_json[i]['end']
             ).strftime('%Y-%m-%d %H:%M:%S')
+        self.alert_message()
+
+    def alert_message(self):
         total = ''
-        if len(alert_json) > 1:
-            total = f'1/{len(alert_json)}'
-        self.alert_event = f"⚠ {alert_json[0]['event']}{total}"
-        self.alerts_dlg.show_alert(self.alert_json)
+        if len(self.alert_json) > 1:
+            total = f' {self.alerts_cycle + 1}/{len(self.alert_json)}'
+        event_message = self.alert_json[self.alerts_cycle]['event'].lower().replace('warning', '')
+        self.alert_event = f"⚠ {event_message}{total}"
+
+    def next_alert_event(self):
+        self.alerts_cycle += 1
+        if self.alerts_cycle == len(self.alert_json):
+            self.alerts_cycle = 0
+        self.alert_message()
+        self.overviewcity_weather_label()
 
     def uv(self, value):
         self.uv_coord = value
@@ -2313,7 +2334,7 @@ class SystemTrayIcon(QMainWindow):
 
         alert_event = ''
         if self.alert_event != '':
-            alert_event = f'\n<b>{self.alert_event.replace("warning", "")}</b>'
+            alert_event = f'\n<b>{self.alert_event}</b>'
 
         self.city_weather_info = (
             '{0} {1} {2}{5}\n{3}\n{4}'.format(
