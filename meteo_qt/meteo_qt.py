@@ -3106,7 +3106,7 @@ def main():
 
     logging.basicConfig(
         format='%(asctime)s %(levelname)s: %(message)s'
-        '- %(lineno)s: %(module)s',
+        ' - %(lineno)s: %(module)s',
         datefmt='%Y/%m/%d %H:%M:%S',
         filename=logFile, level=logLevel
     )
