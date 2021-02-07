@@ -1955,6 +1955,8 @@ class SystemTrayIcon(QMainWindow):
         self.citiesMenu.addAction(self.tr('Empty list'))
 
     def refresh(self):
+        logging.debug('-------- START ---------')
+
         if (
             hasattr(self, 'overviewcitydlg')
             and not self.cityChangeTimer.isActive()
@@ -1972,6 +1974,7 @@ class SystemTrayIcon(QMainWindow):
             self.systray.setToolTip(self.tr('No city configured'))
             return
         self.city, self.country, self.id_ = self.current_city_display.split('_')
+        logging.debug(self.current_city_display)
         self.unit = self.settings.value('Unit') or 'metric'
         self.wind_unit_speed = self.settings.value('Wind_unit') or 'df'
         self.suffix = f'&mode=xml&units={self.unit}{self.appid}'
@@ -1993,9 +1996,9 @@ class SystemTrayIcon(QMainWindow):
     def update(self):
         if hasattr(self, 'downloadThread'):
             if self.downloadThread.isRunning():
-                logging.debug('remaining thread...')
+                logging.debug('Update: remaining thread, canceling...')
                 return
-        logging.debug('Update...')
+        logging.debug('Updating...')
         self.icon_loading()
         self.wIcon = QPixmap(':/noicon')
         self.downloadThread = Download(
@@ -3042,6 +3045,7 @@ class AlertsDLG(QDialog):
             for key, value in alert_json[i].items():
                 if key == 'event':
                     color = "red"
+                    logging.info(f'ALERT {value.lower().replace("warning", "")}')
                 else:
                     color = ""
                 self.textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
