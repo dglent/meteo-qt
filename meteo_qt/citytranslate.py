@@ -55,7 +55,7 @@ class CityTranslate(QDialog):
                 self.status_label.setText(
                     QCoreApplication.translate(
                         'Warning message in dialog status bar',
-                        'The city allready exist',
+                        'The city already exist',
                         'City translation'
                     )
                 )
