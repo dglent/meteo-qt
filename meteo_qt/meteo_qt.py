@@ -2046,6 +2046,7 @@ class SystemTrayIcon(QMainWindow):
             alert_json[i]['end'] = datetime.datetime.utcfromtimestamp(
                 alert_json[i]['end']
             ).strftime('%Y-%m-%d %H:%M:%S')
+        self.alerts_dlg.show_alert(self.alert_json)
         self.alert_message()
 
     def alert_message(self):
