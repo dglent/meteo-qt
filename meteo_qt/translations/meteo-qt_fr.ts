@@ -118,7 +118,7 @@
 <context>
     <name>Action to open the dialog with the weather alerts</name>
     <message>
-        <location filename="../meteo_qt.py" line="136"/>
+        <location filename="../meteo_qt.py" line="138"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
         <translation type="unfinished"/>
@@ -127,14 +127,11 @@
 <context>
     <name>Action to refresh the weather infos from the server</name>
     <message>
-        <location filename="../meteo_qt.py" line="128"/>
+        <location filename="../meteo_qt.py" line="130"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
         <translation>&amp;Rafraîchir</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 0 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -148,9 +145,6 @@ Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignen
     </message>
 </context>
 <context>
-    <name>Beaufort scale 1 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 1 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="197"/>
@@ -160,9 +154,6 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m.
 Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;orientent pas.</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 10 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 10 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -176,9 +167,6 @@ Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s
     </message>
 </context>
 <context>
-    <name>Beaufort scale 11 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 11 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="277"/>
@@ -188,9 +176,6 @@ Land: Widespread vegetation and structural damage likely</source>
         <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d&apos;écume présente, se déplaçant par le vent et recouvrant d&apos;importantes superficies marines . Beaucoup d’embrun dans l&apos;air réduisant fortement la visibilité.
 Sur terre: Importants dégâts à la végétation. Nombreuses destructions </translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 12 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 12 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -204,9 +189,6 @@ Sur terre : Dégâts très importants de l&apos;ordre de la catastrophe naturell
     </message>
 </context>
 <context>
-    <name>Beaufort scale 2 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 2 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="204"/>
@@ -216,9 +198,6 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
 Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 3 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 3 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -232,9 +211,6 @@ Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les giro
     </message>
 </context>
 <context>
-    <name>Beaufort scale 4 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 4 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="219"/>
@@ -244,9 +220,6 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
 Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 5 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 5 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -260,9 +233,6 @@ Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</trans
     </message>
 </context>
 <context>
-    <name>Beaufort scale 6 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 6 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="233"/>
@@ -272,9 +242,6 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <translation>En mer : Crêtes d&apos;écume blanches, lames, embruns, vagues de 3 à 4m.
 Sur terre : On entend siffler le vent. Les branches de large diamètre s&apos;agitent. Les parapluies sont susceptibles de se retourner</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 7 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 7 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -288,9 +255,6 @@ Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir dif
     </message>
 </context>
 <context>
-    <name>Beaufort scale 8 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 8 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="249"/>
@@ -300,9 +264,6 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <translation>En mer : Tourbillons d&apos;écume à la crête des lames, traînées d&apos;écume, vagues de 5,5 à 7,5m
 Sur terre : Les branches sont susceptibles de casser. La marche contre le vent est très difficile, voire impossible.</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 9 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 9 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -389,7 +350,7 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="389"/>
+        <location filename="../meteo_qt.py" line="391"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Confort</translation>
@@ -489,7 +450,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="431"/>
+        <location filename="../meteo_qt.py" line="433"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Lumière du jour</translation>
@@ -498,7 +459,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="378"/>
+        <location filename="../meteo_qt.py" line="380"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Point de rosée</translation>
@@ -507,7 +468,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1708"/>
+        <location filename="../meteo_qt.py" line="1715"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -592,7 +553,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="330"/>
+        <location filename="../meteo_qt.py" line="332"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Vent</translation>
@@ -601,7 +562,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="345"/>
+        <location filename="../meteo_qt.py" line="347"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Nuageux</translation>
@@ -610,7 +571,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="367"/>
+        <location filename="../meteo_qt.py" line="369"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Humidité</translation>
@@ -619,7 +580,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="356"/>
+        <location filename="../meteo_qt.py" line="358"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Pression</translation>
@@ -628,7 +589,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="411"/>
+        <location filename="../meteo_qt.py" line="413"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Aube</translation>
@@ -637,7 +598,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="420"/>
+        <location filename="../meteo_qt.py" line="422"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Crépuscule</translation>
@@ -949,7 +910,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="454"/>
+        <location filename="../meteo_qt.py" line="456"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozone</translation>
@@ -958,7 +919,7 @@ quand le soleil est le plus fort.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1722"/>
+        <location filename="../meteo_qt.py" line="1729"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -995,7 +956,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="400"/>
+        <location filename="../meteo_qt.py" line="402"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Precipitation</translation>
@@ -1199,7 +1160,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2462"/>
+        <location filename="../meteo_qt.py" line="2492"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>L&apos;application doit être relancée pour appliquer les modifications</translation>
     </message>
@@ -1207,62 +1168,62 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="114"/>
+        <location filename="../meteo_qt.py" line="116"/>
         <source>Cities</source>
         <translation>Villes</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="127"/>
+        <location filename="../meteo_qt.py" line="129"/>
         <source>&amp;Temporary city</source>
         <translation>Ville &amp;temporaire</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="147"/>
+        <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Settings</source>
         <translation>&amp;Paramètres</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="148"/>
+        <location filename="../meteo_qt.py" line="150"/>
         <source>&amp;About</source>
         <translation>&amp;À propos</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="149"/>
+        <location filename="../meteo_qt.py" line="151"/>
         <source>Exit</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="167"/>
+        <location filename="../meteo_qt.py" line="169"/>
         <source>Searching weather data...</source>
         <translation>Recherche des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1954"/>
+        <location filename="../meteo_qt.py" line="1961"/>
         <source>Empty list</source>
         <translation>Liste vide</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1971"/>
+        <location filename="../meteo_qt.py" line="1980"/>
         <source>No city configured</source>
         <translation>Pas de ville configurée</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="1994"/>
         <source>No city has been configured yet.</source>
         <translation>Aucune ville n&apos;a encore été configurée.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="1994"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2528"/>
+        <location filename="../meteo_qt.py" line="2558"/>
         <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2544"/>
+        <location filename="../meteo_qt.py" line="2574"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1271,62 +1232,62 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="187"/>
+        <location filename="../meteo_qt.py" line="189"/>
         <source>Mon</source>
         <translation>Lun</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="188"/>
+        <location filename="../meteo_qt.py" line="190"/>
         <source>Tue</source>
         <translation>Mar</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="189"/>
+        <location filename="../meteo_qt.py" line="191"/>
         <source>Wed</source>
         <translation>Mer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="190"/>
+        <location filename="../meteo_qt.py" line="192"/>
         <source>Thu</source>
         <translation>Jeu</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="191"/>
+        <location filename="../meteo_qt.py" line="193"/>
         <source>Fri</source>
         <translation>Ven</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="192"/>
+        <location filename="../meteo_qt.py" line="194"/>
         <source>Sat</source>
         <translation>Sam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="193"/>
+        <location filename="../meteo_qt.py" line="195"/>
         <source>Sun</source>
         <translation>Dim</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="502"/>
+        <location filename="../meteo_qt.py" line="504"/>
         <source>Weather status</source>
         <translation>Relevé météorologique</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1365"/>
+        <location filename="../meteo_qt.py" line="1372"/>
         <source>Min Max Temperature of the day</source>
         <translation>Températures min et max et de la journée</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1642"/>
+        <location filename="../meteo_qt.py" line="1649"/>
         <source>snow</source>
         <translation>neige</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1643"/>
+        <location filename="../meteo_qt.py" line="1650"/>
         <source>rain</source>
         <translation>pluie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2553"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1351,7 +1312,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="168"/>
+        <location filename="../meteo_qt.py" line="170"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
         <translation>Ressentie</translation>
@@ -1378,25 +1339,25 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1038"/>
+        <location filename="../meteo_qt.py" line="1045"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Jour</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1043"/>
+        <location filename="../meteo_qt.py" line="1050"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Matin</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1048"/>
+        <location filename="../meteo_qt.py" line="1055"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Soir</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1053"/>
+        <location filename="../meteo_qt.py" line="1060"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Nuit</translation>
@@ -1405,13 +1366,13 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1671"/>
+        <location filename="../meteo_qt.py" line="1678"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Pression</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1676"/>
+        <location filename="../meteo_qt.py" line="1683"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Humidité</translation>
@@ -1420,7 +1381,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="117"/>
+        <location filename="../meteo_qt.py" line="119"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Basculer la fenêtre</translation>
@@ -1429,7 +1390,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2071"/>
+        <location filename="../meteo_qt.py" line="2101"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Cherche les données climatiques...</translation>
@@ -1466,7 +1427,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="442"/>
+        <location filename="../meteo_qt.py" line="444"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1475,7 +1436,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="698"/>
+        <location filename="../meteo_qt.py" line="705"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Acquisition des données... </translation>
@@ -1485,7 +1446,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="581"/>
+        <location filename="../meteo_qt.py" line="588"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>
@@ -1523,9 +1484,9 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
     <name>Warning message in dialog status bar</name>
     <message>
         <location filename="../citytranslate.py" line="55"/>
-        <source>The city allready exist</source>
+        <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation>Cette ville existe déjà</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

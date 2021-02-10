@@ -118,7 +118,7 @@
 <context>
     <name>Action to open the dialog with the weather alerts</name>
     <message>
-        <location filename="../meteo_qt.py" line="136"/>
+        <location filename="../meteo_qt.py" line="138"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
         <translation>W&amp;aarschuwingen</translation>
@@ -127,14 +127,11 @@
 <context>
     <name>Action to refresh the weather infos from the server</name>
     <message>
-        <location filename="../meteo_qt.py" line="128"/>
+        <location filename="../meteo_qt.py" line="130"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
         <translation>Ve&amp;rversen</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 0 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -148,9 +145,6 @@ Land: kalm. Rook stijgt verticaal op</translation>
     </message>
 </context>
 <context>
-    <name>Beaufort scale 1 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 1 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="197"/>
@@ -160,9 +154,6 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <translation>Zee: als schellen uitziende kabbelingen worden gevormd, maar zonder schuimkruinen
 Land: rook geeft de windrichting aan. Bladeren en windvaantjes staan stil (stationair)</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 10 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 10 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -176,9 +167,6 @@ Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelij
     </message>
 </context>
 <context>
-    <name>Beaufort scale 11 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 11 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="277"/>
@@ -188,9 +176,6 @@ Land: Widespread vegetation and structural damage likely</source>
         <translation>Zee: hele hoge golven met overhangende kruinen. Grote aantallen schuim van golfkruinen geven de zee een witte uitstraling. Aardig wat omvallende golven met hevige impact. Grote aantallen nevel verminderen het zicht
 Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelijk</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 12 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 12 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -204,9 +189,6 @@ Land: aanzienlijke wijdverspreide schade aan beplanting en gebouwen. Puin en nie
     </message>
 </context>
 <context>
-    <name>Beaufort scale 2 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 2 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="204"/>
@@ -216,9 +198,6 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <translation>Zee: kleine golfjes. Kort, maar uitgesproken. Kruinen hebben een glazig uiterlijk en breken niet
 Land: de wind kan worden gevoeld op blootliggende huid. Bladeren ritselen. Windvaantjes beginnen te bewegen</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 3 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 3 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -232,9 +211,6 @@ Land: bladeren en twijgjes bewegen continue</translation>
     </message>
 </context>
 <context>
-    <name>Beaufort scale 4 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 4 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="219"/>
@@ -244,9 +220,6 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <translation>Zee: kleine golven met brekende kruinen. Redelijk frequente schuimkoppen
 Land: verhoogd stofniveau. Kleine takken beginnen te bewegen</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 5 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 5 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -260,9 +233,6 @@ Land: redelijk grote takken bewegen. Kleine bomen met blad beginnen te slingeren
     </message>
 </context>
 <context>
-    <name>Beaufort scale 6 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 6 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="233"/>
@@ -272,9 +242,6 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <translation>Zee: er worden lange golven gevormd. Er zijn zo nu en dan witte schuimkoppen. Enige nevel is aanwezig
 Land: grote takken bewegen. Fluiten kan gehoord worden bij bovenleidingsdraden. Het gebruik van een paraplu wordt moeilijk. Lege plastic vuilnisbakken waaien omver</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 7 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 7 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -288,9 +255,6 @@ Land: bomen zijn volledig in beweging. Het kost moeite om tegen de wind in te lo
     </message>
 </context>
 <context>
-    <name>Beaufort scale 8 - Wikipedia</name>
-</context>
-<context>
     <name>Beaufort scale 8 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="249"/>
@@ -300,9 +264,6 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <translation>Zee: redelijk hoge golven met brekende schuimkoppen vormen vlokschuim. Duidelijk zichtbare aantallen schuim worden weggeblazen in de windrichting. Redelijk grote aantallen nevel
 Land: sommige twijgjes breken af van de bomen. Auto&apos;s zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
     </message>
-</context>
-<context>
-    <name>Beaufort scale 9 - Wikipedia</name>
 </context>
 <context>
     <name>Beaufort scale 9 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
@@ -383,13 +344,13 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>De stad &quot;{0}&quot; is verwijderd</translation>
+        <translation>&apos;{0}&apos; is verwijderd</translation>
     </message>
 </context>
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="389"/>
+        <location filename="../meteo_qt.py" line="391"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Gevoel</translation>
@@ -490,7 +451,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="431"/>
+        <location filename="../meteo_qt.py" line="433"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Daglicht</translation>
@@ -499,7 +460,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="378"/>
+        <location filename="../meteo_qt.py" line="380"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Dauwpunt</translation>
@@ -508,7 +469,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1708"/>
+        <location filename="../meteo_qt.py" line="1715"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DU</translation>
@@ -529,7 +490,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Proxy-URL:</translation>
+        <translation>Proxy-url:</translation>
     </message>
 </context>
 <context>
@@ -599,7 +560,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="330"/>
+        <location filename="../meteo_qt.py" line="332"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Wind</translation>
@@ -608,7 +569,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="345"/>
+        <location filename="../meteo_qt.py" line="347"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Bewolkingsdichtheid</translation>
@@ -617,7 +578,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="367"/>
+        <location filename="../meteo_qt.py" line="369"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Luchtvochtigheid</translation>
@@ -626,7 +587,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="356"/>
+        <location filename="../meteo_qt.py" line="358"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Druk</translation>
@@ -635,7 +596,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="411"/>
+        <location filename="../meteo_qt.py" line="413"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Zonsopkomst</translation>
@@ -644,7 +605,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="420"/>
+        <location filename="../meteo_qt.py" line="422"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Zonsondergang</translation>
@@ -696,7 +657,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>Dit is de standaard stad!</translation>
+        <translation>Dit is de standaardlocatie!</translation>
     </message>
 </context>
 <context>
@@ -704,12 +665,12 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
     <message>
         <location filename="../settings.py" line="50"/>
         <source>City</source>
-        <translation>Stad</translation>
+        <translation>Locatie</translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation>Klik om de stedenlijst te bewerken</translation>
+        <translation>Klik om de locatielijst te bewerken</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
@@ -799,7 +760,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation>Noors (Bokmaal)</translation>
+        <translation>Noors (Bokmål)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
@@ -951,13 +912,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation>Km/u</translation>
+        <translation>km/u</translation>
     </message>
 </context>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="454"/>
+        <location filename="../meteo_qt.py" line="456"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozon</translation>
@@ -966,7 +927,7 @@ de zon is dan op zijn felst.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1722"/>
+        <location filename="../meteo_qt.py" line="1729"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -1003,7 +964,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="400"/>
+        <location filename="../meteo_qt.py" line="402"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Neerslag</translation>
@@ -1024,7 +985,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>Gebruikers-ID:</translation>
+        <translation>Gebruikers-id:</translation>
     </message>
 </context>
 <context>
@@ -1051,7 +1012,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation>Stad zoeken</translation>
+        <translation>Locatie zoeken</translation>
     </message>
 </context>
 <context>
@@ -1088,12 +1049,12 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
     <message>
         <location filename="../searchcity.py" line="288"/>
         <source>Found {0} city</source>
-        <translation>{0} stad gevonden</translation>
+        <translation>{0} locatie gevonden</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>{0} steden gevonden</translation>
+        <translation>{0} locaties gevonden</translation>
     </message>
 </context>
 <context>
@@ -1153,7 +1114,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../settings.py" line="359"/>
         <source>Font size in tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Lettergrootte van systeemvakpictogram</translation>
+        <translation>Lettergrootte op systeemvakpictogram</translation>
     </message>
     <message>
         <location filename="../settings.py" line="348"/>
@@ -1180,13 +1141,13 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>De stad staat al in de lijst</translation>
+        <translation>Deze locatie is al toegevoegd</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation>Schakel tussen steden door met de muis te scrollen op het weervenster</translation>
+        <translation>Schakel tussen locaties door met de muis te scrollen op het weervenster</translation>
     </message>
 </context>
 <context>
@@ -1195,7 +1156,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klik op &quot;Zoek mijn locatie&quot; voor automatische locatiedetectie</translation>
+        <translation>Klik op &apos;Vind mijn locatie&apos; om de locatie automatisch te bepalen</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1207,70 +1168,70 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2462"/>
+        <location filename="../meteo_qt.py" line="2492"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>Herstart de applicatie om de taalwijziging toe te passen</translation>
+        <translation>Herstart het programma om de taalwijziging toe te passen</translation>
     </message>
 </context>
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="114"/>
+        <location filename="../meteo_qt.py" line="116"/>
         <source>Cities</source>
-        <translation>Steden</translation>
+        <translation>Locaties</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="127"/>
+        <location filename="../meteo_qt.py" line="129"/>
         <source>&amp;Temporary city</source>
-        <translation>&amp;Tijdelijke stad</translation>
+        <translation>&amp;Tijdelijke locatie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="147"/>
+        <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Settings</source>
         <translation>&amp;Instellingen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="148"/>
+        <location filename="../meteo_qt.py" line="150"/>
         <source>&amp;About</source>
         <translation>&amp;Over</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="149"/>
+        <location filename="../meteo_qt.py" line="151"/>
         <source>Exit</source>
         <translation>Afsluiten</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="167"/>
+        <location filename="../meteo_qt.py" line="169"/>
         <source>Searching weather data...</source>
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1954"/>
+        <location filename="../meteo_qt.py" line="1961"/>
         <source>Empty list</source>
-        <translation>Lijst leegmaken</translation>
+        <translation>Lijst wissen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1971"/>
+        <location filename="../meteo_qt.py" line="1980"/>
         <source>No city configured</source>
-        <translation>Geen ingestelde stad</translation>
+        <translation>Geen locatie ingesteld</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="1994"/>
         <source>No city has been configured yet.</source>
-        <translation>Er is nog geen stad ingesteld.</translation>
+        <translation>Er is nog geen locatie ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="1994"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klik met de rechtermuisknop op het pictogram en daarna op Instellingen.</translation>
+        <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2528"/>
+        <location filename="../meteo_qt.py" line="2558"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2544"/>
+        <location filename="../meteo_qt.py" line="2574"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1279,62 +1240,62 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="187"/>
+        <location filename="../meteo_qt.py" line="189"/>
         <source>Mon</source>
         <translation>ma</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="188"/>
+        <location filename="../meteo_qt.py" line="190"/>
         <source>Tue</source>
         <translation>di</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="189"/>
+        <location filename="../meteo_qt.py" line="191"/>
         <source>Wed</source>
         <translation>woe</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="190"/>
+        <location filename="../meteo_qt.py" line="192"/>
         <source>Thu</source>
         <translation>do</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="191"/>
+        <location filename="../meteo_qt.py" line="193"/>
         <source>Fri</source>
         <translation>vrij</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="192"/>
+        <location filename="../meteo_qt.py" line="194"/>
         <source>Sat</source>
         <translation>za</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="193"/>
+        <location filename="../meteo_qt.py" line="195"/>
         <source>Sun</source>
         <translation>zo</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="502"/>
+        <location filename="../meteo_qt.py" line="504"/>
         <source>Weather status</source>
         <translation>Weerstatus</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1365"/>
+        <location filename="../meteo_qt.py" line="1372"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Min Max temperatuur van de dag</translation>
+        <translation>Min.-/Max.-temperatuur van de dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1642"/>
+        <location filename="../meteo_qt.py" line="1649"/>
         <source>snow</source>
         <translation>sneeuw</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1643"/>
+        <location filename="../meteo_qt.py" line="1650"/>
         <source>rain</source>
         <translation>regen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2553"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1353,28 +1314,28 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Auteur: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Een eenvoudige applicatie die de weerstatus-
-                        informatie weergeeft in het systeemvak.
+        <translation>&lt;p&gt;Maker: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+                        &lt;p&gt;Een eenvoudig programma dat de weerstatus-
+                        informatie toont in het systeemvak.
                         &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
                         https://github.com/dglent/meteo-qt&lt;/a&gt;
                         &lt;br/&gt;Gegevensbron: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
                         OpenWeatherMap&lt;/a&gt;.
                         &lt;br/&gt;Deze software gebruikt pictogrammen van het
                         &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen-project&lt;/a&gt;.
-                        &lt;p&gt;Als u meteo-qt wilt vertalen naar uw taal of bij wilt dragen
-                        aan huidige vertalingen, kunt u helpen middels het
+                        &lt;p&gt;Als u meteo-qt wilt vertalen naar uw taal of wilt bijdragen
+                        aan bestaande vertalingen, kunt u helpen middels het
                         &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
                         Transifex&lt;/a&gt;-platform.
                         &lt;p&gt;Als u een storing of suggestie wilt melden,
-                        open dan een &apos;issue&apos; op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        dan kunt u een &apos;issue&apos; openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         GitHub&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
     <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="168"/>
+        <location filename="../meteo_qt.py" line="170"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
         <translation>Voelt als</translation>
@@ -1395,31 +1356,31 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Herstart de applicatie om de taalwijziging toe te passen</translation>
+        <translation>Herstart het programma om de taalwijziging toe te passen</translation>
     </message>
 </context>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1038"/>
+        <location filename="../meteo_qt.py" line="1045"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1043"/>
+        <location filename="../meteo_qt.py" line="1050"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ochtend</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1048"/>
+        <location filename="../meteo_qt.py" line="1055"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Avond</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1053"/>
+        <location filename="../meteo_qt.py" line="1060"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Nacht</translation>
@@ -1428,13 +1389,13 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1671"/>
+        <location filename="../meteo_qt.py" line="1678"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Druk</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1676"/>
+        <location filename="../meteo_qt.py" line="1683"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Luchtvochtigheid</translation>
@@ -1443,16 +1404,16 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="117"/>
+        <location filename="../meteo_qt.py" line="119"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation>Venster weergeven/verbergen</translation>
+        <translation>Venster tonen/verbergen</translation>
     </message>
 </context>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2071"/>
+        <location filename="../meteo_qt.py" line="2101"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
@@ -1489,7 +1450,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="442"/>
+        <location filename="../meteo_qt.py" line="444"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1498,7 +1459,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="698"/>
+        <location filename="../meteo_qt.py" line="705"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Bezig met ophalen...</translation>
@@ -1508,7 +1469,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="581"/>
+        <location filename="../meteo_qt.py" line="588"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/u </translation>
@@ -1522,7 +1483,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Gebruik zonnebrandcrème met factor 30+, draag een shirt, een zonnebril en
-een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
+een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
     </message>
 </context>
 <context>
@@ -1531,7 +1492,7 @@ een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
         <location filename="../settings.py" line="513"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Voeg een stad toe</translation>
+        <translation>Voeg een locatie toe</translation>
     </message>
 </context>
 <context>
@@ -1547,9 +1508,9 @@ een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
     <name>Warning message in dialog status bar</name>
     <message>
         <location filename="../citytranslate.py" line="55"/>
-        <source>The city allready exist</source>
+        <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation>De stad bestaat al</translation>
+        <translation>Deze locatie is al toegevoegd</translation>
     </message>
 </context>
 <context>
@@ -2076,7 +2037,7 @@ een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
         <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation>Steden</translation>
+        <translation>Locaties</translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="38"/>
@@ -2088,7 +2049,7 @@ een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation>Zoek een stad</translation>
+        <translation>Zoek een locatie</translation>
     </message>
 </context>
 <context>
@@ -2097,13 +2058,13 @@ een breed gevoerde hoed. Breng niet teveel tijd door in de zon.</translation>
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Gegevensfout. Probeer het later opnieuw
-of wijzig de naam van de stad.</translation>
+        <translation>Gegevensfout: probeer het later opnieuw
+of wijzig de locatienaam.</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Bezig met zoeken; even geduld...</translation>
+        <translation>Bezig met zoeken...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
