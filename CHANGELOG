@@ -1,3 +1,12 @@
+2.2
+- Add Weather Alerts support (source: https://openweathermap.org/api/push-weather-alerts#listsource)
+Translations:
+    Update Russian translation by Alexey Zakaldaev
+    Update Hungarian translation by thelacesz
+    Update Japanese translation by Masamichi Ito
+    Update Slovak translation by jose1711
+    Update German translation by psyca
+
 2.1
 - Option to choose the icons theme among the installed themes (further to issue #96)
 - Use plain text in tray tooltip - fixes #103
