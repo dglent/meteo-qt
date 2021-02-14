@@ -1503,7 +1503,7 @@ auf Werte um 100DU.</translation>
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"/>
+        <translation>Diese Stadt ist bereits vorhanden</translation>
     </message>
 </context>
 <context>
