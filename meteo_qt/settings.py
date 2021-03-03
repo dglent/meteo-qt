@@ -5,7 +5,7 @@ import glob
 from PyQt5.QtCore import (
     QCoreApplication, QLocale, QSettings, QSize, Qt, pyqtSignal
 )
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QColor
 from PyQt5.QtWidgets import (
     QCheckBox, QColorDialog, QComboBox, QDialog, QDialogButtonBox,
     QGridLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QSpinBox,
@@ -643,7 +643,7 @@ class MeteoSettings(QDialog):
             return
 
     def color_chooser(self):
-        col = QColorDialog.getColor()
+        col = QColorDialog.getColor(QColor(self.temp_tray_color), parent=self)
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name())
