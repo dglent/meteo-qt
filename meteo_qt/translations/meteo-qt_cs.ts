@@ -94,7 +94,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Překlad do japonštiny</translation>
     </message>
 </context>
 <context>
@@ -121,7 +121,7 @@
         <location filename="../meteo_qt.py" line="138"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Upozornění</translation>
     </message>
 </context>
 <context>
@@ -140,7 +140,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Moře: Moře jako zrcadlo
+Země: Klid. Kouř stoupá svisle vzhůru</translation>
     </message>
 </context>
 <context>
@@ -150,7 +151,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: vznikají zčeřené vlnky, ale bez pěnových hřebenů
+Na zemi: Proud kouře udává směr větru. Listy a větrné lopatky se nehýbají</translation>
     </message>
 </context>
 <context>
@@ -160,7 +162,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Velmi vysoké vlny s převislými hřebeny. Velké skvrny pěny z vlnových hřebenů dávají moři bílý vzhled. Výrazné překlápění vln s velkým dopadem. Velké množství rozprašované vody do vzduchu snižuje viditelnost
+Na zemi: Stromy jsou polámané nebo vytrhané z kořenů, je pravděpodobné poškození staveb</translation>
     </message>
 </context>
 <context>
@@ -170,7 +173,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Výjimečně vysoké vlny. Velkou část mořského povrchu pokrývají velmi velké pěnové skvrny, poháněné větrem. Velmi velké množství rozprašované vody do vzduchu výrazně snižuje viditelnost
+Na zemi: Pravděpodobně se vyskytují rozsáhlé škody na stavbách a na rostlinstvu. </translation>
     </message>
 </context>
 <context>
@@ -180,7 +184,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Obrovské vlny. Moře je zcela bílé s pěnou a vodní tříští. Vzduch je plný vodních kapek, což výrazně snižuje viditelnost
+Na zemi: Silné rozsáhlé poškození rostlinstva a staveb. Odpadky a nezajištěné předměty jsou poházené kolem</translation>
     </message>
 </context>
 <context>
@@ -190,7 +195,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Malé vlnky, stále ještě krátké, ale výraznější; hřebeny mají sklovitý vzhled a nelámou se
+Na zemi: Na nezakryté kůži je cítit vítr. Listy šustí. Větrné lopatky se začnou pohybovat</translation>
     </message>
 </context>
 <context>
@@ -200,7 +206,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Velké vlny. Hřebeny se začnou rozpadat; rozptýlené bílé vrcholky
+Na zemi: Listy a malé větvičky se neustále pohybují, lehké vlajky se nadouvají</translation>
     </message>
 </context>
 <context>
@@ -210,7 +217,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Malé vlny s lámavými hřebeny. Docela časté bílé vrcholky
+Na zemi: Zvířený prach a poletující papír. Malé větve se začínají pohybovat</translation>
     </message>
 </context>
 <context>
@@ -220,7 +228,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Mírné vlny, některé delší. Mnoho bílých vrcholků. Malé množství vodní tříště
+Na zemi: Větvičky střední velikosti v pohybu. Malé listnaté stromky se začínají hýbat</translation>
     </message>
 </context>
 <context>
@@ -230,7 +239,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Začínají se tvořit dlouhé vlny. Velmi časté jsou bílé pěnové hřebeny. Nějaké vodní kapky ve vzduchu
+Na zemi: Velké větve v pohybu. V drátech elektrického napětí  se ozývá pískání. Použití deštníku je obtížné. Prázdné plastové koše se převrhnou</translation>
     </message>
 </context>
 <context>
@@ -240,7 +250,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Moře se houpe. Nějaká pěna od lámání vln je foukána do pruhů ve směru větru. Střední množství rozprašované vody do vzduchu
+Na zemi: Celé stromy v pohybu. Je třeba vynaložit úsilí, abyste šli proti větru</translation>
     </message>
 </context>
 <context>
@@ -250,7 +261,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Středně vysoké vlny s lámavými hřebeny tvořícími vřeteno. Dobře znatelné pruhy pěny jsou vyfukovány ve směru větru- Silná vodní tříšť ve vzduchu.
+Na zemi: Některé větvičky se odlamují ze stromů. Auta jsou na silnici ovlivněná větrem. Pěší chůze je velmi těžká</translation>
     </message>
 </context>
 <context>
@@ -260,7 +272,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Na moři: Vysoké vlny, jejichž hřebeny se občas převalují. Hustá pěna je foukána ve směru větru. Velké množství rozprašovaného vzduchu může snížit viditelnost
+Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vyvrací. Stavební / provizorní značky a ohrazení padají větrem</translation>
     </message>
 </context>
 <context>
@@ -337,7 +350,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="391"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Komfortní</translation>
@@ -432,13 +445,13 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sušší vzduch může způsobit popraskání kůže a snadnější podráždění</translation>
     </message>
 </context>
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="433"/>
+        <location filename="../meteo_qt.py" line="438"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denní světlo</translation>
@@ -447,7 +460,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="380"/>
+        <location filename="../meteo_qt.py" line="385"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Rosný bod</translation>
@@ -456,7 +469,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1715"/>
+        <location filename="../meteo_qt.py" line="1678"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>DJ</translation>
@@ -544,7 +557,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="332"/>
+        <location filename="../meteo_qt.py" line="337"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Vítr</translation>
@@ -553,7 +566,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="347"/>
+        <location filename="../meteo_qt.py" line="352"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Oblačnost</translation>
@@ -562,7 +575,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="369"/>
+        <location filename="../meteo_qt.py" line="374"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Vlhkost</translation>
@@ -571,7 +584,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="358"/>
+        <location filename="../meteo_qt.py" line="363"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Tlak</translation>
@@ -580,7 +593,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="413"/>
+        <location filename="../meteo_qt.py" line="418"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Svítání</translation>
@@ -589,7 +602,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="422"/>
+        <location filename="../meteo_qt.py" line="427"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Západ slunce</translation>
@@ -901,7 +914,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="456"/>
+        <location filename="../meteo_qt.py" line="461"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ozón</translation>
@@ -910,7 +923,7 @@ zůstaňte ve stínu.</translation>
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1729"/>
+        <location filename="../meteo_qt.py" line="1692"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -947,7 +960,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="402"/>
+        <location filename="../meteo_qt.py" line="407"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Přeháňka</translation>
@@ -1151,7 +1164,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2492"/>
+        <location filename="../meteo_qt.py" line="2456"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
@@ -1189,32 +1202,32 @@ zůstaňte ve stínu.</translation>
         <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1961"/>
+        <location filename="../meteo_qt.py" line="1924"/>
         <source>Empty list</source>
         <translation>Prázdný seznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1980"/>
+        <location filename="../meteo_qt.py" line="1943"/>
         <source>No city configured</source>
         <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1994"/>
+        <location filename="../meteo_qt.py" line="1957"/>
         <source>No city has been configured yet.</source>
         <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1994"/>
+        <location filename="../meteo_qt.py" line="1957"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2558"/>
+        <location filename="../meteo_qt.py" line="2522"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2574"/>
+        <location filename="../meteo_qt.py" line="2538"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1258,27 +1271,17 @@ zůstaňte ve stínu.</translation>
         <translation>Ne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="504"/>
+        <location filename="../meteo_qt.py" line="509"/>
         <source>Weather status</source>
         <translation>Stav počasí</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1372"/>
+        <location filename="../meteo_qt.py" line="1350"/>
         <source>Min Max Temperature of the day</source>
         <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1649"/>
-        <source>snow</source>
-        <translation>Sníh</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1650"/>
-        <source>rain</source>
-        <translation>Déšť</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="2583"/>
+        <location filename="../meteo_qt.py" line="2547"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1345,27 +1348,36 @@ github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
+    <name>Tooltip forcast of the day</name>
+    <message>
+        <location filename="../meteo_qt.py" line="197"/>
+        <source>Probability of precipitation</source>
+        <comment>Weather info window</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1045"/>
+        <location filename="../meteo_qt.py" line="1050"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Den</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1050"/>
+        <location filename="../meteo_qt.py" line="1055"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ráno</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1055"/>
+        <location filename="../meteo_qt.py" line="1060"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Večer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1060"/>
+        <location filename="../meteo_qt.py" line="1065"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Noc</translation>
@@ -1374,13 +1386,13 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1678"/>
+        <location filename="../meteo_qt.py" line="1641"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1683"/>
+        <location filename="../meteo_qt.py" line="1646"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Vlhkost</translation>
@@ -1398,7 +1410,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2101"/>
+        <location filename="../meteo_qt.py" line="2065"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hledají se data o počasí...</translation>
@@ -1435,7 +1447,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="444"/>
+        <location filename="../meteo_qt.py" line="449"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ultrafialové záření</translation>
@@ -1444,7 +1456,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="705"/>
+        <location filename="../meteo_qt.py" line="710"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Načítání...</translation>
@@ -1454,7 +1466,7 @@ github&lt;/a&gt;.</translation>
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="588"/>
+        <location filename="../meteo_qt.py" line="593"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>
@@ -1495,7 +1507,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"/>
+        <translation>Město již je</translation>
     </message>
 </context>
 <context>

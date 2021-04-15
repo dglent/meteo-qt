@@ -337,7 +337,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="391"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>快適度</translation>
@@ -438,7 +438,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="433"/>
+        <location filename="../meteo_qt.py" line="438"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>日照時間</translation>
@@ -447,7 +447,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="380"/>
+        <location filename="../meteo_qt.py" line="385"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>露点</translation>
@@ -456,7 +456,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1715"/>
+        <location filename="../meteo_qt.py" line="1678"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>ドブソン単位(DU)</translation>
@@ -545,7 +545,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="332"/>
+        <location filename="../meteo_qt.py" line="337"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>風</translation>
@@ -554,7 +554,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="347"/>
+        <location filename="../meteo_qt.py" line="352"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>雲量</translation>
@@ -563,7 +563,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="369"/>
+        <location filename="../meteo_qt.py" line="374"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>湿度</translation>
@@ -572,7 +572,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="358"/>
+        <location filename="../meteo_qt.py" line="363"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>気圧</translation>
@@ -581,7 +581,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="413"/>
+        <location filename="../meteo_qt.py" line="418"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>日の出</translation>
@@ -590,7 +590,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="422"/>
+        <location filename="../meteo_qt.py" line="427"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>日の入</translation>
@@ -902,7 +902,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="456"/>
+        <location filename="../meteo_qt.py" line="461"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>オゾン</translation>
@@ -911,7 +911,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1729"/>
+        <location filename="../meteo_qt.py" line="1692"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -945,7 +945,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="402"/>
+        <location filename="../meteo_qt.py" line="407"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>降水</translation>
@@ -1149,7 +1149,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2492"/>
+        <location filename="../meteo_qt.py" line="2456"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>言語の設定を適用するにはアプリケーションを再起動して下さい</translation>
     </message>
@@ -1187,32 +1187,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>気象データの検索...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1961"/>
+        <location filename="../meteo_qt.py" line="1924"/>
         <source>Empty list</source>
         <translation>リストが空です</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1980"/>
+        <location filename="../meteo_qt.py" line="1943"/>
         <source>No city configured</source>
         <translation>市区町村が設定されていません</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1994"/>
+        <location filename="../meteo_qt.py" line="1957"/>
         <source>No city has been configured yet.</source>
         <translation>まだ市区町村が設定されていません。</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1994"/>
+        <location filename="../meteo_qt.py" line="1957"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>アイコンを右クリックして [設定] をクリックします。</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2558"/>
+        <location filename="../meteo_qt.py" line="2522"/>
         <source>Fetching weather data...</source>
         <translation>気象データを取得しています...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2574"/>
+        <location filename="../meteo_qt.py" line="2538"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1256,27 +1256,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>日</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="504"/>
+        <location filename="../meteo_qt.py" line="509"/>
         <source>Weather status</source>
         <translation>気象情報</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1372"/>
+        <location filename="../meteo_qt.py" line="1350"/>
         <source>Min Max Temperature of the day</source>
         <translation>一日の最低最高温度</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1649"/>
-        <source>snow</source>
-        <translation>雪</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="1650"/>
-        <source>rain</source>
-        <translation>雨</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="2583"/>
+        <location filename="../meteo_qt.py" line="2547"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1341,27 +1331,36 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     </message>
 </context>
 <context>
+    <name>Tooltip forcast of the day</name>
+    <message>
+        <location filename="../meteo_qt.py" line="197"/>
+        <source>Probability of precipitation</source>
+        <comment>Weather info window</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1045"/>
+        <location filename="../meteo_qt.py" line="1050"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>日中</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1050"/>
+        <location filename="../meteo_qt.py" line="1055"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>朝</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1055"/>
+        <location filename="../meteo_qt.py" line="1060"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>夕方</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1060"/>
+        <location filename="../meteo_qt.py" line="1065"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>夜</translation>
@@ -1370,13 +1369,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1678"/>
+        <location filename="../meteo_qt.py" line="1641"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>気圧</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1683"/>
+        <location filename="../meteo_qt.py" line="1646"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>湿度</translation>
@@ -1394,7 +1393,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2101"/>
+        <location filename="../meteo_qt.py" line="2065"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>気象データを検索しています...</translation>
@@ -1431,7 +1430,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="444"/>
+        <location filename="../meteo_qt.py" line="449"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>紫外線(UV)</translation>
@@ -1440,7 +1439,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="705"/>
+        <location filename="../meteo_qt.py" line="710"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>取得中...</translation>
@@ -1450,7 +1449,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="588"/>
+        <location filename="../meteo_qt.py" line="593"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>
