@@ -194,6 +194,11 @@ class SystemTrayIcon(QMainWindow):
             '5': self.tr('Sat'),
             '6': self.tr('Sun')
         }
+        self.precipitation_probability_str = QCoreApplication.translate(
+            'Tooltip forcast of the day',
+            'Probability of precipitation',
+            'Weather info window'
+        )
         self.precipitation = self.cond.rain
         self.wind_direction = self.cond.wind_codes
         self.wind_name_dic = self.cond.wind
@@ -1227,40 +1232,13 @@ class SystemTrayIcon(QMainWindow):
                         )
                         pass
                 if element.tag == 'precipitation' and collate_info:
-                    try:
-                        # Take the label translated text and remove the html tags
-                        self.doc.setHtml(self.precipitation_label.text())
-                        precipitation_label = f'{self.doc.toPlainText()}: '
-                        precipitation_type = element.get('type')
-                        precipitation_type = (
-                            f'{self.precipitation[precipitation_type]} '
+                    precipitation = int(float(element.get('probability')) * 100)
+                    weather_cond += (
+                        '\n{0} {1}%'.format(
+                            self.precipitation_probability_str,
+                            precipitation
                         )
-                        precipitation_value = (
-                            element.get('value')
-                        )
-                        rain_unit = ' mm'
-                        if self.unit_system == ' mph ':
-                            rain_unit = ' inch'
-                            precipitation_value = (
-                                f'{str(float(precipitation_value) / 25.4)} '
-                            )
-                            precipitation_value = (
-                                "{0:.2f}".format(float(precipitation_value))
-                            )
-                        else:
-                            precipitation_value = (
-                                "{0:.1f}".format(float(precipitation_value))
-                            )
-                        weather_cond += (
-                            '\n{0}{1}{2}{3}'.format(
-                                precipitation_label,
-                                precipitation_type,
-                                precipitation_value,
-                                rain_unit
-                            )
-                        )
-                    except:
-                        pass
+                    )
 
                     self.doc.setHtml(self.wind_label.text())
                     wind = f'{self.doc.toPlainText()}: '
@@ -1530,44 +1508,47 @@ class SystemTrayIcon(QMainWindow):
             wind = ''
             timeofday = self.utc(d, 'dayforecast')
             if not self.json_data_bool:
-                weather_cond = self.conditions[
-                    self.dayforecast_data[4][d][0].get('number')
-                ]
-                self.dayforecast_icon_list.append(
-                    self.dayforecast_data[4][d][0].get('var')
-                )
-                temperature_at_hour = float(
-                    self.dayforecast_data[4][d][4].get('value')
-                )
-
-                feels_like_value = self.dayforecast_data[4][d][5].get('value')
-                feels_like_unit = feels_like_unit_dic[self.dayforecast_data[4][d][5].get('unit')]
-
-                precipitation = str(
-                    self.dayforecast_data[4][d][1].get('value')
-                )
-                precipitation_type = str(
-                    self.dayforecast_data[4][d][1].get('type')
-                )
-                windspeed = self.dayforecast_data[4][d][3].get('mps')
-                winddircode = self.dayforecast_data[4][d][2].get('code')
-                wind_name = self.dayforecast_data[4][d][3].get('name')
-                try:
-                    wind_name_translated = (
-                        f'{self.conditions[self.wind_name_dic[wind_name.lower()]]}<br/>'
-                    )
-                    wind += wind_name_translated
-                except KeyError:
-                    logging.warning(f'Cannot find wind name: {str(wind_name)}')
-                    logging.info('Set wind name to None')
-                    wind = ''
-                finally:
-                    if wind == '':
-                        wind += '<br/>'
-                pressure = self.dayforecast_data[4][d][6].get('value')
-                humidity = self.dayforecast_data[4][d][7].get('value')
-                clouds = self.dayforecast_data[4][d][8].get('value')
-                cloudspercent = self.dayforecast_data[4][d][8].get('all')
+                for element in self.dayforecast_data[4][d].iter():
+                    if element.tag == 'symbol':
+                        weather_cond = self.conditions[
+                            element.get('number')
+                        ]
+                        self.dayforecast_icon_list.append(
+                            element.get('var')
+                        )
+                    if element.tag == 'temperature':
+                        temperature_at_hour = float(
+                            element.get('value')
+                        )
+                    if element.tag == 'feels_like':
+                        feels_like_value = element.get('value')
+                        feels_like_unit = feels_like_unit_dic[element.get('unit')]
+                    if element.tag == 'precipitation':
+                        precipitation = int(float(element.get('probability')) * 100)
+                    if element.tag == 'windDirection':
+                        winddircode = element.get('code')
+                    if element.tag == 'windSpeed':
+                        windspeed = element.get('mps')
+                        wind_name = element.get('name')
+                        try:
+                            wind_name_translated = (
+                                f'{self.conditions[self.wind_name_dic[wind_name.lower()]]}<br/>'
+                            )
+                            wind += wind_name_translated
+                        except KeyError:
+                            logging.warning(f'Cannot find wind name: {str(wind_name)}')
+                            logging.info('Set wind name to None')
+                            wind = ''
+                        finally:
+                            if wind == '':
+                                wind += '<br/>'
+                    if element.tag == 'pressure':
+                        pressure = element.get('value')
+                    if element.tag == 'humidity':
+                        humidity = element.get('value')
+                    if element.tag == 'clouds':
+                        clouds = element.get('value')
+                        cloudspercent = element.get('all')
             else:
                 weather_cond = self.conditions[
                     str(self.dayforecast_data['list'][d]['weather'][0]['id'])
@@ -1622,33 +1603,15 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
             daytime.setAlignment(Qt.AlignHCenter)
-            unit = self.settings.value('Unit') or 'metric'
-            if unit == 'metric':
-                mu = 'mm'
-                if precipitation.count('None') == 0:
-                    precipitation = "{0:.1f}".format(float(precipitation))
-            elif unit == 'imperial':
-                mu = 'inch'
-                if precipitation.count('None') == 0:
-                    precipitation = str(float(precipitation) / 25.0)
-                    precipitation = "{0:.2f}".format(float(precipitation))
-            elif unit == ' ':
-                mu = 'kelvin'
             ttip = (
                 f'{self.feels_like_translated} '
                 f'{feels_like_value} {feels_like_unit}'
                 '<br/>'
             )
             ttip_prec = (
-                f'{str(precipitation)} {mu} {precipitation_type}<br/>'
+                f'{self.precipitation_probability_str} {precipitation}%<br/>'
             )
-            if ttip_prec.count('None') >= 1:
-                ttip_prec = ''
-                logging.warning(f'Actual day forcast n° {d} : No precipitation info provided')
-            else:
-                ttip_prec = ttip_prec.replace('snow', self.tr('snow'))
-                ttip_prec = ttip_prec.replace('rain', self.tr('rain'))
-                ttip += ttip_prec
+            ttip += ttip_prec
             if self.bft_bool is True:
                 windspeed = self.convertToBeaufort(windspeed)
             if self.wind_km_bool:
