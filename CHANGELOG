@@ -1,3 +1,9 @@
+2.3
+- Fix crash: Change from precipitation type to precipitation probability
+- Point to the current color when openning the dialog to choose the font
+  color for the T° of the tray icon
+
+
 2.2
 - Add Weather Alerts support (source: https://openweathermap.org/api/push-weather-alerts#listsource)
 Translations:

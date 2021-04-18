@@ -49,7 +49,7 @@ except ImportError:
     from meteo_qt import humidex
 
 
-__version__ = "2.2"
+__version__ = "2.3"
 
 
 class SystemTrayIcon(QMainWindow):
