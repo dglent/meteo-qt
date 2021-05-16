@@ -121,7 +121,7 @@
         <location filename="../meteo_qt.py" line="138"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>Alertă</translation>
     </message>
 </context>
 <context>
@@ -130,7 +130,7 @@
         <location filename="../meteo_qt.py" line="130"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Reâmprospătare</translation>
     </message>
 </context>
 <context>
@@ -269,7 +269,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation type="unfinished"/>
+        <translation>&amp;Traducere</translation>
     </message>
 </context>
 <context>
@@ -278,7 +278,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../settings.py" line="430"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Pornește minimizat</translation>
     </message>
 </context>
 <context>
@@ -287,13 +287,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Folosește autentificare proxy</translation>
     </message>
     <message>
         <location filename="../settings.py" line="387"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Conexiune prin proxy</translation>
     </message>
 </context>
 <context>
@@ -301,27 +301,27 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Adaugă...</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Înlătură</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sus</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Jos</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
-        <source>De&amp;fault</source>
-        <translation type="unfinished"/>
+        <source>&amp;Default</source>
+        <translation>&amp;Mod implicit</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
