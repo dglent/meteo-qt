@@ -146,6 +146,14 @@ class AboutDialog(QDialog):
             )
             + QCoreApplication.translate(
                 '',
+                '<p>Adrian Moise'
+                '<a href="mailto:sah.mat.ro@gmail.com">sah.mat.ro@gmail.com</a>'
+                '<br/> [ro] Romanian translation',
+                ''
+            )
+
+            + QCoreApplication.translate(
+                '',
                 '<p>Artem Vorotnikov '
                 '<a href="mailto:artem@vorotnikov.me">artem@vorotnikov.me</a>'
                 '<br/> Sergey Shitikov '
