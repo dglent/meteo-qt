@@ -113,6 +113,7 @@ class SystemTrayIcon(QMainWindow):
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.refresh)
         self.menu = QMenu()
+
         self.citiesMenu = QMenu(self.tr('Cities'))
         if os.environ.get('DESKTOP_SESSION') in ['unity', 'ubuntu', 'budgie-desktop']:
             # Missing left click on Unity environment issue #63
@@ -381,6 +382,17 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.humidity_value = QLabel()
+        # Visibility
+        self.visibility_label = QLabel(
+            '<font size="3" color=><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Visibility (distance) label',
+                    'Visibility',
+                    'Weather overview dialogue'
+                )
+            )
+        )
+        self.visibility_value = QLabel()
         # Dew point
         self.dew_point_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
@@ -480,20 +492,22 @@ class SystemTrayIcon(QMainWindow):
         self.over_grid.addWidget(self.pressure_value, 3, 1)
         self.over_grid.addWidget(self.humidity_label, 4, 0)
         self.over_grid.addWidget(self.humidity_value, 4, 1, 1, 3)  # align left
-        self.over_grid.addWidget(self.dew_point_label, 5, 0)
-        self.over_grid.addWidget(self.dew_point_value, 5, 1)
-        self.over_grid.addWidget(self.comfort_label, 6, 0)
-        self.over_grid.addWidget(self.comfort_value, 6, 1)
-        self.over_grid.addWidget(self.precipitation_label, 7, 0)
-        self.over_grid.addWidget(self.precipitation_value, 7, 1)
-        self.over_grid.addWidget(self.sunrise_label, 8, 0)
-        self.over_grid.addWidget(self.sunrise_value, 8, 1)
-        self.over_grid.addWidget(self.sunset_label, 9, 0)
-        self.over_grid.addWidget(self.sunset_value, 9, 1)
-        self.over_grid.addWidget(self.daylight_label, 10, 0)
-        self.over_grid.addWidget(self.daylight_value_label, 10, 1)
-        self.over_grid.addWidget(self.uv_label, 11, 0)
-        self.over_grid.addWidget(self.uv_value_label, 11, 1)
+        self.over_grid.addWidget(self.visibility_label, 5, 0)
+        self.over_grid.addWidget(self.visibility_value, 5, 1)
+        self.over_grid.addWidget(self.dew_point_label, 6, 0)
+        self.over_grid.addWidget(self.dew_point_value, 6, 1)
+        self.over_grid.addWidget(self.comfort_label, 7, 0)
+        self.over_grid.addWidget(self.comfort_value, 7, 1)
+        self.over_grid.addWidget(self.precipitation_label, 8, 0)
+        self.over_grid.addWidget(self.precipitation_value, 8, 1)
+        self.over_grid.addWidget(self.sunrise_label, 9, 0)
+        self.over_grid.addWidget(self.sunrise_value, 9, 1)
+        self.over_grid.addWidget(self.sunset_label, 10, 0)
+        self.over_grid.addWidget(self.sunset_value, 10, 1)
+        self.over_grid.addWidget(self.daylight_label, 11, 0)
+        self.over_grid.addWidget(self.daylight_value_label, 11, 1)
+        self.over_grid.addWidget(self.uv_label, 12, 0)
+        self.over_grid.addWidget(self.uv_value_label, 12, 1)
         # # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -648,6 +662,7 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['Humidity'][1]
             )
         )
+        self.visibility_value.setText(self.weatherDataDico['Visibility'])
         # Dew point
         t_air = float('{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])))
         hum = humidex.Humidex(
@@ -2197,6 +2212,9 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['Pressure'] = (
                     element.get('value'), element.get('unit')
                 )
+
+            if element.tag == 'visibility':
+                self.weatherDataDico['Visibility'] = element.get('value')
 
             if element.tag == 'precipitation':
                 rain_mode = element.get('mode')
