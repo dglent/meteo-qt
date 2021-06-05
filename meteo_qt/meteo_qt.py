@@ -662,8 +662,13 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['Humidity'][1]
             )
         )
+        visibility_unit = 'km'
+        visibility_distance = '{0:.1f}'.format(int(self.weatherDataDico["Visibility"]) / 1000)
+        if self.unit == 'imperial':
+            visibility_unit = 'mi'
+            visibility_distance = '{0:.1f}'.format(float(visibility_distance) / 1.609344)
         self.visibility_value.setText(
-            f'{int(self.weatherDataDico["Visibility"]) / 1000} km'
+            f'{visibility_distance} {visibility_unit}'
         )
         # Dew point
         t_air = float('{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])))
