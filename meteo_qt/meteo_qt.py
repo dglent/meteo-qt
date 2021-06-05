@@ -662,7 +662,9 @@ class SystemTrayIcon(QMainWindow):
                 self.weatherDataDico['Humidity'][1]
             )
         )
-        self.visibility_value.setText(self.weatherDataDico['Visibility'])
+        self.visibility_value.setText(
+            f'{int(self.weatherDataDico["Visibility"]) / 1000} km'
+        )
         # Dew point
         t_air = float('{0:.1f}'.format(float(self.weatherDataDico['Temp'][:-1])))
         hum = humidex.Humidex(
