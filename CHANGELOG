@@ -1,3 +1,7 @@
+2.4
+- Visibility (distance) in current day weather data
+- Add Romanian translation by adisah
+
 2.3
 - Fix crash: Change from precipitation type to precipitation probability
 - Point to the current color when openning the dialog to choose the font
