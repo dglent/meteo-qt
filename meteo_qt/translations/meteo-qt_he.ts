@@ -126,7 +126,7 @@
         <location filename="../meteo_qt.py" line="139"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>הת&amp;ראות</translation>
     </message>
 </context>
 <context>
@@ -135,7 +135,7 @@
         <location filename="../meteo_qt.py" line="131"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"/>
+        <translation>רי&amp;ענון</translation>
     </message>
 </context>
 <context>
@@ -445,7 +445,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="450"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>אור יום</translation>
     </message>
 </context>
 <context>
@@ -562,7 +562,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="375"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>לחות</translation>
     </message>
 </context>
 <context>
@@ -976,7 +976,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="180"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
-        <translation>לא זמי</translation>
+        <translation>לא זמין</translation>
     </message>
 </context>
 <context>
@@ -1007,12 +1007,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../searchcity.py" line="90"/>
         <source>&amp;Ok</source>
-        <translation type="unfinished"/>
+        <translation>אי&amp;שור</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="92"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>בי&amp;טול</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="286"/>
@@ -1166,7 +1166,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="151"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>על &amp;אודות</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="152"/>
@@ -1355,7 +1355,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1661"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>לחות</translation>
     </message>
 </context>
 <context>

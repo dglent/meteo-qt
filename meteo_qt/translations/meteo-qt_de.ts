@@ -99,7 +99,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Rumänische Übersetzung</translation>
     </message>
 </context>
 <context>
@@ -1354,7 +1354,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="198"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Niederschlagswahrscheinlichkeit</translation>
     </message>
 </context>
 <context>
@@ -1489,7 +1489,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="386"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sichtbarkeit</translation>
     </message>
 </context>
 <context>
