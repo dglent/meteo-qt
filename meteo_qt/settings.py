@@ -422,7 +422,7 @@ class MeteoSettings(QDialog):
             )
         )
         self.owmkey_create.setOpenExternalLinks(True)
-        apikey = self.settings.value('APPID') or 'df1cc7dcbb602dbc33835dd2b89a3504'
+        apikey = self.settings.value('APPID') or '4f086d061c620924f6389f7e7cf0ec6d'
         self.owmkey_text = QLineEdit()
         self.owmkey_text.setText(apikey)
         self.owmkey_text.textChanged.connect(self.apikey_changed)
