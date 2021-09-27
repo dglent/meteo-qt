@@ -64,6 +64,16 @@ class SystemTrayIcon(QMainWindow):
         self.settings = QSettings()
         self.cityChangeTimer = QTimer()
         self.cityChangeTimer.timeout.connect(self.update_city_gif)
+
+        self.tomorrow_translation = QCoreApplication.translate(
+            "Tray notification popup",
+            "<b>Tomorrow:</b>",
+            "Title for the weather conditions"
+        )
+        self.tomorrow_notification_text = ""
+        self.tomorrow_notification_timer = QTimer()
+        self.tomorrow_notification_timer.timeout.connect(self.tomorrow_tray_notification)
+
         self.alerts_dlg = AlertsDLG(parent=self)
         self.alerts_timer = QTimer()
         self.alerts_timer.timeout.connect(self.next_alert_event)
@@ -1198,6 +1208,18 @@ class SystemTrayIcon(QMainWindow):
         collate_info = False
         t_unit = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
         t_air = ''
+
+        tomorrow_collected = False
+        self.tomorrow_notification_text = ""
+        self.tomorrow_notification_text += self.tomorrow_translation + '\n'
+        trans_cities = self.settings.value('CitiesTranslation') or '{}'
+        trans_cities_dict = eval(trans_cities)
+        city = f'{self.city}_{self.country}_{self.id_}'
+        city_name = self.city
+        if city in trans_cities_dict:
+            city_name = trans_cities_dict[city]
+        self.tomorrow_notification_text += city_name + '\n'
+
         if not self.json_data_bool:
             for element in self.dayforecast_data.iter():
                 # Find the day for the forecast (today+1) at 12:00:00
@@ -1253,6 +1275,10 @@ class SystemTrayIcon(QMainWindow):
                             f'Cannot find localisation string for: {weather_cond}'
                         )
                         pass
+
+                    if not tomorrow_collected:
+                        self.tomorrow_notification_text += weather_cond + ' '
+
                 if element.tag == 'precipitation' and collate_info:
                     precipitation = int(float(element.get('probability')) * 100)
                     weather_cond += (
@@ -1294,13 +1320,18 @@ class SystemTrayIcon(QMainWindow):
                         )
                     )
 
-                if element.tag == 'temperature':
+                if element.tag == 'temperature' and collate_info:
                     t_air = element.get('value')
+                    if not tomorrow_collected:
+                        self.tomorrow_notification_text += f'{t_air} {t_unit[element.get("unit")]}\n'
 
                 if element.tag == 'feels_like' and collate_info:
                     feels_like_value = element.get('value')
                     feels_like_unit = t_unit[element.get('unit')]
                     weather_cond += f'\n{self.feels_like_translated}: {feels_like_value} {feels_like_unit}'
+                    if not tomorrow_collected:
+                        self.tomorrow_notification_text += f'{self.feels_like_translated}: {feels_like_value} {feels_like_unit}'
+                        tomorrow_collected = True
 
                 if element.tag == 'pressure' and collate_info:
                     self.doc.setHtml(self.pressure_label.text())
@@ -1446,6 +1477,7 @@ class SystemTrayIcon(QMainWindow):
                     weather_cond += f'\n{self.doc.toPlainText()}: {clouds} %'
                     weather_end = True
                     self.forecast_weather_list.append(weather_cond)
+
 
     def iconfetch(self):
         '''Get icons for the next days forecast'''
@@ -2411,6 +2443,8 @@ class SystemTrayIcon(QMainWindow):
                             self.systray.showMessage(
                                 'meteo-qt', f'{self.notification}{self.temp_trend}'
                             )
+                            self.tomorrow_notification_timer.stop()
+                            self.tomorrow_notification_timer.start(20000)
                             return
             except KeyError:
                 return
@@ -2421,6 +2455,12 @@ class SystemTrayIcon(QMainWindow):
         self.tooltip_weather()
         if not self.toggle_tray_action:
             logging.info(f'Actual weather status for: {self.notification}')
+
+    def tomorrow_tray_notification(self):
+        self.systray.showMessage(
+            'meteo-qt', f'{self.tomorrow_notification_text}'
+        )
+        self.tomorrow_notification_timer.stop()
 
     def notifier_settings(self):
         notifier = self.settings.value('Notifications') or 'True'
