@@ -123,7 +123,7 @@
 <context>
     <name>Action to open the dialog with the weather alerts</name>
     <message>
-        <location filename="../meteo_qt.py" line="139"/>
+        <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
         <translation>&amp;Попередження</translation>
@@ -132,7 +132,7 @@
 <context>
     <name>Action to refresh the weather infos from the server</name>
     <message>
-        <location filename="../meteo_qt.py" line="131"/>
+        <location filename="../meteo_qt.py" line="141"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
         <translation>&amp;Освіжити</translation>
@@ -355,7 +355,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="408"/>
+        <location filename="../meteo_qt.py" line="418"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Комфорт</translation>
@@ -456,7 +456,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="450"/>
+        <location filename="../meteo_qt.py" line="460"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>День</translation>
@@ -465,7 +465,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="397"/>
+        <location filename="../meteo_qt.py" line="407"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Точка роси</translation>
@@ -474,7 +474,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dobson Units</name>
     <message>
-        <location filename="../meteo_qt.py" line="1693"/>
+        <location filename="../meteo_qt.py" line="1732"/>
         <source>DU</source>
         <comment>Ozone value label</comment>
         <translation>ОД</translation>
@@ -561,7 +561,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="338"/>
+        <location filename="../meteo_qt.py" line="348"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Вітер</translation>
@@ -570,7 +570,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="353"/>
+        <location filename="../meteo_qt.py" line="363"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Хмарність</translation>
@@ -579,7 +579,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="375"/>
+        <location filename="../meteo_qt.py" line="385"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Вологість</translation>
@@ -588,7 +588,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="364"/>
+        <location filename="../meteo_qt.py" line="374"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Тиск</translation>
@@ -597,7 +597,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="430"/>
+        <location filename="../meteo_qt.py" line="440"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Схід сонця</translation>
@@ -606,7 +606,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="439"/>
+        <location filename="../meteo_qt.py" line="449"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Захід сонця</translation>
@@ -914,7 +914,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ozone data title</name>
     <message>
-        <location filename="../meteo_qt.py" line="473"/>
+        <location filename="../meteo_qt.py" line="483"/>
         <source>Ozone</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Озон</translation>
@@ -923,7 +923,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context encoding="UTF-8">
     <name>Ozone value tooltip</name>
     <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1707"/>
+        <location filename="../meteo_qt.py" line="1746"/>
         <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
                     roughly 300 Dobson Units. What scientists call the
                     Antarctic Ozone “Hole” is an area where the ozone
@@ -957,7 +957,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="419"/>
+        <location filename="../meteo_qt.py" line="429"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Опади</translation>
@@ -1161,7 +1161,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2474"/>
+        <location filename="../meteo_qt.py" line="2521"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Для застосування перекладу програму слід перезапустити</translation>
     </message>
@@ -1169,62 +1169,62 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>SystemTrayIcon</name>
     <message>
-        <location filename="../meteo_qt.py" line="117"/>
+        <location filename="../meteo_qt.py" line="127"/>
         <source>Cities</source>
         <translation>Міста</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="130"/>
+        <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
         <translation>&amp;Тимчасове місто</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="150"/>
+        <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
         <translation>П&amp;араметри</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="151"/>
+        <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
         <translation>Пр&amp;о програму</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="152"/>
+        <location filename="../meteo_qt.py" line="162"/>
         <source>Exit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="170"/>
+        <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
         <translation>Шукаємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1939"/>
+        <location filename="../meteo_qt.py" line="1978"/>
         <source>Empty list</source>
         <translation>Порожній список</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1958"/>
+        <location filename="../meteo_qt.py" line="1997"/>
         <source>No city configured</source>
         <translation>Міста не вказано</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1972"/>
+        <location filename="../meteo_qt.py" line="2011"/>
         <source>No city has been configured yet.</source>
         <translation>Вами ще не вказано міста.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1972"/>
+        <location filename="../meteo_qt.py" line="2011"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Наведіть вказівник на піктограму, клацніть правою кнопкою і виберіть пункт «Параметри».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2540"/>
+        <location filename="../meteo_qt.py" line="2587"/>
         <source>Fetching weather data...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2556"/>
+        <location filename="../meteo_qt.py" line="2603"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1233,52 +1233,52 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                         &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} на {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="190"/>
+        <location filename="../meteo_qt.py" line="200"/>
         <source>Mon</source>
         <translation>Пн</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="191"/>
+        <location filename="../meteo_qt.py" line="201"/>
         <source>Tue</source>
         <translation>Вт</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="192"/>
+        <location filename="../meteo_qt.py" line="202"/>
         <source>Wed</source>
         <translation>Ср</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="193"/>
+        <location filename="../meteo_qt.py" line="203"/>
         <source>Thu</source>
         <translation>Чт</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="194"/>
+        <location filename="../meteo_qt.py" line="204"/>
         <source>Fri</source>
         <translation>Пт</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="195"/>
+        <location filename="../meteo_qt.py" line="205"/>
         <source>Sat</source>
         <translation>Сб</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="196"/>
+        <location filename="../meteo_qt.py" line="206"/>
         <source>Sun</source>
         <translation>Нд</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="523"/>
+        <location filename="../meteo_qt.py" line="533"/>
         <source>Weather status</source>
         <translation>Погода</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1365"/>
+        <location filename="../meteo_qt.py" line="1403"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мін. та макс. температура цього дня</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2565"/>
+        <location filename="../meteo_qt.py" line="2612"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1316,7 +1316,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The Feels Like Temperature</name>
     <message>
-        <location filename="../meteo_qt.py" line="171"/>
+        <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
         <translation>Відчувається</translation>
@@ -1343,7 +1343,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="198"/>
+        <location filename="../meteo_qt.py" line="208"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
         <translation>Ймовірність опадів</translation>
@@ -1352,25 +1352,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1065"/>
+        <location filename="../meteo_qt.py" line="1082"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Удень</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1070"/>
+        <location filename="../meteo_qt.py" line="1087"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Вранці</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1075"/>
+        <location filename="../meteo_qt.py" line="1092"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Увечері</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1080"/>
+        <location filename="../meteo_qt.py" line="1097"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Вночі</translation>
@@ -1379,13 +1379,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1656"/>
+        <location filename="../meteo_qt.py" line="1695"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Тиск</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1661"/>
+        <location filename="../meteo_qt.py" line="1700"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Вологість</translation>
@@ -1394,7 +1394,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray context menu</name>
     <message>
-        <location filename="../meteo_qt.py" line="120"/>
+        <location filename="../meteo_qt.py" line="130"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
         <translation>Увімкнути або вимкнути вікно</translation>
@@ -1403,10 +1403,19 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2080"/>
+        <location filename="../meteo_qt.py" line="2119"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Шукаємо дані щодо погоди…</translation>
+    </message>
+</context>
+<context>
+    <name>Tray notification popup</name>
+    <message>
+        <location filename="../meteo_qt.py" line="68"/>
+        <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
+        <comment>Title for the weather conditions</comment>
+        <translation>&lt;b&gt;Завтра:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1440,7 +1449,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="461"/>
+        <location filename="../meteo_qt.py" line="471"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>УФ</translation>
@@ -1449,7 +1458,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="725"/>
+        <location filename="../meteo_qt.py" line="742"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Отримуємо дані…</translation>
@@ -1459,7 +1468,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="607"/>
+        <location filename="../meteo_qt.py" line="617"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation>км/год</translation>
@@ -1478,7 +1487,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Visibility (distance) label</name>
     <message>
-        <location filename="../meteo_qt.py" line="386"/>
+        <location filename="../meteo_qt.py" line="396"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
         <translation>Видимість</translation>
