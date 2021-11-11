@@ -1423,7 +1423,7 @@ auf Werte um 100DU.</translation>
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Morgen:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
