@@ -364,7 +364,7 @@ class MeteoSettings(QDialog):
             )
         )
         self.fontsize_spinbox = QSpinBox()
-        self.fontsize_spinbox.setRange(12, 32)
+        self.fontsize_spinbox.setRange(6, 32)
         self.fontsize_spinbox.setValue(int(fontsize))
         if fontsize is None or fontsize == '':
             self.settings.setValue('FontSize', '18')
