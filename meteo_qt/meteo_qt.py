@@ -2409,7 +2409,7 @@ class SystemTrayIcon(QMainWindow):
             br = QFont.Bold
         else:
             br = QFont.Normal
-        pt.setFont(QFont('sans-sertif', int(self.fontsize), weight=br))
+        pt.setFont(QFont('sans-serif', int(self.fontsize), weight=br))
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp' or self.tray_type == 'icon&feels_like':
             pt.drawText(
