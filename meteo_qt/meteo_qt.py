@@ -2524,7 +2524,8 @@ class SystemTrayIcon(QMainWindow):
                     "System tray notification",
                     "The application has to be restarted to apply the language setting",
                     ''
-                )
+                ),
+                QSystemTrayIcon.Warning
             )
             self.language = language
 
