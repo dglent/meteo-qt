@@ -2544,7 +2544,7 @@ class SystemTrayIcon(QMainWindow):
             or self.tray_type != tray_type
             or self.fontsize != fontsize
             or self.bold_set != bold_set
-            or decimal != self.temp_decimal
+            or decimal != self.temp_decimal_bool
             or toggle_tray
         ):
             self.tray()
