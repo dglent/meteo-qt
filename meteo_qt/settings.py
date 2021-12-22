@@ -637,7 +637,7 @@ class MeteoSettings(QDialog):
         current_color = self.temp_tray_color
         if hasattr(self, 'color_before'):
             current_color = self.color_before
-        col = QColorDialog.getColor(QColor(current_color), parent=self)
+        col = QColorDialog.getColor(QColor(current_color), self)
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name())
@@ -712,7 +712,7 @@ class MeteoSettings(QDialog):
             current_font = self.font_tray_conf
         ff = QFont()
         ff.fromString(current_font)
-        font, ok = QFontDialog.getFont(ff)
+        font, ok = QFontDialog.getFont(ff, self)
         if ok and font.toString() != self.font_tray_conf:
             self.font_tray_changed = True
             self.font_tray_conf_new = font.toString()
