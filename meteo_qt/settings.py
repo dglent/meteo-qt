@@ -5,11 +5,11 @@ import glob
 from PyQt5.QtCore import (
     QCoreApplication, QLocale, QSettings, QSize, Qt, pyqtSignal
 )
-from PyQt5.QtGui import QIcon, QColor
+from PyQt5.QtGui import QIcon, QColor, QFont
 from PyQt5.QtWidgets import (
     QCheckBox, QColorDialog, QComboBox, QDialog, QDialogButtonBox,
     QGridLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QSpinBox,
-    QVBoxLayout
+    QVBoxLayout, QFontDialog
 )
 
 try:
@@ -354,35 +354,27 @@ class MeteoSettings(QDialog):
             )
         )
         self.activate_toggle_check()
-        # Font size
-        fontsize = self.settings.value('FontSize') or '18'
-        self.fontsize_label = QLabel(
+        # Font of temperature in tray
+        self.font_tray_changed = False
+        self.font_tray_conf_new = ''
+        self.font_tray_conf = self.settings.value('FontTray') or False
+        if not self.font_tray_conf:
+            self.font_tray_conf = 'Sans Serif,18,-1,5,50,0,0,0,0,0'
+            self.settings.setValue('FontTray', self.font_tray_conf)
+        self.font_tray_label = QLabel(
             QCoreApplication.translate(
                 'Settings dialogue',
-                'Font size in tray',
+                'Temperature font in system tray',
                 'Setting for the font size of the temperature in the tray icon'
             )
         )
-        self.fontsize_spinbox = QSpinBox()
-        self.fontsize_spinbox.setRange(6, 32)
-        self.fontsize_spinbox.setValue(int(fontsize))
-        if fontsize is None or fontsize == '':
-            self.settings.setValue('FontSize', '18')
-        self.fontsize_changed = False
-        self.fontsize_spinbox.valueChanged.connect(self.fontsize_change)
-        # Font weight
-        self.bold_checkbox = QCheckBox(
-            QCoreApplication.translate(
-                'Font setting - Checkbox label',
-                'Bold',
-                'Settings dialogue'
-            )
+        font_tray_btn_label = (
+            f"{self.font_tray_conf.split(',')[0]} - "
+            f"{self.font_tray_conf.split(',')[1]} - "
+            f"{self.font_tray_conf.split(',')[-1]}"
         )
-        bold_bool = self.settings.value('Bold') or 'False'
-        self.bold_bool = eval(bold_bool)
-        self.bold_checkbox.setChecked(self.bold_bool)
-        self.bold_checkbox.stateChanged.connect(self.bold)
-        self.bold_changed = False
+        self.font_tray_btn = QPushButton(font_tray_btn_label)
+        self.font_tray_btn.clicked.connect(self.getfont)
         # Proxy
         self.proxy_label = QLabel(
             QCoreApplication.translate(
@@ -487,9 +479,8 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.toggle_tray_label, 10, 0)
         self.panel.addWidget(self.toggle_tray_spinbox, 10, 1)
         self.panel.addWidget(self.toggle_tray_interval_label, 10, 2)
-        self.panel.addWidget(self.fontsize_label, 11, 0)
-        self.panel.addWidget(self.fontsize_spinbox, 11, 1)
-        self.panel.addWidget(self.bold_checkbox, 11, 2)
+        self.panel.addWidget(self.font_tray_label, 11, 0)
+        self.panel.addWidget(self.font_tray_btn, 11, 1)
         self.panel.addWidget(self.proxy_label, 12, 0)
         self.panel.addWidget(self.proxy_chbox, 12, 1)
         self.panel.addWidget(self.proxy_button, 12, 2)
@@ -710,14 +701,28 @@ class MeteoSettings(QDialog):
     def toggle_tray_interval_apply(self):
         self.settings.setValue('Toggle_tray_interval', str(self.toggle_tray_interval))
 
-    def fontsize_change(self, size):
-        self.fontsize_changed = True
-        self.fontsize_value = size
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+    def getfont(self):
+        if self.font_tray_conf_new != "":
+            current_font = self.font_tray_conf_new
+        else:
+            current_font = self.font_tray_conf
+        ff = QFont()
+        ff.fromString(current_font)
+        font, ok = QFontDialog.getFont(ff)
+        if ok and font.toString() != self.font_tray_conf:
+            self.font_tray_changed = True
+            self.font_tray_conf_new = font.toString()
+            self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+            font_tray_btn_label = (
+            f"{self.font_tray_conf_new.split(',')[0]} - "
+            f"{self.font_tray_conf_new.split(',')[1]} - "
+            f"{self.font_tray_conf_new.split(',')[-1]}"
+            )
+            self.font_tray_btn.setText(font_tray_btn_label)
 
-    def fontsize_apply(self):
-        logging.debug('Apply fontsize: ' + str(self.fontsize_value))
-        self.settings.setValue('FontSize', str(self.fontsize_value))
+    def font_tray_apply(self):
+        logging.debug(f'Apply font for tray: {self.font_tray_conf_new}')
+        self.settings.setValue('FontTray', self.font_tray_conf_new)
 
     def system_theme_icons(self):
         self.comboBox_icons_theme_changed = True
@@ -728,18 +733,6 @@ class MeteoSettings(QDialog):
             self.settings.setValue('IconsTheme', 'System default')
         else:
             self.settings.setValue('IconsTheme', self.comboBox_icons_theme.currentText())
-
-    def bold(self, state):
-        self.bold_state = state
-        self.bold_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
-
-    def bold_apply(self):
-        if self.bold_state == 2:
-            bold = 'True'
-        else:
-            bold = 'False'
-        self.settings.setValue('Bold', str(bold))
 
     def start_minimized(self, state):
         self.start_minimized_state = state
@@ -869,10 +862,8 @@ class MeteoSettings(QDialog):
             self.tray_apply()
         if self.toggle_tray_spinbox_changed:
             self.toggle_tray_interval_apply()
-        if self.fontsize_changed:
-            self.fontsize_apply()
-        if self.bold_changed:
-            self.bold_apply()
+        if self.font_tray_changed:
+            self.font_tray_apply()
         if self.comboBox_icons_theme_changed:
             self.system_icontheme_apply()
         if self.start_minimized_changed:

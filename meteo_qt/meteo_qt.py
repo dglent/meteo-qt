@@ -2390,7 +2390,7 @@ class SystemTrayIcon(QMainWindow):
         # don't paint the T° over the old value
         icon = QPixmap(':/empty')
         self.traycolor = self.settings.value('TrayColor') or ''
-        self.fontsize = self.settings.value('FontSize') or '18'
+        self.font_tray = self.settings.value('FontTray') or 'sans-serif'
         if not self.toggle_tray_bool:
             self.tray_type = self.settings.value('TrayType') or 'icon&temp'
 
@@ -2404,12 +2404,9 @@ class SystemTrayIcon(QMainWindow):
         pt.begin(icon)
         if self.tray_type != 'temp' and self.tray_type != 'feels_like_temp':
             pt.drawPixmap(0, -12, 64, 64, self.wIcon)
-        self.bold_set = self.settings.value('Bold') or 'False'
-        if self.bold_set == 'True':
-            br = QFont.Bold
-        else:
-            br = QFont.Normal
-        pt.setFont(QFont('sans-serif', int(self.fontsize), weight=br))
+        ff = QFont()
+        ff.fromString(self.font_tray)
+        pt.setFont(ff)
         pt.setPen(QColor(self.traycolor))
         if self.tray_type == 'icon&temp' or self.tray_type == 'icon&feels_like':
             pt.drawText(
@@ -2510,8 +2507,7 @@ class SystemTrayIcon(QMainWindow):
         traycolor = self.settings.value('TrayColor')
         tray_type = self.settings.value('TrayType')
         system_icons = self.settings.value('IconsTheme')
-        fontsize = self.settings.value('FontSize')
-        bold_set = self.settings.value('Bold')
+        font_tray = self.settings.value('FontTray')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
         toggle_tray_interval = self.settings.value('Toggle_tray_interval') or '0'
@@ -2543,8 +2539,7 @@ class SystemTrayIcon(QMainWindow):
         if (
             self.traycolor != traycolor
             or self.tray_type != tray_type
-            or self.fontsize != fontsize
-            or self.bold_set != bold_set
+            or self.font_tray != font_tray
             or decimal != self.temp_decimal_bool
             or toggle_tray
         ):
