@@ -634,7 +634,10 @@ class MeteoSettings(QDialog):
             return
 
     def color_chooser(self):
-        col = QColorDialog.getColor(QColor(self.temp_tray_color), parent=self)
+        current_color = self.temp_tray_color
+        if hasattr(self, 'color_before'):
+            current_color = self.color_before
+        col = QColorDialog.getColor(QColor(current_color), parent=self)
         if col.isValid():
             self.temp_colorButton.setStyleSheet(
                 'QWidget {{ background-color: {0} }}'.format(col.name())
@@ -646,6 +649,7 @@ class MeteoSettings(QDialog):
             self.color_before = col.name()
         else:
             logging.debug('Invalid color:' + str(col))
+            self.temp_color_resetButton.setFocus()
 
     def color_reset(self):
         self.temp_colorButton.setStyleSheet('QWidget { background-color:  }')
