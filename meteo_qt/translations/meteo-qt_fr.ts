@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="fr">
 <context>
     <name/>
     <message>
@@ -293,7 +293,7 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="430"/>
+        <location filename="../settings.py" line="422"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Lancer réduit</translation>
@@ -308,7 +308,7 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
         <translation>Utilisez une authentification de proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="387"/>
+        <location filename="../settings.py" line="379"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Connexion par proxy</translation>
@@ -512,12 +512,6 @@ portez un vêtement à manches longues et un pantalon, des lunettes de soleil, e
 </context>
 <context>
     <name>Font setting - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="374"/>
-        <source>Bold</source>
-        <comment>Settings dialogue</comment>
-        <translation>Gras</translation>
-    </message>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -612,7 +606,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="400"/>
+        <location filename="../settings.py" line="392"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Configuration</translation>
@@ -630,7 +624,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="417"/>
+        <location filename="../settings.py" line="409"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Créer une clé&lt;/a&gt;</translation>
@@ -861,7 +855,7 @@ ou que vous avez une peau particulièrement claire.</translation>
         <translation>Notification pour les mises à jour du temps</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="519"/>
+        <location filename="../settings.py" line="510"/>
         <source>Meteo-qt Configuration</source>
         <translation>Configuration de Meteo-qt</translation>
     </message>
@@ -882,7 +876,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="444"/>
+        <location filename="../settings.py" line="436"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation type="unfinished"/>
@@ -1108,12 +1102,6 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../settings.py" line="348"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
@@ -1129,6 +1117,12 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../settings.py" line="364"/>
+        <source>Temperature font in system tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1165,7 +1159,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2521"/>
+        <location filename="../meteo_qt.py" line="2517"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>L&apos;application doit être relancée pour appliquer les modifications</translation>
     </message>
@@ -1223,12 +1217,12 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2587"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2603"/>
+        <location filename="../meteo_qt.py" line="2599"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1282,7 +1276,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
         <translation>Températures min et max et de la journée</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2612"/>
+        <location filename="../meteo_qt.py" line="2608"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1316,7 +1310,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="410"/>
+        <location filename="../settings.py" line="402"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Clef OpenWeatherMap</translation>
@@ -1487,7 +1481,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="513"/>
+        <location filename="../settings.py" line="504"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>S.V.P ajoutez une ville</translation>
@@ -1496,7 +1490,7 @@ où la concentration d&apos;ozone atteint une moyenne de 100 Dobson. </translati
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="508"/>
+        <location filename="../settings.py" line="499"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>S.V.P entrez votre clef OpenWeatherMap</translation>

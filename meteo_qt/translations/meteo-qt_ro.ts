@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="ro">
 <context>
     <name/>
     <message>
@@ -293,7 +293,7 @@ Teren: Unele ramuri se rup din copacii, iar la copacii mici sufla peste. Constru
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="430"/>
+        <location filename="../settings.py" line="422"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Pornire minimizată</translation>
@@ -308,7 +308,7 @@ Teren: Unele ramuri se rup din copacii, iar la copacii mici sufla peste. Constru
         <translation>Folosește autentificare proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="387"/>
+        <location filename="../settings.py" line="379"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Conectat prin proxy</translation>
@@ -513,12 +513,6 @@ Evitați soarele în decurs de trei ore la prânz.</translation>
 </context>
 <context>
     <name>Font setting - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="374"/>
-        <source>Bold</source>
-        <comment>Settings dialogue</comment>
-        <translation>Bold</translation>
-    </message>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -618,7 +612,7 @@ ore după amiază și purtați ochelari de soare. </translation>
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="400"/>
+        <location filename="../settings.py" line="392"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Setări</translation>
@@ -636,7 +630,7 @@ ore după amiază și purtați ochelari de soare. </translation>
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="417"/>
+        <location filename="../settings.py" line="409"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Creați cheia&lt;/a&gt;</translation>
@@ -867,7 +861,7 @@ sau dacă aveți o piele deosebit de deschisă la culoare.</translation>
         <translation>Notificare privind actualizarea vremii</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="519"/>
+        <location filename="../settings.py" line="510"/>
         <source>Meteo-qt Configuration</source>
         <translation>Configurare Meteo-qt</translation>
     </message>
@@ -888,7 +882,7 @@ când soarele este cel mai puternic.</translation>
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="444"/>
+        <location filename="../settings.py" line="436"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Nivel de înregistrare</translation>
@@ -1114,12 +1108,6 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
         <translation>Comutați intervalul pictogramei zonei de notificare</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Dimensiunea fontului în zona de notificare</translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="348"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
@@ -1136,6 +1124,12 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
         <translation>Temă pictograme</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="364"/>
+        <source>Temperature font in system tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1171,7 +1165,7 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2521"/>
+        <location filename="../meteo_qt.py" line="2517"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Aplicația trebuie repornită pentru a aplica setarea limbii</translation>
     </message>
@@ -1229,12 +1223,12 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
         <translation>Faceți clic dreapta pe pictogramă și faceți clic pe Setări.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2587"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>Fetching weather data...</source>
         <translation>Se preiau datele meteo ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2603"/>
+        <location filename="../meteo_qt.py" line="2599"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1288,7 +1282,7 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
         <translation>Temperatura minimă și maximă a zilei</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2612"/>
+        <location filename="../meteo_qt.py" line="2608"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1339,7 +1333,7 @@ scade la o medie de aproximativ 100 unităti Dobson</translation>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="410"/>
+        <location filename="../settings.py" line="402"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Tasta OpenWeatherMap</translation>
@@ -1511,7 +1505,7 @@ pălărie cu bor lat.&lt;br/&gt; Nu stați prea mult timp la soare.</translation
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="513"/>
+        <location filename="../settings.py" line="504"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Vă rugăm să adăugați un oraș</translation>
@@ -1520,7 +1514,7 @@ pălărie cu bor lat.&lt;br/&gt; Nu stați prea mult timp la soare.</translation
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="508"/>
+        <location filename="../settings.py" line="499"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Vă rugăm să introduceți cheia OpenWeatherMap</translation>

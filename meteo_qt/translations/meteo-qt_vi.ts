@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="vi" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="vi">
 <context>
     <name/>
     <message>
@@ -280,7 +280,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="430"/>
+        <location filename="../settings.py" line="422"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -295,7 +295,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="387"/>
+        <location filename="../settings.py" line="379"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -497,12 +497,6 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 </context>
 <context>
     <name>Font setting - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="374"/>
-        <source>Bold</source>
-        <comment>Settings dialogue</comment>
-        <translation type="unfinished"/>
-    </message>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -595,7 +589,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="400"/>
+        <location filename="../settings.py" line="392"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -613,7 +607,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="417"/>
+        <location filename="../settings.py" line="409"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -842,7 +836,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="519"/>
+        <location filename="../settings.py" line="510"/>
         <source>Meteo-qt Configuration</source>
         <translation type="unfinished"/>
     </message>
@@ -861,7 +855,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="444"/>
+        <location filename="../settings.py" line="436"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation type="unfinished"/>
@@ -1084,12 +1078,6 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../settings.py" line="348"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
@@ -1105,6 +1093,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../settings.py" line="364"/>
+        <source>Temperature font in system tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1141,7 +1135,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2521"/>
+        <location filename="../meteo_qt.py" line="2517"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation type="unfinished"/>
     </message>
@@ -1199,12 +1193,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2587"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>Fetching weather data...</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2603"/>
+        <location filename="../meteo_qt.py" line="2599"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1256,7 +1250,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2612"/>
+        <location filename="../meteo_qt.py" line="2608"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1290,7 +1284,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="410"/>
+        <location filename="../settings.py" line="402"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1461,7 +1455,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="513"/>
+        <location filename="../settings.py" line="504"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>
@@ -1470,7 +1464,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="508"/>
+        <location filename="../settings.py" line="499"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation type="unfinished"/>

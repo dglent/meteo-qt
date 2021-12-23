@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="nl">
 <context>
     <name/>
     <message>
@@ -293,7 +293,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="430"/>
+        <location filename="../settings.py" line="422"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Geminimaliseerd opstarten</translation>
@@ -308,7 +308,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <translation>Proxy-authenticatie</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="387"/>
+        <location filename="../settings.py" line="379"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Verbinding via proxy</translation>
@@ -514,12 +514,6 @@ Vermijdt de zon in de 3 uur voordat de zon op zijn felst is.</translation>
 </context>
 <context>
     <name>Font setting - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="374"/>
-        <source>Bold</source>
-        <comment>Settings dialogue</comment>
-        <translation>Vetgedrukt</translation>
-    </message>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -619,7 +613,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="400"/>
+        <location filename="../settings.py" line="392"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Instellingen</translation>
@@ -637,7 +631,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="417"/>
+        <location filename="../settings.py" line="409"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Sleutel creëren&lt;/a&gt;</translation>
@@ -868,7 +862,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
         <translation>Melding bij weerupdate</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="519"/>
+        <location filename="../settings.py" line="510"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt-instellingen</translation>
     </message>
@@ -890,7 +884,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="444"/>
+        <location filename="../settings.py" line="436"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Logniveau</translation>
@@ -1116,12 +1110,6 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <translation>Systeemvakpictogramtussenpoos omschakelen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Lettergrootte op systeemvakpictogram</translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="348"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
@@ -1138,6 +1126,12 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
         <translation>Pictogramthema</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="364"/>
+        <source>Temperature font in system tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation>Temperatuurlettertype in systeemvak</translation>
     </message>
 </context>
 <context>
@@ -1173,7 +1167,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2521"/>
+        <location filename="../meteo_qt.py" line="2517"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Herstart het programma om de taalwijziging toe te passen</translation>
     </message>
@@ -1231,12 +1225,12 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2587"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2603"/>
+        <location filename="../meteo_qt.py" line="2599"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1290,7 +1284,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
         <translation>Min.-/Max.-temperatuur van de dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2612"/>
+        <location filename="../meteo_qt.py" line="2608"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1339,7 +1333,7 @@ noemen is waar de ozonwaarde daalt naar gemiddeld
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="410"/>
+        <location filename="../settings.py" line="402"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>OpenWeatherMap-sleutel</translation>
@@ -1511,7 +1505,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="513"/>
+        <location filename="../settings.py" line="504"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Voeg een locatie toe</translation>
@@ -1520,7 +1514,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="508"/>
+        <location filename="../settings.py" line="499"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Voer uw OpenWeatherMap-sleutel in</translation>

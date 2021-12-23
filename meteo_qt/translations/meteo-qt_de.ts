@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="de">
 <context>
     <name/>
     <message>
@@ -293,7 +293,7 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="430"/>
+        <location filename="../settings.py" line="422"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Minimiert starten</translation>
@@ -308,7 +308,7 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <translation>Authentifizierung am Proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="387"/>
+        <location filename="../settings.py" line="379"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Über Proxy verbinden</translation>
@@ -512,12 +512,6 @@ Verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie ein lan
 </context>
 <context>
     <name>Font setting - Checkbox label</name>
-    <message>
-        <location filename="../settings.py" line="374"/>
-        <source>Bold</source>
-        <comment>Settings dialogue</comment>
-        <translation>Fett</translation>
-    </message>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -615,7 +609,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="400"/>
+        <location filename="../settings.py" line="392"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Einstellungen</translation>
@@ -633,7 +627,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="417"/>
+        <location filename="../settings.py" line="409"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Schlüssel erstellen&lt;/a&gt;</translation>
@@ -862,7 +856,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <translation>Benachrichtigen bei Wetteraktualiserungen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="519"/>
+        <location filename="../settings.py" line="510"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt Konfiguration</translation>
     </message>
@@ -881,7 +875,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="444"/>
+        <location filename="../settings.py" line="436"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Protokollierungsstufe</translation>
@@ -1108,12 +1102,6 @@ auf Werte um 100DU.</translation>
         <translation>Symbol in der Systemleiste wechseln</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="359"/>
-        <source>Font size in tray</source>
-        <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Schriftgröße in der Leiste</translation>
-    </message>
-    <message>
         <location filename="../settings.py" line="348"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
@@ -1130,6 +1118,12 @@ auf Werte um 100DU.</translation>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
         <translation>Symbol-Themen</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="364"/>
+        <source>Temperature font in system tray</source>
+        <comment>Setting for the font size of the temperature in the tray icon</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1165,7 +1159,7 @@ auf Werte um 100DU.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2521"/>
+        <location filename="../meteo_qt.py" line="2517"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
     </message>
@@ -1223,12 +1217,12 @@ auf Werte um 100DU.</translation>
         <translation>Klicke mit der rechten Maustaste auf das Symbol und wähle Einstellungen.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2587"/>
+        <location filename="../meteo_qt.py" line="2583"/>
         <source>Fetching weather data...</source>
         <translation>Rufe Wetterdaten ab...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2603"/>
+        <location filename="../meteo_qt.py" line="2599"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1282,7 +1276,7 @@ auf Werte um 100DU.</translation>
         <translation>Min Max Temparatur des Tages</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2612"/>
+        <location filename="../meteo_qt.py" line="2608"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1333,7 +1327,7 @@ auf Werte um 100DU.</translation>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="410"/>
+        <location filename="../settings.py" line="402"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Schlüssel von OpenWeatherMap</translation>
@@ -1504,7 +1498,7 @@ auf Werte um 100DU.</translation>
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="513"/>
+        <location filename="../settings.py" line="504"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Bitte eine Stadt hinzufügen</translation>
@@ -1513,7 +1507,7 @@ auf Werte um 100DU.</translation>
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="508"/>
+        <location filename="../settings.py" line="499"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Bitte hier den Schlüssel von OpenWeatherMap eintragen</translation>
