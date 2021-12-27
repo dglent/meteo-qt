@@ -477,6 +477,13 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
         )
+        self.uv_label.setToolTip(
+            QCoreApplication.translate(
+                'Tooltip of UV label',
+                'The ultraviolet index at 12 PM',
+                'Label in weather info dialogue'
+            )
+        )
         self.uv_label.setAlignment(Qt.AlignTop)
         self.uv_value_label = QLabel()
         # Ozone
