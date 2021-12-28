@@ -479,6 +479,11 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.aqi = {
+            0: QCoreApplication.translate(
+                'The air quality index is not available',
+                'Unavailable',
+                'The value in the weather info dialogue'
+            ),
             1: QCoreApplication.translate(
                 'Air Quality Index 1',
                 'Good',
@@ -2884,8 +2889,8 @@ class Uv(QThread):
             logging.debug(f'Air pollution data: {dic_air}')
             air_pollution_data = dic_air['list']
         except Exception:
-            uv_ind = '-'
-            logging.error('Cannot find UV index')
+            air_pollution_data = {'main': {'aqi': 0}, 'components': {}}
+            logging.error('Cannot find Air Quality Index')
 
         self.uv_signal.emit(uv_ind)
         self.air_pollution_signal.emit(air_pollution_data)
