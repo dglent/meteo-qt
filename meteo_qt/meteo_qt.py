@@ -467,6 +467,45 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.daylight_value_label = QLabel()
+
+        # --- Air pollution ---
+        self.air_pollution_label = QLabel(
+            '<font><b>{}</b></font>'.format(
+                QCoreApplication.translate(
+                    'Label for air quality index (air pollution)',
+                    'Air quality',
+                    'Label in weather info dialogue'
+                )
+            )
+        )
+        self.aqi = {
+            1: QCoreApplication.translate(
+                'Air Quality Index 1',
+                'Good',
+                'The value in the weather info dialogue'
+            ),
+            2: QCoreApplication.translate(
+                'Air Quality Index 2',
+                'Fair',
+                'The value in the weather info dialogue'
+            ),
+            3: QCoreApplication.translate(
+                'Air Quality Index 3',
+                'Moderate',
+                'The value in the weather info dialogue'
+            ),
+            4: QCoreApplication.translate(
+                'Air Quality Index 4',
+                'Poor',
+                'The value in the weather info dialogue'
+            ),
+            5: QCoreApplication.translate(
+                'Air Quality Index 5',
+                'Very Poor',
+                'The value in the weather info dialogue'
+            )
+        }
+
         # --UV---
         self.uv_label = QLabel(
             '<font size="3" color=><b>{}</b></font>'.format(
@@ -484,6 +523,7 @@ class SystemTrayIcon(QMainWindow):
                 'Label in weather info dialogue'
             )
         )
+        self.air_pollution_value_label = QLabel()
         self.uv_label.setAlignment(Qt.AlignTop)
         self.uv_value_label = QLabel()
 
@@ -512,8 +552,10 @@ class SystemTrayIcon(QMainWindow):
         self.over_grid.addWidget(self.sunset_value, 10, 1)
         self.over_grid.addWidget(self.daylight_label, 11, 0)
         self.over_grid.addWidget(self.daylight_value_label, 11, 1)
-        self.over_grid.addWidget(self.uv_label, 12, 0)
-        self.over_grid.addWidget(self.uv_value_label, 12, 1)
+        self.over_grid.addWidget(self.air_pollution_label, 12, 0)
+        self.over_grid.addWidget(self.air_pollution_value_label, 12, 1)
+        self.over_grid.addWidget(self.uv_label, 13, 0)
+        self.over_grid.addWidget(self.uv_value_label, 13, 1)
         # # -------------Forecast-------------
         self.forecast_days_layout = QHBoxLayout()
         self.forecast_icons_layout = QHBoxLayout()
@@ -745,6 +787,19 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.uv_value_label.setText(fetching_text)
+
+        if self.forcast6daysBool:
+            self.forecast6data()
+        else:
+            self.forecastdata()
+        self.iconfetch()
+        logging.debug('Fetched 6 days forecast icons')
+        self.dayforecastdata()
+        logging.debug('Fetched day forecast data')
+        self.dayiconfetch()
+        logging.debug('Fetched day forcast icons')
+        self.uv_fetch()
+        logging.debug('Fetched uv index')
 
         self.restoreGeometry(
             self.settings.value(
@@ -1655,8 +1710,17 @@ class SystemTrayIcon(QMainWindow):
     def uv_fetch(self):
         logging.debug('Download uv info...')
         self.uv_thread = Uv(self.uv_coord)
-        self.uv_thread.uv_signal['PyQt_PyObject'].connect(self.uv_index)
+        self.uv_thread.uv_signal.connect(self.uv_index)
+        self.uv_thread.air_pollution_signal.connect(self.air_pollution)
         self.uv_thread.start()
+
+    def air_pollution(self, data):
+        aqi = data[0]['main']['aqi']
+        values = data[0]['components']
+        self.air_pollution_value_label.setText(self.aqi[aqi])
+        self.air_pollution_value_label.setToolTip(
+            '\n'.join(f'{key}: {value}' for key, value in values.items())
+        )
 
     def uv_index(self, index):
         uv_gauge = '-'
@@ -2759,6 +2823,7 @@ class Download(QThread):
 
 class Uv(QThread):
     uv_signal = pyqtSignal(['PyQt_PyObject'])
+    air_pollution_signal = pyqtSignal(['PyQt_PyObject'])
 
     def __init__(self, uv_coord, parent=None):
         QThread.__init__(self, parent)
@@ -2793,9 +2858,9 @@ class Uv(QThread):
             proxy_handler = urllib.request.ProxyHandler({})
             opener = urllib.request.build_opener(proxy_handler)
             urllib.request.install_opener(opener)
+        lat = self.uv_coord[0]
+        lon = self.uv_coord[1]
         try:
-            lat = self.uv_coord[0]
-            lon = self.uv_coord[1]
             url = (
                 f'http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={self.appid}'
             )
@@ -2805,10 +2870,25 @@ class Uv(QThread):
             dicUV = json.loads(page)
             uv_ind = dicUV['value']
             logging.debug(f'UV index: {str(uv_ind)}')
-        except:
+        except Exception:
             uv_ind = '-'
             logging.error('Cannot find UV index')
+        try:
+            url = (
+                f'http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={self.appid}'
+            )
+            logging.debug(f'Fetching url for air pollution: {str(url)}')
+            req = urllib.request.urlopen(url, timeout=5)
+            page = req.read().decode('utf-8')
+            dic_air = json.loads(page)
+            logging.debug(f'Air pollution data: {dic_air}')
+            air_pollution_data = dic_air['list']
+        except Exception:
+            uv_ind = '-'
+            logging.error('Cannot find UV index')
+
         self.uv_signal.emit(uv_ind)
+        self.air_pollution_signal.emit(air_pollution_data)
 
 
 class IconDownload(QThread):
