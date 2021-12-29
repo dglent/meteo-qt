@@ -139,6 +139,51 @@
     </message>
 </context>
 <context>
+    <name>Air Quality Index 1</name>
+    <message>
+        <location filename="../meteo_qt.py" line="487"/>
+        <source>Good</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 2</name>
+    <message>
+        <location filename="../meteo_qt.py" line="492"/>
+        <source>Fair</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 3</name>
+    <message>
+        <location filename="../meteo_qt.py" line="497"/>
+        <source>Moderate</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 4</name>
+    <message>
+        <location filename="../meteo_qt.py" line="502"/>
+        <source>Poor</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 5</name>
+    <message>
+        <location filename="../meteo_qt.py" line="507"/>
+        <source>Very Poor</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="192"/>
@@ -472,15 +517,6 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
     </message>
 </context>
 <context>
-    <name>Dobson Units</name>
-    <message>
-        <location filename="../meteo_qt.py" line="1732"/>
-        <source>DU</source>
-        <comment>Ozone value label</comment>
-        <translation>DJ</translation>
-    </message>
-</context>
-<context>
     <name>Entry label for the proxy port</name>
     <message>
         <location filename="../proxydlg.py" line="39"/>
@@ -510,9 +546,6 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 na opalování SPF 30+, tričko s dlouhým rukávem a kalhoty,&lt;br/&gt;sluneční brýle a klobouk s velice širokou střechou.
 Vyhněte se pobytu na slunci v době slunečního poledne, kdy je slunce po tři hodiny na nejvyšší úrovni.</translation>
     </message>
-</context>
-<context>
-    <name>Font setting - Checkbox label</name>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -560,6 +593,15 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Vítr</translation>
+    </message>
+</context>
+<context>
+    <name>Label for air quality index (air pollution)</name>
+    <message>
+        <location filename="../meteo_qt.py" line="472"/>
+        <source>Air quality</source>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -911,31 +953,6 @@ zůstaňte ve stínu.</translation>
     </message>
 </context>
 <context>
-    <name>Ozone data title</name>
-    <message>
-        <location filename="../meteo_qt.py" line="483"/>
-        <source>Ozone</source>
-        <comment>Label in weather info dialogue</comment>
-        <translation>Ozón</translation>
-    </message>
-</context>
-<context encoding="UTF-8">
-    <name>Ozone value tooltip</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1746"/>
-        <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
-                    roughly 300 Dobson Units. What scientists call the
-                    Antarctic Ozone “Hole” is an area where the ozone
-                    concentration drops to an average of about 100 Dobson
-                    Units.</source>
-        <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation>Průměrné množství ozónu v &lt;br/&gt; atmosféře je
-                zhruba 300 Dobsonových jednotek. To co vědci nazývají
-               ozónová díra nad Antarktidou, je oblast, v níž soustředění
-               ozónu klesá na průměrných asi 100 Dobsonových jednotek.</translation>
-    </message>
-</context>
-<context>
     <name>Precipitation type</name>
     <message>
         <location filename="../conditions.py" line="101"/>
@@ -1163,7 +1180,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2517"/>
+        <location filename="../meteo_qt.py" line="2476"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
@@ -1201,32 +1218,32 @@ zůstaňte ve stínu.</translation>
         <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1978"/>
+        <location filename="../meteo_qt.py" line="1937"/>
         <source>Empty list</source>
         <translation>Prázdný seznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1997"/>
+        <location filename="../meteo_qt.py" line="1956"/>
         <source>No city configured</source>
         <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2011"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>No city has been configured yet.</source>
         <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2011"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2583"/>
+        <location filename="../meteo_qt.py" line="2542"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2599"/>
+        <location filename="../meteo_qt.py" line="2558"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1270,17 +1287,17 @@ zůstaňte ve stínu.</translation>
         <translation>Ne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="533"/>
+        <location filename="../meteo_qt.py" line="576"/>
         <source>Weather status</source>
         <translation>Stav počasí</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1403"/>
+        <location filename="../meteo_qt.py" line="1408"/>
         <source>Min Max Temperature of the day</source>
         <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2608"/>
+        <location filename="../meteo_qt.py" line="2567"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1329,6 +1346,15 @@ github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
+    <name>The air quality index is not available</name>
+    <message>
+        <location filename="../meteo_qt.py" line="482"/>
+        <source>Unavailable</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
         <location filename="../settings.py" line="402"/>
@@ -1356,27 +1382,36 @@ github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
+    <name>Tooltip of UV label</name>
+    <message>
+        <location filename="../meteo_qt.py" line="524"/>
+        <source>The ultraviolet index at 12 PM</source>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1082"/>
+        <location filename="../meteo_qt.py" line="1087"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Den</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1087"/>
+        <location filename="../meteo_qt.py" line="1092"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ráno</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1092"/>
+        <location filename="../meteo_qt.py" line="1097"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Večer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1097"/>
+        <location filename="../meteo_qt.py" line="1102"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Noc</translation>
@@ -1385,13 +1420,13 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1695"/>
+        <location filename="../meteo_qt.py" line="1700"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1700"/>
+        <location filename="../meteo_qt.py" line="1705"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Vlhkost</translation>
@@ -1409,7 +1444,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2119"/>
+        <location filename="../meteo_qt.py" line="2078"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hledají se data o počasí...</translation>
@@ -1455,7 +1490,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="471"/>
+        <location filename="../meteo_qt.py" line="515"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Ultrafialové záření</translation>
@@ -1464,7 +1499,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="742"/>
+        <location filename="../meteo_qt.py" line="785"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Načítání...</translation>
@@ -1474,7 +1509,7 @@ github&lt;/a&gt;.</translation>
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="617"/>
+        <location filename="../meteo_qt.py" line="660"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>

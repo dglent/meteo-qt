@@ -139,6 +139,51 @@
     </message>
 </context>
 <context>
+    <name>Air Quality Index 1</name>
+    <message>
+        <location filename="../meteo_qt.py" line="487"/>
+        <source>Good</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 2</name>
+    <message>
+        <location filename="../meteo_qt.py" line="492"/>
+        <source>Fair</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 3</name>
+    <message>
+        <location filename="../meteo_qt.py" line="497"/>
+        <source>Moderate</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 4</name>
+    <message>
+        <location filename="../meteo_qt.py" line="502"/>
+        <source>Poor</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>Air Quality Index 5</name>
+    <message>
+        <location filename="../meteo_qt.py" line="507"/>
+        <source>Very Poor</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Beaufort scale 0 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale</name>
     <message>
         <location filename="../conditions.py" line="192"/>
@@ -458,15 +503,6 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
     </message>
 </context>
 <context>
-    <name>Dobson Units</name>
-    <message>
-        <location filename="../meteo_qt.py" line="1732"/>
-        <source>DU</source>
-        <comment>Ozone value label</comment>
-        <translation>DU</translation>
-    </message>
-</context>
-<context>
     <name>Entry label for the proxy port</name>
     <message>
         <location filename="../proxydlg.py" line="39"/>
@@ -496,9 +532,6 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
 Unikaj słońca co najmniej trzy godziny po południu.</translation>
     </message>
-</context>
-<context>
-    <name>Font setting - Checkbox label</name>
 </context>
 <context>
     <name>From the site: Why hPa Is Used - http://n-a-c.biz/WS62694/hPa.htm</name>
@@ -548,6 +581,15 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Wiatr</translation>
+    </message>
+</context>
+<context>
+    <name>Label for air quality index (air pollution)</name>
+    <message>
+        <location filename="../meteo_qt.py" line="472"/>
+        <source>Air quality</source>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -897,28 +939,6 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     </message>
 </context>
 <context>
-    <name>Ozone data title</name>
-    <message>
-        <location filename="../meteo_qt.py" line="483"/>
-        <source>Ozone</source>
-        <comment>Label in weather info dialogue</comment>
-        <translation>Ozon</translation>
-    </message>
-</context>
-<context encoding="UTF-8">
-    <name>Ozone value tooltip</name>
-    <message encoding="UTF-8">
-        <location filename="../meteo_qt.py" line="1746"/>
-        <source>The average amount of ozone in the &lt;br/&gt; atmosphere is
-                    roughly 300 Dobson Units. What scientists call the
-                    Antarctic Ozone “Hole” is an area where the ozone
-                    concentration drops to an average of about 100 Dobson
-                    Units.</source>
-        <comment>http://ozonewatch.gsfc.nasa.gov/facts/dobson_SH.html</comment>
-        <translation>Średnia ilość ozonu w &lt;br/&gt; atmosferze wynosi mniej więcej 300 jednostek Dobsona. Co naukowcy nazywają antarktyczną dziurą ozonową jest obszarem, gdzie koncentracja ozonu spada do średniej wynoszącej około 100 jednostek Dobsona.</translation>
-    </message>
-</context>
-<context>
     <name>Precipitation type</name>
     <message>
         <location filename="../conditions.py" line="101"/>
@@ -1146,7 +1166,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2517"/>
+        <location filename="../meteo_qt.py" line="2476"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
     </message>
@@ -1184,32 +1204,32 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <translation>Wyszukiwanie informacji o pogodzie...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1978"/>
+        <location filename="../meteo_qt.py" line="1937"/>
         <source>Empty list</source>
         <translation>Pusta lista</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1997"/>
+        <location filename="../meteo_qt.py" line="1956"/>
         <source>No city configured</source>
         <translation>Nie skonfigurowano żadnego miasta</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2011"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>No city has been configured yet.</source>
         <translation>Nie zostało ustawione żadne miasto.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2011"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Prowoklik na ikonie, następnie kliknij Ustawienia.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2583"/>
+        <location filename="../meteo_qt.py" line="2542"/>
         <source>Fetching weather data...</source>
         <translation>Pobieranie informacji o pogodzie ...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2599"/>
+        <location filename="../meteo_qt.py" line="2558"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1253,17 +1273,17 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <translation>Nie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="533"/>
+        <location filename="../meteo_qt.py" line="576"/>
         <source>Weather status</source>
         <translation>Stan pogody</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1403"/>
+        <location filename="../meteo_qt.py" line="1408"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min Max Temperatura w ciągu dnia</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2608"/>
+        <location filename="../meteo_qt.py" line="2567"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1307,6 +1327,15 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     </message>
 </context>
 <context>
+    <name>The air quality index is not available</name>
+    <message>
+        <location filename="../meteo_qt.py" line="482"/>
+        <source>Unavailable</source>
+        <comment>The value in the weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
         <location filename="../settings.py" line="402"/>
@@ -1334,27 +1363,36 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     </message>
 </context>
 <context>
+    <name>Tooltip of UV label</name>
+    <message>
+        <location filename="../meteo_qt.py" line="524"/>
+        <source>The ultraviolet index at 12 PM</source>
+        <comment>Label in weather info dialogue</comment>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1082"/>
+        <location filename="../meteo_qt.py" line="1087"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Dzień</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1087"/>
+        <location filename="../meteo_qt.py" line="1092"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ranek</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1092"/>
+        <location filename="../meteo_qt.py" line="1097"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Wieczór</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1097"/>
+        <location filename="../meteo_qt.py" line="1102"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Noc</translation>
@@ -1363,13 +1401,13 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1695"/>
+        <location filename="../meteo_qt.py" line="1700"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Ciśnienie</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1700"/>
+        <location filename="../meteo_qt.py" line="1705"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Wilgotność</translation>
@@ -1387,7 +1425,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2119"/>
+        <location filename="../meteo_qt.py" line="2078"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Wyszukiwanie informacji o pogodzie...</translation>
@@ -1433,7 +1471,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="471"/>
+        <location filename="../meteo_qt.py" line="515"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1442,7 +1480,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="742"/>
+        <location filename="../meteo_qt.py" line="785"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Pobieram...</translation>
@@ -1452,7 +1490,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="617"/>
+        <location filename="../meteo_qt.py" line="660"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation>km/h</translation>
