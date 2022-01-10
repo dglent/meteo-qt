@@ -144,7 +144,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Gut</translation>
     </message>
 </context>
 <context>
@@ -153,7 +153,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Angemessen</translation>
     </message>
 </context>
 <context>
@@ -162,7 +162,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Mittelmäßig</translation>
     </message>
 </context>
 <context>
@@ -171,7 +171,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Schlecht</translation>
     </message>
 </context>
 <context>
@@ -180,7 +180,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Sehr schlecht</translation>
     </message>
 </context>
 <context>
@@ -600,7 +600,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Luftqualität</translation>
     </message>
 </context>
 <context>
@@ -1139,7 +1139,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="364"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation>Temperaturanzeige in der Systemleiste</translation>
     </message>
 </context>
 <context>
@@ -1346,7 +1346,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Nicht verfügbar</translation>
     </message>
 </context>
 <context>
@@ -1382,7 +1382,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="524"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Der UV-Index um 12 Uhr</translation>
     </message>
 </context>
 <context>
