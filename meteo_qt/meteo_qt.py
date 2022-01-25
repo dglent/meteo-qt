@@ -1623,18 +1623,15 @@ class SystemTrayIcon(QMainWindow):
                 precipitation_orig = self.dayforecast_data['list'][d]
                 precipitation_rain = precipitation_orig.get('rain', None)
                 precipitation_snow = precipitation_orig.get('snow', None)
-                precipitation_type = ''
                 if (
                     precipitation_rain is not None
                     and len(precipitation_rain) > 0
                 ):
-                    precipitation_type = 'rain'
                     precipitation = str(precipitation_rain['3h'])
                 elif (
                     precipitation_snow is not None
                     and len(precipitation_snow) > 0
                 ):
-                    precipitation_type = 'snow'
                     precipitation = str(precipitation_snow['3h'])
                 else:
                     precipitation = 'None'
@@ -2745,7 +2742,7 @@ class Download(QThread):
                 f'http://api.openweathermap.org/data/2.5/onecall?'
                 f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}'
             )
-            logging.debug(f'OneCall URL : {one_call_url}')
+            logging.debug(f'OneCall URL: {one_call_url}')
             try:
                 one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
                 one_call_rep = one_call_req.read().decode('utf-8')
@@ -2754,7 +2751,7 @@ class Download(QThread):
                 if one_call_alert:
                     self.alerts_signal.emit(one_call_alert)
             except timeout:
-                logging.warning(f'Timeout error. Cannot fetch onecall data')
+                logging.warning('Timeout error. Cannot fetch onecall data')
 
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
