@@ -4,6 +4,7 @@ import glob
 import os
 from distutils.command.build import build
 from distutils.core import setup
+from pathlib import Path
 
 
 class BuildQm(build):
@@ -12,6 +13,9 @@ class BuildQm(build):
     for ts in glob.glob('meteo_qt/translations/*.ts'):
         os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2] + 'qm')))
 
+PROJECT_PATH = Path(__file__).parent
+with (PROJECT_PATH / "requirements.txt").open() as f:
+    install_requires = [l.strip() for l in f.readlines()]
 
 setup(
     name='meteo_qt',
@@ -22,6 +26,7 @@ setup(
     url='https://github.com/dglent/meteo-qt',
     license='GPLv3',
     packages=['meteo_qt'],
+    install_requires=install_requires,
     keywords=['weather', 'qt', 'trayicon', 'openweathermap', 'forecast'],
     data_files=[('/usr/share/applications', ['share/meteo-qt.desktop']),
                 ('/usr/share/icons', ['meteo_qt/images/weather-few-clouds.png']),
