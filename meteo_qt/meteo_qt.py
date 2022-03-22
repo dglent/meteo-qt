@@ -25,7 +25,7 @@ from PyQt5.QtCore import (
 )
 from PyQt5.QtGui import (
     QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
-    QTransform, QTextDocument, QTextCursor
+    QTransform, QTextDocument, QTextCursor, QColorConstants
 )
 from PyQt5.QtWidgets import (
     QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
@@ -1025,7 +1025,17 @@ class SystemTrayIcon(QMainWindow):
             )
         counter_day = 0
         forecast_data = False
-
+        tomorrow_collected = False
+        self.tomorrow_notification_text = ""
+        self.tomorrow_notification_text += self.tomorrow_translation + '\n'
+        trans_cities = self.settings.value('CitiesTranslation') or '{}'
+        trans_cities_dict = eval(trans_cities)
+        city = f'{self.city}_{self.country}_{self.id_}'
+        city_name = self.city
+        if city in trans_cities_dict:
+            city_name = trans_cities_dict[city]
+        self.tomorrow_notification_text += city_name + '\n'
+        t_unit = {'celsius': '°C', 'fahrenheit': '°F', 'kelvin': '°K'}
         for element in self.forecast6_data.iter():
 
             if element.tag == 'time':
@@ -1050,6 +1060,9 @@ class SystemTrayIcon(QMainWindow):
                 self.forecast_days_layout.addWidget(label)
 
             if element.tag == 'temperature':
+                t_air = element.get('max')
+                if not tomorrow_collected:
+                    self.tomorrow_notification_text += f'{t_air} {t_unit[element.get("unit")]}\n'
                 mlabel = QLabel(
                     '<font color=>{0}°<br/>{1}°</font>'.format(
                         '{0:.0f}'.format(float(element.get('min'))),
@@ -1073,6 +1086,8 @@ class SystemTrayIcon(QMainWindow):
                         f'Cannot find localisation string for: {weather_cond}'
                     )
                     pass
+                if not tomorrow_collected:
+                    self.tomorrow_notification_text += weather_cond + ' '
 
             if element.tag == 'feels_like':
                 feels_like_day = element.get('day')
@@ -1112,6 +1127,9 @@ class SystemTrayIcon(QMainWindow):
                     f'{feels_like_night_label} {feels_like_night} {feels_like_unit}\n'
                     '―――――'
                 )
+                if not tomorrow_collected:
+                    self.tomorrow_notification_text += f'{self.feels_like_translated}: {feels_like_day} {feels_like_unit}'
+                    tomorrow_collected = True
 
             if element.tag == 'precipitation':
 
@@ -1482,7 +1500,6 @@ class SystemTrayIcon(QMainWindow):
                     weather_cond += f'\n{self.doc.toPlainText()}: {clouds} %'
                     weather_end = True
                     self.forecast_weather_list.append(weather_cond)
-
 
     def iconfetch(self):
         '''Get icons for the next days forecast'''
@@ -2344,7 +2361,9 @@ class SystemTrayIcon(QMainWindow):
             pass
         # Place empty.png here to initialize the icon
         # don't paint the T° over the old value
-        icon = QPixmap(':/empty')
+        # https://github.com/dglent/meteo-qt/issues/127
+        icon = QPixmap(64, 64)  # ':/empty')
+        icon.fill(QColorConstants.Transparent)
         self.traycolor = self.settings.value('TrayColor') or ''
         self.font_tray = self.settings.value('FontTray') or 'sans-serif'
         if not self.toggle_tray_bool:
@@ -2359,6 +2378,7 @@ class SystemTrayIcon(QMainWindow):
         pt = QPainter()
         pt.begin(icon)
         if self.tray_type != 'temp' and self.tray_type != 'feels_like_temp':
+            # pt.drawPixmap(0, -12, 64, 64, self.wIcon)
             pt.drawPixmap(0, -12, 64, 64, self.wIcon)
         ff = QFont()
         ff.fromString(self.font_tray)
