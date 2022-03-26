@@ -462,6 +462,13 @@ class MeteoSettings(QDialog):
         self.owmkey_create.setOpenExternalLinks(True)
         apikey = self.settings.value('APPID') or '4f086d061c620924f6389f7e7cf0ec6d'
         self.owmkey_text = QLineEdit()
+        self.owmkey_text.setToolTip(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'It is suggested to use a personal key.<br/>If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)',
+                'Tooltip of the api key text field'
+            )
+        )
         self.owmkey_text.setText(apikey)
         self.owmkey_text.textChanged.connect(self.apikey_changed)
 
