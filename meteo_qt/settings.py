@@ -330,6 +330,52 @@ class MeteoSettings(QDialog):
         self.comboBox_icons_theme.currentIndexChanged.connect(self.system_theme_icons)
         self.comboBox_icons_theme_changed = False
 
+        # Tray icon initialization size and temp position
+        self.tray_icon_init_label = QLabel(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Tray icon size and text position',
+                'This option concernes 2 dropdown lists'
+                'to define the size to initialize the tray icon'
+                'and the position of the temperature text in the icon'
+            )
+        )
+        self.tray_icon_init_label.setToolTip(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Changing this setting you can improve the displaying of the temperature in the tray icon',
+                'ToolTip of the label "Tray icon size and text position"'
+            )
+        )
+
+        self.tray_icon_init_cmb = QComboBox()
+        self.tray_icon_init_cmb.setToolTip(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Tray icon initialization size (default size: 64x64)',
+                'Tooltip of the drowndrop list with icon sizes'
+            )
+        )
+        self.tray_icon_init_cmb.addItems(["16x16", "24x24", "32x32", "64x64"])
+        icon_init_size = self.settings.value('Tray_icon_init_size') or '64x64'
+        self.tray_icon_init_cmb.setCurrentText(icon_init_size)
+        self.tray_icon_init_cmb.currentIndexChanged.connect(self.tray_icon_init_size_change)
+        self.tray_icon_init_cmb_changed = False
+
+        self.tray_icon_temp_pos_spinbox = QSpinBox()
+        self.tray_icon_temp_pos_spinbox.setRange(-20, 20)
+        temp_pos_in_icon = self.settings.value('Tray_icon_temp_position') or '-12'
+        self.tray_icon_temp_pos_spinbox.setValue(int(temp_pos_in_icon))
+        self.tray_icon_temp_pos_spinbox_changed = False
+        self.tray_icon_temp_pos_spinbox.valueChanged.connect(self.tray_icon_temp_pos_change)
+        self.tray_icon_temp_pos_spinbox.setToolTip(
+            QCoreApplication.translate(
+                'Settings dialogue',
+                'Temperature position in the icon (vertically) (default value: -12)',
+                'ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon'
+            )
+        )
+
         # Toggle icon Temp
         self.toggle_tray_label = QLabel(
             QCoreApplication.translate(
@@ -476,21 +522,24 @@ class MeteoSettings(QDialog):
         self.panel.addWidget(self.tray_icon_temp_label, 9, 0)
         self.panel.addWidget(self.tray_icon_combo, 9, 1)
         self.panel.addWidget(self.comboBox_icons_theme, 9, 2)
-        self.panel.addWidget(self.toggle_tray_label, 10, 0)
-        self.panel.addWidget(self.toggle_tray_spinbox, 10, 1)
-        self.panel.addWidget(self.toggle_tray_interval_label, 10, 2)
-        self.panel.addWidget(self.font_tray_label, 11, 0)
-        self.panel.addWidget(self.font_tray_btn, 11, 1)
-        self.panel.addWidget(self.proxy_label, 12, 0)
-        self.panel.addWidget(self.proxy_chbox, 12, 1)
-        self.panel.addWidget(self.proxy_button, 12, 2)
-        self.panel.addWidget(self.owmkey_label, 13, 0)
-        self.panel.addWidget(self.owmkey_text, 13, 1)
-        self.panel.addWidget(self.owmkey_create, 13, 2)
-        self.panel.addWidget(self.start_minimized_label, 14, 0)
-        self.panel.addWidget(self.start_minimized_chbx, 14, 1)
-        self.panel.addWidget(self.logging_label, 15, 0)
-        self.panel.addWidget(self.logging_level_combo, 15, 1)
+        self.panel.addWidget(self.tray_icon_init_label, 10, 0)
+        self.panel.addWidget(self.tray_icon_init_cmb, 10, 1)
+        self.panel.addWidget(self.tray_icon_temp_pos_spinbox, 10, 2)
+        self.panel.addWidget(self.toggle_tray_label, 11, 0)
+        self.panel.addWidget(self.toggle_tray_spinbox, 11, 1)
+        self.panel.addWidget(self.toggle_tray_interval_label, 11, 2)
+        self.panel.addWidget(self.font_tray_label, 12, 0)
+        self.panel.addWidget(self.font_tray_btn, 12, 1)
+        self.panel.addWidget(self.proxy_label, 13, 0)
+        self.panel.addWidget(self.proxy_chbox, 13, 1)
+        self.panel.addWidget(self.proxy_button, 13, 2)
+        self.panel.addWidget(self.owmkey_label, 14, 0)
+        self.panel.addWidget(self.owmkey_text, 14, 1)
+        self.panel.addWidget(self.owmkey_create, 14, 2)
+        self.panel.addWidget(self.start_minimized_label, 15, 0)
+        self.panel.addWidget(self.start_minimized_chbx, 15, 1)
+        self.panel.addWidget(self.logging_label, 16, 0)
+        self.panel.addWidget(self.logging_level_combo, 16, 1)
 
         self.layout.addLayout(self.panel)
         self.layout.addLayout(self.buttonLayout)
@@ -697,6 +746,21 @@ class MeteoSettings(QDialog):
         ]
         self.settings.setValue('TrayType', settray[0])
 
+    def tray_icon_init_size_change(self):
+        self.tray_icon_init_cmb_changed = True
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def tray_icon_init_size_apply(self):
+        self.settings.setValue('Tray_icon_init_size', self.tray_icon_init_cmb.currentText())
+
+    def tray_icon_temp_pos_change(self, pos):
+        self.tray_icon_temp_pos_spinbox_changed = True
+        self.tray_icon_temp_pos = pos
+        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+
+    def tray_icon_temp_pos_apply(self):
+        self.settings.setValue('Tray_icon_temp_position', str(self.tray_icon_temp_pos))
+
     def toggle_tray_interval_change(self, interval):
         self.toggle_tray_spinbox_changed = True
         self.toggle_tray_interval = interval
@@ -864,6 +928,10 @@ class MeteoSettings(QDialog):
             self.notifier_apply()
         if self.tray_changed:
             self.tray_apply()
+        if self.tray_icon_init_cmb_changed:
+            self.tray_icon_init_size_apply()
+        if self.tray_icon_temp_pos_spinbox_changed:
+            self.tray_icon_temp_pos_apply()
         if self.toggle_tray_spinbox_changed:
             self.toggle_tray_interval_apply()
         if self.font_tray_changed:

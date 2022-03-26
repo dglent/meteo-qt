@@ -2359,10 +2359,11 @@ class SystemTrayIcon(QMainWindow):
         except:
             # In first time run the gif is not animated
             pass
-        # Place empty.png here to initialize the icon
-        # don't paint the T° over the old value
-        # https://github.com/dglent/meteo-qt/issues/127
-        icon = QPixmap(64, 64)  # ':/empty')
+
+        # Initialize the tray icon
+        self.tray_icon_init_size = self.settings.value('Tray_icon_init_size') or '64x64'
+        w_pix, h_pix = self.tray_icon_init_size.split('x')
+        icon = QPixmap(int(w_pix), int(h_pix))
         icon.fill(QColorConstants.Transparent)
         self.traycolor = self.settings.value('TrayColor') or ''
         self.font_tray = self.settings.value('FontTray') or 'sans-serif'
@@ -2378,8 +2379,8 @@ class SystemTrayIcon(QMainWindow):
         pt = QPainter()
         pt.begin(icon)
         if self.tray_type != 'temp' and self.tray_type != 'feels_like_temp':
-            # pt.drawPixmap(0, -12, 64, 64, self.wIcon)
-            pt.drawPixmap(0, -12, 64, 64, self.wIcon)
+            self.tray_icon_temp_pos = self.settings.value('Tray_icon_temp_position') or '-12'
+            pt.drawPixmap(0, int(self.tray_icon_temp_pos), 64, 64, self.wIcon)
         ff = QFont()
         ff.fromString(self.font_tray)
         pt.setFont(ff)
@@ -2484,6 +2485,8 @@ class SystemTrayIcon(QMainWindow):
         tray_type = self.settings.value('TrayType')
         system_icons = self.settings.value('IconsTheme')
         font_tray = self.settings.value('FontTray')
+        tray_icon_init_size = self.settings.value('Tray_icon_init_size')
+        tray_icon_temp_pos = self.settings.value('Tray_icon_temp_position')
         language = self.settings.value('Language')
         decimal = self.settings.value('Decimal')
         toggle_tray_interval = self.settings.value('Toggle_tray_interval') or '0'
@@ -2518,6 +2521,8 @@ class SystemTrayIcon(QMainWindow):
             or self.font_tray != font_tray
             or decimal != self.temp_decimal_bool
             or toggle_tray
+            or self.tray_icon_init_size != tray_icon_init_size
+            or self.tray_icon_temp_pos != tray_icon_temp_pos
         ):
             self.tray()
         if (
