@@ -782,9 +782,9 @@ class MeteoSettings(QDialog):
             self.font_tray_conf_new = font.toString()
             self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
             font_tray_btn_label = (
-            f"{self.font_tray_conf_new.split(',')[0]} - "
-            f"{self.font_tray_conf_new.split(',')[1]} - "
-            f"{self.font_tray_conf_new.split(',')[-1]}"
+                f"{self.font_tray_conf_new.split(',')[0]} - "
+                f"{self.font_tray_conf_new.split(',')[1]} - "
+                f"{self.font_tray_conf_new.split(',')[-1]}"
             )
             self.font_tray_btn.setText(font_tray_btn_label)
 

@@ -679,7 +679,7 @@ class SystemTrayIcon(QMainWindow):
             self.windLabelDescr.setToolTip(
                 self.beaufort_sea_land[windTobeaufort]
             )
-        except:
+        except Exception:
             logging.error(
                 'Cannot find wind informations:\n{}'.format(
                     self.weatherDataDico['Wind']
@@ -936,7 +936,7 @@ class SystemTrayIcon(QMainWindow):
     def uv_color(self, uv):
         try:
             uv = float(uv)
-        except:
+        except Exception:
             return ('grey', 'None')
         if uv <= 2.99:
             return ('green', 'Low')
@@ -1163,7 +1163,7 @@ class SystemTrayIcon(QMainWindow):
                             rain_unit
                         )
                     )
-                except:
+                except Exception:
                     pass
 
             if element.tag == 'windDirection':
@@ -1293,7 +1293,7 @@ class SystemTrayIcon(QMainWindow):
                                 element.get('number')
                             ]
                         )
-                    except:
+                    except Exception:
                         logging.warning(
                             f'Cannot find localisation string for: {weather_cond}'
                         )
@@ -1321,7 +1321,7 @@ class SystemTrayIcon(QMainWindow):
                                 element.get('code')
                             ]
                         )
-                    except:
+                    except Exception:
                         wind_direction = ''
 
                 if element.tag == 'windSpeed' and collate_info:
@@ -1435,7 +1435,7 @@ class SystemTrayIcon(QMainWindow):
                                 str(tag['weather'][0]['id'])
                             ]
                         )
-                    except:
+                    except Exception:
                         logging.warning(
                             f'Cannot find localisation string for: {weather_cond}'
                         )
@@ -1450,7 +1450,7 @@ class SystemTrayIcon(QMainWindow):
                                 element.get('code')
                             ]
                         )
-                    except:
+                    except Exception:
                         wind_direction = ''
 
                     wind_speed = (
@@ -2348,7 +2348,7 @@ class SystemTrayIcon(QMainWindow):
                 temp_tray = self.temp_decimal
             else:
                 temp_tray = self.temp
-        except:
+        except Exception:
             # First time launch
             return
         if self.inerror or not hasattr(self, 'temp'):
@@ -2356,7 +2356,7 @@ class SystemTrayIcon(QMainWindow):
             return
         try:
             self.gif_loading.stop()
-        except:
+        except Exception:
             # In first time run the gif is not animated
             pass
 
@@ -2806,7 +2806,7 @@ class Download(QThread):
                     m_error = (
                         f'{self.tr("Error:")}\n{str(error.code)} {str(error.reason)}'
                     )
-                except:
+                except Exception:
                     m_error = str(error)
                 logging.error(m_error)
                 self.error.emit(m_error)
@@ -2844,7 +2844,7 @@ class Download(QThread):
             self.error_message = f'{code} {message}@{what}'
             logging.debug(str(self.error_message))
             return True
-        except:
+        except Exception:
             return False
 
 
@@ -2975,7 +2975,7 @@ class IconDownload(QThread):
                 url_error = (
                     f'Error: {str(error.code)}: {str(error.reason)}'
                 )
-            except:
+            except Exception:
                 url_error = error
             logging.error(str(url_error))
             self.url_error_signal.emit(url_error)
@@ -3000,7 +3000,7 @@ class IconDownload(QThread):
             self.error_message = f'{code} {message}@{what}'
             logging.error(self.error_message)
             return True
-        except:
+        except Exception:
             return False
 
 
