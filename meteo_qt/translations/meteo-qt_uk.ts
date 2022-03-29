@@ -338,7 +338,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="422"/>
+        <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Запускати мінімізованим</translation>
@@ -353,7 +353,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <translation>Використовувати розпізнавання на проксі</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="379"/>
+        <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>З’єднання за допомогою проксі</translation>
@@ -651,7 +651,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="392"/>
+        <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Параметри</translation>
@@ -669,7 +669,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="409"/>
+        <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Створити ключ&lt;/a&gt;</translation>
@@ -898,7 +898,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Сповіщення щодо оновлення прогнозу</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="510"/>
+        <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
         <translation>Налаштування Meteo-qt</translation>
     </message>
@@ -917,7 +917,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="436"/>
+        <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Рівень журналювання</translation>
@@ -1112,13 +1112,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Температура «відчувається»</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="334"/>
+        <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
         <translation>Перемкнути інтервал піктограми лотка</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="348"/>
+        <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
         <translation>секунд. Встановіть 0, щоб вимкнути</translation>
@@ -1136,10 +1136,40 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Тема піктограм</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="364"/>
+        <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Шрифт температури у системному лотку</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="334"/>
+        <source>Tray icon size and text position</source>
+        <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
+        <translation>Розмір піктограми лотка та розташування тексту</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="343"/>
+        <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
+        <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
+        <translation>Зміна цього параметра може покращити показ температури на піктограмі лотка</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="352"/>
+        <source>Tray icon initialization size (default size: 64x64)</source>
+        <comment>Tooltip of the drowndrop list with icon sizes</comment>
+        <translation>Початковий розмір піктограми лотка (типовий розмір: 64x64)</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="371"/>
+        <source>Temperature position in the icon (vertically) (default value: -12)</source>
+        <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
+        <translation>Розташування температури на піктограмі (вертикально) (типове значення: –12)</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="465"/>
+        <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
+        <comment>Tooltip of the api key text field</comment>
+        <translation>Радимо користуватися особистим ключем.&lt;br/&gt;Якщо комусь вдасться перехопити типовий ключ meteo-qt, ви не зможете отримувати дані щодо погоди (помилка 401, не уповноважено)</translation>
     </message>
 </context>
 <context>
@@ -1175,7 +1205,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2476"/>
+        <location filename="../meteo_qt.py" line="2496"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Для застосування перекладу програму слід перезапустити</translation>
     </message>
@@ -1213,32 +1243,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Шукаємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1937"/>
+        <location filename="../meteo_qt.py" line="1951"/>
         <source>Empty list</source>
         <translation>Порожній список</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1956"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>No city configured</source>
         <translation>Міста не вказано</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>No city has been configured yet.</source>
         <translation>Вами ще не вказано міста.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Наведіть вказівник на піктограму, клацніть правою кнопкою і виберіть пункт «Параметри».</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2542"/>
+        <location filename="../meteo_qt.py" line="2564"/>
         <source>Fetching weather data...</source>
         <translation>Отримуємо дані щодо погоди…</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2558"/>
+        <location filename="../meteo_qt.py" line="2580"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1287,12 +1317,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <translation>Погода</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1408"/>
+        <location filename="../meteo_qt.py" line="1426"/>
         <source>Min Max Temperature of the day</source>
         <translation>Мін. та макс. температура цього дня</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2567"/>
+        <location filename="../meteo_qt.py" line="2589"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1348,7 +1378,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="402"/>
+        <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Ключ OpenWeatherMap</translation>
@@ -1384,25 +1414,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1087"/>
+        <location filename="../meteo_qt.py" line="1102"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Удень</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1092"/>
+        <location filename="../meteo_qt.py" line="1107"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Вранці</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1097"/>
+        <location filename="../meteo_qt.py" line="1112"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Увечері</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1117"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Вночі</translation>
@@ -1411,13 +1441,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1700"/>
+        <location filename="../meteo_qt.py" line="1714"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Тиск</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1705"/>
+        <location filename="../meteo_qt.py" line="1719"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Вологість</translation>
@@ -1435,7 +1465,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2078"/>
+        <location filename="../meteo_qt.py" line="2092"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Шукаємо дані щодо погоди…</translation>
@@ -1528,7 +1558,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="504"/>
+        <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Будь ласка, додайте місто</translation>
@@ -1537,7 +1567,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="499"/>
+        <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Будь ласка, вкажіть ваш ключ OpenWeatherMap</translation>

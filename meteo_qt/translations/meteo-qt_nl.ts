@@ -338,7 +338,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="422"/>
+        <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Geminimaliseerd opstarten</translation>
@@ -353,7 +353,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <translation>Proxy-authenticatie</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="379"/>
+        <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Verbinding via proxy</translation>
@@ -655,7 +655,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="392"/>
+        <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Instellingen</translation>
@@ -673,7 +673,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="409"/>
+        <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Sleutel creëren&lt;/a&gt;</translation>
@@ -904,7 +904,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
         <translation>Melding bij weerupdate</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="510"/>
+        <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
         <translation>Meteo-qt-instellingen</translation>
     </message>
@@ -926,7 +926,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="436"/>
+        <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Logniveau</translation>
@@ -1121,13 +1121,13 @@ de zon is dan op zijn felst.</translation>
         <translation>&apos;Voelt als&apos;-temperatuur</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="334"/>
+        <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
         <translation>Systeemvakpictogramtussenpoos omschakelen</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="348"/>
+        <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
         <translation>seconden. Stel in op 0 om uit te schakelen</translation>
@@ -1145,10 +1145,40 @@ de zon is dan op zijn felst.</translation>
         <translation>Pictogramthema</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="364"/>
+        <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
         <translation>Temperatuurlettertype in systeemvak</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="334"/>
+        <source>Tray icon size and text position</source>
+        <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
+        <translation>Systeemvakpictogramgrootte en tekstpositie</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="343"/>
+        <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
+        <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
+        <translation>Met deze instelling kan de weergave van de temperatuur op het systeemvakpictogram worden aangepast</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="352"/>
+        <source>Tray icon initialization size (default size: 64x64)</source>
+        <comment>Tooltip of the drowndrop list with icon sizes</comment>
+        <translation>Standaardgrootte (64x64)</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="371"/>
+        <source>Temperature position in the icon (vertically) (default value: -12)</source>
+        <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
+        <translation>Temperatuurpositie op pictogram (verticaal - standaard: -12)</translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="465"/>
+        <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
+        <comment>Tooltip of the api key text field</comment>
+        <translation>Het gebruik van een persoonlijke sleutel is aanbevolen.&lt;br/&gt;Als iemand de standaardsleutel onderschept, dan is het opvragen van het weer niet meer mogelijk (foutcode 401)</translation>
     </message>
 </context>
 <context>
@@ -1184,7 +1214,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2476"/>
+        <location filename="../meteo_qt.py" line="2496"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Herstart het programma om de taalwijziging toe te passen</translation>
     </message>
@@ -1222,32 +1252,32 @@ de zon is dan op zijn felst.</translation>
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1937"/>
+        <location filename="../meteo_qt.py" line="1951"/>
         <source>Empty list</source>
         <translation>Lijst wissen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1956"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>No city configured</source>
         <translation>Geen locatie ingesteld</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>No city has been configured yet.</source>
         <translation>Er is nog geen locatie ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2542"/>
+        <location filename="../meteo_qt.py" line="2564"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2558"/>
+        <location filename="../meteo_qt.py" line="2580"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1296,12 +1326,12 @@ de zon is dan op zijn felst.</translation>
         <translation>Weerstatus</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1408"/>
+        <location filename="../meteo_qt.py" line="1426"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min.-/Max.-temperatuur van de dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2567"/>
+        <location filename="../meteo_qt.py" line="2589"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1359,7 +1389,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="402"/>
+        <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>OpenWeatherMap-sleutel</translation>
@@ -1395,25 +1425,25 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1087"/>
+        <location filename="../meteo_qt.py" line="1102"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1092"/>
+        <location filename="../meteo_qt.py" line="1107"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ochtend</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1097"/>
+        <location filename="../meteo_qt.py" line="1112"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Avond</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1117"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Nacht</translation>
@@ -1422,13 +1452,13 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1700"/>
+        <location filename="../meteo_qt.py" line="1714"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Druk</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1705"/>
+        <location filename="../meteo_qt.py" line="1719"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Luchtvochtigheid</translation>
@@ -1446,7 +1476,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2078"/>
+        <location filename="../meteo_qt.py" line="2092"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
@@ -1540,7 +1570,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="504"/>
+        <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Voeg een locatie toe</translation>
@@ -1549,7 +1579,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="499"/>
+        <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Voer uw OpenWeatherMap-sleutel in</translation>
