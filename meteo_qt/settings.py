@@ -460,7 +460,7 @@ class MeteoSettings(QDialog):
             )
         )
         self.owmkey_create.setOpenExternalLinks(True)
-        apikey = self.settings.value('APPID') or '4f086d061c620924f6389f7e7cf0ec6d'
+        apikey = self.settings.value('APPID') or 'c4a439d6e6ed68f56f7b7777c55feafd'
         self.owmkey_text = QLineEdit()
         self.owmkey_text.setToolTip(
             QCoreApplication.translate(
