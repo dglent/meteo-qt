@@ -1,6 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="cs">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS><TS version="2.0" language="cs" sourcelanguage="">
 <context>
-    <name/>
+    <name></name>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
@@ -144,7 +145,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -153,7 +154,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -162,7 +163,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished">Mírné</translation>
     </message>
 </context>
 <context>
@@ -171,7 +172,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -180,7 +181,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -338,7 +339,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
 <context>
     <name>Checkable option to show or not the window at startup</name>
     <message>
-        <location filename="../settings.py" line="422"/>
+        <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
         <translation>Spustit zmenšeno</translation>
@@ -353,7 +354,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <translation>Použít autentizaci proxy</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="379"/>
+        <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
         <translation>Připojení pomocí proxy</translation>
@@ -601,7 +602,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -652,7 +653,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Label of button to open the proxy dialogue</name>
     <message>
-        <location filename="../settings.py" line="392"/>
+        <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
         <translation>Nastavení</translation>
@@ -670,7 +671,7 @@ Pod 990 hPa je tlak pro VELKÉ hurikány, tornáda a tajfuny.</translation>
 <context>
     <name>Link to create a profile in OpenWeatherMap</name>
     <message>
-        <location filename="../settings.py" line="409"/>
+        <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
         <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Vytvořit klíč&lt;/a&gt;</translation>
@@ -901,7 +902,7 @@ máte obzvláště světlou pokožku.</translation>
         <translation>Upozornění na změnu počasi</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="510"/>
+        <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
         <translation>Nastavení Meteo-qt</translation>
     </message>
@@ -922,7 +923,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>Option for logging level</name>
     <message>
-        <location filename="../settings.py" line="436"/>
+        <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
         <translation>Úroveň protokolování</translation>
@@ -1117,13 +1118,13 @@ zůstaňte ve stínu.</translation>
         <translation>Pocitová teplota</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="334"/>
+        <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
         <translation>Přepnout interval ikony na liště</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="348"/>
+        <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
         <translation>sekundy. Nastavením na 0 vypněte</translation>
@@ -1141,10 +1142,40 @@ zůstaňte ve stínu.</translation>
         <translation>Vzhled ikon</translation>
     </message>
     <message>
-        <location filename="../settings.py" line="364"/>
+        <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="334"/>
+        <source>Tray icon size and text position</source>
+        <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="343"/>
+        <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
+        <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="352"/>
+        <source>Tray icon initialization size (default size: 64x64)</source>
+        <comment>Tooltip of the drowndrop list with icon sizes</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="371"/>
+        <source>Temperature position in the icon (vertically) (default value: -12)</source>
+        <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settings.py" line="465"/>
+        <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
+        <comment>Tooltip of the api key text field</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1180,7 +1211,7 @@ zůstaňte ve stínu.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2476"/>
+        <location filename="../meteo_qt.py" line="2496"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
     </message>
@@ -1218,32 +1249,32 @@ zůstaňte ve stínu.</translation>
         <translation>Hledají se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1937"/>
+        <location filename="../meteo_qt.py" line="1951"/>
         <source>Empty list</source>
         <translation>Prázdný seznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1956"/>
+        <location filename="../meteo_qt.py" line="1970"/>
         <source>No city configured</source>
         <translation>Není nastaveno žádné město</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>No city has been configured yet.</source>
         <translation>Dosud nebylo nastaveno žádné město.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1984"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2542"/>
+        <location filename="../meteo_qt.py" line="2564"/>
         <source>Fetching weather data...</source>
         <translation>Natahují se data o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2558"/>
+        <location filename="../meteo_qt.py" line="2580"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1292,12 +1323,12 @@ zůstaňte ve stínu.</translation>
         <translation>Stav počasí</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1408"/>
+        <location filename="../meteo_qt.py" line="1426"/>
         <source>Min Max Temperature of the day</source>
         <translation>Nejnižší/Nejvyšší teplota dne</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2567"/>
+        <location filename="../meteo_qt.py" line="2589"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1351,13 +1382,13 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>The key that user can generate in his OpenWeatherMap profile</name>
     <message>
-        <location filename="../settings.py" line="402"/>
+        <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Klíč k OpenWeatherMap</translation>
@@ -1387,31 +1418,31 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="524"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1087"/>
+        <location filename="../meteo_qt.py" line="1102"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Den</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1092"/>
+        <location filename="../meteo_qt.py" line="1107"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ráno</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1097"/>
+        <location filename="../meteo_qt.py" line="1112"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Večer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1117"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Noc</translation>
@@ -1420,13 +1451,13 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1700"/>
+        <location filename="../meteo_qt.py" line="1714"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1705"/>
+        <location filename="../meteo_qt.py" line="1719"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Vlhkost</translation>
@@ -1444,7 +1475,7 @@ github&lt;/a&gt;.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2078"/>
+        <location filename="../meteo_qt.py" line="2092"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Hledají se data o počasí...</translation>
@@ -1538,7 +1569,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
 <context>
     <name>Warning message after pressing OK</name>
     <message>
-        <location filename="../settings.py" line="504"/>
+        <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
         <translation>Přidejte, prosím, město</translation>
@@ -1547,7 +1578,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
 <context>
     <name>Warning message after pressing Ok</name>
     <message>
-        <location filename="../settings.py" line="499"/>
+        <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
         <translation>Zadejte, prosím, svůj klíč k OpenWeatherMap</translation>
