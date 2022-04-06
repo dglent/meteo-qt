@@ -13,13 +13,14 @@ class BuildQm(build):
     for ts in glob.glob('meteo_qt/translations/*.ts'):
         os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2] + 'qm')))
 
+
 PROJECT_PATH = Path(__file__).parent
 with (PROJECT_PATH / "requirements.txt").open() as f:
-    install_requires = [l.strip() for l in f.readlines()]
+    install_requires = [line.strip() for line in f.readlines()]
 
 setup(
     name='meteo_qt',
-    version='3.1',
+    version='3.2',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',
