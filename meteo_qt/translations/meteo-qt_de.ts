@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="de" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="de">
 <context>
-    <name></name>
+    <name/>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
@@ -1146,31 +1145,31 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Größe und Position des Systemleisten-Symbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Durch Ändern der Einstellung kann die Anzeige der Temperatur im Systemleisten-Symbol verbessert werden</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Initialisierungsgröße des Systemleisten-Symbol (Voreinstellung 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Temperaturposition im Symbol (vertikal) (Voreinstellung: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Es wird empfohlen einen persönlichen Schlüssel zu verwenden.&lt;br/&gt;Falls der vorgegebenen meteo-qt Schlüssel gehijackt wird, werden Sie keine Wetterdaten erhalten (Fehler 401 - nicht autorisiert)</translation>
     </message>
 </context>
 <context>
