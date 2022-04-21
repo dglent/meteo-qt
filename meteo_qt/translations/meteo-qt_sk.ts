@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="sk" sourcelanguage="">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="sk">
 <context>
-    <name></name>
+    <name/>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
@@ -100,7 +99,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Preklad do rumunčiny</translation>
     </message>
 </context>
 <context>
@@ -145,7 +144,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dobrá</translation>
     </message>
 </context>
 <context>
@@ -154,7 +153,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Priaznivá</translation>
     </message>
 </context>
 <context>
@@ -163,7 +162,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Mierne</translation>
+        <translation>Stredná</translation>
     </message>
 </context>
 <context>
@@ -172,7 +171,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nedostatočná</translation>
     </message>
 </context>
 <context>
@@ -181,7 +180,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Veľmi nepriaznivá</translation>
     </message>
 </context>
 <context>
@@ -602,7 +601,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kvalita ovzdušia</translation>
     </message>
 </context>
 <context>
@@ -1141,37 +1140,37 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Písmo teploty v lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Veľkosť ikon a umiestnenie textu na lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zmenou tohto nastavenia môžete vylepšiť zobrazenie teploty na ikone v lište</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Úvodná veľkosť ikony na lište (predvolená veľkosť: 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pozícia teploty v ikone (zvisle) (predvolená veľkosť: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odporúčame vám použiť osobný kľúč.&lt;br/&gt;Ak niekto unesie predvolený kľúč meteo-qt, nebudete môcť získať údaje o počasí (401 - chyba autorizácie)</translation>
     </message>
 </context>
 <context>
@@ -1378,7 +1377,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Neodstupná</translation>
     </message>
 </context>
 <context>
@@ -1414,7 +1413,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="524"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Index ultrafialového žiarenia o 12:00</translation>
     </message>
 </context>
 <context>
@@ -1483,7 +1482,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Zajtra:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1558,7 +1557,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <location filename="../meteo_qt.py" line="396"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Viditeľnosť</translation>
     </message>
 </context>
 <context>
