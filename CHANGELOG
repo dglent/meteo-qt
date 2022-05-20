@@ -1,3 +1,8 @@
+3.2
+- Air Quality Index
+- Option to define the initialization icon size and the position for the temperature in the icon - by kreddkrikk #127
+
+
 3.1
 - Font dialog to set the font of the T° in the system tray
 - Update German translation by psyca
