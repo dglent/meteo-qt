@@ -2676,7 +2676,7 @@ class Download(QThread):
         try:
             reqforecast6 = urllib.request.urlopen(
                 f'{self.forecast6_url}{self.id_}{self.suffix}&cnt=7',
-                timeout=5
+                timeout=10
             )
             pageforecast6 = reqforecast6.read()
             if str(pageforecast6).count('ClientError') > 0:
@@ -2700,7 +2700,7 @@ class Download(QThread):
             )
             req = urllib.request.urlopen(
                 f'{self.baseurl}{self.id_}{self.suffix}',
-                timeout=5
+                timeout=10
             )
             logging.debug(
                 'Fetching url for forecast of the day + 4: {0}{1}{2}'.format(
@@ -2711,7 +2711,7 @@ class Download(QThread):
             )
             reqdayforecast = urllib.request.urlopen(
                 f'{self.day_forecast_url}{self.id_}{self.suffix}',
-                timeout=5
+                timeout=10
             )
             page = req.read()
             pagedayforecast = reqdayforecast.read()
@@ -2726,7 +2726,7 @@ class Download(QThread):
                 )
                 reqdayforecast = urllib.request.urlopen(
                     f'{self.day_forecast_url}{self.id_}{self.suffix.replace("xml", "json")}',
-                    timeout=5
+                    timeout=10
                 )
                 pagedayforecast = reqdayforecast.read().decode('utf-8')
                 if self.html404(pagedayforecast, 'day_forecast'):
@@ -2751,7 +2751,7 @@ class Download(QThread):
                 )
                 req = urllib.request.urlopen(
                     f'{self.baseurl}{self.id_}{self.suffix.replace("xml", "json")}',
-                    timeout=5
+                    timeout=10
                 )
                 page = req.read().decode('utf-8').replace("'", '"')
                 actual_weather_dic = json.loads(page)
@@ -2769,7 +2769,7 @@ class Download(QThread):
             )
             logging.debug(f'OneCall URL: {one_call_url}')
             try:
-                one_call_req = urllib.request.urlopen(one_call_url, timeout=5)
+                one_call_req = urllib.request.urlopen(one_call_url, timeout=10)
                 one_call_rep = one_call_req.read().decode('utf-8')
                 onecall_json = json.loads(one_call_rep)
                 one_call_alert = onecall_json.get('alerts', False)
@@ -2894,7 +2894,7 @@ class Uv(QThread):
                 f'http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={self.appid}'
             )
             logging.debug(f'Fetching url for uv index: {str(url)}')
-            req = urllib.request.urlopen(url, timeout=5)
+            req = urllib.request.urlopen(url, timeout=10)
             page = req.read().decode('utf-8')
             dicUV = json.loads(page)
             uv_ind = dicUV['value']
@@ -2907,7 +2907,7 @@ class Uv(QThread):
                 f'http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={self.appid}'
             )
             logging.debug(f'Fetching url for air pollution: {str(url)}')
-            req = urllib.request.urlopen(url, timeout=5)
+            req = urllib.request.urlopen(url, timeout=10)
             page = req.read().decode('utf-8')
             dic_air = json.loads(page)
             logging.debug(f'Air pollution data: {dic_air}')
@@ -2967,7 +2967,7 @@ class IconDownload(QThread):
             for i in range(self.periods):
                 url = f'{self.icon_url}{self.icon[i]}.png'
                 logging.debug(f'Icon downloading: {url}')
-                data = urllib.request.urlopen(url, timeout=5).read()
+                data = urllib.request.urlopen(url, timeout=10).read()
                 if self.html404(data, 'icon'):
                     self.url_error_signal['QString'].emit(self.error_message)
                     return
