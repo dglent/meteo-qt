@@ -20,7 +20,7 @@ with (PROJECT_PATH / "requirements.txt").open() as f:
 
 setup(
     name='meteo_qt',
-    version='3.2',
+    version='3.3',
     description='A system tray application for the weather status',
     author='Dimitrios Glentadakis',
     author_email='dglent@free.fr',
