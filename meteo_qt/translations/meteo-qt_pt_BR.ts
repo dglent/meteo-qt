@@ -144,7 +144,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Bom</translation>
     </message>
 </context>
 <context>
@@ -153,7 +153,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Razoável</translation>
     </message>
 </context>
 <context>
@@ -162,7 +162,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Moderado</translation>
     </message>
 </context>
 <context>
@@ -171,7 +171,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Fraco</translation>
     </message>
 </context>
 <context>
@@ -180,7 +180,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Muito Fraco</translation>
     </message>
 </context>
 <context>
@@ -390,7 +390,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../meteo_qt.py" line="418"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Conforto</translation>
     </message>
 </context>
 <context>
@@ -399,19 +399,19 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Seco</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Muito confortável</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Confortável</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
@@ -571,7 +571,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="348"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Vento</translation>
     </message>
 </context>
 <context>
@@ -580,7 +580,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Qualidade do ar</translation>
     </message>
 </context>
 <context>
@@ -598,7 +598,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="385"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Humidade</translation>
     </message>
 </context>
 <context>
@@ -607,7 +607,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="374"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"/>
+        <translation>Pressão</translation>
     </message>
 </context>
 <context>
@@ -745,17 +745,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
-        <translation type="unfinished"/>
+        <translation>Hebraico</translation>
     </message>
     <message>
         <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
-        <translation type="unfinished"/>
+        <translation>Croata</translation>
     </message>
     <message>
         <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
-        <translation type="unfinished"/>
+        <translation>Húngaro</translation>
     </message>
     <message>
         <location filename="../settings.py" line="79"/>
@@ -770,17 +770,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"/>
+        <translation>Lituano</translation>
     </message>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation type="unfinished"/>
+        <translation>Norueguês (Bokmaal)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
-        <translation type="unfinished"/>
+        <translation>Holandês</translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
@@ -810,12 +810,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
-        <translation type="unfinished"/>
+        <translation>Eslovaco</translation>
     </message>
     <message>
         <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
-        <translation type="unfinished"/>
+        <translation>Sueco</translation>
     </message>
     <message>
         <location filename="../settings.py" line="91"/>
@@ -825,7 +825,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"/>
+        <translation>Ucraniano</translation>
     </message>
     <message>
         <location filename="../settings.py" line="93"/>
@@ -933,19 +933,19 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>não</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>chuva</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>neve</translation>
     </message>
 </context>
 <context>
@@ -954,7 +954,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="429"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Precipitação</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Temperatura</translation>
     </message>
     <message>
         <location filename="../settings.py" line="240"/>
@@ -1089,7 +1089,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"/>
+        <translation>Temperatura aparenta</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
@@ -1257,37 +1257,37 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="200"/>
         <source>Mon</source>
-        <translation type="unfinished"/>
+        <translation>Seg</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
         <source>Tue</source>
-        <translation type="unfinished"/>
+        <translation>Ter</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="202"/>
         <source>Wed</source>
-        <translation type="unfinished"/>
+        <translation>Qua</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="203"/>
         <source>Thu</source>
-        <translation type="unfinished"/>
+        <translation>Qui</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="204"/>
         <source>Fri</source>
-        <translation type="unfinished"/>
+        <translation>Sex</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="205"/>
         <source>Sat</source>
-        <translation type="unfinished"/>
+        <translation>Sáb</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="206"/>
         <source>Sun</source>
-        <translation type="unfinished"/>
+        <translation>Dom</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="576"/>
@@ -1328,7 +1328,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Aparenta</translation>
     </message>
 </context>
 <context>
@@ -1337,7 +1337,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Indisponível</translation>
     </message>
 </context>
 <context>
@@ -1382,25 +1382,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1102"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Dia</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1107"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Manhã</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1112"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Tarde</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1117"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"/>
+        <translation>Noite</translation>
     </message>
 </context>
 <context>
@@ -1409,13 +1409,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1714"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Pressão</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1719"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"/>
+        <translation>Humidade</translation>
     </message>
 </context>
 <context>
@@ -1450,27 +1450,27 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="146"/>
         <source>Low</source>
-        <translation type="unfinished"/>
+        <translation>Baixo</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>Moderate</source>
-        <translation type="unfinished"/>
+        <translation>Moderado</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="151"/>
         <source>High</source>
-        <translation type="unfinished"/>
+        <translation>Alto</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="153"/>
         <source>Very high</source>
-        <translation type="unfinished"/>
+        <translation>Muito alto</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="155"/>
         <source>Extreme</source>
-        <translation type="unfinished"/>
+        <translation>Extremo</translation>
     </message>
 </context>
 <context>
@@ -1517,7 +1517,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="396"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"/>
+        <translation>Visibilidade</translation>
     </message>
 </context>
 <context>
