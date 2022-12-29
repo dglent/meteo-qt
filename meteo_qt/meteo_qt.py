@@ -2765,7 +2765,7 @@ class Download(QThread):
             exclude = 'current,minutely,hourly,daily'
             one_call_url = (
                 f'http://api.openweathermap.org/data/2.5/onecall?'
-                f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}'
+                f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}1'
             )
             logging.debug(f'OneCall URL: {one_call_url}')
             try:
@@ -2776,7 +2776,9 @@ class Download(QThread):
                 if one_call_alert:
                     self.alerts_signal.emit(one_call_alert)
             except timeout:
-                logging.warning('Timeout error. Cannot fetch onecall data')
+                logging.error('Timeout error. Cannot fetch onecall data')
+            except urllib.error.HTTPError:
+                logging.error('Your openweathermap key has no access to onecall api')
 
             uv_ind = (lat, lon)
             url = f'{self.wIconUrl}{weather_icon}.png'
