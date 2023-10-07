@@ -183,11 +183,12 @@ class SystemTrayIcon(QMainWindow):
             "Feels like",
             "Weather info window"
         )
-        self.notification = ''
+        self.notification = ""
+        self.uv_index_exp = ""
         self.hPaTrend = 0
         self.trendCities_dic = {}
-        self.notifier_id = ''
-        self.temp_trend = ''
+        self.notifier_id = ""
+        self.temp_trend = ""
         self.systray.show()
         # The dictionnary has to be intialized here. If there is an error
         # the program couldn't become functionnal if the dictionnary is
@@ -818,6 +819,24 @@ class SystemTrayIcon(QMainWindow):
         start_minimized = self.settings.value('StartMinimized') or 'True'
         if start_minimized == 'False':
             self.showpanel()
+        logging.info(
+            f"\nEXPORT_START\n"
+            f"City,{city_label}\n"
+            f"Temperature,{float(self.weatherDataDico['Temp'][:-1])} {self.unit_temp}\n"
+            f"Feels like,{self.feels_like_value.text()}\n"
+            f"Wind,{self.weatherDataDico['Wind'][4]} {wind_speed} {self.unit_system_wind} {self.weatherDataDico['Wind'][1]}\n"
+            f"Cloudiness,{self.weatherDataDico['Clouds']}\n"
+            f"Humidity,{self.weatherDataDico['Humidity'][0]} {self.weatherDataDico['Humidity'][1]}\n"
+            f"Visibility,{visibility_distance} {visibility_unit}\n"
+            f"Comfort,{hum.comfort_text}\n"
+            f"Precipitation,{rain_mode} {rain_value} {rain_unit}\n"
+            f"Sunrise,{rise_str[:-3]}\n"
+            f"Sunset,{set_str[:-3]}\n"
+            f"Daylight,{daylight_value}\n"
+            f"Air quality,{self.air_pollution_value_label.text()}\n"
+            f"UV,{self.uv_index_exp}\n"
+            f"EXPORT_END\n"
+        )
 
     def daylight_delta(self, s1, s2):
         FMT = '%H:%M'
@@ -1744,6 +1763,7 @@ class SystemTrayIcon(QMainWindow):
     def uv_index(self, index):
         uv_gauge = '-'
         uv_color = self.uv_color(index)
+        self.uv_index_exp = f"{index} {uv_color[1]}"
         if uv_color[1] != 'None':
             uv_gauge = '◼' * int(round(float(index)))
             if uv_gauge == '':
