@@ -88,6 +88,9 @@ class AboutDialog(QDialog):
                 '<p>Ozkar L. Garcell '
                 '<a href="mailto:ozkar.garcell@gmail.com">'
                 'ozkar.garcell@gmail.com</a>'
+                '<br/> Teo Laírla (teolairlasg) '
+                '<a href="mailto:teo.lairla@iessierradeguara.com">'
+                'teo.lairla@iessierradeguara.com</a>'
                 '<br/> [es] Spanish translation',
                 ''
             )
