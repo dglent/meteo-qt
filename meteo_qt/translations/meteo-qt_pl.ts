@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="pl" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="pl" sourcelanguage="">
 <context>
     <name></name>
     <message>
@@ -90,17 +91,17 @@
     <message encoding="UTF-8">
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Tłumaczenie na niemiecki</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Tłumaczenie na japoński</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Tłumaczenie na rumuński</translation>
     </message>
 </context>
 <context>
@@ -127,7 +128,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alerty</translation>
     </message>
 </context>
 <context>
@@ -145,7 +146,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dobra</translation>
     </message>
 </context>
 <context>
@@ -154,7 +155,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ładna</translation>
     </message>
 </context>
 <context>
@@ -163,7 +164,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Umiarkowany</translation>
+        <translation>Umiarkowana</translation>
     </message>
 </context>
 <context>
@@ -172,7 +173,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zła</translation>
     </message>
 </context>
 <context>
@@ -181,7 +182,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Bardzo zła</translation>
     </message>
 </context>
 <context>
@@ -191,7 +192,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: morze jak lustro.
+Ląd: spokój. Dym unosi się pionowo.</translation>
     </message>
 </context>
 <context>
@@ -201,7 +203,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: powstają wzburzone fale, ale bez piankowych grzbietów.
+Ląd: strumień dymu wskazuje kierunek wiatru. Liście i łopatki wiatrowe nie poruszają się.</translation>
     </message>
 </context>
 <context>
@@ -211,7 +214,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: bardzo wysokie fale z wystającymi grzbietami. Duże plamy piany z grzbietów fal nadają morzu biały wygląd. Wyraźne przewracanie się fal o dużym wpływie. Duża ilość wody rozpylona w powietrzu ogranicza widoczność.
+Ląd: drzewa są połamane lub wyrwane z korzeniami, prawdopodobne są uszkodzenia konstrukcji.</translation>
     </message>
 </context>
 <context>
@@ -221,7 +225,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: wyjątkowo wysokie fale. Dużą część powierzchni morza pokrywają bardzo duże plamy piany niesionej przez wiatr. Bardzo duża ilość wody rozpylona w powietrzu znacznie ogranicza widoczność.
+Ląd: prawdopodobne jest wystąpienie rozległych uszkodzeń konstrukcji i roślinności.</translation>
     </message>
 </context>
 <context>
@@ -231,7 +236,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: ogromne fale. Morze jest całkowicie białe z pianą i plamami wody. Powietrze jest pełne kropelek wody, co znacznie ogranicza widoczność.
+Ląd: poważne, rozległe uszkodzenia roślinności i konstrukcji. Wokół walają się śmieci i niezabezpieczone przedmioty.</translation>
     </message>
 </context>
 <context>
@@ -241,7 +247,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: małe fale, wciąż krótkie, ale bardziej wyraźne; grzebienie mają szklisty wygląd i nie łamią się.
+Ląd: wiatr można wyczuć na odsłoniętej skórze. Liście szeleszczą. Łopatki wiatrowe zaczynają się poruszać.</translation>
     </message>
 </context>
 <context>
@@ -251,7 +258,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: duże fale. Grzbiety zaczynają się rozpadać; rozproszone białe szczyty.
+Ląd: liście i małe gałązki są w ciągłym ruchu, powiewają lekkie flagi.</translation>
     </message>
 </context>
 <context>
@@ -261,7 +269,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: małe fale z załamującymi się grzbietami. Dość częste białe czapki.
+Ląd: uniósł się kurz i luźny papier. Małe gałęzie zaczynają się poruszać.</translation>
     </message>
 </context>
 <context>
@@ -271,7 +280,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: umiarkowane fale o pewnej długości. Wiele białych czapek. Mała ilość rozpylonej wody.
+Ląd: gałęzie o umiarkowanej wielkości poruszają się. Małe drzewa w liściach zaczynają się kołysać.</translation>
     </message>
 </context>
 <context>
@@ -281,7 +291,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: zaczynają tworzyć się długie fale. Bardzo częste są białe grzebienie piankowe. Występuje niewielka ilość rozyplonej wody unoszącej się w powietrzu.
+Ląd: duże gałęzie w ruchu. W przewodach napięcia elektrycznego słychać syczenie. Używanie parasola jest trudne. Puste plastikowe pojemniki przewracają się.</translation>
     </message>
 </context>
 <context>
@@ -291,7 +302,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: morze się kołysze. Część piany powstałej z załamujących się fal jest rozwiewana w postaci smug z wiatrem. Średnia ilość rozpylonej wody w powietrzu.
+Ląd: całe drzewa w ruchu. Trzeba podjąć wysiłek, aby płynąć pod wiatr.</translation>
     </message>
 </context>
 <context>
@@ -301,7 +313,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: srednio wysokie fale z załamującymi się grzbietami tworzącymi wrzeciono. Dobrze widoczne smugi piany unoszone są w kierunku wiatru. Silne rozpylenie wody w powietrzu.
+Ląd: niektóre gałązki odrywają się od drzew. Wiatr na drodze ma wpływ na samochody. Chodzenie jest bardzo trudne.</translation>
     </message>
 </context>
 <context>
@@ -311,7 +324,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Morze: wysokie fale, których grzbiety czasami się przewracają. Gęsta piana jest wdmuchiwana zgodnie z kierunkiem wiatru. Duże ilości rozpylonej wody unoszące się w powietrzu mogą zacząć ograniczać widoczność.
+Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa przewracają się. Przewracają się znaki budowlane/tymczasowe i barykady.</translation>
     </message>
 </context>
 <context>
@@ -482,7 +496,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Suche powietrze może powodować pękanie i podatność skóry na podrażnienia</translation>
     </message>
 </context>
 <context>
@@ -590,7 +604,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciw sło
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jakość powietrza</translation>
     </message>
 </context>
 <context>
@@ -881,7 +895,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
-        <translation>Resetuj kolor czcionki </translation>
+        <translation>Zresetuj kolor czcionki do domyślnych systemowych</translation>
     </message>
     <message>
         <location filename="../settings.py" line="232"/>
@@ -902,8 +916,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Zalecenia: chroń się przed słońcem w cieniu budynków/drzew będąc na zewnątrz. &lt;br/&gt;
-</translation>
+        <translation>Jeśli będziesz na zewnątrz, zastosuj środki ostrożności, takie jak zakrycie się.&lt;br/&gt;Pozostań w cieniu w okolicach południa, kiedy słońce jest najsilniejsze.</translation>
     </message>
 </context>
 <context>
@@ -1119,49 +1132,49 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Domyślne systemowe</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Motyw ikon</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Czcionka temperatury w zasobniku systemowym</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar ikony w zasobniku i położenie tekstu</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zmieniając to ustawienie, można poprawić wyświetlanie temperatury na ikonie zasobnika</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar inicjalizacji ikony w zasobniku (domyślny rozmiar: 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pozycja temperatury w ikonie (pionowo) (wartość domyślna: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sugeruje się użycie klucza osobistego.&lt;br/&gt;Jeśli ktoś przejmie domyślny klucz meteo-qt, nie będzie można uzyskać danych o pogodzie (błąd 401 nieautoryzowany)</translation>
     </message>
 </context>
 <context>
@@ -1191,7 +1204,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation>Wpisz nazwę miasta, przecinek, 2-literowy kod kraju (np: Warszawa, PL) </translation>
+        <translation>Wpisz nazwę miasta, przecinek, 2-literowy kod kraju (np: Warszawa, PL)</translation>
     </message>
 </context>
 <context>
@@ -1363,7 +1376,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Niedostępne</translation>
     </message>
 </context>
 <context>
@@ -1390,7 +1403,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="208"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Prawdopodobieństwo opadów</translation>
     </message>
 </context>
 <context>
@@ -1399,7 +1412,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="524"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Indeks ultrafioletu o godzinie 12:00</translation>
     </message>
 </context>
 <context>
@@ -1468,7 +1481,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Jutro:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1524,7 +1537,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="660"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation>km/h</translation>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
@@ -1545,7 +1558,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../meteo_qt.py" line="396"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Widoczność</translation>
     </message>
 </context>
 <context>
@@ -1572,7 +1585,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Miasto już istnieje</translation>
     </message>
 </context>
 <context>
@@ -1680,7 +1693,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation>umiarkowany deszcz </translation>
+        <translation>umiarkowany deszcz</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="29"/>
@@ -1845,7 +1858,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation>zachmurzenie </translation>
+        <translation>zachmurzenie</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
@@ -2125,12 +2138,12 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Proszę czekać,  wyszukiwanie...</translation>
+        <translation>Proszę czekać, wyszukiwanie...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Błąd:</translation>
+        <translation>Błąd: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>

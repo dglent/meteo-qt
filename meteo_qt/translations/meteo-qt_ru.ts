@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="ru" sourcelanguage="">
 <context>
     <name></name>
     <message>
@@ -100,7 +101,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Румынский перевод</translation>
     </message>
 </context>
 <context>
@@ -145,7 +146,7 @@
         <location filename="../meteo_qt.py" line="487"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Хорошо</translation>
     </message>
 </context>
 <context>
@@ -154,7 +155,7 @@
         <location filename="../meteo_qt.py" line="492"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Средний</translation>
     </message>
 </context>
 <context>
@@ -163,7 +164,7 @@
         <location filename="../meteo_qt.py" line="497"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Умеренный</translation>
+        <translation>Умеренный</translation>
     </message>
 </context>
 <context>
@@ -172,7 +173,7 @@
         <location filename="../meteo_qt.py" line="502"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Плохой</translation>
     </message>
 </context>
 <context>
@@ -181,7 +182,7 @@
         <location filename="../meteo_qt.py" line="507"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Очень плохой</translation>
     </message>
 </context>
 <context>
@@ -225,7 +226,7 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Море: Видимость плохая. Исключительно высокие волны. Море всё покрыто длинными белыми хлопьями пены, располагающимися по ветру. Края волн повсюду сдуваются в пену
-Суша: Большие разрушения на значительном пространстве. Наблюдается очень редко.</translation>
+Суша: Возможно повсеместное повреждение растительности и зданий</translation>
     </message>
 </context>
 <context>
@@ -236,7 +237,7 @@ Land: Widespread vegetation and structural damage likely</source>
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Море: Исключительно плохая видимость. Воздух наполнен пеной и брызгами. Всё море покрыто полосами пены
-Суша: Огромные разрушения, серьезно повреждены здания, строения и дома, деревья вырваны с корнями, растительность уничтожена. Случай очень редкий.</translation>
+Суша: Сильный повсеместный ущерб растительности и зданиям. Обломки и незакрепленные предметы разлетаются по сторонам</translation>
     </message>
 </context>
 <context>
@@ -404,7 +405,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../meteo_qt.py" line="418"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Комфортный</translation>
     </message>
 </context>
 <context>
@@ -413,43 +414,43 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Сухой</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Очень комфортный</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Удобный</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Удовлетворительный</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Неудобный</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Очень неудобный</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Крайне неудобный</translation>
     </message>
 </context>
 <context>
@@ -458,44 +459,45 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Отличный уровень комфорта для занятий спортом</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Упорные усилия, скорее всего, не пострадают</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ожидайте, что время в гонке будет ниже, чем в оптимальных условиях</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Лёгкие тренировочные забеги могут быть в порядке, но будет трудно бегать быстро или прилагать большие усилия</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ожидайте, что темп сильно пострадает</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Избегайте упражнений. Пропустите их или значительно смените цель.
+Уровень комфорта крайне низкий и может быть смертельно опасен для страдающих астмой</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Сухой воздух может привести к растрескиванию и раздражению кожи</translation>
     </message>
 </context>
 <context>
@@ -522,7 +524,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="39"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Порт</translation>
+        <translation>Порт:</translation>
     </message>
 </context>
 <context>
@@ -531,7 +533,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>URL прокси</translation>
+        <translation>Адрес прокси:</translation>
     </message>
 </context>
 <context>
@@ -603,7 +605,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="472"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Качество воздуха</translation>
     </message>
 </context>
 <context>
@@ -997,7 +999,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>ID пользователя</translation>
+        <translation>ИД пользователя:</translation>
     </message>
 </context>
 <context>
@@ -1075,7 +1077,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Пожалуйста, введите больше трех символов </translation>
+        <translation>Пожалуйста, введите больше трёх символов</translation>
     </message>
 </context>
 <context>
@@ -1144,37 +1146,37 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Шрифт температуры в системном трее</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Размер значка и положение текста в трее</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Изменив эту настройку, вы можете улучшить отображение температуры в трее</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Начальный размер значка в трее (размер по умолчанию: 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Положение температуры на значке (по вертикали) (значение по умолчанию: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Рекомендуется использовать персональный ключ.&lt;br/&gt;Если кто-то похитит стандартный ключ Meteo-qt, вы не сможете получить данные о погоде (ошибка 401, не авторизован)</translation>
     </message>
 </context>
 <context>
@@ -1380,7 +1382,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="482"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Недоступен</translation>
     </message>
 </context>
 <context>
@@ -1407,7 +1409,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="208"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Вероятность осадков</translation>
     </message>
 </context>
 <context>
@@ -1416,7 +1418,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="524"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ультрафиолетовый индекс в 12 часов дня</translation>
     </message>
 </context>
 <context>
@@ -1485,7 +1487,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Завтра:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1522,7 +1524,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="515"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation> УФ излучение</translation>
+        <translation>УФ</translation>
     </message>
 </context>
 <context>
@@ -1541,7 +1543,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="660"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation>км/ч</translation>
+        <translation> км/ч </translation>
     </message>
 </context>
 <context>
@@ -1561,7 +1563,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="396"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Видимость</translation>
     </message>
 </context>
 <context>
@@ -1570,7 +1572,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Пожалуйста,  укажите город</translation>
+        <translation>Пожалуйста, добавьте город</translation>
     </message>
 </context>
 <context>
@@ -1588,7 +1590,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Город уже существует</translation>
     </message>
 </context>
 <context>
@@ -2147,7 +2149,7 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Ошибка:</translation>
+        <translation>Ошибка: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
