@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="tr" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="tr" sourcelanguage="">
 <context>
     <name></name>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] Almanca Çevirisi, Proje</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
@@ -1042,7 +1043,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>{0}  şehir bulundu</translation>
+        <translation>{0} şehir bulundu</translation>
     </message>
 </context>
 <context>
@@ -1236,7 +1237,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="1984"/>
         <source>No city has been configured yet.</source>
-        <translation>Henüz herhangi bir şehir yapılandırılmamış</translation>
+        <translation>Henüz herhangi bir şehir yapılandırılmamış.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1984"/>
@@ -1547,7 +1548,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Bu şehir zaten var</translation>
     </message>
 </context>
 <context>
@@ -1590,7 +1591,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>hafif çiseleme ve gök gürültülü fırtına </translation>
+        <translation>hafif çiseleme ve gök gürültülü fırtına</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="16"/>
@@ -2106,7 +2107,7 @@ veya şehir ismini değiştirin</translation>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Hata:</translation>
+        <translation>Hata: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
