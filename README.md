@@ -144,6 +144,10 @@ Package [meteo-qt](http://madb.mageia.org/package/show/name/meteo-qt/) is provid
 
 After installation you will be prompted to do a right click on the system tray icon to configure the cities, units and other settings for the weather informations and the application.
 
+## Translations
+
+You can contribute in a current translation or add a missing language in the [Weblate](https://translate.lxqt-project.org/projects/dglent/meteo-qt/) platform.
+
 ## Usage
 
 Not much to say. The window providing verbose information as depicted above will display upon left
