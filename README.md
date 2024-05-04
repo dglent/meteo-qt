@@ -146,7 +146,11 @@ After installation you will be prompted to do a right click on the system tray i
 
 ## Translations
 
-You can contribute in a current translation or add a missing language in the [Weblate](https://translate.lxqt-project.org/projects/dglent/meteo-qt/) platform.
+You can contribute in a current translation or add a missing language in the [Weblate](https://translate.lxqt-project.org/projects/dglent/meteo-qt/) platform.  
+
+<a href="https://translate.lxqt-project.org/engage/dglent/?utm_source=widget">
+<img src="https://translate.lxqt-project.org/widgets/dglent/-/meteo-qt/287x66-black.png" alt="Kaτάσταση μετάφρασης" />
+</a>
 
 ## Usage
 
