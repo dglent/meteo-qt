@@ -125,6 +125,13 @@ class AboutDialog(QDialog):
             )
             + QCoreApplication.translate(
                 '',
+                '<p>standreas <a href="mailto:standreas@riseup.net">'
+                'standreas@riseup.net</a>'
+                '<br/> [it] Italian translation, Weblate',
+                ''
+            )
+            + QCoreApplication.translate(
+                '',
                 '<p>Masamichi Ito <a href="https://github.com/ito32bit">'
                 'https://github.com/ito32bit</a>'
                 '<br/> [ja] Japanese translation',
