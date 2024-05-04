@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="sk" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="sk">
 <context>
     <name></name>
     <message>
@@ -15,24 +16,24 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Preklad do španielčiny</translation>
+        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Preklad do španielčiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
         <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Preklad do francúzštiny, Projekt</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
         <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Preklad do poľštiny</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
         <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Preklad do turečtiny</translation>
@@ -87,7 +88,7 @@
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
         <translation>Jiří Podhorecký&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Preklad do češtiny</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
         <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Preklad do nemčiny</translation>
@@ -101,6 +102,16 @@
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
         <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Preklad do rumunčiny</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -142,7 +153,7 @@
 <context>
     <name>Air Quality Index 1</name>
     <message>
-        <location filename="../meteo_qt.py" line="487"/>
+        <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Dobrá</translation>
@@ -151,7 +162,7 @@
 <context>
     <name>Air Quality Index 2</name>
     <message>
-        <location filename="../meteo_qt.py" line="492"/>
+        <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Priaznivá</translation>
@@ -160,7 +171,7 @@
 <context>
     <name>Air Quality Index 3</name>
     <message>
-        <location filename="../meteo_qt.py" line="497"/>
+        <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Stredná</translation>
@@ -169,7 +180,7 @@
 <context>
     <name>Air Quality Index 4</name>
     <message>
-        <location filename="../meteo_qt.py" line="502"/>
+        <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Nedostatočná</translation>
@@ -178,7 +189,7 @@
 <context>
     <name>Air Quality Index 5</name>
     <message>
-        <location filename="../meteo_qt.py" line="507"/>
+        <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Veľmi nepriaznivá</translation>
@@ -401,7 +412,7 @@ Pevnina: Zo stromov sa odlamujú konáre a menšie stromy sa lámu celé. Vietor
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="418"/>
+        <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Komfortné</translation>
@@ -502,7 +513,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="460"/>
+        <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Denné svetlo</translation>
@@ -511,7 +522,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="407"/>
+        <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Rosný bod</translation>
@@ -590,7 +601,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="348"/>
+        <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Vietor</translation>
@@ -599,7 +610,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for air quality index (air pollution)</name>
     <message>
-        <location filename="../meteo_qt.py" line="472"/>
+        <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Kvalita ovzdušia</translation>
@@ -608,7 +619,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="363"/>
+        <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Oblačnosť</translation>
@@ -617,7 +628,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="385"/>
+        <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Vlhkosť</translation>
@@ -626,7 +637,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="374"/>
+        <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Tlak</translation>
@@ -635,7 +646,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="440"/>
+        <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Východ slnka</translation>
@@ -644,7 +655,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="449"/>
+        <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Západ slnka</translation>
@@ -973,7 +984,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="429"/>
+        <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Zrážky</translation>
@@ -1207,7 +1218,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2496"/>
+        <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Pre aplikovanie jazykového nastavenia je potrebné reštartovať aplikáciu</translation>
     </message>
@@ -1245,32 +1256,32 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
         <translation>Vyhľadávam údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
+        <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
         <translation>Prázdny zoznam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
         <translation>Nebolo nastavené žiadne mesto</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
         <translation>Nebolo ešte nastavené žiadne mesto.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
         <translation>Kliknite pravým tlačidlom na ikonu a vyberte Nastavenia.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2564"/>
+        <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
         <translation>Sťahujem údaje o počasí...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2580"/>
+        <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1279,47 +1290,47 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} na {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="200"/>
+        <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
         <translation>Pon</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="201"/>
+        <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
         <translation>Uto</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="202"/>
+        <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
         <translation>Str</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="203"/>
+        <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
         <translation>Štv</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="204"/>
+        <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
         <translation>Pia</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="205"/>
+        <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
         <translation>Sob</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="206"/>
+        <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
         <translation>Ned</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="576"/>
+        <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
         <translation>Stav počasia</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1426"/>
+        <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
         <translation>Najnižšia/Najvyššia teplota dňa</translation>
     </message>
@@ -1343,7 +1354,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
+        <translation type="obsolete">&lt;p&gt;Autor: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;Jednoduchá aplikácia, ktorá zobrazuje stav počasia
             na systémovej lište.
@@ -1362,6 +1373,28 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;e.</translation>
     </message>
+    <message>
+        <location filename="../meteo_qt.py" line="2609"/>
+        <source>&lt;p&gt;Author: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;A simple application showing the weather status
+            information on the system tray.
+            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;This software uses icons from the
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+            &lt;p&gt;To translate meteo-qt in your language or contribute to
+            current translations, you can use the
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; platform.
+            &lt;p&gt;If you want to report a dysfunction or a suggestion,
+            feel free to open an issue in
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>The Feels Like Temperature</name>
@@ -1375,7 +1408,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>The air quality index is not available</name>
     <message>
-        <location filename="../meteo_qt.py" line="482"/>
+        <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Neodstupná</translation>
@@ -1402,7 +1435,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Tooltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="208"/>
+        <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
         <translation>Pravdepodobnosť zrážok</translation>
@@ -1411,7 +1444,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Tooltip of UV label</name>
     <message>
-        <location filename="../meteo_qt.py" line="524"/>
+        <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Index ultrafialového žiarenia o 12:00</translation>
@@ -1420,25 +1453,25 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Deň</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1107"/>
+        <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ráno</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1112"/>
+        <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Večer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1117"/>
+        <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Noc</translation>
@@ -1447,13 +1480,13 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1714"/>
+        <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Tlak</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1719"/>
+        <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Vlhkosť</translation>
@@ -1471,7 +1504,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2092"/>
+        <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Vyhľadávam údaje o počasí...</translation>
@@ -1517,7 +1550,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="515"/>
+        <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV žiarenie</translation>
@@ -1526,7 +1559,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="785"/>
+        <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Získavam...</translation>
@@ -1536,7 +1569,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="660"/>
+        <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>
@@ -1555,7 +1588,7 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
 <context>
     <name>Visibility (distance) label</name>
     <message>
-        <location filename="../meteo_qt.py" line="396"/>
+        <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
         <translation>Viditeľnosť</translation>

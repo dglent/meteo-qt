@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name></name>
     <message>
@@ -15,24 +16,24 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] traduction Espagnole</translation>
+        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] traduction Espagnole</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] traduction Française</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
         <translation type="unfinished"></translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
         <translation type="unfinished"></translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
         <translation type="unfinished"></translation>
@@ -87,7 +88,7 @@
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
         <translation type="unfinished"></translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
         <translation type="unfinished"></translation>
@@ -100,6 +101,16 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -142,7 +153,7 @@
 <context>
     <name>Air Quality Index 1</name>
     <message>
-        <location filename="../meteo_qt.py" line="487"/>
+        <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -151,7 +162,7 @@
 <context>
     <name>Air Quality Index 2</name>
     <message>
-        <location filename="../meteo_qt.py" line="492"/>
+        <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -160,7 +171,7 @@
 <context>
     <name>Air Quality Index 3</name>
     <message>
-        <location filename="../meteo_qt.py" line="497"/>
+        <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished">Modéré</translation>
@@ -169,7 +180,7 @@
 <context>
     <name>Air Quality Index 4</name>
     <message>
-        <location filename="../meteo_qt.py" line="502"/>
+        <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -178,7 +189,7 @@
 <context>
     <name>Air Quality Index 5</name>
     <message>
-        <location filename="../meteo_qt.py" line="507"/>
+        <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -203,7 +214,7 @@ Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignen
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m.
-Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;orientent pas.</translation>
+Sur terre : La fumée indique la direction du vent. Les girouettes ne s'orientent pas.</translation>
     </message>
 </context>
 <context>
@@ -213,8 +224,8 @@ Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;ori
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Conditions exceptionnelles : Très grosses lames à longue crête en panache. L&apos;écume produite s&apos;agglomère en larges bancs et est soufflée dans le lit du vent en épaisses traînées blanches. Dans son ensemble, la surface des eaux semble blanche. Le déferlement en rouleaux devient intense et brutal. Visibilité réduite, Vagues de 9 à 12,5m
-Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s&apos;envoler. Certains arbres sont déracinés.</translation>
+        <translation>En mer : Conditions exceptionnelles : Très grosses lames à longue crête en panache. L'écume produite s'agglomère en larges bancs et est soufflée dans le lit du vent en épaisses traînées blanches. Dans son ensemble, la surface des eaux semble blanche. Le déferlement en rouleaux devient intense et brutal. Visibilité réduite, Vagues de 9 à 12,5m
+Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s'envoler. Certains arbres sont déracinés.</translation>
     </message>
 </context>
 <context>
@@ -224,7 +235,7 @@ Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d&apos;écume présente, se déplaçant par le vent et recouvrant d&apos;importantes superficies marines . Beaucoup d’embrun dans l&apos;air réduisant fortement la visibilité.
+        <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d'écume présente, se déplaçant par le vent et recouvrant d'importantes superficies marines . Beaucoup d’embrun dans l'air réduisant fortement la visibilité.
 Sur terre: Importants dégâts à la végétation. Nombreuses destructions </translation>
     </message>
 </context>
@@ -235,8 +246,8 @@ Sur terre: Importants dégâts à la végétation. Nombreuses destructions </tra
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Conditions exceptionnelles : L&apos;air est plein d&apos;écume et d&apos;embruns. La mer est entièrement blanche du fait des bancs d&apos;écume dérivants. Visibilité fortement réduite. Vagues supérieures à 14m
-Sur terre : Dégâts très importants de l&apos;ordre de la catastrophe naturelle.</translation>
+        <translation>En mer : Conditions exceptionnelles : L'air est plein d'écume et d'embruns. La mer est entièrement blanche du fait des bancs d'écume dérivants. Visibilité fortement réduite. Vagues supérieures à 14m
+Sur terre : Dégâts très importants de l'ordre de la catastrophe naturelle.</translation>
     </message>
 </context>
 <context>
@@ -247,7 +258,7 @@ Sur terre : Dégâts très importants de l&apos;ordre de la catastrophe naturell
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
-Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
+Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouettes s'orientent</translation>
     </message>
 </context>
 <context>
@@ -258,7 +269,7 @@ Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les giro
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
-Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
+Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouettes s'orientent</translation>
     </message>
 </context>
 <context>
@@ -269,7 +280,7 @@ Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les giro
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
-Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</translation>
+Sur terre : Les poussières s'envolent. Les petites branches plient.</translation>
     </message>
 </context>
 <context>
@@ -280,7 +291,7 @@ Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</trans
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
-Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</translation>
+Sur terre : Les poussières s'envolent. Les petites branches plient.</translation>
     </message>
 </context>
 <context>
@@ -290,8 +301,8 @@ Sur terre : Les poussières s&apos;envolent. Les petites branches plient.</trans
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Crêtes d&apos;écume blanches, lames, embruns, vagues de 3 à 4m.
-Sur terre : On entend siffler le vent. Les branches de large diamètre s&apos;agitent. Les parapluies sont susceptibles de se retourner</translation>
+        <translation>En mer : Crêtes d'écume blanches, lames, embruns, vagues de 3 à 4m.
+Sur terre : On entend siffler le vent. Les branches de large diamètre s'agitent. Les parapluies sont susceptibles de se retourner</translation>
     </message>
 </context>
 <context>
@@ -301,7 +312,7 @@ Sur terre : On entend siffler le vent. Les branches de large diamètre s&apos;ag
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Traînées d&apos;écume, lames déferlantes, vagues de 4 à 5,5m.
+        <translation>En mer : Traînées d'écume, lames déferlantes, vagues de 4 à 5,5m.
 Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir difficile.</translation>
     </message>
 </context>
@@ -312,7 +323,7 @@ Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir dif
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Tourbillons d&apos;écume à la crête des lames, traînées d&apos;écume, vagues de 5,5 à 7,5m
+        <translation>En mer : Tourbillons d'écume à la crête des lames, traînées d'écume, vagues de 5,5 à 7,5m
 Sur terre : Les branches sont susceptibles de casser. La marche contre le vent est très difficile, voire impossible.</translation>
     </message>
 </context>
@@ -324,7 +335,7 @@ Sur terre : Les branches sont susceptibles de casser. La marche contre le vent e
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Lames déferlantes grosses à énormes, visibilité réduite par les embruns, vagues de 7 à 10m.
-Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuiles, d&apos;ardoises, chutes de cheminées.</translation>
+Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuiles, d'ardoises, chutes de cheminées.</translation>
     </message>
 </context>
 <context>
@@ -401,7 +412,7 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="418"/>
+        <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Confort</translation>
@@ -501,7 +512,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="460"/>
+        <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Lumière du jour</translation>
@@ -510,7 +521,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="407"/>
+        <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Point de rosée</translation>
@@ -570,7 +581,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Couvrez votre corps avec des vêtements vous protégeant du soleil, utilisez une crème solaire
- avec un indice 30+,&lt;br/&gt;portez un chapeau, réduisez le temps d&apos;exposition au soleil à trois heures
+ avec un indice 30+,&lt;br/&gt;portez un chapeau, réduisez le temps d'exposition au soleil à trois heures
  aux environs de midi et portez des lunettes de soleil</translation>
     </message>
 </context>
@@ -580,13 +591,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Précision de la température dans la barre d&apos;état système</translation>
+        <translation>Précision de la température dans la barre d'état système</translation>
     </message>
 </context>
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="348"/>
+        <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Vent</translation>
@@ -595,7 +606,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for air quality index (air pollution)</name>
     <message>
-        <location filename="../meteo_qt.py" line="472"/>
+        <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -604,7 +615,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="363"/>
+        <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Nuageux</translation>
@@ -613,7 +624,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="385"/>
+        <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Humidité</translation>
@@ -622,7 +633,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="374"/>
+        <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Pression</translation>
@@ -631,7 +642,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="440"/>
+        <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Aube</translation>
@@ -640,7 +651,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="449"/>
+        <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Crépuscule</translation>
@@ -692,7 +703,7 @@ ou que vous avez une peau particulièrement claire.</translation>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>C&apos;est la ville par défaut!</translation>
+        <translation>C'est la ville par défaut!</translation>
     </message>
 </context>
 <context>
@@ -912,7 +923,7 @@ ou que vous avez une peau particulièrement claire.</translation>
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Prenez des précautions, comme vous couvrir si vous allez dehors.
-Restez à l&apos;ombre l&apos;après-midi
+Restez à l'ombre l'après-midi
 quand le soleil est le plus fort.</translation>
     </message>
 </context>
@@ -973,7 +984,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="429"/>
+        <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Precipitation</translation>
@@ -1072,7 +1083,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Merci d&apos;entrer plus de trois caractères</translation>
+        <translation>Merci d'entrer plus de trois caractères</translation>
     </message>
 </context>
 <context>
@@ -1207,9 +1218,9 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2496"/>
+        <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>L&apos;application doit être relancée pour appliquer les modifications</translation>
+        <translation>L'application doit être relancée pour appliquer les modifications</translation>
     </message>
 </context>
 <context>
@@ -1245,32 +1256,32 @@ quand le soleil est le plus fort.</translation>
         <translation>Recherche des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
+        <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
         <translation>Liste vide</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
         <translation>Pas de ville configurée</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation>Aucune ville n&apos;a encore été configurée.</translation>
+        <translation>Aucune ville n'a encore été configurée.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
+        <translation>Faites un clic droit sur l'icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2564"/>
+        <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
         <translation>Acquisition des données météorologiques...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2580"/>
+        <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1279,52 +1290,52 @@ quand le soleil est le plus fort.</translation>
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="200"/>
+        <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
         <translation>Lun</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="201"/>
+        <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
         <translation>Mar</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="202"/>
+        <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
         <translation>Mer</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="203"/>
+        <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
         <translation>Jeu</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="204"/>
+        <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
         <translation>Ven</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="205"/>
+        <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
         <translation>Sam</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="206"/>
+        <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
         <translation>Dim</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="576"/>
+        <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
         <translation>Relevé météorologique</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1426"/>
+        <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
         <translation>Températures min et max et de la journée</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2589"/>
+        <location filename="../meteo_qt.py" line="2609"/>
         <source>&lt;p&gt;Author: Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
             &lt;p&gt;A simple application showing the weather status
@@ -1337,8 +1348,8 @@ quand le soleil est le plus fort.</translation>
             &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
             &lt;p&gt;To translate meteo-qt in your language or contribute to
             current translations, you can use the
-            &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-            Transifex&lt;/a&gt; platform.
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; platform.
             &lt;p&gt;If you want to report a dysfunction or a suggestion,
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
@@ -1358,7 +1369,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>The air quality index is not available</name>
     <message>
-        <location filename="../meteo_qt.py" line="482"/>
+        <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -1379,13 +1390,13 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>L&apos;application doit être redémarrée pour que les changements soient effectifs</translation>
+        <translation>L'application doit être redémarrée pour que les changements soient effectifs</translation>
     </message>
 </context>
 <context>
     <name>Tooltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="208"/>
+        <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
         <translation type="unfinished"></translation>
@@ -1394,7 +1405,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Tooltip of UV label</name>
     <message>
-        <location filename="../meteo_qt.py" line="524"/>
+        <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
         <translation type="unfinished"></translation>
@@ -1403,25 +1414,25 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Jour</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1107"/>
+        <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Matin</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1112"/>
+        <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Soir</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1117"/>
+        <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Nuit</translation>
@@ -1430,13 +1441,13 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1714"/>
+        <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Pression</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1719"/>
+        <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Humidité</translation>
@@ -1454,7 +1465,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2092"/>
+        <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Cherche les données climatiques...</translation>
@@ -1500,7 +1511,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="515"/>
+        <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1509,7 +1520,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="785"/>
+        <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Acquisition des données... </translation>
@@ -1519,7 +1530,7 @@ quand le soleil est le plus fort.</translation>
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="660"/>
+        <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/h </translation>
@@ -1538,7 +1549,7 @@ quand le soleil est le plus fort.</translation>
 <context>
     <name>Visibility (distance) label</name>
     <message>
-        <location filename="../meteo_qt.py" line="396"/>
+        <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
         <translation type="unfinished"></translation>

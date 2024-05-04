@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="nl" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="nl">
 <context>
     <name></name>
     <message>
@@ -15,24 +16,24 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling</translation>
+        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
         <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
         <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling, project</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
         <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przbył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;[pl] Poolse vertaling</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
         <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkse vertaling</translation>
@@ -87,7 +88,7 @@
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
         <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Tsjechische vertaling</translation>
     </message>
-    <message encoding="UTF-8">
+    <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
         <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Duitse vertaling</translation>
@@ -101,6 +102,16 @@
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
         <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Roemeense vertaling</translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about_dlg.py" line="50"/>
+        <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -142,7 +153,7 @@
 <context>
     <name>Air Quality Index 1</name>
     <message>
-        <location filename="../meteo_qt.py" line="487"/>
+        <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Goed</translation>
@@ -151,7 +162,7 @@
 <context>
     <name>Air Quality Index 2</name>
     <message>
-        <location filename="../meteo_qt.py" line="492"/>
+        <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Redelijk</translation>
@@ -160,7 +171,7 @@
 <context>
     <name>Air Quality Index 3</name>
     <message>
-        <location filename="../meteo_qt.py" line="497"/>
+        <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Matig</translation>
@@ -169,7 +180,7 @@
 <context>
     <name>Air Quality Index 4</name>
     <message>
-        <location filename="../meteo_qt.py" line="502"/>
+        <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Slecht</translation>
@@ -178,7 +189,7 @@
 <context>
     <name>Air Quality Index 5</name>
     <message>
-        <location filename="../meteo_qt.py" line="507"/>
+        <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Erg slecht</translation>
@@ -313,7 +324,7 @@ Land: bomen zijn volledig in beweging. Het kost moeite om tegen de wind in te lo
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Zee: redelijk hoge golven met brekende schuimkoppen vormen vlokschuim. Duidelijk zichtbare aantallen schuim worden weggeblazen in de windrichting. Redelijk grote aantallen nevel
-Land: sommige twijgjes breken af van de bomen. Auto&apos;s zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
+Land: sommige twijgjes breken af van de bomen. Auto's zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
     </message>
 </context>
 <context>
@@ -395,13 +406,13 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>&apos;{0}&apos; is verwijderd</translation>
+        <translation>'{0}' is verwijderd</translation>
     </message>
 </context>
 <context>
     <name>Comfort level</name>
     <message>
-        <location filename="../meteo_qt.py" line="418"/>
+        <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
         <translation>Gevoel</translation>
@@ -502,7 +513,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
 <context>
     <name>Daylight duration</name>
     <message>
-        <location filename="../meteo_qt.py" line="460"/>
+        <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
         <translation>Daglicht</translation>
@@ -511,7 +522,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
 <context>
     <name>Dew point label</name>
     <message>
-        <location filename="../meteo_qt.py" line="407"/>
+        <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
         <translation>Dauwpunt</translation>
@@ -564,8 +575,8 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 Als de barometerdruk afneemt, dan wordt het weer slechter.
 Boven de 1020 hPa betekent rustig weer/koelere temperaturen. Beneden de 1020 hPa betekent turbulent weer/warmere temperaturen.
 1010-1020 hPa betekent zwakke to normale stormen.
-990-1010 hPa betekent stevige stormen met mogelijk wervelwinden, tornado&apos;s en tyfonen.
-Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado&apos;s en tyfonen.</translation>
+990-1010 hPa betekent stevige stormen met mogelijk wervelwinden, tornado's en tyfonen.
+Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado's en tyfonen.</translation>
     </message>
 </context>
 <context>
@@ -593,7 +604,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label before the wind description</name>
     <message>
-        <location filename="../meteo_qt.py" line="348"/>
+        <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
         <translation>Wind</translation>
@@ -602,7 +613,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for air quality index (air pollution)</name>
     <message>
-        <location filename="../meteo_qt.py" line="472"/>
+        <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
         <translation>Luchtkwaliteit</translation>
@@ -611,7 +622,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the cloudiness (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="363"/>
+        <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
         <translation>Bewolkingsdichtheid</translation>
@@ -620,7 +631,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the humidity (%)</name>
     <message>
-        <location filename="../meteo_qt.py" line="385"/>
+        <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
         <translation>Luchtvochtigheid</translation>
@@ -629,7 +640,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the pressure (hPa)</name>
     <message>
-        <location filename="../meteo_qt.py" line="374"/>
+        <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
         <translation>Druk</translation>
@@ -638,7 +649,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunrise time (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="440"/>
+        <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
         <translation>Zonsopkomst</translation>
@@ -647,7 +658,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
 <context>
     <name>Label for the sunset (hh:mm)</name>
     <message>
-        <location filename="../meteo_qt.py" line="449"/>
+        <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
         <translation>Zonsondergang</translation>
@@ -981,7 +992,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Precipitation type (no/rain/snow)</name>
     <message>
-        <location filename="../meteo_qt.py" line="429"/>
+        <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
         <translation>Neerslag</translation>
@@ -1113,13 +1124,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Pictogram en &apos;voelt als&apos;-temperatuur</translation>
+        <translation>Pictogram en 'voelt als'-temperatuur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>&apos;Voelt als&apos;-temperatuur</translation>
+        <translation>'Voelt als'-temperatuur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
@@ -1203,7 +1214,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klik op &apos;Vind mijn locatie&apos; om de locatie automatisch te bepalen</translation>
+        <translation>Klik op 'Vind mijn locatie' om de locatie automatisch te bepalen</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1215,7 +1226,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>System tray notification</name>
     <message>
-        <location filename="../meteo_qt.py" line="2496"/>
+        <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
         <translation>Herstart het programma om de taalwijziging toe te passen</translation>
     </message>
@@ -1253,32 +1264,32 @@ de zon is dan op zijn felst.</translation>
         <translation>Bezig met zoeken naar weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1951"/>
+        <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
         <translation>Lijst wissen</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1970"/>
+        <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
         <translation>Geen locatie ingesteld</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
         <translation>Er is nog geen locatie ingesteld.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1984"/>
+        <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
+        <translation>Klik met de rechtermuisknop op het pictogram en daarna op 'Instellingen'.</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2564"/>
+        <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
         <translation>Bezig met ophalen van weergegevens...</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="2580"/>
+        <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
@@ -1287,47 +1298,47 @@ de zon is dan op zijn felst.</translation>
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="200"/>
+        <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
         <translation>ma</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="201"/>
+        <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
         <translation>di</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="202"/>
+        <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
         <translation>woe</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="203"/>
+        <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
         <translation>do</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="204"/>
+        <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
         <translation>vrij</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="205"/>
+        <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
         <translation>za</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="206"/>
+        <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
         <translation>zo</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="576"/>
+        <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
         <translation>Weerstatus</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1426"/>
+        <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
         <translation>Min.-/Max.-temperatuur van de dag</translation>
     </message>
@@ -1351,7 +1362,7 @@ de zon is dan op zijn felst.</translation>
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Maker: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+        <translation type="obsolete">&lt;p&gt;Maker: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
                         &lt;p&gt;Een eenvoudig programma dat de weerstatus-
                         informatie toont in het systeemvak.
                         &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
@@ -1365,8 +1376,30 @@ de zon is dan op zijn felst.</translation>
                         &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
                         Transifex&lt;/a&gt;-platform.
                         &lt;p&gt;Als u een storing of suggestie wilt melden,
-                        dan kunt u een &apos;issue&apos; openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        dan kunt u een 'issue' openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         GitHub&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../meteo_qt.py" line="2609"/>
+        <source>&lt;p&gt;Author: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;A simple application showing the weather status
+            information on the system tray.
+            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;This software uses icons from the
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+            &lt;p&gt;To translate meteo-qt in your language or contribute to
+            current translations, you can use the
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; platform.
+            &lt;p&gt;If you want to report a dysfunction or a suggestion,
+            feel free to open an issue in
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1381,7 +1414,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>The air quality index is not available</name>
     <message>
-        <location filename="../meteo_qt.py" line="482"/>
+        <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
         <translation>Niet beschikbaar</translation>
@@ -1408,7 +1441,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tooltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="208"/>
+        <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
         <translation>Kans op neerslag</translation>
@@ -1417,7 +1450,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tooltip of UV label</name>
     <message>
-        <location filename="../meteo_qt.py" line="524"/>
+        <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
         <translation>De ultraviolet-index om 12:00</translation>
@@ -1426,25 +1459,25 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tooltip on weather icon on 6 days forecast</name>
     <message>
-        <location filename="../meteo_qt.py" line="1102"/>
+        <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
         <translation>Dag</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1107"/>
+        <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
         <translation>Ochtend</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1112"/>
+        <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
         <translation>Avond</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1117"/>
+        <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
         <translation>Nacht</translation>
@@ -1453,13 +1486,13 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tootltip forcast of the day</name>
     <message>
-        <location filename="../meteo_qt.py" line="1714"/>
+        <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
         <translation>Druk</translation>
     </message>
     <message>
-        <location filename="../meteo_qt.py" line="1719"/>
+        <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
         <translation>Luchtvochtigheid</translation>
@@ -1477,7 +1510,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Tray icon</name>
     <message>
-        <location filename="../meteo_qt.py" line="2092"/>
+        <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
         <translation>Bezig met zoeken naar weergegevens...</translation>
@@ -1523,7 +1556,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Ultraviolet index</name>
     <message>
-        <location filename="../meteo_qt.py" line="515"/>
+        <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
         <translation>UV</translation>
@@ -1532,7 +1565,7 @@ de zon is dan op zijn felst.</translation>
 <context>
     <name>Ultraviolet index waiting text label</name>
     <message>
-        <location filename="../meteo_qt.py" line="785"/>
+        <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
         <translation>Bezig met ophalen...</translation>
@@ -1542,7 +1575,7 @@ de zon is dan op zijn felst.</translation>
     <name>Unit displayed after the wind speed value and before
                 the wind description (keep the spaces before and after)</name>
     <message>
-        <location filename="../meteo_qt.py" line="660"/>
+        <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
         <translation> km/u </translation>
@@ -1562,7 +1595,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
 <context>
     <name>Visibility (distance) label</name>
     <message>
-        <location filename="../meteo_qt.py" line="396"/>
+        <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
         <translation>Zicht</translation>
