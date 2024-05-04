@@ -406,7 +406,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaupunki &quot;{0}&quot; poistettu</translation>
     </message>
 </context>
 <context>
@@ -415,7 +415,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tukaluustaso</translation>
     </message>
 </context>
 <context>
@@ -424,43 +424,43 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuiva</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hyvin mukava</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mukava</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Siedettävä</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Epämukava</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Hyvin tukala</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tuskaisa</translation>
     </message>
 </context>
 <context>
@@ -469,7 +469,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Liikunnan kannalta loistava tukaluustaso</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
@@ -481,19 +481,19 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kilpailuajat tulevat olemaan hitaampia.</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kevyt harjoittelu saattaa tuntua menettelevältä mutta kilpailu ja kova ponnistelu ovat vaikeita</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tahti tulee olemaan paljon alempi</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
@@ -506,7 +506,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kuivempi ilma voi helposti aiheuttaa ihon halkeileua ja ärsyyntyneisyyttä</translation>
     </message>
 </context>
 <context>
@@ -515,7 +515,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Päivänvalo</translation>
     </message>
 </context>
 <context>
@@ -524,7 +524,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kastepiste</translation>
     </message>
 </context>
 <context>
@@ -533,7 +533,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="39"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Portti:</translation>
     </message>
 </context>
 <context>
@@ -542,7 +542,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Välityspalvelimen osoite:</translation>
     </message>
 </context>
 <context>
@@ -587,7 +587,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lämpötilan tarkkuus ilmoitusalueella</translation>
     </message>
 </context>
 <context>
@@ -596,7 +596,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tuuli</translation>
     </message>
 </context>
 <context>
@@ -605,7 +605,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ilman laatu</translation>
     </message>
 </context>
 <context>
@@ -614,7 +614,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pilvisyys</translation>
     </message>
 </context>
 <context>
@@ -623,7 +623,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kosteus</translation>
     </message>
 </context>
 <context>
@@ -632,7 +632,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Paine</translation>
     </message>
 </context>
 <context>
@@ -641,7 +641,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Auringonnousu</translation>
     </message>
 </context>
 <context>
@@ -650,7 +650,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>Auringonlasku</translation>
     </message>
 </context>
 <context>
@@ -659,7 +659,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Asetukset</translation>
     </message>
 </context>
 <context>
@@ -668,7 +668,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tuulen nopeusyksikkö</translation>
     </message>
 </context>
 <context>
@@ -677,7 +677,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Luo avain&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -697,7 +697,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tämä on oletuskaupunkisi!</translation>
     </message>
 </context>
 <context>
@@ -705,152 +705,152 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="50"/>
         <source>City</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaupunki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Klikkaa muokkaaksesi kaupunkilistaa</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Kieli</translation>
     </message>
     <message>
         <location filename="../settings.py" line="66"/>
         <source>Bulgarian</source>
-        <translation type="unfinished"></translation>
+        <translation>bulgaaria</translation>
     </message>
     <message>
         <location filename="../settings.py" line="67"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>katalaani</translation>
     </message>
     <message>
         <location filename="../settings.py" line="68"/>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>tšekki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="69"/>
         <source>Danish</source>
-        <translation type="unfinished"></translation>
+        <translation>tanska</translation>
     </message>
     <message>
         <location filename="../settings.py" line="70"/>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>saksa</translation>
     </message>
     <message>
         <location filename="../settings.py" line="71"/>
         <source>Greek</source>
-        <translation type="unfinished"></translation>
+        <translation>kreikka</translation>
     </message>
     <message>
         <location filename="../settings.py" line="72"/>
         <source>English</source>
-        <translation type="unfinished"></translation>
+        <translation>englanti</translation>
     </message>
     <message>
         <location filename="../settings.py" line="73"/>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>espanja</translation>
     </message>
     <message>
         <location filename="../settings.py" line="74"/>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>suomi</translation>
     </message>
     <message>
         <location filename="../settings.py" line="75"/>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>ranska</translation>
     </message>
     <message>
         <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
-        <translation type="unfinished"></translation>
+        <translation>heprea</translation>
     </message>
     <message>
         <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
-        <translation type="unfinished"></translation>
+        <translation>kroatia</translation>
     </message>
     <message>
         <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
-        <translation type="unfinished"></translation>
+        <translation>unkari</translation>
     </message>
     <message>
         <location filename="../settings.py" line="79"/>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>italia</translation>
     </message>
     <message>
         <location filename="../settings.py" line="80"/>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>japani</translation>
     </message>
     <message>
         <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
-        <translation type="unfinished"></translation>
+        <translation>liettua</translation>
     </message>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation type="unfinished"></translation>
+        <translation>norja (kirjanorja)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>hollanti</translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
         <source>Polish</source>
-        <translation type="unfinished"></translation>
+        <translation>puola</translation>
     </message>
     <message>
         <location filename="../settings.py" line="85"/>
         <source>Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>portugali</translation>
     </message>
     <message>
         <location filename="../settings.py" line="86"/>
         <source>Brazil Portuguese</source>
-        <translation type="unfinished"></translation>
+        <translation>brasilianportugali</translation>
     </message>
     <message>
         <location filename="../settings.py" line="87"/>
         <source>Romanian</source>
-        <translation type="unfinished"></translation>
+        <translation>romania</translation>
     </message>
     <message>
         <location filename="../settings.py" line="88"/>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>venäjä</translation>
     </message>
     <message>
         <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
-        <translation type="unfinished"></translation>
+        <translation>slovakki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>ruotsi</translation>
     </message>
     <message>
         <location filename="../settings.py" line="91"/>
         <source>Turkish</source>
-        <translation type="unfinished"></translation>
+        <translation>turkki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
+        <translation>ukraina</translation>
     </message>
     <message>
         <location filename="../settings.py" line="93"/>
