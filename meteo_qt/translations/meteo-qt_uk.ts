@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="uk" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.0" language="uk" sourcelanguage="">
 <context>
     <name></name>
     <message>
@@ -543,8 +544,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Вживіть усіх запобіжних заходів: скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку із довгими рукавами та штани,&lt;br/&gt;сонячні окуляри та капелюха із широкими крисами. Уникайте перебування на сонці протягом трьох полуденних годин.
-                                    </translation>
+        <translation>Вживіть усіх запобіжних заходів: скористайтеся сонцезахисним кремом SPF 30+, вдягніть сорочку із довгими рукавами та штани,&lt;br/&gt;сонячні окуляри та капелюха із широкими крисами. Уникайте перебування на сонці протягом трьох полуденних годин.</translation>
     </message>
 </context>
 <context>
@@ -1534,7 +1534,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="660"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation>км/год</translation>
+        <translation> км/год </translation>
     </message>
 </context>
 <context>
@@ -2138,7 +2138,7 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Помилка:</translation>
+        <translation>Помилка: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
