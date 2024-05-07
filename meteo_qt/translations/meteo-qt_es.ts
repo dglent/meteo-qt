@@ -147,7 +147,7 @@
         <location filename="../meteo_qt.py" line="141"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation>&amp;Refrescar</translation>
+        <translation>A&amp;ctualizar</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Muy Mala</translation>
+        <translation>Muy mala</translation>
     </message>
 </context>
 <context>
@@ -396,17 +396,17 @@ Tierra: Daños en árboles, imposible caminar con normalidad. Se empiezan a dañ
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>De&amp;fault</source>
-        <translation>&amp;Por defecto</translation>
+        <translation>&amp;Predeterminado</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Organizar</translation>
+        <translation>&amp;Ordenar</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>La ciudad &quot;{0}&quot; ha sido eliminada</translation>
+        <translation>Se quitó la ciudad «{0}»</translation>
     </message>
 </context>
 <context>
@@ -585,7 +585,7 @@ Por debajo de 990 hPa tormentas muy fuertes, huracanes, tornados y tifones de mu
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Cubra su cuperpo con ropa que proteja de la radiación solar,
+        <translation>Cubra su cuerpo con ropa que proteja de la radiación solar,
                 use crema solar FP &gt; 30,&lt;br/&gt; lleve gorro, gafas de sol y 
                 limite la exposición solar en las 3 horas centrales del día.</translation>
     </message>
@@ -1002,7 +1002,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../proxydlg.py" line="68"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>Clave:</translation>
+        <translation>Contraseña:</translation>
     </message>
 </context>
 <context>
@@ -1011,7 +1011,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>ID de usuario:</translation>
+        <translation>Identificador de usuario:</translation>
     </message>
 </context>
 <context>
@@ -1116,7 +1116,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation>Icono del sistema</translation>
+        <translation>Icono de bandera del sistema</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
@@ -1182,13 +1182,13 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation>Posición vertical de la temperatura dentro del icono (por defecto: -12)</translation>
+        <translation>Posición de temperatura sobre el icono (vertical) (valor predeterminado: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation>Se sugiere usar una clave personal. &lt;br/&gt;Si alguien &quot;secuestra&quot; la clave por defecto, no será posible onbtener la información meteorológica (error 401)</translation>
+        <translation>Se sugiere usar una clave personal. &lt;br/&gt;Si alguien acapara la predeterminada, no será posible obtener la información meteorológica (error 401)</translation>
     </message>
 </context>
 <context>
@@ -1197,7 +1197,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>La cuidad ya existe en la lista</translation>
+        <translation>La ciudad ya existe en la lista</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
@@ -1212,7 +1212,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Haga clic en &quot;Encontrar mi ubicación&quot; para encontrar su geolocaliación</translation>
+        <translation>Pulse en «Encontrar mi ubicación» para una geolocalización automática</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1226,7 +1226,7 @@ Wear sunglasses on bright days; use sunscreen if there is
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>La aplicación necesita ser reiniciada para aplicar el idioma seleccionado</translation>
+        <translation>La aplicación necesita reiniciarse para aplicar el idioma seleccionado</translation>
     </message>
 </context>
 <context>
@@ -1607,7 +1607,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Por favor añadir una ciudad</translation>
+        <translation>Añada una ciudad</translation>
     </message>
 </context>
 <context>
@@ -1616,7 +1616,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>Por favor ingrese su clave de OpenWheatherMap</translation>
+        <translation>Introduzca su clave de OpenWheatherMap</translation>
     </message>
 </context>
 <context>
@@ -2173,7 +2173,7 @@ Wear sunglasses on bright days; use sunscreen if there is
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Error en los datos. Inténte de nuevo
+        <translation>Error en los datos. Intente de nuevo
 más tarde o modifique el nombre de la ciudad</translation>
     </message>
     <message>
