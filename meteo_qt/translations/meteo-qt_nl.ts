@@ -106,12 +106,12 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spaanse vertaling</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italiaanse vertaling, via Weblate</translation>
     </message>
 </context>
 <context>
@@ -324,7 +324,7 @@ Land: bomen zijn volledig in beweging. Het kost moeite om tegen de wind in te lo
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Zee: redelijk hoge golven met brekende schuimkoppen vormen vlokschuim. Duidelijk zichtbare aantallen schuim worden weggeblazen in de windrichting. Redelijk grote aantallen nevel
-Land: sommige twijgjes breken af van de bomen. Auto's zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
+Land: sommige twijgjes breken af van de bomen. Auto&apos;s zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
     </message>
 </context>
 <context>
@@ -406,7 +406,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>'{0}' is verwijderd</translation>
+        <translation>&apos;{0}&apos; is verwijderd</translation>
     </message>
 </context>
 <context>
@@ -575,8 +575,8 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
 Als de barometerdruk afneemt, dan wordt het weer slechter.
 Boven de 1020 hPa betekent rustig weer/koelere temperaturen. Beneden de 1020 hPa betekent turbulent weer/warmere temperaturen.
 1010-1020 hPa betekent zwakke to normale stormen.
-990-1010 hPa betekent stevige stormen met mogelijk wervelwinden, tornado's en tyfonen.
-Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado's en tyfonen.</translation>
+990-1010 hPa betekent stevige stormen met mogelijk wervelwinden, tornado&apos;s en tyfonen.
+Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado&apos;s en tyfonen.</translation>
     </message>
 </context>
 <context>
@@ -1124,13 +1124,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Pictogram en 'voelt als'-temperatuur</translation>
+        <translation>Pictogram en &apos;voelt als&apos;-temperatuur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>'Voelt als'-temperatuur</translation>
+        <translation>&apos;Voelt als&apos;-temperatuur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
@@ -1214,7 +1214,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klik op 'Vind mijn locatie' om de locatie automatisch te bepalen</translation>
+        <translation>Klik op &apos;Vind mijn locatie&apos; om de locatie automatisch te bepalen</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1281,7 +1281,7 @@ de zon is dan op zijn felst.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klik met de rechtermuisknop op het pictogram en daarna op 'Instellingen'.</translation>
+        <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
@@ -1376,7 +1376,7 @@ de zon is dan op zijn felst.</translation>
                         &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
                         Transifex&lt;/a&gt;-platform.
                         &lt;p&gt;Als u een storing of suggestie wilt melden,
-                        dan kunt u een 'issue' openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+                        dan kunt u een &apos;issue&apos; openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
                         GitHub&lt;/a&gt;.</translation>
     </message>
     <message>
@@ -1399,7 +1399,22 @@ de zon is dan op zijn felst.</translation>
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Maker: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Een eenvoudig programma voor het tonen van weerinformatie
+            in het systeemvak.
+            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Gegevensbron: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Deze software maakt gebruik van pictogrammen uit het
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygenproject&lt;/a&gt;.
+            &lt;p&gt;Help mee met vertalen op
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt;.
+            &lt;p&gt;Meld problemen en ideeën door een ‘issue’ te openen op
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            GitHub&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
