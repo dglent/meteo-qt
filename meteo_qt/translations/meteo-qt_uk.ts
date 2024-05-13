@@ -1387,7 +1387,24 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Автор: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Проста програма для показу стану погоди
+            у системному лотку.
+            &lt;p&gt;Сайт: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Джерело даних: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;У цьому програмному забезпеченні використано піктограми з
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Проєкту Oxygen&lt;/a&gt;.
+            &lt;p&gt;Щоб перекласти meteo-qt вашою мовою або допомогти з
+            поточними перекладами, ви можете скористатися платформою
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt;.
+            &lt;p&gt;Якщо ви хочете повідомити про проблему або маєте пропозицію,
+            не вагайтеся створити повідомлення про ваду на 
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
