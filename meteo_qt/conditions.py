@@ -242,7 +242,7 @@ class WeatherConditions(QObject):
                 'Beaufort scale 7 - https://en.wikipedia.org/wiki/Beaufort_scale#Modern_scale',
                 'Sea: Sea heaps up. Some foam from breaking waves is blown '
                 'into streaks along wind direction. Moderate amounts of '
-                'airborne spray\nLand: Whole trees in motion. Effort needed'
+                'airborne spray\nLand: Whole trees in motion. Effort needed '
                 'to walk against the wind',
                 'Tooltip in Weather overview dialogue'
             ),
