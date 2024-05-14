@@ -91,7 +91,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] 日本語翻訳</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
