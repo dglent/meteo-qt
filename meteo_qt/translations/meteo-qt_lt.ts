@@ -1078,25 +1078,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Temperatūra</translation>
     </message>
     <message>
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sistemos dėklo piktograma</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Piktograma ir jutiminė temperatūra</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jutiminė temperatūra</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
@@ -1114,31 +1114,31 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sistemos numatytasis</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Piktogramų apipavidalinimas</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Temperatūros šriftas sistemos dėkle</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dėklo piktogramos dydis ir teksto pozicija</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Keisdami šį nustatymą galite pagerinti temperatūros atvaizdavimą sistemos dėkle</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
@@ -1150,7 +1150,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Temperatūros pozicija piktogramoje (vertikaliai) (numatytoji reikšmė: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
@@ -1165,7 +1165,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Miestas jau yra sąraše</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
@@ -1186,7 +1186,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Įrašykite miesto pavadinimą, kablelį, šalies kodą iš dviejų raidžių (pvz.: Kaunas, LT)</translation>
     </message>
 </context>
 <context>
@@ -1194,7 +1194,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Programa turi būti paleista iš naujo, kad būtų pritaikytas kalbos nustatymas</translation>
     </message>
 </context>
 <context>
@@ -1202,104 +1202,106 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../meteo_qt.py" line="127"/>
         <source>Cities</source>
-        <translation type="unfinished"></translation>
+        <translation>Miestai</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Laikinas miestas</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nu&amp;statymai</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Apie</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="162"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Išeiti</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ieškoma duomenų apie orus...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuščias sąrašas</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
-        <translation type="unfinished"></translation>
+        <translation>Nesukonfigūruotas joks miestas</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kol kas nėra sukonfigūruotas joks miestas.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustelėkite dešiniuoju pelės mygtuku ant piktogramos ir pasirinkite „Nustatymus“.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Gaunami duomenys apie orus...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;Licencija: GPLv3
+            &lt;br/&gt;Python {1} – Qt {2} – PyQt {3} ties {4}</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
-        <translation type="unfinished"></translation>
+        <translation>Pir</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
-        <translation type="unfinished"></translation>
+        <translation>Ant</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
-        <translation type="unfinished"></translation>
+        <translation>Tre</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
-        <translation type="unfinished"></translation>
+        <translation>Ket</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
-        <translation type="unfinished"></translation>
+        <translation>Pen</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
-        <translation type="unfinished"></translation>
+        <translation>Šeš</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
-        <translation type="unfinished"></translation>
+        <translation>Sek</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
-        <translation type="unfinished"></translation>
+        <translation>Orų būsena</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
@@ -1326,7 +1328,24 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Autorius: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Paprasta programa, atvaizduojanti sistemos dėkle
+            informaciją apie orų būseną.
+            &lt;p&gt;Internetinė svetainė: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Duomenų šaltinis: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Ši programa naudoja
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen projekto&lt;/a&gt; piktogramas.
+            &lt;p&gt;Norėdami išversti meteo-qt į savo kalbą arba talkinti ir taisyti
+            esamus vertimus, galite naudoti
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; platformą.
+            &lt;p&gt;Jei norite pranešti apie neveikiančią ypatybę ar pateikti
+            pasiūlymų, nesivaržykite ir praneškite apie tai
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            Github&lt;/a&gt; svetainėje.</translation>
     </message>
 </context>
 <context>
@@ -1335,7 +1354,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jaučiama kaip</translation>
     </message>
 </context>
 <context>
@@ -1353,7 +1372,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>„OpenWeatherMap“ raktas</translation>
     </message>
 </context>
 <context>
@@ -1362,7 +1381,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Programa turi būti paleista iš naujo, kad būtų pritaikytas kalbos nustatymas</translation>
     </message>
 </context>
 <context>
@@ -1371,7 +1390,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kritulių tikimybė</translation>
     </message>
 </context>
 <context>
@@ -1389,25 +1408,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Diena</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Rytas</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vakaras</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Naktis</translation>
     </message>
 </context>
 <context>
@@ -1416,13 +1435,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Slėgis</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Drėgnumas</translation>
     </message>
 </context>
 <context>
@@ -1431,7 +1450,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="130"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Perjungti langą</translation>
     </message>
 </context>
 <context>
@@ -1440,7 +1459,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ieškoma duomenų apie orus...</translation>
     </message>
 </context>
 <context>
@@ -1449,7 +1468,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Rytoj:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1495,7 +1514,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Gaunama...</translation>
     </message>
 </context>
 <context>
@@ -1505,7 +1524,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"></translation>
+        <translation> km/val. </translation>
     </message>
 </context>
 <context>
@@ -1524,7 +1543,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Matomumas</translation>
     </message>
 </context>
 <context>
@@ -1533,7 +1552,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Pridėkite miestą</translation>
     </message>
 </context>
 <context>
@@ -1542,7 +1561,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Įveskite savo „OpenWeatherMap“ raktą</translation>
     </message>
 </context>
 <context>
@@ -1551,7 +1570,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Miestas jau yra</translation>
     </message>
 </context>
 <context>
@@ -2078,19 +2097,19 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Miestai</translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Miesto vertimas</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Rasti miestą</translation>
     </message>
 </context>
 <context>
@@ -2099,23 +2118,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"></translation>
+        <translation>Duomenų klaida, vėliau bandykite dar
+kartą arba pakeiskite miesto pavadinimą</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation>Palaukite, ieškoma...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>Klaida: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Vėliau bandykite dar kartą</translation>
     </message>
 </context>
 </TS>
