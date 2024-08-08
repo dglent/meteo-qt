@@ -1,4 +1,4 @@
-from PyQt5.QtCore import QCoreApplication, QObject
+from PyQt6.QtCore import QCoreApplication, QObject
 
 
 class WeatherConditions(QObject):

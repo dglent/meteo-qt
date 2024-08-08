@@ -18,17 +18,17 @@ import datetime
 import traceback
 from io import StringIO
 
-from PyQt5.QtCore import (
+from PyQt6.QtCore import (
     PYQT_VERSION_STR, QT_VERSION_STR, QCoreApplication, QByteArray,
     QLibraryInfo, QLocale, QSettings, Qt, QThread, QTimer, QTranslator,
     pyqtSignal, pyqtSlot, QTime, QSize
 )
-from PyQt5.QtGui import (
-    QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
+from PyQt6.QtGui import (
+    QAction, QColor, QCursor, QFont, QIcon, QImage, QMovie, QPainter, QPixmap,
     QTransform, QTextDocument, QTextCursor, QColorConstants
 )
-from PyQt5.QtWidgets import (
-    QDialog, QAction, QApplication, QMainWindow, QMenu, QSystemTrayIcon, qApp,
+from PyQt6.QtWidgets import (
+    QDialog, QApplication, QMainWindow, QMenu, QSystemTrayIcon,
     QVBoxLayout, QHBoxLayout, QLabel, QGridLayout, QGraphicsDropShadowEffect,
     QTextBrowser, QPushButton
 )
@@ -169,7 +169,7 @@ class SystemTrayIcon(QMainWindow):
         self.menu.addAction(self.exitAction)
         self.alertsAction.triggered.connect(self.show_alert)
         self.settingsAction.triggered.connect(self.config)
-        self.exitAction.triggered.connect(qApp.quit)
+        self.exitAction.triggered.connect(QApplication.instance().quit)
         self.refreshAction.triggered.connect(self.manual_refresh)
         self.aboutAction.triggered.connect(self.about)
         self.tempCityAction.triggered.connect(self.tempcity)
@@ -355,10 +355,10 @@ class SystemTrayIcon(QMainWindow):
                 )
             )
         )
-        self.wind_label.setAlignment(Qt.AlignTop)
+        self.wind_label.setAlignment(Qt.AlignmentFlag.AlignTop)
         self.windLabelDescr = QLabel('None')
         self.wind_icon_label = QLabel()
-        self.wind_icon_label.setAlignment(Qt.AlignLeft)
+        self.wind_icon_label.setAlignment(Qt.AlignmentFlag.AlignLeft)
         self.wind_icon = QPixmap(':/arrow')
         # Clouds
         self.clouds_label = QLabel(
@@ -530,7 +530,7 @@ class SystemTrayIcon(QMainWindow):
             )
         )
         self.air_pollution_value_label = QLabel()
-        self.uv_label.setAlignment(Qt.AlignTop)
+        self.uv_label.setAlignment(Qt.AlignmentFlag.AlignTop)
         self.uv_value_label = QLabel()
 
         self.over_grid.addWidget(self.feels_like_label, 0, 0)
@@ -948,7 +948,7 @@ class SystemTrayIcon(QMainWindow):
         logging.debug(f'Wind degrees direction: {angle}')
         transf.rotate(int(float(angle)))
         rotated = self.wind_icon.transformed(
-            transf, mode=Qt.SmoothTransformation
+            transf, mode=Qt.TransformationMode.SmoothTransformation
         )
         self.wind_icon_label.setPixmap(rotated)
 
@@ -1075,7 +1075,7 @@ class SystemTrayIcon(QMainWindow):
                 )
                 label = QLabel(f'{self.days_dico[day_of_week]}')
                 label.setToolTip(element.get('day'))
-                label.setAlignment(Qt.AlignHCenter)
+                label.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                 self.forecast_days_layout.addWidget(label)
 
             if element.tag == 'temperature':
@@ -1088,7 +1088,7 @@ class SystemTrayIcon(QMainWindow):
                         '{0:.0f}'.format(float(element.get('max')))
                     )
                 )
-                mlabel.setAlignment(Qt.AlignHCenter)
+                mlabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                 mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
                 self.forecast_minmax_layout.addWidget(mlabel)
 
@@ -1288,7 +1288,7 @@ class SystemTrayIcon(QMainWindow):
 
                     label = QLabel(f'{self.days_dico[day_of_week]}')
                     label.setToolTip('-'.join(i for i in date_list[:3]))
-                    label.setAlignment(Qt.AlignHCenter)
+                    label.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                     self.forecast_days_layout.addWidget(label)
                     temp_min = min(self.date_temp_forecast[date_list[2]])
                     temp_max = max(self.date_temp_forecast[date_list[2]])
@@ -1298,7 +1298,7 @@ class SystemTrayIcon(QMainWindow):
                             '{0:.0f}'.format(temp_max)
                         )
                     )
-                    mlabel.setAlignment(Qt.AlignHCenter)
+                    mlabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                     mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
                     self.forecast_minmax_layout.addWidget(mlabel)
 
@@ -1431,7 +1431,7 @@ class SystemTrayIcon(QMainWindow):
                     ).weekday())
                     label = QLabel(f'{self.days_dico[day_of_week]}')
                     label.setToolTip('-'.join(i for i in date_list[:3]))
-                    label.setAlignment(Qt.AlignHCenter)
+                    label.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                     self.forecast_days_layout.addWidget(label)
                     temp_min = min(self.date_temp_forecast[date_list[2]])
                     temp_max = max(self.date_temp_forecast[date_list[2]])
@@ -1441,7 +1441,7 @@ class SystemTrayIcon(QMainWindow):
                             '{0:.0f}'.format(temp_max)
                         )
                     )
-                    mlabel.setAlignment(Qt.AlignHCenter)
+                    mlabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
                     mlabel.setToolTip(self.tr('Min Max Temperature of the day'))
                     self.forecast_minmax_layout.addWidget(mlabel)
 
@@ -1551,7 +1551,7 @@ class SystemTrayIcon(QMainWindow):
         icon_data = icon[0]
         icon_name = icon[1]
         iconlabel = QLabel()
-        iconlabel.setAlignment(Qt.AlignHCenter)
+        iconlabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
 
         self.system_icons = self.settings.value('IconsTheme') or 'System default'
         if self.system_icons != 'OpenWeatherMap':
@@ -1694,7 +1694,7 @@ class SystemTrayIcon(QMainWindow):
                     '{0:.0f}'.format(temperature_at_hour)
                 )
             )
-            daytime.setAlignment(Qt.AlignHCenter)
+            daytime.setAlignment(Qt.AlignmentFlag.AlignHCenter)
             ttip = (
                 f'{self.feels_like_translated} '
                 f'{feels_like_value} {feels_like_unit}'
@@ -1808,7 +1808,7 @@ class SystemTrayIcon(QMainWindow):
         icon_data = icon[0]
         icon_name = icon[1]
         iconlabel = QLabel()
-        iconlabel.setAlignment(Qt.AlignHCenter)
+        iconlabel.setAlignment(Qt.AlignmentFlag.AlignHCenter)
 
         self.system_icons = self.settings.value('IconsTheme') or 'System default'
         if self.system_icons != 'OpenWeatherMap':
@@ -2408,7 +2408,7 @@ class SystemTrayIcon(QMainWindow):
         if self.tray_type == 'icon&temp' or self.tray_type == 'icon&feels_like':
             pt.drawText(
                 icon.rect(),
-                Qt.AlignBottom | Qt.AlignCenter,
+                Qt.AlignmentFlag.AlignBottom | Qt.AlignmentFlag.AlignCenter,
                 str(temp_tray)
             )
         if self.tray_type == 'temp' or self.tray_type == 'feels_like_temp':
@@ -2479,14 +2479,14 @@ class SystemTrayIcon(QMainWindow):
         # starting with the panel open can be useful for users who don't have plasma
         # installed (to set keyboard shortcuts or other default window behaviours)
         start_minimized = self.settings.value('StartMinimized') or 'True'
-        if reason == 3:
+        if reason == QSystemTrayIcon.ActivationReason.Trigger:
             if self.inerror or self.id_ is None or self.id_ == '':
                 return
             if self.isVisible() and start_minimized == 'True':
                 self.hide()
             else:
                 self.show()
-        elif reason == 1:
+        elif reason == QSystemTrayIcon.ActivationReason.Context:
             self.menu.popup(QCursor.pos())
 
     def closeEvent(self, event):
@@ -2520,7 +2520,7 @@ class SystemTrayIcon(QMainWindow):
                     "The application has to be restarted to apply the language setting",
                     ''
                 ),
-                QSystemTrayIcon.Warning
+                QSystemTrayIcon.MessageIcon.Warning
             )
             self.language = language
 
@@ -2568,7 +2568,7 @@ class SystemTrayIcon(QMainWindow):
     def config(self):
         dialog = settings.MeteoSettings(self.accurate_url, self.appid, self)
         dialog.applied_signal.connect(self.config_save)
-        if dialog.exec_() == 1:
+        if dialog.exec() == 1:
             self.config_save()
             logging.debug('Update Cities menu...')
             self.cities_menu()
@@ -2578,7 +2578,7 @@ class SystemTrayIcon(QMainWindow):
         dialog.id_signal[tuple].connect(self.citydata)
         dialog.city_signal[tuple].connect(self.citydata)
         dialog.country_signal[tuple].connect(self.citydata)
-        if dialog.exec_():
+        if dialog.exec():
             self.temporary_city_status = True
             self.current_city_display = f'{self.city}_{self.country}_{self.id_}'
             self.systray.setToolTip(self.tr('Fetching weather data...'))
@@ -2628,7 +2628,7 @@ class SystemTrayIcon(QMainWindow):
         )
 
         dialog = about_dlg.AboutDialog(title, text, image, self)
-        dialog.exec_()
+        dialog.exec()
 
 
 class Download(QThread):
@@ -3058,7 +3058,7 @@ class AlertsDLG(QDialog):
                 self.textBrowser.append(f'<font color="{color}"><b>{key}</b>: {value}</font>')
             if i < len(alert_json):
                 self.textBrowser.append('<br/>')
-        self.textBrowser.moveCursor(QTextCursor.Start)
+        self.textBrowser.moveCursor(QTextCursor.MoveOperation.Start)
 
 
 def main():
@@ -3090,8 +3090,8 @@ def main():
     qtTranslator = QTranslator()
     qtTranslator.load(
         f'qt_{locale}',
-        QLibraryInfo.location(
-            QLibraryInfo.TranslationsPath
+        QLibraryInfo.path(
+            QLibraryInfo.LibraryPath.TranslationsPath
         )
     )
     app.installTranslator(qtTranslator)
@@ -3132,7 +3132,7 @@ def main():
     loggerStream.addHandler(handlerStream)
 
     m = SystemTrayIcon()
-    app.exec_()
+    app.exec()
 
 
 def excepthook(exc_type, exc_value, tracebackobj):
