@@ -2785,7 +2785,7 @@ class Download(QThread):
             exclude = 'current,minutely,hourly,daily'
             one_call_url = (
                 f'http://api.openweathermap.org/data/2.5/onecall?'
-                f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}1'
+                f'lat={lat}&lon={lon}&exclude={exclude}&appid={appid}'
             )
             logging.debug(f'OneCall URL: {one_call_url}')
             try:
