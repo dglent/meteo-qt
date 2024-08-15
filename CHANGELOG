@@ -1,3 +1,8 @@
+3.4
+- Fix weather alerts
+- Export weather info in the log file to use with Conky #137
+- Translations support from Weblate by @stefonarch
+
 3.3
 - Handle '401 Unauthorized' keys for onecall api (used for weather alerts)
 
