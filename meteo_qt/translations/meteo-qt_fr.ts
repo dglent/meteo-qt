@@ -6,12 +6,12 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] traduction Allemande, Projet</translation>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] Traduction en allemand, Projet</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] traduction Grecque</translation>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Traduction en grec</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
@@ -21,97 +21,97 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] traduction Française</translation>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Traduction en français</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Traduction en français, Projet</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Traduction en polonais</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Traduction en turc</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Traduction en ukrainien</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Traduction en chinois (Taiwan)</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; Projet</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Traduction en néerlandais</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Traduction en hongrois</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Traduction en russe</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Traduction en espagnol, Projet</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Traduction en slovaque, Projet</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Traduction en italien</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt; [cs] Traduction en tchèque</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt; [de] Traduction en allemand</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Traduction en japonais</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Traduction en roumain</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Traduction en espagnol</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Traduction en italien, Weblate</translation>
     </message>
 </context>
 <context>
@@ -138,7 +138,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alertes</translation>
     </message>
 </context>
 <context>
@@ -156,7 +156,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Beau</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Clair</translation>
     </message>
 </context>
 <context>
@@ -174,7 +174,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Modéré</translation>
+        <translation>Modéré</translation>
     </message>
 </context>
 <context>
@@ -183,7 +183,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dégradé</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Très dégradé</translation>
     </message>
 </context>
 <context>
@@ -203,7 +203,7 @@
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : La mer est comme un miroir, lisse et sans vague
-Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignent aucun mouvement.</translation>
+Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignent aucun mouvement</translation>
     </message>
 </context>
 <context>
@@ -213,8 +213,8 @@ Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignen
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m.
-Sur terre : La fumée indique la direction du vent. Les girouettes ne s'orientent pas.</translation>
+        <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m
+Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;orientent pas</translation>
     </message>
 </context>
 <context>
@@ -224,8 +224,8 @@ Sur terre : La fumée indique la direction du vent. Les girouettes ne s'orienten
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Conditions exceptionnelles : Très grosses lames à longue crête en panache. L'écume produite s'agglomère en larges bancs et est soufflée dans le lit du vent en épaisses traînées blanches. Dans son ensemble, la surface des eaux semble blanche. Le déferlement en rouleaux devient intense et brutal. Visibilité réduite, Vagues de 9 à 12,5m
-Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s'envoler. Certains arbres sont déracinés.</translation>
+        <translation>En mer : Conditions exceptionnelles : Très grosses lames à longue crête en panache. L&apos;écume produite s&apos;agglomère en larges bancs et est soufflée dans le lit du vent en épaisses traînées blanches. Dans son ensemble, la surface des eaux semble blanche. Le déferlement en rouleaux devient intense et brutal. Visibilité réduite, Vagues de 9 à 12,5m
+Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s&apos;envoler. Certains arbres sont déracinés</translation>
     </message>
 </context>
 <context>
@@ -235,8 +235,8 @@ Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d'écume présente, se déplaçant par le vent et recouvrant d'importantes superficies marines . Beaucoup d’embrun dans l'air réduisant fortement la visibilité.
-Sur terre: Importants dégâts à la végétation. Nombreuses destructions </translation>
+        <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d&apos;écume présente, se déplaçant par le vent et recouvrant d&apos;importantes superficies marines. Beaucoup d’embrun dans l&apos;air réduisant fortement la visibilité
+Sur terre: Importants dégâts à la végétation. Nombreuses destructions</translation>
     </message>
 </context>
 <context>
@@ -246,8 +246,8 @@ Sur terre: Importants dégâts à la végétation. Nombreuses destructions </tra
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Conditions exceptionnelles : L'air est plein d'écume et d'embruns. La mer est entièrement blanche du fait des bancs d'écume dérivants. Visibilité fortement réduite. Vagues supérieures à 14m
-Sur terre : Dégâts très importants de l'ordre de la catastrophe naturelle.</translation>
+        <translation>En mer : Conditions exceptionnelles : L&apos;air est plein d&apos;écume et d&apos;embruns. La mer est entièrement blanche du fait des bancs d&apos;écume dérivants. Visibilité fortement réduite. Vagues supérieures à 14m
+Sur terre : Dégâts très importants de l&apos;ordre de la catastrophe naturelle</translation>
     </message>
 </context>
 <context>
@@ -258,7 +258,7 @@ Sur terre : Dégâts très importants de l'ordre de la catastrophe naturelle.</t
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
-Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouettes s'orientent</translation>
+Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
     </message>
 </context>
 <context>
@@ -269,7 +269,7 @@ Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouette
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>En mer : Vaguelettes ne déferlant pas, de 0,2 à 0,5m.
-Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouettes s'orientent</translation>
+Sur terre : On sent le vent sur le visage. Les feuilles s&apos;agitent. Les girouettes s&apos;orientent</translation>
     </message>
 </context>
 <context>
@@ -279,8 +279,8 @@ Sur terre : On sent le vent sur le visage. Les feuilles s'agitent. Les girouette
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
-Sur terre : Les poussières s'envolent. Les petites branches plient.</translation>
+        <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons
+Sur terre : Les poussières s&apos;envolent. Les petites branches plient</translation>
     </message>
 </context>
 <context>
@@ -290,8 +290,8 @@ Sur terre : Les poussières s'envolent. Les petites branches plient.</translatio
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons.
-Sur terre : Les poussières s'envolent. Les petites branches plient.</translation>
+        <translation>En mer : Petites vagues de 1 à 2m, de nombreux moutons
+Sur terre : Les poussières s&apos;envolent. Les petites branches plient</translation>
     </message>
 </context>
 <context>
@@ -301,8 +301,8 @@ Sur terre : Les poussières s'envolent. Les petites branches plient.</translatio
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Crêtes d'écume blanches, lames, embruns, vagues de 3 à 4m.
-Sur terre : On entend siffler le vent. Les branches de large diamètre s'agitent. Les parapluies sont susceptibles de se retourner</translation>
+        <translation>En mer : Crêtes d&apos;écume blanches, lames, embruns, vagues de 3 à 4m
+Sur terre : On entend siffler le vent. Les branches de large diamètre s&apos;agitent. Les parapluies sont susceptibles de se retourner</translation>
     </message>
 </context>
 <context>
@@ -312,8 +312,8 @@ Sur terre : On entend siffler le vent. Les branches de large diamètre s'agitent
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Traînées d'écume, lames déferlantes, vagues de 4 à 5,5m.
-Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir difficile.</translation>
+        <translation>En mer : Traînées d&apos;écume, lames déferlantes, vagues de 4 à 5,5m
+Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir difficile</translation>
     </message>
 </context>
 <context>
@@ -323,8 +323,8 @@ Sur terre : Tous les arbres balancent. La marche contre le vent peut devenir dif
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Tourbillons d'écume à la crête des lames, traînées d'écume, vagues de 5,5 à 7,5m
-Sur terre : Les branches sont susceptibles de casser. La marche contre le vent est très difficile, voire impossible.</translation>
+        <translation>En mer : Tourbillons d&apos;écume à la crête des lames, traînées d&apos;écume, vagues de 5,5 à 7,5m
+Sur terre : Les branches sont susceptibles de casser. La marche contre le vent est très difficile, voire impossible</translation>
     </message>
 </context>
 <context>
@@ -334,8 +334,8 @@ Sur terre : Les branches sont susceptibles de casser. La marche contre le vent e
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Lames déferlantes grosses à énormes, visibilité réduite par les embruns, vagues de 7 à 10m.
-Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuiles, d'ardoises, chutes de cheminées.</translation>
+        <translation>En mer : Lames déferlantes grosses à énormes, visibilité réduite par les embruns, vagues de 7 à 10m
+Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuiles, d&apos;ardoises, chutes de cheminées</translation>
     </message>
 </context>
 <context>
@@ -424,25 +424,25 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sec</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Très confortable</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Comfortable</translation>
+        <translation>Confortable</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Correct</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
@@ -460,7 +460,7 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Très inconfortable</translation>
     </message>
 </context>
 <context>
@@ -469,44 +469,45 @@ Sur terre : Le vent peut légèrement endommager les bâtiments : envols de tuil
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Niveau de confort excellent pour l&apos;exercice</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Les efforts intenses ne devraient probablement pas être affectés</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Attendez-vous à ce que les temps de course soient plus lents que dans des conditions optimales</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Les courses d&apos;entraînement faciles peuvent sembler correctes, mais il sera difficile de bien performer en course ou de réaliser des efforts intenses</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Attendez-vous à ce que le rythme souffre considérablement</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Évitez cet exercice. Passez-le ou modifiez considérablement votre objectif.
+Le niveau de confort est extrêmement inconfortable et potentiellement dangereux pour les personnes asthmatiques</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;air plus sec peut provoquer des fissures et une irritation plus facile de la peau</translation>
     </message>
 </context>
 <context>
@@ -542,7 +543,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Proxy URL:</translation>
+        <translation>URL du proxy :</translation>
     </message>
 </context>
 <context>
@@ -569,7 +570,12 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation type="unfinished"></translation>
+        <translation>Si la pression barométrique augmente, le temps s&apos;améliore.
+Si la pression barométrique diminue, le temps se dégrade.
+Au-dessus de 1020 hPa, il y a un temps calme avec des températures plus fraîches, et en dessous, le temps est instable avec des températures plus élevées.
+De 1010 à 1020 hPa, il y aurait des tempêtes faibles à normales.
+De 990 à 1010 hPa, il y aurait des tempêtes sévères avec des ouragans, des tornades et des typhons possibles.
+En dessous de 990 hPa, c&apos;est la pression pour des ouragans, tornades et typhons TRÈS GRAVES et PUISSANTS.</translation>
     </message>
 </context>
 <context>
@@ -581,7 +587,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Couvrez votre corps avec des vêtements vous protégeant du soleil, utilisez une crème solaire
- avec un indice 30+,&lt;br/&gt;portez un chapeau, réduisez le temps d'exposition au soleil à trois heures
+ avec un indice 30+,&lt;br/&gt;portez un chapeau, réduisez le temps d&apos;exposition au soleil à trois heures
  aux environs de midi et portez des lunettes de soleil</translation>
     </message>
 </context>
@@ -591,7 +597,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Précision de la température dans la barre d'état système</translation>
+        <translation>Précision de la température dans la barre d&apos;état système</translation>
     </message>
 </context>
 <context>
@@ -609,7 +615,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Qualité de l&apos;air</translation>
     </message>
 </context>
 <context>
@@ -672,7 +678,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Unité de vitesse du vent</translation>
     </message>
 </context>
 <context>
@@ -703,7 +709,7 @@ ou que vous avez une peau particulièrement claire.</translation>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>C'est la ville par défaut!</translation>
+        <translation>C&apos;est la ville par défaut !</translation>
     </message>
 </context>
 <context>
@@ -923,7 +929,7 @@ ou que vous avez une peau particulièrement claire.</translation>
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
         <translation>Prenez des précautions, comme vous couvrir si vous allez dehors.
-Restez à l'ombre l'après-midi
+Restez à l&apos;ombre l&apos;après-midi
 quand le soleil est le plus fort.</translation>
     </message>
 </context>
@@ -933,7 +939,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Niveau de journalisation</translation>
     </message>
 </context>
 <context>
@@ -942,7 +948,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Par défaut</translation>
     </message>
 </context>
 <context>
@@ -951,7 +957,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Beaufort</translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
@@ -1041,7 +1047,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Commencez à taper le nom de la ville, l&apos;ID ou les coordonnées géographiques &quot;latitude, longitude&quot;</translation>
     </message>
 </context>
 <context>
@@ -1083,7 +1089,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Merci d'entrer plus de trois caractères</translation>
+        <translation>Merci d&apos;entrer plus de trois caractères</translation>
     </message>
 </context>
 <context>
@@ -1116,73 +1122,73 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Icône &amp; Température ressentie</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Température ressentie</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
+        <translation>Basculer l&apos;intervalle de l&apos;icône de la barre des tâches</translation>
     </message>
     <message>
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
+        <translation>secondes. Réglez sur 0 pour désactiver</translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Paramètre par défaut du système</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Thème des icônes</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Police de la température dans la barre des tâches</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Taille de l&apos;icône de la barre des tâches et position du texte</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>En modifiant ce paramètre, vous pouvez améliorer l&apos;affichage de la température dans l&apos;icône de la barre des tâches</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Taille d&apos;initialisation de l&apos;icône de la barre des tâches (taille par défaut : 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Position de la température dans l&apos;icône (verticalement) (valeur par défaut : -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Il est conseillé d&apos;utiliser une clé personnelle.&lt;br/&gt;Si quelqu&apos;un détourne la clé meteo-qt par défaut, vous ne pourrez pas obtenir les données météo (erreur 401 non autorisée)</translation>
     </message>
 </context>
 <context>
@@ -1212,7 +1218,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Mettez le nom de la ville, une virgule, le code du pays à 2 lettres (ex : Londres, GB)</translation>
     </message>
 </context>
 <context>
@@ -1220,7 +1226,7 @@ quand le soleil est le plus fort.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>L'application doit être relancée pour appliquer les modifications</translation>
+        <translation>L&apos;application doit être relancée pour appliquer les modifications</translation>
     </message>
 </context>
 <context>
@@ -1268,12 +1274,12 @@ quand le soleil est le plus fort.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation>Aucune ville n'a encore été configurée.</translation>
+        <translation>Aucune ville n&apos;a encore été configurée.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Faites un clic droit sur l'icône et cliquez sur Paramètres.</translation>
+        <translation>Faites un clic droit sur l&apos;icône et cliquez sur Paramètres.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
@@ -1354,7 +1360,24 @@ quand le soleil est le plus fort.</translation>
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Auteur : Dimitrios Glentadakis
+&lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+&lt;p&gt;Une application simple affichant les informations sur l&apos;état de la météo
+dans la barre d&apos;état système.
+&lt;p&gt;Site Web : &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+https://github.com/dglent/meteo-qt&lt;/a&gt;
+&lt;br/&gt;Source des données : &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+OpenWeatherMap&lt;/a&gt;.
+&lt;br/&gt;Ce logiciel utilise les icônes du
+&lt;a href=&quot;http://www.kde.org/&quot;&gt;Projet Oxygen&lt;/a&gt;.
+&lt;p&gt;Pour traduire meteo-qt dans votre langue ou contribuer aux
+traductions actuelles, vous pouvez utiliser la
+plateforme &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+Weblate&lt;/a&gt;.
+&lt;p&gt;Si vous souhaitez signaler un dysfonctionnement ou une
+suggestion, n&apos;hésitez pas à ouvrir un ticket dans
+&lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1372,7 +1395,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Indisponible</translation>
     </message>
 </context>
 <context>
@@ -1390,7 +1413,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>L'application doit être redémarrée pour que les changements soient effectifs</translation>
+        <translation>L&apos;application doit être redémarrée pour que les changements soient effectifs</translation>
     </message>
 </context>
 <context>
@@ -1399,7 +1422,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Probabilité de précipitations</translation>
     </message>
 </context>
 <context>
@@ -1408,7 +1431,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;indice ultraviolet à 12h</translation>
     </message>
 </context>
 <context>
@@ -1552,7 +1575,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Visibilité</translation>
     </message>
 </context>
 <context>
@@ -1579,7 +1602,7 @@ quand le soleil est le plus fort.</translation>
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>La ville existe déjà</translation>
     </message>
 </context>
 <context>
@@ -2138,7 +2161,7 @@ ou modifier le nom de la ville</translation>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Erreur:</translation>
+        <translation>Erreur : </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>

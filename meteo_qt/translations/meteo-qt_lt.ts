@@ -151,7 +151,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Gera</translation>
     </message>
 </context>
 <context>
@@ -160,7 +160,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Nebloga</translation>
     </message>
 </context>
 <context>
@@ -169,7 +169,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vidutinė</translation>
     </message>
 </context>
 <context>
@@ -178,7 +178,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Bloga</translation>
     </message>
 </context>
 <context>
@@ -187,7 +187,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Labai bloga</translation>
     </message>
 </context>
 <context>
@@ -344,7 +344,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Naudoti įgaliotojo serverio tapatybės nustatymą</translation>
     </message>
     <message>
         <location filename="../settings.py" line="425"/>
@@ -587,7 +587,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Oro kokybė</translation>
     </message>
 </context>
 <context>
@@ -1066,7 +1066,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="249"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Piktograma ir temperatūra</translation>
     </message>
     <message>
         <location filename="../settings.py" line="254"/>
@@ -1363,7 +1363,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Neprieinama</translation>
     </message>
 </context>
 <context>
@@ -1728,7 +1728,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="38"/>
         <source>snow</source>
-        <translation type="unfinished"></translation>
+        <translation>sniegas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="39"/>
@@ -1753,7 +1753,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation>lietus ir sniegas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="44"/>
@@ -1933,82 +1933,82 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="111"/>
         <source>North</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiaurės</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="112"/>
         <source>NorthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiaurės rytų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiaurės-šiaurės rytų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
         <source>NorthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiaurės vakarų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Šiaurės-šiaurės vakarų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
         <source>South</source>
-        <translation type="unfinished"></translation>
+        <translation>Pietų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="117"/>
         <source>SouthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Pietryčių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Pietų-pietryčių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
         <source>SouthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Pietvakarių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>South-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Pietų-pietvakarių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
         <source>East</source>
-        <translation type="unfinished"></translation>
+        <translation>Rytų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>East-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Rytų-pietryčių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>East-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Rytų-šiaurės rytų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="124"/>
         <source>West</source>
-        <translation type="unfinished"></translation>
+        <translation>Vakarų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>West-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Vakarų-pietvakarių</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>West-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Vakarų-šiaurės vakarų</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
@@ -2023,7 +2023,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation>ŠŠR</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
@@ -2033,7 +2033,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation>ŠŠV</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
@@ -2048,7 +2048,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation>PPR</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
@@ -2058,7 +2058,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation>PPV</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
@@ -2068,12 +2068,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation>RPR</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation>RŠR</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="141"/>
@@ -2083,12 +2083,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="142"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation>VPV</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation>VŠV</translation>
     </message>
 </context>
 <context>
