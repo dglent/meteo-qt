@@ -157,3 +157,27 @@ You can contribute in a current translation or add a missing language in the [We
 Not much to say. The window providing verbose information as depicted above will display upon left
 clicking the panel icon, a context menu coming up on right-click is providing several configuration
 options all of which should be pretty self-explanatory.
+
+## Use weather data in Conky
+You can read the weather data from the log file.
+Here is an example how to extract them (see [#137](https://github.com/dglent/meteo-qt/issues/137)):
+
+```Bash
+[dglent@localhost meteo-qt]$ pwd
+/home/dglent/.config/meteo-qt
+[dglent@localhost meteo-qt]$ awk '/EXPORT_START/{ f=1;r=""; next }f && /EXPORT_END/{f=0} f{ r=(r=="")? $0: r RS $0 }END{ print r }' meteo-qt.log
+City,Paris, FR
+Temperature,18.61 °C
+Feels like,18.88 °C
+Wind, 1  Bft.  calm
+Cloudiness,100% overcast clouds
+Humidity,90 %
+Visibility,10.0 km
+Comfort,Alright
+Precipitation,no  
+Sunrise,07:16
+Sunset,20:21
+Daylight,13:05
+Air quality,Fair
+UV,4.66 Moderate
+```
