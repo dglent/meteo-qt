@@ -1754,12 +1754,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>ממטרי שלג</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>ממטרי שלג כבדים</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
@@ -1779,7 +1779,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation>חול, סחרור אבק</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
@@ -1799,17 +1799,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation>אפר געשי</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation>משבים פתאומיים</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation>טורנדו</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
@@ -1839,12 +1839,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation>סופה טרופית</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation>הוריקן</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
@@ -1864,7 +1864,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation type="unfinished"></translation>
+        <translation>ברד</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
@@ -1874,42 +1874,42 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>משב קליל</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>משב עדין</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>משב בינוני</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>משב קל</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>משב חזק</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>רוחות עזות, כמעט סערה</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>סערה</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation>סערה חמורה</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
@@ -1919,7 +1919,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation>סופה אלימה</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
@@ -1934,7 +1934,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>צפון צפון מזרח</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
@@ -1944,7 +1944,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>צפון צפון מערב</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
@@ -1959,7 +1959,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>דרום דרום מזרח</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
@@ -2004,82 +2004,82 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>N</source>
-        <translation>צפון</translation>
+        <translation>צפ׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NE</source>
-        <translation>צפון מזרח</translation>
+        <translation>צפ׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation>צפ׳־צפ׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>NW</source>
-        <translation>צפון מערב</translation>
+        <translation>צפ׳־מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation>צפ׳־צפ׳־מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
         <source>S</source>
-        <translation>דרום</translation>
+        <translation>דר׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SE</source>
-        <translation>דרום מזרח</translation>
+        <translation>דר׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation>דר׳־דר׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>SW</source>
-        <translation>דרום מערב</translation>
+        <translation>דר׳־מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation>דר׳־דר׳־מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>E</source>
-        <translation>מזרח</translation>
+        <translation>מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation>מז׳־דר׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation>מז׳־דר׳־מז׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="141"/>
         <source>W</source>
-        <translation>מערב</translation>
+        <translation>מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="142"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation>מע׳־דר׳־מע׳</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation>מע׳־צפ׳־מע׳</translation>
     </message>
 </context>
 <context>
