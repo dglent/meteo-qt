@@ -1,117 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pl">
+<TS version="2.1" language="hi">
 <context>
     <name></name>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] Projekt, Tłumaczenie na niemiecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Tłumaczenie na grecki</translation>
-    </message>
-    <message>
-        <location filename="../about_dlg.py" line="50"/>
-        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Tłumaczenie na hiszpański</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] Tłumaczenie na francuski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] Projekt, tłumaczenie na francuski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Tłumaczenie na polski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Tumaczenie na turecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Tłumaczenie na ukraiński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Tłumaczenie na chiński (Tajwan)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation>&lt;p&gt;pmav99&lt;br/&gt; Projekt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Tłumaczenie holenderskie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Tłumaczenie na węgierski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Tłumaczenie na rosyjski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Projekt, tłumaczenie na hiszpański</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Projekt, tłumaczenie słowackie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Tłumaczenie włoskie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Tłumaczenie na czeski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Tłumaczenie na niemiecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Tłumaczenie na japoński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Tłumaczenie na rumuński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Tłumaczenie na hiszpański</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Tłumaczenie na włoski, Weblate</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -119,17 +114,17 @@
     <message>
         <location filename="../about_dlg.py" line="23"/>
         <source>About</source>
-        <translation>O programie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="24"/>
         <source>Contributors</source>
-        <translation>Współtwórcy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="46"/>
         <source>About Meteo-qt</source>
-        <translation>O programie Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -138,7 +133,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation>&amp;Alerty</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -147,7 +142,7 @@
         <location filename="../meteo_qt.py" line="141"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation>&amp;Odśwież</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -156,7 +151,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Dobra</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -165,7 +160,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Ładna</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -174,7 +169,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Umiarkowana</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -183,7 +178,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Zła</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -192,7 +187,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Bardzo zła</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,8 +197,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: morze jak lustro.
-Ląd: spokój. Dym unosi się pionowo.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -213,8 +207,7 @@ Ląd: spokój. Dym unosi się pionowo.</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: powstają wzburzone fale, ale bez piankowych grzbietów.
-Ląd: strumień dymu wskazuje kierunek wiatru. Liście i łopatki wiatrowe nie poruszają się.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -224,8 +217,7 @@ Ląd: strumień dymu wskazuje kierunek wiatru. Liście i łopatki wiatrowe nie p
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: bardzo wysokie fale z wystającymi grzbietami. Duże plamy piany z grzbietów fal nadają morzu biały wygląd. Wyraźne przewracanie się fal o dużym wpływie. Duża ilość wody rozpylona w powietrzu ogranicza widoczność.
-Ląd: drzewa są połamane lub wyrwane z korzeniami, prawdopodobne są uszkodzenia konstrukcji.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -235,8 +227,7 @@ Ląd: drzewa są połamane lub wyrwane z korzeniami, prawdopodobne są uszkodzen
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: wyjątkowo wysokie fale. Dużą część powierzchni morza pokrywają bardzo duże plamy piany niesionej przez wiatr. Bardzo duża ilość wody rozpylona w powietrzu znacznie ogranicza widoczność.
-Ląd: prawdopodobne jest wystąpienie rozległych uszkodzeń konstrukcji i roślinności.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -246,8 +237,7 @@ Ląd: prawdopodobne jest wystąpienie rozległych uszkodzeń konstrukcji i rośl
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: ogromne fale. Morze jest całkowicie białe z pianą i plamami wody. Powietrze jest pełne kropelek wody, co znacznie ogranicza widoczność.
-Ląd: poważne, rozległe uszkodzenia roślinności i konstrukcji. Wokół walają się śmieci i niezabezpieczone przedmioty.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -257,8 +247,7 @@ Ląd: poważne, rozległe uszkodzenia roślinności i konstrukcji. Wokół walaj
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: małe fale, wciąż krótkie, ale bardziej wyraźne; grzebienie mają szklisty wygląd i nie łamią się.
-Ląd: wiatr można wyczuć na odsłoniętej skórze. Liście szeleszczą. Łopatki wiatrowe zaczynają się poruszać.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -268,8 +257,7 @@ Ląd: wiatr można wyczuć na odsłoniętej skórze. Liście szeleszczą. Łopat
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: duże fale. Grzbiety zaczynają się rozpadać; rozproszone białe szczyty.
-Ląd: liście i małe gałązki są w ciągłym ruchu, powiewają lekkie flagi.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -279,8 +267,7 @@ Ląd: liście i małe gałązki są w ciągłym ruchu, powiewają lekkie flagi.<
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: małe fale z załamującymi się grzbietami. Dość częste białe czapki.
-Ląd: uniósł się kurz i luźny papier. Małe gałęzie zaczynają się poruszać.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -290,8 +277,7 @@ Ląd: uniósł się kurz i luźny papier. Małe gałęzie zaczynają się porusz
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: umiarkowane fale o pewnej długości. Wiele białych czapek. Mała ilość rozpylonej wody.
-Ląd: gałęzie o umiarkowanej wielkości poruszają się. Małe drzewa w liściach zaczynają się kołysać.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -301,8 +287,7 @@ Ląd: gałęzie o umiarkowanej wielkości poruszają się. Małe drzewa w liści
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: zaczynają tworzyć się długie fale. Bardzo częste są białe grzebienie piankowe. Występuje niewielka ilość rozpylonej wody unoszącej się w powietrzu.
-Ląd: duże gałęzie w ruchu. W przewodach napięcia elektrycznego słychać syczenie. Używanie parasola jest trudne. Puste plastikowe pojemniki przewracają się.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -312,8 +297,7 @@ Ląd: duże gałęzie w ruchu. W przewodach napięcia elektrycznego słychać sy
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: morze się kołysze. Część piany powstałej z załamujących się fal jest rozwiewana w postaci smug z wiatrem. Średnia ilość rozpylonej wody w powietrzu.
-Ląd: całe drzewa w ruchu. Trzeba podjąć wysiłek, aby płynąć pod wiatr.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -323,8 +307,7 @@ Ląd: całe drzewa w ruchu. Trzeba podjąć wysiłek, aby płynąć pod wiatr.</
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: średnio wysokie fale z załamującymi się grzbietami tworzącymi wrzeciono. Dobrze widoczne smugi piany unoszone są w kierunku wiatru. Silne rozpylenie wody w powietrzu.
-Ląd: niektóre gałązki odrywają się od drzew. Wiatr na drodze ma wpływ na samochody. Chodzenie jest bardzo trudne.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -334,8 +317,7 @@ Ląd: niektóre gałązki odrywają się od drzew. Wiatr na drodze ma wpływ na 
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Morze: wysokie fale, których grzbiety czasami się przewracają. Gęsta piana jest wdmuchiwana zgodnie z kierunkiem wiatru. Duże ilości rozpylonej wody unoszące się w powietrzu mogą zacząć ograniczać widoczność.
-Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa przewracają się. Przewracają się znaki budowlane/tymczasowe i barykady.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -344,7 +326,7 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation>&amp;Tłumaczenie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -353,7 +335,7 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation>Rozpocznij zminimalizowany</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -362,13 +344,13 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Używaj uwierzytelniania proxy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation>Połączenie poprzez proxy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -376,37 +358,37 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation>&amp;Dodaj...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation>&amp;Usuń...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
-        <translation>W &amp;górę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Down</source>
-        <translation>&amp;W dół</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>De&amp;fault</source>
-        <translation>Do&amp;myślne</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Sortuj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>Miasto &quot;{0}&quot; zostało usunięte</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -415,7 +397,7 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Komfort</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -424,43 +406,43 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation>Sucho</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Bardzo sprzyjające</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Sprzyjające</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation>W porządku</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Niesprzyjające</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Bardzo niesprzyjające</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Drastycznie niesprzyjające</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -469,44 +451,44 @@ Ląd: niektóre gałęzie odrywają się od drzew, a niektóre małe drzewa prze
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Warunki doskonałe do ćwiczeń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Raczej brak wpływu na ciężki wysiłek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Będziesz biegać wolniej niż w optymalnych warunkach</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Brak wpływu na lekki wysiłek, jednak cięższe zadania mogą być utrudnione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Spodziewaj się, że tempo będzie bardzo cierpieć</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Unikaj ćwiczeń. Warunki są bardzo niesprzyjające i być może niebezpieczne dla osób cierpiących na astmę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Suche powietrze może powodować pękanie i podatność skóry na podrażnienia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,7 +497,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Światło dzienne</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -524,7 +506,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Punkt rosy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -533,7 +515,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="39"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Port:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -542,7 +524,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>URL proxy:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -553,9 +535,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Zalecenia: Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Unikaj słońca co najmniej trzy godziny po południu.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -569,12 +549,7 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation>Jeśli ciśnienie atmosferyczne rośnie, pogoda się poprawia.
-Jeśli ciśnienie barometryczne spada, pogoda się pogarsza.
-Powyżej 1020 hPa jest spokojnie/chłodniej, a poniżej pogoda robi się zmienna/ociepla się.
-1010-1020 hPa możliwe słabe burze.
-990-1010 hPa możliwe silne burze a nawet huragany, tornada i tajfuny.
-Poniżej 990 hPa to wskazanie na SILNE i NIEBEZPIECZNE huragany, tornada i tajfuny.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -585,9 +560,7 @@ Poniżej 990 hPa to wskazanie na SILNE i NIEBEZPIECZNE huragany, tornada i tajfu
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłoneczne.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -596,7 +569,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Dokładność temperatury w zasobniku systemowym</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -605,7 +578,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation>Wiatr</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -614,7 +587,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>Jakość powietrza</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -623,7 +596,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation>Zachmurzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -632,7 +605,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation>Wilgotność</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -641,7 +614,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation>Ciśnienie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -650,7 +623,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation>Wschód słońca</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -659,7 +632,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation>Zachód słońca</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -668,7 +641,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation>Ustawienia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -677,7 +650,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation>Jednostka prędkości wiatru</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -686,7 +659,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
         <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Utwórz klucz&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -697,8 +670,7 @@ Unikaj słońca co najmniej trzy godziny po południu. Noś okulary przeciwsłon
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Noś okulary przeciwsłoneczne w intensywnie słoneczne dni. &lt;br/&gt;
-Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -707,7 +679,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>To jest domyślne miasto!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -715,207 +687,207 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../settings.py" line="50"/>
         <source>City</source>
-        <translation>Miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation>Kliknij, aby edytować listę miast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
         <source>Language</source>
-        <translation>Język</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="66"/>
         <source>Bulgarian</source>
-        <translation>Bułgarski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="67"/>
         <source>Catalan</source>
-        <translation>Kataloński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="68"/>
         <source>Czech</source>
-        <translation>Czeski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="69"/>
         <source>Danish</source>
-        <translation>Duński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="70"/>
         <source>German</source>
-        <translation>Niemiecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="71"/>
         <source>Greek</source>
-        <translation>Grecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="72"/>
         <source>English</source>
-        <translation>Angielski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="73"/>
         <source>Spanish</source>
-        <translation>Hiszpański</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="74"/>
         <source>Finnish</source>
-        <translation>Fiński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="75"/>
         <source>French</source>
-        <translation>Francuski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
-        <translation>Hebrajski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
-        <translation>Chorwacki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
-        <translation>Węgierski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="79"/>
         <source>Italian</source>
-        <translation>Włoski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="80"/>
         <source>Japanese</source>
-        <translation>Japoński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
-        <translation>Litewski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation>Norweski (bokmål)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
-        <translation>Holenderski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
         <source>Polish</source>
-        <translation>Polski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="85"/>
         <source>Portuguese</source>
-        <translation>Portugalski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="86"/>
         <source>Brazil Portuguese</source>
-        <translation>Portugalski brazylijski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="87"/>
         <source>Romanian</source>
-        <translation>Rumuński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="88"/>
         <source>Russian</source>
-        <translation>Rosyjski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
-        <translation>Słowacki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
-        <translation>Szwedzki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="91"/>
         <source>Turkish</source>
-        <translation>Turecki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
-        <translation>Ukraiński</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="93"/>
         <source>Chinese Traditional</source>
-        <translation>Chiński tradycyjny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="94"/>
         <source>Chinese Simplified</source>
-        <translation>Chiński uproszczony</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="113"/>
         <source>Temperature unit</source>
-        <translation>Jednostka temperatury</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="189"/>
         <source>Update interval</source>
-        <translation>Częstotliwość aktualizacji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="190"/>
         <source>minutes</source>
-        <translation>minuty</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="213"/>
         <source>Launch at startup</source>
-        <translation>Uruchom przy starcie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="221"/>
         <source>Font colour in the tray</source>
-        <translation>Kolor czcionki w zasobniku systemowym</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="227"/>
         <source>Reset</source>
-        <translation>Resetuj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
-        <translation>Zresetuj kolor czcionki do domyślnych systemowych</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>Powiadomienia o aktualizacji pogody</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
-        <translation>Konfiguracja Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -926,7 +898,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Jeśli będziesz na zewnątrz, zastosuj środki ostrożności, takie jak zakrycie się.&lt;br/&gt;Pozostań w cieniu w okolicach południa, kiedy słońce jest najsilniejsze.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -935,7 +907,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation>Poziom logów</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -944,7 +916,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation>Domyślnie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -953,13 +925,13 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation>Beaufort</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation>km/h</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -968,19 +940,19 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation>brak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation>deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation>śnieg</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,7 +961,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Opady</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -998,7 +970,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../proxydlg.py" line="68"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>Hasło:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1007,7 +979,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>ID użytkownika:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1016,7 +988,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="57"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
-        <translation>Znajdź moją lokalizację</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1025,7 +997,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="180"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
-        <translation>Brak</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1034,7 +1006,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation>Znajdź miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1043,7 +1015,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation>Wpisz nazwę miasta, lub ID, lub współrzędne geograficzne „szerokość, długość”.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1051,32 +1023,32 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Searching...</source>
-        <translation>Wyszukiwanie...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="90"/>
         <source>&amp;Ok</source>
-        <translation>&amp;Ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="92"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="286"/>
         <source>No results</source>
-        <translation>Nie znaleziono</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="288"/>
         <source>Found {0} city</source>
-        <translation>Znaleziono {0} miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>Znaleziono miast: {0}</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1085,7 +1057,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Wpisz więcej niż trzy litery</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1094,97 +1066,97 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="249"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona i temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="254"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation>Ikona w zasobniku systemowym</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Ikona i odczuwalna temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Odczuwalna temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation>Okres aktywności ikony na pasku zadań</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation>sekundy. Ustaw 0, aby wyłączyć.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation>Domyślne systemowe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation>Motyw ikon</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Czcionka temperatury w zasobniku systemowym</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation>Rozmiar ikony w zasobniku i położenie tekstu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation>Zmieniając to ustawienie, można poprawić wyświetlanie temperatury na ikonie zasobnika.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation>Rozmiar inicjalizacji ikony w zasobniku (domyślny rozmiar: 64x64)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation>Pozycja temperatury w ikonie (pionowo) (wartość domyślna: -12)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation>Sugeruje się użycie klucza osobistego.&lt;br/&gt;Jeśli ktoś przejmie domyślny klucz meteo-qt, nie będzie można uzyskać danych o pogodzie (błąd 401 nieautoryzowany).</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1193,13 +1165,13 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>To miasto jest już na liście</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation>Przełącz miasta w oknie prognozy rolką myszy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1208,13 +1180,13 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Kliknij przycisk „Znajdź moją lokalizację”, aby zlokalizować automatycznie.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation>Wpisz nazwę miasta, przecinek, 2-literowy kod kraju (np: Warszawa, PL).</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1222,7 +1194,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>Program musi być zrestartowany, aby zastosować ustawienia językowe</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1230,145 +1202,109 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../meteo_qt.py" line="127"/>
         <source>Cities</source>
-        <translation>Miasta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
-        <translation>&amp;Tymczasowe miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Ustawienia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
-        <translation>&amp;O programie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="162"/>
         <source>Exit</source>
-        <translation>Wyjdź</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation>Wyszukiwanie informacji o pogodzie...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
-        <translation>Pusta lista</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
-        <translation>Nie skonfigurowano żadnego miasta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation>Nie zostało ustawione żadne miasto.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Prawoklik na ikonie, następnie kliknij Ustawienia.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation>Pobieranie informacji o pogodzie...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-            &lt;br/&gt;Licencja: GPLv3
-            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} na {4}</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
-        <translation>Pon</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
-        <translation>Wto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
-        <translation>Śro</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
-        <translation>Czw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
-        <translation>Pią</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
-        <translation>Sob</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
-        <translation>Nie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
-        <translation>Stan pogody</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Temperatura min/max w ciągu dnia</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="2589"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis
-            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-            &lt;p&gt;A simple application showing the weather status
-            information on the system tray.
-            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-            https://github.com/dglent/meteo-qt&lt;/a&gt;
-            &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-            OpenWeatherMap&lt;/a&gt;.
-            &lt;br/&gt;This software uses icons from the
-            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-            &lt;p&gt;To translate meteo-qt in your language or contribute to
-            current translations, you can use the
-            &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-            Transifex&lt;/a&gt; platform.
-            &lt;p&gt;If you want to report a dysfunction or a suggestion,
-            feel free to open an issue in
-            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-            github&lt;/a&gt;.</source>
-        <translation type="obsolete">&lt;p&gt;Autor: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Prosta aplikacja pokazująca informacje pogodowe w zasobniku systemowym.
-                        &lt;p&gt;Strona www: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Źródło danych: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;Ten program używa ikon z 
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-                        &lt;p&gt;Aby przetłumaczyć meteo-qt na swój język lub poprawić tłumaczenie skorzystaj z 
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        Transifex&lt;/a&gt;.
-                        &lt;p&gt;Aby zgłosić błędy lub przekazać sugestie użyj &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        github&lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2609"/>
@@ -1390,24 +1326,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
-            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-            &lt;p&gt;Prosta aplikacja pokazująca informacje o stanie
-            pogody na pasku zadań.
-            &lt;p&gt;Strona internetowa: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-            https://github.com/dglent/meteo-qt&lt;/a&gt;
-            &lt;br/&gt;Źródło danych: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-            OpenWeatherMap&lt;/a&gt;.
-            &lt;br/&gt;To oprogramowanie wykorzystuje ikony z
-            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-            &lt;p&gt;Aby przetłumaczyć meteo-qt na swój język lub przyczynić
-            się do bieżących tłumaczeń, możesz użyć platformy
-            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
-            Weblate&lt;/a&gt;.
-            &lt;p&gt;Jeśli chcesz zgłosić dysfunkcję lub sugestię, możesz otworzyć
-            problem w serwisie GitGub
-            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-            &lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1416,7 +1335,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation>Odczuwalna temperatura</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1425,7 +1344,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Niedostępne</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1434,7 +1353,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>Klucz OpenWeatherMap</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1443,7 +1362,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Program musi być zrestartowany, aby zastosować ustawienia językowe.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1452,7 +1371,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation>Prawdopodobieństwo opadów</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1461,7 +1380,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>Indeks ultrafioletu o godzinie 12:00</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1470,25 +1389,25 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation>Dzień</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation>Ranek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation>Wieczór</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation>Noc</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1497,13 +1416,13 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation>Ciśnienie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation>Wilgotność</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1512,7 +1431,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="130"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation>Przełącz okno</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1521,7 +1440,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation>Wyszukiwanie informacji o pogodzie...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1530,7 +1449,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation>&lt;b&gt;Jutro:&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1538,27 +1457,27 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
     <message>
         <location filename="../conditions.py" line="146"/>
         <source>Low</source>
-        <translation>Niski</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>Moderate</source>
-        <translation>Umiarkowany</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="151"/>
         <source>High</source>
-        <translation>Wysoki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="153"/>
         <source>Very high</source>
-        <translation>Bardzo wysoki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="155"/>
         <source>Extreme</source>
-        <translation>Intensywny</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1567,7 +1486,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>UV</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1576,7 +1495,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation>Pobieram...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1586,7 +1505,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation> km/h </translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1596,9 +1515,7 @@ Chroń skórę przez promieniowaniem UV, jeśli masz wrażliwą skórę.</transl
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Używaj kremów z filtrem SPF 30+, noś ubrania z długimi rękawami. &lt;br/&gt;
-Chroń głowę nosząc kapelusze lub zakrywając głowę parasolem. &lt;br/&gt;
-Nie przebywaj zbyt długo na słońcu.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1607,7 +1524,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Widoczność</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1616,7 +1533,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Proszę dodać miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1625,7 +1542,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>Proszę wprowadzić swój klucz OpenWeatherMap</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1634,7 +1551,7 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation>Miasto już istnieje</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1642,517 +1559,517 @@ Nie przebywaj zbyt długo na słońcu.</translation>
     <message>
         <location filename="../conditions.py" line="8"/>
         <source>thunderstorm with light rain</source>
-        <translation>burza z lekkim deszczem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="9"/>
         <source>thunderstorm with rain</source>
-        <translation>burza z deszczem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="10"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>burza z ulewą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation>lekka burza z piorunami</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="12"/>
         <source>thunderstorm</source>
-        <translation>burza z piorunami</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="13"/>
         <source>heavy thunderstorm</source>
-        <translation>silne burze</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="14"/>
         <source>ragged thunderstorm</source>
-        <translation>strzępiasta burza z piorunami</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>burza z piorunami z lekką mżawką</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="16"/>
         <source>thunderstorm with drizzle</source>
-        <translation>burza z piorunami z mżawką</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="17"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation>burza z piorunami z dużą mżawką</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation>lekka ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="19"/>
         <source>drizzle</source>
-        <translation>mżawka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="20"/>
         <source>heavy intensity drizzle</source>
-        <translation>ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation>ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="22"/>
         <source>drizzle rain</source>
-        <translation>opady deszczu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="23"/>
         <source>heavy intensity drizzle rain</source>
-        <translation>ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation>marznąca mżawka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>marznąca mżawka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation>marznąca mżawka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="27"/>
         <source>light rain</source>
-        <translation>lekki deszczyk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation>umiarkowany deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation>ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="30"/>
         <source>very heavy rain</source>
-        <translation>oberwanie chmury</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="31"/>
         <source>extreme rain</source>
-        <translation>intensywny deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation>marznący deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="33"/>
         <source>light intensity shower rain</source>
-        <translation>lekki deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation>przelotny deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
         <source>heavy intensity shower rain</source>
-        <translation>ulewa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="36"/>
         <source>ragged shower rain</source>
-        <translation>przelotny deszcz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="37"/>
         <source>light snow</source>
-        <translation>lekki śnieg</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="38"/>
         <source>snow</source>
-        <translation>śnieg</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation>duże opady śniegu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="40"/>
         <source>sleet</source>
-        <translation>deszcz ze śniegiem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation>marznący deszcz ze śniegiem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation>lekki deszcz ze śniegiem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation>deszcz ze śniegiem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation>lekkie, przelotne opady śniegu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation>przelotne opady śniegu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation>obfite opady śniegu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
         <source>mist</source>
-        <translation>mgła</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="48"/>
         <source>smoke</source>
-        <translation>zadymienie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation>mgliście</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation>burza piaskowa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation>mgła</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation>piasek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation>pył</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation>pył wulkaniczny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation>szkwały</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation>tornado</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation>czyste niebo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation>kilka chmur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation>rozproszone chmury</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation>przelotne zachmurzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation>zachmurzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation>tropikalny sztorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation>huragan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
         <source>cold</source>
-        <translation>zimno</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="66"/>
         <source>hot</source>
-        <translation>gorąco</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="67"/>
         <source>windy</source>
-        <translation>wietrznie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation>gradobicie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation>cisza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation>delikatna bryza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation>delikatna bryza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation>wiatr umiarkowany</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation>świeża bryza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation>silny wiatr</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation>silny wiatr, prawie wichura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation>wichura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation>sroga wichura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
         <source>storm</source>
-        <translation>sztorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation>gwałtowna burza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
         <source>North</source>
-        <translation>północ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="112"/>
         <source>NorthEast</source>
-        <translation>północny wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation>północ-północny wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
         <source>NorthWest</source>
-        <translation>północny zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation>północ-północny zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
         <source>South</source>
-        <translation>zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="117"/>
         <source>SouthEast</source>
-        <translation>południowy wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation>południe-południowy wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
         <source>SouthWest</source>
-        <translation>południowy zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>South-southwest</source>
-        <translation>południe-południowy zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
         <source>East</source>
-        <translation>wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>East-southeast</source>
-        <translation>wschód-południowy wschód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>East-northeast</source>
-        <translation>wschód-południowy zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="124"/>
         <source>West</source>
-        <translation>zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>West-southwest</source>
-        <translation>południowy zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>West-northwest</source>
-        <translation>północny zachód</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>N</source>
-        <translation>N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NE</source>
-        <translation>NE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>NNE</source>
-        <translation>NNE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>NW</source>
-        <translation>NW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>NNW</source>
-        <translation>NNW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
         <source>S</source>
-        <translation>S</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SE</source>
-        <translation>SE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>SSE</source>
-        <translation>SSE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>SW</source>
-        <translation>SW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>SSW</source>
-        <translation>SSW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>E</source>
-        <translation>E</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>ESE</source>
-        <translation>ESE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>ENE</source>
-        <translation>ENE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="141"/>
         <source>W</source>
-        <translation>W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="142"/>
         <source>WSW</source>
-        <translation>WSW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
-        <translation>WNW</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2161,19 +2078,19 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation>Miasta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation>Tłumaczenie miast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation>Znajdź miasto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2182,25 +2099,23 @@ Nie przebywaj zbyt długo na słońcu.</translation>
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Błąd danych, spróbuj ponownie później
-lub zmień nazwę miasta.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Proszę czekać, wyszukiwanie...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Błąd: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
-        <translation>
-Spróbuj ponownie później</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
