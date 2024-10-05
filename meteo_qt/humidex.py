@@ -1,5 +1,5 @@
 import math
-from PyQt5.QtCore import (
+from PyQt6.QtCore import (
     QCoreApplication, QObject
 )
 

@@ -1,6 +1,6 @@
-from PyQt5.QtCore import QSize, QCoreApplication
-from PyQt5.QtGui import QPixmap, QTextCursor, QIcon
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import QSize, QCoreApplication
+from PyQt6.QtGui import QPixmap, QTextCursor, QIcon
+from PyQt6.QtWidgets import (
     QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
     QTabWidget, QTextBrowser, QVBoxLayout
 )
@@ -22,8 +22,8 @@ class AboutDialog(QDialog):
         TabWidget = QTabWidget()
         TabWidget.addTab(aboutBrowser, self.tr('About'))
         TabWidget.addTab(creditsBrowser, self.tr('Contributors'))
-        aboutBrowser.moveCursor(QTextCursor.Start)
-        creditsBrowser.moveCursor(QTextCursor.Start)
+        aboutBrowser.moveCursor(QTextCursor.MoveOperation.Start)
+        creditsBrowser.moveCursor(QTextCursor.MoveOperation.Start)
         imageLabel = QLabel()
         icon = QIcon.fromTheme('weather-few-clouds')
         if icon.isNull():
@@ -35,7 +35,7 @@ class AboutDialog(QDialog):
         titleLayout.addStretch()
         contentsLayout.addWidget(TabWidget)
         buttonLayout = QHBoxLayout()
-        buttonBox = QDialogButtonBox(QDialogButtonBox.Ok)
+        buttonBox = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok)
         buttonLayout.addWidget(buttonBox)
         layout.addLayout(titleLayout)
         layout.addLayout(contentsLayout)
