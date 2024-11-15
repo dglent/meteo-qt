@@ -1,5 +1,5 @@
-from PyQt5.QtCore import QCoreApplication, QSettings, Qt, pyqtSignal
-from PyQt5.QtWidgets import (QCheckBox, QDialog, QDialogButtonBox, QGridLayout,
+from PyQt6.QtCore import QCoreApplication, QSettings, Qt, pyqtSignal
+from PyQt6.QtWidgets import (QCheckBox, QDialog, QDialogButtonBox, QGridLayout,
                              QHBoxLayout, QLabel, QLineEdit, QVBoxLayout)
 
 
@@ -16,9 +16,9 @@ class Proxy(QDialog):
 
         self.buttonLayout = QHBoxLayout()
         self.buttonBox = QDialogButtonBox()
-        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+            QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel
         )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
@@ -76,7 +76,7 @@ class Proxy(QDialog):
         password = self.settings.value('Proxy_password') or ''
         self.proxy_pass_line = QLineEdit(password)
         self.proxy_pass_line.setEnabled(self.proxy_auth_bool)
-        self.proxy_pass_line.setEchoMode(QLineEdit.Password)
+        self.proxy_pass_line.setEchoMode(QLineEdit.EchoMode.Password)
 
         self.status_layout = QHBoxLayout()
         self.status_label = QLabel()
