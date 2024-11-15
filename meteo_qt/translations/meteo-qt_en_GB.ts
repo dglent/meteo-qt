@@ -1,107 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<TS version="2.1" language="en_GB">
 <context>
     <name></name>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] saksan käännös, projekti</translation>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] kreikan käännös</translation>
-    </message>
-    <message>
-        <location filename="../about_dlg.py" line="50"/>
-        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] espanjan käännös</translation>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] ranskan käännös</translation>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] ranskan käännös, projekti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] puolan käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] turkin käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] ukrainan käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] kiinan (Taiwan) käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation>&lt;p&gt;pmav99&lt;br/&gt; Projekti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] hollannin käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] unkarin käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] venäjän käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] espanjan käännös, projekti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] slovakian käännös, projekti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] italian käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] tšekin käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] saksan käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] japanin käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] romanian käännös</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
@@ -119,17 +114,17 @@
     <message>
         <location filename="../about_dlg.py" line="23"/>
         <source>About</source>
-        <translation>Tietoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="24"/>
         <source>Contributors</source>
-        <translation>Tekijät</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="46"/>
         <source>About Meteo-qt</source>
-        <translation>Tietoa liitännäisestä Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -156,7 +151,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Hyvä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -165,7 +160,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Kelvollinen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -174,7 +169,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Keskiverto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -183,7 +178,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Huono</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -192,7 +187,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Hyvin huono</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,8 +197,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: peilityyni
-Maalla: tyyni. Savu nousee pystysuoraan</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -213,8 +207,7 @@ Maalla: tyyni. Savu nousee pystysuoraan</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: pinnassa pieniä kareita, ei vaahtoa
-Maalla: tuulen suunnan huomaa savun liikkeestä, mutta tuuliviiri ei käänny</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -224,8 +217,7 @@ Maalla: tuulen suunnan huomaa savun liikkeestä, mutta tuuliviiri ei käänny</t
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: aallot korkeita, aallonharjat kaartuvat pitkinä, vaahtojuovia tiheässä, merenpinta alkaa näyttää valkoiselta. Meri velloo voimakkaasti, näkyvyys heikentynyt
-Maalla: puita kaatuu juurineen, rakennuksille aiheutuu huomattavaa vahinkoa. Harvoin sisämaassa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -235,8 +227,7 @@ Maalla: puita kaatuu juurineen, rakennuksille aiheutuu huomattavaa vahinkoa. Har
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: poikkeuksellisen korkeita aaltoja; pienet ja keskikokoiset laivat katoavat näköpiiristä aaltojen taakse. Meren pinta valkoisenaan leveistä vaahtolautoista, useimmat aallonharjat hajoavat tuulessa vaahdoksi. Näkyvyys heikko
-Maalla: metsää kaatuu; rakennukset siirtyilevät. Erittäin harvoin sisämaassa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -246,8 +237,7 @@ Maalla: metsää kaatuu; rakennukset siirtyilevät. Erittäin harvoin sisämaass
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: ilma täynnä pärskettä ja vaahtoa, meren pinta valkoisenaan vaahdosta. Näkyvyys erittäin heikko
-Maalla: perinpohjaista tuhoa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -257,8 +247,7 @@ Maalla: perinpohjaista tuhoa</translation>
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: selkeitä mutta lyhyitä ja matalia aaltoja. Aallonharjat ohuen kuultavia, eivät murru.
-Maalla: tuuli tuntuu iholla; puiden lehdet kahisevat; tuuliviiri kääntyy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -268,8 +257,7 @@ Maalla: tuuli tuntuu iholla; puiden lehdet kahisevat; tuuliviiri kääntyy</tran
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: suurempia aaltoja. Aallonharjat alkavat murtua. Aallonharjoilla läpikuultavaa, harvakseltaan valkoista vaahtoa
-Maalla: puiden lehdet ja pienet oksat havisevat; kevyt lippu suoristuu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -279,8 +267,7 @@ Maalla: puiden lehdet ja pienet oksat havisevat; kevyt lippu suoristuu</translat
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: pitkähköjä aaltoja, joiden harjalla verrattain taajaan valkoista vaahtoa
-Maalla: tuuli nostaa maasta pölyä ja irrallisia papereita; oksat liikkuvat</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -290,8 +277,7 @@ Maalla: tuuli nostaa maasta pölyä ja irrallisia papereita; oksat liikkuvat</tr
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: kohtalaisia, selkeämmin pitkiä aaltoja, joilla usein vaahtopäät. Pärskettä voi muodostua
-Maalla: pienet puut huojuvat</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -301,8 +287,7 @@ Maalla: pienet puut huojuvat</translation>
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: aallot kookkaita, vaahtopäät kattavampia. Pärske todennäköistä
-Maalla: suuret oksat heiluvat; suhinaa puhelinlangoissa; sateenvarjoa vaikea pidellä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -312,8 +297,7 @@ Maalla: suuret oksat heiluvat; suhinaa puhelinlangoissa; sateenvarjoa vaikea pid
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: meri velloo, vaahtopäät alkavat levitä tuulen suuntaisiksi juoviksi aaltojen poikki. Tuuli alkaa heittää pärskettä aallonharjoilta
-Maalla: puut huojuvat, tuulta vasten kulkeminen hankalaa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -323,8 +307,7 @@ Maalla: puut huojuvat, tuulta vasten kulkeminen hankalaa</translation>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: aallot korkeita ja pitkiä, vaahtojuovat selkeitä. Aallonharjat hajoavat tuulessa pärskeeksi
-Maalla: puista irtoilee risuja; ulkona liikkuminen ylipäätään hankalaa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -334,8 +317,7 @@ Maalla: puista irtoilee risuja; ulkona liikkuminen ylipäätään hankalaa</tran
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Merellä: aallot korkeita, vaahtojuovia tiheässä. Pärske heikentää näkyvyyttä
-Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippujen hatut irtoavat)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -353,7 +335,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation>Käynnistä pienennettynä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -362,13 +344,13 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Välityspalvelin vaatii tunnistautumista</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation>Käytä välityspalvelinta</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -406,7 +388,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>Kaupunki &quot;{0}&quot; poistettu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -415,7 +397,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Tukaluustaso</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -424,43 +406,43 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation>Kuiva</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished">Hyvin mukava</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished">Mukava</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation>Siedettävä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished">Epämukava</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Hyvin tukala</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Tuskaisa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -469,7 +451,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished">Liikunnan kannalta loistava tukaluustaso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
@@ -481,19 +463,19 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Kilpailuajat tulevat olemaan hitaampia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished">Kevyt harjoittelu saattaa tuntua menettelevältä mutta kilpailu ja kova ponnistelu ovat vaikeita</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished">Tahti tulee olemaan paljon alempi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
@@ -506,7 +488,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished">Kuivempi ilma voi helposti aiheuttaa ihon halkeileua ja ärsyyntyneisyyttä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,7 +497,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished">Päivänvalo</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -524,7 +506,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Kastepiste</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -533,7 +515,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="39"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Portti:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -542,7 +524,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Välityspalvelimen osoite:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -587,7 +569,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Lämpötilan tarkkuus ilmoitusalueella</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -596,7 +578,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation>Tuuli</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -605,7 +587,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>Ilman laatu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -614,7 +596,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation>Pilvisyys</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -623,7 +605,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation>Kosteus</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -632,7 +614,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation>Paine</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -641,7 +623,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation>Auringonnousu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -650,7 +632,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation>Auringonlasku</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -659,7 +641,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation>Asetukset</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -668,7 +650,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation>Tuulen nopeusyksikkö</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -677,7 +659,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Luo avain&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -697,7 +679,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>Tämä on oletuskaupunkisi!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -705,152 +687,152 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="50"/>
         <source>City</source>
-        <translation>Kaupunki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation type="unfinished">Klikkaa muokkaaksesi kaupunkilistaa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
         <source>Language</source>
-        <translation>Kieli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="66"/>
         <source>Bulgarian</source>
-        <translation>bulgaaria</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="67"/>
         <source>Catalan</source>
-        <translation>katalaani</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="68"/>
         <source>Czech</source>
-        <translation>tšekki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="69"/>
         <source>Danish</source>
-        <translation>tanska</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="70"/>
         <source>German</source>
-        <translation>saksa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="71"/>
         <source>Greek</source>
-        <translation>kreikka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="72"/>
         <source>English</source>
-        <translation>englanti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="73"/>
         <source>Spanish</source>
-        <translation>espanja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="74"/>
         <source>Finnish</source>
-        <translation>suomi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="75"/>
         <source>French</source>
-        <translation>ranska</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
-        <translation>heprea</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
-        <translation>kroatia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
-        <translation>unkari</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="79"/>
         <source>Italian</source>
-        <translation>italia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="80"/>
         <source>Japanese</source>
-        <translation>japani</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
-        <translation>liettua</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation>norja (kirjanorja)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
-        <translation>hollanti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
         <source>Polish</source>
-        <translation>puola</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="85"/>
         <source>Portuguese</source>
-        <translation>portugali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="86"/>
         <source>Brazil Portuguese</source>
-        <translation>brasilianportugali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="87"/>
         <source>Romanian</source>
-        <translation>romania</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="88"/>
         <source>Russian</source>
-        <translation>venäjä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
-        <translation>slovakki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
-        <translation>ruotsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="91"/>
         <source>Turkish</source>
-        <translation>turkki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
-        <translation>ukraina</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="93"/>
