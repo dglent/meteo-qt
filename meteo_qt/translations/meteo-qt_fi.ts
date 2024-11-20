@@ -106,12 +106,12 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] espanjan käännös</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] italian käännös, Weblate</translation>
     </message>
 </context>
 <context>
@@ -138,7 +138,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hälytykset</translation>
     </message>
 </context>
 <context>
@@ -147,7 +147,7 @@
         <location filename="../meteo_qt.py" line="141"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Päivitä</translation>
     </message>
 </context>
 <context>
@@ -376,32 +376,32 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lisää...</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Poista...</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ylös</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Down</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alas</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>De&amp;fault</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Oletus</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lajittele</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="139"/>
@@ -475,7 +475,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Todennäköisesti ei vaikutusta koviin ponnisteluihin</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
@@ -500,7 +500,8 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Vältä harjoittelua. Jätä välistä tai muuta tavoitetta dramaattisesti.
+Mukavuustaso on erittäin epämukava ja mahdollisesti tappava astmasta kärsiville</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
@@ -553,7 +554,10 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Varaudu säteilyyn kaikin mahdollisin tavoin: käytä aurinkolaseja
+                ja SPF 30+ -aurinkovoidetta, suojaa vartalo pitkähihaisella
+                paidalla ja pitkillä housuilla, käytä leveälieristä päähinettä
+                ja vältä aurinkoa kello 11:n ja 16:n välillä.</translation>
     </message>
 </context>
 <context>
@@ -567,7 +571,12 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation type="unfinished"></translation>
+        <translation>Jos ilmanpaine nousee, sää paranee.
+Jos ilmanpaine laskee, sää huononee.
+Yli 1020 hPa on tyyni sää / viileämpi lämpötila ja sen alapuolella epävakaa sää / lämpimämpi lämpötila.
+1010-1020 hPa olisi heikko normaalille myrskylle.
+990-1010 hPa olisi huonoja myrskyjä mahdollisten hurrikaanien, tornadojen ja taifuunien kanssa.
+Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja taifuunien paine.</translation>
     </message>
 </context>
 <context>

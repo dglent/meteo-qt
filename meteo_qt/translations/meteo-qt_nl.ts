@@ -2199,7 +2199,7 @@ of wijzig de locatienaam.</translation>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Fout:</translation>
+        <translation>Fout: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
