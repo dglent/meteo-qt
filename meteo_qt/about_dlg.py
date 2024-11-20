@@ -183,6 +183,12 @@ class AboutDialog(QDialog):
             )
             + QCoreApplication.translate(
                 '',
+                '<p>Luna bittin Jernberg '
+                '<br> [sv] Swedish translation',
+                ''
+            )
+            + QCoreApplication.translate(
+                '',
                 '<p>Atilla Öntaş '
                 '<a href="mailto:tarakbumba@gmail.com">'
                 'tarakbumba@gmail.com</a>'
