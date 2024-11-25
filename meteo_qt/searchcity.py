@@ -5,12 +5,12 @@ import json
 import re
 
 from lxml import etree
-from PyQt5.QtCore import (
+from PyQt6.QtCore import (
     QByteArray, QCoreApplication, QSettings, QThread,
     QTimer, pyqtSignal, Qt
 )
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import (
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import (
     QDialog, QHBoxLayout, QLabel, QLineEdit,
     QListWidget, QPushButton, QVBoxLayout, QCompleter
 )
@@ -73,7 +73,7 @@ class SearchCity(QDialog):
         self.line_search.selectAll()
 
         completer = QCompleter(owm_cities.cities_list, self)
-        completer.setCaseSensitivity(Qt.CaseInsensitive)
+        completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
         self.line_search.setCompleter(completer)
         self.line_search.setClearButtonEnabled(True)
 
