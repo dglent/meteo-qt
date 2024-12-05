@@ -1,117 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="kab">
 <context>
     <name></name>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt;[de] Duitse vertaling, project</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt;[el] Griekse vertaling</translation>
-    </message>
-    <message>
-        <location filename="../about_dlg.py" line="50"/>
-        <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="obsolete">&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt;[fr] Franse vertaling, project</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przbył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt;[pl] Poolse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Oekraïense vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation>&lt;p&gt;pmav99&lt;br/&gt; Project</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt;[nl] Nederlandse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hongaarse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russische vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation>&lt;p&gt;juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt;[es] Spaanse vertaling, project</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slowaakse vertaling, Project</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italiaanse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Tsjechische vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Duitse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanese translation</source>
-        <translation>&lt;p&gt;Masamichi Ito &lt;a href=&quot;https://github.com/ito32bit&quot;&gt;https://github.com/ito32bit&lt;/a&gt;&lt;br/&gt; [ja] Japanse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Roemeense vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spaanse vertaling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italiaanse vertaling, via Weblate</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -119,17 +114,17 @@
     <message>
         <location filename="../about_dlg.py" line="23"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation>Ɣef</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="24"/>
         <source>Contributors</source>
-        <translation>Bijdragers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="46"/>
         <source>About Meteo-qt</source>
-        <translation>Over Meteo-qt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -138,7 +133,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation>W&amp;aarschuwingen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -147,7 +142,7 @@
         <location filename="../meteo_qt.py" line="141"/>
         <source>&amp;Refresh</source>
         <comment>Systray icon context menu</comment>
-        <translation>Ve&amp;rversen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -156,7 +151,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Goed</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -165,7 +160,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Redelijk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -174,7 +169,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Matig</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -183,7 +178,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Slecht</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -192,7 +187,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Erg slecht</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -202,8 +197,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: weerspiegelend
-Land: kalm. Rook stijgt verticaal op</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -213,8 +207,7 @@ Land: kalm. Rook stijgt verticaal op</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: als schellen uitziende kabbelingen worden gevormd, maar zonder schuimkruinen
-Land: rook geeft de windrichting aan. Bladeren en windvaantjes staan stil (stationair)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -224,8 +217,7 @@ Land: rook geeft de windrichting aan. Bladeren en windvaantjes staan stil (stati
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: hele hoge golven met overhangende kruinen. Grote aantallen schuim van golfkruinen geven de zee een witte uitstraling. Aardig wat omvallende golven met hevige impact. Grote aantallen nevel verminderen het zicht
-Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelijk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -235,8 +227,7 @@ Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelij
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: hele hoge golven met overhangende kruinen. Grote aantallen schuim van golfkruinen geven de zee een witte uitstraling. Aardig wat omvallende golven met hevige impact. Grote aantallen nevel verminderen het zicht
-Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelijk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -246,8 +237,7 @@ Land: bomen zijn kapot of de wortels komen omhoog; structurele schade is mogelij
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: grote golven. De zee is volledig wit uitgeslagen door schuim en nevel. De lucht is gevuld met vooruit drijvende nevel, welke het zicht enorm ontneemt
-Land: aanzienlijke wijdverspreide schade aan beplanting en gebouwen. Puin en niet-gezekerde objecten vliegen rond</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -257,8 +247,7 @@ Land: aanzienlijke wijdverspreide schade aan beplanting en gebouwen. Puin en nie
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: kleine golfjes. Kort, maar uitgesproken. Kruinen hebben een glazig uiterlijk en breken niet
-Land: de wind kan worden gevoeld op blootliggende huid. Bladeren ritselen. Windvaantjes beginnen te bewegen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -268,8 +257,7 @@ Land: de wind kan worden gevoeld op blootliggende huid. Bladeren ritselen. Windv
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: grote golfjes. Kruinen beginnen te breken. Verspreide schuimkoppen
-Land: bladeren en twijgjes bewegen continue</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -279,8 +267,7 @@ Land: bladeren en twijgjes bewegen continue</translation>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: kleine golven met brekende kruinen. Redelijk frequente schuimkoppen
-Land: verhoogd stofniveau. Kleine takken beginnen te bewegen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -290,8 +277,7 @@ Land: verhoogd stofniveau. Kleine takken beginnen te bewegen</translation>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: redelijk grote golven met aardige lengte. Veel schuimkoppen. Kleine aantallen nevel
-Land: redelijk grote takken bewegen. Kleine bomen met blad beginnen te slingeren</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -301,8 +287,7 @@ Land: redelijk grote takken bewegen. Kleine bomen met blad beginnen te slingeren
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: er worden lange golven gevormd. Er zijn zo nu en dan witte schuimkoppen. Enige nevel is aanwezig
-Land: grote takken bewegen. Fluiten kan gehoord worden bij bovenleidingsdraden. Het gebruik van een paraplu wordt moeilijk. Lege plastic vuilnisbakken waaien omver</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -312,8 +297,7 @@ Land: grote takken bewegen. Fluiten kan gehoord worden bij bovenleidingsdraden. 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: de zee hoopt zicht op. Soms wordt er schuim van brekende golven verspreid in de windrichting. Redelijk grote aantallen nevel
-Land: bomen zijn volledig in beweging. Het kost moeite om tegen de wind in te lopen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -323,8 +307,7 @@ Land: bomen zijn volledig in beweging. Het kost moeite om tegen de wind in te lo
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: redelijk hoge golven met brekende schuimkoppen vormen vlokschuim. Duidelijk zichtbare aantallen schuim worden weggeblazen in de windrichting. Redelijk grote aantallen nevel
-Land: sommige twijgjes breken af van de bomen. Auto&apos;s zwenken op de weg. Te voet op pad gaan is moeilijk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -334,8 +317,7 @@ Land: sommige twijgjes breken af van de bomen. Auto&apos;s zwenken op de weg. Te
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Zee: hoge golven met kruinen die soms omver rollen. Dichte schuim wordt weggeblazen in de windrichting. Grote aantallen nevel kunnen verminderd zicht veroorzaken
-Land: sommige takken breken af van de bomen en sommige kleine bomen worden omvergeblazen. Bouw- en tijdelijke borden en barricades worden omvergeblazen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -344,7 +326,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation>Ver&amp;talen</translation>
+        <translation>Su&amp;qel</translation>
     </message>
 </context>
 <context>
@@ -353,7 +335,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation>Geminimaliseerd opstarten</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -362,13 +344,13 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Proxy-authenticatie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation>Verbinding via proxy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -376,37 +358,37 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation>&amp;Toevoegen...</translation>
+        <translation>&amp;Rnu…</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation>Ve&amp;rwijderen...</translation>
+        <translation>&amp;Kkes…</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
-        <translation>&amp;Omhoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Down</source>
-        <translation>&amp;Omlaag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>De&amp;fault</source>
-        <translation>Stan&amp;daard</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
-        <translation>&amp;Sorteren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>&apos;{0}&apos; is verwijderd</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -415,7 +397,7 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Gevoel</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -424,43 +406,43 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation>Droog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Erg aangenaam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Aangenaam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation>Prima</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Onaangenaam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Erg onaangenaam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>Zeer onaangenaam</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -469,45 +451,44 @@ Land: sommige takken breken af van de bomen en sommige kleine bomen worden omver
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Het gevoelsniveau is uitstekend voor sport</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Hard efforts likely not affected</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Zware inspanningen zijn waarschijnlijk prima te doen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Expect race times to be slower than in optimal conditions</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Houd rekening met tragere snelheden op hoog niveau</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Lichte oefeningen zijn prima te doen, maar zware inspanningen of oefeningen op hoog niveau niet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>Houd rekening met een langzaam tempo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Vermijd oefeningen of pas je doel aan.
-Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Door de droge lucht is er kans op huidirritatie en kloven</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -516,7 +497,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
         <location filename="../meteo_qt.py" line="461"/>
         <source>Daylight</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Daglicht</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -525,7 +506,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
         <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Dauwpunt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -534,7 +515,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
         <location filename="../proxydlg.py" line="39"/>
         <source>Port:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Poort:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -543,7 +524,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
         <location filename="../proxydlg.py" line="27"/>
         <source>Proxy URL:</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Proxy-url:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -554,10 +535,7 @@ Het gevoelsniveau is zeer onaangenaam en mogelijk dodelijk voor astmapatiënten<
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Neem voorzorgsmaatregelen: draag zonnebrandcrème met factor 30+, een shirt
-met lange mouwen, een lange broek,&lt;br/&gt;
-een zonnebril en een grote, brede hoed.
-Vermijdt de zon in de 3 uur voordat de zon op zijn felst is.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -571,12 +549,7 @@ Above 1020 hPa is calm weather/cooler temperatures and below that is unsettled w
 990-1010 hPa would be bad storms with possible hurricanes, tornadoes, and typhoons.
 Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, and typhoons.</source>
         <comment>Tooltip for the pressure label in weather overview</comment>
-        <translation>Als de barometerdruk toeneemt, dan wordt het weer beter.
-Als de barometerdruk afneemt, dan wordt het weer slechter.
-Boven de 1020 hPa betekent rustig weer/koelere temperaturen. Beneden de 1020 hPa betekent turbulent weer/warmere temperaturen.
-1010-1020 hPa betekent zwakke to normale stormen.
-990-1010 hPa betekent stevige stormen met mogelijk wervelwinden, tornado&apos;s en tyfonen.
-Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado&apos;s en tyfonen.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -587,9 +560,7 @@ Onder de 990 hPa betekent ZEER SLECHT weer en KRACHTIGE wervelwinden, tornado&ap
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Bedek uw lichaam met zonbeschermende kleding, gebruik zonnebrandcrème
-met factor 30+, verminder de tijd die u doorbrengt in de zon in de 3 uur
-voordat de zon op zijn felst is en draag een zonnebril.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -598,7 +569,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Temperatuur-nauwkeurigheid in systeemvak</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -607,7 +578,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation>Wind</translation>
+        <translation>Aḍu</translation>
     </message>
 </context>
 <context>
@@ -616,7 +587,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>Luchtkwaliteit</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -625,7 +596,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation>Bewolkingsdichtheid</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -634,7 +605,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation>Luchtvochtigheid</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -643,7 +614,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation>Druk</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -652,7 +623,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation>Zonsopkomst</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -661,7 +632,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation>Zonsondergang</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -670,7 +641,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../settings.py" line="438"/>
         <source>Settings</source>
         <comment>Settings dialogue</comment>
-        <translation>Instellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -679,7 +650,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation>Eenheid van windsnelheid</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -688,7 +659,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
         <location filename="../settings.py" line="455"/>
         <source>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Create key&lt;/a&gt;</source>
         <comment>Settings dialogue</comment>
-        <translation>&lt;a href=&quot;http://home.openweathermap.org/users/sign_up&quot;&gt;Sleutel creëren&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -699,9 +670,7 @@ voordat de zon op zijn felst is en draag een zonnebril.</translation>
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Draag een zonnebril op dagen met fel licht. Gebruik
-zonnebrandcrème als er sneeuw op&lt;br/&gt; de grond is:
-dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -710,7 +679,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
         <location filename="../citylistdlg.py" line="126"/>
         <source>This is the default city!</source>
         <comment>Cities list dialogue</comment>
-        <translation>Dit is de standaardlocatie!</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -718,207 +687,207 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
     <message>
         <location filename="../settings.py" line="50"/>
         <source>City</source>
-        <translation>Locatie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation>Klik om de locatielijst te bewerken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
         <source>Language</source>
-        <translation>Taal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="66"/>
         <source>Bulgarian</source>
-        <translation>Bulgaars</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="67"/>
         <source>Catalan</source>
-        <translation>Catalaans</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="68"/>
         <source>Czech</source>
-        <translation>Tsjechisch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="69"/>
         <source>Danish</source>
-        <translation>Deens</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="70"/>
         <source>German</source>
-        <translation>Duits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="71"/>
         <source>Greek</source>
-        <translation>Grieks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="72"/>
         <source>English</source>
-        <translation>Engels</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="73"/>
         <source>Spanish</source>
-        <translation>Spaans</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="74"/>
         <source>Finnish</source>
-        <translation>Fins</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="75"/>
         <source>French</source>
-        <translation>Frans</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="76"/>
         <source>Hebrew</source>
-        <translation>Hebreeuws</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="77"/>
         <source>Croatian</source>
-        <translation>Kroatisch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="78"/>
         <source>Hungarian</source>
-        <translation>Hongaars</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="79"/>
         <source>Italian</source>
-        <translation>Italiaans</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="80"/>
         <source>Japanese</source>
-        <translation>Japans</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="81"/>
         <source>Lithuanian</source>
-        <translation>Litouws</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="82"/>
         <source>Norwegian (Bokmaal)</source>
-        <translation>Noors (Bokmål)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="83"/>
         <source>Dutch</source>
-        <translation>Nederlands</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="84"/>
         <source>Polish</source>
-        <translation>Pools</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="85"/>
         <source>Portuguese</source>
-        <translation>Portugees</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="86"/>
         <source>Brazil Portuguese</source>
-        <translation>Braziliaans Portugees</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="87"/>
         <source>Romanian</source>
-        <translation>Roemeens</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="88"/>
         <source>Russian</source>
-        <translation>Russisch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="89"/>
         <source>Slovak</source>
-        <translation>Slowaaks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="90"/>
         <source>Swedish</source>
-        <translation>Zweeds</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="91"/>
         <source>Turkish</source>
-        <translation>Turks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="92"/>
         <source>Ukrainian</source>
-        <translation>Oekraïens</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="93"/>
         <source>Chinese Traditional</source>
-        <translation>Traditioneel Chinees</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="94"/>
         <source>Chinese Simplified</source>
-        <translation>Vereenvoudigd Chinees</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="113"/>
         <source>Temperature unit</source>
-        <translation>Temperatuureenheid</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="189"/>
         <source>Update interval</source>
-        <translation>Bijwerktussenpose</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="190"/>
         <source>minutes</source>
-        <translation>minuten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="213"/>
         <source>Launch at startup</source>
-        <translation>Automatisch opstarten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="221"/>
         <source>Font colour in the tray</source>
-        <translation>Tekstkleur in het systeemvak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="227"/>
         <source>Reset</source>
-        <translation>Standaardwaarden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
-        <translation>Tekstkleur herstellen naar de systeemstandaard</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>Melding bij weerupdate</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
-        <translation>Meteo-qt-instellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -929,10 +898,7 @@ dit reflecteert de UV-straling en helpt bij een lichte huid.</translation>
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Neem voorzorgsmaatregelen als u naar buiten gaat, zoals bijv.
-het bedekken van uw lichaam.&lt;br/&gt;
-Blijf rond het middaguur in de schaduw;
-de zon is dan op zijn felst.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -941,7 +907,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation>Logniveau</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -950,7 +916,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation>Standaard</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -959,13 +925,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation>Beaufort</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation>km/u</translation>
+        <translation>Km/sr</translation>
     </message>
 </context>
 <context>
@@ -974,19 +940,19 @@ de zon is dan op zijn felst.</translation>
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation>geen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation>regen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation>sneeuw</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -995,7 +961,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Neerslag</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1004,7 +970,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../proxydlg.py" line="68"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>Wachtwoord:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1013,7 +979,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation>Gebruikers-id:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1022,7 +988,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="57"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
-        <translation>Vind mijn locatie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1031,7 +997,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="180"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
-        <translation>n/b</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1040,7 +1006,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation>Locatie zoeken</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1049,7 +1015,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation>Typ de naam, id of geografische coördinaten (&quot;breedtegraad, lengtegraad&quot;)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1057,32 +1023,32 @@ de zon is dan op zijn felst.</translation>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Searching...</source>
-        <translation>Bezig met zoeken...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="90"/>
         <source>&amp;Ok</source>
-        <translation>&amp;Oké</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="92"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Annuleren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="286"/>
         <source>No results</source>
-        <translation>Geen resultaten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="288"/>
         <source>Found {0} city</source>
-        <translation>{0} locatie gevonden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>{0} locaties gevonden</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1091,7 +1057,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Typ meer dan drie letters</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1100,97 +1066,97 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="249"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Pictogram en temperatuur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="254"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Pictogram</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Temperatuur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation>Systeemvakpictogram</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Pictogram en &apos;voelt als&apos;-temperatuur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>&apos;Voelt als&apos;-temperatuur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation>Systeemvakpictogramtussenpoos omschakelen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation>seconden. Stel in op 0 om uit te schakelen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation>Systeemthema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation>Pictogramthema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>Temperatuurlettertype in systeemvak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation>Systeemvakpictogramgrootte en tekstpositie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation>Met deze instelling kan de weergave van de temperatuur op het systeemvakpictogram worden aangepast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation>Standaardgrootte (64x64)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation>Temperatuurpositie op pictogram (verticaal - standaard: -12)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation>Het gebruik van een persoonlijke sleutel is aanbevolen.&lt;br/&gt;Als iemand de standaardsleutel onderschept, dan is het opvragen van het weer niet meer mogelijk (foutcode 401)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1199,13 +1165,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>Deze locatie is al toegevoegd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation>Schakel tussen locaties door met de muis te scrollen op het weervenster</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1214,13 +1180,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klik op &apos;Vind mijn locatie&apos; om de locatie automatisch te bepalen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation>Typ de locatienaam, gevolgd door een komma en de 2-letterige landcode (bijv.: Amsterdam, NL)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1228,7 +1194,7 @@ de zon is dan op zijn felst.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>Herstart het programma om de taalwijziging toe te passen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1236,148 +1202,109 @@ de zon is dan op zijn felst.</translation>
     <message>
         <location filename="../meteo_qt.py" line="127"/>
         <source>Cities</source>
-        <translation>Locaties</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
-        <translation>&amp;Tijdelijke locatie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Instellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
-        <translation>&amp;Over</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="162"/>
         <source>Exit</source>
-        <translation>Afsluiten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation>Bezig met zoeken naar weergegevens...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
-        <translation>Lijst wissen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
-        <translation>Geen locatie ingesteld</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation>Er is nog geen locatie ingesteld.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klik met de rechtermuisknop op het pictogram en daarna op &apos;Instellingen&apos;.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation>Bezig met ophalen van weergegevens...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-            &lt;br/&gt;Licentie: GPLv3
-            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} op {4}</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
-        <translation>ma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
-        <translation>di</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
-        <translation>woe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
-        <translation>do</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
-        <translation>vrij</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
-        <translation>za</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
-        <translation>zo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
-        <translation>Weerstatus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Min.-/Max.-temperatuur van de dag</translation>
-    </message>
-    <message>
-        <location filename="../meteo_qt.py" line="2589"/>
-        <source>&lt;p&gt;Author: Dimitrios Glentadakis
-            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-            &lt;p&gt;A simple application showing the weather status
-            information on the system tray.
-            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-            https://github.com/dglent/meteo-qt&lt;/a&gt;
-            &lt;br/&gt;Data source: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-            OpenWeatherMap&lt;/a&gt;.
-            &lt;br/&gt;This software uses icons from the
-            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
-            &lt;p&gt;To translate meteo-qt in your language or contribute to
-            current translations, you can use the
-            &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-            Transifex&lt;/a&gt; platform.
-            &lt;p&gt;If you want to report a dysfunction or a suggestion,
-            feel free to open an issue in
-            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-            github&lt;/a&gt;.</source>
-        <translation type="obsolete">&lt;p&gt;Maker: Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-                        &lt;p&gt;Een eenvoudig programma dat de weerstatus-
-                        informatie toont in het systeemvak.
-                        &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-                        https://github.com/dglent/meteo-qt&lt;/a&gt;
-                        &lt;br/&gt;Gegevensbron: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-                        OpenWeatherMap&lt;/a&gt;.
-                        &lt;br/&gt;Deze software gebruikt pictogrammen van het
-                        &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen-project&lt;/a&gt;.
-                        &lt;p&gt;Als u meteo-qt wilt vertalen naar uw taal of wilt bijdragen
-                        aan bestaande vertalingen, kunt u helpen middels het
-                        &lt;a href=&quot;https://www.transifex.com/projects/p/meteo-qt/&quot;&gt;
-                        Transifex&lt;/a&gt;-platform.
-                        &lt;p&gt;Als u een storing of suggestie wilt melden,
-                        dan kunt u een &apos;issue&apos; openen op &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-                        GitHub&lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2609"/>
@@ -1399,22 +1326,7 @@ de zon is dan op zijn felst.</translation>
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation>&lt;p&gt;Maker: Dimitrios Glentadakis
-            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-            &lt;p&gt;Een eenvoudig programma voor het tonen van weerinformatie
-            in het systeemvak.
-            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
-            https://github.com/dglent/meteo-qt&lt;/a&gt;
-            &lt;br/&gt;Gegevensbron: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
-            OpenWeatherMap&lt;/a&gt;.
-            &lt;br/&gt;Deze software maakt gebruik van pictogrammen uit het
-            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygenproject&lt;/a&gt;.
-            &lt;p&gt;Help mee met vertalen op
-            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
-            Weblate&lt;/a&gt;.
-            &lt;p&gt;Meld problemen en ideeën door een ‘issue’ te openen op
-            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
-            GitHub&lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1423,7 +1335,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation>Voelt als</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1432,7 +1344,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Niet beschikbaar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1441,7 +1353,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>OpenWeatherMap-sleutel</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1450,7 +1362,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Herstart het programma om de taalwijziging toe te passen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1459,7 +1371,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation>Kans op neerslag</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1468,7 +1380,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>De ultraviolet-index om 12:00</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1477,25 +1389,25 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation>Dag</translation>
+        <translation>Ass</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation>Ochtend</translation>
+        <translation>Taṣebḥit</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation>Avond</translation>
+        <translation>Tameddit</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation>Nacht</translation>
+        <translation>Iḍ</translation>
     </message>
 </context>
 <context>
@@ -1504,13 +1416,13 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation>Druk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation>Luchtvochtigheid</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1519,7 +1431,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="130"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation>Venster tonen/verbergen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1528,7 +1440,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation>Bezig met zoeken naar weergegevens...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1537,7 +1449,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation>&lt;b&gt;Morgen:&lt;/b&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1545,27 +1457,27 @@ de zon is dan op zijn felst.</translation>
     <message>
         <location filename="../conditions.py" line="146"/>
         <source>Low</source>
-        <translation>Laag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>Moderate</source>
-        <translation>Matig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="151"/>
         <source>High</source>
-        <translation>Hoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="153"/>
         <source>Very high</source>
-        <translation>Erg hoog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="155"/>
         <source>Extreme</source>
-        <translation>Extreem</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1574,7 +1486,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation>UV</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1583,7 +1495,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation>Bezig met ophalen...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1593,7 +1505,7 @@ de zon is dan op zijn felst.</translation>
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation> km/u </translation>
+        <translation> km/sr </translation>
     </message>
 </context>
 <context>
@@ -1603,8 +1515,7 @@ de zon is dan op zijn felst.</translation>
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Gebruik zonnebrandcrème met factor 30+, draag een shirt, een zonnebril en
-een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1613,7 +1524,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation>Zicht</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1622,7 +1533,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Voeg een locatie toe</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1631,7 +1542,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>Voer uw OpenWeatherMap-sleutel in</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1640,7 +1551,7 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation>Deze locatie is al toegevoegd</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1648,517 +1559,517 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
     <message>
         <location filename="../conditions.py" line="8"/>
         <source>thunderstorm with light rain</source>
-        <translation>onweersstorm met lichte regenval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="9"/>
         <source>thunderstorm with rain</source>
-        <translation>onweersstorm met regenval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="10"/>
         <source>thunderstorm with heavy rain</source>
-        <translation>onweersstorm met hevige regenval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation>lichte onweersstorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="12"/>
         <source>thunderstorm</source>
-        <translation>onweersstorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="13"/>
         <source>heavy thunderstorm</source>
-        <translation>hevige onweersstorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="14"/>
         <source>ragged thunderstorm</source>
-        <translation>extreme onweersstorm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation>onweersstorm met lichte motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="16"/>
         <source>thunderstorm with drizzle</source>
-        <translation>onweersstorm met motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="17"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation>onweersstorm met hevige motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation>lichte motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="19"/>
         <source>drizzle</source>
-        <translation>motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="20"/>
         <source>heavy intensity drizzle</source>
-        <translation>hevige motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation>licht motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="22"/>
         <source>drizzle rain</source>
-        <translation>motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="23"/>
         <source>heavy intensity drizzle rain</source>
-        <translation>hevige motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation>regenbui en motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation>hevige regenbui en motregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation>motregenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="27"/>
         <source>light rain</source>
-        <translation>lichte regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation>matige regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation>hevige regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="30"/>
         <source>very heavy rain</source>
-        <translation>hevigste regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="31"/>
         <source>extreme rain</source>
-        <translation>extreme regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation>ijsregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="33"/>
         <source>light intensity shower rain</source>
-        <translation>lichte regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation>regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
         <source>heavy intensity shower rain</source>
-        <translation>hevige regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="36"/>
         <source>ragged shower rain</source>
-        <translation>ragged regenbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="37"/>
         <source>light snow</source>
-        <translation>lichte sneeuwval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="38"/>
         <source>snow</source>
-        <translation>sneeuwval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation>hevige sneeuwval</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="40"/>
         <source>sleet</source>
-        <translation>natte sneeuw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation>natte sneeuwbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation>lichte regen- en sneeuwbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation>regen en sneeuw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation>lichte sneeuwbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation>sneeuwbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation>hevige sneeuwbui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
         <source>mist</source>
-        <translation>mist</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="48"/>
         <source>smoke</source>
-        <translation>rook</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation>nevel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation>zand, stofregen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation>mist</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation>zand</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation>stof</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation>vulkanische as</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation>rukwinden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation>tornado</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation>heldere lucht</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation>hier en daar een wolk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation>verspreide wolken</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation>gebroken wolkendek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation>bewolking</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation>tropische storm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation>orkaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
         <source>cold</source>
-        <translation>koud</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="66"/>
         <source>hot</source>
-        <translation>warm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="67"/>
         <source>windy</source>
-        <translation>winderig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation>hagel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation>rustig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation>licht briesje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation>aangenaam briesje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation>matig briesje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation>frisse bries</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation>sterke bries</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation>hevige wind, stormachtig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation>stormachtig</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation>hevige storm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
         <source>storm</source>
-        <translation>storm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation>schadelijke storm</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
         <source>North</source>
-        <translation>Noord</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="112"/>
         <source>NorthEast</source>
-        <translation>Noordoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation>Noord-noordoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
         <source>NorthWest</source>
-        <translation>Noordwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation>Noord-noordwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
         <source>South</source>
-        <translation>Zuid</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="117"/>
         <source>SouthEast</source>
-        <translation>Zuidoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation>Zuid-zuidoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
         <source>SouthWest</source>
-        <translation>Zuidwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>South-southwest</source>
-        <translation>Zuid-zuidwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
         <source>East</source>
-        <translation>Oost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>East-southeast</source>
-        <translation>Oost-zuidoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>East-northeast</source>
-        <translation>Oost-noordoost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="124"/>
         <source>West</source>
-        <translation>West</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>West-southwest</source>
-        <translation>West-zuidwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>West-northwest</source>
-        <translation>West-noordwest</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>N</source>
-        <translation>N</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NE</source>
-        <translation>NO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>NNE</source>
-        <translation>NNO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>NW</source>
-        <translation>NW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>NNW</source>
-        <translation>NNW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
         <source>S</source>
-        <translation>Z</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SE</source>
-        <translation>ZO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>SSE</source>
-        <translation>ZZO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>SW</source>
-        <translation>ZW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>SSW</source>
-        <translation>ZZW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>E</source>
-        <translation>O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>ESE</source>
-        <translation>OZO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>ENE</source>
-        <translation>ONO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="141"/>
         <source>W</source>
-        <translation>W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="142"/>
         <source>WSW</source>
-        <translation>WZW</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
-        <translation>WNW</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2167,19 +2078,19 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation>Locaties</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation>Vertaalde naam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation>Zoek een locatie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2188,25 +2099,23 @@ een breed gevoerde hoed. Breng niet te veel tijd door in de zon.</translation>
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Gegevensfout, probeer het later opnieuw
-of wijzig de naam van de stad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Bezig met zoeken...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Fout: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
-        <translation>
-Probeer het later opnieuw</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

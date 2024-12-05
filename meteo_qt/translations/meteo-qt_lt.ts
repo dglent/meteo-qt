@@ -1109,7 +1109,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
+        <translation>sekundžių. Nustatykite 0 norėdami išjungti</translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
