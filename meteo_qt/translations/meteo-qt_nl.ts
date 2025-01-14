@@ -56,7 +56,7 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt;[nl] Nederlandse vertaling</translation>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@fastmail.com&quot;&gt;vistausss@fastmail.com&lt;/a&gt;&lt;br/&gt;[nl] Nederlandse vertaling</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
