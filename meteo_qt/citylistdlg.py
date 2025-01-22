@@ -1,5 +1,5 @@
-from PyQt5.QtCore import QCoreApplication, Qt, QSettings, pyqtSignal
-from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
+from PyQt6.QtCore import QCoreApplication, Qt, QSettings, pyqtSignal
+from PyQt6.QtWidgets import (QDialog, QDialogButtonBox, QHBoxLayout, QLabel,
                              QListWidget, QPushButton, QVBoxLayout)
 
 try:
@@ -31,9 +31,9 @@ class CityListDlg(QDialog):
         self.listWidget.addItems(cities_list)
         buttonLayout = QVBoxLayout()
         self.buttonBox = QDialogButtonBox()
-        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+            QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel
         )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
@@ -84,7 +84,7 @@ class CityListDlg(QDialog):
         dialog.id_signal.connect(self.addcity)
         dialog.city_signal.connect(self.addcity)
         dialog.country_signal.connect(self.addcity)
-        if dialog.exec_() == 1:
+        if dialog.exec() == 1:
             newitem = (
                 self.citytoadd + '_' + self.countrytoadd
                 + '_' + self._idtoadd
@@ -184,7 +184,7 @@ class CityListDlg(QDialog):
             city, self.trans_cities_dict, self
         )
         dialog.city_signal.connect(self.current_translation)
-        if dialog.exec_() == 1:
+        if dialog.exec() == 1:
             row = self.listWidget.currentRow()
             item = self.listWidget.takeItem(row)
             del item
