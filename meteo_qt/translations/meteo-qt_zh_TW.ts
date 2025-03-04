@@ -597,7 +597,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>系統狀態列的溫度精確度</translation>
+        <translation>系統匣中的溫度精確度</translation>
     </message>
 </context>
 <context>
@@ -897,7 +897,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="221"/>
         <source>Font colour in the tray</source>
-        <translation>系統狀態列字型顏色</translation>
+        <translation>系統匣字型顏色</translation>
     </message>
     <message>
         <location filename="../settings.py" line="227"/>
@@ -1037,7 +1037,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation>尋找城市</translation>
+        <translation>搜尋城市</translation>
     </message>
 </context>
 <context>
@@ -1079,7 +1079,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>找到 {0} 個城市</translation>
+        <translation>查到 {0} 個城市</translation>
     </message>
 </context>
 <context>
@@ -1115,7 +1115,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation>系統狀態列圖示</translation>
+        <translation>系統匣圖示</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
@@ -1133,7 +1133,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation>切換狀態列圖示間隔</translation>
+        <translation>切換系統匣圖示間隔</translation>
     </message>
     <message>
         <location filename="../settings.py" line="394"/>
@@ -1157,25 +1157,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation>系統狀態列中溫度字體</translation>
+        <translation>系統匣溫度字體</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation>系統列圖示大小及文字位置</translation>
+        <translation>系統匣圖示大小及文字位置</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation>更改此設定可以改進系統列圖示中的溫度顯示</translation>
+        <translation>變更此設定可以改進系統匣圖示中的溫度顯示</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation>系統列圖示初設大小 (預設大小： 64x64)</translation>
+        <translation>系統匣圖示初設大小 (預設大小： 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
@@ -1400,7 +1400,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             github&lt;/a&gt;.</source>
         <translation>&lt;p&gt;作者： Dimitrios Glentadakis
             &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
-            &lt;p&gt;簡易的應用程式來顯示氣象狀況資訊於系統狀態列中。
+            &lt;p&gt;簡易的應用程式來顯示氣象狀況資訊於系統匣中。
             &lt;p&gt;網站： &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
             https://github.com/dglent/meteo-qt&lt;/a&gt;
             &lt;br/&gt;資料來源： &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
