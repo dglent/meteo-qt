@@ -138,7 +138,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation>通知(&amp;A)</translation>
+        <translation>提醒(&amp;A)</translation>
     </message>
 </context>
 <context>
