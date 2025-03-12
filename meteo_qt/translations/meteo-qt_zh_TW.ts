@@ -138,7 +138,7 @@
         <location filename="../meteo_qt.py" line="149"/>
         <source>&amp;Alerts</source>
         <comment>Systray icon context menu</comment>
-        <translation>通知(&amp;A)</translation>
+        <translation>提醒(&amp;A)</translation>
     </message>
 </context>
 <context>
@@ -912,7 +912,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>氣象更新提示通知</translation>
+        <translation>氣象更新通知</translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>

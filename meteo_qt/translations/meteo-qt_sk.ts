@@ -106,12 +106,12 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] preklad do španielčiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Preklad do taliančiny, Weblate</translation>
     </message>
 </context>
 <context>
@@ -202,7 +202,7 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>More: More ako zrkadlo
+        <translation>More je hladké ako zrkadlo
 Pevnina: Bezvetrie. Dym stúpa zvislo nahor</translation>
     </message>
 </context>
@@ -312,8 +312,8 @@ Pevnina: Hýbu sa veľké vetvy. Je počuť svišťanie telegrafných drôtov. P
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>More: More sa zdúva. Vietor odfukuje z lámajúcich sa vĺn penu. Stredné množstvo kvapiek vo vetre
-Pevnina: Hýbu sa celé stromy. Chôdza proti vetru je náročná</translation>
+        <translation>More sa zdúva. Vietor odfukuje z lámajúcich sa vĺn penu. Stredné množstvo kvapiek vo vzduchu
+Pevnina: Celé stromy v pohybe. Chôdza proti vetru je náročná</translation>
     </message>
 </context>
 <context>
@@ -1393,7 +1393,24 @@ noste klobúk, obmedzte čas na slnku na maximálne 3 hodiny v čase slnečného
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
+ &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+ &lt;p&gt;Jednoduchá aplikácia zobrazujúca stav počasia
+ informácie na systémovej lište.
+ &lt;p&gt;Webové stránky: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+ https://github.com/dglent/meteo-qt&lt;/a&gt;
+ &lt;br/&gt;Zdroj údajov: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+ OpenWeatherMap&lt;/a&gt;.
+ &lt;br/&gt;Tento softvér používa ikony z
+ &lt;a href=&quot;http://www.kde.org/&quot;&gt;Projekt Kyslík&lt;/a&gt;.
+ &lt;p&gt;Preložiť meteo-qt do vášho jazyka alebo prispieť
+ aktuálne preklady, môžete použiť
+ &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+ Platforma Weblate&lt;/a&gt;.
+ &lt;p&gt;Ak chcete nahlásiť dysfunkciu alebo návrh,
+ neváhajte a otvorte problém v
+ &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+ github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
