@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 
-import glob
-import os
 from distutils.command.build import build
 from distutils.core import setup
 from pathlib import Path
+import re
+import subprocess
 
 
 class BuildQm(build):
-    # os.system('pyrcc5 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
-    os.system('pylupdate5 meteo_qt/meteo_qt.pro')
-    for ts in glob.glob('meteo_qt/translations/*.ts'):
-        os.system('lrelease {0} -qm {1}'.format(ts, (ts[:-2] + 'qm')))
+    # qt5 : os.system('pyrcc5 -o meteo_qt/qrc_resources.py meteo_qt/resources.qrc')
+    # qt6 (PySide2/6) : os.system('rcc -g python meteo_qt/resources.qrc | sed '0,/PySide2/s//PyQt6/' > meteo_qt/qrc_resources.py')
+
+    def extract_py_sources(project_file='meteo_qt/meteo_qt.pro'):
+        with open(project_file, "r", encoding="utf-8") as file:
+            content = file.read()
+            pyproject_files = ["meteo_qt/" + py for py in re.findall(r"([a-zA-Z0-9_/]+\.py)", content)]
+            return pyproject_files
+
+    subprocess.run(["pylupdate6"] + extract_py_sources() + ["-ts", "translations/meteo-qt_en.ts"])
+    subprocess.run(subprocess.run(["lrelease-pro-qt6", "meteo_qt/meteo_qt.pro"]))
 
 
 PROJECT_PATH = Path(__file__).parent
