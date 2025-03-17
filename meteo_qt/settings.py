@@ -2,11 +2,11 @@ import logging
 import os
 import glob
 
-from PyQt5.QtCore import (
+from PyQt6.QtCore import (
     QCoreApplication, QLocale, QSettings, QSize, Qt, pyqtSignal
 )
-from PyQt5.QtGui import QIcon, QColor, QFont
-from PyQt5.QtWidgets import (
+from PyQt6.QtGui import QIcon, QColor, QFont
+from PyQt6.QtWidgets import (
     QCheckBox, QColorDialog, QComboBox, QDialog, QDialogButtonBox,
     QGridLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QSpinBox,
     QVBoxLayout, QFontDialog
@@ -199,16 +199,16 @@ class MeteoSettings(QDialog):
         self.buttonLayout = QHBoxLayout()
         self.buttonLayout.addStretch()
         self.buttonBox = QDialogButtonBox()
-        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok | QDialogButtonBox.Apply | QDialogButtonBox.Cancel
+            QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Apply | QDialogButtonBox.StandardButton.Cancel
         )
         self.buttonBox.setContentsMargins(0, 30, 0, 0)
         self.buttonLayout.addWidget(self.buttonBox)
-        self.buttonBox.button(QDialogButtonBox.Apply).clicked.connect(self.apply_settings)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).clicked.connect(self.apply_settings)
         self.buttonBox.accepted.connect(self.accept)
         self.buttonBox.rejected.connect(self.reject)
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(False)
         # Autostart
         self.autostart_label = QLabel(self.tr('Launch at startup'))
         self.autostart_checkbox = QCheckBox()
@@ -566,11 +566,11 @@ class MeteoSettings(QDialog):
         self.setWindowTitle(self.tr('Meteo-qt Configuration'))
 
     def wind_unit_change_apply(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.wind_unit_changed = True
 
     def units(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.units_changed = True
         unit = self.units_combo.currentText()
         setUnit = [
@@ -590,7 +590,7 @@ class MeteoSettings(QDialog):
                 )
 
     def language(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.lang_changed = True
 
     def city_default(self):
@@ -613,10 +613,10 @@ class MeteoSettings(QDialog):
         self.country_before = citytosave[1]
         self.city_list_before = allitems_not_translated[:]
         self.city_list_before.pop(self.city_list_before.index(city_name))
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def interval(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.interval_changed = True
 
     def edit_cities_list(self):
@@ -631,7 +631,7 @@ class MeteoSettings(QDialog):
         )
         dialog.citieslist_signal.connect(self.cities_list)
         dialog.citiesdict_signal.connect(self.cities_dict)
-        dialog.exec_()
+        dialog.exec()
 
     def cities_dict(self, cit_dict):
         self.trans_cities_dict = cit_dict
@@ -652,14 +652,14 @@ class MeteoSettings(QDialog):
             self.country_before = ''
             self.city_list_before = []
             self.clear_combo = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.first = False
         self.add_cities_incombo()
 
     def autostart(self, state):
         self.autostart_state = state
         self.autostart_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def autostart_apply(self):
         dir_auto = '/.config/autostart/'
@@ -701,7 +701,7 @@ class MeteoSettings(QDialog):
             # focus to next elem to show immediatley the colour
             # in the button (in some DEs)
             self.temp_color_resetButton.setFocus()
-            self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+            self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
             self.color_before = col.name()
         else:
             logging.debug('Invalid color:' + str(col))
@@ -710,12 +710,12 @@ class MeteoSettings(QDialog):
     def color_reset(self):
         self.temp_colorButton.setStyleSheet('QWidget { background-color:  }')
         self.color_before = ''
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def notifier(self, state):
         self.notifier_state = state
         self.notifier_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def notifier_apply(self):
         if self.notifier_state == 2:
@@ -728,7 +728,7 @@ class MeteoSettings(QDialog):
     def temp_decimal(self, state):
         self.temp_decimal_state = state
         self.temp_decimal_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def activate_toggle_check(self):
         current_tray_option = self.tray_icon_combo.currentText()
@@ -740,7 +740,7 @@ class MeteoSettings(QDialog):
                     self.toggle_tray_spinbox.setEnabled(False)
 
     def tray(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.tray_changed = True
         self.activate_toggle_check()
 
@@ -755,7 +755,7 @@ class MeteoSettings(QDialog):
 
     def tray_icon_init_size_change(self):
         self.tray_icon_init_cmb_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def tray_icon_init_size_apply(self):
         self.settings.setValue('Tray_icon_init_size', self.tray_icon_init_cmb.currentText())
@@ -763,7 +763,7 @@ class MeteoSettings(QDialog):
     def tray_icon_temp_pos_change(self, pos):
         self.tray_icon_temp_pos_spinbox_changed = True
         self.tray_icon_temp_pos = pos
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def tray_icon_temp_pos_apply(self):
         self.settings.setValue('Tray_icon_temp_position', str(self.tray_icon_temp_pos))
@@ -771,7 +771,7 @@ class MeteoSettings(QDialog):
     def toggle_tray_interval_change(self, interval):
         self.toggle_tray_spinbox_changed = True
         self.toggle_tray_interval = interval
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def toggle_tray_interval_apply(self):
         self.settings.setValue('Toggle_tray_interval', str(self.toggle_tray_interval))
@@ -787,7 +787,7 @@ class MeteoSettings(QDialog):
         if ok and font.toString() != self.font_tray_conf:
             self.font_tray_changed = True
             self.font_tray_conf_new = font.toString()
-            self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+            self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
             font_tray_btn_label = (
                 f"{self.font_tray_conf_new.split(',')[0]} - "
                 f"{self.font_tray_conf_new.split(',')[1]} - "
@@ -801,7 +801,7 @@ class MeteoSettings(QDialog):
 
     def system_theme_icons(self):
         self.comboBox_icons_theme_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def system_icontheme_apply(self):
         if self.comboBox_icons_theme.currentText() == self.system_default_theme_translated['System default']:
@@ -812,7 +812,7 @@ class MeteoSettings(QDialog):
     def start_minimized(self, state):
         self.start_minimized_state = state
         self.start_minimized_changed = True
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def start_minimized_apply(self):
         if self.start_minimized_state == 2:
@@ -822,7 +822,7 @@ class MeteoSettings(QDialog):
         self.settings.setValue('StartMinimized', start_minimized)
 
     def logging_set(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         self.logging_changed = True
 
     def logging_level_apply(self):
@@ -830,7 +830,7 @@ class MeteoSettings(QDialog):
         self.settings.setValue('Logging/Level', level)
 
     def proxy(self, state):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
         if state == 2:
             self.proxy_bool = True
             self.proxy_button.setEnabled(True)
@@ -840,10 +840,10 @@ class MeteoSettings(QDialog):
 
     def proxy_settings(self):
         dialog = proxydlg.Proxy(self)
-        dialog.exec_()
+        dialog.exec()
 
     def apikey_changed(self):
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(True)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(True)
 
     def apply_settings(self):
         self.accepted()
@@ -880,7 +880,7 @@ class MeteoSettings(QDialog):
             return
         else:
             self.statusbar.setText('')
-        self.buttonBox.button(QDialogButtonBox.Apply).setEnabled(False)
+        self.buttonBox.button(QDialogButtonBox.StandardButton.Apply).setEnabled(False)
         if hasattr(self, 'id_before'):
             self.settings.setValue('ID', self.id_before)
             logging.debug('write ' + 'ID' + str(self.id_before))

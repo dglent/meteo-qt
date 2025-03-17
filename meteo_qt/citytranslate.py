@@ -1,5 +1,5 @@
-from PyQt5.QtCore import QCoreApplication, QSettings, Qt, pyqtSignal
-from PyQt5.QtWidgets import (QDialog, QDialogButtonBox, QGridLayout,
+from PyQt6.QtCore import QCoreApplication, QSettings, Qt, pyqtSignal
+from PyQt6.QtWidgets import (QDialog, QDialogButtonBox, QGridLayout,
                              QHBoxLayout, QLabel, QLineEdit, QVBoxLayout)
 
 
@@ -14,9 +14,9 @@ class CityTranslate(QDialog):
         self.layout = QVBoxLayout()
         self.buttonLayout = QHBoxLayout()
         self.buttonBox = QDialogButtonBox()
-        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setOrientation(Qt.Orientation.Horizontal)
         self.buttonBox.setStandardButtons(
-            QDialogButtonBox.Ok | QDialogButtonBox.Cancel
+            QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel
         )
         self.buttonBox.rejected.connect(self.reject)
         self.buttonBox.accepted.connect(self.accept)
