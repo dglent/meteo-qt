@@ -1,3 +1,6 @@
+4.0
+- Port to QT6 by @hydrargyrum
+
 3.4
 - Fix weather alerts
 - Export weather info in the log file to use with Conky #137
