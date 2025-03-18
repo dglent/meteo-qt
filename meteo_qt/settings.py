@@ -33,7 +33,7 @@ class MeteoSettings(QDialog):
         self.appid = appid
         self.set_city = self.settings.value('City') or '?'
         locale = QLocale.system().name()
-        locale_long = ['pt_BR', 'zh_CN', 'zh_TW']
+        locale_long = ['en_GB', 'pt_BR', 'zh_CN', 'zh_TW']
         if locale not in locale_long:
             locale = locale[:2]
         self.interval_set = self.settings.value('Interval') or '30'
@@ -69,15 +69,20 @@ class MeteoSettings(QDialog):
             'da': self.tr('Danish'),
             'de': self.tr('German'),
             'el': self.tr('Greek'),
+            'en_GB': self.tr('English GB'),
             'en': self.tr('English'),
             'es': self.tr('Spanish'),
+            'et': self.tr('Estonien'),
             'fi': self.tr('Finnish'),
             'fr': self.tr('French'),
             'he': self.tr('Hebrew'),
+            'hi': self.tr('Hindi'),
             'hr': self.tr('Croatian'),
             'hu': self.tr('Hungarian'),
             'it': self.tr('Italian'),
             'ja': self.tr('Japanese'),
+            'ka': self.tr('Georgian'),
+            'kab': self.tr('Kabyle'),
             'lt': self.tr('Lithuanian'),
             'nb': self.tr('Norwegian (Bokmaal)'),
             'nl': self.tr('Dutch'),
