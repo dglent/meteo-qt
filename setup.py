@@ -17,8 +17,8 @@ class BuildQm(build):
             pyproject_files = ["meteo_qt/" + py for py in re.findall(r"([a-zA-Z0-9_/]+\.py)", content)]
             return pyproject_files
 
-    subprocess.run(["pylupdate6"] + extract_py_sources() + ["-ts", "translations/meteo-qt_en.ts"])
-    subprocess.run(subprocess.run(["lrelease-pro-qt6", "meteo_qt/meteo_qt.pro"]))
+    subprocess.run(["pylupdate6"] + extract_py_sources() + ["-ts", "meteo_qt/translations/meteo-qt_en.ts"])
+    subprocess.run(["lrelease-pro-qt6", "meteo_qt/meteo_qt.pro"])
 
 
 PROJECT_PATH = Path(__file__).parent

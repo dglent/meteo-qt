@@ -1,4 +1,2 @@
 pyqt6
-qt6-tools
 lxml
-sip
