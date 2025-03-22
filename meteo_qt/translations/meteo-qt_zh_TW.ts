@@ -1169,7 +1169,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation>變更此設定可以改進系統匣圖示中的溫度顯示</translation>
+        <translation>變更此設定可以改進系統匣圖示溫度的顯示</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
