@@ -6,87 +6,87 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Peter Mattern &lt;a href=&quot;mailto:pmattern@arcor.de&quot;&gt;pmattern@arcor.de&lt;/a&gt;&lt;br/&gt; [de] German translation, Project</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Dimitrios Glentadakis &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;&lt;br/&gt; [el] Greek translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Laurene Albrand &lt;a href=&quot;mailto:laurenealbrand@outlook.com&quot;&gt;laurenealbrand@outlook.com&lt;/a&gt;&lt;br/&gt; [fr] French translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Rémi Verschelde &lt;a href=&quot;mailto:remi@verschelde.fr&quot;&gt;remi@verschelde.fr&lt;/a&gt;&lt;br/&gt; [fr] French translation, Project</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Daniel Napora &lt;a href=&quot;mailto:napcok@gmail.com&quot;&gt;napcok@gmail.com&lt;/a&gt;&lt;br/&gt; Tomasz Przybył &lt;a href=&quot;mailto:fademind@gmail.com&quot;&gt;fademind@gmail.com&lt;/a&gt;&lt;br/&gt; [pl] Polish translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Atilla Öntaş &lt;a href=&quot;mailto:tarakbumba@gmail.com&quot;&gt;tarakbumba@gmail.com&lt;/a&gt;&lt;br/&gt; [tr] Turkish translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Yuri Chornoivan &lt;a href=&quot;mailto:yurchor@ukr.net&quot;&gt;yurchor@ukr.net&lt;/a&gt;&lt;br/&gt; [uk] Ukrainian translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;You-Cheng Hsieh &lt;a href=&quot;mailto:yochenhsieh@gmail.com&quot;&gt;yochenhsieh@gmail.com&lt;/a&gt;&lt;br/&gt; [zh_TW] Chinese (Taiwan) translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;pmav99&lt;br/&gt; Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;pmav99&lt;br/&gt; プロジェクト</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Heimen Stoffels &lt;a href=&quot;mailto:vistausss@outlook.com&quot;&gt;vistausss@outlook.com&lt;/a&gt;&lt;br/&gt; [nl] Dutch translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;werthad &lt;a href=&quot;mailto:werthad@gmail.com&quot;&gt;werthad@gmail.com&lt;/a&gt;&lt;br/&gt; [hu] Hungarian translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Artem Vorotnikov &lt;a href=&quot;mailto:artem@vorotnikov.me&quot;&gt;artem@vorotnikov.me&lt;/a&gt;&lt;br/&gt; Sergey Shitikov &lt;a href=&quot;mailto:rw4lll@yandex.ru&quot;&gt;rw4lll@yandex.ru&lt;/a&gt;&lt;br/&gt;Alexey Zakaldaev &lt;a href=&quot;mailto:nelex111@gmail.com&quot;&gt;nelex111@gmail.com&lt;/a&gt;&lt;br/&gt;Liliya Panova&lt;br/&gt; [ru] Russian translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt; juancarlospaco &lt;a href=&quot;mailto:JuanCarlosPaco@gmail.com&quot;&gt;JuanCarlosPaco@gmail.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation, Project</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Adrian Moise&lt;a href=&quot;mailto:sah.mat.ro@gmail.com&quot;&gt;sah.mat.ro@gmail.com&lt;/a&gt;&lt;br/&gt; [ro] Romanian translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Ozkar L. Garcell &lt;a href=&quot;mailto:ozkar.garcell@gmail.com&quot;&gt;ozkar.garcell@gmail.com&lt;/a&gt;&lt;br/&gt; Teo Laírla (teolairlasg) &lt;a href=&quot;mailto:teo.lairla@iessierradeguara.com&quot;&gt;teo.lairla@iessierradeguara.com&lt;/a&gt;&lt;br/&gt; [es] Spanish translation</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;standreas &lt;a href=&quot;mailto:standreas@riseup.net&quot;&gt;standreas@riseup.net&lt;/a&gt;&lt;br/&gt; [it] Italian translation, Weblate</translation>
     </message>
 </context>
 <context>
@@ -151,7 +151,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>良い</translation>
     </message>
 </context>
 <context>
@@ -160,7 +160,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>まあまあ</translation>
     </message>
 </context>
 <context>
@@ -169,7 +169,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">中程度</translation>
+        <translation>普通</translation>
     </message>
 </context>
 <context>
@@ -178,7 +178,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>悪い</translation>
     </message>
 </context>
 <context>
@@ -187,7 +187,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>非常に悪い</translation>
     </message>
 </context>
 <context>
@@ -197,7 +197,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 鏡のような海
+陸上: 穏やか。煙が真上に上がる</translation>
     </message>
 </context>
 <context>
@@ -207,7 +208,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 鱗のような波紋ができるが、波による泡は出ない
+陸上: 煙の漂いで風向きがわかる。葉や風向計は動かない</translation>
     </message>
 </context>
 <context>
@@ -217,7 +219,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 波頭が張り出した非常に高い波。波頭から出る大きな泡の塊が海を白く見せる。波が激しく揺れ、大きな衝撃を示す。大量の飛沫が空中に舞い、視界が悪くなる
+陸上: 木々が折れたり根こそぎ倒れたりして、構造物に損傷が生じる可能性がある</translation>
     </message>
 </context>
 <context>
@@ -227,7 +230,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 非常に高い波。風に運ばれた非常に大きな泡の塊が海面の大部分を覆う。大量の飛沫が飛散し、視界が著しく低下する
+陸上: 広範囲にわたって植木と建造物が損傷する可能性がある</translation>
     </message>
 </context>
 <context>
@@ -237,7 +241,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 大きな波。海は泡と水しぶきで真っ白。空気は激しい水しぶきで満たされ、視界が大幅に低下
+陸上: 広範囲にわたる植木と建造物への深刻な被害。がれきや固定されていない物体は飛び散る</translation>
     </message>
 </context>
 <context>
@@ -247,7 +252,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 小さな波。まだ低いが、顕著。波頭はガラスのように見えて、崩れない。
+陸上: 露出した肌に風を感じる。木の葉がざわめく。風向計が動き始める</translation>
     </message>
 </context>
 <context>
@@ -257,7 +263,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 大きな波。波頭が崩れ始め、白波が散在
+陸上: 葉や小枝が絶えず動き、軽い旗が広がる</translation>
     </message>
 </context>
 <context>
@@ -267,7 +274,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 小さな波が砕け、白波が頻繁に立つ
+陸上: ほこりや散らばった紙が舞い上がる。小枝が動き始める</translation>
     </message>
 </context>
 <context>
@@ -277,7 +285,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 中程度の波が立つ。白波が多く、水しぶきが少し出る
+陸上: 中程度の大きさの枝が揺れる。葉の茂った小木が揺れ始める</translation>
     </message>
 </context>
 <context>
@@ -287,7 +296,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 大きな波ができ始める。白い泡の波頭が頻繁に現れる。空中に飛沫が舞い上がる
+陸上: 大きな枝が揺れる。頭上の電線から笛のような音が聞こえる。傘の使用が困難になる。空のプラスチック容器が倒れる</translation>
     </message>
 </context>
 <context>
@@ -297,7 +307,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 海が盛り上がる。砕けた波の泡が風向きに沿って筋状に吹き飛ばされる。中程度の量の飛沫が空中に舞う
+陸上: 木全体が揺れる。風に逆らって歩くのに苦労する</translation>
     </message>
 </context>
 <context>
@@ -307,7 +318,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 中程度の波が打ち寄せ、波頭がしぶきを上げる。風向きに沿ってはっきりとした泡の筋が吹き飛ばされる。飛沫がかなり飛ぶ
+陸上: 木から枝が折れる。車が道をそれる。徒歩で進むのが著しく困難になる</translation>
     </message>
 </context>
 <context>
@@ -317,7 +329,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上: 波頭が時々巻き込む高波。密集した泡が風向きに沿って吹き飛ばされる。大量の飛沫が空中に舞い、視界が悪くなる
+陸上: 木の枝が折れたり、小さな木が倒れる。工事用/仮設の標識やバリケードが倒れる</translation>
     </message>
 </context>
 <context>
@@ -536,7 +549,9 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>あらゆる予防策を講じてください: SPF 30+の日焼け止め、
+                長袖のシャツとズボン、&lt;br/&gt;サングラス、幅広の帽子を着用。
+                正午から3時間は日光を避けてください。</translation>
     </message>
 </context>
 <context>
