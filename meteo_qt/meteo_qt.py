@@ -2412,7 +2412,7 @@ class SystemTrayIcon(QMainWindow):
                 str(temp_tray)
             )
         if self.tray_type == 'temp' or self.tray_type == 'feels_like_temp':
-            pt.drawText(icon.rect(), Qt.AlignCenter, str(temp_tray))
+            pt.drawText(icon.rect(), Qt.AlignmentFlag.AlignCenter, str(temp_tray))
         pt.end()
         # -------------------------------
         if self.tray_type == 'icon':
