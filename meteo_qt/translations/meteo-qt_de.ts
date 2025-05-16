@@ -1571,7 +1571,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation>km/h</translation>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
@@ -2175,7 +2175,7 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Fehler:</translation>
+        <translation>Fehler: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>

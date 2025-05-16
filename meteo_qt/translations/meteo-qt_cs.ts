@@ -174,7 +174,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Mírné </translation>
+        <translation>Mírné</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@ Na zemi: Stromy jsou polámané nebo vytrhané z kořenů, je pravděpodobné po
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Na moři: Výjimečně vysoké vlny. Velkou část mořského povrchu pokrývají velmi velké pěnové skvrny, poháněné větrem. Velmi velké množství rozprašované vody do vzduchu výrazně snižuje viditelnost
-Na zemi: Pravděpodobně se vyskytují rozsáhlé škody na stavbách a na rostlinstvu. </translation>
+Na zemi: Pravděpodobně se vyskytují rozsáhlé škody na stavbách a na rostlinstvu</translation>
     </message>
 </context>
 <context>
@@ -302,7 +302,7 @@ Na zemi: Větvičky střední velikosti v pohybu. Malé listnaté stromky se za�
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
         <translation>Na moři: Začínají se tvořit dlouhé vlny. Velmi časté jsou bílé pěnové hřebeny. Nějaké vodní kapky ve vzduchu
-Na zemi: Velké větve v pohybu. V drátech elektrického napětí  se ozývá pískání. Použití deštníku je obtížné. Prázdné plastové koše se převrhnou</translation>
+Na zemi: Velké větve v pohybu. V drátech elektrického napětí se ozývá pískání. Použití deštníku je obtížné. Prázdné plastové koše se převrhnou</translation>
     </message>
 </context>
 <context>
@@ -2188,7 +2188,8 @@ nebo změňte název města</translation>
         <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
-        <translation>Zkuste to později znovu</translation>
+        <translation>
+Zkuste to později znovu</translation>
     </message>
 </context>
 </TS>
