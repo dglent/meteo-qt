@@ -487,7 +487,7 @@ Teren: Unele ramuri se rup din copacii, iar la copacii mici sufla peste. Constru
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation> Pregătirea ușoară de antrenament s-ar putea să o faceți bine, dar este dificil să alergați sau să depuneți eforturi din greu</translation>
+        <translation>Pregătirea ușoară de antrenament s-ar putea să o faceți bine, dar este dificil să alergați sau să depuneți eforturi din greu</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
@@ -1578,7 +1578,7 @@ când soarele este cel mai puternic.</translation>
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation>km/h </translation>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
@@ -2184,7 +2184,7 @@ sau modificați numele orașului</translation>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation>Eroare:</translation>
+        <translation>Eroare: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>

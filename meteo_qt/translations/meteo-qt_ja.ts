@@ -437,7 +437,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation>平気</translation>
+        <translation>問題ない</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
@@ -449,13 +449,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>非常に不快</translation>
+        <translation>とても不快</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation>たいへん不快</translation>
+        <translation>極めて不快</translation>
     </message>
 </context>
 <context>
@@ -584,7 +584,9 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>日焼け防止の衣服で体を覆い、SPF 30 以上の日焼け止めを使用し、
+                帽子をかぶり、正午から 3 時間以内は日光を浴びる時間を
+                減らし、サングラスをかけてください。</translation>
     </message>
 </context>
 <context>
@@ -1154,25 +1156,25 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>システムトレイで温度を示すフォント</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>トレイアイコンのサイズとテキスト位置</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>この設定を変更すると、トレイアイコンの温度表示が改善されます</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>トレイアイコンの初期化サイズ（デフォルト: 64x64）</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>

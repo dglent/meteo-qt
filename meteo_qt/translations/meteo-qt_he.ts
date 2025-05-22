@@ -224,7 +224,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>ים: הגלים גבוהים ביותר. פני המים לבנים מקצף. רעש הים חזק. הראות נפגמת
+יבשה: עצים נעקרים. נזק רב נגרם למבנים</translation>
     </message>
 </context>
 <context>

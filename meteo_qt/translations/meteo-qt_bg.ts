@@ -1729,7 +1729,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation>слаба  суграшица</translation>
+        <translation>слаба суграшица</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
