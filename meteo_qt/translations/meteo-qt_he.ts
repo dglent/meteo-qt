@@ -1700,7 +1700,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>ממטרי גשם</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
@@ -1725,17 +1725,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation type="unfinished"></translation>
+        <translation>שלג כבד</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="40"/>
         <source>sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>שלג-גשם</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>ממטרי שלג-גשם</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
@@ -1750,7 +1750,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>ממטרי שלג קלים</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
