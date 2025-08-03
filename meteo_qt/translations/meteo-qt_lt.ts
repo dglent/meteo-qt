@@ -1799,17 +1799,17 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation type="unfinished"></translation>
+        <translation>smėlis</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation type="unfinished"></translation>
+        <translation>dulkės</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation>vulkaniniai pelenai</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
@@ -1824,7 +1824,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation>giedra</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
