@@ -156,7 +156,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Beau</translation>
+        <translation>Bon</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Clair</translation>
+        <translation>Correct</translation>
     </message>
 </context>
 <context>
@@ -174,7 +174,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Modéré</translation>
+        <translation>Moyen</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Très dégradé</translation>
+        <translation>Très mauvais</translation>
     </message>
 </context>
 <context>
@@ -213,8 +213,8 @@ Sur terre : La fumée monte verticalement. Les feuilles des arbres ne témoignen
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer : Quelques rides ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m
-Sur terre : La fumée indique la direction du vent. Les girouettes ne s&apos;orientent pas</translation>
+        <translation>En mer : Quelques ondes ressemblant à des écailles de poisson, mais sans aucune écume. Vagues de 0 à 0,2 m
+Sur terre : La fumée indique la direction du vent. Les girouettes son immobiles</translation>
     </message>
 </context>
 <context>
@@ -235,8 +235,8 @@ Sur terre : Dégâts importants aux bâtiments. Les toits sont susceptibles de s
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>En mer: Vagues exceptionnellement grandes. Grandes plaques d&apos;écume présente, se déplaçant par le vent et recouvrant d&apos;importantes superficies marines. Beaucoup d’embrun dans l&apos;air réduisant fortement la visibilité
-Sur terre: Importants dégâts à la végétation. Nombreuses destructions</translation>
+        <translation>En mer: Vagues exceptionnellement grandes. De très grandes plaques d&apos;écume déplacées par le vent recouvrent une importante superficie marine. Beaucoup d’embrun dans l&apos;air réduisant fortement la visibilité.
+Sur terre: Végétation dispersée et dommages structurels probables.</translation>
     </message>
 </context>
 <context>
@@ -554,9 +554,9 @@ Le niveau de confort est extrêmement inconfortable et potentiellement dangereux
                 shirt and trousers,&lt;br/&gt;sunglasses, and a very broad hat.
                 Avoid the sun within three hours of solar noon.</source>
         <comment>Extreme https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Prenez toutes les précautions: Utilisez de la crème solaire SPF 30+,
-portez un vêtement à manches longues et un pantalon, des lunettes de soleil, et un chapeau large.
-Évitez le soleil de 12H00 à 15H00</translation>
+        <translation>Prenez toutes les précautions nécessaires: Utilisez de la crème solaire SPF 30+,
+portez des vêtements à manches longues, un pantalon, des lunettes de soleil et un chapeau large.
+Évitez le soleil entre 12H00 et 15H00.</translation>
     </message>
 </context>
 <context>
