@@ -156,7 +156,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>优</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>良</translation>
     </message>
 </context>
 <context>
@@ -183,7 +183,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>差</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>很差</translation>
     </message>
 </context>
 <context>
@@ -202,7 +202,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:海如明镜
+陆上:平静.烟垂直上升</translation>
     </message>
 </context>
 <context>
@@ -212,7 +213,8 @@ Land: Calm. Smoke rises vertically</source>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:海波如鳞,波峰不起白沫
+陆上:烟飘指风向.树叶和风向标静止不动</translation>
     </message>
 </context>
 <context>
@@ -222,7 +224,8 @@ Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary
         <source>Sea: Very high waves with overhanging crests. Large patches of foam from wave crests give the sea a white appearance. Considerable tumbling of waves with heavy impact. Large amounts of airborne spray reduce visibility
 Land: Trees are broken off or uprooted, structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:浪高悬垂峰,浪坠现白沫.浪滚如冲锋,浪雾似云中
+陆上:树木被折断或连根拔起，建筑结构可能被破坏</translation>
     </message>
 </context>
 <context>
@@ -232,7 +235,8 @@ Land: Trees are broken off or uprooted, structural damage likely</source>
         <source>Sea: Exceptionally high waves. Very large patches of foam, driven before the wind, cover much of the sea surface. Very large amounts of airborne spray severely reduce visibility
 Land: Widespread vegetation and structural damage likely</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:异常高的海浪.海面被大片风吹而起的泡沫覆盖.飞溅的水雾极大降低了能见度
+陆上:可能造成广泛的植被和建筑结构损害</translation>
     </message>
 </context>
 <context>
@@ -242,7 +246,8 @@ Land: Widespread vegetation and structural damage likely</source>
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:巨浪滔天.海面完全被泡沫和水花覆盖,空中充满了四溅的水雾,能见度大大降低
+陆上:对植被和建筑结构造成广泛且严重的破坏.碎片和未固定物四处乱飞</translation>
     </message>
 </context>
 <context>
@@ -252,7 +257,8 @@ Land: Severe widespread damage to vegetation and structures. Debris and unsecure
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:波浪依然短小但更明显;波峰如未破裂的玻璃
+陆上:风抚裸肤知.树叶沙沙作响.风向标开始转动</translation>
     </message>
 </context>
 <context>
@@ -262,7 +268,8 @@ Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source
         <source>Sea: Large wavelets. Crests begin to break; scattered whitecaps
 Land: Leaves and small twigs constantly moving, light flags extended</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:波浪较大.波峰开始破碎;零星的白浪
+陆上:树叶和小树枝不断摇晃,轻旗扬起</translation>
     </message>
 </context>
 <context>
@@ -272,7 +279,8 @@ Land: Leaves and small twigs constantly moving, light flags extended</source>
         <source>Sea: Small waves with breaking crests. Fairly frequent whitecaps
 Land: Dust and loose paper raised. Small branches begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:小浪托着破碎的浪峰.白浪频频
+陆上:扬尘四起,纸卷散落.小树枝开始晃动</translation>
     </message>
 </context>
 <context>
@@ -282,7 +290,8 @@ Land: Dust and loose paper raised. Small branches begin to move</source>
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:中浪,形状显著拖长.白浪更多.少量水花飞溅
+陆上:树枝有明显的摆动.带叶的小树开始摇摆</translation>
     </message>
 </context>
 <context>
@@ -292,7 +301,8 @@ Land: Branches of a moderate size move. Small trees in leaf begin to sway</sourc
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:大浪开始形成.白头浪十分频繁.水雾飞溅
+陆上:大树枝开始摇动.吹起空中的电线发出呼啸声.撑伞变得困难.空塑料垃圾桶被吹倒</translation>
     </message>
 </context>
 <context>
@@ -302,7 +312,8 @@ Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use 
         <source>Sea: Sea heaps up. Some foam from breaking waves is blown into streaks along wind direction. Moderate amounts of airborne spray
 Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:海浪堆积.碎浪产生的白沫随风吹成条纹.空中腾起中等量的水雾
+陆上:整树晃动.迎风而行需费力</translation>
     </message>
 </context>
 <context>
@@ -312,7 +323,8 @@ Land: Whole trees in motion. Effort neededto walk against the wind</source>
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:海浪中等偏大.波峰细碎形成飞沫.顺风而成更明显的条纹.空中飞溅的水花显著
+陆上:有树枝折断.行车偏离道路.人行已严重受阻</translation>
     </message>
 </context>
 <context>
@@ -322,7 +334,8 @@ Land: Some twigs broken from trees. Cars veer on road. Progress on foot is serio
         <source>Sea: High waves whose crests sometimes roll over. Dense foam is blown along wind direction. Large amounts of airborne spray may begin to reduce visibility
 Land: Some branches break off trees, and some small trees blow over. Construction/temporary signs and barricades blow over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>海上:浪甚高,有的浪尖开始翻卷.浓密的泡沫随风而起.空中腾起大量水雾阻挡视线
+陆上:一些树枝被折断,小树被吹倒.施工/临时标志和路障被吹倒</translation>
     </message>
 </context>
 <context>
@@ -402,7 +415,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../meteo_qt.py" line="419"/>
         <source>Comfort</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>舒适程度</translation>
     </message>
 </context>
 <context>
@@ -411,43 +424,43 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="32"/>
         <source>Dry</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>干燥</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="46"/>
         <source>Very comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>非常舒适</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
         <source>Comfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>舒适</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="72"/>
         <source>Alright</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>尚可</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>不适</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Very uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>非常不适</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
         <source>Severely uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>极度不适</translation>
     </message>
 </context>
 <context>
@@ -456,7 +469,7 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="46"/>
         <source>Comfort level excellent for exercise</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>此舒适度适宜锻炼</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="59"/>
@@ -493,7 +506,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>干燥的空气易使皮肤开裂和受到刺激</translation>
     </message>
 </context>
 <context>
@@ -511,7 +524,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../meteo_qt.py" line="408"/>
         <source>Dew point</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>露点温度</translation>
     </message>
 </context>
 <context>
@@ -592,7 +605,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="349"/>
         <source>Wind</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>风力风向</translation>
     </message>
 </context>
 <context>
@@ -601,7 +614,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>空气质量</translation>
     </message>
 </context>
 <context>
@@ -610,7 +623,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="364"/>
         <source>Cloudiness</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>云量</translation>
     </message>
 </context>
 <context>
@@ -619,7 +632,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="386"/>
         <source>Humidity</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>空气湿度</translation>
     </message>
 </context>
 <context>
@@ -628,7 +641,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="375"/>
         <source>Pressure</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>气压</translation>
     </message>
 </context>
 <context>
@@ -637,7 +650,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="441"/>
         <source>Sunrise</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>日出</translation>
     </message>
 </context>
 <context>
@@ -646,7 +659,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="450"/>
         <source>Sunset</source>
         <comment>Weather info panel</comment>
-        <translation type="unfinished"></translation>
+        <translation>日落</translation>
     </message>
 </context>
 <context>
@@ -664,7 +677,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="127"/>
         <source>Wind speed unit</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>风速单位</translation>
     </message>
 </context>
 <context>
@@ -924,7 +937,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"></translation>
+        <translation>日志等级</translation>
     </message>
 </context>
 <context>
@@ -933,7 +946,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>默认</translation>
     </message>
 </context>
 <context>
@@ -942,13 +955,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>蒲福氏风级</translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Km/h</translation>
     </message>
 </context>
 <context>
@@ -1032,7 +1045,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"></translation>
+        <translation>开始输入城市名、ID、或地理坐标&quot;纬度,经度&quot;</translation>
     </message>
 </context>
 <context>
@@ -1101,19 +1114,19 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation>系统托盘图标</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>图标&amp;体感温度</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>体感温度</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
@@ -1131,43 +1144,43 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>系统默认</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>图标主题</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>在系统托盘显示气温</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>托盘图标大小和文字位置</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>更改此项设置可以改善托盘图标中温度的显示</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>初始托盘图标大小(默认大小:64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>图标中温度的位置(垂直)(默认值:-12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
@@ -1203,7 +1216,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>输入城市名称,逗号,2位国家代码(例如:London,GB)</translation>
     </message>
 </context>
 <context>
@@ -1393,7 +1406,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>体感</translation>
     </message>
 </context>
 <context>
@@ -1402,7 +1415,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>不可用</translation>
     </message>
 </context>
 <context>
@@ -1429,7 +1442,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>降水概率</translation>
     </message>
 </context>
 <context>
@@ -1438,7 +1451,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>中午12点的紫外线指数</translation>
     </message>
 </context>
 <context>
@@ -1459,13 +1472,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>傍晚</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>夜间</translation>
     </message>
 </context>
 <context>
@@ -1474,13 +1487,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>气压</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>湿度</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1566,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>正在获取...</translation>
     </message>
 </context>
 <context>
@@ -1563,7 +1576,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"></translation>
+        <translation> 公里/小时 </translation>
     </message>
 </context>
 <context>
@@ -1583,7 +1596,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>能见度</translation>
     </message>
 </context>
 <context>
@@ -1610,7 +1623,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>该城市已存在</translation>
     </message>
 </context>
 <context>
