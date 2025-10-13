@@ -1397,7 +1397,24 @@ github&lt;/a&gt;.</translation>
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Jednoduchá aplikace zobrazující v oznamovací oblasti panelu
+            informace o aktuálním počasí.
+            &lt;p&gt;Webové stránky: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Zdroj dat: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Tento software používá ikony z
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;projektu Oxygen&lt;/a&gt;.
+            &lt;p&gt;Pokud chcete meteo-qt přeložit do svého jazyka (nebo přispět do
+            stávajících překladů), je možné k tomu použít platformu
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt;.
+            &lt;p&gt;Pokud chcete nahlásit nefunkčnost nebo navrhnout vylepšení,
+            otevřete hlášení o tom na portálu
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
