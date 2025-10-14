@@ -76,22 +76,22 @@
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Slovak translation, Project</source>
-        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Překlad do slovenštiny, Project</translation>
+        <translation>&lt;p&gt;jose1711 &lt;a href=&quot;mailto:jose1711@gmail.com&quot;&gt;jose1711@gmail.com&lt;/a&gt;&lt;br&gt; [sk] Překlad do slovenštiny, projekt</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italian translation</source>
-        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] Italský překlad</translation>
+        <translation>&lt;p&gt;Archita Zabaleta &lt;a href=&quot;mailto:architazabaleta@gmail.com&quot;&gt;architazabaleta@gmail.com&lt;/a&gt;&lt;br/&gt; [it] překlad do slovenštiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>Jiri Podhorecky&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</source>
-        <translation>Jiří Podhorecký&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] Czech translation</translation>
+        <translation>Jiří Podhorecký&lt;br/&gt;Pavel Fric&lt;br/&gt;[cs] překlad do češtiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
         <source>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] German translation</source>
-        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] Překlad do němčiny</translation>
+        <translation>&lt;p&gt;Jürgen Thurau &lt;a href=&quot;mailto:linux@psyca.de&quot;&gt;linux@psyca.de&lt;/a&gt;&lt;br/&gt;[de] překlad do němčiny</translation>
     </message>
     <message>
         <location filename="../about_dlg.py" line="50"/>
@@ -323,7 +323,7 @@ Na zemi: Celé stromy v pohybu. Je třeba vynaložit úsilí, abyste šli proti 
         <source>Sea: Moderately high waves with breaking crests forming spindrift. Well-marked streaks of foam are blown along wind direction. Considerable airborne spray
 Land: Some twigs broken from trees. Cars veer on road. Progress on foot is seriously impeded</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Na moři: Středně vysoké vlny s lámavými hřebeny tvořícími vřeteno. Dobře znatelné pruhy pěny jsou vyfukovány ve směru větru- Silná vodní tříšť ve vzduchu.
+        <translation>Na moři: Středně vysoké vlny s lámavými hřebeny tvořícími vřeteno. Dobře znatelné pruhy pěny jsou vyfukovány ve směru větru. Silná vodní tříšť ve vzduchu.
 Na zemi: Některé větvičky se odlamují ze stromů. Auta jsou na silnici ovlivněná větrem. Pěší chůze je velmi těžká</translation>
     </message>
 </context>
@@ -353,7 +353,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <location filename="../settings.py" line="475"/>
         <source>Start minimized</source>
         <comment>Settings dialogue</comment>
-        <translation>Spustit zmenšeno</translation>
+        <translation>Spustit zminimalizované</translation>
     </message>
 </context>
 <context>
@@ -362,13 +362,13 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
         <location filename="../proxydlg.py" line="49"/>
         <source>Use proxy authentification</source>
         <comment>Proxy settings dialogue</comment>
-        <translation>Použít autentizaci proxy</translation>
+        <translation>Použít ověření se vůči proxy</translation>
     </message>
     <message>
         <location filename="../settings.py" line="425"/>
         <source>Connection by proxy</source>
         <comment>Settings dialogue</comment>
-        <translation>Připojení pomocí proxy</translation>
+        <translation>Připojení prostřednictvím proxy</translation>
     </message>
 </context>
 <context>
@@ -376,17 +376,17 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation>&amp;Přidat...</translation>
+        <translation>Přid&amp;at…</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation>&amp;Odstranit...</translation>
+        <translation>Odst&amp;ranit…</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Up</source>
-        <translation>&amp;Nahoru</translation>
+        <translation>Nahor&amp;u</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
@@ -406,7 +406,7 @@ Na zemi: Některé větve se ze stromů odlamují a některé malé stromy se vy
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>Město &quot;{0}&quot; bylo odstraněno</translation>
+        <translation>Město „{0}“ bylo odebráno</translation>
     </message>
 </context>
 <context>
@@ -720,7 +720,7 @@ máte obzvláště světlou pokožku.</translation>
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation>Klepněte pro upravení seznamu měst</translation>
+        <translation>Seznam měst upravíte kliknutím</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
@@ -890,7 +890,7 @@ máte obzvláště světlou pokožku.</translation>
     <message>
         <location filename="../settings.py" line="213"/>
         <source>Launch at startup</source>
-        <translation>Spustit při spuštění</translation>
+        <translation>Spouštět při startu systému</translation>
     </message>
     <message>
         <location filename="../settings.py" line="221"/>
@@ -905,12 +905,12 @@ máte obzvláště světlou pokožku.</translation>
     <message>
         <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
-        <translation>Nastavit barvu písma znovu na výchozí systému</translation>
+        <translation>Vrátit barvu písma na výchozí systému</translation>
     </message>
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>Upozornění na změnu počasi</translation>
+        <translation>Upozornění na změnu počasí</translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
@@ -1053,7 +1053,7 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Searching...</source>
-        <translation>Hledá se...</translation>
+        <translation>Hledání…</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="90"/>
@@ -1078,7 +1078,7 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation>Nalezeno {0} města</translation>
+        <translation>Nalezeno {0} měst</translation>
     </message>
 </context>
 <context>
@@ -1087,7 +1087,7 @@ zůstaňte ve stínu.</translation>
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation>Napište, prosím, více než tři znaky</translation>
+        <translation>Napište více než tři znaky</translation>
     </message>
 </context>
 <context>
@@ -1195,13 +1195,13 @@ zůstaňte ve stínu.</translation>
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation>Město již v seznamu je</translation>
+        <translation>Město už v seznamu je</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation>Přepnout města projížděním myší na okně s počasím</translation>
+        <translation>Přepínat města kolečkem myší na okně s počasím</translation>
     </message>
 </context>
 <context>
@@ -1210,13 +1210,13 @@ zůstaňte ve stínu.</translation>
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klepněte na tlačítko Najít moji polohu pro automatické zjištění zeměpisného umístění</translation>
+        <translation>Pokud chcete automaticky zjistit svou zeměpisnou polohu, klikněte na tlačítko „Najít moji polohu“</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation>Zadejte název města, čárku, 2-místný kód země (např .: Londýn, GB)</translation>
+        <translation>Zadejte název města, čárku, 2-místný kód země (např.: Londýn, GB)</translation>
     </message>
 </context>
 <context>
@@ -1224,7 +1224,7 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
+        <translation>Aby se změna nastavení jazyka projevila, je třeba aplikaci ukončit a spustit znovu</translation>
     </message>
 </context>
 <context>
@@ -1237,17 +1237,17 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
-        <translation>&amp;Dočasné město</translation>
+        <translation>Dočasné měs&amp;to</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
-        <translation>&amp;Nastavení</translation>
+        <translation>Na&amp;stavení</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
-        <translation>&amp;O programu</translation>
+        <translation>O &amp;aplikaci</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="162"/>
@@ -1257,7 +1257,7 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation>Hledají se data o počasí...</translation>
+        <translation>Vyhledávání údajů o počasí…</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
@@ -1272,17 +1272,17 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation>Dosud nebylo nastaveno žádné město.</translation>
+        <translation>Zatím nebylo nastaveno žádné město.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klepněte pravým tlačítkem myši na ikonu a pak klepněte na nastavení.</translation>
+        <translation>Klikněte pravým tlačítkem myši na ikonu a pak na Nastavení.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation>Natahují se data o počasí...</translation>
+        <translation>Získávání údajů o počasí…</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
@@ -1290,8 +1290,8 @@ zůstaňte ve stínu.</translation>
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
         <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
-            &lt;br/&gt;Povolení: GPLv3
-            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</translation>
+            &lt;br/&gt;Licence: GPLv3
+            &lt;br/&gt;Python {1} – Qt {2} – PyQt {3} na {4}</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
@@ -1336,7 +1336,7 @@ zůstaňte ve stínu.</translation>
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Nejnižší/Nejvyšší teplota dne</translation>
+        <translation>Nejnižší/nejvyšší teplota dne</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2589"/>
@@ -1450,7 +1450,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Program je třeba spustit znovu, aby se projevila změna nastavení jazyka</translation>
+        <translation>Aby se změna nastavení jazyka projevila, je třeba aplikaci restartovat</translation>
     </message>
 </context>
 <context>
@@ -1528,7 +1528,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation>Hledají se data o počasí...</translation>
+        <translation>Hledání údajů o počasí…</translation>
     </message>
 </context>
 <context>
@@ -1583,7 +1583,7 @@ github&lt;/a&gt;.</translation>
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation>Načítání...</translation>
+        <translation>Načítání…</translation>
     </message>
 </context>
 <context>
@@ -1622,7 +1622,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation>Přidejte, prosím, město</translation>
+        <translation>Přidejte město</translation>
     </message>
 </context>
 <context>
@@ -1631,7 +1631,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation>Zadejte, prosím, svůj klíč k OpenWeatherMap</translation>
+        <translation>Zadejte svůj klíč k OpenWeatherMap</translation>
     </message>
 </context>
 <context>
@@ -1640,7 +1640,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation>Město již je</translation>
+        <translation>Město už zde je</translation>
     </message>
 </context>
 <context>
@@ -1713,7 +1713,7 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
     <message>
         <location filename="../conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation>Slabé mrholení</translation>
+        <translation>Slabé mrholení s deštěm</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="22"/>
@@ -2188,13 +2188,13 @@ a klobouk se širokou střechou.&lt;br/&gt;Nezůstávejte na slunci příliš dl
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation>Chyba dat. Zkuste to, prosím, později znovu
+        <translation>Chyba dat. Zkuste to později znovu
 nebo změňte název města</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Počkejte, prosím, hledá se...</translation>
+        <translation>Vyčkejte – hledá se…</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
