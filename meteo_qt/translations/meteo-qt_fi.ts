@@ -156,7 +156,7 @@
         <location filename="../meteo_qt.py" line="488"/>
         <source>Good</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Hyvä</translation>
+        <translation>Hyvä</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@
         <location filename="../meteo_qt.py" line="493"/>
         <source>Fair</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation>Kelvollinen</translation>
+        <translation>Poutainen</translation>
     </message>
 </context>
 <context>
@@ -174,7 +174,7 @@
         <location filename="../meteo_qt.py" line="498"/>
         <source>Moderate</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Keskiverto</translation>
+        <translation>Kohtalainen</translation>
     </message>
 </context>
 <context>
@@ -183,7 +183,7 @@
         <location filename="../meteo_qt.py" line="503"/>
         <source>Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Huono</translation>
+        <translation>Huono</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
         <location filename="../meteo_qt.py" line="508"/>
         <source>Very Poor</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished">Hyvin huono</translation>
+        <translation>Hyvin huono</translation>
     </message>
 </context>
 <context>
@@ -344,7 +344,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../citylistdlg.py" line="53"/>
         <source>&amp;Translate</source>
         <comment>Edit cities name</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Muokkaa sijainnin nimeä</translation>
     </message>
 </context>
 <context>
@@ -448,7 +448,7 @@ Maalla: rakennuksille aiheutuu vähäisiä vaurioita (kattotiilet ja savupiippuj
         <location filename="../humidex.py" line="85"/>
         <source>Uncomfortable</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished">Epämukava</translation>
+        <translation>Epämukava</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
@@ -587,7 +587,9 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Peitä kehosi auringolta suojaavalla vaatetuksella, käytä SPF 30+
+    aurinkovoidetta,&lt;br/&gt;käytä päähinettä ja aurinkolaseja ja
+   vältä auringossa oleskelua keskipäivän kolmen tunnin aikana.</translation>
     </message>
 </context>
 <context>
@@ -697,7 +699,8 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Käytä aurinkolaseja kirkkaalla ilmalla, käytä aurinkovoidetta, jos maassa on lunta,
+  joka heijastaa UV-säteilyä tai sinulla on erityisen herkkä iho.</translation>
     </message>
 </context>
 <context>
@@ -719,7 +722,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../settings.py" line="53"/>
         <source>Click to edit the cities list</source>
-        <translation type="unfinished">Klikkaa muokkaaksesi kaupunkilistaa</translation>
+        <translation>Klikkaa muokataksesi sijainteja</translation>
     </message>
     <message>
         <location filename="../settings.py" line="56"/>
@@ -864,57 +867,57 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../settings.py" line="93"/>
         <source>Chinese Traditional</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiina (perinteinen)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="94"/>
         <source>Chinese Simplified</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiina (yksinkertaistettu)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="113"/>
         <source>Temperature unit</source>
-        <translation type="unfinished"></translation>
+        <translation>Lämpötilayksikkö</translation>
     </message>
     <message>
         <location filename="../settings.py" line="189"/>
         <source>Update interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivitysväli</translation>
     </message>
     <message>
         <location filename="../settings.py" line="190"/>
         <source>minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>minuuttia</translation>
     </message>
     <message>
         <location filename="../settings.py" line="213"/>
         <source>Launch at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Suorita kirjautumisen yhteydessä</translation>
     </message>
     <message>
         <location filename="../settings.py" line="221"/>
         <source>Font colour in the tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Fontin väri ilmoitusalueella</translation>
     </message>
     <message>
         <location filename="../settings.py" line="227"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Nollaa</translation>
     </message>
     <message>
         <location filename="../settings.py" line="228"/>
         <source>Reset font colour to system default</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta fontin väri järjestelmän oletukseen</translation>
     </message>
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"></translation>
+        <translation>Sääennusteilmoitukset</translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
         <source>Meteo-qt Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Meteo-qt asetukset</translation>
     </message>
 </context>
 <context>
@@ -925,7 +928,9 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
                 outside.&lt;br/&gt;Stay in shade near midday
                 when the sun is strongest.</source>
         <comment>Moderate https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ole varovainen mennessäsi ulos.
+    Peitä kehosi, &lt;br&gt; Ole varjossa keskipäivällä,
+   kun auringonpaiste on voimakkaimmillaan.</translation>
     </message>
 </context>
 <context>
@@ -934,7 +939,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lokiinkirjaustaso</translation>
     </message>
 </context>
 <context>
@@ -943,7 +948,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="136"/>
         <source>Default</source>
         <comment>Settings diaogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Oletus</translation>
     </message>
 </context>
 <context>
@@ -952,13 +957,13 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Beaufortin asteikko</translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>km/h</translation>
     </message>
 </context>
 <context>
@@ -967,19 +972,19 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../conditions.py" line="101"/>
         <source>no</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>ei</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="103"/>
         <source>rain</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="106"/>
         <source>snow</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>lunta</translation>
     </message>
 </context>
 <context>
@@ -988,7 +993,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="430"/>
         <source>Precipitation</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sademäärä</translation>
     </message>
 </context>
 <context>
@@ -997,7 +1002,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../proxydlg.py" line="68"/>
         <source>Password:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Salasana:</translation>
     </message>
 </context>
 <context>
@@ -1006,7 +1011,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../proxydlg.py" line="64"/>
         <source>User ID:</source>
         <comment>Proxy configuration dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Käyttäjätunnus:</translation>
     </message>
 </context>
 <context>
@@ -1015,7 +1020,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="57"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
-        <translation type="unfinished"></translation>
+        <translation>Paikanna sijaintini</translation>
     </message>
 </context>
 <context>
@@ -1024,7 +1029,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="180"/>
         <source>N/A</source>
         <comment>Inserted in search field when the automaticgeolocalisation is not available</comment>
-        <translation type="unfinished"></translation>
+        <translation>tuntematon</translation>
     </message>
 </context>
 <context>
@@ -1033,7 +1038,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation type="unfinished"></translation>
+        <translation>Etsi sijainti</translation>
     </message>
 </context>
 <context>
@@ -1042,7 +1047,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Hae kirjoittamalla paikan nimi, sen tunnus tai maantieteelliset koordinaatit muodossa &quot;leveysaste, pituusaste&quot;</translation>
     </message>
 </context>
 <context>
@@ -1050,32 +1055,32 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Searching...</source>
-        <translation type="unfinished"></translation>
+        <translation>Etsitään...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="90"/>
         <source>&amp;Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ok</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="92"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Peruuta</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="286"/>
         <source>No results</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei tuloksia</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="288"/>
         <source>Found {0} city</source>
-        <translation type="unfinished"></translation>
+        <translation>Löydettiin {0} sijaintia</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="290"/>
         <source>Found {0} cities</source>
-        <translation type="unfinished"></translation>
+        <translation>Löydettiin {0} sijaintia</translation>
     </message>
 </context>
 <context>
@@ -1084,7 +1089,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="225"/>
         <source>Please type more than three characters</source>
         <comment>Message in the statusbar</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kirjoita vähintään kolme merkkiä</translation>
     </message>
 </context>
 <context>
@@ -1093,97 +1098,97 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="249"/>
         <source>Icon &amp; temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuvake ja lämpötila</translation>
     </message>
     <message>
         <location filename="../settings.py" line="254"/>
         <source>Icon</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuvake</translation>
     </message>
     <message>
         <location filename="../settings.py" line="259"/>
         <source>Temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lämpötila</translation>
     </message>
     <message>
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ilmoituspalkki</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuvake ja tuntuu kuin lämpötila</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
         <source>Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tuntuu kuin lämpötila</translation>
     </message>
     <message>
         <location filename="../settings.py" line="380"/>
         <source>Toggle tray icon interval</source>
         <comment>Label for the option of the checkbox to activate the toggle of the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ilmoituskuvakkeen päivitysväli</translation>
     </message>
     <message>
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation type="unfinished"></translation>
+        <translation>sekuntia. Aseta arvo 0 poistaaksesi käytöstä</translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
         <source>System default</source>
         <comment>ComboBox to choose the system default icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Järjestelmän oletus</translation>
     </message>
     <message>
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuvakkeiden teema</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
         <source>Temperature font in system tray</source>
         <comment>Setting for the font size of the temperature in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lämpötilan fontti ilmoitusalueella</translation>
     </message>
     <message>
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kuvakkeen koko ja tekstin asettelu</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tämän asetuksen muokkaaminen saattaa parantaa lämpötilan näkyvyyttä ilmoitusalueella</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Järjestelmäkuvakkeen alustuskoko (oletuskoko 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lämpötilan sijainti kuvakkeessa (pystysuunnassa) (oletus: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Suosittelemme käyttämään henkilökohtaista API-avainta. Jos joku käyttää meteo-qt:n oletusavainta väärin, palveluntarjoaja estää kaiken tiedonsiirron, etkä näe enää sääennusteita (virhe ”401 Unauthorised”)</translation>
     </message>
 </context>
 <context>
@@ -1192,13 +1197,13 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../citylistdlg.py" line="95"/>
         <source>The city already exists in the list</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sijainti on jo listalla</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="106"/>
         <source>Toggle cities with mouse scroll on the weather window</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Voit vaihtaa sijaintia vierittämällä hiiren rullaa sääennusteikkunassa</translation>
     </message>
 </context>
 <context>
@@ -1207,13 +1212,13 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Voit paikantaa sijaintisi automaattisesti napsauttamalla ”Etsi sijaintini” -painiketta</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
         <source>Put the city&apos;s name, comma, 2-letter country code (ex: London, GB)</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kirjoita paikkakunnan nimi, pilkku ja kahden kirjaimen maakoodi (esim. Helsinki, FI)</translation>
     </message>
 </context>
 <context>
@@ -1221,7 +1226,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../meteo_qt.py" line="2516"/>
         <source>The application has to be restarted to apply the language setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Kielen vaihtamiseksi ohjelma on käynnistettävä uudelleen</translation>
     </message>
 </context>
 <context>
@@ -1229,109 +1234,111 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../meteo_qt.py" line="127"/>
         <source>Cities</source>
-        <translation type="unfinished"></translation>
+        <translation>Sijainnit</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="140"/>
         <source>&amp;Temporary city</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Väliaikainen sijainti</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="160"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Asetukset</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="161"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tietoja</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="162"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Haetaan säätietoja...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
         <source>Empty list</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyhjä lista</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1990"/>
         <source>No city configured</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei sijaintia</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>No city has been configured yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sijainti ei ole määritelty.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Napsauta kuvaketta hiiren kakkospainikkeella ja valitse asetukset.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation type="unfinished"></translation>
+        <translation>Haetaan sääennustetta...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
         <source>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
             &lt;br/&gt;License: GPLv3
             &lt;br/&gt;Python {1} - Qt {2} - PyQt {3} on {4}</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;meteo-qt&lt;/b&gt; v{0}
+            &lt;br/&gt;License: GPLv3
+            &lt;br/&gt;Python {1} - Qt {2} - PyQt {3}  {4}llä</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="201"/>
         <source>Mon</source>
-        <translation type="unfinished"></translation>
+        <translation>Ma</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="202"/>
         <source>Tue</source>
-        <translation type="unfinished"></translation>
+        <translation>Ti</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="203"/>
         <source>Wed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ke</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="204"/>
         <source>Thu</source>
-        <translation type="unfinished"></translation>
+        <translation>To</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="205"/>
         <source>Fri</source>
-        <translation type="unfinished"></translation>
+        <translation>Pe</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="206"/>
         <source>Sat</source>
-        <translation type="unfinished"></translation>
+        <translation>La</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="207"/>
         <source>Sun</source>
-        <translation type="unfinished"></translation>
+        <translation>Su</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="577"/>
         <source>Weather status</source>
-        <translation type="unfinished"></translation>
+        <translation>Sääennuste</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
-        <translation type="unfinished"></translation>
+        <translation>Päivän matalin ja korkein lämpötila</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2609"/>
@@ -1353,7 +1360,24 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Kirjoittaja: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Yksinkertainen sovellus sääennusteiden näyttämiseen
+            järjestelmäpalkissa.
+            &lt;p&gt;Verkkosivusto: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Tietolähde: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Tämä ohjelmisto käyttää kuvakkeita
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Project Oxygenista&lt;/a&gt;.
+            &lt;p&gt;Jos haluat kääntää meteo-qt-sovelluksen omalle kielellesi tai
+            parantaa olemassa olevaa käännöstä, käytä
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt;-käännösrajapintaa.
+            &lt;p&gt;Jos haluat ilmoittaa virheestä tai tehdä ehdotuksia,
+            avaa tiketti
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            GitHubissa&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1362,7 +1386,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Tuntuu kuin</translation>
     </message>
 </context>
 <context>
@@ -1371,7 +1395,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ei saatavilla</translation>
     </message>
 </context>
 <context>
@@ -1380,7 +1404,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="448"/>
         <source>OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>OpenWeatherMap avain</translation>
     </message>
 </context>
 <context>
@@ -1389,7 +1413,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kielen vaihtamiseksi ohjelma on käynnistettävä uudelleen</translation>
     </message>
 </context>
 <context>
@@ -1398,7 +1422,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sateen todennäköisyys</translation>
     </message>
 </context>
 <context>
@@ -1407,7 +1431,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>UV-indeksi kello 12.00</translation>
     </message>
 </context>
 <context>
@@ -1416,25 +1440,25 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="1121"/>
         <source>Day</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Päivä</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1126"/>
         <source>Morning</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Aamu</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1131"/>
         <source>Evening</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Ilta</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1136"/>
         <source>Night</source>
         <comment>Weather information window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Yö</translation>
     </message>
 </context>
 <context>
@@ -1443,13 +1467,13 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="1733"/>
         <source>Pressure</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Paine</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1738"/>
         <source>Humidity</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Kosteus</translation>
     </message>
 </context>
 <context>
@@ -1458,7 +1482,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="130"/>
         <source>Toggle Window</source>
         <comment>Open/closes the application window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Näytä/piilota ikkuna</translation>
     </message>
 </context>
 <context>
@@ -1467,7 +1491,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>Etsitään sääennustetta...</translation>
     </message>
 </context>
 <context>
@@ -1476,7 +1500,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Huomenna:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1484,27 +1508,27 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../conditions.py" line="146"/>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Matala</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="148"/>
         <source>Moderate</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohtalainen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="151"/>
         <source>High</source>
-        <translation type="unfinished"></translation>
+        <translation>Korkea</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="153"/>
         <source>Very high</source>
-        <translation type="unfinished"></translation>
+        <translation>Erittäin korkea</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="155"/>
         <source>Extreme</source>
-        <translation type="unfinished"></translation>
+        <translation>Äärimmäisen korkea</translation>
     </message>
 </context>
 <context>
@@ -1513,7 +1537,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>UV</translation>
     </message>
 </context>
 <context>
@@ -1522,7 +1546,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Haetaan...</translation>
     </message>
 </context>
 <context>
@@ -1532,7 +1556,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="661"/>
         <source> km/h </source>
         <comment>Weather Infos panel</comment>
-        <translation type="unfinished"></translation>
+        <translation> km/h </translation>
     </message>
 </context>
 <context>
@@ -1542,7 +1566,8 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <source>Wear SPF 30+ sunscreen, a shirt, sunglasses, and a
                 wide-brimmed hat.&lt;br/&gt;Do not stay in the sun for too long.</source>
         <comment>Very high https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation type="unfinished"></translation>
+        <translation>Käytä SPF 30+ aurinkovoidetta, pukeudu paitaan, aurinkolaseihin sekä
+                leveälieriseen hattuun. Vältä pitkäaikaista altistumista auringolle.</translation>
     </message>
 </context>
 <context>
@@ -1551,7 +1576,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Näkyvyys</translation>
     </message>
 </context>
 <context>
@@ -1560,7 +1585,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="560"/>
         <source>Please add a city</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Lisää sijainti</translation>
     </message>
 </context>
 <context>
@@ -1569,7 +1594,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../settings.py" line="555"/>
         <source>Please enter your OpenWeatherMap key</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Syötä OpenWeatherMap avaimesi</translation>
     </message>
 </context>
 <context>
@@ -1578,7 +1603,7 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../citytranslate.py" line="55"/>
         <source>The city already exist</source>
         <comment>City translation</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sijainti on jo olemassa</translation>
     </message>
 </context>
 <context>
@@ -1586,517 +1611,517 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
     <message>
         <location filename="../conditions.py" line="8"/>
         <source>thunderstorm with light rain</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkosta ja kevyttä sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="9"/>
         <source>thunderstorm with rain</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkosta ja sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="10"/>
         <source>thunderstorm with heavy rain</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkosta ja kovaa sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyt ukonilma</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="12"/>
         <source>thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkonen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="13"/>
         <source>heavy thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>raskas ukonilma</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="14"/>
         <source>ragged thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkostaa satunnaisesti</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkonen ja kevyt tihkusade</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="16"/>
         <source>thunderstorm with drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>ukkonen ja tihkusade</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="17"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>ukonilma ja raskasta tihkusadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyttä tihkusadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="19"/>
         <source>drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>tihkua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="20"/>
         <source>heavy intensity drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakas tihkusade</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyt tihkusade</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="22"/>
         <source>drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>tihkusade</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="23"/>
         <source>heavy intensity drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakasta tihkusadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>kuuroja ja tihkua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>raskaita kuuroja ja tihkua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>kuurottaisia tihkuja</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="27"/>
         <source>light rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyttä sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kohtalaista sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakasta sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="30"/>
         <source>very heavy rain</source>
-        <translation type="unfinished"></translation>
+        <translation>oikein kovaa sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="31"/>
         <source>extreme rain</source>
-        <translation type="unfinished"></translation>
+        <translation>äärimmäisen kovaa sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation type="unfinished"></translation>
+        <translation>jäätävää sadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="33"/>
         <source>light intensity shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyitä kuuroja</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kuurosateita</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
         <source>heavy intensity shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakkaita kuurosateita</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="36"/>
         <source>ragged shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>repaleisia kuurosateita</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="37"/>
         <source>light snow</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyttä lumisadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="38"/>
         <source>snow</source>
-        <translation type="unfinished"></translation>
+        <translation>lumisadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakasta lumisadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="40"/>
         <source>sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>räntää</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>kuurottaista räntäsadetta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyttä sadetta ja lunta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
         <source>rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation>vesi- ja lumisateita</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyitä lumikuuroja</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>lumikuuroja</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakkaita lumikuuroja</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
         <source>mist</source>
-        <translation type="unfinished"></translation>
+        <translation>usvaa</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="48"/>
         <source>smoke</source>
-        <translation type="unfinished"></translation>
+        <translation>savua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation type="unfinished"></translation>
+        <translation>sumua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
         <source>sand, dust whirls</source>
-        <translation type="unfinished"></translation>
+        <translation>hiekka- ja pölypyörteitä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation>sumua</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
         <source>sand</source>
-        <translation type="unfinished"></translation>
+        <translation>hiekkaa</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="53"/>
         <source>dust</source>
-        <translation type="unfinished"></translation>
+        <translation>pölyä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="54"/>
         <source>volcanic ash</source>
-        <translation type="unfinished"></translation>
+        <translation>vulkaanista tuhkaa</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation>myrskytuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation>tornado</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
         <source>clear sky</source>
-        <translation type="unfinished"></translation>
+        <translation>selkeää</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="58"/>
         <source>few clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>muutamia pilviä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="59"/>
         <source>scattered clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>hajanaisia pilviä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="60"/>
         <source>broken clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>rikkonaisen pilvistä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="61"/>
         <source>overcast clouds</source>
-        <translation type="unfinished"></translation>
+        <translation>pilvistä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="63"/>
         <source>tropical storm</source>
-        <translation type="unfinished"></translation>
+        <translation>trooppinen myrsky</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation type="unfinished"></translation>
+        <translation>hurrikaani</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
         <source>cold</source>
-        <translation type="unfinished"></translation>
+        <translation>kylmä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="66"/>
         <source>hot</source>
-        <translation type="unfinished"></translation>
+        <translation>kuuma</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="67"/>
         <source>windy</source>
-        <translation type="unfinished"></translation>
+        <translation>tuulinen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="68"/>
         <source>hail</source>
-        <translation type="unfinished"></translation>
+        <translation>rakeita</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation type="unfinished"></translation>
+        <translation>tyyni</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
         <source>light breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>kevyttä tuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="71"/>
         <source>gentle breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>lempeää tuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="72"/>
         <source>moderate breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>kohtalaista tuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="73"/>
         <source>fresh breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>raikasta tuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="74"/>
         <source>strong breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>voimakasta tuulta</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation type="unfinished"></translation>
+        <translation>luja tuuli</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
         <source>gale</source>
-        <translation type="unfinished"></translation>
+        <translation>myrskyinen tuuli</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="77"/>
         <source>severe gale</source>
-        <translation type="unfinished"></translation>
+        <translation>myrsky</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="78"/>
         <source>storm</source>
-        <translation type="unfinished"></translation>
+        <translation>kova myrsky</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="79"/>
         <source>violent storm</source>
-        <translation type="unfinished"></translation>
+        <translation>ankara myrsky</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="111"/>
         <source>North</source>
-        <translation type="unfinished"></translation>
+        <translation>Pohjoinen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="112"/>
         <source>NorthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Koillinen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Pohjoiskoillinen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
         <source>NorthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Luode</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Pohjoisluode</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
         <source>South</source>
-        <translation type="unfinished"></translation>
+        <translation>Etelä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="117"/>
         <source>SouthEast</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaakko</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Eteläkaakko</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
         <source>SouthWest</source>
-        <translation type="unfinished"></translation>
+        <translation>Lounas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>South-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Etelälounas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
         <source>East</source>
-        <translation type="unfinished"></translation>
+        <translation>Itä</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>East-southeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Itäkaakko</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>East-northeast</source>
-        <translation type="unfinished"></translation>
+        <translation>Itäkoillinen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="124"/>
         <source>West</source>
-        <translation type="unfinished"></translation>
+        <translation>Länsi</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>West-southwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Länsilounas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>West-northwest</source>
-        <translation type="unfinished"></translation>
+        <translation>Länsiluode</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
         <source>N</source>
-        <translation type="unfinished"></translation>
+        <translation>N</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="129"/>
         <source>NE</source>
-        <translation type="unfinished"></translation>
+        <translation>NE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="130"/>
         <source>NNE</source>
-        <translation type="unfinished"></translation>
+        <translation>NNE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="131"/>
         <source>NW</source>
-        <translation type="unfinished"></translation>
+        <translation>NW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="132"/>
         <source>NNW</source>
-        <translation type="unfinished"></translation>
+        <translation>NNW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="133"/>
         <source>S</source>
-        <translation type="unfinished"></translation>
+        <translation>S</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="134"/>
         <source>SE</source>
-        <translation type="unfinished"></translation>
+        <translation>SE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="135"/>
         <source>SSE</source>
-        <translation type="unfinished"></translation>
+        <translation>SSE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="136"/>
         <source>SW</source>
-        <translation type="unfinished"></translation>
+        <translation>SW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="137"/>
         <source>SSW</source>
-        <translation type="unfinished"></translation>
+        <translation>SSW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="138"/>
         <source>E</source>
-        <translation type="unfinished"></translation>
+        <translation>E</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="139"/>
         <source>ESE</source>
-        <translation type="unfinished"></translation>
+        <translation>ESE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="140"/>
         <source>ENE</source>
-        <translation type="unfinished"></translation>
+        <translation>ENE</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="141"/>
         <source>W</source>
-        <translation type="unfinished"></translation>
+        <translation>W</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="142"/>
         <source>WSW</source>
-        <translation type="unfinished"></translation>
+        <translation>WSW</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="143"/>
         <source>WNW</source>
-        <translation type="unfinished"></translation>
+        <translation>WNW</translation>
     </message>
 </context>
 <context>
@@ -2105,19 +2130,19 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../citylistdlg.py" line="67"/>
         <source>Cities</source>
         <comment>Cities list dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sijainnit</translation>
     </message>
     <message>
         <location filename="../citytranslate.py" line="38"/>
         <source>City translation</source>
         <comment>City translation dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sijainnin käännös</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Etsi sijaintia</translation>
     </message>
 </context>
 <context>
@@ -2126,23 +2151,25 @@ Alle 990 hPa on ERITTÄIN HUONOJEN ja VOIMAKKAIDEN hurrikaanien, tornadojen ja t
         <location filename="../searchcity.py" line="354"/>
         <source>Data error, please try again later
 or modify the name of the city</source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe: yritä myöhemmin uudelleen
+tai muuta sijainnin nimeä</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation type="unfinished"></translation>
+        <translation>Odota, etsitään...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>Error: </source>
-        <translation type="unfinished"></translation>
+        <translation>Virhe: </translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
         <source>
 Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Yritä myöhemmin uudestaan</translation>
     </message>
 </context>
 </TS>
