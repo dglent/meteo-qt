@@ -1579,32 +1579,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="8"/>
         <source>thunderstorm with light rain</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas lietus su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="9"/>
         <source>thunderstorm with rain</source>
-        <translation type="unfinished"></translation>
+        <translation>lietus su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="10"/>
         <source>thunderstorm with heavy rain</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus lietus su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="11"/>
         <source>light thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>silpna perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="12"/>
         <source>thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="13"/>
         <source>heavy thunderstorm</source>
-        <translation type="unfinished"></translation>
+        <translation>smarki perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="14"/>
@@ -1614,107 +1614,107 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="15"/>
         <source>thunderstorm with light drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>silpna dulksna su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="16"/>
         <source>thunderstorm with drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>dulksna su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="17"/>
         <source>thunderstorm with heavy drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>smarki dulksna su perkūnija</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="18"/>
         <source>light intensity drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>silpna dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="19"/>
         <source>drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="20"/>
         <source>heavy intensity drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>smarki dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="21"/>
         <source>light intensity drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas smulkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="22"/>
         <source>drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>smulkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="23"/>
         <source>heavy intensity drizzle rain</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus smulkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="24"/>
         <source>shower rain and drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>liūtinis lietus ir dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="25"/>
         <source>heavy shower rain and drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus liūtinis lietus ir dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="26"/>
         <source>shower drizzle</source>
-        <translation type="unfinished"></translation>
+        <translation>liūtinė dulksna</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="27"/>
         <source>light rain</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="28"/>
         <source>moderate rain</source>
-        <translation type="unfinished"></translation>
+        <translation>vidutinis lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="30"/>
         <source>very heavy rain</source>
-        <translation type="unfinished"></translation>
+        <translation>labai smarkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="31"/>
         <source>extreme rain</source>
-        <translation type="unfinished"></translation>
+        <translation>kraštutinai smarkus lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="32"/>
         <source>freezing rain</source>
-        <translation type="unfinished"></translation>
+        <translation>lijundra (prišąlantis lietus)</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="33"/>
         <source>light intensity shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas liūtinis lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="34"/>
         <source>shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>liūtinis lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="35"/>
         <source>heavy intensity shower rain</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus liūtinis lietus</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="36"/>
@@ -1724,7 +1724,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="37"/>
         <source>light snow</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas sniegas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="38"/>
@@ -1734,22 +1734,22 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="39"/>
         <source>heavy snow</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus sniegas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="40"/>
         <source>sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>šlapdriba</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="41"/>
         <source>shower sleet</source>
-        <translation type="unfinished"></translation>
+        <translation>liūtinė šlapdriba</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="42"/>
         <source>light rain and snow</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas lietus ir sniegas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="43"/>
@@ -1759,32 +1759,32 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="44"/>
         <source>light shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>silpnas liūtinis snygis</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="45"/>
         <source>shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>liūtinis snygis</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="46"/>
         <source>heavy shower snow</source>
-        <translation type="unfinished"></translation>
+        <translation>smarkus liūtinis snygis</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="47"/>
         <source>mist</source>
-        <translation type="unfinished"></translation>
+        <translation>rūkana</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="48"/>
         <source>smoke</source>
-        <translation type="unfinished"></translation>
+        <translation>dūmai</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="49"/>
         <source>haze</source>
-        <translation type="unfinished"></translation>
+        <translation>migla</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="50"/>
