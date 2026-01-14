@@ -763,22 +763,25 @@ class SystemTrayIcon(QMainWindow):
         )
         # Sunrise Sunset Daylight
         try:
-            rise_str = self.utc('Sunrise', 'weatherdata')
-            set_str = self.utc('Sunset', 'weatherdata')
+            rise_time = self.utc('Sunrise', 'weatherdata')
+            set_time = self.utc('Sunset', 'weatherdata')
         except (AttributeError, ValueError):
             logging.error('Cannot find sunrise, sunset time info')
             # if value is None
-            rise_str = '00:00:00'
-            set_str = '00:00:00'
+            rise_time = QTime(0, 0, 0)
+            set_time = QTime(0, 0, 0)
+        locale = QLocale.system()
+        rise_str = locale.toString(rise_time, QLocale.FormatType.ShortFormat)
+        set_str = locale.toString(set_time, QLocale.FormatType.ShortFormat)
 
         self.sunrise_value.setText(
-            f'<font color=>{rise_str[:-3]}</font>'
+            f'<font color=>{rise_str}</font>'
         )
         self.sunset_value.setText(
-            f'<font color=>{set_str[:-3]}</font>'
+            f'<font color=>{set_str}</font>'
         )
 
-        daylight_value = self.daylight_delta(rise_str[:-3], set_str[:-3])
+        daylight_value = self.daylight_delta(rise_time, set_time)
         self.daylight_value_label.setText(
             f'<font color=>{daylight_value}</font>'
         )
@@ -830,8 +833,8 @@ class SystemTrayIcon(QMainWindow):
             f"Visibility,{visibility_distance} {visibility_unit}\n"
             f"Comfort,{hum.comfort_text}\n"
             f"Precipitation,{rain_mode} {rain_value} {rain_unit}\n"
-            f"Sunrise,{rise_str[:-3]}\n"
-            f"Sunset,{set_str[:-3]}\n"
+            f"Sunrise,{rise_str}\n"
+            f"Sunset,{set_str}\n"
             f"Daylight,{daylight_value}\n"
             f"Air quality,{self.air_pollution_value_label.text()}\n"
             f"UV,{self.uv_index_exp}\n"
@@ -839,11 +842,7 @@ class SystemTrayIcon(QMainWindow):
         )
 
     def daylight_delta(self, s1, s2):
-        FMT = '%H:%M'
-        tdelta = (
-            datetime.datetime.strptime(s2, FMT)
-            - datetime.datetime.strptime(s1, FMT)
-        )
+        tdelta = datetime.timedelta(seconds=s1.secsTo(s2))
         m, s = divmod(tdelta.seconds, 60)
         h, m = divmod(m, 60)
         if len(str(m)) == 1:
@@ -875,8 +874,7 @@ class SystemTrayIcon(QMainWindow):
 
         # add the diff UTC-local in seconds
         utc_time = suntime.addSecs(time.localtime().tm_gmtoff)
-        utc_time_str = utc_time.toString()
-        return utc_time_str
+        return utc_time
 
     def convertToBeaufort(self, speed):
         speed = float(speed)
@@ -1602,6 +1600,8 @@ class SystemTrayIcon(QMainWindow):
             clouds_translated = ''
             wind = ''
             timeofday = self.utc(d, 'dayforecast')
+            locale = QLocale.system()
+            timeofday_str = locale.toString(timeofday, QLocale.FormatType.ShortFormat)
             if not self.json_data_bool:
                 for element in self.dayforecast_data[4][d].iter():
                     if element.tag == 'symbol':
@@ -1690,7 +1690,7 @@ class SystemTrayIcon(QMainWindow):
             self.dayforecast_weather_list.append(weather_cond)
             daytime = QLabel(
                 '<font color=>{0}<br/>{1}°</font>'.format(
-                    timeofday[:-3],
+                    timeofday_str,
                     '{0:.0f}'.format(temperature_at_hour)
                 )
             )
