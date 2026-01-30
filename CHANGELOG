@@ -1,3 +1,6 @@
+4.3
+- Display time in user's preferred locale by @basil
+
 4.2
 - Fix crash with only temperature on tray by @alexzk1
 
