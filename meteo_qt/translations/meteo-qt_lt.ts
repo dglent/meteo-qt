@@ -489,7 +489,7 @@ The comfort level is severely uncomfortable and possibly deadly for asthma suffe
         <location filename="../humidex.py" line="32"/>
         <source>The drier air can cause skin to crack and become irritated more easily</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sausesnis oras gali sukelti odos įtrūkimus ir dirginti odą</translation>
     </message>
 </context>
 <context>
@@ -883,7 +883,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti pranešimą atnaujinus informaciją apie orus</translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
@@ -908,7 +908,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="489"/>
         <source>Logging level</source>
         <comment>Settings window</comment>
-        <translation type="unfinished"></translation>
+        <translation>Registravimo lygis</translation>
     </message>
 </context>
 <context>
@@ -926,13 +926,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="141"/>
         <source>Beaufort</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Boforto skalės balai</translation>
     </message>
     <message>
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Km/val.</translation>
     </message>
 </context>
 <context>
@@ -1145,7 +1145,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation type="unfinished"></translation>
+        <translation>Dėklo piktogramos inicijavimo dydis (numatytasis dydis: 64x64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
@@ -1157,7 +1157,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>Patariama naudoti asmeninį raktą.&lt;br/&gt;Jei kas nors pagrobs numatytąjį meteo-qt raktą, jūs nebegalėsite gauti duomenų apie orus (klaida 401 nėra įgaliojimų)</translation>
     </message>
 </context>
 <context>
@@ -1181,7 +1181,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>Spustelėkite mygtuką „Surasti mano vietovę“, kad automatiškai būtų nustatyta jūsų geografinė vietovė</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1506,7 +1506,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="516"/>
         <source>UV</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>UV</translation>
     </message>
 </context>
 <context>
@@ -1794,7 +1794,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="51"/>
         <source>fog</source>
-        <translation type="unfinished"></translation>
+        <translation>rūkas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="52"/>
@@ -1814,12 +1814,12 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation type="unfinished"></translation>
+        <translation>škvalai</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
         <source>tornado</source>
-        <translation type="unfinished"></translation>
+        <translation>viesulas</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="57"/>
