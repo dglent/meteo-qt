@@ -202,8 +202,8 @@
         <source>Sea: Sea like a mirror
 Land: Calm. Smoke rises vertically</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Meer wie ein Spiegel
-Land: Windstille. Rauch steigt vertikal</translation>
+        <translation>Meer: Das Meer gleicht einem Spiegel
+Land: Windstill. Rauch steigt senkrecht auf</translation>
     </message>
 </context>
 <context>
@@ -213,8 +213,8 @@ Land: Windstille. Rauch steigt vertikal</translation>
         <source>Sea: Ripples with the appearance of scales are formed,but without foam crests
 Land: Smoke drift indicates wind direction. Leaves and wind vanes are stationary</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Wellen mit auftretenden Schuppen, aber ohne Schaumkämme.
-Land: Rauch steigt in Windrichtung. Blätter und Windfahnen bewegen sich nicht.</translation>
+        <translation>Meer: Es bilden sich Wellen, die wie Schuppen aussehen, jedoch ohne Schaumkämme
+Land: Die Rauchsäule zeigt die Windrichtung an. Blätter und Wetterfahnen bewegen sich nicht</translation>
     </message>
 </context>
 <context>
@@ -246,8 +246,8 @@ Land: Größere Flächen der Vegetation und Gebäude können beschädigt werden.
         <source>Sea: Huge waves. Sea is completely white with foam and spray. Air is filled with driving spray, greatly reducing visibility
 Land: Severe widespread damage to vegetation and structures. Debris and unsecured objects are hurled about</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Hohe Wellen. Das Meer ist durch den Schaum und die Gischt vollständig weiß. Die Luft ist erfüllt mit Gischt und schränkt die Sicht stark ein.
-Land: Schwere größflächige Beschädigungen an der Vegetation und Gebäuden. Müll und ungesicherte Objekte werden herumgeschleudert.</translation>
+        <translation>Meer: Hohe Wellen. Das Meer ist durch Schaum und Gischt vollständig weiß. Die Luft ist voller Gischt, wodurch die Sicht stark eingeschränkt ist
+Land: Schwere, weitreichende Beschädigungen an Vegetation und Gebäuden. Unrat und lose Gegenstände werden umhergeschleudert.</translation>
     </message>
 </context>
 <context>
@@ -257,8 +257,8 @@ Land: Schwere größflächige Beschädigungen an der Vegetation und Gebäuden. M
         <source>Sea: Small wavelets, still short but more pronounced; crests have a glassy appearance and do not break
 Land: Wind felt on exposed skin. Leaves rustle. Wind vanes begin to move</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Kleine Wellen, kurz aber etwas stärker. Wellenkämme haben eine glasige Erscheinung und brechen nicht.
-Land: Wind ist auf der Haut spürbar. Blätter rascheln. Windfahnen beginnen sich zu bewegen.</translation>
+        <translation>Meer: Kleine Wellen, noch kurz aber etwas deutlicher. Wellenkämme haben eine glasige Erscheinung und brechen nicht
+Land: Wind ist auf der Haut spürbar. Blätter rascheln. Windfahnen beginnen sich zu bewegen</translation>
     </message>
 </context>
 <context>
@@ -290,8 +290,8 @@ Land: Staub und loses Papier hebt sich. Schmale Äste fangen an sich zu bewegen.
         <source>Sea: Moderate waves of some length. Many whitecaps. Small amounts of spray
 Land: Branches of a moderate size move. Small trees in leaf begin to sway</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Mäßige Wellen mit gößerer Länge. Viele Schaumkronen. Geringes Auftreten an Gischt.
-Land: Geäst mit einer mäßigen Größe bewegt sich. Schmale Bäume beginnen zu Schwanken.</translation>
+        <translation>Meer: Mäßige Wellen mit größerer Länge. Viele Schaumkronen. Leichte Gischt
+Land: Äste mittlerer Größe bewegen sich. Kleine, belaubte Bäume beginnen zu schwanken</translation>
     </message>
 </context>
 <context>
@@ -301,8 +301,8 @@ Land: Geäst mit einer mäßigen Größe bewegt sich. Schmale Bäume beginnen zu
         <source>Sea: Long waves begin to form. White foam crests are very frequent. Some airborne spray is present
 Land: Large branches in motion. Whistling heard in overhead wires. Umbrella use becomes difficult. Empty plastic bins tip over</source>
         <comment>Tooltip in Weather overview dialogue</comment>
-        <translation>Meer: Lange Wellen beginnen sich zu formen. Weiße Schaumkronen kommen sehr häufig vor. In die Luft aufspritzende Gischt ist vorhanden.
-Land: Großes Geäst ist in Bewegung. Hörbares Pfeifen an Oberleitungen. Verwenden eines Regenschirms wird schwierig. Leere Plastikeimer fallen um.</translation>
+        <translation>Meer: Es bilden sich lange Wellen. Weiße Schaumkronen sind sehr häufig zu sehen. Es kommt zu Sprühnebel in der Luft
+Land: Große Äste bewegen sich. Hörbares Pfeifen an Oberleitungen. Das Verwenden eines Regenschirms wird schwierig. Leere Plastikeimer fallen um</translation>
     </message>
 </context>
 <context>
@@ -376,12 +376,12 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Add...</source>
-        <translation>Hin&amp;zufügen...</translation>
+        <translation>Hin&amp;zufügen ...</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Remove...</source>
-        <translation>Ent&amp;fernen...</translation>
+        <translation>Ent&amp;fernen ...</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="44"/>
@@ -401,12 +401,12 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
     <message>
         <location filename="../citylistdlg.py" line="44"/>
         <source>&amp;Sort</source>
-        <translation>alphabetisch &amp;Sortieren</translation>
+        <translation>&amp;Sortieren</translation>
     </message>
     <message>
         <location filename="../citylistdlg.py" line="139"/>
         <source>The city &quot;{0}&quot; has been removed</source>
-        <translation>Die Stadt &quot;{0}&quot; wurde entfernt</translation>
+        <translation>Die Stadt »{0}« wurde entfernt</translation>
     </message>
 </context>
 <context>
@@ -500,8 +500,8 @@ Land: Einiges Geäst bricht ab und kleine Bäume werden herumgeweht. Konstruktio
         <source>Avoid the exercise. Skip it or dramatically alter goal.
 The comfort level is severely uncomfortable and possibly deadly for asthma sufferers</source>
         <comment>ToolTip in weather info dialogue</comment>
-        <translation>Vermeide Übungen. Überspringen Sie diese oder verändern Sie deutlich das Ziel.
-Das Komfortniveau ist sehr ungemütlich und womöglich tödlich für Asthmatiker</translation>
+        <translation>Übungen vermeiden. Lassen Sie diese aus oder passen Sie das Ziel deutlich an.
+Das Belastungsniveau ist für Asthmatiker sehr unangenehm und möglicherweise lebensgefährlich</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="32"/>
@@ -585,7 +585,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
                 sunscreen,&lt;br/&gt;wear a hat, reduce time in the sun within three
                 hours of solar noon, and wear sunglasses.</source>
         <comment>High https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Bedecken Sie den Körper mit vor Sonne schützender Bekleidung und verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie eine Sonnenbrille und Kopfbedeckung. Minimieren Sie den Aufenthalt in der Sonne in den drei Stunden um ihren Höchststand.</translation>
+        <translation>Bedecken Sie den Körper mit Sonnenschutzkleidung und verwenden Sie Sonnenschutzmittel mit Lichtschutzfaktor ≥30. Tragen Sie eine Sonnenbrille und Kopfbedeckung. Minimieren Sie den Aufenthalt in der Sonne in den drei Stunden um ihren Höchststand.</translation>
     </message>
 </context>
 <context>
@@ -594,7 +594,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="167"/>
         <source>Temperature accuracy in system tray</source>
         <comment>Settings dialogue</comment>
-        <translation>Genauigkeit der Temperaturanzeige in der Leiste</translation>
+        <translation>Temperaturgenauigkeit in der Leiste</translation>
     </message>
 </context>
 <context>
@@ -695,7 +695,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
                 snow on&lt;br/&gt;the ground, which reflects UV radiation,
                 or if you have particularly fair skin.</source>
         <comment>Low https://en.wikipedia.org/wiki/Ultraviolet_index</comment>
-        <translation>Tragen Sie an hellen Tagen eine Sonnenbrille. Verwenden Sie Sonnenschutzmittel bei schneebedecktem Grund,der die UV-Strahlung reflektiert, oder wenn Ihre Haut besonders empfindlich ist.</translation>
+        <translation>Tragen Sie an sonnigen Tagen eine Sonnenbrille. Verwenden Sie Sonnenschutzmittel, wenn der Boden schneebedeckt ist, der die UV-Strahlung reflektiert, oder wenn Ihre Haut besonders empfindlich ist.</translation>
     </message>
 </context>
 <context>
@@ -907,7 +907,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../settings.py" line="232"/>
         <source>Notification on weather update</source>
-        <translation>Benachrichtigen bei Wetteraktualiserungen</translation>
+        <translation>Bei Wetteraktualisierungen benachrichtigen</translation>
     </message>
     <message>
         <location filename="../settings.py" line="566"/>
@@ -956,7 +956,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="146"/>
         <source>Km/h</source>
         <comment>Settings dialogue</comment>
-        <translation>Km/h</translation>
+        <translation>km/h</translation>
     </message>
 </context>
 <context>
@@ -1013,7 +1013,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="57"/>
         <source>Find my location</source>
         <comment>Automatic search of my place</comment>
-        <translation>Finde meinen Standort</translation>
+        <translation>Meinen Standort suchen</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +1031,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="44"/>
         <source>Search city</source>
         <comment>Search for the given place</comment>
-        <translation>Suche Stadt</translation>
+        <translation>Stadt suchen</translation>
     </message>
 </context>
 <context>
@@ -1040,7 +1040,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="65"/>
         <source>Start typing the city or the ID or the geographic coordinates &quot;latitude, longitude&quot;</source>
         <comment>Default message in the search field</comment>
-        <translation>Geben Sie die Stadt, die ID, oder die geografischen Koordinaten ein &quot;Breitengrad, Längengrad&quot;</translation>
+        <translation>Geben Sie die Stadt, die ID oder die geografischen Koordinaten ein &quot;Breitengrad, Längengrad&quot;</translation>
     </message>
 </context>
 <context>
@@ -1048,7 +1048,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../searchcity.py" line="33"/>
         <source>Searching...</source>
-        <translation>Suche...</translation>
+        <translation>Suche läuft ...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="90"/>
@@ -1109,13 +1109,13 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="240"/>
         <source>System tray icon</source>
         <comment>Setting to choose the type of the icon on the tray(only icon only text, icon&amp;text</comment>
-        <translation>Systemleisten-Symbol</translation>
+        <translation>Systemleistensymbol</translation>
     </message>
     <message>
         <location filename="../settings.py" line="264"/>
         <source>Icon &amp; Feels like temperature</source>
         <comment>Setting to choose the type of the icon on the tray</comment>
-        <translation>Symbol &amp; gefühlte Temperatur</translation>
+        <translation>Symbol und gefühlte Temperatur</translation>
     </message>
     <message>
         <location filename="../settings.py" line="269"/>
@@ -1133,7 +1133,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="394"/>
         <source>seconds. Set to 0 to deactivate</source>
         <comment>Label after the spinbox to choose the interval to toggle the tray icon and temperature</comment>
-        <translation>Sekunden. 0 zum deaktivieren</translation>
+        <translation>Sekunden. 0 zum Deaktivieren</translation>
     </message>
     <message>
         <location filename="../settings.py" line="293"/>
@@ -1145,7 +1145,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="299"/>
         <source>Icons theme</source>
         <comment>Tooltip of the ComboBox to choose the icons theme</comment>
-        <translation>Symbol-Themen</translation>
+        <translation>Symbolthemen</translation>
     </message>
     <message>
         <location filename="../settings.py" line="410"/>
@@ -1157,19 +1157,19 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="334"/>
         <source>Tray icon size and text position</source>
         <comment>This option concernes 2 dropdown liststo define the size to initialize the tray iconand the position of the temperature text in the icon</comment>
-        <translation>Größe und Position des Systemleisten-Symbol</translation>
+        <translation>Größe und Position des Systemleistensymbols</translation>
     </message>
     <message>
         <location filename="../settings.py" line="343"/>
         <source>Changing this setting you can improve the displaying of the temperature in the tray icon</source>
         <comment>ToolTip of the label &quot;Tray icon size and text position&quot;</comment>
-        <translation>Durch Ändern der Einstellung kann die Anzeige der Temperatur im Systemleisten-Symbol verbessert werden</translation>
+        <translation>Durch Ändern der Einstellung kann die Anzeige der Temperatur im Systemleistensymbol verbessert werden</translation>
     </message>
     <message>
         <location filename="../settings.py" line="352"/>
         <source>Tray icon initialization size (default size: 64x64)</source>
         <comment>Tooltip of the drowndrop list with icon sizes</comment>
-        <translation>Initialisierungsgröße des Systemleisten-Symbol (Voreinstellung 64x64)</translation>
+        <translation>Anfangsgröße des Systemleistensymbol (Voreinstellung 64×64)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="371"/>
@@ -1181,7 +1181,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation>Es wird empfohlen einen persönlichen Schlüssel zu verwenden.&lt;br/&gt;Falls der vorgegebenen meteo-qt Schlüssel gehijackt wird, werden Sie keine Wetterdaten erhalten (Fehler 401 - nicht autorisiert)</translation>
+        <translation>Es wird empfohlen, einen persönlichen Schlüssel zu verwenden.&lt;br/&gt;Falls der vorgegebene meteo-qt-Schlüssel gekapert wurde, ist kein Abruf von Wetterdaten mehr möglich. (Fehler 401 – nicht autorisiert)</translation>
     </message>
 </context>
 <context>
@@ -1205,7 +1205,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="116"/>
         <source>Click on &quot;Find my Location&quot; button for automatic geolocation</source>
         <comment>City search dialogue</comment>
-        <translation>Klicke auf &quot;Finde meinen Standort&quot; für eine automatische Ortung</translation>
+        <translation>Für eine automatische Ortung auf »Meinen Standort suchen« klicken</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="126"/>
@@ -1252,7 +1252,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../meteo_qt.py" line="180"/>
         <source>Searching weather data...</source>
-        <translation>Suche Wetterdaten...</translation>
+        <translation>Wetterdaten werden gesucht ...</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="1971"/>
@@ -1272,12 +1272,12 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../meteo_qt.py" line="2004"/>
         <source>Right click on the icon and click on Settings.</source>
-        <translation>Klicke mit der rechten Maustaste auf das Symbol und wähle Einstellungen.</translation>
+        <translation>Mit der rechten Maustaste auf das Symbol klicken und Einstellungen wählen.</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2584"/>
         <source>Fetching weather data...</source>
-        <translation>Rufe Wetterdaten ab...</translation>
+        <translation>Wetterdaten werden abgerufen …</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2600"/>
@@ -1331,7 +1331,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../meteo_qt.py" line="1445"/>
         <source>Min Max Temperature of the day</source>
-        <translation>Min Max Temparatur des Tages</translation>
+        <translation>Tiefst-/Höchsttemperatur des Tages</translation>
     </message>
     <message>
         <location filename="../meteo_qt.py" line="2589"/>
@@ -1392,7 +1392,24 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Autor: Dimitrios Glentadakis
+ &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+ &lt;p&gt;Eine einfache Anwendung, die Wetterinformationen
+ in der Taskleiste anzeigt.
+ &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+ https://github.com/dglent/meteo-qt&lt;/a&gt;
+ &lt;br/&gt;Datenquelle: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+ OpenWeatherMap&lt;/a&gt;.
+ &lt;br/&gt;Diese Software verwendet Symbole aus dem
+ &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt;.
+ &lt;p&gt;Um meteo-qt in Ihre Sprache zu übersetzen oder zu
+ bestehenden Übersetzungen beizutragen, können Sie die
+ &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+ Weblate&lt;/a&gt;-Plattform nutzen.
+ &lt;p&gt;Wenn Sie einen Fehler melden oder einen Vorschlag machen möchten,
+ können Sie gerne ein Ticket auf
+ &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+ GitHub&lt;/a&gt; eröffnen.</translation>
     </message>
 </context>
 <context>
@@ -1401,7 +1418,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="181"/>
         <source>Feels like</source>
         <comment>Weather info window</comment>
-        <translation>Fühlt sich an wie</translation>
+        <translation>Gefühlt wie</translation>
     </message>
 </context>
 <context>
@@ -1428,7 +1445,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../settings.py" line="58"/>
         <source>The application has to be restared to apply the language setting</source>
         <comment>Settings dialogue</comment>
-        <translation>Zur Änderung der Sprache muss die Anwendung neu gestartet werden</translation>
+        <translation>Um die Sprache zu übernehmen, muss die Anwendung neu gestartet werden</translation>
     </message>
 </context>
 <context>
@@ -1506,7 +1523,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="2112"/>
         <source>Searching for weather data...</source>
         <comment>Tooltip (when mouse over the icon</comment>
-        <translation>Suche Wetterdaten...</translation>
+        <translation>Wetterdaten werden gesucht ...</translation>
     </message>
 </context>
 <context>
@@ -1561,7 +1578,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../meteo_qt.py" line="786"/>
         <source>Fetching...</source>
         <comment>Weather info dialogue</comment>
-        <translation>Rufe ab...</translation>
+        <translation>Wird abgerufen ...</translation>
     </message>
 </context>
 <context>
@@ -1730,7 +1747,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="29"/>
         <source>heavy intensity rain</source>
-        <translation>starker heftiger Regen</translation>
+        <translation>starker Regen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="30"/>
@@ -1860,7 +1877,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="55"/>
         <source>squalls</source>
-        <translation>Böe</translation>
+        <translation>Böen</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="62"/>
@@ -1900,7 +1917,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="80"/>
         <source>hurricane</source>
-        <translation>hurrikan</translation>
+        <translation>Hurrikan</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="65"/>
@@ -1925,7 +1942,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="69"/>
         <source>calm</source>
-        <translation>Still</translation>
+        <translation>still</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="70"/>
@@ -1955,7 +1972,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="75"/>
         <source>high wind, near gale</source>
-        <translation>starker Wind, nähe Sturm</translation>
+        <translation>starker Wind, fast Sturm</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="76"/>
@@ -1990,7 +2007,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="113"/>
         <source>North-northeast</source>
-        <translation>Nord-Nordost</translation>
+        <translation>Nordnordost</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="114"/>
@@ -2000,7 +2017,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="115"/>
         <source>North-northwest</source>
-        <translation>Nord-Nordwest</translation>
+        <translation>Nordnordwest</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="116"/>
@@ -2015,7 +2032,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="118"/>
         <source>South-southeast</source>
-        <translation>Süd-Südost</translation>
+        <translation>Südsüdost</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="119"/>
@@ -2025,7 +2042,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="120"/>
         <source>South-southwest</source>
-        <translation>Süd-Südwest</translation>
+        <translation>Südsüdwest</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="121"/>
@@ -2035,12 +2052,12 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="122"/>
         <source>East-southeast</source>
-        <translation>Ost-Südost</translation>
+        <translation>Ostsüdost</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="123"/>
         <source>East-northeast</source>
-        <translation>Ost-Nordost</translation>
+        <translation>Ostnordost</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="124"/>
@@ -2050,12 +2067,12 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
     <message>
         <location filename="../conditions.py" line="125"/>
         <source>West-southwest</source>
-        <translation>West-Südwest</translation>
+        <translation>Westsüdwest</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="126"/>
         <source>West-northwest</source>
-        <translation>West-Nordwest</translation>
+        <translation>Westnordwest</translation>
     </message>
     <message>
         <location filename="../conditions.py" line="128"/>
@@ -2156,7 +2173,7 @@ Unter 990 hPa ist der Druck für SEHR SCHLIMME und STARKE Hurricanes, Tornados u
         <location filename="../searchcity.py" line="109"/>
         <source>Find a city</source>
         <comment>City search dialogue</comment>
-        <translation>Finde eine Stadt</translation>
+        <translation>Eine Stadt suchen</translation>
     </message>
 </context>
 <context>
@@ -2170,7 +2187,7 @@ or modify the name of the city</source>
     <message>
         <location filename="../searchcity.py" line="390"/>
         <source>Please wait, searching...</source>
-        <translation>Bitte warten, suche...</translation>
+        <translation>Bitte warten, Suche läuft ...</translation>
     </message>
     <message>
         <location filename="../searchcity.py" line="398"/>
