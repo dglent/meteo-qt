@@ -482,13 +482,13 @@ Land: Some branches break off trees, and some small trees blow over. Constructio
         <location filename="../humidex.py" line="85"/>
         <source>Easy training runs might feel OK but difficult to race well or do hard efforts</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>簡単なトレーニング走行は OK だと感じるかもしれないが、うまくレースをしたり懸命に努力したりするのは難しい</translation>
+        <translation>簡単なトレーニングランは問題ないかもしれませんが、レースや強い負荷は難しいかもしれません</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="99"/>
         <source>Expect pace to suffer greatly</source>
         <comment>ToolTip weather info dialogue</comment>
-        <translation>ペースが大きく落ち込むと予想する</translation>
+        <translation>ペースが大きく落ち込むと予想される</translation>
     </message>
     <message>
         <location filename="../humidex.py" line="112"/>
@@ -613,7 +613,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="473"/>
         <source>Air quality</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>大気質指数</translation>
     </message>
 </context>
 <context>
