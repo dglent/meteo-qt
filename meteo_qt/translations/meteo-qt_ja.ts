@@ -1180,13 +1180,13 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../settings.py" line="371"/>
         <source>Temperature position in the icon (vertically) (default value: -12)</source>
         <comment>ToolTip of the widget (a spinbox) to define the position of the temperature paint in the tray icon</comment>
-        <translation type="unfinished"></translation>
+        <translation>アイコン内での温度の表示位置 (垂直方向) (デフォルト値: -12)</translation>
     </message>
     <message>
         <location filename="../settings.py" line="465"/>
         <source>It is suggested to use a personal key.&lt;br/&gt;If someone hijacks the default meteo-qt key you will not be able to get the weather data (error 401 unauthorized)</source>
         <comment>Tooltip of the api key text field</comment>
-        <translation type="unfinished"></translation>
+        <translation>個人キーを使用することをお勧めします。&lt;br/&gt;デフォルトの meteo-qt キーが他者に乗っ取られた場合、気象データを取得できなくなります (error 401 unauthorized)</translation>
     </message>
 </context>
 <context>
@@ -1395,7 +1395,20 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;作者: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;システムトレイに天気情報を表示するシンプルなアプリケーション。 
+            &lt;p&gt;ウェブサイト: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;データソース: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;
+            &lt;br/&gt;このソフトウェアは &lt;a href=&quot;http://www.kde.org/&quot;&gt;Oxygen Project&lt;/a&gt; のアイコンを使用しています。 
+            &lt;p&gt;meteo-qt を翻訳したり、既存の翻訳に貢献する場合は、
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; プラットフォームを使用してください。 
+            &lt;p&gt;不具合の報告や提案がある場合は、お気軽に
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            GitHub&lt;/a&gt; で Issue を作成してください。</translation>
     </message>
 </context>
 <context>
@@ -1413,7 +1426,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="483"/>
         <source>Unavailable</source>
         <comment>The value in the weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>利用できません</translation>
     </message>
 </context>
 <context>
@@ -1440,7 +1453,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="209"/>
         <source>Probability of precipitation</source>
         <comment>Weather info window</comment>
-        <translation type="unfinished"></translation>
+        <translation>降水確率</translation>
     </message>
 </context>
 <context>
@@ -1449,7 +1462,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="525"/>
         <source>The ultraviolet index at 12 PM</source>
         <comment>Label in weather info dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>正午の紫外線指数</translation>
     </message>
 </context>
 <context>
@@ -1518,7 +1531,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="68"/>
         <source>&lt;b&gt;Tomorrow:&lt;/b&gt;</source>
         <comment>Title for the weather conditions</comment>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;明日:&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -1594,7 +1607,7 @@ Below 990 hPa is the pressure for VERY BAD and POWERFUL hurricanes, tornadoes, a
         <location filename="../meteo_qt.py" line="397"/>
         <source>Visibility</source>
         <comment>Weather overview dialogue</comment>
-        <translation type="unfinished"></translation>
+        <translation>視程</translation>
     </message>
 </context>
 <context>
