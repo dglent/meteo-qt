@@ -28,9 +28,9 @@ from PyQt6.QtGui import (
     QTransform, QTextDocument, QTextCursor, QColorConstants
 )
 from PyQt6.QtWidgets import (
-    QDialog, QApplication, QMainWindow, QMenu, QSystemTrayIcon,
+    QDialog, QApplication, QMainWindow, QMenu, QSystemTrayIcon, QWidget,
     QVBoxLayout, QHBoxLayout, QLabel, QGridLayout, QGraphicsDropShadowEffect,
-    QTextBrowser, QPushButton
+    QTextBrowser, QPushButton, QScrollArea, QToolButton
 )
 
 try:
@@ -312,8 +312,9 @@ class SystemTrayIcon(QMainWindow):
         return shadow
 
     def create_overview(self):
-        self.overviewcitydlg = QDialog()
-        self.setCentralWidget(self.overviewcitydlg)
+        self.overviewcitydlg = QWidget()
+        self.overview_scroll = QScrollArea()
+        self.overview_scroll.setWidgetResizable(True)
         self.total_layout = QVBoxLayout()
 
         # ----First part overview day -----
@@ -322,7 +323,34 @@ class SystemTrayIcon(QMainWindow):
         self.dayforecast_temp_layout = QHBoxLayout()
 
         self.city_label = QLabel()
-        self.over_layout.addWidget(self.city_label)
+        self.city_layout = QHBoxLayout()
+        self.city_layout.addWidget(self.city_label)
+        self.city_layout.addStretch()
+        previous_city_text = QCoreApplication.translate(
+            'Button at the top of the panel to load the previous city',
+            'Previous city',
+            'Weather info panel'
+        )
+        next_city_text = QCoreApplication.translate(
+            'Button at the top of the panel to load the next city',
+            'Next city',
+            'Weather info panel'
+        )
+        self.previous_city_button = QToolButton()
+        self.previous_city_button.setArrowType(Qt.ArrowType.LeftArrow)
+        self.previous_city_button.setToolTip(previous_city_text)
+        self.previous_city_button.clicked.connect(
+            partial(self.change_city_step, -1)
+        )
+        self.city_layout.addWidget(self.previous_city_button)
+        self.next_city_button = QToolButton()
+        self.next_city_button.setArrowType(Qt.ArrowType.RightArrow)
+        self.next_city_button.setToolTip(next_city_text)
+        self.next_city_button.clicked.connect(
+            partial(self.change_city_step, 1)
+        )
+        self.city_layout.addWidget(self.next_city_button)
+        self.over_layout.addLayout(self.city_layout)
         self.icontemp_layout = QHBoxLayout()
         self.icon_label = QLabel()
         self.icontemp_layout.addWidget(self.icon_label)
@@ -574,6 +602,8 @@ class SystemTrayIcon(QMainWindow):
         self.total_layout.addLayout(self.forecast_minmax_layout)
 
         self.overviewcitydlg.setLayout(self.total_layout)
+        self.overview_scroll.setWidget(self.overviewcitydlg)
+        self.setCentralWidget(self.overview_scroll)
         self.setWindowTitle(self.tr('Weather status'))
 
     def overviewcity_weather_label(self):
@@ -1874,17 +1904,17 @@ class SystemTrayIcon(QMainWindow):
         self.tentatives = 0
         self.refresh()
 
-    def wheelEvent(self, event):
+    def change_city_step(self, direction):
         if hasattr(self, 'day_download_thread'):
             if self.day_download_thread.isRunning():
                 logging.debug(
-                    'WheelEvent: Downloading icons - remaining thread "day_download_thread"...'
+                    'CityNavigation: Downloading icons - remaining thread "day_download_thread"...'
                 )
                 return
         if hasattr(self, 'download_thread'):
             if self.download_thread.isRunning():
                 logging.debug(
-                    'WheelEvent: Downloading icons - remaining thread "download_thread"...'
+                    'CityNavigation: Downloading icons - remaining thread "download_thread"...'
                 )
                 return
 
@@ -1894,7 +1924,6 @@ class SystemTrayIcon(QMainWindow):
             return
         cities_trans = self.settings.value('CitiesTranslation') or '{}'
         cities_trans_dict = eval(cities_trans)
-        direction = event.angleDelta().y()
         actual_city = self.current_city_display
         for key, value in cities_trans_dict.items():
             if self.current_city_display == key:
