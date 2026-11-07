@@ -1399,7 +1399,21 @@ Wear sunglasses on bright days; use sunscreen if there is
             feel free to open an issue in
             &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
             github&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Author: Dimitrios Glentadakis
+            &lt;a href=&quot;mailto:dglent@free.fr&quot;&gt;dglent@free.fr&lt;/a&gt;
+            &lt;p&gt;Una aplicación sencilla que muestra información sobre el estado del tiempo en la bandeja del sistema.
+            &lt;p&gt;Website: &lt;a href=&quot;https://github.com/dglent/meteo-qt&quot;&gt;
+            https://github.com/dglent/meteo-qt&lt;/a&gt;
+            &lt;br/&gt;Fuente de datos: &lt;a href=&quot;http://openweathermap.org/&quot;&gt;
+            OpenWeatherMap&lt;/a&gt;.
+            &lt;br/&gt;Este software utiliza iconos del
+            &lt;a href=&quot;http://www.kde.org/&quot;&gt;Proyecto Oxygen&lt;/a&gt;.
+            &lt;p&gt;Para traducir meteo-qt a tu idioma o contribuir a las traducciones actuales, puedes usar la plataforma
+            &lt;a href=&quot;https://translate.lxqt-project.org/projects/dglent/meteo-qt/&quot;&gt;
+            Weblate&lt;/a&gt; .
+            &lt;p&gt;Si desea informar sobre una disfunción o hacer una sugerencia, no dude en abrir un problema en
+            &lt;a href=&quot;https://github.com/dglent/meteo-qt/issues&quot;&gt;
+            github&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
